@@ -1,0 +1,3588 @@
+{
+ "concepts": [
+  {
+   "id": "c-current",
+   "title": "Charge, current and drift velocity",
+   "module": 4,
+   "principle": "Conservation of charge: charge comes in whole-number lumps of e carried by real particles, and it is never made or destroyed, so a current is simply a count of how much charge crosses a line each second.",
+   "spec": [
+    "4.1.1(a)",
+    "4.1.1(b)",
+    "4.1.1(c)",
+    "4.1.1(d)",
+    "4.1.1(e)",
+    "4.1.1(f)",
+    "4.1.2(a)",
+    "4.1.2(b)",
+    "4.1.2(c)"
+   ],
+   "idea": [
+    "Picture a wire as a pipe already packed full of free electrons. Closing the switch does not send new electrons in from the cell; it sets every free electron in the loop drifting at once. That is why a lamp lights immediately even though each electron only creeps along. Current is the rate at which charge crosses any cross-section: one ampere means one coulomb passing every second.",
+    "Charge is lumpy. Every charge you meet is a whole number of 1.6 × 10^-19 C units, so dividing a total charge by e must give a whole number of electrons. A coulomb is about 6 × 10^18 electrons, which is why electron counts in exam answers come out huge (10^17 to 10^23).",
+    "How fast must the carriers move to deliver a given current? That depends on how many free carriers sit in each cubic metre (n), how wide the wire is (A) and the charge on each one (e). A metal has n near 10^28 to 10^29 m^-3, so the carriers only need to drift at around a millimetre per second or less. A semiconductor has far fewer carriers, so for the same current they must drift much faster, and an insulator has almost none.",
+    "Direction is a convention left over from history. Conventional current points from + to −. In a metal the carriers are electrons, which drift the other way, towards the positive terminal. In an electrolyte both positive and negative ions move, in opposite directions."
+   ],
+   "buildup": [
+    "Define current as charge per unit time: I = ΔQ/Δt. A steady current I for time t moves charge Q = It.",
+    "Charge is quantised, so the number of carriers is N = Q/e = It/e.",
+    "Take a length L of wire with cross-sectional area A. The number of free carriers inside it is n × (volume) = nAL, carrying total charge nALe.",
+    "If the carriers drift at mean speed v, they all pass the end of that length in time t = L/v.",
+    "So I = Q/t = nALe ÷ (L/v) = nAve. The length cancels; only material (n), shape (A) and speed (v) are left.",
+    "Consequence: for a fixed current, v = I/(nAe). Halve the area and v doubles; swap a metal for a semiconductor (much smaller n) and v rises enormously. In series every section carries the same I, so the thinner part has the faster drift."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Electrons rush round the circuit at nearly the speed of light, which is why the lamp lights instantly.",
+     "right": "Each electron drifts slowly (often under 1 mm s^-1). The lamp lights at once because the wire is already full of carriers and they all start drifting together."
+    },
+    {
+     "wrong": "A positively charged object has gained protons or gained electrons.",
+     "right": "In ordinary charging only electrons move: a positive object has lost electrons, a negative one has gained them, and the number lost is the charge divided by e."
+    },
+    {
+     "wrong": "n is the number of electrons in the wire.",
+     "right": "n is the number of free charge carriers per unit volume. Every atom contains electrons, so 'electrons' alone is wrong, and it is a property of the material, not the size of the wire."
+    },
+    {
+     "wrong": "Conventional current is the direction electrons move.",
+     "right": "Conventional current runs from + to −. Electrons in a metal drift the opposite way, towards the positive terminal; in electrolytes the carriers are ions."
+    },
+    {
+     "wrong": "A thinner wire always has a smaller drift velocity because it is harder to get through.",
+     "right": "For the same current and material, v = I/(nAe), so the thinner section has the faster drift."
+    }
+   ],
+   "sim": "drift",
+   "sim_guide": "Keep the current fixed and shrink the cross-sectional area: watch the carriers speed up so that the same charge passes each second. Then reduce the number density to semiconductor values and see how fast they have to go. Notice that the carriers move slowly compared with how quickly the whole loop starts moving.",
+   "exam_shapes": [
+    {
+     "shape": "Count electrons passing from a current and time (N = It/e)",
+     "moves": [
+      "chain",
+      "units"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "7(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "7(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "23(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "4(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "16"
+      }
+     ]
+    },
+    {
+     "shape": "Calculate mean drift velocity from I = Anev",
+     "moves": [
+      "rearrange",
+      "units"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "25(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "23(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "25(c)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "4(b)(iii)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "7(a)(iii)"
+      }
+     ]
+    },
+    {
+     "shape": "Compare drift velocities in different wires or branches by ratio",
+     "moves": [
+      "ratio"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "4(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "7(b)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "8"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "4(c)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Classify conductors, semiconductors, insulators using number density",
+     "moves": [
+      "definition",
+      "recall-fact"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "4(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "9"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "7(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Quantised charge: possible charges and electrons gained or lost",
+     "moves": [
+      "recall-fact"
+     ],
+     "marks_typical": "1",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "15"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "20"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "10"
+      }
+     ]
+    },
+    {
+     "shape": "Charge carriers and current direction in metals and electrolytes",
+     "moves": [
+      "recall-fact",
+      "explain-chain"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "3(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "3(a)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "20"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "14"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "4(a)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Current is how much charge crosses a point each second.",
+     "write": "Current is the rate of flow of charge; I = ΔQ/Δt. Use the word 'rate', not 'amount'."
+    },
+    {
+     "understand": "Charge comes in whole multiples of e.",
+     "write": "Number of electrons N = Q/e = It/e, with t in seconds (convert minutes or hours first)."
+    },
+    {
+     "understand": "n measures how crowded the free carriers are.",
+     "write": "Number density n = number of free charge carriers per unit volume (unit m^-3). Say 'free charge carriers' and 'per unit volume'."
+    },
+    {
+     "understand": "Drift speed is set by current, crowding and width.",
+     "write": "State I = nAve (or v ∝ I when n and A are the same), then compare the currents numerically, then give the ratio."
+    },
+    {
+     "understand": "Fewer carriers means poorer conduction.",
+     "write": "Compare n for each material (conductor > semiconductor > insulator) and link larger n to smaller resistivity / larger current."
+    },
+    {
+     "understand": "Carriers are attracted to the terminal of opposite sign.",
+     "write": "Positive carriers move towards the negative terminal and negative carriers towards the positive; conventional current is from + to −. Do not contradict yourself across sentences."
+    },
+    {
+     "understand": "Area of a round wire uses the radius.",
+     "write": "A = πr^2 with r = d/2, in m^2 (mm^2 × 10^-6)."
+    }
+   ],
+   "traps": [
+    "Using the total number of free electrons as n instead of dividing by the volume first (only one mark survives).",
+    "Putting the diameter into πr^2, or forgetting that mm^2 to m^2 is ×10^-6, in I = Anev.",
+    "Saying the drift velocity is bigger in one resistor without quoting I = nAve and the two currents; each link is a separate mark.",
+    "Leaving time in minutes or hours in Q = It, or using a power rating (watts) as if it were the current.",
+    "Defining n as 'number of electrons per unit volume' or 'per unit area': it must be free charge carriers per unit volume."
+   ],
+   "stats": {
+    "parts": 36,
+    "marks": 61,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-resistance",
+   "title": "P.d., e.m.f., resistance and I–V characteristics",
+   "module": 4,
+   "principle": "Conservation of energy, measured per coulomb: e.m.f. is energy given to each coulomb by a source, p.d. is energy each coulomb gives up in a component, and resistance is just the ratio V/I at a given moment.",
+   "spec": [
+    "4.2.1(a)",
+    "4.2.1(b)",
+    "4.2.2(a)",
+    "4.2.2(b)",
+    "4.2.2(c)",
+    "4.2.2(d)",
+    "4.2.2(e)",
+    "4.2.3(a)",
+    "4.2.3(b)",
+    "4.2.3(c)(i)",
+    "4.2.3(c)(ii)",
+    "4.2.5(a)",
+    "4.2.5(b)",
+    "4.2.5(c)"
+   ],
+   "idea": [
+    "Think of each coulomb of charge as a delivery van. At the cell it is loaded with energy (that is the e.m.f., in joules per coulomb). At each component it unloads energy as heat or light (that is the p.d. across that component). Both are measured in volts because both are 'joules per coulomb'; the difference is the direction of the energy transfer: into electrical energy at a source, out of electrical energy at a load.",
+    "Resistance tells you how many volts you need to push each ampere through a component: R = V/I at that operating point. It is not the gradient of an I–V graph. Ohm's law is a special claim: for some conductors, at constant temperature, V is proportional to I, so R stays fixed.",
+    "Real components break Ohm's law for physical reasons. In a filament lamp more current makes the metal hotter, the ions vibrate more, electrons collide more often, so resistance rises and the I–V curve bends over. A diode or LED lets almost no current through in reverse and below its threshold, then conducts readily once the forward p.d. passes about 0.6 V (diode) or 1.5 to 3 V (LED).",
+    "Power is energy per second, so P = VI (joules per coulomb times coulombs per second). Combining with V = IR gives I^2R and V^2/R. An electron accelerated through a p.d. V gains energy eV, which becomes kinetic energy ½mv^2."
+   ],
+   "buildup": [
+    "Define p.d.: V = W/Q, energy transferred from electrical form per unit charge. E.m.f. is the same ratio for energy transferred into electrical form: E = W/Q.",
+    "So the energy a charge Q transfers is W = VQ. For a single electron, W = eV, which is why 1 eV = 1.6 × 10^-19 J.",
+    "Power is the rate of energy transfer: P = W/t = V(Q/t) = VI.",
+    "Define resistance R = V/I. Substituting V = IR into P = VI gives P = I^2R; substituting I = V/R gives P = V^2/R. Choose the form whose variable is shared (I in series, V in parallel).",
+    "Energy over a time t is W = VIt. For cost, use kilowatts × hours to get kWh, then multiply by the price per kWh.",
+    "An electron from rest accelerated through V: eV = ½mv^2, so v = √(2eV/m). Doubling V multiplies v by √2, not 2."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "E.m.f. is the voltage of the cell and p.d. is the voltage of a resistor; that is the difference.",
+     "right": "The difference is energy direction: e.m.f. is energy transferred into electrical energy per coulomb, p.d. is electrical energy transferred into other forms per coulomb."
+    },
+    {
+     "wrong": "Resistance is 1/gradient of the I–V graph, and a straight line means constant resistance.",
+     "right": "Resistance at a point is V/I read from that point. A straight line that misses the origin does not have constant resistance."
+    },
+    {
+     "wrong": "A filament lamp is non-ohmic, so that explains everything.",
+     "right": "Give the mechanism: larger current, higher filament temperature, more lattice vibration and collisions, larger resistance, so current rises less than proportionally."
+    },
+    {
+     "wrong": "Ohm's law just says V = IR.",
+     "right": "V = IR defines resistance for any component. Ohm's law says V is proportional to I provided physical conditions such as temperature stay constant."
+    },
+    {
+     "wrong": "An LED lights once the supply equals its threshold p.d.",
+     "right": "The forward p.d. has to exceed the threshold, and the LED must be forward biased."
+    }
+   ],
+   "sim": "iv",
+   "sim_guide": "Sweep the p.d. for a fixed resistor, then a filament lamp, then a diode/LED, and read V/I at several points rather than looking at the slope. For the lamp watch the temperature indicator climb as the curve bends. For the LED note the p.d. at which current first becomes noticeable, and try reverse bias.",
+   "exam_shapes": [
+    {
+     "shape": "One similarity and one difference between e.m.f. and p.d.",
+     "moves": [
+      "definition"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "25(a)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "4(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "25(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "17"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "2"
+      }
+     ]
+    },
+    {
+     "shape": "Identify a component or its resistance from an I–V graph or table",
+     "moves": [
+      "graph-read"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "27(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "6(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "6(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "20"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "24(a)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Explain why lamp current is not proportional to p.d.",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "2–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "24(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "4(a)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "18"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "7(c)(iv)"
+      }
+     ]
+    },
+    {
+     "shape": "Power and energy with P = VI, I²R, V²/R, W = VIt",
+     "moves": [
+      "chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "4(a)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "24(a)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "5(c)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "19"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "6"
+      }
+     ]
+    },
+    {
+     "shape": "Cost of electrical energy in kilowatt-hours",
+     "moves": [
+      "units",
+      "chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "4(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "7(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "7(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "7"
+      }
+     ]
+    },
+    {
+     "shape": "Electron accelerated through a p.d.: eV = ½mv²",
+     "moves": [
+      "energy",
+      "rearrange"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "8(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "25(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "23(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "15"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "4"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "E.m.f. loads energy onto charge; p.d. unloads it.",
+     "write": "Similarity: both are energy transferred per unit charge (both in volts is often not enough on its own). Difference in one sentence: e.m.f. is energy transferred to electrical, p.d. is electrical energy transferred to other forms."
+    },
+    {
+     "understand": "Resistance is a ratio at one operating point.",
+     "write": "R = V/I using values read at that point; never 1/gradient."
+    },
+    {
+     "understand": "Hot filament, more collisions.",
+     "write": "As current/p.d. increases the filament temperature increases, so its resistance increases; therefore doubling the p.d. less than doubles the current."
+    },
+    {
+     "understand": "Ohm's law needs steady conditions.",
+     "write": "Current is directly proportional to p.d. provided temperature (physical conditions) is constant; the heater gets hot, so it does not obey Ohm's law."
+    },
+    {
+     "understand": "An LED is a one-way valve with a turn-on p.d.",
+     "write": "LED must be forward biased and the p.d. across it must be greater than the threshold (about 2 to 3 V); 'at least' or 'equal to' is refused."
+    },
+    {
+     "understand": "Power is energy per second.",
+     "write": "Pick P = V^2/R when the p.d. is shared (parallel) and P = I^2R when the current is shared (series). Least power comes from the largest total resistance."
+    },
+    {
+     "understand": "Bills count kilowatts for hours.",
+     "write": "Energy (kWh) = power in kW × time in h; cost = kWh × price. Do not convert to seconds."
+    },
+    {
+     "understand": "Energy from a p.d. is charge × p.d.",
+     "write": "Kinetic energy gained = eV (include e), then v = √(2eV/m); for N electrons multiply by N."
+    }
+   ],
+   "traps": [
+    "Writing ½mv^2 = V without the e: treated as wrong physics, so later marks do not follow.",
+    "Giving 'both measured in volts' as the only similarity, or stating the e.m.f./p.d. difference as 'cell vs resistor'.",
+    "Using 150 W instead of 0.150 kW, or seconds instead of hours, in kWh cost problems.",
+    "Calling the straight-line I–V component a 'metallic conductor' instead of a resistor, or naming a diode or LDR for a lamp curve.",
+    "Forgetting the final square root when finding v from eV = ½mv^2."
+   ],
+   "stats": {
+    "parts": 81,
+    "marks": 169,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-resistivity",
+   "title": "Resistivity, thermistors and LDRs",
+   "module": 4,
+   "principle": "Resistance as V/I, traced to its causes: geometry (longer means more obstacles in series, wider means more paths in parallel) and the material itself, through how many free carriers it has and how often they collide.",
+   "spec": [
+    "4.2.3(d)",
+    "4.2.4(a)(i)",
+    "4.2.4(a)(ii)",
+    "4.2.4(b)",
+    "4.2.4(c)"
+   ],
+   "idea": [
+    "Resistance mixes two separate things: the shape of the conductor and what it is made of. Double the length and the carriers face twice as many obstacles, so R doubles. Double the cross-sectional area and there are twice as many side-by-side paths, so R halves. Resistivity ρ is what is left once the shape is taken out: R = ρL/A. It belongs to the material (at a given temperature), so cutting or stretching a wire changes R but never ρ.",
+    "In a metal the number of free electrons is fixed and huge. Heating it makes the lattice ions vibrate harder, so electrons collide more often and resistivity rises. That is why a heater element measured cold with a small battery gives a lower resistance than its rated value when hot.",
+    "Semiconductors behave the other way. Heating an NTC thermistor, or shining light on an LDR, gives bound electrons enough energy to break free, so the number density of charge carriers rises steeply. Extra carriers win over extra vibration, so resistance falls as temperature or light intensity rises.",
+    "A thermistor or LDR is therefore a sensor: a resistance that reports the temperature or light level. On its own on an ideal supply, its p.d. does not change, only its current; to turn the change into a useful voltage signal you put it in a potential divider."
+   ],
+   "buildup": [
+    "In series, resistances add, so a wire of length 2L behaves like two lengths L in series: R ∝ L.",
+    "In parallel, conductances add, so a wire of area 2A behaves like two wires side by side: R ∝ 1/A.",
+    "Combine: R ∝ L/A, and the constant of proportionality is the resistivity: R = ρL/A, so ρ = RA/L with unit Ω m.",
+    "For a round wire, A = π(d/2)^2. Stretching at constant volume makes L bigger and A smaller together: L × 1.5 means A ÷ 1.5, so R grows by 1.5^2 = 2.25.",
+    "A graph of R against L is a straight line through the origin with gradient ρ/A, so ρ = gradient × A (measure d with a micrometer at several places and orientations).",
+    "Temperature: in metals n is constant and collisions increase, so ρ rises; in semiconductors n rises sharply with temperature (or light), so ρ falls."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Resistivity is just another word for resistance, so a longer wire has bigger resistivity.",
+     "right": "Resistivity is a property of the material; a longer wire of the same material has more resistance but the same resistivity (and the same number density)."
+    },
+    {
+     "wrong": "Tripling the length triples the resistance even if the wire is stretched.",
+     "right": "Stretching changes the area as well: at constant volume, R scales with the square of the length factor."
+    },
+    {
+     "wrong": "A thermistor's resistance falls because 'the circuit gets hotter'.",
+     "right": "It is the thermistor itself that warms; more charge carriers are released in it, so its resistance falls."
+    },
+    {
+     "wrong": "LDR resistance falls because light pushes the electrons along.",
+     "right": "Light frees more charge carriers, increasing the number density n, so resistance falls."
+    },
+    {
+     "wrong": "Any heated component's resistance goes up.",
+     "right": "Metals go up (more lattice vibration); NTC thermistors and other semiconductors go down (many more carriers)."
+    }
+   ],
+   "sim": "iv",
+   "sim_guide": "Choose the thermistor and change its temperature: watch its I–V line steepen as it warms, meaning a smaller V/I. Repeat with the filament lamp and compare which way the resistance moves when it heats. If the simulation offers a wire, change length and diameter separately and check that R tracks L/A while ρ stays put.",
+   "exam_shapes": [
+    {
+     "shape": "Calculate resistivity, length or diameter from R = ρL/A",
+     "moves": [
+      "units",
+      "rearrange"
+     ],
+     "marks_typical": "2–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "24(c)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "24(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "4(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "7(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "6(c)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "25(c)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "New resistance of a rescaled or stretched wire",
+     "moves": [
+      "ratio"
+     ],
+     "marks_typical": "1",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "5"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "9"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "3"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "10"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "10"
+      }
+     ]
+    },
+    {
+     "shape": "Resistivity practical: R–L gradient and measuring diameter",
+     "moves": [
+      "plan",
+      "graph-read"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "24(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "4"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "6(c)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "5(e)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "24(c)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Predict meter readings when a thermistor or LDR changes",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "24(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "9"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "4(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "4(c)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "23(c)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Explain resistance change with temperature or light",
+     "moves": [
+      "recall-fact",
+      "explain-chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "13"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "7(c)(iv)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "14"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "7(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Plan collecting thermistor resistance against temperature data",
+     "moves": [
+      "plan"
+     ],
+     "marks_typical": "4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "23(a)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Resistivity removes the shape from resistance.",
+     "write": "Resistivity: ρ = RA/L, where A is cross-sectional area and L is length; unit Ω m. Define each symbol."
+    },
+    {
+     "understand": "Shape changes R, material sets ρ and n.",
+     "write": "For the same material: resistance changes, resistivity and number density stay the same."
+    },
+    {
+     "understand": "Area goes with diameter squared.",
+     "write": "A = πd^2/4 in m^2; 1 mm^2 = 10^-6 m^2. Never square something that is already an area."
+    },
+    {
+     "understand": "A gradient beats a single reading.",
+     "write": "Plot R against L, draw a best-fit line, ρ = gradient × A; measure d with a micrometer at several points and orientations and average."
+    },
+    {
+     "understand": "Heat or light frees carriers in a semiconductor.",
+     "write": "Temperature (or light intensity) increases, so number density of charge carriers in the thermistor (LDR) increases, so its resistance decreases."
+    },
+    {
+     "understand": "Metals resist more when hot.",
+     "write": "Lower current means lower temperature of the wire, so a metal's resistance is lower (more ion vibration at higher temperature)."
+    },
+    {
+     "understand": "On an ideal supply only the current changes.",
+     "write": "With no internal resistance the voltmeter across the supply/component stays at the supply p.d.; the ammeter reading changes because total resistance changes."
+    }
+   ],
+   "traps": [
+    "Converting mm^2 to m^2 with ×10^-3 instead of ×10^-6, or using the diameter as the radius.",
+    "Ignoring 'constant volume' when a wire is stretched, so the area change is missed.",
+    "Ignoring that a multi-strand cable is many wires in parallel (total area = strands × one wire's area).",
+    "Finding ρ from one data pair or a table value when the question asks for the gradient.",
+    "Saying the end plates give 'good contact' or 'reduce contact resistance' in a putty experiment; the point is that the whole cross-section is connected."
+   ],
+   "stats": {
+    "parts": 39,
+    "marks": 90,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-kirchhoff",
+   "title": "Series, parallel and Kirchhoff's laws",
+   "module": 4,
+   "principle": "Two conservation laws: charge is conserved at every junction (Kirchhoff's first law) and energy is conserved round every closed loop (Kirchhoff's second law). The series and parallel rules are consequences, not extra facts.",
+   "spec": [
+    "4.1.1(g)",
+    "4.3.1(a)",
+    "4.3.1(b)",
+    "4.3.1(c)",
+    "4.3.1(d)",
+    "4.3.1(e)",
+    "4.3.1(f)"
+   ],
+   "idea": [
+    "At a junction nothing can pile up or vanish, so whatever charge flows in per second must flow out per second. That is the whole of the first law: sum of currents in equals sum of currents out. It is why the current is the same at every point in a single series loop.",
+    "Round any closed loop, a coulomb that leaves the cell and comes back has gained and lost the same total energy. So the e.m.f.s round the loop add up to the p.d.s round the loop. That is the second law, and it is why parallel branches between the same two points must have the same p.d. across them.",
+    "Series resistors share one current and split the p.d., so their resistances add. Parallel resistors share one p.d. and split the current, so the total resistance is smaller than the smallest branch: adding a new branch is like opening an extra lane, never a roadblock.",
+    "Most exam circuits are a chain of these ideas. Collapse parallel groups into one equivalent, add the series parts, find the total current, then work back out using 'same current in series, same p.d. in parallel'. Lamps and other non-ohmic parts break the shortcut: their resistance depends on the p.d. across them, so read each one off its I–V graph."
+   ],
+   "buildup": [
+    "First law at a junction: ΣI_in = ΣI_out, because charge is conserved and current is charge per second.",
+    "Second law round a loop: ΣE = ΣIR (sum of e.m.f.s = sum of p.d.s), because each coulomb's energy gain equals its energy loss.",
+    "Series: one current I flows through R1 and R2. The loop gives V = IR1 + IR2 = I(R1 + R2), so R_total = R1 + R2.",
+    "Parallel: both resistors have the same p.d. V (second law on the small loop between them). The junction gives I = V/R1 + V/R2, so 1/R_total = 1/R1 + 1/R2.",
+    "For n identical resistors R in parallel, R_total = R/n; for two, R_total = R1R2/(R1 + R2), which is always below the smaller one.",
+    "Opposing cells in one loop: the net e.m.f. is the difference, and the current is still the same everywhere in that loop."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Kirchhoff's first law is about conservation of energy.",
+     "right": "The first law expresses conservation of charge (stated with currents); the second law is conservation of energy."
+    },
+    {
+     "wrong": "Adding another resistor in parallel increases the total resistance.",
+     "right": "An extra parallel path always lowers the total resistance and increases the supply current."
+    },
+    {
+     "wrong": "Two identical filament lamps in parallel each have the same resistance as when they were in series.",
+     "right": "Lamp resistance depends on the p.d. across it; read each lamp's current from the I–V graph at its own p.d."
+    },
+    {
+     "wrong": "Current is used up as it goes round, so less returns to the cell.",
+     "right": "Current is the same everywhere in a series loop; energy is transferred, not charge."
+    },
+    {
+     "wrong": "For least power choose the smallest resistance.",
+     "right": "On a fixed supply P = V^2/R_total, so the least power comes from the largest total resistance."
+    }
+   ],
+   "sim": "divider",
+   "sim_guide": "Put two resistors in series and check that the two p.d.s always add up to the supply while the current is the same through both. Then rearrange them in parallel and see the p.d.s become equal while the currents add at the junction. Change one resistor and predict each meter reading before you look.",
+   "exam_shapes": [
+    {
+     "shape": "Which quantity each Kirchhoff law conserves; junction current sums",
+     "moves": [
+      "recall-fact"
+     ],
+     "marks_typical": "1",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "1"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "2"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "12"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "19"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "11"
+      }
+     ]
+    },
+    {
+     "shape": "Total resistance of a series–parallel network, often show-that",
+     "moves": [
+      "chain",
+      "show-that"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "4(a)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "7(a)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "5"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "3"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "18"
+      }
+     ]
+    },
+    {
+     "shape": "Find an unknown resistor or branch current in a mixed circuit",
+     "moves": [
+      "chain"
+     ],
+     "marks_typical": "2–4",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "5(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "6(c)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "24(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "4(b)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Ratio of currents or powers for series versus parallel",
+     "moves": [
+      "ratio"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "24(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "19"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "6"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "6"
+      }
+     ]
+    },
+    {
+     "shape": "Non-ohmic lamps combined, using an I–V graph",
+     "moves": [
+      "graph-read",
+      "chain"
+     ],
+     "marks_typical": "3–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "23(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "25(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Circuits with more than one e.m.f.",
+     "moves": [
+      "vectors",
+      "show-that"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "11"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "21(a)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Charge cannot pile up at a junction.",
+     "write": "Kirchhoff's first law: the sum of currents entering a junction equals the sum of currents leaving it; this is conservation of charge."
+    },
+    {
+     "understand": "Energy per coulomb balances round a loop.",
+     "write": "Kirchhoff's second law: in any closed loop, sum of e.m.f.s = sum of p.d.s; this is conservation of energy."
+    },
+    {
+     "understand": "Series shares current, so resistances add.",
+     "write": "Why the current is the same in series: quote Kirchhoff's first law / charge conservation, not just 'current is the same everywhere'."
+    },
+    {
+     "understand": "Parallel shares p.d.",
+     "write": "Show the parallel formula working explicitly (1/R = 1/R1 + 1/R2, or R/n for identical resistors) before adding series parts; in a show-that every step must be visible."
+    },
+    {
+     "understand": "Work outward then back in.",
+     "write": "Total R, then total I = V/R_total, then split: same I in series parts, same V in parallel parts. Label each value with the component it belongs to."
+    },
+    {
+     "understand": "Lamps change resistance with p.d.",
+     "write": "For lamps, read the current at the actual p.d. across each lamp from the I–V graph, then combine; state the p.d.s and currents you read."
+    },
+    {
+     "understand": "Ratios as decimals.",
+     "write": "Give a ratio as a decimal (e.g. 0.22) and check which way round the question asked for it."
+    }
+   ],
+   "traps": [
+    "Adding parallel resistances as if in series (or combining everything in parallel) in a network.",
+    "Forgetting a component's internal resistance or a second lamp when summing p.d.s round the loop.",
+    "Assuming lamps keep a constant resistance in a new arrangement: this is wrong physics, not an arithmetic slip.",
+    "Inverting a requested ratio, or leaving it as an unsimplified fraction.",
+    "Using the total current when the question is about one branch (e.g. charge through one resistor)."
+   ],
+   "stats": {
+    "parts": 41,
+    "marks": 73,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-internal",
+   "title": "E.m.f. and internal resistance",
+   "module": 4,
+   "principle": "Kirchhoff's second law (energy conservation) applied to a loop that includes the inside of the source: the energy each coulomb receives (e.m.f.) is shared between the outside circuit (terminal p.d.) and the source's own resistance (lost volts).",
+   "spec": [
+    "4.3.2(a)",
+    "4.3.2(b)",
+    "4.3.2(c)(i)",
+    "4.3.2(c)(ii)"
+   ],
+   "idea": [
+    "A real cell is an ideal energy source with a small resistor hidden inside it. Every coulomb that passes through the cell gets E joules, but it has to push through that internal resistance on the way out, spending Ir joules there as heat. What is left for the outside circuit is the terminal p.d. V = E − Ir.",
+    "So the terminal p.d. is not fixed. Draw a big current and the lost volts Ir grow, so less is left for the outside: the headlights dim when the starter motor runs. Draw no current at all (switch open, ideal voltmeter) and there are no lost volts, so the voltmeter reads the e.m.f. itself.",
+    "This explains the 'opposite' behaviour students find surprising. Increase the external resistance and the current falls, the lost volts fall, so the terminal p.d. rises. Decrease the external resistance and the terminal p.d. falls even though nothing about the cell changed.",
+    "Large internal resistance is bad for a torch or car battery because more of each coulomb's energy is wasted inside the battery and less reaches the bulb. It is useful in a high-voltage supply because it limits the current if something shorts."
+   ],
+   "buildup": [
+    "Treat the source as e.m.f. E in series with internal resistance r, connected to external resistance R.",
+    "One loop, one current I. Kirchhoff's second law: E = IR + Ir = I(R + r), so I = E/(R + r).",
+    "The p.d. across the terminals is the p.d. across R: V = IR. Substituting gives E = V + Ir, so V = E − Ir.",
+    "If I = 0 then V = E: an open-circuit reading with a high-resistance voltmeter gives the e.m.f.",
+    "Rearranged as V = −rI + E, a graph of terminal p.d. V against current I is a straight line: the y-intercept is E and the gradient is −r, so r = −gradient.",
+    "Power: the cell supplies EI in total; I^2r is wasted inside; I^2R (= VI) reaches the load. Cells in series add both their e.m.f.s and their internal resistances."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "The voltmeter reads the e.m.f. because it is connected across the cell.",
+     "right": "It reads the e.m.f. only when the current is zero, because then there are no lost volts across r."
+    },
+    {
+     "wrong": "Lower external resistance means higher current, so the terminal p.d. goes up.",
+     "right": "Higher current means larger lost volts Ir, so the terminal p.d. V = E − Ir goes down."
+    },
+    {
+     "wrong": "Internal resistance only matters for the ammeter reading.",
+     "right": "It reduces the terminal p.d., the current and the power delivered; ignoring it gives the classic distractor answers."
+    },
+    {
+     "wrong": "The gradient of a V–I graph is r.",
+     "right": "The gradient is −r; write r = −gradient and E = y-intercept."
+    },
+    {
+     "wrong": "With several cells in series, multiply the current by the number of cells.",
+     "right": "Multiply the e.m.f. and the internal resistance by the number of cells; the current is found from the new totals."
+    }
+   ],
+   "sim": "internal",
+   "sim_guide": "Turn the external resistance down from very large to very small and watch the terminal p.d. fall as the current rises, with the gap between E and V growing. Set the current to zero and confirm V equals E. Plot or read off V against I and check the line's intercept and gradient give E and −r.",
+   "exam_shapes": [
+    {
+     "shape": "Current or p.d. in a circuit including internal resistance",
+     "moves": [
+      "chain"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "7"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "18"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "24(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "23(a)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Find e.m.f. and internal resistance from two readings",
+     "moves": [
+      "rearrange",
+      "recall-fact"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "6(c)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "7(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "7(a)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "8"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "6(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Explain how meter readings change when external resistance changes",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "6(d)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "24(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "7(c)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "25(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "18"
+      }
+     ]
+    },
+    {
+     "shape": "Derive V = E − Ir from Kirchhoff's second law",
+     "moves": [
+      "definition",
+      "show-that"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "5(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "21(a)"
+      }
+     ]
+    },
+    {
+     "shape": "V–I graph practical: E from intercept, r from gradient",
+     "moves": [
+      "plan",
+      "linearise"
+     ],
+     "marks_typical": "2–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "25(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "5(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Power wasted inside the source and why large r is undesirable",
+     "moves": [
+      "ratio",
+      "explain-chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "23(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "21(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "16"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "7(b)(i)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "The source's energy per coulomb is shared between inside and outside.",
+     "write": "E = V + Ir (or E = I(R + r)) from Kirchhoff's second law: sum of e.m.f.s = sum of p.d.s round the loop."
+    },
+    {
+     "understand": "No current, no loss.",
+     "write": "Switch open: current is zero, so there are no lost volts (no p.d. across r) and the voltmeter reading equals the e.m.f."
+    },
+    {
+     "understand": "Lost volts track the current.",
+     "write": "Chain in order: total resistance increases → current decreases → lost volts Ir decrease → terminal p.d. (voltmeter) increases. Each arrow is a mark; skip one and the dependent mark goes."
+    },
+    {
+     "understand": "Internal resistance converts energy to heat in the cell.",
+     "write": "More energy dissipated in r (larger I^2r / lost volts), so less p.d./power delivered to the bulb; 'the bulb is dimmer' alone is not credited."
+    },
+    {
+     "understand": "A V–I graph is the cell's fingerprint.",
+     "write": "Plot terminal p.d. against current for several settings of a variable resistor; E = y-intercept and r = −gradient (make E and r the subjects)."
+    },
+    {
+     "understand": "Cells in series stack.",
+     "write": "For n identical cells: total e.m.f. nE and total internal resistance nr; show both explicitly."
+    }
+   ],
+   "traps": [
+    "Dividing the e.m.f. (instead of the lost volts) by the current to get r, or using one branch current when branches are in parallel.",
+    "Leaving out internal resistance, which produces the distractor answer in multiple-choice items.",
+    "Writing 'gradient = −r' or 'intercept = E' without making r and E the subjects.",
+    "Saying the voltmeter reading stays the same 'because it is in parallel' when the load changes.",
+    "Restating 'the resistance decreases' from the question as your first point; start from what follows."
+   ],
+   "stats": {
+    "parts": 23,
+    "marks": 47,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-divider",
+   "title": "Potential dividers and sensors",
+   "module": 4,
+   "principle": "Kirchhoff's second law plus a shared current: two resistors in series carry the same current, so the supply p.d. splits between them in the ratio of their resistances.",
+   "spec": [
+    "4.3.3(a)",
+    "4.3.3(b)",
+    "4.3.3(c)(i)",
+    "4.3.3(c)(ii)"
+   ],
+   "idea": [
+    "Two resistors in series on a supply are like two people splitting a bill in proportion to what they ordered. The same current flows through both, so the p.d. across each is proportional to its resistance, and the two shares add to the supply p.d. The bigger resistor always takes the bigger share.",
+    "Swap one resistor for a sensor and you have a voltage that responds to the world. If an LDR is brightly lit its resistance drops, so it takes a smaller share of the p.d. and the fixed resistor takes a larger share. A voltmeter across the fixed resistor therefore reads higher in bright light; across the LDR it reads lower. Thermistors behave the same way with temperature.",
+    "Choosing the fixed resistor matters. If it is enormous compared with the sensor, it takes nearly all the p.d. whatever the sensor does, so the output hardly moves. The most sensitive choice is a fixed resistance comparable to the sensor's resistance in the middle of the range you care about.",
+    "A variable resistor, or a sliding contact on a resistance wire, makes the split adjustable. That is how a potentiometer sets an output from zero up to the full supply, and how a threshold can be tuned for when an LED or alarm switches on."
+   ],
+   "buildup": [
+    "Series resistors R1 and R2 on supply V_in carry one current: I = V_in/(R1 + R2).",
+    "The p.d. across R2 is V_out = IR2 = R2/(R1 + R2) × V_in.",
+    "Dividing the two p.d.s: V1/V2 = IR1/IR2 = R1/R2; the current cancels, so only the ratio matters.",
+    "If R2 falls (an LDR in light, a thermistor warming), its share R2/(R1 + R2) falls and V1 = V_in − V2 rises.",
+    "Working backwards: given V_out, find the p.d. across the other resistor (V_in − V_out), then use the ratio to find the unknown resistance.",
+    "Loading: anything connected across the output is in parallel with R2, which lowers the effective R2 and so lowers V_out."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "The p.d. across the sensor stays the same because it is connected to the same supply.",
+     "right": "The supply p.d. is shared; when the sensor's resistance changes, its share changes and the other resistor's share changes the opposite way."
+    },
+    {
+     "wrong": "Any fixed resistor will do in a sensor circuit.",
+     "right": "With a very large fixed resistor, almost all the p.d. is across it and the output barely changes; pick a value comparable to the sensor's resistance in the working range."
+    },
+    {
+     "wrong": "The output p.d. varies linearly as a slider moves along a wire in a loaded circuit.",
+     "right": "When the wire is in parallel with a resistor, the combined resistance changes non-linearly, so the sketch is a curve of decreasing gradient."
+    },
+    {
+     "wrong": "You can explain a divider just by saying 'the voltmeter reading increases'.",
+     "right": "Each link scores: sensor resistance changes, its share of p.d. changes, so the other resistor's p.d. (the voltmeter) changes."
+    }
+   ],
+   "sim": "divider",
+   "sim_guide": "Set a fixed resistor and an LDR or thermistor, then change the light or temperature and watch both p.d.s move in opposite directions while their sum stays at the supply value. Try a fixed resistor 100 times larger than the sensor and notice how little the output now changes. Find the fixed value that gives the biggest swing over your chosen range.",
+   "exam_shapes": [
+    {
+     "shape": "Output p.d. from the resistance ratio",
+     "moves": [
+      "ratio"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "3(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "4(c)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "4(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "10"
+      }
+     ]
+    },
+    {
+     "shape": "Find sensor resistance from a measured p.d.",
+     "moves": [
+      "rearrange",
+      "show-that"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "3(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "4(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "23(c)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Explain how the output changes with light or temperature",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "4(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "4(c)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "23(c)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "9"
+      }
+     ]
+    },
+    {
+     "shape": "Judge whether a fixed resistor value gives a useful output",
+     "moves": [
+      "evaluate"
+     ],
+     "marks_typical": "2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "3(b)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "6"
+      }
+     ]
+    },
+    {
+     "shape": "Design an LDR sensor circuit with values (six-mark)",
+     "moves": [
+      "plan"
+     ],
+     "marks_typical": "6",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "6"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "5(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Sliding contacts and loaded dividers: sketch or explain V against position",
+     "moves": [
+      "graph-draw",
+      "explain-chain"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "25(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "25(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "9"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "23(b)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Same current, so p.d. shares follow resistance.",
+     "write": "Use V_out = R2/(R1 + R2) × V_in or V1/V2 = R1/R2; say which resistor the output is across."
+    },
+    {
+     "understand": "Sensor resistance falls in light/heat.",
+     "write": "Chain: light intensity (temperature) increases → LDR (thermistor) resistance decreases → it takes a smaller share of the p.d. (or total resistance falls, current rises) → p.d. across the fixed resistor increases."
+    },
+    {
+     "understand": "Shares always add to the supply.",
+     "write": "p.d. across the other resistor = V_in − V_out; quote it as a number before using the ratio."
+    },
+    {
+     "understand": "A huge fixed resistor swamps the sensor.",
+     "write": "Most of the p.d. is across the large fixed resistor, so the voltmeter reading changes very little over the range; support with numbers at each end of the range."
+    },
+    {
+     "understand": "Design answers need a working circuit.",
+     "write": "Draw correct symbols for LDR/thermistor and fixed resistor in series with the supply, voltmeter across the component named, and justify the resistor value with a calculation."
+    },
+    {
+     "understand": "Use the data you are given.",
+     "write": "When graphs are supplied, read the sensor resistance at the stated condition and compute the actual output p.d.; compare it with the threshold explicitly."
+    }
+   ],
+   "traps": [
+    "Using the whole supply p.d. across one part instead of the difference between readings.",
+    "Putting the voltmeter across the wrong component or drawing a home-made sensor symbol in a design question.",
+    "Sketching a straight line for p.d. against slider position when the loaded divider gives a curve.",
+    "Describing the sensor behaviour qualitatively when graphs are given and the question wants a calculated p.d.",
+    "Jumping from 'resistance falls' straight to the final reading without the p.d.-share step."
+   ],
+   "stats": {
+    "parts": 21,
+    "marks": 59,
+    "sessions": 8
+   }
+  },
+  {
+   "id": "c-waves",
+   "title": "Progressive waves and wave terms",
+   "module": 4,
+   "principle": "The wave model: a progressive wave carries energy from place to place by passing an oscillation along, without carrying the medium with it; one wavelength passes each period, so v = fλ.",
+   "spec": [
+    "4.4.1(a)",
+    "4.4.1(b)(i)",
+    "4.4.1(b)(ii)",
+    "4.4.1(c)",
+    "4.4.1(d)",
+    "4.4.1(e)",
+    "4.4.1(f)(i)",
+    "4.4.1(f)(ii)",
+    "4.4.1(g)"
+   ],
+   "idea": [
+    "Watch a cork on a pond as ripples pass. It bobs up and down but goes nowhere; the energy travels outward while the water stays put. That is the core of a progressive wave. In a transverse wave the particles oscillate at right angles to the direction the energy travels (ripples, waves on a string, all EM waves). In a longitudinal wave they oscillate along that direction, bunching into compressions and spreading into rarefactions (sound).",
+    "The vocabulary is about one oscillation and how it is shared out along the wave. Displacement is how far a point is from rest right now; amplitude is the maximum displacement. The period T is the time for one oscillation and frequency f = 1/T is oscillations per second. Wavelength is the distance between neighbouring points that move in step. Phase difference compares two points (or two waves): how far apart in the cycle they are, as an angle.",
+    "Since one full wavelength passes a point in one period, the wave moves λ in time T, so v = λ/T = fλ. When a wave enters a new medium the source still sets the frequency, so it is the speed and the wavelength that change together.",
+    "Intensity is power arriving per square metre. The energy of an oscillation goes as amplitude squared, so intensity ∝ amplitude^2: double the amplitude, four times the intensity. As waves spread out, the power is shared over a larger area, so intensity and amplitude fall."
+   ],
+   "buildup": [
+    "A point on the wave completes one oscillation in time T, so f = 1/T.",
+    "In that time the disturbance moves forward exactly one wavelength, so v = λ/T = fλ.",
+    "Phase difference between two points a distance x apart along the wave is φ = (x/λ) × 360° = (x/λ) × 2π rad; points λ/2 apart are in antiphase (π).",
+    "Intensity I = P/A. For a point source in 3D, A = 4πr^2; for circular ripples the energy spreads round a circle, so intensity falls like 1/r, not 1/r^2.",
+    "Oscillation energy ∝ amplitude^2, so I ∝ A^2 and A ∝ √I: a quarter of the intensity means half the amplitude.",
+    "Diffraction is most noticeable when the gap is similar in size to the wavelength, so 3 cm gaps diffract microwaves strongly but barely affect light."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "The particles move along with the wave.",
+     "right": "Particles oscillate about fixed positions; only energy (and the waveform) travels. Use 'oscillate' or 'vibrate', not 'move'."
+    },
+    {
+     "wrong": "Halving the intensity halves the amplitude.",
+     "right": "Intensity ∝ amplitude^2, so amplitude changes by the square root of the intensity factor."
+    },
+    {
+     "wrong": "Phase difference is how far through its cycle a point is.",
+     "right": "Phase difference always compares two points or two waves and is an angle (degrees or radians)."
+    },
+    {
+     "wrong": "When a wave enters a slower medium its frequency changes.",
+     "right": "The frequency is set by the source and stays the same; the speed and the wavelength both fall."
+    },
+    {
+     "wrong": "Ripples spreading out obey the inverse-square law.",
+     "right": "Ripples spread over a circle, so intensity falls roughly as 1/r; adding 1/r^2 contradicts a correct answer and loses the mark."
+    }
+   ],
+   "sim": "wave",
+   "sim_guide": "Switch between transverse and longitudinal modes and follow one marked particle: it oscillates about a fixed point. Change frequency at fixed speed and watch the wavelength shrink so that fλ stays constant. Place two markers half a wavelength apart and see them move in antiphase; double the amplitude and note the intensity reading quadruples.",
+   "exam_shapes": [
+    {
+     "shape": "Use v = fλ and f = 1/T, with prefix conversions",
+     "moves": [
+      "units",
+      "rearrange"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "1(b)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "26(a)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "5(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "24(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "1(c)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Find frequency from an oscilloscope trace and time-base",
+     "moves": [
+      "graph-read",
+      "units"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "1(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "25(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "5"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "1(c)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "6(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Read amplitude, wavelength, phase difference from wave graphs",
+     "moves": [
+      "graph-read"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "5(a)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "5(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "5(a)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "15"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "12"
+      }
+     ]
+    },
+    {
+     "shape": "Intensity with I = P/A and I ∝ amplitude²",
+     "moves": [
+      "ratio",
+      "chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "1(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "5(a)(iv)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "26(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "20"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "25(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "27(b)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Describe transverse and longitudinal waves; compressions and rarefactions",
+     "moves": [
+      "definition"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "1(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "1(a)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "22(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "5(a)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Explain diffraction through a gap comparable to wavelength",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "26(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "25(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "8"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Energy travels, the medium stays.",
+     "write": "A progressive wave transfers energy without transferring matter (the medium)."
+    },
+    {
+     "understand": "Direction of oscillation decides the type.",
+     "write": "Transverse: oscillations perpendicular to the direction of energy transfer. Longitudinal: oscillations parallel to it. Say 'oscillate/vibrate', not 'move'."
+    },
+    {
+     "understand": "Compressions are crowding, not bigger amplitude.",
+     "write": "Molecules oscillate parallel to the energy transfer, producing regions where they are closer together (compressions, higher pressure) and further apart (rarefactions)."
+    },
+    {
+     "understand": "Period from the screen, frequency from period.",
+     "write": "Count the divisions for one cycle, multiply by the time-base setting to get T, then f = 1/T; never mention wavelength for an oscilloscope trace."
+    },
+    {
+     "understand": "Phase is an angle between two points.",
+     "write": "Phase difference = (fraction of a wavelength) × 2π rad; give the answer as an angle, not in wavelengths."
+    },
+    {
+     "understand": "Intensity goes with amplitude squared.",
+     "write": "State I ∝ A^2 explicitly, then square the amplitude ratio (2.4 becomes 5.8, not 2.4)."
+    },
+    {
+     "understand": "Spreading weakens the wave.",
+     "write": "As the wave spreads, the same power is spread over a larger area so intensity decreases and amplitude decreases; use 'amplitude', not 'displacement'."
+    },
+    {
+     "understand": "Diffraction depends on gap versus wavelength.",
+     "write": "Describe the spreading after the gap and give the condition: gap width similar to the wavelength. Repeating 'it diffracts' from the stem earns nothing."
+    }
+   ],
+   "traps": [
+    "Reading a period in ms and writing f without converting (0.25 instead of 250 Hz).",
+    "Giving an amplitude ratio when an intensity ratio was asked (forgetting to square).",
+    "Saying particles 'move' perpendicular or parallel instead of 'oscillate'.",
+    "Drawing triangular or single-cycle waves in sketch questions; marks need a sinusoid with the right amplitude and period over at least two cycles.",
+    "Using an undefined symbol (e.g. 'A decreases') in an explanation."
+   ],
+   "stats": {
+    "parts": 80,
+    "marks": 142,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-em-light",
+   "title": "EM waves, polarisation, refraction and total internal reflection",
+   "module": 4,
+   "principle": "The wave model applied to light: EM waves are transverse oscillations of electric and magnetic fields that all travel at c in a vacuum; refraction follows from the wave slowing in a medium while its frequency stays fixed.",
+   "spec": [
+    "4.4.1(f)(iii)",
+    "4.4.2(a)",
+    "4.4.2(b)",
+    "4.4.2(c)",
+    "4.4.2(d)",
+    "4.4.2(d)(ii)",
+    "4.4.2(e)"
+   ],
+   "idea": [
+    "Radio waves, microwaves, infrared, visible, ultraviolet, X-rays and gamma rays are the same kind of wave, an oscillating electric and magnetic field, differing only in wavelength. All travel at 3.0 × 10^8 m s^-1 in a vacuum. Useful anchors: radio metres and longer, microwaves around centimetres, infrared micrometres, visible 400 to 700 nm, ultraviolet down to about 10 nm, X-rays and gamma rays around 10^-10 m and below.",
+    "Because EM waves are transverse, the oscillation has a direction across the beam. Plane polarised means the oscillations are all in one plane. A polarising filter, or a metal grille for microwaves, only passes the component along one direction. Two crossed filters give darkness; rotating one through 360° gives two bright and two dark positions. Sound cannot be polarised because it is longitudinal.",
+    "Light slows down in glass or water. The refractive index n = c/v says by how much. Since the frequency cannot change at the boundary, the wavelength shrinks by the same factor. One side of a wavefront entering the slower medium at an angle slows first, so the front swings round and the ray bends towards the normal; leaving, it bends away.",
+    "Going from high n to low n, the ray bends away from the normal, and at the critical angle C the refracted ray skims along the surface at 90°. Any larger angle of incidence and no light can escape: total internal reflection. It needs both conditions: travelling towards a lower refractive index, and an angle of incidence greater than C. That is how optical fibres keep light inside."
+   ],
+   "buildup": [
+    "Refractive index of a material: n = c/v, where c is the speed of light in a vacuum and v the speed in the material.",
+    "Frequency is fixed at the boundary, so λ = v/f falls in the same ratio: λ_medium = λ_vacuum/n.",
+    "Applying the wave geometry to a wavefront crossing the boundary gives n1 sin θ1 = n2 sin θ2, with angles measured from the normal.",
+    "Critical angle: set θ2 = 90° for light going from n1 into n2 (n1 > n2): sin C = n2/n1, which for air (n2 = 1) is sin C = 1/n.",
+    "If the angle of incidence exceeds C at that surface, sin θ2 would have to exceed 1, so there is no refracted ray: total internal reflection.",
+    "Polarisation: a filter passes only the component of the oscillation along its axis, so the transmitted intensity varies from maximum (aligned) to near zero (at 90°) twice per rotation."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "In n = c/v, c is the speed of light in air.",
+     "right": "c is the speed of light in a vacuum; mention light, and define every symbol."
+    },
+    {
+     "wrong": "The critical angle is the minimum angle for TIR.",
+     "right": "Define it from the refracted ray: the angle of incidence (in the denser medium) for which the angle of refraction is 90°."
+    },
+    {
+     "wrong": "TIR fails just because the angle is below the critical angle.",
+     "right": "When light travels into a material of higher refractive index TIR is impossible at any angle."
+    },
+    {
+     "wrong": "A plane polarised wave travels in one plane.",
+     "right": "The oscillations are confined to one plane (and perpendicular to the direction of energy transfer); the wave's travel is not the point."
+    },
+    {
+     "wrong": "Under TIR the angle of refraction is zero.",
+     "right": "There is no refracted ray at all; zero would mean a ray straight along the normal."
+    }
+   ],
+   "sim": "refraction",
+   "sim_guide": "Send a ray from glass into air and slowly increase the angle of incidence: watch the refracted ray swing towards the surface, reach 90° at the critical angle, then vanish as all light reflects. Swap to glass-into-water and notice the critical angle grows. Reverse the direction (air into glass) and confirm no angle ever gives TIR.",
+   "exam_shapes": [
+    {
+     "shape": "Snell's law calculation at a boundary (angles from the normal)",
+     "moves": [
+      "rearrange"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "8(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "2(b)(i)2"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "3"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "20"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "25(b)(ii)2"
+      }
+     ]
+    },
+    {
+     "shape": "Speed and wavelength in a medium; frequency unchanged",
+     "moves": [
+      "chain",
+      "recall-fact"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "26(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "2(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "8(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "7(c)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "25(b)(ii)1"
+      }
+     ]
+    },
+    {
+     "shape": "Critical angle and showing that TIR occurs",
+     "moves": [
+      "show-that",
+      "rearrange"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "5(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "5(b)(iv)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "22(c)(iii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "5(d)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "5"
+      }
+     ]
+    },
+    {
+     "shape": "Draw ray paths through blocks and into other media",
+     "moves": [
+      "graph-draw"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "8(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "5(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "5(d)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "5(b)(v)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "2(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Ray-box practical for refractive index or critical angle",
+     "moves": [
+      "plan"
+     ],
+     "marks_typical": "3–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "26(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "24(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "22(c)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "5(b)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Polarisation: meaning, filters and grilles, intensity against angle",
+     "moves": [
+      "definition",
+      "graph-draw"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "25(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "25(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "7(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "4"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "13"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "n compares light's speed with its vacuum speed.",
+     "write": "Refractive index = speed of light in a vacuum ÷ speed of light in the material (n = c/v, with c and v defined)."
+    },
+    {
+     "understand": "Frequency is locked by the source.",
+     "write": "In words: speed of light is smaller in water, frequency is the same, so wavelength is smaller (λ = v/f). Bare symbols are not credited."
+    },
+    {
+     "understand": "Critical angle is where refraction just stops.",
+     "write": "Critical angle: the angle of incidence at which the angle of refraction is 90°; sin C = 1/n."
+    },
+    {
+     "understand": "TIR needs the right direction and a big enough angle.",
+     "write": "Show the angle of incidence at the surface where TIR happens is greater than C (e.g. 60° > 41°), and state that light is going into the lower refractive index."
+    },
+    {
+     "understand": "Angles live at the normal.",
+     "write": "Draw the normal at the point of incidence and mark angles between ray and normal; convert any angle given to the surface (90° − angle)."
+    },
+    {
+     "understand": "Polarised means one plane of oscillation.",
+     "write": "Plane polarised: oscillations (of the electric field) are in one plane only, perpendicular to the direction of energy transfer; give the oscillation reason when saying a wave is or is not polarised."
+    },
+    {
+     "understand": "A filter passes one component.",
+     "write": "Intensity sketch against rotation angle: smooth curve, maxima 180° apart, near-zero minima at 90° and 270°; the microwaves from the transmitter are already polarised."
+    },
+    {
+     "understand": "Know the spectrum by orders of magnitude.",
+     "write": "Microwaves ~10^-2 m, visible ~5 × 10^-7 m, UV ~10^-8 m, X-rays ~10^-10 m; all EM waves travel at the same speed, 3.0 × 10^8 m s^-1, in a vacuum."
+    }
+   ],
+   "traps": [
+    "Using the angle between the ray and the surface in Snell's law, or inverting the ratio for light leaving glass.",
+    "Comparing the wrong angle with C (e.g. the angle at the first face) when justifying TIR.",
+    "Describing a lab method with Snell's law calculations or n = c/v instead of measured angles; 'a ray of light' is not apparatus, name a ray box or laser.",
+    "Drawing the emergent ray parallel to the incident ray when the second medium differs, or freehand rays.",
+    "Writing 'both travel at c' without saying 'the same speed' or giving the value."
+   ],
+   "stats": {
+    "parts": 64,
+    "marks": 103,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-superposition",
+   "title": "Superposition, interference and coherence",
+   "module": 4,
+   "principle": "The principle of superposition: where waves overlap, the displacement at each point and instant is the sum of the individual displacements. Interference patterns are just this rule applied where the phase difference stays steady.",
+   "spec": [
+    "4.4.3(a)(i)",
+    "4.4.3(a)(ii)",
+    "4.4.3(b)",
+    "4.4.3(c)",
+    "4.4.3(d)",
+    "4.4.3(e)",
+    "4.4.3(f)",
+    "4.4.3(g)(i)",
+    "4.4.3(g)(ii)"
+   ],
+   "idea": [
+    "Two waves passing through the same place do not bounce off each other; at every instant the medium simply takes the sum of the two displacements, then each wave carries on unchanged. Crest on crest makes a bigger crest; crest on trough makes them cancel, completely if the amplitudes match, partly if they do not.",
+    "For a pattern you can actually see, the relationship between the waves must hold still. That is coherence: a constant phase difference, which in practice needs the same frequency and a fixed link between the sources (one signal generator driving two speakers, one laser lighting two slits). Two separate light bulbs keep changing their phase relationship, so any pattern flickers away too fast to see.",
+    "What decides whether a point is loud or quiet, bright or dark, is the path difference: how much further one wave travelled than the other. If the extra distance is a whole number of wavelengths the waves arrive in phase and reinforce. If it is an odd number of half wavelengths they arrive in antiphase and cancel. Converting to an angle, phase difference = (path difference/λ) × 2π.",
+    "In Young's double slit, the path difference to the screen changes steadily as you move sideways, so bright and dark fringes alternate. Geometry gives fringe spacing x = λD/a: longer wavelength or a more distant screen spreads the fringes; wider slit spacing squeezes them. Because the numbers are tiny, you measure across many fringes and divide."
+   ],
+   "buildup": [
+    "Superposition: y_total = y1 + y2 at each point and instant (displacements, with sign).",
+    "If both sources are in phase, the phase difference at a point comes only from the path difference Δ: φ = 2πΔ/λ.",
+    "Constructive (maximum) when Δ = nλ, so φ = 2πn; destructive (minimum) when Δ = (n + ½)λ, so φ = (2n + 1)π.",
+    "For two slits a apart and a screen at distance D (a ≪ D), the path difference at a point x from the centre is about ax/D.",
+    "Setting ax/D = λ for the first bright fringe gives fringe spacing x = λD/a, so λ = ax/D.",
+    "Intensity at a point goes with the resultant amplitude squared: two equal waves in phase give twice the amplitude and four times the intensity of one."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Coherent waves are waves that are in phase, or have the same frequency.",
+     "right": "Coherent means a constant phase difference; 'same', 'zero' or 'in phase' are not accepted."
+    },
+    {
+     "wrong": "Superposition means the resultant amplitude is the sum of the amplitudes.",
+     "right": "It is the instantaneous displacements that add, at a given point."
+    },
+    {
+     "wrong": "Waves in antiphase always cancel to zero.",
+     "right": "Only if the amplitudes are equal; otherwise the point oscillates with a smaller, non-zero amplitude."
+    },
+    {
+     "wrong": "Path difference and phase difference are interchangeable.",
+     "right": "Path difference is a distance (e.g. 1.5λ); phase difference is an angle (e.g. π rad). Mixing the units is rejected."
+    },
+    {
+     "wrong": "Interference is when waves meet or combine.",
+     "right": "Interference is the superposition of coherent waves; 'meet', 'combine' or 'interact' are not accepted substitutes."
+    }
+   ],
+   "sim": "interference",
+   "sim_guide": "Move the probe across the pattern and read the path difference: check that maxima sit at whole wavelengths and minima at half-wavelength offsets. Increase the source separation and watch the fringes crowd together; increase the wavelength and watch them spread. Make one source weaker and notice the minima stop being completely dark.",
+   "exam_shapes": [
+    {
+     "shape": "Define superposition, coherence or interference",
+     "moves": [
+      "definition"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "27(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "2(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "25(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "25(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "5(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Decide constructive or destructive at a point from given distances",
+     "moves": [
+      "chain",
+      "explain-chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "25(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "25(b)(iii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "5(c)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "11"
+      }
+     ]
+    },
+    {
+     "shape": "Convert path difference to phase difference in radians",
+     "moves": [
+      "units",
+      "chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "5(c)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "1(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "6"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "1(b)(iii)"
+      }
+     ]
+    },
+    {
+     "shape": "Young's slits: λ = ax/D with fringes counted",
+     "moves": [
+      "rearrange",
+      "units"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "5(b)(ii)1"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "13"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "7(b)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "25(c)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "2(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Explain bright and dark fringes or maxima and minima",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "25(c)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "5(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "27(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "25(b)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Two-source interference practical or data analysis (six-mark)",
+     "moves": [
+      "plan",
+      "chain"
+     ],
+     "marks_typical": "2–6",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "5(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "8"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "7(b)(ii)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Displacements add, point by point.",
+     "write": "Principle of superposition: when two waves meet at a point, the resultant displacement equals the sum of the individual displacements."
+    },
+    {
+     "understand": "A steady relationship lets a pattern form.",
+     "write": "Coherent: constant phase difference (between the waves / sources)."
+    },
+    {
+     "understand": "Interference needs both superposition and coherence.",
+     "write": "Interference: superposition of coherent waves producing regions of maxima and minima."
+    },
+    {
+     "understand": "Use the actual distances.",
+     "write": "Calculate this point's path difference and express it in wavelengths (e.g. 17 cm = 0.5λ), then conclude destructive; a bare general formula is rejected."
+    },
+    {
+     "understand": "Link each kind of interference to what you see.",
+     "write": "Bright fringe/maximum: constructive, path difference nλ (in phase). Dark fringe/minimum: destructive, path difference (n + ½)λ (antiphase)."
+    },
+    {
+     "understand": "Phase is the angle version of path.",
+     "write": "φ = (Δ/λ) × 2π, stated in radians (e.g. 2.25λ gives π/2 or 9π/2 rad)."
+    },
+    {
+     "understand": "Measure many fringes, divide.",
+     "write": "Fringe width x = total width ÷ number of spacings (not number of fringes), measured with callipers; then λ = ax/D in metres."
+    }
+   ],
+   "traps": [
+    "Using 9 mm across six spacings as one fringe width instead of dividing by 6.",
+    "Writing phase difference where path difference is asked (or λ/2 as a 'phase').",
+    "Saying 'constructive and destructive interference' without linking each to the maxima or minima.",
+    "Claiming minima should be zero when the two waves have unequal amplitudes (e.g. a direct and a reflected microwave).",
+    "In a sound-interference practical, describing a light double-slit set-up, or omitting how frequency is measured."
+   ],
+   "stats": {
+    "parts": 46,
+    "marks": 82,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-stationary",
+   "title": "Stationary waves",
+   "module": 4,
+   "principle": "The principle of superposition applied to two progressive waves of the same frequency and amplitude travelling in opposite directions, usually a wave and its own reflection.",
+   "spec": [
+    "4.4.4(a)",
+    "4.4.4(b)",
+    "4.4.4(c)",
+    "4.4.4(d)",
+    "4.4.4(e)(i)",
+    "4.4.4(e)(ii)",
+    "4.4.4(f)",
+    "4.4.4(g)"
+   ],
+   "idea": [
+    "Send a wave down a string and let it reflect from the fixed end. Now two identical waves are travelling through each other in opposite directions. At some points they always arrive in antiphase and cancel: these nodes never move. Halfway between, they always reinforce, giving antinodes that swing with the largest amplitude. The pattern stays in place, which is why it is called stationary.",
+    "The physics is very different from a progressive wave. In a progressive wave every point has the same amplitude and the phase changes steadily along the wave, and energy flows along it. In a stationary wave the amplitude varies from zero at nodes to a maximum at antinodes; all points between two neighbouring nodes move in phase, points in adjacent loops move in antiphase, and there is no net transfer of energy along the wave.",
+    "Only certain frequencies fit. The ends set the rules: a fixed end of a string or the closed end of a pipe must be a node; an open end of a pipe is an antinode. A string fixed at both ends or a pipe open at both ends can hold a half wavelength, a whole wavelength, one and a half, and so on. A pipe closed at one end can only hold a quarter, three quarters, five quarters: only odd harmonics.",
+    "The handy measuring fact is that adjacent nodes (or antinodes) are half a wavelength apart. Measure the node spacing, double it, multiply by the frequency, and you have the speed of the progressive waves. In a microwave oven the antinodes are the hot spots, which is why food is turned."
+   ],
+   "buildup": [
+    "Two waves of equal frequency and amplitude travel in opposite directions; superpose them at every point.",
+    "Where the path the two waves have travelled differs by a whole number of wavelengths they reinforce: antinode. Where it differs by an odd number of half wavelengths they cancel: node.",
+    "Moving a distance x shifts one wave's phase by +2πx/λ and the other's by −2πx/λ, so the relative phase changes by 4πx/λ; it repeats every λ/2. So adjacent nodes are λ/2 apart.",
+    "String or open pipe of length L with matching ends: L = nλ/2, so f_n = nv/(2L), with all harmonics n = 1, 2, 3...",
+    "Pipe closed at one end: node at the closed end, antinode at the open end, so L = λ/4, 3λ/4, ...; f = v/(4L), 3v/(4L), ... (odd harmonics only).",
+    "Resonance tube: successive resonance lengths differ by λ/2, so v = 2f × (difference in lengths), which avoids needing to know the end correction."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "One loop of a stationary wave is a whole wavelength.",
+     "right": "One loop (node to node) is half a wavelength, so λ = 2 × node spacing."
+    },
+    {
+     "wrong": "A stationary wave forms 'because of resonance' or 'because the waves don't move'.",
+     "right": "It forms when a wave reflects and the incident and reflected waves (same frequency, opposite directions) superpose, giving fixed nodes and antinodes."
+    },
+    {
+     "wrong": "Points in adjacent loops are π/2 out of phase.",
+     "right": "All points within a loop are in phase; points in adjacent loops are in antiphase (π)."
+    },
+    {
+     "wrong": "The next resonance of a closed pipe is twice the fundamental.",
+     "right": "A closed pipe has only odd harmonics, so the next one is three times the fundamental."
+    },
+    {
+     "wrong": "Nodes always have exactly zero amplitude.",
+     "right": "If the reflected wave is weaker than the incident one, cancellation is incomplete; nodes get closer to zero near the reflector, where the two amplitudes are more nearly equal."
+    }
+   ],
+   "sim": "stationary",
+   "sim_guide": "Run the incident and reflected waves separately, then together, and watch nodes appear where they always cancel. Step the frequency up through the harmonics and measure the node spacing each time; check that it is always λ/2. Switch between open and closed pipe ends and see which harmonics are missing for the closed pipe.",
+   "exam_shapes": [
+    {
+     "shape": "Explain how a stationary wave forms, with nodes and antinodes",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "26(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "22(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "23(c)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "6(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Wavelength from node spacing or loop count, then speed or frequency",
+     "moves": [
+      "chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "22(b)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "14"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "24(b)(ii)1"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "26(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "19"
+      }
+     ]
+    },
+    {
+     "shape": "Open and closed pipes: fundamental and next harmonic",
+     "moves": [
+      "recall-fact",
+      "chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "18"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "6(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "6(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "5"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "20"
+      }
+     ]
+    },
+    {
+     "shape": "Compare stationary and progressive waves",
+     "moves": [
+      "recall-fact"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "6(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "6"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "6"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "24(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Speed of sound from resonance lengths or a graph (incl. six-mark)",
+     "moves": [
+      "linearise",
+      "plan"
+     ],
+     "marks_typical": "2–6",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "6(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "7"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "6(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "24(b)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Apply nodes and antinodes: non-zero nodes, hot spots, microwave maxima",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "2–6",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "22(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "23(c)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "7(a)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "A wave meets its own reflection.",
+     "write": "Wave reflects (at the fixed end/wall/reflector); incident and reflected waves of the same frequency travel in opposite directions and superpose (interfere)."
+    },
+    {
+     "understand": "Nodes are where they always cancel.",
+     "write": "Node: zero amplitude (destructive interference, waves in antiphase). Antinode: maximum amplitude (constructive). Name both and say which is which."
+    },
+    {
+     "understand": "Spacing between nodes is half a wavelength.",
+     "write": "λ = 2 × (distance between adjacent nodes); then v = fλ."
+    },
+    {
+     "understand": "Ends set the pattern.",
+     "write": "Closed end: node; open end: antinode. Label N and A on any sketch; closed pipe fundamental L = λ/4, open pipe L = λ/2."
+    },
+    {
+     "understand": "Stationary differs from progressive on three counts.",
+     "write": "Compare directly: stationary has no net energy transfer, amplitude varies with position (nodes/antinodes), points between nodes in phase; progressive transfers energy, constant amplitude, phase varies along the wave."
+    },
+    {
+     "understand": "Successive resonances are half a wavelength apart.",
+     "write": "Difference between successive resonance lengths = λ/2, so v = 2fΔL; quote the reasoning, not just the number."
+    },
+    {
+     "understand": "Oven hot spots are antinodes.",
+     "write": "Microwaves reflect from the metal walls and superpose; at antinodes the amplitude (and energy transfer) is maximum so food heats most; at nodes it is minimum."
+    }
+   ],
+   "traps": [
+    "Taking node spacing or one loop as a whole wavelength (halves the speed).",
+    "Treating the gap between a maximum and the next minimum as λ/2 (it is λ/4).",
+    "Giving 2 × fundamental for the next closed-pipe harmonic.",
+    "Describing stationary waves with 'the waves don't move' or 'super-impose' instead of reflection plus superposition.",
+    "Sketching the envelope correctly but forgetting to label the nodes and antinodes."
+   ],
+   "stats": {
+    "parts": 31,
+    "marks": 69,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-photons",
+   "title": "Photons, LEDs and the Planck constant",
+   "module": 4,
+   "principle": "The photon model: electromagnetic energy is emitted and absorbed in indivisible packets of size hf, so the energy of each packet is set by the frequency alone, and power is just (energy per photon) × (photons per second).",
+   "spec": [
+    "4.5.1(a)",
+    "4.5.1(b)",
+    "4.5.1(c)",
+    "4.5.1(d)",
+    "4.5.1(e)(i)",
+    "4.5.1(e)(ii)"
+   ],
+   "idea": [
+    "A light beam is not a smooth stream of energy that can be delivered in any amount. It arrives in packets, photons, each carrying E = hf = hc/λ. Blue photons carry more energy than red ones; ultraviolet more still; a single X-ray photon carries as much as tens of thousands of visible ones.",
+    "Brightness and colour are separate dials. The colour (frequency) sets the size of each packet. The intensity (power) sets how many packets arrive per second. Double the intensity of an LED and you double the photon rate, but every photon is exactly as energetic as before.",
+    "Photon energies are tiny in joules (around 10^-19 J for visible light), so atomic physics uses the electronvolt: the energy one electron gains crossing 1 V, 1.6 × 10^-19 J. Visible photons are about 1.8 to 3 eV.",
+    "An LED shows the photon idea running backwards. Each electron crossing the junction can give up at most eV of energy, and an LED only starts emitting when that is enough to make one photon of its colour. So at the threshold p.d. eV ≈ hc/λ. Measure threshold p.d. for several colours, plot V against 1/λ (or f), and the gradient gives h."
+   ],
+   "buildup": [
+    "Photon energy: E = hf, and with c = fλ, E = hc/λ.",
+    "Energy in eV: E(eV) = E(J)/(1.6 × 10^-19). 1 eV = 1.6 × 10^-19 J.",
+    "A source of power P emitting photons of energy E sends out N = P/E photons per second; doubling P doubles N, not E.",
+    "In an LED at threshold, the energy an electron transfers equals one photon's energy: eV = hc/λ.",
+    "Rearranged: V = (hc/e)(1/λ) or V = (h/e)f. A graph of V against 1/λ has gradient hc/e; against f, gradient h/e. So h = e × gradient (or e × gradient / c).",
+    "To compare photon rates from LEDs of equal power, compute each photon energy: the bluer LED, with bigger photons, emits fewer per second."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Brighter light means more energetic photons.",
+     "right": "Intensity changes the number of photons per second; photon energy depends only on frequency."
+    },
+    {
+     "wrong": "Photons per second = power ÷ 1.6 × 10^-19.",
+     "right": "Divide the power by the energy of one photon, E = hc/λ, in joules."
+    },
+    {
+     "wrong": "hf means h is the Planck constant and f is frequency.",
+     "right": "That only names symbols; hf is the energy of a single photon."
+    },
+    {
+     "wrong": "Increase the p.d. until the LED lights, and that's the threshold.",
+     "right": "You need the p.d. at which emission just starts, judged with ambient light excluded (tube or darkened room), with correct polarity and fine adjustment."
+    },
+    {
+     "wrong": "A gradient can be found from one point on the line.",
+     "right": "Use a large triangle on the best-fit line; a single data pair is not a gradient."
+    }
+   ],
+   "sim": "photoelectric",
+   "sim_guide": "Keep the intensity fixed and step the wavelength from red to ultraviolet: read the photon energy in eV each time and check it against hc/λ. Then fix the wavelength and raise the intensity: the photon count per second rises but the energy per photon display does not move.",
+   "exam_shapes": [
+    {
+     "shape": "Photon energy from wavelength or frequency, in J and eV",
+     "moves": [
+      "units",
+      "chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "27(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "28(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "8(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "16"
+      }
+     ]
+    },
+    {
+     "shape": "Photons per second from power and wavelength",
+     "moves": [
+      "chain"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "27(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "28(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "5(c)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "7(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "26(d)"
+      }
+     ]
+    },
+    {
+     "shape": "Planck constant from LED threshold p.d. against frequency or 1/λ",
+     "moves": [
+      "linearise",
+      "graph-read"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "26(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "7(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "10"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "12"
+      }
+     ]
+    },
+    {
+     "shape": "LED threshold practical: judging onset accurately (incl. six-mark)",
+     "moves": [
+      "plan",
+      "uncertainty"
+     ],
+     "marks_typical": "2–6",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "23(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "26(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "7(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "8"
+      }
+     ]
+    },
+    {
+     "shape": "Intensity changes photon number, not photon energy",
+     "moves": [
+      "recall-fact",
+      "explain-chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "26(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "11"
+      }
+     ]
+    },
+    {
+     "shape": "Estimate photon numbers across energy scales",
+     "moves": [
+      "estimate"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "24(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "27(b)(iii)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Light comes in packets.",
+     "write": "Photon: a quantum (discrete packet) of energy of electromagnetic radiation."
+    },
+    {
+     "understand": "Packet size is set by frequency.",
+     "write": "Energy of a photon E = hf = hc/λ; hf is the energy of one photon (do not just name the symbols)."
+    },
+    {
+     "understand": "Power is packets per second times packet size.",
+     "write": "First find E = hc/λ, then number per second = power (in W) ÷ E."
+    },
+    {
+     "understand": "Electronvolt is one electron through one volt.",
+     "write": "1 eV = 1.6 × 10^-19 J; convert every energy to the same unit before comparing or subtracting."
+    },
+    {
+     "understand": "Brightness does not change the packet.",
+     "write": "Doubling intensity doubles the number of photons per second; the energy of each photon is unchanged because the frequency is unchanged."
+    },
+    {
+     "understand": "At LED threshold one electron makes one photon.",
+     "write": "eV = hc/λ; for a graph of V against f, gradient = h/e so h = gradient × e; use a large gradient triangle and include the powers of ten on the axes."
+    },
+    {
+     "understand": "Make the faint onset visible.",
+     "write": "Use a variable supply/potentiometer, voltmeter across the LED, and a black tube or darkened room so the p.d. at which the LED just lights can be judged; repeat for each colour."
+    }
+   ],
+   "traps": [
+    "Dividing the power by e (1.6 × 10^-19) or by the wavelength instead of by the photon energy.",
+    "Dropping the 10^14 on a frequency axis, or using a small gradient triangle.",
+    "Using the textbook value of h in a later step when the question wants your measured gradient.",
+    "Writing 'repeat and average' as the only improvement in an LED method; describe how the onset is judged.",
+    "Converting the photon energy to eV mid-calculation and then dividing a power in W by it."
+   ],
+   "stats": {
+    "parts": 41,
+    "marks": 87,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-photoelectric",
+   "title": "The photoelectric effect",
+   "module": 4,
+   "principle": "The photon model plus conservation of energy for a single interaction: one photon gives all its energy hf to one surface electron, which spends at least φ escaping and keeps the rest as kinetic energy.",
+   "spec": [
+    "4.5.2(a)(i)",
+    "4.5.2(a)(ii)",
+    "4.5.2(b)",
+    "4.5.2(c)",
+    "4.5.2(d)",
+    "4.5.2(e)",
+    "4.5.2(f)"
+   ],
+   "idea": [
+    "Shine ultraviolet on a clean zinc plate on a negatively charged electroscope and the leaf falls: electrons are leaving the zinc. Shine bright visible light and nothing happens, however long you wait. A wave picture says energy should build up until electrons escape, so brighter light should always work eventually. It doesn't. That failure is the evidence for photons.",
+    "In the photon picture each electron can only take the energy of one photon, all or nothing, in one go. To escape, it needs at least the work function φ, the smallest energy needed to pull an electron out of that metal's surface. If hf is less than φ, no single photon is enough and no electrons leave, no matter how many photons arrive. The frequency at which hf just equals φ is the threshold frequency f0.",
+    "Above threshold, whatever is left over after escaping becomes kinetic energy. Electrons from right at the surface keep the most, so hf = φ + KEmax. KEmax rises with frequency, in a straight line of gradient h, and has nothing to do with intensity.",
+    "Intensity does matter for the rate. More intense light at the same frequency means more photons per second, so more electrons per second, so a proportionally bigger photocurrent. Number of electrons depends on intensity; energy of each electron depends on frequency."
+   ],
+   "buildup": [
+    "One photon interacts with one electron and transfers all its energy hf.",
+    "Energy conservation for the most loosely held electron: hf = φ + KEmax, so KEmax = hf − φ.",
+    "At threshold, KEmax = 0, so φ = hf0 and f0 = φ/h (or λ0 = hc/φ is the longest wavelength that works).",
+    "Graph of KEmax against f: straight line, gradient h, intercept on the f-axis at f0, and intercept on the energy axis at −φ.",
+    "Intensity at fixed frequency only changes the photon arrival rate. With one-to-one interactions, electrons per second ∝ photons per second ∝ intensity, and current = charge per second ∝ intensity.",
+    "Since KEmax depends only on hf − φ, changing intensity cannot change KEmax or the maximum speed v = √(2KEmax/m)."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Brighter light gives electrons more kinetic energy.",
+     "right": "KEmax depends only on frequency and work function; intensity changes how many electrons are emitted per second."
+    },
+    {
+     "wrong": "Below threshold, electrons will eventually escape if you wait or increase the intensity.",
+     "right": "Each electron absorbs one photon; if hf < φ no single photon gives enough energy, so none escape at any intensity."
+    },
+    {
+     "wrong": "The work function is the energy needed for the photoelectric effect.",
+     "right": "It is the minimum energy needed to remove an electron from the surface of the metal."
+    },
+    {
+     "wrong": "The gold leaf gains positive charge, or electrons leave the leaf.",
+     "right": "Electrons are emitted from the zinc plate, so the plate and electroscope lose negative charge and the leaf falls."
+    },
+    {
+     "wrong": "Writing hf = φ + KEmax is a full explanation.",
+     "right": "Explain it: one photon to one electron, hf is the photon's energy, φ is the minimum energy to escape, the rest is the maximum KE."
+    }
+   ],
+   "sim": "photoelectric",
+   "sim_guide": "Pick a metal and lower the frequency until emission stops: that is the threshold, and cranking the intensity up does not restart it. Above threshold, double the intensity and watch the current double while the KEmax reading stays put. Then raise the frequency and see KEmax climb along a straight line whose slope is h.",
+   "exam_shapes": [
+    {
+     "shape": "Define threshold frequency, work function, KEmax or hf",
+     "moves": [
+      "definition"
+     ],
+     "marks_typical": "1",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "27(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "6(a)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "9(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "25(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "9(a)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Einstein's equation: KEmax, speed, work function or wavelength",
+     "moves": [
+      "chain",
+      "units"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "7(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "9(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "7(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "8(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "16"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "6"
+      }
+     ]
+    },
+    {
+     "shape": "Effect of intensity on KEmax and on emission rate",
+     "moves": [
+      "recall-fact",
+      "explain-chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "9(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "7(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "8(c)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "23(c)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "7"
+      }
+     ]
+    },
+    {
+     "shape": "Explain threshold or no emission with photon energy and work function",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "23(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "25(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "26(a)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "5(c)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "25(c)"
+      }
+     ]
+    },
+    {
+     "shape": "KEmax–frequency graph: h from gradient, φ and f0 from intercepts",
+     "moves": [
+      "graph-read",
+      "linearise"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "7(b)(ii)1"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "7(b)(ii)2"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "26(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "6(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "27(b)(iii)"
+      }
+     ]
+    },
+    {
+     "shape": "Electroscope and zinc plate as evidence for photons",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "1–6",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "25(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "7(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "17"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "7(b)(i)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "One photon, one electron.",
+     "write": "Each photon interacts with one (surface) electron, transferring all its energy (one-to-one interaction)."
+    },
+    {
+     "understand": "Escaping costs at least φ.",
+     "write": "Work function: the minimum energy needed to remove an electron from the surface of the metal."
+    },
+    {
+     "understand": "Threshold is where one photon is just enough.",
+     "write": "Threshold frequency: the minimum frequency of electromagnetic radiation (light/photons, not 'wave') that releases electrons from the surface; φ = hf0."
+    },
+    {
+     "understand": "Leftover energy becomes KE.",
+     "write": "hf = φ + KEmax, stated as energy of a photon = work function + maximum kinetic energy of the emitted photoelectrons."
+    },
+    {
+     "understand": "Frequency sets energy; intensity sets number.",
+     "write": "KEmax is unchanged (say 'no change', not 'does not increase') because photon energy depends only on frequency; intensity only changes the number of photons per second."
+    },
+    {
+     "understand": "More photons, proportionally more electrons, more current.",
+     "write": "Intensity ∝ rate of photons → one photon releases one electron → rate of emission ∝ intensity → current (rate of flow of charge) ∝ intensity; when intensity doubles, say the rate doubles."
+    },
+    {
+     "understand": "Below threshold no single photon suffices.",
+     "write": "Photon energy is less than the work function, so no electron gains enough energy to escape, whatever the intensity; compare values in the same unit."
+    },
+    {
+     "understand": "The wave model fails twice.",
+     "write": "A wave model cannot explain a threshold frequency, nor KEmax depending on frequency rather than intensity."
+    }
+   ],
+   "traps": [
+    "Mixing eV and J (e.g. subtracting φ in eV from hf in J): wrong physics with no follow-through.",
+    "Using the photon energy as the electron's KE, forgetting to subtract φ before finding speed or de Broglie wavelength.",
+    "Omitting either φ or KEmax when working back to the wavelength of the radiation.",
+    "Defining threshold frequency without 'minimum', or using the bare word 'wave'.",
+    "Saying KEmax 'does not increase' with intensity, or that emission rate 'increases' when the question needs 'doubles'."
+   ],
+   "stats": {
+    "parts": 44,
+    "marks": 85,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-duality",
+   "title": "Wave–particle duality and electron diffraction",
+   "module": 4,
+   "principle": "Wave–particle duality: anything with momentum p also behaves as a wave of wavelength λ = h/p, and that wave shows itself by diffracting when it meets gaps similar in size to λ.",
+   "spec": [
+    "4.5.3(a)",
+    "4.5.3(b)",
+    "4.5.3(c)"
+   ],
+   "idea": [
+    "Light, which we first knew as a wave, turned out to arrive in particle-like photons. De Broglie suggested the reverse should also hold: particles such as electrons should have a wavelength, λ = h/p. The bigger the momentum, the shorter the wavelength.",
+    "For everyday objects the wavelength is absurdly small (a moving car has λ around 10^-38 m), so nothing can diffract it. An electron accelerated through a few thousand volts has λ around 10^-11 m, comparable to the spacing between atoms in a crystal. So a thin slice of graphite acts like a natural diffraction grating for electrons.",
+    "Fire such electrons through graphite at a fluorescent screen and you see bright concentric rings, not a single spot. Rings, because the graphite is polycrystalline: its tiny crystals point every which way, so the diffracted beams form cones around the straight-through direction. Only waves diffract like this, so the rings are the evidence that electrons behave as waves.",
+    "Turn up the accelerating p.d. and the electrons gain momentum, so their wavelength shortens, they diffract less, and the rings close in towards the centre (and get brighter as each electron brings more energy to the screen). That squeeze is the quantitative test: ring size should scale as 1/√V."
+   ],
+   "buildup": [
+    "An electron accelerated from rest through p.d. V gains kinetic energy eV.",
+    "Kinetic energy and momentum are linked by KE = p^2/(2m), so p = √(2m × KE) = √(2meV).",
+    "De Broglie: λ = h/p = h/√(2meV).",
+    "So λ ∝ 1/√V (and ∝ 1/√KE): doubling the p.d. or the KE divides the wavelength by √2, not 2.",
+    "Diffraction is significant when λ is comparable to the gap or spacing; for electrons through graphite that spacing is the separation between atoms (~10^-10 m).",
+    "Smaller λ means smaller diffraction angles, so rings get closer together as V rises."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "In diffraction the electrons become waves.",
+     "right": "Electrons behave as (show properties of) waves; saying they become or are waves is not accepted."
+    },
+    {
+     "wrong": "The rings show electrons interfering like photons.",
+     "right": "Credit is for diffraction by the atoms or gaps between atoms, with the de Broglie wavelength comparable to the atomic spacing."
+    },
+    {
+     "wrong": "Doubling the accelerating p.d. halves the wavelength.",
+     "right": "λ ∝ 1/√V, so doubling V divides λ by √2."
+    },
+    {
+     "wrong": "Electron diffraction happens because electrons are small.",
+     "right": "It happens because the electrons' wavelength is similar to the spacing between atoms."
+    },
+    {
+     "wrong": "To find λ for an electron use E = hc/λ.",
+     "right": "E = hc/λ is only for photons; for electrons find momentum (from v or from KE) and use λ = h/p."
+    }
+   ],
+   "sim": "debroglie",
+   "sim_guide": "Raise the accelerating p.d. step by step and watch the ring radius shrink; check that quadrupling V halves the radius. Note the de Broglie wavelength readout and compare it with the atomic spacing: once λ is far smaller than the spacing the rings almost vanish into the centre.",
+   "exam_shapes": [
+    {
+     "shape": "De Broglie wavelength from speed or momentum",
+     "moves": [
+      "chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "9(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "25(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "8(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "7"
+      }
+     ]
+    },
+    {
+     "shape": "Accelerated electron: wavelength or momentum from p.d. via eV",
+     "moves": [
+      "energy",
+      "chain"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "26(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "6(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "26(a)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "7"
+      }
+     ]
+    },
+    {
+     "shape": "Scaling: new wavelength when p.d. or kinetic energy changes",
+     "moves": [
+      "ratio"
+     ],
+     "marks_typical": "1",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "14"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "14"
+      }
+     ]
+    },
+    {
+     "shape": "Explain electron diffraction rings as evidence of wave behaviour",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "6(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "26(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "6(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "25(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "3"
+      }
+     ]
+    },
+    {
+     "shape": "How rings change with accelerating p.d. (incl. six-mark)",
+     "moves": [
+      "explain-chain",
+      "chain"
+     ],
+     "marks_typical": "2–6",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "8(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "8"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "8"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Particles have a wavelength set by momentum.",
+     "write": "De Broglie wavelength λ = h/p, where h is the Planck constant and p the momentum (= mv)."
+    },
+    {
+     "understand": "The p.d. gives energy, energy gives momentum.",
+     "write": "eV = ½mv^2 (or p = √(2meV)), then λ = h/p; show each step and keep e in the energy."
+    },
+    {
+     "understand": "Graphite is a ready-made grating for electrons.",
+     "write": "Electrons are diffracted by the (gaps between) atoms in graphite; this only happens because their de Broglie wavelength is comparable to the atomic spacing."
+    },
+    {
+     "understand": "Random crystals give rings.",
+     "write": "The graphite is polycrystalline (crystals in random orientations), so diffracted electrons form rings; diffraction is a wave property, so electrons show wave behaviour."
+    },
+    {
+     "understand": "Faster electrons, shorter waves, smaller rings.",
+     "write": "Higher accelerating p.d. → greater speed/momentum → smaller λ → less diffraction → rings closer together (and brighter); add the quantitative link λ ∝ 1/√V."
+    },
+    {
+     "understand": "Big objects have unobservable wavelengths.",
+     "write": "Compare numbers: car λ ~10^-38 m versus electron ~10^-11 m; no gap is small enough to diffract the car."
+    }
+   ],
+   "traps": [
+    "Treating the photon energy as the electron's KE (forgetting hf − φ) before finding λ.",
+    "Using E = hc/λ for an electron, or skipping the momentum step.",
+    "Saying the rings get 'smaller' without 'closer together', or giving a purely qualitative account when data are given.",
+    "Halving λ when V or KE doubles instead of dividing by √2.",
+    "Describing a light double-slit experiment when asked for electron diffraction."
+   ],
+   "stats": {
+    "parts": 21,
+    "marks": 46,
+    "sessions": 11
+   }
+  }
+ ]
+}

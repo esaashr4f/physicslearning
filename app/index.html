@@ -522,6 +522,30 @@ button { font: inherit; color: inherit; }
 .prio.high { color: var(--pen); border-color: var(--pen); }
 .prio.medium { color: var(--accent); border-color: var(--accent); }
 @media (max-width: 760px) { .sk-row > button { grid-template-columns: 40px minmax(0, 1fr) 64px; } .sk-row .bar { display: none; } .sk-body { padding-left: 12px; } }
+
+/* sims, concepts, practise */
+.sim { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 14px; display: grid; gap: 10px; }
+.sim canvas { width: 100%; display: block; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--rule); }
+.sim-ctl { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.sl { display: grid; grid-template-columns: auto 140px auto; gap: 8px; align-items: center; font-size: 12.5px; color: var(--ink-2); }
+.sl input[type=range] { width: 140px; accent-color: var(--accent); }
+.sl b { font: 600 12px/1 var(--f-mono); color: var(--ink); min-width: 44px; }
+.sim-out { display: flex; flex-wrap: wrap; gap: 8px; }
+.sim-out span { background: var(--surface-2); border: 1px solid var(--rule); border-radius: 8px; padding: 6px 10px; display: grid; gap: 2px; }
+.sim-out small { font-size: 11px; color: var(--ink-3); }
+.sim-out b { font: 600 13px/1.3 var(--f-mono); }
+.concept-idea p { margin: 0 0 10px; font-size: 15px; line-height: 1.6; } .concept-idea p:last-child { margin: 0; }
+.mock-bar { position: sticky; top: 0; z-index: 4; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 14px; box-shadow: var(--shadow); }
+.mock-time { font: 700 18px/1 var(--f-mono); margin-left: auto; } .mock-time.over { color: var(--pen); }
+.mock-score { font: 700 16px/1 var(--f-mono); color: var(--accent); margin-left: auto; }
+.score-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; }
+.score-btns { display: inline-flex; gap: 3px; flex-wrap: wrap; }
+.score-btns button { width: 30px; height: 28px; border: 1px solid var(--rule); background: var(--surface); border-radius: 6px; cursor: pointer; font: 600 12px var(--f-mono); color: var(--ink-2); }
+.score-btns button[aria-pressed="true"] { background: var(--accent); color: var(--surface); border-color: var(--accent); }
+.pq-stem p { margin: 0 0 6px; font-size: 14px; } .pq-opts { margin: 0; padding-left: 24px; font-size: 14px; display: grid; gap: 4px; } .pq-parts p { margin: 0 0 6px; font-size: 14px; }
+.pbar { display: block; height: 8px; border-radius: 4px; background: var(--surface-2); overflow: hidden; } .pbar i { display: block; height: 100%; }
+@media (max-width: 1320px) { .top { min-width: 0; } .tabs { overflow-x: auto; scrollbar-width: none; min-width: 0; } .tabs button { flex: none; } }
+@media (max-width: 760px) { .sl { grid-template-columns: 1fr; } .sl input[type=range] { width: 100%; } }
 /* ---------- insights ---------- */
 .ins { overflow: auto; min-height: 0; }
 .ins-inner { max-width: 1180px; margin: 0 auto; padding-block: 0 80px; padding-left: var(--gutter-l); padding-right: var(--gutter-r); display: grid; gap: 56px; }
@@ -1691,6 +1715,489 @@ function Playbook({ data, open, openSpec }) {
   </div></div>`;
 }
 
+/* ---------- Simulations ---------- */
+function cssv(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim() || "#888"; }
+function useSimCanvas(draw, deps, animate) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const cv = ref.current; if (!cv) return; let raf = 0, alive = true; const t0 = performance.now();
+    const frame = (now) => {
+      if (!alive) return;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2); const w = cv.clientWidth, h = cv.clientHeight;
+      if (cv.width !== Math.round(w * dpr) || cv.height !== Math.round(h * dpr)) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); }
+      const ctx = cv.getContext("2d"); ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, w, h);
+      const C = { ink: cssv("--ink"), ink2: cssv("--ink-2"), ink3: cssv("--ink-3"), acc: cssv("--accent"), pen: cssv("--pen"), rule: cssv("--rule"), surf: cssv("--surface"), surf2: cssv("--surface-2") };
+      ctx.font = "12px " + cssv("--f-mono");
+      draw(ctx, w, h, (now - t0) / 1000, C);
+      if (animate && !REDUCED) raf = requestAnimationFrame(frame);
+    };
+    raf = requestAnimationFrame(frame);
+    const ro = new ResizeObserver(() => { if (!animate || REDUCED) requestAnimationFrame(frame); }); ro.observe(cv);
+    return () => { alive = false; cancelAnimationFrame(raf); ro.disconnect(); };
+  }, deps);
+  return ref;
+}
+function Slider({ id, label, min, max, step, value, set, fmt }) {
+  return html`<label class="sl" for=${id}><span>${label}</span><input id=${id} type="range" min=${min} max=${max} step=${step} value=${value} onInput=${e => set(+e.target.value)} /><b>${fmt ? fmt(value) : value}</b></label>`;
+}
+function SimFrame({ title, canvasRef, controls, readouts, h = 300 }) {
+  return html`<div class="sim"><div class="sim-top"><span class="eyebrow">Simulation · ${title}</span></div>
+    <canvas ref=${canvasRef} style=${{ height: h + "px" }} role="img" aria-label=${title}></canvas>
+    <div class="sim-ctl">${controls}</div>
+    ${readouts && html`<div class="sim-out">${readouts.map(([k, v], i) => html`<span key=${i}><small>${k}</small><b>${v}</b></span>`)}</div>`}</div>`;
+}
+const f2 = (x, d = 2) => (Math.abs(x) >= 1e4 || (Math.abs(x) < 1e-2 && x !== 0)) ? x.toExponential(d) : x.toFixed(d);
+function arrow(ctx, x1, y1, x2, y2, col, w = 2.5) {
+  ctx.strokeStyle = col; ctx.fillStyle = col; ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+  const a = Math.atan2(y2 - y1, x2 - x1), L = 9; ctx.beginPath(); ctx.moveTo(x2, y2); ctx.lineTo(x2 - L * Math.cos(a - .4), y2 - L * Math.sin(a - .4)); ctx.lineTo(x2 - L * Math.cos(a + .4), y2 - L * Math.sin(a + .4)); ctx.closePath(); ctx.fill();
+}
+function axes(ctx, x0, y0, w, h, C, xl, yl) {
+  ctx.strokeStyle = C.ink3; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x0, y0 - h); ctx.lineTo(x0, y0); ctx.lineTo(x0 + w, y0); ctx.stroke();
+  ctx.fillStyle = C.ink2; ctx.fillText(xl, x0 + w - ctx.measureText(xl).width, y0 + 16); ctx.save(); ctx.translate(x0 - 8, y0 - h); ctx.fillText(yl, 4, 0); ctx.restore();
+}
+function plotLine(ctx, pts, col, w = 2, dash) { ctx.strokeStyle = col; ctx.lineWidth = w; ctx.setLineDash(dash || []); ctx.beginPath(); pts.forEach(([x, y], i) => i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)); ctx.stroke(); ctx.setLineDash([]); }
+
+const SIMS = {
+  vector() {
+    const [F, setF] = useState(40), [th, setTh] = useState(35);
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const ox = 70, oy = h - 50, s = Math.min(w - 120, h - 90) / 60, a = th * Math.PI / 180;
+      const x = ox + F * Math.cos(a) * s, y = oy - F * Math.sin(a) * s;
+      plotLine(ctx, [[ox, oy], [x, oy]], C.ink3, 1, [4, 4]); plotLine(ctx, [[x, oy], [x, y]], C.ink3, 1, [4, 4]);
+      arrow(ctx, ox, oy, x, oy, C.acc); arrow(ctx, ox, oy, ox, y, C.acc); arrow(ctx, ox, oy, x, y, C.pen, 3);
+      ctx.fillStyle = C.pen; ctx.fillText(`F = ${F} N`, (ox + x) / 2 - 30, (oy + y) / 2 - 10);
+      ctx.fillStyle = C.acc; ctx.fillText(`F cos θ`, (ox + x) / 2 - 20, oy + 18); ctx.fillText(`F sin θ`, ox - 62, (oy + y) / 2);
+      ctx.strokeStyle = C.ink2; ctx.beginPath(); ctx.arc(ox, oy, 28, -a, 0); ctx.stroke(); ctx.fillStyle = C.ink2; ctx.fillText("θ", ox + 32, oy - 8);
+    }, [F, th]);
+    return html`<${SimFrame} title="Resolving a vector" canvasRef=${r} controls=${html`<${Slider} id="sv-f" label="Force F (N)" min=${5} max=${60} step=${1} value=${F} set=${setF} /><${Slider} id="sv-t" label="Angle θ (°)" min=${0} max=${90} step=${1} value=${th} set=${setTh} />`}
+      readouts=${[["Horizontal F cos θ", f2(F * Math.cos(th * Math.PI / 180)) + " N"], ["Vertical F sin θ", f2(F * Math.sin(th * Math.PI / 180)) + " N"], ["Check √(x²+y²)", f2(F) + " N"]]} />`;
+  },
+  kinematics() {
+    const [u, setU] = useState(4), [a, setA] = useState(2), [T, setT] = useState(5);
+    const v = u + a * T, s = u * T + .5 * a * T * T;
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const x0 = 50, y0 = h - 36, W = w - 80, H = h - 70, vmax = Math.max(1, Math.abs(u), Math.abs(v)) * 1.15, sx = W / 10, sy = H / vmax;
+      axes(ctx, x0, y0, W, H, C, "t / s", "v / m s⁻¹");
+      ctx.fillStyle = C.acc + "33"; ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x0, y0 - u * sy); ctx.lineTo(x0 + T * sx, y0 - v * sy); ctx.lineTo(x0 + T * sx, y0); ctx.closePath(); ctx.fill();
+      plotLine(ctx, [[x0, y0 - u * sy], [x0 + T * sx, y0 - v * sy]], C.acc, 2.5);
+      ctx.fillStyle = C.ink2; ctx.fillText(`area = displacement = ${f2(s, 1)} m`, x0 + 12, y0 - 12); ctx.fillText(`gradient = a = ${a} m s⁻²`, x0 + T * sx * .3, y0 - (u + v) / 2 * sy - 14);
+    }, [u, a, T]);
+    return html`<${SimFrame} title="Velocity–time graph" canvasRef=${r} controls=${html`<${Slider} id="sk-u" label="Initial velocity u" min=${0} max=${10} step=${.5} value=${u} set=${setU} /><${Slider} id="sk-a" label="Acceleration a" min=${-2} max=${4} step=${.5} value=${a} set=${setA} /><${Slider} id="sk-t" label="Time t (s)" min=${1} max=${10} step=${.5} value=${T} set=${setT} />`}
+      readouts=${[["v = u + at", f2(v, 1) + " m s⁻¹"], ["s = ut + ½at²", f2(s, 1) + " m"], ["Check s = ½(u+v)t", f2((u + v) / 2 * T, 1) + " m"]]} />`;
+  },
+  projectile() {
+    const [v0, setV] = useState(20), [th, setTh] = useState(45), [k, setK] = useState(0);
+    const path = (kk) => { let x = 0, y = 0, vx = v0 * Math.cos(th * Math.PI / 180), vy = v0 * Math.sin(th * Math.PI / 180), dt = .005, pts = [[0, 0]], tt = 0, top = 0;
+      while (y >= 0 && tt < 20) { const sp = Math.hypot(vx, vy); vx -= kk * sp * vx * dt; vy -= (9.81 + kk * sp * vy) * dt; x += vx * dt; y += vy * dt; tt += dt; top = Math.max(top, y); pts.push([x, Math.max(0, y)]); } return { pts, x, tt, top }; };
+    const a = path(0), b = path(k);
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const x0 = 40, y0 = h - 30, sc = Math.min((w - 70) / Math.max(1, a.x), (h - 60) / Math.max(1, a.top));
+      axes(ctx, x0, y0, w - 60, h - 50, C, "x / m", "y / m");
+      plotLine(ctx, a.pts.map(([x, y]) => [x0 + x * sc, y0 - y * sc]), C.ink3, 1.5, [5, 4]);
+      if (k > 0) plotLine(ctx, b.pts.map(([x, y]) => [x0 + x * sc, y0 - y * sc]), C.pen, 2.5);
+      else plotLine(ctx, a.pts.map(([x, y]) => [x0 + x * sc, y0 - y * sc]), C.acc, 2.5);
+      ctx.fillStyle = C.ink2; ctx.fillText(k > 0 ? "red: with drag · dashed: no drag" : "no air resistance", x0 + 10, 18);
+    }, [v0, th, k]);
+    const s = k > 0 ? b : a;
+    return html`<${SimFrame} title="Projectile motion" canvasRef=${r} controls=${html`<${Slider} id="sp-v" label="Launch speed (m s⁻¹)" min=${5} max=${40} step=${1} value=${v0} set=${setV} /><${Slider} id="sp-t" label="Angle (°)" min=${5} max=${85} step=${1} value=${th} set=${setTh} /><${Slider} id="sp-k" label="Air resistance" min=${0} max=${.05} step=${.005} value=${k} set=${setK} fmt=${x => x ? x.toFixed(3) : "off"} />`}
+      readouts=${[["Range", f2(s.x, 1) + " m"], ["Max height", f2(s.top, 1) + " m"], ["Time of flight", f2(s.tt, 2) + " s"], ["Horizontal velocity", k ? "decreases" : f2(v0 * Math.cos(th * Math.PI / 180), 1) + " m s⁻¹ (constant)"]]} />`;
+  },
+  terminal() {
+    const [m, setM] = useState(.5), [k, setK] = useState(.02);
+    const vt = Math.sqrt(m * 9.81 / k);
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const x0 = 50, y0 = h - 36, W = w - 80, H = h - 70, Tm = 4 * vt / 9.81 + 1, pts = [], acc = []; let v = 0;
+      for (let tt = 0; tt <= Tm; tt += Tm / 300) { pts.push([tt, v]); acc.push([tt, 9.81 - k * v * v / m]); v += (9.81 - k * v * v / m) * Tm / 300; }
+      const sx = W / Tm, sy = H / (vt * 1.15);
+      axes(ctx, x0, y0, W, H, C, "t / s", "v / m s⁻¹");
+      plotLine(ctx, [[x0, y0 - vt * sy], [x0 + W, y0 - vt * sy]], C.ink3, 1, [5, 4]);
+      plotLine(ctx, pts.map(([a, b]) => [x0 + a * sx, y0 - b * sy]), C.acc, 2.5);
+      ctx.fillStyle = C.ink2; ctx.fillText(`terminal velocity ${f2(vt, 1)} m s⁻¹: drag = weight, resultant force = 0`, x0 + 8, y0 - vt * sy - 8);
+    }, [m, k]);
+    return html`<${SimFrame} title="Falling with drag (drag = kv²)" canvasRef=${r} controls=${html`<${Slider} id="st-m" label="Mass (kg)" min=${.1} max=${2} step=${.1} value=${m} set=${setM} fmt=${x => x.toFixed(1)} /><${Slider} id="st-k" label="Drag constant k" min=${.005} max=${.1} step=${.005} value=${k} set=${setK} fmt=${x => x.toFixed(3)} />`}
+      readouts=${[["Terminal velocity √(mg/k)", f2(vt, 2) + " m s⁻¹"], ["Initial acceleration", "9.81 m s⁻² (no drag at v = 0)"], ["At terminal velocity", "a = 0, gradient of v–t = 0"]]} />`;
+  },
+  moments() {
+    const [m1, setM1] = useState(3), [d1, setD1] = useState(.3), [m2, setM2] = useState(2), [d2, setD2] = useState(.4);
+    const ac = m1 * 9.81 * d1, cw = m2 * 9.81 * d2, net = cw - ac, tilt = Math.max(-.25, Math.min(.25, net / 40));
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const cx = w / 2, cy = h / 2 + 30, L = Math.min(w - 60, 520) / 2;
+      ctx.save(); ctx.translate(cx, cy); ctx.rotate(tilt); ctx.fillStyle = C.ink3; ctx.fillRect(-L, -5, 2 * L, 10);
+      const put = (d, m, col, side) => { const x = side * d / .5 * L; ctx.fillStyle = col; ctx.fillRect(x - 10 - m * 2, -14 - m * 6, 20 + m * 4, 10 + m * 6); arrow(ctx, x, 8, x, 50, col); };
+      put(d1, m1, C.acc, -1); put(d2, m2, C.pen, 1); ctx.restore();
+      ctx.fillStyle = C.ink; ctx.beginPath(); ctx.moveTo(cx, cy + 6); ctx.lineTo(cx - 14, cy + 36); ctx.lineTo(cx + 14, cy + 36); ctx.closePath(); ctx.fill();
+      ctx.fillStyle = Math.abs(net) < .05 ? C.acc : C.pen; ctx.fillText(Math.abs(net) < .05 ? "Balanced: clockwise = anticlockwise" : net > 0 ? "Turns clockwise" : "Turns anticlockwise", 16, 20);
+    }, [m1, d1, m2, d2]);
+    return html`<${SimFrame} title="Principle of moments" canvasRef=${r} controls=${html`<${Slider} id="sm-m1" label="Left mass (kg)" min=${.5} max=${5} step=${.5} value=${m1} set=${setM1} /><${Slider} id="sm-d1" label="Left distance (m)" min=${.05} max=${.5} step=${.05} value=${d1} set=${setD1} fmt=${x => x.toFixed(2)} /><${Slider} id="sm-m2" label="Right mass (kg)" min=${.5} max=${5} step=${.5} value=${m2} set=${setM2} /><${Slider} id="sm-d2" label="Right distance (m)" min=${.05} max=${.5} step=${.05} value=${d2} set=${setD2} fmt=${x => x.toFixed(2)} />`}
+      readouts=${[["Anticlockwise moment", f2(ac) + " N m"], ["Clockwise moment", f2(cw) + " N m"], ["Resultant moment", f2(net) + " N m"]]} />`;
+  },
+  upthrust() {
+    const [ro, setRo] = useState(600), [rf, setRf] = useState(1000);
+    const frac = Math.min(1, ro / rf), V = .001, W = ro * V * 9.81, U = rf * V * frac * 9.81;
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const wl = h * .4; ctx.fillStyle = C.acc + "22"; ctx.fillRect(0, wl, w, h - wl);
+      const s = 90, x = w / 2 - s / 2, sinks = ro > rf, y = sinks ? h - s - 6 : wl - s * (1 - frac);
+      ctx.fillStyle = C.ink3; ctx.fillRect(x, y, s, s);
+      arrow(ctx, w / 2 - 16, y + s / 2, w / 2 - 16, y + s / 2 + 50, C.pen); arrow(ctx, w / 2 + 16, y + s / 2, w / 2 + 16, y + s / 2 - 50 * U / W, C.acc);
+      ctx.fillStyle = C.pen; ctx.fillText("weight", w / 2 - 70, y + s / 2 + 60); ctx.fillStyle = C.acc; ctx.fillText("upthrust", w / 2 + 22, y + s / 2 - 50 * U / W);
+      ctx.fillStyle = C.ink2; ctx.fillText(sinks ? "Sinks: upthrust even when fully submerged < weight" : `Floats with ${Math.round(frac * 100)}% submerged`, 12, 20);
+    }, [ro, rf]);
+    return html`<${SimFrame} title="Floating and upthrust (1 litre block)" canvasRef=${r} controls=${html`<${Slider} id="su-o" label="Block density (kg m⁻³)" min=${100} max=${2000} step=${50} value=${ro} set=${setRo} /><${Slider} id="su-f" label="Fluid density (kg m⁻³)" min=${700} max=${1500} step=${50} value=${rf} set=${setRf} />`}
+      readouts=${[["Weight of block", f2(W) + " N"], ["Upthrust = weight of fluid displaced", f2(U) + " N"], ["Fraction submerged", ro > rf ? "100% (sinks)" : Math.round(frac * 100) + "% = ρblock/ρfluid"]]} />`;
+  },
+  spring() {
+    const [k, setK] = useState(40), [x, setX] = useState(.12);
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const x0 = 50, y0 = h - 36, W = w - 80, H = h - 70, sx = W / .2, sy = H / (100 * .2);
+      axes(ctx, x0, y0, W, H, C, "extension x / m", "F / N");
+      ctx.fillStyle = C.acc + "33"; ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x0 + x * sx, y0 - k * x * sy); ctx.lineTo(x0 + x * sx, y0); ctx.closePath(); ctx.fill();
+      plotLine(ctx, [[x0, y0], [x0 + .2 * sx, y0 - k * .2 * sy]], C.acc, 2.5);
+      ctx.fillStyle = C.ink2; ctx.fillText("area = elastic energy = ½Fx", x0 + x * sx * .35, y0 - 10); ctx.fillText(`gradient = k = ${k} N m⁻¹`, x0 + 10, 18);
+    }, [k, x]);
+    return html`<${SimFrame} title="Force–extension and elastic energy" canvasRef=${r} controls=${html`<${Slider} id="ss-k" label="Force constant k (N m⁻¹)" min=${10} max=${100} step=${5} value=${k} set=${setK} /><${Slider} id="ss-x" label="Extension x (m)" min=${.01} max=${.2} step=${.01} value=${x} set=${setX} fmt=${v => v.toFixed(2)} />`}
+      readouts=${[["F = kx", f2(k * x) + " N"], ["E = ½kx²", f2(.5 * k * x * x, 3) + " J"], ["Double x →", "×2 force, ×4 energy"]]} />`;
+  },
+  stressstrain() {
+    const [mat, setMat] = useState("steel");
+    const curves = { steel: { E: "200 GPa", pts: [[0, 0], [.1, 200], [.12, 240], [.6, 330], [1, 360], [1.15, 300]], lop: [.1, 200], uts: [1, 360], note: "Ductile: straight (Hooke's law), then large plastic extension, necking and break" }, glass: { E: "70 GPa", pts: [[0, 0], [.08, 60]], lop: [.08, 60], uts: [.08, 60], note: "Brittle: straight line to fracture, no plastic region" }, rubber: { E: "≈ 0.01 GPa (varies)", pts: [[0, 0], [.4, 30], [.8, 45], [1.0, 80], [1.1, 150]], lop: null, uts: [1.1, 150], note: "Polymeric: non-linear from the start; large strains" } };
+    const c = curves[mat];
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const x0 = 50, y0 = h - 36, W = w - 90, H = h - 70, xs = W / 1.2, ys = H / 380;
+      axes(ctx, x0, y0, W, H, C, "strain (relative)", "stress (relative)");
+      const sm = []; for (let i = 0; i < c.pts.length - 1; i++) for (let s = 0; s <= 1; s += .05) { const [a1, b1] = c.pts[i], [a2, b2] = c.pts[i + 1]; sm.push([a1 + (a2 - a1) * s, b1 + (b2 - b1) * s]); }
+      plotLine(ctx, sm.map(([a, b]) => [x0 + a * xs, y0 - b * ys]), C.acc, 2.5);
+      const mark = (p, lab, col) => { if (!p) return; ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x0 + p[0] * xs, y0 - p[1] * ys, 5, 0, 7); ctx.fill(); ctx.fillText(lab, x0 + p[0] * xs + 8, y0 - p[1] * ys - 6); };
+      mark(c.lop, "limit of proportionality", C.ink2); mark(c.uts, "UTS (maximum stress)", C.pen);
+      ctx.fillStyle = C.ink2; ctx.fillText("gradient of straight part = Young modulus", x0 + 10, 18);
+    }, [mat]);
+    return html`<${SimFrame} title="Stress–strain curves" canvasRef=${r} controls=${html`<div class="seg">${["steel", "glass", "rubber"].map(m => html`<button key=${m} aria-pressed=${mat === m} onClick=${() => setMat(m)}><b>${m === "steel" ? "Steel (ductile)" : m === "glass" ? "Glass (brittle)" : "Rubber (polymeric)"}</b></button>`)}</div>`}
+      readouts=${[["Typical Young modulus", c.E], ["Behaviour", c.note]]} />`;
+  },
+  collision() {
+    const [m1, setM1] = useState(2), [u1, setU1] = useState(4), [m2, setM2] = useState(1), [u2, setU2] = useState(-2), [e, setE] = useState(1);
+    const v1 = (m1 * u1 + m2 * u2 + m2 * e * (u2 - u1)) / (m1 + m2), v2 = (m1 * u1 + m2 * u2 + m1 * e * (u1 - u2)) / (m1 + m2);
+    const p0 = m1 * u1 + m2 * u2, p1 = m1 * v1 + m2 * v2, k0 = .5 * m1 * u1 * u1 + .5 * m2 * u2 * u2, k1 = .5 * m1 * v1 * v1 + .5 * m2 * v2 * v2;
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const row = (y, a, b, lab) => { const cx = w / 2; ctx.fillStyle = C.ink2; ctx.fillText(lab, 12, y - 22);
+        ctx.fillStyle = C.acc; ctx.fillRect(cx - 120, y - 16, 30 + m1 * 8, 32); ctx.fillStyle = C.pen; ctx.fillRect(cx + 60, y - 16, 30 + m2 * 8, 32);
+        if (a) arrow(ctx, cx - 105, y + 26, cx - 105 + a * 14, y + 26, C.acc); if (b) arrow(ctx, cx + 75, y + 26, cx + 75 + b * 14, y + 26, C.pen);
+        ctx.fillStyle = C.ink; ctx.fillText(`${a.toFixed(2)} m s⁻¹`, cx - 140, y + 46); ctx.fillText(`${b.toFixed(2)} m s⁻¹`, cx + 50, y + 46); };
+      row(h * .3, u1, u2, "Before (right is positive)"); row(h * .78, v1, v2, "After");
+    }, [m1, u1, m2, u2, e]);
+    return html`<${SimFrame} title="1D collision: momentum and kinetic energy" h=${320} canvasRef=${r} controls=${html`<${Slider} id="sc-m1" label="Mass A (kg)" min=${.5} max=${5} step=${.5} value=${m1} set=${setM1} /><${Slider} id="sc-u1" label="Velocity A (m s⁻¹)" min=${-6} max=${6} step=${.5} value=${u1} set=${setU1} /><${Slider} id="sc-m2" label="Mass B (kg)" min=${.5} max=${5} step=${.5} value=${m2} set=${setM2} /><${Slider} id="sc-u2" label="Velocity B (m s⁻¹)" min=${-6} max=${6} step=${.5} value=${u2} set=${setU2} /><${Slider} id="sc-e" label="Bounciness (1 = perfectly elastic)" min=${0} max=${1} step=${.1} value=${e} set=${setE} fmt=${x => x.toFixed(1)} />`}
+      readouts=${[["Momentum before", f2(p0) + " kg m s⁻¹"], ["Momentum after", f2(p1) + " kg m s⁻¹ (always conserved)"], ["KE before", f2(k0) + " J"], ["KE after", f2(k1) + " J" + (e < 1 ? " (lost: inelastic)" : " (conserved)")]]} />`;
+  },
+  uncertainty() {
+    const [eb, setEb] = useState(.6), [seed] = useState(() => [0.3, -0.4, 0.2, -0.1, 0.35, -0.25]);
+    const xs = [1, 2, 3, 4, 5, 6], ys = xs.map((x, i) => 2 * x + 1 + seed[i]);
+    const n = xs.length, mx = xs.reduce((a, b) => a + b) / n, my = ys.reduce((a, b) => a + b) / n;
+    const m = xs.reduce((s, x, i) => s + (x - mx) * (ys[i] - my), 0) / xs.reduce((s, x) => s + (x - mx) ** 2, 0), c = my - m * mx;
+    const mw = ((ys[5] - eb) - (ys[0] + eb)) / (xs[5] - xs[0]);
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const x0 = 50, y0 = h - 36, W = w - 80, H = h - 70, sx = W / 7, sy = H / 16;
+      axes(ctx, x0, y0, W, H, C, "x", "y");
+      xs.forEach((x, i) => { const px = x0 + x * sx, py = y0 - ys[i] * sy; plotLine(ctx, [[px, py - eb * sy], [px, py + eb * sy]], C.ink2, 1.5); ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(px, py, 3.5, 0, 7); ctx.fill(); });
+      plotLine(ctx, [[x0 + .5 * sx, y0 - (m * .5 + c) * sy], [x0 + 6.5 * sx, y0 - (m * 6.5 + c) * sy]], C.acc, 2.5);
+      const cw = (ys[0] + eb) - mw * xs[0]; plotLine(ctx, [[x0 + .5 * sx, y0 - (mw * .5 + cw) * sy], [x0 + 6.5 * sx, y0 - (mw * 6.5 + cw) * sy]], C.pen, 2, [6, 4]);
+      ctx.fillStyle = C.ink2; ctx.fillText("blue: best fit · red dashed: worst acceptable line", x0 + 8, 18);
+    }, [eb]);
+    return html`<${SimFrame} title="Best and worst lines" canvasRef=${r} controls=${html`<${Slider} id="su-eb" label="Error bar size (±)" min=${.1} max=${1.5} step=${.1} value=${eb} set=${setEb} fmt=${x => "±" + x.toFixed(1)} />`}
+      readouts=${[["Best gradient", f2(m, 3)], ["Worst gradient", f2(mw, 3)], ["Uncertainty in gradient", "±" + f2(Math.abs(m - mw), 3)], ["Percentage uncertainty", f2(Math.abs(m - mw) / m * 100, 1) + "%"]]} />`;
+  },
+  drift() {
+    const [I, setI] = useState(2), [d, setD] = useState(.5);
+    const A = Math.PI * (d * 1e-3) ** 2 / 4, v = I / (8.5e28 * A * 1.6e-19);
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const th = Math.max(16, d * 60), y = h / 2; ctx.fillStyle = C.surf2; ctx.strokeStyle = C.ink3; ctx.fillRect(20, y - th / 2, w - 40, th); ctx.strokeRect(20, y - th / 2, w - 40, th);
+      const speed = v * 4e4; ctx.fillStyle = C.acc;
+      for (let i = 0; i < 70; i++) { const px = 20 + ((i * 53 + t * speed * 40) % (w - 40)), py = y - th / 2 + 4 + ((i * 37) % Math.max(1, th - 8)); ctx.beginPath(); ctx.arc(w - px, py, 2.5, 0, 7); ctx.fill(); }
+      ctx.fillStyle = C.ink2; ctx.fillText("electrons drift (animation speed exaggerated, relative)", 20, 18);
+    }, [I, d, v], true);
+    return html`<${SimFrame} title="Mean drift velocity (copper, n = 8.5 × 10²⁸ m⁻³)" canvasRef=${r} h=${200} controls=${html`<${Slider} id="sd-i" label="Current I (A)" min=${.5} max=${5} step=${.5} value=${I} set=${setI} /><${Slider} id="sd-d" label="Wire diameter (mm)" min=${.2} max=${1.5} step=${.1} value=${d} set=${setD} fmt=${x => x.toFixed(1)} />`}
+      readouts=${[["Area A = πd²/4", A.toExponential(2) + " m²"], ["v = I / (nAe)", v.toExponential(2) + " m s⁻¹"], ["Halve the diameter →", "area ÷ 4, so v × 4"]]} />`;
+  },
+  iv() {
+    const [comp, setComp] = useState("resistor"), [V, setV] = useState(3);
+    const Ifn = { resistor: v => v / 10, lamp: v => Math.sign(v) * 0.32 * Math.sqrt(Math.abs(v)) / 1.2, diode: v => v > .6 ? (v - .6) * .5 : 0, thermistor: v => Math.sign(v) * (Math.abs(v) / 10) * (1 + Math.abs(v) * .12) }[comp];
+    const r = useSimCanvas((ctx, w, h, t, C) => {
+      const cx = w / 2, cy = h / 2, sx = (w / 2 - 30) / 6, sy = (h / 2 - 20) / .9;
+      plotLine(ctx, [[30, cy], [w - 30, cy]], C.ink3, 1); plotLine(ctx, [[cx, 10], [cx, h - 10]], C.ink3, 1); ctx.fillStyle = C.ink2; ctx.fillText("V", w - 40, cy - 6); ctx.fillText("I", cx + 6, 20);
+      const pts = []; for (let v = -6; v <= 6; v += .05) pts.push([cx + v * sx, cy - Math.max(-.9, Math.min(.9, Ifn(v))) * sy]); plotLine(ctx, pts, C.acc, 2.5);
+      const i = Ifn(V); ctx.fillStyle = C.pen; ctx.beginPath(); ctx.arc(cx + V * sx, cy - i * sy, 5, 0, 7); ctx.fill();
+    }, [comp, V]);
+    const i = Ifn(V);
+    return html`<${SimFrame} title="I–V characteristics" canvasRef=${r} controls=${html`<div class="seg">${[["resistor", "Ohmic resistor"], ["lamp", "Filament lamp"], ["diode", "Diode / LED"], ["thermistor", "NTC thermistor (self-heating)"]].map(([k, l]) => html`<button key=${k} aria-pressed=${comp === k} onClick=${() => setComp(k)}><b>${l}</b></button>`)}</div><${Slider} id="si-v" label="P.d. V (V)" min=${-6} max=${6} step=${.1} value=${V} set=${setV} fmt=${x => x.toFixed(1)} />`}
+      readouts=${[["Current I", f2(i, 3) + " A"], ["Resistance V/I", Math.abs(i) > 1e-6 ? f2(V / i, 1) + " Ω" : "very large"], ["Why", { resistor: "constant R at constant temperature: straight line through origin", lamp: "filament heats up, resistance rises, curve flattens", diode: "conducts only above about 0.6 V in one direction", thermistor: "heats up, more charge carriers, resistance falls, curve steepens" }[comp]]]} />`;
+  },
+  internal() {
+    const [E, setE] = useState(6), [r0, setR0] = useState(1), [R, setR] = useState(5);
+    const I = E / (R + r0), V = E - I * r0;
+    const ref = useSimCanvas((ctx, w, h, t, C) => {
+      const x0 = 50, y0 = h - 36, W = w - 80, H = h - 70, Imax = E / r0, sx = W / Imax, sy = H / (E * 1.1);
+      axes(ctx, x0, y0, W, H, C, "I / A", "terminal p.d. V / V");
+      plotLine(ctx, [[x0, y0 - E * sy], [x0 + Imax * sx, y0]], C.acc, 2.5);
+      ctx.fillStyle = C.pen; ctx.beginPath(); ctx.arc(x0 + I * sx, y0 - V * sy, 5, 0, 7); ctx.fill();
+      plotLine(ctx, [[x0 + I * sx, y0 - V * sy], [x0 + I * sx, y0 - E * sy]], C.pen, 1.5, [4, 3]);
+      ctx.fillStyle = C.ink2; ctx.fillText(`intercept = e.m.f. ${E} V · gradient = −r`, x0 + 10, 18); ctx.fillStyle = C.pen; ctx.fillText("lost volts Ir", x0 + I * sx + 6, y0 - (V + E) / 2 * sy);
+    }, [E, r0, R]);
+    return html`<${SimFrame} title="E.m.f. and internal resistance" canvasRef=${ref} controls=${html`<${Slider} id="sir-e" label="E.m.f. ε (V)" min=${1.5} max=${12} step=${.5} value=${E} set=${setE} /><${Slider} id="sir-r" label="Internal resistance r (Ω)" min=${.1} max=${5} step=${.1} value=${r0} set=${setR0} fmt=${x => x.toFixed(1)} /><${Slider} id="sir-R" label="Load R (Ω)" min=${.5} max=${30} step=${.5} value=${R} set=${setR} />`}
+      readouts=${[["I = ε/(R + r)", f2(I) + " A"], ["Terminal p.d. V = ε − Ir", f2(V) + " V"], ["Lost volts Ir", f2(I * r0) + " V"]]} />`;
+  },
+  divider() {
+    const [sensor, setSensor] = useState("ldr"), [lvl, setLvl] = useState(50), [R1, setR1] = useState(10), [across, setAcross] = useState("fixed");
+    const Rs = sensor === "ldr" ? 100 * Math.pow(.01, lvl / 100) : 50 * Math.exp(-lvl / 25), Vin = 6;
+    const Vsensor = Vin * Rs / (Rs + R1), Vout = across === "fixed" ? Vin - Vsensor : Vsensor;
+    const ref = useSimCanvas((ctx, w, h, t, C) => {
+      const x = w / 2, top = 30, bot = h - 30, mid = top + (bot - top) * (Rs / (Rs + R1));
+      ctx.fillStyle = C.acc + "55"; ctx.fillRect(x - 30, top, 60, mid - top); ctx.fillStyle = C.pen + "55"; ctx.fillRect(x - 30, mid, 60, bot - mid);
+      ctx.strokeStyle = C.ink3; ctx.strokeRect(x - 30, top, 60, bot - top); ctx.fillStyle = C.ink; ctx.fillText(sensor === "ldr" ? "LDR" : "thermistor", x + 40, (top + mid) / 2); ctx.fillText(`fixed ${R1} kΩ`, x + 40, (mid + bot) / 2);
+      ctx.fillStyle = C.ink2; ctx.fillText(`${Vin} V shared in proportion to resistance`, 12, 18); ctx.fillText(`${f2(Vsensor)} V`, x - 90, (top + mid) / 2); ctx.fillText(`${f2(Vin - Vsensor)} V`, x - 90, (mid + bot) / 2);
+    }, [sensor, lvl, R1]);
+    return html`<${SimFrame} title="Potential divider with a sensor (6 V supply)" canvasRef=${ref} controls=${html`<div class="seg"><button aria-pressed=${sensor === "ldr"} onClick=${() => setSensor("ldr")}><b>LDR</b></button><button aria-pressed=${sensor === "th"} onClick=${() => setSensor("th")}><b>NTC thermistor</b></button></div>
+      <${Slider} id="sdv-l" label=${sensor === "ldr" ? "Light intensity" : "Temperature"} min=${0} max=${100} step=${1} value=${lvl} set=${setLvl} fmt=${x => sensor === "ldr" ? x + "%" : x + " °C"} /><${Slider} id="sdv-r" label="Fixed resistor (kΩ)" min=${1} max=${50} step=${1} value=${R1} set=${setR1} />
+      <div class="seg"><button aria-pressed=${across === "fixed"} onClick=${() => setAcross("fixed")}><b>Output across fixed resistor</b></button><button aria-pressed=${across === "sensor"} onClick=${() => setAcross("sensor")}><b>Output across sensor</b></button></div>`}
+      readouts=${[["Sensor resistance", f2(Rs, 1) + " kΩ"], ["Vout", f2(Vout) + " V"], ["Chain", sensor === "ldr" ? "more light → R falls → smaller share of p.d. across LDR" : "hotter → R falls → smaller share of p.d. across thermistor"]]} />`;
+  },
+  wave() {
+    const [A, setA] = useState(1), [lam, setLam] = useState(2), [f, setF] = useState(.5), [dx, setDx] = useState(.5);
+    const ref = useSimCanvas((ctx, w, h, t, C) => {
+      const x0 = 20, y0 = h / 2, sx = (w - 40) / 6, sy = (h / 2 - 30) / 2;
+      plotLine(ctx, [[x0, y0], [w - 20, y0]], C.ink3, 1, [4, 4]);
+      const y = x => A * Math.sin(2 * Math.PI * (x / lam - f * t)); const pts = []; for (let x = 0; x <= 6; x += .02) pts.push([x0 + x * sx, y0 - y(x) * sy]); plotLine(ctx, pts, C.acc, 2.5);
+      [1, 1 + dx].forEach((x, i) => { ctx.fillStyle = i ? C.pen : C.ink; ctx.beginPath(); ctx.arc(x0 + x * sx, y0 - y(x) * sy, 6, 0, 7); ctx.fill(); });
+      ctx.fillStyle = C.ink2; ctx.fillText("the dots oscillate up and down; the wave pattern moves right", 12, 18);
+    }, [A, lam, f, dx], true);
+    const ph = (dx / lam * 360) % 360;
+    return html`<${SimFrame} title="Progressive transverse wave" canvasRef=${ref} controls=${html`<${Slider} id="sw-a" label="Amplitude" min=${.2} max=${2} step=${.1} value=${A} set=${setA} fmt=${x => x.toFixed(1)} /><${Slider} id="sw-l" label="Wavelength λ (m)" min=${.5} max=${4} step=${.1} value=${lam} set=${setLam} fmt=${x => x.toFixed(1)} /><${Slider} id="sw-f" label="Frequency f (Hz)" min=${.1} max=${1.5} step=${.1} value=${f} set=${setF} fmt=${x => x.toFixed(1)} /><${Slider} id="sw-d" label="Separation of dots (m)" min=${0} max=${4} step=${.05} value=${dx} set=${setDx} fmt=${x => x.toFixed(2)} />`}
+      readouts=${[["Wave speed v = fλ", f2(f * lam) + " m s⁻¹"], ["Period T = 1/f", f2(1 / f) + " s"], ["Phase difference = Δx/λ × 360°", ph.toFixed(0) + "° = " + (ph * Math.PI / 180).toFixed(2) + " rad"]]} />`;
+  },
+  refraction() {
+    const [n1, setN1] = useState(1.5), [n2, setN2] = useState(1), [th, setTh] = useState(30);
+    const s2 = n1 * Math.sin(th * Math.PI / 180) / n2, tir = s2 > 1, t2 = tir ? null : Math.asin(s2) * 180 / Math.PI, Cc = n1 > n2 ? Math.asin(n2 / n1) * 180 / Math.PI : null;
+    const ref = useSimCanvas((ctx, w, h, t, C) => {
+      const cx = w / 2, cy = h / 2, L = Math.min(w, h) / 2 - 20, a = th * Math.PI / 180;
+      ctx.fillStyle = C.acc + (n1 > n2 ? "33" : "14"); ctx.fillRect(0, 0, w, cy); ctx.fillStyle = C.acc + (n2 > n1 ? "33" : "14"); ctx.fillRect(0, cy, w, h - cy);
+      plotLine(ctx, [[cx, 10], [cx, h - 10]], C.ink3, 1, [4, 4]); ctx.fillStyle = C.ink2; ctx.fillText(`n₁ = ${n1}`, 12, 20); ctx.fillText(`n₂ = ${n2}`, 12, h - 12); ctx.fillText("normal", cx + 4, 20);
+      arrow(ctx, cx - L * Math.sin(a), cy - L * Math.cos(a), cx, cy, C.pen);
+      if (tir) arrow(ctx, cx, cy, cx + L * Math.sin(a), cy - L * Math.cos(a), C.pen); else { const b = t2 * Math.PI / 180; arrow(ctx, cx, cy, cx + L * Math.sin(b), cy + L * Math.cos(b), C.acc); plotLine(ctx, [[cx, cy], [cx + L * .5 * Math.sin(a), cy - L * .5 * Math.cos(a)]], C.pen + "66", 1.5); }
+      ctx.fillStyle = tir ? C.pen : C.ink; ctx.fillText(tir ? "Total internal reflection: no refracted ray" : "", cx + 10, cy + 30);
+    }, [n1, n2, th]);
+    return html`<${SimFrame} title="Refraction and total internal reflection" canvasRef=${ref} controls=${html`<${Slider} id="sr-n1" label="n₁ (incident side)" min=${1} max=${2.4} step=${.05} value=${n1} set=${setN1} fmt=${x => x.toFixed(2)} /><${Slider} id="sr-n2" label="n₂" min=${1} max=${2.4} step=${.05} value=${n2} set=${setN2} fmt=${x => x.toFixed(2)} /><${Slider} id="sr-t" label="Angle of incidence (° from normal)" min=${0} max=${89} step=${1} value=${th} set=${setTh} />`}
+      readouts=${[["n₁ sin θ₁ = n₂ sin θ₂", tir ? "no solution (sin θ₂ > 1)" : "θ₂ = " + t2.toFixed(1) + "°"], ["Critical angle sin C = n₂/n₁", Cc ? Cc.toFixed(1) + "°" : "none (light going into denser medium)"], ["Speed ratio v₁/v₂ = n₂/n₁", (n2 / n1).toFixed(2)]]} />`;
+  },
+  polariser() {
+    const [ang, setAng] = useState(30);
+    const I = Math.cos(ang * Math.PI / 180) ** 2;
+    const ref = useSimCanvas((ctx, w, h, t, C) => {
+      const x0 = 50, y0 = h - 36, W = w - 80, H = h - 70; axes(ctx, x0, y0, W, H, C, "angle between filters / °", "intensity");
+      const pts = []; for (let a = 0; a <= 360; a += 2) pts.push([x0 + a / 360 * W, y0 - Math.cos(a * Math.PI / 180) ** 2 * H]); plotLine(ctx, pts, C.acc, 2.5);
+      ctx.fillStyle = C.pen; ctx.beginPath(); ctx.arc(x0 + ang / 360 * W, y0 - I * H, 6, 0, 7); ctx.fill();
+      ctx.fillStyle = C.ink2; ctx.fillText("maximum at 0° and 180°, zero at 90° and 270°", x0 + 10, 18);
+    }, [ang]);
+    return html`<${SimFrame} title="Polarised light through a rotating filter" canvasRef=${ref} controls=${html`<${Slider} id="spo-a" label="Rotation (°)" min=${0} max=${360} step=${5} value=${ang} set=${setAng} />`}
+      readouts=${[["Relative intensity", (I * 100).toFixed(0) + "%"], ["What the exam wants", "oscillations in one plane; intensity falls to zero at 90°, back to maximum at 180°"]]} />`;
+  },
+  interference() {
+    const [a, setA] = useState(3), [lam, setLam] = useState(1), [py, setPy] = useState(0);
+    const D = 20; const d1 = Math.hypot(D, py - a / 2), d2 = Math.hypot(D, py + a / 2), pd = Math.abs(d2 - d1) / lam;
+    const ref = useSimCanvas((ctx, w, h, t, C) => {
+      const sx = (w - 120) / D, mid = h / 2, sy = (h - 30) / 20;
+      for (let yy = -10; yy <= 10; yy += .05) { const q = Math.abs(Math.hypot(D, yy - a / 2) - Math.hypot(D, yy + a / 2)) / lam, I = Math.cos(Math.PI * q) ** 2; ctx.fillStyle = C.acc; ctx.globalAlpha = I; ctx.fillRect(w - 60, mid + yy * sy, 40, sy * .06 + 1); }
+      ctx.globalAlpha = 1; [-a / 2, a / 2].forEach(s => { ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(40, mid + s * sy, 6, 0, 7); ctx.fill(); });
+      plotLine(ctx, [[40, mid - a / 2 * sy], [w - 60, mid + py * sy]], C.ink3, 1, [4, 3]); plotLine(ctx, [[40, mid + a / 2 * sy], [w - 60, mid + py * sy]], C.ink3, 1, [4, 3]);
+      ctx.fillStyle = C.pen; ctx.beginPath(); ctx.arc(w - 60, mid + py * sy, 6, 0, 7); ctx.fill(); ctx.fillStyle = C.ink2; ctx.fillText("two coherent sources", 12, 18); ctx.fillText("screen", w - 64, 18);
+    }, [a, lam, py]);
+    const frac = pd % 1, kind = frac < .1 || frac > .9 ? "constructive (maximum)" : Math.abs(frac - .5) < .1 ? "destructive (minimum)" : "in between";
+    return html`<${SimFrame} title="Two-source interference" canvasRef=${ref} controls=${html`<${Slider} id="si-a" label="Source separation a (m)" min=${1} max=${6} step=${.1} value=${a} set=${setA} fmt=${x => x.toFixed(1)} /><${Slider} id="si-l" label="Wavelength λ (m)" min=${.3} max=${2} step=${.05} value=${lam} set=${setLam} fmt=${x => x.toFixed(2)} /><${Slider} id="si-p" label="Point P on screen (m from centre)" min=${-10} max=${10} step=${.1} value=${py} set=${setPy} fmt=${x => x.toFixed(1)} />`}
+      readouts=${[["Path difference", pd.toFixed(2) + " λ"], ["At P", kind], ["Fringe spacing x = λD/a", (lam * D / a).toFixed(2) + " m (D = 20 m)"]]} />`;
+  },
+  stationary() {
+    const [n, setN] = useState(2), [show, setShow] = useState(true);
+    const ref = useSimCanvas((ctx, w, h, t, C) => {
+      const x0 = 30, L = w - 60, y0 = h / 2, A = (h / 2 - 30) / 2, k = n * Math.PI / L, om = 3;
+      const wave = (dir) => { const p = []; for (let x = 0; x <= L; x += 3) p.push([x0 + x, y0 - A * Math.sin(k * x - dir * om * t)]); return p; };
+      if (show) { plotLine(ctx, wave(1), C.acc + "66", 1.5); plotLine(ctx, wave(-1), C.pen + "66", 1.5); }
+      const sum = []; for (let x = 0; x <= L; x += 3) sum.push([x0 + x, y0 - 2 * A * Math.sin(k * x) * Math.cos(om * t)]); plotLine(ctx, sum, C.ink, 2.5);
+      for (let i = 0; i <= n; i++) { ctx.fillStyle = C.pen; ctx.beginPath(); ctx.arc(x0 + i * L / n, y0, 5, 0, 7); ctx.fill(); }
+      ctx.fillStyle = C.ink2; ctx.fillText("red dots: nodes (zero amplitude) · black: resultant", 12, 18);
+    }, [n, show], true);
+    return html`<${SimFrame} title="Stationary wave on a string fixed at both ends" canvasRef=${ref} controls=${html`<${Slider} id="sst-n" label="Harmonic n" min=${1} max=${6} step=${1} value=${n} set=${setN} /><label class="sl"><span>Show the two travelling waves</span><input type="checkbox" id="sst-s" checked=${show} onChange=${e => setShow(e.target.checked)} /></label>`}
+      readouts=${[["Wavelength", n === 1 ? "λ = 2L" : `λ = 2L/${n}`], ["Node to node", "λ/2"], ["Frequency", `f = ${n} × fundamental`], ["Formed by", "superposition of two waves of the same frequency travelling in opposite directions"]]} />`;
+  },
+  photoelectric() {
+    const [f, setF] = useState(8), [I, setI] = useState(50), [phi, setPhi] = useState(2.3);
+    const E = 6.63e-34 * f * 1e14 / 1.6e-19, ke = E - phi, emits = ke > 0;
+    const ref = useSimCanvas((ctx, w, h, t, C) => {
+      const plate = w * .55; ctx.fillStyle = C.ink3; ctx.fillRect(plate, 30, 14, h - 60);
+      const nph = Math.round(I / 8); for (let i = 0; i < nph; i++) { const ph = ((t * .6 + i / nph) % 1), x = 20 + ph * (plate - 30), y = 40 + ((i * 47) % (h - 80)); ctx.strokeStyle = C.pen; ctx.beginPath(); for (let s = 0; s < 18; s++) ctx.lineTo(x + s, y + 3 * Math.sin(s * .9 + f)); ctx.stroke(); }
+      if (emits) { const sp = .3 + Math.sqrt(ke) * .5; for (let i = 0; i < nph; i++) { const ph = ((t * sp + i / nph) % 1), x = plate + 20 + ph * (w - plate - 40), y = 40 + ((i * 59) % (h - 80)); ctx.fillStyle = C.acc; ctx.beginPath(); ctx.arc(x, y, 4, 0, 7); ctx.fill(); } }
+      ctx.fillStyle = emits ? C.ink2 : C.pen; ctx.fillText(emits ? "electrons emitted: one per photon absorbed" : "no emission: photon energy below work function, whatever the intensity", 12, 18);
+    }, [f, I, phi, emits, ke], true);
+    return html`<${SimFrame} title="Photoelectric effect" canvasRef=${ref} controls=${html`<${Slider} id="spe-f" label="Frequency (× 10¹⁴ Hz)" min=${3} max=${15} step=${.1} value=${f} set=${setF} fmt=${x => x.toFixed(1)} /><${Slider} id="spe-i" label="Intensity (photons per second)" min=${8} max=${100} step=${4} value=${I} set=${setI} fmt=${x => x + "%"} /><${Slider} id="spe-p" label="Work function φ (eV)" min=${1.8} max=${5} step=${.1} value=${phi} set=${setPhi} fmt=${x => x.toFixed(1)} />`}
+      readouts=${[["Photon energy hf", E.toFixed(2) + " eV"], ["KEmax = hf − φ", emits ? ke.toFixed(2) + " eV" : "none"], ["Threshold frequency φ/h", (phi * 1.6e-19 / 6.63e-34 / 1e14).toFixed(2) + " × 10¹⁴ Hz"], ["Intensity changes", "number of electrons per second only"]]} />`;
+  },
+  debroglie() {
+    const [V, setV] = useState(1000);
+    const lam = 6.63e-34 / Math.sqrt(2 * 9.11e-31 * 1.6e-19 * V);
+    const ref = useSimCanvas((ctx, w, h, t, C) => {
+      const cx = w / 2, cy = h / 2, R = Math.min(140, 60 * lam / 3.9e-11);
+      ctx.fillStyle = "#0b1320"; ctx.fillRect(cx - 160, cy - 130, 320, 260);
+      [R, R * 1.73].forEach((r, i) => { ctx.strokeStyle = i ? "#7fd08877" : "#7fd088"; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(cx, cy, r, 0, 7); ctx.stroke(); });
+      ctx.fillStyle = "#7fd088"; ctx.beginPath(); ctx.arc(cx, cy, 6, 0, 7); ctx.fill();
+      ctx.fillStyle = C.ink2; ctx.fillText("diffraction rings through graphite", 12, 18);
+    }, [V]);
+    return html`<${SimFrame} title="Electron diffraction" canvasRef=${ref} controls=${html`<${Slider} id="sdb-v" label="Accelerating p.d. (V)" min=${200} max=${5000} step=${100} value=${V} set=${setV} />`}
+      readouts=${[["Speed v = √(2eV/m)", (Math.sqrt(2 * 1.6e-19 * V / 9.11e-31)).toExponential(2) + " m s⁻¹"], ["λ = h/p", lam.toExponential(2) + " m"], ["Higher p.d. →", "more momentum, shorter λ, rings closer together"], ["Diffracts because", "λ is comparable to the atomic spacing (~10⁻¹⁰ m)"]]} />`;
+  }
+};
+function Sim({ id }) { const S = SIMS[id]; return S ? html`<${S} />` : null; }
+
+/* ---------- Concepts ---------- */
+function ConceptsView({ data, open, goTech }) {
+  const ref = useRef(null); const lenis = useLenis(ref);
+  const CS = data.concepts?.concepts || [];
+  const [cur, setCur] = useState(() => store.get("concept", CS[0]?.id || null));
+  useEffect(() => { store.set("concept", cur); if (lenis.current) lenis.current.scrollTo(0, { immediate: true }); else if (ref.current) ref.current.scrollTop = 0; }, [cur]);
+  if (!CS.length) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Concept explainers are still being written</h2></div></div></div>`;
+  const c = CS.find(x => x.id === cur) || CS[0];
+  const findQ = (r) => data.all.find(q => q.paper == r.paper && q.slug === r.slug && q.q === r.q);
+  const L = (arr) => arr?.length ? html`<ul>${arr.map((x, i) => html`<li key=${i}>${typeof x === "string" ? x : (x.wrong ? html`<span><b style=${{ color: "var(--pen)" }}>Wrong:</b> ${x.wrong} <b style=${{ color: "var(--accent)" }}>Right:</b> ${x.right}</span>` : JSON.stringify(x))}</li>`)}</ul>` : null;
+  const mods = [...new Set(CS.map(x => x.module))].sort();
+  return html`<div class="ins" ref=${ref}><div class="ins-inner" style=${{ paddingTop: "28px" }}>
+    <div class="tq-layout">
+      <nav class="tq-nav" aria-label="Concepts">
+        ${mods.map(m => html`<${React.Fragment} key=${m}><span style=${{ font: "600 10px/1 var(--f-mono)", letterSpacing: ".12em", textTransform: "uppercase", color: "var(--ink-3)", padding: "10px 10px 4px" }}>Module ${m}</span>
+          ${CS.filter(x => x.module === m).map(x => html`<button key=${x.id} class=${cur === x.id ? "on" : ""} onClick=${() => setCur(x.id)}><span>${x.title}</span><small>${x.stats?.marks ?? ""}</small></button>`)}</${React.Fragment}>`)}
+      </nav>
+      <div class="lesson">
+        <span class="eyebrow">Concept · Module ${c.module} · ${c.stats ? `${c.stats.parts} exam parts, ${c.stats.marks} marks, ${c.stats.sessions} sessions` : ""}</span>
+        <h3>${c.title}</h3>
+        ${c.principle && html`<p class="lead"><b>Built on:</b> ${c.principle}</p>`}
+        <div class="panel concept-idea">${(Array.isArray(c.idea) ? c.idea : String(c.idea || "").split(/\n\n+/)).map((p, i) => html`<p key=${i}>${p}</p>`)}</div>
+        ${c.buildup?.length ? html`<div class="panel"><h4>Building it up from the principle</h4><ol class="steps">${c.buildup.map((x, i) => html`<li key=${i}>${String(x).replace(/^\s*\d+[.)]\s*/, "")}</li>`)}</ol></div>` : null}
+        ${c.sim && SIMS[c.sim] ? html`<div><${Sim} id=${c.sim} />${c.sim_guide ? html`<p class="sub" style=${{ margin: "8px 0 0" }}><b>Try:</b> ${c.sim_guide}</p>` : null}</div>` : null}
+        ${c.misconceptions?.length ? html`<div class="panel"><h4>Common wrong ideas</h4>${L(c.misconceptions)}</div>` : null}
+        ${c.translate?.length ? html`<div class="panel"><h4>From understanding to marks</h4><p class="sub" style=${{ margin: "0 0 10px" }}>What you understand on the left; what to write in the exam on the right.</p>
+          <div style=${{ overflowX: "auto" }}><table class="forms"><thead><tr><th>You understand</th><th>In the exam, write</th></tr></thead><tbody>${c.translate.map((t, i) => html`<tr key=${i}><td style=${{ fontFamily: "var(--f-body)", whiteSpace: "normal" }}>${t.understand}</td><td style=${{ color: "var(--accent)" }}>${t.write}</td></tr>`)}</tbody></table></div></div>` : null}
+        ${c.exam_shapes?.length ? html`<div class="panel"><h4>How the exams test it</h4><div class="nms">${c.exam_shapes.map((s, i) => html`<div class="nm" key=${i} style=${{ gap: "6px" }}><header><b>${s.shape}</b>${s.marks_typical ? html`<span class="pill mk">${s.marks_typical} marks</span>` : null}${(s.moves || []).map(m => html`<span class="pill ty" key=${m}>${MOVE_LABEL[m] || m}</span>`)}</header>
+          <div class="refs" style=${{ display: "flex", flexWrap: "wrap", gap: "4px 10px" }}>${(s.refs || []).map((r, j) => html`<button key=${j} class="link" style=${{ font: "500 12px/1.4 var(--f-mono)" }} onClick=${() => open(r.paper, r.slug, findQ(r))}>P${r.paper} ${SLABEL[r.slug]} Q${r.q}</button>`)}</div></div>`)}</div></div>` : null}
+        ${c.traps?.length ? html`<div class="panel"><h4 style=${{ color: "var(--pen)" }}>Where marks are lost</h4>${L(c.traps)}</div>` : null}
+      </div>
+    </div>
+  </div></div>`;
+}
+
+/* ---------- Practise: mock, practice set, progress ---------- */
+function gradeFor(pb, slug, paper, score) {
+  const b = pb?.boundaries?.[slug]; if (!b) return null; const arr = b[paper - 1]; const G = ["A", "B", "C", "D", "E"];
+  for (let i = 0; i < 5; i++) if (score >= arr[i]) return G[i]; return "U";
+}
+function MockExam({ data, onSaved }) {
+  const [paper, setPaper] = useState(1), [slug, setSlug] = useState("jun2024"), [phase, setPhase] = useState("setup");
+  const [elapsed, setElapsed] = useState(0), [running, setRunning] = useState(false), [scores, setScores] = useState({});
+  const key = `p${paper}-${slug}`; const reg = data.regions[key]; const parts = data.byPaper[`${paper}:${slug}`] || [];
+  const qs = useMemo(() => buildQuestions(reg, parts), [reg, parts]);
+  useEffect(() => { if (!running) return; const id = setInterval(() => setElapsed(e => e + 1), 1000); return () => clearInterval(id); }, [running]);
+  const max = parts.filter(p => !p.withdrawn).reduce((t, p) => t + (+p.marks || 0), 0); const got = Object.values(scores).reduce((a, b) => a + b, 0);
+  const mm = String(Math.floor(elapsed / 60)).padStart(2, "0"), ss = String(elapsed % 60).padStart(2, "0"); const over = elapsed > 90 * 60;
+  const qpUrl = `pdf/p${paper}-${slug}-qp.pdf`, msUrl = `pdf/p${paper}-${slug}-ms.pdf`;
+  if (phase === "setup") return html`<div class="lesson">
+    <h3>Mock exam</h3><p class="lead">Sit a full paper against the clock, then mark yourself part by part against the real mark scheme. Your score, the grade it would have earned that year and every mark you drop feed the progress dashboard.</p>
+    <div class="dd-tools"><div class="seg">${[1, 2].map(p => html`<button key=${p} aria-pressed=${paper === p} onClick=${() => setPaper(p)}><b>${PAPERS[p].name}</b><small>${PAPERS[p].sub}</small></button>`)}</div>
+      <select id="mock-slug" value=${slug} onChange=${e => setSlug(e.target.value)} aria-label="Session">${SESSIONS.map(s => html`<option key=${s.slug} value=${s.slug}>${s.label}</option>`)}</select></div>
+    <div class="panel"><ul><li>70 marks in 1 hour 30 minutes: about 1.3 minutes per mark.</li><li>Write your answers on paper; the mark scheme stays hidden until you finish.</li><li>Have the formula booklet open (Whole paper → Formulae).</li></ul>
+      <button class="btn" onClick=${() => { setScores({}); setElapsed(0); setRunning(true); setPhase("sit"); }}>Start ${PAPERS[paper].name}, ${SLABEL[slug]}</button></div>
+  </div>`;
+  return html`<div class="lesson">
+    <div class="mock-bar"><b>${PAPERS[paper].name} · ${SLABEL[slug]}</b><span class=${"mock-time" + (over ? " over" : "")}>${mm}:${ss} / 90:00</span>
+      ${phase === "sit" ? html`<button class="ib" onClick=${() => setRunning(r => !r)}>${running ? "Pause" : "Resume"}</button><button class="btn pen" onClick=${() => { setRunning(false); setPhase("mark"); }}>Finish and mark</button>`
+        : html`<span class="mock-score">${got} / ${max}${gradeFor(data.playbook, slug, paper, got) ? ` · grade ${gradeFor(data.playbook, slug, paper, got)}` : ` · ${Math.round(got / max * 100)}%`}</span><button class="btn" onClick=${() => { const att = store.get("attempts", []); att.push({ paper, slug, date: new Date().toISOString(), seconds: elapsed, scores, max }); store.set("attempts", att); onSaved?.(); setPhase("setup"); }}>Save result</button>`}
+    </div>
+    ${qs.map(q => html`<div class="panel" key=${q.n} style=${{ display: "grid", gap: "12px" }}>
+      <h4 style=${{ margin: 0 }}>Question ${q.n} <span class="pill mk">${q.marks} marks</span></h4>
+      ${q.rows.map(r => html`<div class="qrowx" key=${r.label} style=${{ gridTemplateColumns: phase === "mark" ? "minmax(0,1.12fr) minmax(0,1fr)" : "minmax(0,1fr)" }}>
+        <div class="side qp">${r.label !== String(q.n) ? html`<div class="ptag"><b>${r.label}</b></div>` : null}${r.qp.map((s, i) => html`<${Crop} key=${i} url=${qpUrl} seg=${s} box=${reg.qp} side="qp" />`)}</div>
+        ${phase === "mark" && html`<div class="side ms">
+          ${r.ms.map((u, i) => html`<div class="side" key=${i}>${u.segs.map((s, j) => html`<${Crop} key=${j} url=${msUrl} seg=${s} box=${reg.ms} side="ms" />`)}</div>`)}
+          ${r.msPage ? html`<${Crop} url=${msUrl} seg=${[r.msPage, 0, 0]} box=${reg.ms} full=${true} side="ms" />` : null}
+          ${r.parts.filter(p => !p.withdrawn).map(p => html`<div class="score-row" key=${p.q}><span class="mono">${p.q}</span><span class="score-btns">${Array.from({ length: (+p.marks || 0) + 1 }, (_, k) => html`<button key=${k} aria-pressed=${scores[p.q] === k} onClick=${() => setScores(s => ({ ...s, [p.q]: k }))}>${k}</button>`)}</span><span class="shared">/ ${p.marks}</span></div>`)}
+        </div>`}
+      </div>`)}
+    </div>`)}
+  </div>`;
+}
+function PracticeSet({ data, onSaved }) {
+  const P = data.practice?.questions || []; const [style, setStyle] = useState("all"), [open, setOpen] = useState({}), [marks, setMarks] = useState(() => store.get("pq", {}));
+  useEffect(() => { store.set("pq", marks); onSaved?.(); }, [marks]);
+  if (!P.length) return html`<div class="lesson"><h3>Practice set</h3><p class="lead">The practice questions are still being written.</p></div>`;
+  const styles = [...new Set(P.map(q => q.style))]; const SL = { "six-mark": "Six-mark", uncertainty: "Uncertainty", linearise: "Choosing what to plot", ratio: "Ratio and scaling", "show-that": "Show that", mcq: "Multiple choice" };
+  const list = P.filter(q => style === "all" || q.style === style);
+  return html`<div class="lesson">
+    <h3>Practice set</h3><p class="lead">${P.length} original exam-style questions in the styles textbooks rarely practise, each with a mark scheme written to OCR's conventions. Answer on paper, then reveal the scheme and mark yourself.</p>
+    <div class="dd-tools"><div class="seg"><button aria-pressed=${style === "all"} onClick=${() => setStyle("all")}><b>All</b></button>${styles.map(s => html`<button key=${s} aria-pressed=${style === s} onClick=${() => setStyle(s)}><b>${SL[s] || s}</b></button>`)}</div></div>
+    <div class="nms">${list.map(q => html`<article class="nm pq" key=${q.id}>
+      <header><b>${q.title}</b><span class="pill ty">${SL[q.style] || q.style}</span><span class="pill">${q.topic}${data.spec?.sections?.[q.topic] ? " " + data.spec.sections[q.topic] : ""}</span><span class="pill mk">${q.marks} marks</span>${marks[q.id] != null ? html`<span class="pill">scored ${marks[q.id]}/${q.marks}</span>` : null}</header>
+      <div class="pq-stem">${String(q.stem || "").split("\n").map((l, i) => html`<p key=${i}>${l}</p>`)}</div>
+      ${q.options?.length ? html`<ol class="pq-opts" type="A">${q.options.map((o, i) => html`<li key=${i}>${o.replace(/^[A-D][\s.)]+/, "")}</li>`)}</ol>` : null}
+      ${q.parts?.length ? html`<div class="pq-parts">${q.parts.map((p, i) => html`<p key=${i}><b class="mono">${p.label}</b> ${p.text} <span class="pill mk">${p.marks}</span></p>`)}</div>` : null}
+      ${!open[q.id] ? html`<button class="ib" onClick=${() => setOpen(o => ({ ...o, [q.id]: true }))}>Show mark scheme</button>` : html`
+        <div class="blk"><span class="h">Answer</span><span class="mono">${q.answer}</span></div>
+        ${q.working?.length ? html`<div class="blk"><span class="h">Worked solution</span><ol style=${{ margin: 0, paddingLeft: "20px" }}>${q.working.map((w, i) => html`<li key=${i}>${w}</li>`)}</ol></div>` : null}
+        <div class="blk"><span class="h">Mark scheme</span><table class="forms"><tbody>${(q.scheme || []).map((s, i) => html`<tr key=${i}><td style=${{ fontFamily: "var(--f-mono)", color: "var(--pen)" }}>${s.code || ""}</td><td>${s.point}</td><td style=${{ color: "var(--ink-3)" }}>${s.guidance || ""}</td></tr>`)}</tbody></table>
+          ${q.levels ? html`<dl class="codes" style=${{ marginTop: "8px" }}>${Object.entries(q.levels).map(([k, v]) => html`<${React.Fragment} key=${k}><dt>${k}</dt><dd>${v}</dd></${React.Fragment}>`)}</dl>` : null}</div>
+        ${q.why ? html`<p class="shared" style=${{ margin: 0 }}>Trains: ${q.why}</p>` : null}
+        <div class="score-row"><span>Your mark</span><span class="score-btns">${Array.from({ length: q.marks + 1 }, (_, k) => html`<button key=${k} aria-pressed=${marks[q.id] === k} onClick=${() => setMarks(m => ({ ...m, [q.id]: k }))}>${k}</button>`)}</span></div>`}
+    </article>`)}</div>
+  </div>`;
+}
+function Progress({ data, goTech, open }) {
+  const attempts = store.get("attempts", []); const pq = store.get("pq", {}); const P = data.practice?.questions || [];
+  const qIndex = useMemo(() => Object.fromEntries(data.all.map(q => [`${q.paper}:${q.slug}:${q.q}`, q])), [data.all]);
+  const agg = useMemo(() => {
+    const by = { module: {}, sub: {}, move: {}, skill: {}, type: {} }; const add = (g, k, got, max) => { const o = by[g][k] ||= { got: 0, max: 0 }; o.got += got; o.max += max; };
+    for (const a of attempts) for (const [qq, sc] of Object.entries(a.scores || {})) { const q = qIndex[`${a.paper}:${a.slug}:${qq}`]; if (!q) continue; const m = +q.marks || 0;
+      const sp = (q.spec_points || [])[0]; if (sp) { add("module", "Module " + sp[0], sc, m); add("sub", sp.split("(")[0], sc, m); }
+      (q.moves || []).forEach(x => add("move", x, sc, m)); (q.sub || []).forEach(x => add("skill", x, sc, m)); add("type", q.type, sc, m); }
+    for (const q of P) if (pq[q.id] != null) { add("type", "practice: " + q.style, pq[q.id], q.marks); if (q.topic) add("sub", q.topic, pq[q.id], q.marks); }
+    return by;
+  }, [attempts.length, JSON.stringify(pq)]);
+  const weakest = (g, min = 3) => Object.entries(agg[g]).filter(([, o]) => o.max >= min).map(([k, o]) => [k, o, o.got / o.max]).sort((a, b) => a[2] - b[2]);
+  const ticks = { know: Object.values(store.get("know", {})).filter(Boolean).length, defs: Object.keys(store.get("defs", {})).length, gaps: Object.values(store.get("gaps", {})).filter(Boolean).length, must: Object.values(store.get("revised", {})).filter(Boolean).length };
+  const bar = (p) => html`<span class="pbar"><i style=${{ width: Math.round(p * 100) + "%", background: p < .5 ? "var(--pen)" : p < .7 ? "var(--accent)" : "#2e7d4f" }}></i></span>`;
+  const SSN = Object.fromEntries((data.subskills?.items || []).map(i => [i.id, i.name]));
+  const LES = new Set((data.techniques?.lessons || []).map(l => l.id));
+  const has = attempts.length || Object.keys(pq).length;
+  return html`<div class="lesson">
+    <h3>My progress</h3><p class="lead">Built from your mock exams, practice-set marks and the ticks you've made across the tool. Everything is stored in this browser only.</p>
+    <div class="ev"><div><b>${attempts.length}</b><span>mock papers marked</span></div><div><b>${Object.keys(pq).length}/${P.length}</b><span>practice questions marked</span></div>
+      <div><b>${ticks.defs}/${data.definitions?.items.length || 0}</b><span>definitions known</span></div><div><b>${ticks.know}/${data.knowledge?.items.length || 0}</b><span>knowledge items secure · ${ticks.gaps}/${data.gaps?.gaps.length || 0} gaps covered</span></div></div>
+    ${attempts.length ? html`<div class="panel" style=${{ overflowX: "auto" }}><h4>Mock results</h4><table class="dtab"><thead><tr><th style=${{ textAlign: "left" }}>Paper</th><th>Date</th><th>Time</th><th>Score</th><th>Grade</th></tr></thead><tbody>
+      ${attempts.slice().reverse().map((a, i) => { const s = Object.values(a.scores || {}).reduce((x, y) => x + y, 0); const g = gradeFor(data.playbook, a.slug, a.paper, s); return html`<tr key=${i}><td style=${{ textAlign: "left" }}>${PAPERS[a.paper].name} · ${SLABEL[a.slug]}</td><td>${new Date(a.date).toLocaleDateString()}</td><td>${Math.round(a.seconds / 60)} min</td><td>${s}/${a.max}</td><td>${g || Math.round(s / a.max * 100) + "%"}</td></tr>`; })}</tbody></table></div>` : null}
+    ${!has ? html`<div class="panel"><h4>Nothing marked yet</h4><p class="sub" style=${{ margin: 0 }}>Sit a mock or mark some practice questions; this page will then show your weakest topics, moves and skills, with links to the lessons that fix them.</p></div>` : html`
+      <div class="cols2">
+        <div class="panel"><h4>Weakest topics</h4><div class="rep">${weakest("sub").slice(0, 8).map(([k, o, p]) => html`<div class="row" key=${k} style=${{ gridTemplateColumns: "minmax(0,1fr) 110px 70px" }}><span><b class="mono" style=${{ color: "var(--accent)" }}>${k}</b> ${data.spec?.sections?.[k] || ""}</span>${bar(p)}<span>${o.got}/${o.max}</span></div>`)}</div></div>
+        <div class="panel"><h4>Weakest moves</h4><div class="rep">${weakest("move").slice(0, 8).map(([k, o, p]) => html`<div class="row" key=${k} style=${{ gridTemplateColumns: "minmax(0,1fr) 110px 70px" }}><span>${LES.has(k) ? html`<button class="link" onClick=${() => goTech(k)}>${MOVE_LABEL[k] || k}</button>` : (MOVE_LABEL[k] || k)}</span>${bar(p)}<span>${o.got}/${o.max}</span></div>`)}</div></div>
+        <div class="panel"><h4>Weakest skills</h4><div class="rep">${weakest("skill").slice(0, 10).map(([k, o, p]) => html`<div class="row" key=${k} style=${{ gridTemplateColumns: "minmax(0,1fr) 110px 70px" }}><span><button class="link" onClick=${() => goTech("skills")}>${k} ${SSN[k] || ""}</button></span>${bar(p)}<span>${o.got}/${o.max}</span></div>`)}</div></div>
+        <div class="panel"><h4>By question type</h4><div class="rep">${weakest("type", 1).map(([k, o, p]) => html`<div class="row" key=${k} style=${{ gridTemplateColumns: "minmax(0,1fr) 110px 70px" }}><span>${tl(k.replace("practice: ", "")) + (k.startsWith("practice") ? " (practice)" : "")}</span>${bar(p)}<span>${o.got}/${o.max}</span></div>`)}</div></div>
+      </div>
+      <div class="panel"><h4>What to do next</h4><ol class="steps">
+        ${weakest("move").slice(0, 2).map(([k]) => html`<li key=${"m" + k}>Work through the <b>${MOVE_LABEL[k] || k}</b> lesson in Techniques, then its practice list.</li>`)}
+        ${weakest("sub").slice(0, 2).map(([k]) => html`<li key=${"s" + k}>Revisit <b>${k} ${data.spec?.sections?.[k] || ""}</b>: read its concept explainer and redo the past questions on it from the Spec tab.</li>`)}
+        ${ticks.defs < (data.definitions?.items.length || 0) ? html`<li>Finish the Definitions drill: ${(data.definitions?.items.length || 0) - ticks.defs} still to learn.</li>` : null}
+        <li>Sit another mock, choosing a paper with more difficulty dots once you score above your target grade.</li>
+      </ol></div>`}
+  </div>`;
+}
+function PractiseView({ data, open, goTech }) {
+  const ref = useRef(null); useLenis(ref);
+  const [sub, setSub] = useState(() => store.get("practise", "mock")); const [, force] = useState(0);
+  useEffect(() => { store.set("practise", sub); }, [sub]);
+  return html`<div class="ins" ref=${ref}><div class="ins-inner" style=${{ paddingTop: "24px" }}>
+    <div class="seg" style=${{ marginBottom: "18px" }}>${[["mock", "Mock exam"], ["set", "Practice set"], ["progress", "My progress"]].map(([k, l]) => html`<button key=${k} aria-pressed=${sub === k} onClick=${() => setSub(k)}><b>${l}</b></button>`)}</div>
+    ${sub === "mock" ? html`<${MockExam} data=${data} onSaved=${() => force(x => x + 1)} />` : sub === "set" ? html`<${PracticeSet} data=${data} onSaved=${() => force(x => x + 1)} />` : html`<${Progress} data=${data} goTech=${goTech} open=${open} />`}
+  </div></div>`;
+}
+
 /* ---------- Textbook vs exams ---------- */
 const TYPE_ORDER = ["mcq", "calculation-single-step", "calculation-multi-step", "explain", "define-state", "show-that", "sketch-draw", "describe", "practical-method", "graph-read", "graph-gradient", "uncertainty-error", "level-of-response", "compare-suggest"];
 function pagesTxt(ps) { if (!ps?.length) return ""; const u = [...new Set(ps)].sort((a, b) => a - b); return "p." + u.join(", "); }
@@ -2245,7 +2752,7 @@ function App() {
   const [data, setData] = useState({ all: [], byPaper: {}, ins: {}, regions: {}, ready: false });
   const init = store.get("sel", { paper: 1, slug: "jun2024" });
   const [sel, setSel] = useState({ paper: init.paper || 1, slug: SLABEL[init.slug] ? init.slug : "jun2024", q: null, nonce: 0 });
-  const fromHash = () => ({ "#insights": "insights", "#paper": "paper", "#spec": "spec", "#playbook": "playbook", "#techniques": "techniques", "#textbook": "textbook" })[location.hash] || "questions";
+  const fromHash = () => ({ "#insights": "insights", "#paper": "paper", "#spec": "spec", "#playbook": "playbook", "#techniques": "techniques", "#textbook": "textbook", "#concepts": "concepts", "#practise": "practise" })[location.hash] || "questions";
   const [specQ, setSpecQ] = useState({ q: "", n: 0 });
   const [view, setView] = useState(fromHash);
   useEffect(() => { store.set("sel", { paper: sel.paper, slug: sel.slug }); }, [sel.paper, sel.slug]);
@@ -2271,16 +2778,19 @@ function App() {
       fetch("data/gaps.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/skill-lessons.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/textbook.json").then(r => r.ok ? r.json() : null).catch(() => null),
-    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge, subskills, gaps, skillLessons, textbook]) => {
+      fetch("data/concepts.json").then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch("data/practice.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge, subskills, gaps, skillLessons, textbook, concepts, practice]) => {
       KNOW = Object.fromEntries((knowledge?.items || []).map(i => [i.id, i]));
       const rcIndex = {}; for (const r of rootcause?.parts || []) rcIndex[`${r.paper}:${r.slug}:${r.q}`] = r;
       const nmIndex = {};
       for (const it of nearmiss?.items || []) for (const r of it.refs || []) (nmIndex[`${r.paper}:${r.slug}:${r.q}`] ||= []).push(it);
       const byPaper = {}; for (const q of all) (byPaper[`${q.paper}:${q.slug}`] ||= []).push(q);
-      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, definitions, knowledge, subskills, gaps, skillLessons, textbook, ready: true });
+      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, definitions, knowledge, subskills, gaps, skillLessons, textbook, concepts, practice, ready: true });
     });
   }, []);
   const hardMarks = useMemo(() => { const m = {}; for (const q of data.all) if (!q.withdrawn && q.difficulty === 3) { const k = `${q.paper}:${q.slug}`; m[k] = (m[k] || 0) + (+q.marks || 0); } for (const q of data.all) { const k = `${q.paper}:${q.slug}`; if (!(k in m)) m[k] = 0; } return m; }, [data.all]);
+  const goTech = (id) => { store.set("tech", id); go("techniques"); };
   const openSpec = (code) => { setSpecQ(o => ({ q: code, n: o.n + 1 })); go("spec"); };
   const open = (paper, slug, q) => { setSel(s => ({ paper: +paper, slug, q: q || null, nonce: s.nonce + 1 })); go("questions"); };
 
@@ -2291,6 +2801,8 @@ function App() {
         <div class="brand"><span class="code">H156</span><h1>Paper Bench <span>OCR A · AS Physics</span></h1></div>
         <nav class="tabs" aria-label="View">
           <button aria-pressed=${view === "questions"} onClick=${() => go("questions")}>Questions</button>
+          <button aria-pressed=${view === "concepts"} onClick=${() => go("concepts")}>Concepts</button>
+          <button aria-pressed=${view === "practise"} onClick=${() => go("practise")}>Practise</button>
           <button aria-pressed=${view === "paper"} onClick=${() => go("paper")}>Whole paper</button>
           <button aria-pressed=${view === "spec"} onClick=${() => go("spec")}>Spec</button>
           <button aria-pressed=${view === "playbook"} onClick=${() => go("playbook")}>Playbook</button>
@@ -2309,7 +2821,7 @@ function App() {
               return html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label + (h != null ? ` · ${h} hard marks` : "")}><span class="y">${s.y}</span><span class="m">${s.m}</span>${lvl ? html`<span class="dif" aria-label=${`${h} hard marks`}>${[1, 2, 3].map(i => html`<i key=${i} class=${i <= lvl ? "on" : ""}></i>`)}</span>` : null}</button>`; })}
           </div>
         </div>
-        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} query=${specQ} />` : view === "playbook" ? html`<${Playbook} data=${data} open=${open} openSpec=${openSpec} />` : view === "techniques" ? html`<${Techniques} data=${data} open=${open} />` : view === "textbook" ? html`<${TextbookView} data=${data} open=${open} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}
+        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} query=${specQ} />` : view === "playbook" ? html`<${Playbook} data=${data} open=${open} openSpec=${openSpec} />` : view === "techniques" ? html`<${Techniques} data=${data} open=${open} />` : view === "textbook" ? html`<${TextbookView} data=${data} open=${open} />` : view === "concepts" ? html`<${ConceptsView} data=${data} open=${open} />` : view === "practise" ? html`<${PractiseView} data=${data} open=${open} goTech=${goTech} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}
     </div>`;
 }
 ReactDOM.createRoot(document.getElementById("root")).render(html`<${App} />`);

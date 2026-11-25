@@ -1,0 +1,3401 @@
+{
+ "concepts": [
+  {
+   "id": "c-vectors",
+   "title": "Vectors and resolving",
+   "module": 2,
+   "principle": "Some quantities only make sense with a direction attached. Directions are independent: effects along two perpendicular lines do not interfere, so any vector can be split into perpendicular parts and added back up.",
+   "spec": [
+    "2.3.1(a)",
+    "2.3.1(b)",
+    "2.3.1(c)",
+    "2.3.1(d)"
+   ],
+   "idea": [
+    "Walk 3 m east then 4 m north and you are 5 m from where you started, not 7 m. Mass, energy and time are just amounts, so you add them like money. Displacement, velocity, force and momentum also have a direction, and when you combine them the directions matter as much as the sizes. Two equal forces can add to double, cancel to nothing, or anything in between.",
+    "Adding vectors is 'follow one arrow, then the next'. Put the tail of the second arrow at the tip of the first; the resultant is the shortcut from the very start to the very end. When the two arrows are at right angles, the shortcut is the hypotenuse, so Pythagoras gives its size and tan gives its angle. For other angles you can draw it to scale.",
+    "Resolving runs the same idea backwards. A rope pulling a sledge at 30° above the ground is doing two jobs at once: dragging it forward and lifting it slightly. Ask 'how much of this arrow lies along that line?' The part next to the angle is F cos θ; the part across is F sin θ. Because perpendicular directions are independent, you can then deal with horizontal and vertical completely separately.",
+    "Equilibrium is the cleanest test: if the vector arrows of all the forces join tip-to-tail into a closed shape, the resultant is zero. For three forces that shape is a triangle, which is why a scale drawing or a little trigonometry can find an unknown force."
+   ],
+   "buildup": [
+    "1. A vector is an arrow: its length is the magnitude, its orientation is the direction.",
+    "2. To add vectors, place them tip-to-tail; the resultant runs from the first tail to the last tip.",
+    "3. For two perpendicular vectors a and b, the resultant is the hypotenuse: R = √(a² + b²), at angle θ = tan⁻¹(b/a) to a.",
+    "4. Reverse this: any vector F at angle θ to a chosen line is equivalent to F cos θ along the line plus F sin θ perpendicular to it (adjacent side = cos, opposite side = sin).",
+    "5. Perpendicular components do not affect each other, so you can write a separate equation for each direction (e.g. ΣFx = ma, ΣFy = 0).",
+    "6. If the resultant is zero, the arrows form a closed polygon; for three forces, a closed triangle of forces."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "A vector is just something with a size and a direction, so the definition is enough for any 'vector' question.",
+     "right": "When asked how adding vectors differs from adding scalars, the mark is for the consequence: directions must be accounted for, so vectors can partly or fully cancel while scalars simply add."
+    },
+    {
+     "wrong": "Two velocities at the same speed on opposite sides of a circle are 'the same velocity'.",
+     "right": "Same speed, different velocity: the direction has changed, so velocity has changed."
+    },
+    {
+     "wrong": "Sin is for vertical and cos is for horizontal.",
+     "right": "It depends where the angle is measured from: the component adjacent to the given angle uses cos. Measure the angle from the direction you want before choosing."
+    },
+    {
+     "wrong": "The resultant of 3 N and 4 N is 7 N.",
+     "right": "Only if they point the same way. Depending on direction it can be anything from 1 N to 7 N; at right angles it is 5 N."
+    },
+    {
+     "wrong": "A balancing force is fully described by its size.",
+     "right": "A force is a vector: say which way it acts (e.g. 4.8 N upwards, opposite to the weight)."
+    }
+   ],
+   "sim": "vector",
+   "sim_guide": "Fix two vectors and rotate one of them: watch the resultant swing from the sum to the difference of the sizes. Then pick a single vector and move its angle while reading off the two components, noticing that one grows exactly as the other shrinks and that cos is always the component next to the angle.",
+   "exam_shapes": [
+    {
+     "shape": "Find the resultant of two perpendicular vectors (size and direction)",
+     "moves": [
+      "vectors"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "23(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "3(a)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "16"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "4"
+      }
+     ]
+    },
+    {
+     "shape": "Resolve a tension at an angle, then use one component",
+     "moves": [
+      "vectors",
+      "rearrange"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "21(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "1(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "21(c)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "6"
+      }
+     ]
+    },
+    {
+     "shape": "Find the third force that balances two others",
+     "moves": [
+      "vectors"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "2"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "13"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "15"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "22(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Show that a component or tension has a given value",
+     "moves": [
+      "show-that",
+      "vectors"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "22(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "3(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "2(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "4(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Explain scalar versus vector behaviour in context",
+     "moves": [
+      "vectors"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "21(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "21(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "1(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Combine forces at an angle, then apply F = ma",
+     "moves": [
+      "vectors",
+      "chain"
+     ],
+     "marks_typical": "3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "21(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "21(b)(ii)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "A vector has a direction as well as a size.",
+     "write": "Vector: has magnitude and direction, e.g. velocity (or force, displacement). Do not give speed as the example."
+    },
+    {
+     "understand": "Directions change how vectors combine.",
+     "write": "Mass is a scalar so the values just add; velocity is a vector so its direction must be taken into account (vector triangle / resolving) and velocities can cancel."
+    },
+    {
+     "understand": "Only part of a slanted force acts along the line you care about.",
+     "write": "State which component you are using: 'horizontal component = 680 cos 55° = 390 N'. Never leave both cos and sin versions unlabelled."
+    },
+    {
+     "understand": "Perpendicular directions are independent.",
+     "write": "Write one equation per direction, e.g. 'vertically: 2T cos θ = W'."
+    },
+    {
+     "understand": "Equilibrium means the arrows close up.",
+     "write": "Triangle of forces: draw to a stated scale, arrows tip-to-tail all the same way round, triangle closed; then measure and quote the unknown with its unit."
+    },
+    {
+     "understand": "A resultant has a direction too.",
+     "write": "Give magnitude AND direction: '4.8 N, vertically upwards' or an angle 'to the horizontal'."
+    },
+    {
+     "understand": "Pythagoras gives the size, tan gives the angle.",
+     "write": "R = √(9.0² + 4.2²) = 9.9 m s⁻¹ — show the substitution, and take the square root at the end."
+    }
+   ],
+   "traps": [
+    "Ambiguous components: writing 680 cos 55 and 680 sin 55 without saying which is horizontal loses the mark (jun2022 Paper 1 Q21(b)(ii)).",
+    "Using sin where cos is needed (or the complement angle) caps a resolving calculation at one mark.",
+    "Stating a resultant or balancing force without its direction drops the direction mark.",
+    "Show-that tension 3.4 N: ending on 3.4 N earns nothing — show the working and quote 3.39 N.",
+    "Forgetting the final square root after Pythagoras gives v² written as v."
+   ],
+   "stats": {
+    "parts": 29,
+    "marks": 52,
+    "sessions": 18
+   }
+  },
+  {
+   "id": "c-kin-graphs",
+   "title": "Motion graphs",
+   "module": 3,
+   "principle": "Velocity is the rate of change of displacement and acceleration is the rate of change of velocity. On a graph, a rate is a gradient, and adding up a rate over time is an area.",
+   "spec": [
+    "3.1.1(a)",
+    "3.1.1(b)",
+    "3.1.1(c)",
+    "3.1.1(d)"
+   ],
+   "idea": [
+    "A displacement–time graph is a record of where something is at each moment. How steep it is tells you how fast position is changing, which is the velocity. Flat means stopped; a straight slope means steady velocity; a curve that gets steeper means speeding up. If the line comes back down, the object is heading back towards the start, so its velocity is negative.",
+    "A velocity–time graph moves the story up one level. Now the gradient is how fast velocity changes, which is acceleration. A horizontal line is constant velocity, a straight slope is constant acceleration, and a curve is changing acceleration. Crossing the time axis means the object turned round.",
+    "The area under a velocity–time graph is displacement because distance = velocity × time, and for each thin time slice velocity × time is a thin strip of area. Add up the strips and you have the total distance moved. For a braking car the area splits naturally into a rectangle (moving at constant speed while the driver reacts) and a triangle (slowing down).",
+    "Speed is how fast; velocity is how fast and which way. Going once round a circular track at steady speed, your distance keeps growing but your displacement rises to the diameter and falls back to zero, and your velocity is changing all the time because its direction is."
+   ],
+   "buildup": [
+    "1. Define velocity as v = Δs/Δt: the change in displacement per unit time.",
+    "2. On an s–t graph Δs/Δt is rise over run, so velocity = gradient; for a curve, use the gradient of the tangent at that instant.",
+    "3. Define acceleration as a = Δv/Δt, so on a v–t graph acceleration = gradient (negative gradient = deceleration).",
+    "4. Over a short time Δt the displacement is v Δt, a thin strip of area under the v–t graph; summing strips gives displacement = area under the v–t graph.",
+    "5. For constant acceleration the v–t graph is a straight line, so the area is a trapezium: s = ½(u + v)t. This links graphs directly to the suvat equations."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Talking about the graph getting steeper is enough to explain velocity changes.",
+     "right": "Say explicitly that velocity is the gradient of the s–t graph, then describe the gradient; the link is a separate mark and cannot be implied."
+    },
+    {
+     "wrong": "Distance from a v–t graph is the final velocity times the time.",
+     "right": "Distance is the area under the graph, split into rectangles, triangles or trapezia."
+    },
+    {
+     "wrong": "A falling-then-rising ball's height–time graph is made of straight lines.",
+     "right": "Straight lines mean constant velocity. Falling is a curve getting steeper; rising is a curve getting flatter, up to a lower peak if energy is lost."
+    },
+    {
+     "wrong": "If an object is momentarily at rest it has no acceleration.",
+     "right": "At the top of a throw or the bottom of a dive the velocity is zero but the resultant force — and the acceleration — is not."
+    },
+    {
+     "wrong": "Air resistance makes the v–t line 'less steep'.",
+     "right": "Comparative wording is refused: say the line curves, i.e. its gradient decreases with time."
+    }
+   ],
+   "sim": "kinematics",
+   "sim_guide": "Run a motion with constant acceleration and watch the s–t curve bend while the v–t line stays straight; read a tangent on the s–t graph and compare it with the v–t value at the same moment. Then add a reaction-time delay before braking and see the v–t area split into a rectangle and a triangle.",
+   "exam_shapes": [
+    {
+     "shape": "Velocity from the tangent to a curved s–t graph",
+     "moves": [
+      "graph-read",
+      "show-that"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "22(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "5(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "1(d)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "21(c)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Distance or stopping distance from area under a v–t graph",
+     "moves": [
+      "graph-read"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "21(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "1(a)(iii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "1(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "1(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Acceleration or deceleration from a v–t gradient",
+     "moves": [
+      "graph-read"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "1(a)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "1(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "21(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "1(a)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Describe and explain velocity changes from an s–t graph",
+     "moves": [
+      "graph-read",
+      "explain-chain"
+     ],
+     "marks_typical": "2–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "21(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "22(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "5(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "1(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Sketch or complete a motion graph for a bounce or new speed",
+     "moves": [
+      "graph-draw"
+     ],
+     "marks_typical": "2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "24(e)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "1(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "1(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Speed versus velocity or displacement around a loop",
+     "moves": [
+      "vectors"
+     ],
+     "marks_typical": "2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "21(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "1(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "1(a)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Steepness of s–t is how fast position changes.",
+     "write": "'Velocity = gradient of the displacement–time graph' written in words, then 'gradient constant / increasing / decreasing / zero, so velocity is …'."
+    },
+    {
+     "understand": "Steepness of v–t is how fast velocity changes.",
+     "write": "'Acceleration = gradient of v–t'. For braking: 'negative gradient shows deceleration; straight line (constant gradient) shows it is constant'."
+    },
+    {
+     "understand": "Area under v–t adds up velocity × time.",
+     "write": "'Distance = area under v–t graph' then show each shape: e.g. thinking 12 × 0.7 + braking ½ × 12 × 1.8."
+    },
+    {
+     "understand": "Instantaneous velocity needs a tangent.",
+     "write": "Draw a long ruled tangent exactly at the stated time; show Δs and Δt read from a large triangle."
+    },
+    {
+     "understand": "A curve means a changing rate.",
+     "write": "Say 'the gradient decreases with time' or 'the line curves', not 'less steep'."
+    },
+    {
+     "understand": "Velocity can change even if speed doesn't.",
+     "write": "'Same speed (magnitude), different direction, so the velocity is different.'"
+    }
+   ],
+   "traps": [
+    "Using the end time of a section (e.g. 4.5 s) instead of its duration (4.5 − 1.5 = 3.0 s) is explicitly not accepted.",
+    "Tangent drawn at roughly the right time or too short: the value must fall in the range and the readings must be shown.",
+    "Stopping distance from the braking triangle alone gives only braking distance (jun2018 Paper 1 Q10).",
+    "Rebound line on a v–t graph not starting at the right negative value or not parallel to the falling line (jun2019 Paper 2 Q1(b)(ii)).",
+    "Terminal velocity found as total s ÷ total t instead of the gradient of the straight section."
+   ],
+   "stats": {
+    "parts": 38,
+    "marks": 74,
+    "sessions": 19
+   }
+  },
+  {
+   "id": "c-suvat",
+   "title": "Constant acceleration and free fall",
+   "module": 3,
+   "principle": "If acceleration is constant, velocity changes by the same amount every second. Everything else (the suvat equations, free-fall timings, braking distances) follows from that one fact plus 'displacement = average velocity × time'.",
+   "spec": [
+    "3.1.2(a)(i)",
+    "3.1.2(a)(ii)",
+    "3.1.2(b)(i)",
+    "3.1.2(b)(ii)",
+    "3.1.2(c)"
+   ],
+   "idea": [
+    "Constant acceleration means velocity climbs (or falls) at a steady rate: an object accelerating at 3 m s⁻² gains 3 m s⁻¹ every second. Because the velocity grows evenly, its average over any interval is just halfway between the start and end values. Those two ideas are all the suvat equations really say.",
+    "Near Earth's surface, with air resistance negligible, every object falls with the same acceleration g ≈ 9.81 m s⁻². A heavier object has more weight, but also more mass to get moving, and the two cancel. That is why a ball dropped 2.0 m always takes about 0.64 s, whatever its mass.",
+    "A car's stopping distance has two parts. While the driver reacts, the car keeps going at full speed: thinking distance = speed × reaction time, so it doubles if speed doubles. Once the brakes are on, the car decelerates steadily; from v² = u² + 2as the braking distance grows with speed squared, so doubling speed quadruples it.",
+    "Measuring g is a timing problem. The drop takes a fraction of a second, comparable with human reaction time (about 0.2 s), so electronic timing — an electromagnet release and a trapdoor, or light gates to a timer — makes a big difference. Plotting a graph that should be a straight line (such as h against t²) lets you get g from the gradient and spot systematic errors."
+   ],
+   "buildup": [
+    "1. Constant acceleration a means velocity rises evenly: after time t, v = u + at.",
+    "2. Because velocity changes evenly, the average velocity is (u + v)/2, so s = ½(u + v)t.",
+    "3. Substitute v = u + at into that: s = ½(u + u + at)t = ut + ½at².",
+    "4. Eliminate t using t = (v − u)/a: s = ½(u + v)(v − u)/a, which rearranges to v² = u² + 2as.",
+    "5. For free fall from rest (u = 0, a = g): h = ½gt², so t² = (2/g)h — a straight line through the origin with gradient 2/g.",
+    "6. For braking to rest at constant deceleration a: 0 = u² − 2as, so braking distance s = u²/2a ∝ u²; thinking distance = u × reaction time ∝ u."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Use g = 9.81 m s⁻² in every suvat question.",
+     "right": "Use g only for free fall. For a trolley on a ramp or a lift, use the acceleration you are given or have calculated."
+    },
+    {
+     "wrong": "Halving the speed halves the whole stopping distance.",
+     "right": "Thinking distance halves (reaction time is unchanged) but braking distance quarters, because it depends on u²."
+    },
+    {
+     "wrong": "A stopwatch is fine because 'human error' is small.",
+     "right": "The specific issue is reaction time (~0.2 s) being large compared with a short fall; electronic timing reduces the percentage uncertainty in t."
+    },
+    {
+     "wrong": "Stopping distance is the braking distance.",
+     "right": "Stopping distance = thinking distance + braking distance."
+    },
+    {
+     "wrong": "A tired driver changes the braking slope on the v–t graph.",
+     "right": "Reaction time only lengthens the flat section; a different road surface or braking force changes the slope."
+    }
+   ],
+   "sim": "kinematics",
+   "sim_guide": "Set a constant acceleration and check that the velocity rises by the same amount each second, and that distance covered in successive seconds goes up in odd-number steps (1, 3, 5, …). Then run a braking scenario at two speeds, one double the other, and compare thinking and braking distances.",
+   "exam_shapes": [
+    {
+     "shape": "Pick a suvat equation and solve for time, speed or acceleration",
+     "moves": [
+      "rearrange"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "21(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "21(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "21(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "23(d)"
+      }
+     ]
+    },
+    {
+     "shape": "Free-fall impact speed or fall time from a height",
+     "moves": [
+      "rearrange"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "24(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "22(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "11"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "18"
+      }
+     ]
+    },
+    {
+     "shape": "Determine g by experiment and from a straight-line graph",
+     "moves": [
+      "plan",
+      "linearise",
+      "uncertainty"
+     ],
+     "marks_typical": "1–6",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "3(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "3(d)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "3(d)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "3"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "24(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Improve a timing method and justify it",
+     "moves": [
+      "plan",
+      "uncertainty"
+     ],
+     "marks_typical": "2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "24(d)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "21(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Stopping distance: thinking plus braking, and how they scale",
+     "moves": [
+      "ratio",
+      "recall-fact"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "1(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "5(e)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "1(c)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "1(c)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "10"
+      }
+     ]
+    },
+    {
+     "shape": "Acceleration from the gradient of a linearised suvat graph",
+     "moves": [
+      "linearise",
+      "graph-read"
+     ],
+     "marks_typical": "3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "22(b)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Velocity changes by a fixed amount each second.",
+     "write": "Write the equation you choose first (e.g. s = ut + ½at²), list u, a, s, then substitute; with u = 0 say so."
+    },
+    {
+     "understand": "From rest, final velocity is twice the average.",
+     "write": "From s = ½(u + v)t with u = 0: v = 2s/t — make v the subject; s = ½vt alone is not accepted."
+    },
+    {
+     "understand": "A straight-line graph needs the equation in y = mx + c form.",
+     "write": "'h = ½gt² so t² = (2/g)h; gradient of t² against h = 2/g, so g = 2/gradient.' Gradient from a large triangle, not one data point."
+    },
+    {
+     "understand": "Reaction time is the real timing problem.",
+     "write": "'Reaction time (~0.2 s) is large compared with the fall time, so use an electromagnet and trapdoor connected to an electronic timer.' Name the timer, not just 'light gates'."
+    },
+    {
+     "understand": "Stopping has two stages.",
+     "write": "'Stopping distance = thinking distance + braking distance.' For scaling: 'thinking ∝ u; braking ∝ u²'."
+    },
+    {
+     "understand": "A tired driver reacts later; a slippery road decelerates less.",
+     "write": "'Horizontal section longer, slope unchanged' vs 'slope less steep, horizontal section unchanged'."
+    },
+    {
+     "understand": "An odd reading should be identified, not hidden.",
+     "write": "Either average all values, or state 'x is anomalous' explicitly before averaging the rest."
+    }
+   ],
+   "traps": [
+    "Using 9.81 m s⁻² instead of a given lift or trolley acceleration is treated as wrong physics.",
+    "Rounding 4.946 s to 5.0 s rather than 4.9 s; and quoting 1 s.f. answers such as 0.7 s.",
+    "Setting gradient = a from v² = 2ax when gradient = 2a — write y = mx form first.",
+    "'Light gates' without a timer or data logger earns only part credit; 'human error' and 'repeat and average' are ignored as improvements.",
+    "Using the full height instead of the height actually fallen (e.g. 4.5 − 2.5 = 2.0 m)."
+   ],
+   "stats": {
+    "parts": 46,
+    "marks": 103,
+    "sessions": 21
+   }
+  },
+  {
+   "id": "c-projectiles",
+   "title": "Projectiles",
+   "module": 3,
+   "principle": "Horizontal and vertical motion are independent. With no air resistance, gravity acts only vertically, so the horizontal velocity stays constant while the vertical motion is ordinary constant-acceleration free fall. Time is the only thing the two share.",
+   "spec": [
+    "3.1.3(a)",
+    "3.1.3(b)"
+   ],
+   "idea": [
+    "Drop one ball and fire another sideways from the same height at the same moment: they land together. Gravity pulls both down identically; the sideways speed of the second ball does nothing to its fall. That experiment captures the whole topic — a projectile is two separate motions happening at once.",
+    "Sideways, nothing pushes or pulls (ignoring air), so the horizontal velocity never changes. Vertically, it is just free fall: the upward velocity shrinks by 9.81 m s⁻¹ every second, reaches zero at the top, then grows downwards. At the peak the ball still moves — it has its full horizontal velocity — so its speed is at a minimum, not zero.",
+    "To solve a projectile problem, split the launch velocity into components, use the vertical motion to find the time of flight (because that is where the acceleration is), and then use that time with the constant horizontal velocity to find how far it goes. Landing velocity is rebuilt from its two components with Pythagoras.",
+    "Air resistance breaks the symmetry. It opposes the motion, so it slows the horizontal speed too. The real path is lower everywhere, peaks sooner and comes down more steeply than the ideal parabola."
+   ],
+   "buildup": [
+    "1. Resolve the launch velocity u at angle θ above horizontal: uₕ = u cos θ, uᵥ = u sin θ.",
+    "2. Horizontally: no force, so a = 0 and x = uₕ t at all times.",
+    "3. Vertically: a = −g, so vᵥ = uᵥ − gt and y = uᵥ t − ½gt².",
+    "4. At the highest point vᵥ = 0, so the time to the top is uᵥ/g; for level ground the total flight time is twice that.",
+    "5. Range = uₕ × total flight time; landing speed = √(vₕ² + vᵥ²) and its angle below horizontal = tan⁻¹(vᵥ/vₕ)."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "At the top of the flight the ball is momentarily at rest.",
+     "right": "Only the vertical velocity is zero; the horizontal component is unchanged, so speed at the top = u cos θ."
+    },
+    {
+     "wrong": "A faster sideways throw takes longer to land.",
+     "right": "Fall time depends only on the vertical motion; horizontal speed changes the range, not the time."
+    },
+    {
+     "wrong": "Kinetic energy at the ground comes from the vertical velocity.",
+     "right": "KE uses the full speed — combine horizontal and vertical components (jun2023 Paper 2 Q3(c))."
+    },
+    {
+     "wrong": "With air resistance the path is just a scaled-down copy.",
+     "right": "It lies below the original throughout and reaches its peak earlier."
+    },
+    {
+     "wrong": "Momentum is conserved during flight.",
+     "right": "Gravity is an external force, so the ball's momentum changes during flight."
+    }
+   ],
+   "sim": "projectile",
+   "sim_guide": "Launch at a fixed speed and vary the angle: note that 30° and 60° land at the same place but with different flight times and landing angles. Switch on air resistance and compare the paths — the peak moves earlier and the descent becomes steeper.",
+   "exam_shapes": [
+    {
+     "shape": "Resolve the launch velocity into horizontal and vertical components",
+     "moves": [
+      "vectors",
+      "show-that"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "3(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "2(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "3(a)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Time of flight or time to peak from vertical motion",
+     "moves": [
+      "rearrange"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "23(d)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "3(a)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "2(b)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Range as constant horizontal velocity times flight time",
+     "moves": [
+      "vectors"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "2(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "4(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "18"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "24(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Landing velocity, angle or comparison of two launches",
+     "moves": [
+      "vectors",
+      "evaluate"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "3(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "4(b)(iii)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "2(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "2(d)"
+      }
+     ]
+    },
+    {
+     "shape": "Conceptual: velocity graphs, forces in flight, drag on path",
+     "moves": [
+      "vectors",
+      "graph-draw"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "5"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "3"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "3(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "18"
+      }
+     ]
+    },
+    {
+     "shape": "Plan an experiment testing a range formula",
+     "moves": [
+      "plan",
+      "linearise"
+     ],
+     "marks_typical": "6",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "4"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Two independent motions linked by time.",
+     "write": "Label each line of working 'vertically:' or 'horizontally:' so the examiner sees which motion you are using."
+    },
+    {
+     "understand": "Horizontal velocity is constant.",
+     "write": "'Horizontal component = 17 cos 60° = 8.5 m s⁻¹, unchanged throughout (no horizontal force).'"
+    },
+    {
+     "understand": "Vertical motion is free fall.",
+     "write": "Use suvat with a = 9.81 m s⁻² downwards and u = vertical component only; state u = 0 for a horizontal launch."
+    },
+    {
+     "understand": "At the top only vertical velocity is zero.",
+     "write": "'Speed at highest point = horizontal component only.'"
+    },
+    {
+     "understand": "Landing velocity combines both components.",
+     "write": "v = √(vₕ² + vᵥ²); angle = tan⁻¹(vᵥ/vₕ) 'below the horizontal'."
+    },
+    {
+     "understand": "Drag lowers and shortens the path.",
+     "write": "Sketch: always below the original curve, with the maximum height reached sooner."
+    }
+   ],
+   "traps": [
+    "Using g = 10 m s⁻² in a show-that or projectile calculation can cap or void the marks.",
+    "Using the whole launch speed instead of its vertical component when finding the time.",
+    "Sin/cos swapped when the angle is measured from the vertical (e.g. 22.3 cos 84°).",
+    "Ending a show-that on the printed value (e.g. 7.25 m s⁻¹) instead of showing 7.247 m s⁻¹.",
+    "Drag-path sketch that crosses the original path or peaks at the same horizontal position."
+   ],
+   "stats": {
+    "parts": 19,
+    "marks": 37,
+    "sessions": 11
+   }
+  },
+  {
+   "id": "c-newton",
+   "title": "Newton's laws and free-body diagrams",
+   "module": 3,
+   "principle": "Forces are interactions between pairs of objects. An object's motion changes only when the forces on it don't cancel, and the resultant force sets the rate of change of momentum (F = ma for constant mass).",
+   "spec": [
+    "3.2.1(a)",
+    "3.2.1(b)",
+    "3.2.1(c)",
+    "3.2.1(d)",
+    "3.2.1(e)",
+    "3.2.1(f)",
+    "3.5.1(a)"
+   ],
+   "idea": [
+    "Objects don't need a force to keep moving; they need a force to change how they are moving. A puck on ice glides on because almost nothing acts on it. So whenever velocity is constant — at rest, or cruising steadily — the forces on the object add to zero. Whenever velocity changes, in size or direction, there is a resultant force, and it points the way the velocity is changing.",
+    "How much the velocity changes depends on mass: the same push gives a small trolley a big acceleration and a loaded one a small acceleration. That is F = ma, where F is the resultant of all forces, not any single one. More fundamentally, the resultant force equals the rate at which momentum changes; F = ma is the version for a fixed mass.",
+    "Forces come in pairs because they are interactions. When you push on the wall, the wall pushes on you, equally hard and the opposite way. The two forces in a pair act on different objects and are the same type of force. That is why your weight and the floor's push on your feet are not a third-law pair: both act on you and they are different kinds of force (gravitational vs contact). The partner of your weight is your gravitational pull on the Earth.",
+    "A free-body diagram isolates one object and draws only the forces acting on it, each as an arrow from the object with a proper name: weight, normal contact force, tension, friction, drag, upthrust. Once it is drawn, the physics is just 'resultant = ma' in each direction."
+   ],
+   "buildup": [
+    "1. First law: if the resultant force is zero, velocity is constant (which includes staying at rest).",
+    "2. Second law: resultant force = rate of change of momentum, F = Δ(mv)/Δt.",
+    "3. For constant mass, Δ(mv)/Δt = m Δv/Δt = ma, so F = ma. The newton is the force that gives 1 kg an acceleration of 1 m s⁻².",
+    "4. Weight is just F = ma for free fall: W = mg.",
+    "5. Draw a free-body diagram; choose a positive direction; write resultant = (forces in + direction) − (forces in − direction) = ma. E.g. for a lift accelerating upward: R − mg = ma, so R = m(g + a).",
+    "6. Third law: if A pushes B, B pushes A with a force of equal size, opposite direction, same type — acting on the other body."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Newton's second law is F = ma.",
+     "right": "The law is: resultant force is proportional to (equal to) the rate of change of momentum. 'Change in momentum over time' without 'rate' is refused."
+    },
+    {
+     "wrong": "Weight and normal contact force on a book on a table are a third-law pair.",
+     "right": "They act on the same object and are different types; the pair of the book's weight is the book's pull on the Earth."
+    },
+    {
+     "wrong": "Equilibrium means the object is at rest.",
+     "right": "Zero resultant force means constant velocity, which can be moving."
+    },
+    {
+     "wrong": "Third law means 'action equals reaction'.",
+     "right": "Quoting that is refused; describe the forces: equal magnitude, opposite direction, on different objects, at every instant."
+    },
+    {
+     "wrong": "At the lowest point of a dive (momentarily stationary) there is no acceleration.",
+     "right": "There is still a resultant upward force, so the acceleration is upward."
+    }
+   ],
+   "sim": "vector",
+   "sim_guide": "Use the vector tool as a force board: add a weight arrow and a normal or tension arrow and adjust them until the resultant is zero (constant velocity), then make the upward force larger and read the resultant you would divide by mass to get the acceleration. Try adding a slanted tension and watch how only its component along the motion contributes.",
+   "exam_shapes": [
+    {
+     "shape": "Tension or scale reading when accelerating vertically",
+     "moves": [
+      "vectors",
+      "chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "11"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "2"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "21(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "23(b)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Decide whether two forces are a Newton's third law pair",
+     "moves": [
+      "recall-fact",
+      "explain-chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "21(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "21(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "21(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "9"
+      }
+     ]
+    },
+    {
+     "shape": "State Newton's second law in terms of momentum",
+     "moves": [
+      "definition"
+     ],
+     "marks_typical": "1",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "24(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "5(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "2(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Draw a labelled free-body diagram",
+     "moves": [
+      "vectors"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "5(a)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "21(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "7"
+      }
+     ]
+    },
+    {
+     "shape": "Constant velocity so resultant is zero — find a force",
+     "moves": [
+      "vectors",
+      "explain-chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "21(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "5(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "21(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "16"
+      }
+     ]
+    },
+    {
+     "shape": "Braking or resistive force from motion data and F = ma",
+     "moves": [
+      "chain",
+      "graph-read"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "5(d)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "1(b)(ii)3"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "1(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "21(b)(ii)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Force changes momentum.",
+     "write": "N2: 'The resultant force on an object is (directly) proportional to the rate of change of its momentum' (and acts in the same direction)."
+    },
+    {
+     "understand": "No resultant force, no change in velocity.",
+     "write": "N1: 'remains at rest or moves at constant velocity unless acted on by a resultant force' — not 'constant speed'."
+    },
+    {
+     "understand": "Forces are interactions between two bodies.",
+     "write": "N3: 'equal in magnitude, opposite in direction, same type of force, acting on different objects'."
+    },
+    {
+     "understand": "Weight and normal force on one object are not a pair.",
+     "write": "'They act on the same object (and are different types of force), so they are not an N3 pair.' Give the reason before the conclusion."
+    },
+    {
+     "understand": "Constant velocity means balanced.",
+     "write": "'Resultant force is zero (constant velocity), so reading = 700 N.' Avoid just 'balanced' or 'stays the same'."
+    },
+    {
+     "understand": "Mass must come from weight before using F = ma.",
+     "write": "Show m = W/g (e.g. 700/9.81 = 71.4 kg), then R − mg = ma with the sign of a correct."
+    },
+    {
+     "understand": "Free-body diagram shows forces on one object only.",
+     "write": "Arrows from the object, labelled weight (W or mg — not 'gravity'), normal contact force, tension along the string, friction opposite motion; equal pairs drawn equal length."
+    }
+   ],
+   "traps": [
+    "Lift scale: getting the sign of ma wrong (530 N instead of 870 N) or quoting only ma loses marks.",
+    "Labelling the weight arrow 'gravity', or drawing tension parallel to a ramp when the string is not.",
+    "Writing a bare 'not an N3 pair' with no reason scores nothing — the reason gates the mark.",
+    "Naming 'the ground' rather than the Earth as the partner of a ball's weight (jun2019 Paper 1 Q21(b)(i)).",
+    "Including the reaction-time interval when finding the braking deceleration (nov2020 Paper 2 Q5(d))."
+   ],
+   "stats": {
+    "parts": 50,
+    "marks": 89,
+    "sessions": 21
+   }
+  },
+  {
+   "id": "c-drag",
+   "title": "Drag and terminal velocity",
+   "module": 3,
+   "principle": "Newton's second law with a force that grows with speed. Drag opposes motion through a fluid and increases as the object speeds up, so the resultant force — and the acceleration — shrinks until it reaches zero.",
+   "spec": [
+    "3.2.2(a)",
+    "3.2.2(b)",
+    "3.2.2(c)",
+    "3.2.2(d)(i)",
+    "3.2.2(d)(ii)"
+   ],
+   "idea": [
+    "Moving through air or water means shoving fluid out of the way, and the fluid shoves back. That backward push is drag. It depends on how fast you go (faster means much more drag — roughly with speed squared at everyday speeds in air), on your cross-sectional area and shape, and on the fluid's density and viscosity.",
+    "Drop a feather or a skydiver. At the first instant they aren't moving, so there is no drag: the only force is weight, and they accelerate at g. As speed builds, drag grows, so the resultant force (weight minus drag) gets smaller and the acceleration falls. Eventually drag has grown as big as the weight. Resultant force is zero, acceleration is zero, and the speed stays constant: terminal velocity.",
+    "On a v–t graph this shows as a curve that starts with gradient g and gradually flattens to a horizontal line. On an s–t graph it becomes a straight line once terminal velocity is reached, and its gradient is the terminal velocity. An object with bigger weight but the same shape needs more drag to balance, so its terminal velocity is higher — though both start with the same acceleration.",
+    "In a liquid, upthrust joins in: at terminal velocity weight = drag + upthrust. That balance is how you find viscosity from a falling-ball experiment, and why you must check the ball really has reached constant speed before timing it."
+   ],
+   "buildup": [
+    "1. Forces on a falling object: weight W down, drag D up (and upthrust U up in a liquid).",
+    "2. Resultant force F = W − D (− U), so acceleration a = (W − D − U)/m.",
+    "3. At release v = 0, so D = 0 and a = g (if U is negligible).",
+    "4. As v increases, D increases, so F decreases and a decreases: the v–t gradient falls.",
+    "5. When D (+ U) = W, F = 0 so a = 0: velocity is constant at its terminal value. With D = kv², terminal velocity v = √(W/k).",
+    "6. Power needed against drag: P = Dv; if D ∝ v², then P ∝ v³."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "At terminal velocity the forces are 'balanced' or the object is 'in equilibrium' — that's enough.",
+     "right": "Say: weight = drag (+ upthrust), so the resultant force is zero, so acceleration is zero and velocity is constant."
+    },
+    {
+     "wrong": "The decreasing acceleration is due to drag and upthrust.",
+     "right": "Upthrust is constant for a fully submerged object; it's the increasing drag that reduces the acceleration."
+    },
+    {
+     "wrong": "A heavier ball of the same size falls with greater initial acceleration.",
+     "right": "Both start at g; the heavier one simply keeps accelerating longer and reaches a higher terminal velocity."
+    },
+    {
+     "wrong": "Terminal velocity = total distance ÷ total time.",
+     "right": "Use only the straight (constant-gradient) part of the s–t graph, after terminal velocity is reached."
+    },
+    {
+     "wrong": "Air resistance just makes the v–t line 'less steep'.",
+     "right": "Describe the shape: a curve whose gradient decreases with time, levelling off at a lower final velocity."
+    }
+   ],
+   "sim": "terminal",
+   "sim_guide": "Drop an object and watch the drag arrow grow while the resultant shrinks; note the moment the acceleration readout hits zero. Then double the mass (same size) and compare: same starting acceleration, but a higher terminal velocity reached later.",
+   "exam_shapes": [
+    {
+     "shape": "Explain how and why terminal velocity is reached",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "24(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "23(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "22(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Sketch or pick graphs for motion with drag",
+     "moves": [
+      "graph-draw",
+      "graph-read"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "1(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "3"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "3(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Find terminal velocity from s–t data and show it is constant",
+     "moves": [
+      "graph-read",
+      "show-that"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "1(d)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "25(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Force balance at terminal velocity with a given drag formula",
+     "moves": [
+      "given-formula",
+      "rearrange"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "4"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "1(e)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "25(d)"
+      }
+     ]
+    },
+    {
+     "shape": "Plan or improve a falling-ball terminal velocity experiment",
+     "moves": [
+      "plan",
+      "uncertainty"
+     ],
+     "marks_typical": "1–6",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "3(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "2"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "25(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "25(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Drag ∝ v² links: power, base units of k",
+     "moves": [
+      "ratio",
+      "units"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "13"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "22(a)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Drag grows with speed.",
+     "write": "'As speed increases, drag increases' — the cause of the changing acceleration, stated first."
+    },
+    {
+     "understand": "Resultant force shrinks to zero.",
+     "write": "'So the resultant force decreases … until drag = weight, resultant force is zero, acceleration is zero.'"
+    },
+    {
+     "understand": "Zero acceleration means steady speed.",
+     "write": "'… so it moves at constant (terminal) velocity.' Name terminal velocity as a constant velocity."
+    },
+    {
+     "understand": "In a liquid, upthrust also acts.",
+     "write": "At terminal velocity: weight = drag + upthrust; find drag as W − U if the question tells you to."
+    },
+    {
+     "understand": "Constant velocity shows as equal distances in equal times.",
+     "write": "Calculate v for at least two intervals after the start and show they are equal."
+    },
+    {
+     "understand": "Timing a short interval is limited by reaction time.",
+     "write": "'Intervals of 0.1 s are comparable with reaction time (~0.2 s), so a video/light gates give smaller uncertainty' — use the data in the table."
+    }
+   ],
+   "traps": [
+    "Only one distance/time calculation when asked to show terminal velocity was reached.",
+    "'Human error' as the reason for a video camera is ignored; reaction time is the scoring idea.",
+    "Viscosity answer without its unit (Pa s or kg m⁻¹ s⁻¹), or power-of-ten slips in r vs d.",
+    "Forgetting the square root or the radius-to-diameter step in a terminal velocity formula (jun2023 Paper 1 Q25(d)).",
+    "Talking about terminal velocity when the question asks how the v–t line changes before impact (jun2019 Paper 2 Q1(c))."
+   ],
+   "stats": {
+    "parts": 21,
+    "marks": 46,
+    "sessions": 13
+   }
+  },
+  {
+   "id": "c-moments",
+   "title": "Moments, couples and equilibrium",
+   "module": 3,
+   "principle": "A force can turn an object as well as push it. The turning effect depends on the force and how far its line of action is from the pivot. For an object to stay still it must have no resultant force and no resultant turning effect.",
+   "spec": [
+    "3.2.3(a)",
+    "3.2.3(b)",
+    "3.2.3(c)",
+    "3.2.3(d)",
+    "3.2.3(e)",
+    "3.2.3(f)"
+   ],
+   "idea": [
+    "A door is easy to open if you push at the handle and almost impossible if you push near the hinge. Same force, different turning effect. What matters is the perpendicular distance from the pivot to the line along which the force acts. Moment = force × perpendicular distance, measured in N m.",
+    "If something is balanced — a see-saw, a shelf bracket, a plank on a cable — the turning effects cancel: the total clockwise moment equals the total anticlockwise moment about any point you choose. Choosing the pivot (or the point where an unknown force acts) as your reference removes that force from the equation, which is the main trick in moments problems.",
+    "Weight acts as though it's all concentrated at the centre of gravity — the middle of a uniform beam. That's why lifting with bent knees is safer: keeping the load close to your body reduces the perpendicular distance from your hips to the load's line of action, so the moment your back muscles must supply is smaller.",
+    "A couple is two equal, opposite, parallel forces that don't act along the same line, like hands on a steering wheel. They cancel as forces, so there's no push, but they add up as a turn: torque = one force × the perpendicular distance between them. Full equilibrium therefore needs both conditions: resultant force zero and resultant moment zero. For three non-parallel forces, that forces them to pass through a single point and form a closed triangle."
+   ],
+   "buildup": [
+    "1. Moment of a force about a point = F × d, where d is the perpendicular distance from the point to the line of action.",
+    "2. If the force is at angle θ to the beam, the perpendicular part is F sin θ (or use the perpendicular distance directly).",
+    "3. Equilibrium condition 1: resultant force = 0 in every direction (e.g. up forces = down forces).",
+    "4. Equilibrium condition 2: resultant moment = 0 about any point → Σ clockwise = Σ anticlockwise (principle of moments).",
+    "5. Take moments about the point where an unknown force acts to eliminate it; then use force balance for the remaining unknown.",
+    "6. Couple: two equal and opposite forces F with separation d have zero resultant force but torque = Fd; work done per revolution = torque × 2π."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Principle of moments: clockwise moments equal anticlockwise moments.",
+     "right": "Add the condition and the point: 'for a body in equilibrium, the sum of clockwise moments about a point equals the sum of anticlockwise moments about the same point'."
+    },
+    {
+     "wrong": "Moment = force × distance.",
+     "right": "It's the perpendicular distance from the pivot to the line of action. Subtracting distances to get a lever arm is wrong physics."
+    },
+    {
+     "wrong": "Centre of gravity is where gravity, or the mass, acts.",
+     "right": "It's the point where the entire weight appears to act."
+    },
+    {
+     "wrong": "Equilibrium just means 'forces balance and moments balance'.",
+     "right": "Full conditions: resultant force zero (in any direction) AND resultant moment about any point zero."
+    },
+    {
+     "wrong": "Bending the knees works by moving the centre of mass or making the knees the pivot.",
+     "right": "It reduces the perpendicular distance from the hips to the load's line of action, so the moment and the muscle force needed fall."
+    }
+   ],
+   "sim": "moments",
+   "sim_guide": "Put a load on one side of the pivot and balance it with a smaller weight further out; check that force × distance is the same on both sides. Then tilt a force away from perpendicular and watch its moment drop even though its size is unchanged.",
+   "exam_shapes": [
+    {
+     "shape": "Take moments about a pivot to find a force or position",
+     "moves": [
+      "rearrange",
+      "chain"
+     ],
+     "marks_typical": "2–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "22(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "4(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "3(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "4(c)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "State the principle of moments or conditions for equilibrium",
+     "moves": [
+      "definition"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "24(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "3(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "4(c)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "21(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Explain how changing a distance changes a required force",
+     "moves": [
+      "explain-chain"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "22(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "24(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "1(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Triangle of forces or three forces through one point",
+     "moves": [
+      "vectors",
+      "graph-draw"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "22(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "6(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "9"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "1(c)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Couples: identify, find torque or work done",
+     "moves": [
+      "vectors",
+      "chain"
+     ],
+     "marks_typical": "1",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "7"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "2"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "5"
+      }
+     ]
+    },
+    {
+     "shape": "Centre of gravity: define, locate, or topple",
+     "moves": [
+      "definition",
+      "ratio"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "4(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "4(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "6(c)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Turning effect needs a perpendicular distance.",
+     "write": "'Moment = force × perpendicular distance from the pivot to the line of action of the force.'"
+    },
+    {
+     "understand": "Balanced turning effects.",
+     "write": "'For equilibrium, sum of clockwise moments = sum of anticlockwise moments about the same point.'"
+    },
+    {
+     "understand": "Two conditions for a still object.",
+     "write": "'Resultant force is zero (in any direction) and resultant moment about any point is zero.'"
+    },
+    {
+     "understand": "Weight acts at one point.",
+     "write": "'Centre of gravity: the point where the entire weight of the object appears to act.' Uniform beam: at its midpoint."
+    },
+    {
+     "understand": "Moments use weight, not mass.",
+     "write": "Convert kg to N first: 50 kg → 490.5 N, then multiply by the distance."
+    },
+    {
+     "understand": "Closer load, smaller moment, smaller force.",
+     "write": "Chain: 'perpendicular distance decreases → moment of the load decreases → force needed (from muscles/spring) decreases' — each link stated."
+    },
+    {
+     "understand": "A couple turns without pushing.",
+     "write": "'Two equal, opposite, parallel forces not in line'; torque = one force × perpendicular separation."
+    }
+   ],
+   "traps": [
+    "Using mass in kg inside a moments equation (missing g) costs the answer mark.",
+    "Subtracting lever arms (e.g. 4.5 − 1.5) is wrong physics and stops further credit.",
+    "Locating a centre of gravity with one line instead of at least two crossing medians.",
+    "Triangle of forces with arrows not following round in one sense, or not closed.",
+    "Not stating that the spring tension stays the same before reasoning about the moment arm (jun2025 Paper 1 Q24(c))."
+   ],
+   "stats": {
+    "parts": 45,
+    "marks": 81,
+    "sessions": 17
+   }
+  },
+  {
+   "id": "c-pressure",
+   "title": "Density, pressure and upthrust",
+   "module": 3,
+   "principle": "Density says how much mass is packed into each cubic metre; pressure says how much force acts on each square metre. In a fluid, pressure increases with depth, and the pressure difference between the top and bottom of an object pushes it up (upthrust).",
+   "spec": [
+    "3.2.4(a)",
+    "3.2.4(b)",
+    "3.2.4(c)"
+   ],
+   "idea": [
+    "Density is how concentrated the mass is. A steel ball and a wooden ball the same size have the same volume but very different masses. ρ = m/V, usually in kg m⁻³; water is about 1000 kg m⁻³. Many exam questions just need you to find a volume carefully (sphere, cylinder, prism) and divide.",
+    "Pressure is force spread over area. A stiletto heel hurts more than a trainer because the same weight lands on a far smaller area. p = F/A, where F is the force perpendicular to the surface. A brick exerts its biggest pressure on the smallest face.",
+    "In a liquid, the deeper you go, the more liquid sits above you, so pressure grows: Δp = hρg. Put an object in the liquid and its bottom is deeper than its top, so the liquid pushes up on the bottom harder than it pushes down on the top. The net upward push is upthrust, and it works out to be exactly the weight of the liquid the object pushes aside — Archimedes' principle.",
+    "Floating is the balance case: a floating object sinks until it has displaced its own weight of fluid. In denser water (sea water) it needs to displace less volume, so it floats higher; in a less dense oil it sits lower. An object fully under the surface displaces a fixed volume, so its upthrust stops changing however deep it goes."
+   ],
+   "buildup": [
+    "1. Density ρ = m/V; for a sphere V = (4/3)πr³, a cylinder V = πr²h, a prism V = ½ × base × height × length.",
+    "2. Pressure p = F/A, with F perpendicular to the area.",
+    "3. A column of liquid of height h and area A has weight Ahρg pressing on area A, so p = hρg.",
+    "4. An object of cross-section A and height L: pressure difference top-to-bottom is Lρg, so upward force = Lρg × A = (volume)ρg = weight of fluid displaced. That is upthrust.",
+    "5. Floating: upthrust = weight of object, so ρ_fluid V_submerged g = m g, giving the submerged depth.",
+    "6. Weighed in air then in water: apparent loss of weight = upthrust → gives the object's volume and density."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Upthrust equals the mass (or volume) of fluid displaced.",
+     "right": "Upthrust equals the WEIGHT of fluid displaced."
+    },
+    {
+     "wrong": "A block floating 80% submerged has upthrust equal to 80% of its weight.",
+     "right": "Any floating object has upthrust equal to its whole weight."
+    },
+    {
+     "wrong": "An object floats lower in a denser liquid.",
+     "right": "Denser liquid: less volume needs displacing for the same weight, so it floats higher."
+    },
+    {
+     "wrong": "The upthrust keeps increasing as an object goes deeper.",
+     "right": "Once fully submerged, the volume displaced — and the upthrust — stays constant."
+    },
+    {
+     "wrong": "'Buoyancy' is the name of the force.",
+     "right": "Call it upthrust (or 'buoyancy force')."
+    }
+   ],
+   "sim": "upthrust",
+   "sim_guide": "Lower an object into the liquid and watch the upthrust rise as more of it goes under, then stay constant once it is fully submerged. Swap to a denser liquid and see a floating object rise until it displaces the same weight of fluid as before.",
+   "exam_shapes": [
+    {
+     "shape": "Density from mass and a calculated volume",
+     "moves": [
+      "chain"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "6(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "3(a)(iv)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "4(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "3(a)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Upthrust from weighing in air and in liquid, then density",
+     "moves": [
+      "chain",
+      "rearrange"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "23(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "3(c)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "3(c)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "1(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Floating depth and how it changes with fluid density",
+     "moves": [
+      "chain",
+      "explain-chain"
+     ],
+     "marks_typical": "2–4",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "4(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "4(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "2(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "2(b)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "State or apply Archimedes' principle",
+     "moves": [
+      "definition",
+      "recall-fact"
+     ],
+     "marks_typical": "1",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "23(b)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "1"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "11"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "15"
+      }
+     ]
+    },
+    {
+     "shape": "Explain a changing force as an object is submerged",
+     "moves": [
+      "graph-read",
+      "explain-chain"
+     ],
+     "marks_typical": "3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "23(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "23(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Pressure from force and area, or measure it",
+     "moves": [
+      "rearrange",
+      "plan"
+     ],
+     "marks_typical": "1–4",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "11"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "6"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "23(a)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Density is mass per volume.",
+     "write": "Show the volume formula with r (half of d) and SI units, then ρ = m/V in kg m⁻³."
+    },
+    {
+     "understand": "Pressure is force per area.",
+     "write": "p = F/A, defining each symbol (F = weight of cylinder, A = cross-sectional area = πd²/4)."
+    },
+    {
+     "understand": "Upthrust comes from displaced fluid.",
+     "write": "'Upthrust = weight of fluid displaced' — the word weight is essential."
+    },
+    {
+     "understand": "Floating means balanced weight and upthrust.",
+     "write": "'Floating, so upthrust = weight of object'; then ρ_water × A × depth × g = W."
+    },
+    {
+     "understand": "A changing upthrust is a changing displaced volume.",
+     "write": "'As the level rises, the weight of water displaced increases, so upthrust increases; once fully submerged it is constant.'"
+    },
+    {
+     "understand": "Fluid density sets how high it floats.",
+     "write": "'Same weight of fluid displaced; denser fluid → smaller volume displaced → floats higher (x increases).'"
+    }
+   ],
+   "traps": [
+    "Using the diameter in πr² or (4/3)πr³ — halve it first.",
+    "Prism volume without the ½ scores only one mark.",
+    "'Measure the radius' of a cylinder is refused; measure the diameter in several places.",
+    "Giving a density to the wrong number of significant figures when '2 s.f.' is demanded (2700, not 2738).",
+    "Using the pressure equation when upthrust = ρVg is what's needed (jun2019 Paper 2 Q3(c)(ii))."
+   ],
+   "stats": {
+    "parts": 35,
+    "marks": 69,
+    "sessions": 17
+   }
+  },
+  {
+   "id": "c-energy",
+   "title": "Work, energy, power and efficiency",
+   "module": 3,
+   "principle": "Conservation of energy: energy moves between stores but the total never changes. Work done by a force is the energy it transfers; power is how fast that transfer happens.",
+   "spec": [
+    "3.3.1(a)",
+    "3.3.1(b)",
+    "3.3.1(c)",
+    "3.3.1(d)",
+    "3.3.1(e)",
+    "3.3.2(a)",
+    "3.3.2(b)",
+    "3.3.2(c)",
+    "3.3.3(a)",
+    "3.3.3(b)",
+    "3.3.3(c)"
+   ],
+   "idea": [
+    "Energy is like a bank balance spread across accounts: kinetic (moving), gravitational potential (raised up), elastic (stretched), thermal (warmer). Physics never makes or destroys any — it only moves it between accounts. Forces are the way energy moves: when a force pushes something along, it transfers energy, and that transfer is called work done.",
+    "Only the part of the force along the motion does work. Pull a suitcase at an angle and only the horizontal component moves it forward; the vertical part does nothing to the energy. That's W = Fx cos θ. The normal contact force on a block sliding up a ramp does no work at all because it's perpendicular to the motion. Lifting something does work against gravity equal to its weight × the vertical height — the sloping distance doesn't matter.",
+    "Falling and rising are just swaps between gravitational and kinetic stores: lose height h and you gain ½mv² = mgh (if nothing else takes a share). Where friction or air resistance acts, some energy goes into thermal stores; the 'missing' energy divided by the distance gives the average resistive force.",
+    "Power is the rate: P = W/t. If a force keeps something moving at speed v, it does F × (distance per second) of work each second, so P = Fv. Efficiency compares the useful energy out with the total energy in; the rest is wasted, usually as heat."
+   ],
+   "buildup": [
+    "1. Work done by a constant force: W = F × (displacement in the direction of the force) = Fx cos θ.",
+    "2. Kinetic energy: accelerate mass m from rest with force F over distance x. v² = 2ax and F = ma, so W = Fx = ma × v²/2a = ½mv².",
+    "3. Gravitational PE: lift weight mg through height h at steady speed; work done = mgh, stored as Eₚ.",
+    "4. Conservation: total energy before = total energy after. With no losses mgh = ½mv², so v = √(2gh) (mass cancels).",
+    "5. Power P = W/t = Fx/t = Fv for a force moving at constant velocity.",
+    "6. Efficiency = useful output energy (or power) / total input energy (or power) × 100%."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Work done = force × distance moved, whatever the direction.",
+     "right": "Only the displacement along the force counts: W = Fx cos θ; work against gravity uses vertical height only."
+    },
+    {
+     "wrong": "At the spring's natural length the clown's KE turns into elastic PE.",
+     "right": "Once the spring is no longer compressed it stores nothing; above that point KE → GPE."
+    },
+    {
+     "wrong": "If 25% of kinetic energy is lost, speed drops by 25%.",
+     "right": "KE ∝ v², so speed falls to √0.75 ≈ 0.87 of its value."
+    },
+    {
+     "wrong": "'Energy is not conserved' in an inelastic collision.",
+     "right": "Total energy is always conserved; it's kinetic energy that isn't."
+    },
+    {
+     "wrong": "For power up a slope you only need the force to raise the load.",
+     "right": "Include all forces the push works against, e.g. friction as well as the weight component."
+    }
+   ],
+   "sim": null,
+   "sim_guide": null,
+   "exam_shapes": [
+    {
+     "shape": "Speed or KE after a fall or launch using energy conservation",
+     "moves": [
+      "energy",
+      "rearrange"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "4(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "1(b)(iii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "3(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "4(b)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Average resistive force from energy lost over a distance",
+     "moves": [
+      "energy",
+      "chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "13"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "22(c)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "1(a)(iv)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "1(b)(ii)3"
+      }
+     ]
+    },
+    {
+     "shape": "Work or power when a force acts at an angle",
+     "moves": [
+      "vectors",
+      "chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "22(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "6"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "8"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "5(b)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Derive or use P = Fv",
+     "moves": [
+      "rearrange",
+      "chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "5(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "5(b)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "5"
+      }
+     ]
+    },
+    {
+     "shape": "Efficiency: calculate input, output or percentage",
+     "moves": [
+      "chain"
+     ],
+     "marks_typical": "1–6",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "23(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "11"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "8"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "2"
+      }
+     ]
+    },
+    {
+     "shape": "Describe or explain energy transfers in a system",
+     "moves": [
+      "energy",
+      "explain-chain"
+     ],
+     "marks_typical": "1",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "22(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "22(d)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "22(c)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "5"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Energy just moves between stores.",
+     "write": "Name the stores precisely: 'kinetic energy is transferred to gravitational potential energy' (not 'energy changes')."
+    },
+    {
+     "understand": "Only the force component along the motion does work.",
+     "write": "W = Fx cos θ with θ between the force and the displacement; 'normal contact force does no work as it is perpendicular to the motion'."
+    },
+    {
+     "understand": "Lost mechanical energy went somewhere.",
+     "write": "'Work done against friction = loss of (Eₚ − Eₖ)'; then F = work/distance."
+    },
+    {
+     "understand": "Power is energy per second.",
+     "write": "Derivation: 'P = W/t and W = Fx, so P = Fx/t = Fv' — each step written."
+    },
+    {
+     "understand": "Efficiency compares useful to total.",
+     "write": "'Efficiency = useful output / total input × 100%' and give a percentage if asked (61%, not 0.61)."
+    },
+    {
+     "understand": "Input power is bigger than output.",
+     "write": "For a motor: input = useful output ÷ efficiency (e.g. 2.0 W ÷ 0.20 = 10 W)."
+    },
+    {
+     "understand": "Energy that 'disappears' heats things.",
+     "write": "Hysteresis/losses: 'transferred to thermal energy (heat) of the rubber/surroundings' — say where it goes."
+    }
+   ],
+   "traps": [
+    "Using only the vertical velocity component to find a projectile's KE at the ground (jun2023 Paper 2 Q3(c)).",
+    "Stopping at the useful power instead of dividing by efficiency to get the input (jun2022 Paper 1 Q11).",
+    "Leaving out friction when finding the total power to push up a slope (jun2025 Paper 2 Q5(b)(iii)).",
+    "Writing P = Fv from memory when a derivation is asked earns nothing.",
+    "Unconverted prefixes: kJ, mW, g, minutes left in the calculation."
+   ],
+   "stats": {
+    "parts": 51,
+    "marks": 95,
+    "sessions": 18
+   }
+  },
+  {
+   "id": "c-springs",
+   "title": "Springs, Hooke's law and elastic energy",
+   "module": 3,
+   "principle": "Within its limit of proportionality, a spring's extension is proportional to the force on it. The work done stretching it is the area under the force–extension graph, and that energy is stored elastically (conservation of energy).",
+   "spec": [
+    "3.4.1(a)",
+    "3.4.1(b)",
+    "3.4.1(c)",
+    "3.4.1(d)(i)",
+    "3.4.1(d)(ii)",
+    "3.4.2(a)",
+    "3.4.2(b)"
+   ],
+   "idea": [
+    "Hang 1 N on a spring and it stretches, say, 2 cm; hang 2 N and it stretches 4 cm. The spring pulls back in proportion to how far you've stretched it. That's Hooke's law, F = kx, where k (the force constant, in N m⁻¹) measures stiffness: a big k is a stiff spring. The x is always the change in length from the natural length, never the length itself.",
+    "Push the force past the limit of proportionality and the graph curves; push further past the elastic limit and the spring won't fully return — it has been permanently stretched.",
+    "Stretching takes work, because you exert a force through a distance. But the force isn't constant — it starts at zero and rises to F — so the average force is ½F and the work is ½Fx. Geometrically, that's the triangle under the force–extension line. On a curved graph, you count squares instead. Substituting F = kx gives E = ½kx², so doubling the stretch stores four times the energy.",
+    "Springs combined behave intuitively once you think about the load. In series each spring carries the full load and stretches by its own amount, so the total extension adds up and the combination is softer. Side by side (parallel) they share the load and the combination is stiffer."
+   ],
+   "buildup": [
+    "1. Hooke's law: F = kx, with x = new length − natural length (or compression = natural − new).",
+    "2. k = F/x is the gradient of a force–extension graph (or 1/gradient of extension–force).",
+    "3. Work done = area under the F–x graph; for a straight line through the origin, area = ½Fx.",
+    "4. Substitute F = kx: elastic PE = ½kx²; or x = F/k gives E = F²/2k.",
+    "5. Series: same force through each spring, extensions add, so 1/k_total = 1/k₁ + 1/k₂ (n identical springs: k/n).",
+    "6. Parallel: same extension, forces add, so k_total = k₁ + k₂."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "x in F = kx is the length of the spring.",
+     "right": "It's the change in length: e.g. compressed from 45 cm to 25 cm gives x = 0.20 m."
+    },
+    {
+     "wrong": "With one third of the extension, the stored energy is one ninth.",
+     "right": "Only if k is the same. With the same force on a stiffer spring, use E = ½Fx, so E/3."
+    },
+    {
+     "wrong": "Area under any force–extension graph is ½Fx.",
+     "right": "Only for a straight line from the origin; for a curve, count squares or split into shapes."
+    },
+    {
+     "wrong": "Hooke's law is obeyed because the line is straight.",
+     "right": "Needs a straight line THROUGH THE ORIGIN (extension ∝ force); check both."
+    },
+    {
+     "wrong": "Energy lost in a rubber band loop is just 'lost'.",
+     "right": "Say where it goes: transferred as thermal energy to the rubber/surroundings."
+    }
+   ],
+   "sim": "spring",
+   "sim_guide": "Add masses one at a time and plot force against extension; check the gradient is constant and gives k. Then compare the shaded area under the line with ½kx² at two extensions, one double the other, and see the stored energy quadruple.",
+   "exam_shapes": [
+    {
+     "shape": "Force constant from a graph gradient or load data",
+     "moves": [
+      "graph-read",
+      "units"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "21(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "9"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "3(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "3(a)(ii)"
+      }
+     ]
+    },
+    {
+     "shape": "Elastic potential energy from k and x, or F and x",
+     "moves": [
+      "units",
+      "chain"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "22(c)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "24(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "22(d)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "15"
+      }
+     ]
+    },
+    {
+     "shape": "Work done from area under a curved F–x graph",
+     "moves": [
+      "graph-read"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "2(a)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "4(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "3"
+      }
+     ]
+    },
+    {
+     "shape": "Springs in series or ratio of stored energies",
+     "moves": [
+      "ratio"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "2(f)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "4(a)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "8"
+      }
+     ]
+    },
+    {
+     "shape": "Plot extension data and decide whether Hooke's law holds",
+     "moves": [
+      "graph-draw",
+      "evaluate"
+     ],
+     "marks_typical": "2–4",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "2(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "2(e)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "22(a)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Force is proportional to stretch.",
+     "write": "Hooke's law: 'extension is (directly) proportional to the force applied, up to the limit of proportionality'."
+    },
+    {
+     "understand": "Stiffness is the gradient.",
+     "write": "'k = gradient of F against x' — read from the straight section, and convert mm or cm to m."
+    },
+    {
+     "understand": "Stored energy is the area.",
+     "write": "'Elastic PE = area under force–extension graph = ½Fx'; for a curve: count squares and state the energy per square."
+    },
+    {
+     "understand": "Energy grows with x squared.",
+     "write": "E = ½kx² — substitute x as the change in length in metres."
+    },
+    {
+     "understand": "Graph evidence for Hooke's law.",
+     "write": "'Straight line through the origin, so extension ∝ force: Hooke's law obeyed' (or not, giving which feature fails)."
+    },
+    {
+     "understand": "Unit must match the scale.",
+     "write": "Write N m⁻¹ only after converting; 0.55 N cm⁻¹ = 55 N m⁻¹."
+    }
+   ],
+   "traps": [
+    "Using the compressed length (0.25 m) instead of the compression (0.20 m) in ½kx².",
+    "Using ½Fx under a curved graph is explicitly not accepted.",
+    "Giving a ratio of force constants as '2:3' rather than a single value (0.67).",
+    "Plotted points as blobs, or a best-fit line joining first and last points.",
+    "Carrying your own wrong value forward from a show-that instead of the printed one (e.g. 3.4 N)."
+   ],
+   "stats": {
+    "parts": 32,
+    "marks": 59,
+    "sessions": 16
+   }
+  },
+  {
+   "id": "c-materials",
+   "title": "Stress, strain and the Young modulus",
+   "module": 3,
+   "principle": "Hooke's law rescaled so it describes a material rather than one particular sample: stress (force per area) is proportional to strain (fractional extension) in the elastic region, and the constant of proportionality is the Young modulus.",
+   "spec": [
+    "3.4.2(c)",
+    "3.4.2(d)(i)",
+    "3.4.2(d)(ii)",
+    "3.4.2(e)",
+    "3.4.2(f)"
+   ],
+   "idea": [
+    "A thick steel cable and a thin steel wire have very different force constants, yet they're the same material. To compare materials fairly, remove the effect of size. Divide the force by the cross-sectional area to get stress — how hard each square metre is being pulled. Divide the extension by the original length to get strain — the fraction by which it has lengthened. Strain has no unit.",
+    "For many materials, stress is proportional to strain at first, and the ratio is the Young modulus E = stress/strain. It's a property of the material: steel is around 2 × 10¹¹ Pa whatever the wire's thickness. A big E means a stiff material that barely stretches.",
+    "Stress–strain graphs tell a material's life story. A ductile metal like copper has a straight elastic section, then a long plastic region where it stretches permanently before breaking. A brittle material like glass stays straight right up to fracture, with no plastic region. Rubber (a polymer) gives a curve and, on unloading, a different curve back to the origin — the loop's area is energy turned into heat. The highest stress reached is the ultimate tensile strength.",
+    "Measuring E in the lab means measuring a long wire (so the extension is big enough to read) and its diameter with a micrometer at several places, because area depends on diameter squared and is the biggest source of uncertainty."
+   ],
+   "buildup": [
+    "1. Stress σ = F/A (Pa or N m⁻²), with A = πd²/4 for a wire.",
+    "2. Strain ε = x/L (no unit), with L the original length.",
+    "3. Young modulus E = σ/ε = (F/A)/(x/L) = FL/(Ax).",
+    "4. Since F = kx, E = kL/A; so on an F–x graph, gradient = k = EA/L.",
+    "5. Rearranged for extension: x = FL/(AE), which shows how extension scales with length, area and modulus.",
+    "6. Uncertainty: %E = %F + %L + %x + 2 × %d (because A ∝ d²)."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Brittle means 'breaks easily'.",
+     "right": "Brittle means it deforms elastically right up to fracture with no plastic region; ductile means it has a large plastic region."
+    },
+    {
+     "wrong": "Doubling the diameter halves the extension.",
+     "right": "Area goes as d², so doubling d quarters the extension (and the stored energy at the same load)."
+    },
+    {
+     "wrong": "You can find E from any part of the graph.",
+     "right": "Only from the straight (elastic) section."
+    },
+    {
+     "wrong": "A load in newtons needs multiplying by g.",
+     "right": "A force given in N is already the force; only masses in kg need × g."
+    },
+    {
+     "wrong": "A micrometer zero error giving too-large readings makes E too big.",
+     "right": "Trace the chain: diameter too big → area too big → stress too small → calculated E too small, so the true E is larger."
+    }
+   ],
+   "sim": "stressstrain",
+   "sim_guide": "Load a ductile sample and watch the straight elastic section give way to a plastic region; unload part-way through and note it doesn't return to zero strain. Switch to a brittle sample and see it fracture with no plastic stage, then compare gradients to rank Young moduli.",
+   "exam_shapes": [
+    {
+     "shape": "Chain: load → stress → strain → extension",
+     "moves": [
+      "chain"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "2(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "2(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "2(b)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "23(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "4(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "22(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Young modulus from a gradient or from k, L and A",
+     "moves": [
+      "graph-read",
+      "rearrange"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "23(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "21(c)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "4(b)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Measure area, combine uncertainties, judge errors in E",
+     "moves": [
+      "plan",
+      "uncertainty"
+     ],
+     "marks_typical": "2–6",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "21(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "21(c)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "23(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "6(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Read stress–strain graphs for ductile, brittle and polymeric",
+     "moves": [
+      "graph-read",
+      "definition"
+     ],
+     "marks_typical": "1–6",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "16"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "8"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "2(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "6(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Scaling: how extension or energy changes with L, d, E",
+     "moves": [
+      "ratio"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "13"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "21(c)(iii)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "2(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Estimate a minimum size from a breaking stress",
+     "moves": [
+      "estimate"
+     ],
+     "marks_typical": "3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "2(b)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Stress is force per area.",
+     "write": "'Stress = force / cross-sectional area'; A = π(d/2)² with d in metres."
+    },
+    {
+     "understand": "Strain is fractional stretch.",
+     "write": "'Strain = extension / original length' — and write 'no unit'."
+    },
+    {
+     "understand": "Young modulus is stiffness of the material.",
+     "write": "'E = stress / strain' (in the elastic region / limit of proportionality); unit Pa."
+    },
+    {
+     "understand": "Gradient of a stress–strain graph is E.",
+     "write": "Use a large triangle on the linear part only."
+    },
+    {
+     "understand": "Material terms describe graph features.",
+     "write": "Ductile: plastic region before breaking; brittle: no plastic deformation; elastic: returns to original shape when load removed; plastic: permanent extension; UTS: maximum stress."
+    },
+    {
+     "understand": "Measuring the diameter is the critical step.",
+     "write": "'Micrometer, readings at several points along the wire and in different orientations, take the mean; A = πd²/4.'"
+    },
+    {
+     "understand": "A systematic error has a direction.",
+     "write": "Spell out each link: 'd too large → A too large → stress too small → E (calculated) too small'."
+    }
+   ],
+   "traps": [
+    "Diameter used as radius in πr² (or diameter ratio used instead of area ratio).",
+    "mm² to m² converted with ×10⁻³ instead of ×10⁻⁶.",
+    "Doubling extension instead of scaling by both L and 1/E together (jun2022 Paper 1 Q13).",
+    "Rubber loop sketched not returning to the origin, or glass drawn curved.",
+    "Defining brittle as 'breaks easily'; or answering only the definitions half of a compare-materials six-marker."
+   ],
+   "stats": {
+    "parts": 28,
+    "marks": 62,
+    "sessions": 16
+   }
+  },
+  {
+   "id": "c-momentum",
+   "title": "Momentum, impulse and collisions",
+   "module": 3,
+   "principle": "Conservation of momentum, which follows from Newton's second and third laws: in any interaction the two bodies push each other with equal and opposite forces for the same time, so whatever momentum one gains, the other loses.",
+   "spec": [
+    "3.5.1(b)",
+    "3.5.1(c)",
+    "3.5.1(d)",
+    "3.5.1(e)",
+    "3.5.2(a)",
+    "3.5.2(b)",
+    "3.5.2(c)"
+   ],
+   "idea": [
+    "Momentum is 'quantity of motion': mass × velocity. A slow lorry and a fast tennis ball can carry similar momentum. It's a vector, so direction matters — choose one direction as positive, and anything moving the other way gets a minus sign.",
+    "To change an object's momentum you need a force acting for some time. The product force × time is the impulse, and it equals the change in momentum. That's why airbags and crumple zones work: the same change in momentum spread over a longer time means a smaller force. On a force–time graph, the impulse is the area under the curve.",
+    "When two objects collide, each pushes on the other with an equal and opposite force (Newton's third law) for exactly the same contact time. So they receive equal and opposite impulses, and the total momentum is unchanged. That's conservation of momentum — it holds for every collision or explosion, provided no external force acts on the system.",
+    "Kinetic energy is a different story. In a perfectly elastic collision kinetic energy is conserved too, but in most real collisions some kinetic energy becomes heat, sound or deformation: an inelastic collision. Total energy is still conserved; kinetic energy alone isn't. Objects that stick together lose the most kinetic energy possible. To decide which type of collision occurred, calculate the total KE before and after."
+   ],
+   "buildup": [
+    "1. Momentum p = mv (kg m s⁻¹), a vector.",
+    "2. Newton's second law: F = Δp/Δt, so FΔt = Δp — impulse equals change in momentum (N s = kg m s⁻¹).",
+    "3. For a varying force, impulse = area under the force–time graph.",
+    "4. In a collision, N3 gives F_AB = −F_BA for the same Δt, so Δp_A = −Δp_B and total momentum is unchanged.",
+    "5. Hence m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂ (with signs for direction), if no external force acts.",
+    "6. Check KE: ½m₁u₁² + ½m₂u₂² vs after. Equal → perfectly elastic; less after → inelastic."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "When a ball bounces back, change in velocity = old speed − new speed.",
+     "right": "Direction reverses, so the magnitudes add: Δv = 7.2 − (−3.6) = 10.8 m s⁻¹."
+    },
+    {
+     "wrong": "Rate of change of momentum is force × time.",
+     "right": "Rate of change of momentum IS the force; force × time is the change (impulse)."
+    },
+    {
+     "wrong": "Kinetic energy is conserved in an inelastic collision.",
+     "right": "Only momentum and total energy (and mass) are conserved; KE decreases."
+    },
+    {
+     "wrong": "A falling ball gaining momentum breaks conservation of momentum.",
+     "right": "The Earth gains an equal and opposite momentum — the system must include the Earth."
+    },
+    {
+     "wrong": "Conservation of momentum: total momentum before = total after. Done.",
+     "right": "Add the condition: provided no external force acts (closed system)."
+    }
+   ],
+   "sim": "collision",
+   "sim_guide": "Collide two carts of different mass and check that the total momentum readout is the same before and after, whatever the elasticity setting. Then switch from elastic to sticky and watch total kinetic energy drop while momentum stays put.",
+   "exam_shapes": [
+    {
+     "shape": "Use conservation of momentum to find a velocity or mass",
+     "moves": [
+      "vectors",
+      "rearrange"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "23(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "2(c)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "24(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "6(b)(iii)"
+      }
+     ]
+    },
+    {
+     "shape": "Average force from a momentum change on rebound",
+     "moves": [
+      "vectors",
+      "chain"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "24(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2019",
+       "q": "22(d)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "3(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Impulse from area under a force–time graph, then speed",
+     "moves": [
+      "graph-read",
+      "chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "5(b)(ii)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "3(b)"
+      },
+      {
+       "paper": 2,
+       "slug": "specimen",
+       "q": "3(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "17"
+      }
+     ]
+    },
+    {
+     "shape": "Decide whether a collision is elastic or inelastic",
+     "moves": [
+      "evaluate",
+      "definition"
+     ],
+     "marks_typical": "1–6",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "6(c)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "3(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "5(b)(iii)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "2(c)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Explain motion using conservation of momentum",
+     "moves": [
+      "explain-chain",
+      "vectors"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "21(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "23(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "3(d)"
+      }
+     ]
+    },
+    {
+     "shape": "State the conservation principle or conserved quantities",
+     "moves": [
+      "definition"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "6(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "21(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "24(b)(i)"
+      }
+     ]
+    },
+    {
+     "shape": "Impulse and average force from F = Δp/Δt",
+     "moves": [
+      "units"
+     ],
+     "marks_typical": "1–2",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "2(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "2(b)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "12"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "11"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Momentum has a direction.",
+     "write": "Write 'taking right as positive' and put a minus sign on anything moving left."
+    },
+    {
+     "understand": "Force × time changes momentum.",
+     "write": "'Impulse = FΔt = change in momentum'; unit N s (or kg m s⁻¹)."
+    },
+    {
+     "understand": "Area under F–t is impulse.",
+     "write": "Count squares or split into shapes; multiply peak × time only for a rectangle."
+    },
+    {
+     "understand": "Total momentum is conserved.",
+     "write": "'Total momentum before = total momentum after, provided no external force acts (closed system).'"
+    },
+    {
+     "understand": "Equal and opposite forces mean equal and opposite momentum changes.",
+     "write": "On momentum–time graphs: 'gradients (forces) are equal in magnitude and opposite in sign at every instant'."
+    },
+    {
+     "understand": "Elastic means KE conserved.",
+     "write": "'Perfectly elastic: kinetic energy is conserved.' Then calculate KE before and after and compare numerically."
+    },
+    {
+     "understand": "A recoil comes from momentum balance.",
+     "write": "Three points: moves opposite to the ball; momentum is conserved; total momentum is zero so momenta are equal and opposite (smaller speed as larger mass)."
+    }
+   ],
+   "traps": [
+    "Subtracting speeds on a rebound instead of adding them (e.g. jun2019 Paper 1 Q22(d)) scores only one mark.",
+    "Saying 'energy is not conserved' for an inelastic collision is refused — say kinetic energy.",
+    "'Ground' instead of 'Earth' as the body that gains equal and opposite momentum.",
+    "Leaving the unit off an impulse or a rate of change of momentum when a unit mark is separate.",
+    "Giving 0.036 N s by subtracting magnitudes when one body rebounds (jun2025 Paper 2 Q6(b)(ii))."
+   ],
+   "stats": {
+    "parts": 53,
+    "marks": 96,
+    "sessions": 17
+   }
+  },
+  {
+   "id": "c-measure",
+   "title": "Measurement, uncertainty and graphs",
+   "module": 1,
+   "principle": "Every measurement is an estimate of a true value, with a range of doubt around it. Uncertainties combine according to how quantities combine, and graphs average out random scatter while exposing systematic error.",
+   "spec": [
+    "1.1.1(a)",
+    "1.1.1(b)",
+    "1.1.1(c)",
+    "1.1.2(a)",
+    "1.1.2(b)",
+    "1.1.2(c)",
+    "1.1.3(a)",
+    "1.1.3(b)",
+    "1.1.3(c)",
+    "1.1.3(d)(i)",
+    "1.1.3(d)(ii)",
+    "1.1.4(a)",
+    "1.1.4(b)",
+    "1.1.4(c)",
+    "1.1.4(d)",
+    "1.1.4(e)",
+    "2.1.1(a)",
+    "2.1.1(b)",
+    "2.1.2(a)",
+    "2.1.2(b)",
+    "2.1.2(c)",
+    "2.1.2(d)",
+    "2.1.2(e)",
+    "2.1.2(f)",
+    "2.2.1(a)",
+    "2.2.1(b)",
+    "2.2.1(c)",
+    "2.2.1(d)"
+   ],
+   "idea": [
+    "No ruler, timer or meter gives the exact value. The resolution of the instrument and the scatter between repeat readings tell you how far off you might be. Writing 2.52 ± 0.08 cm says 'somewhere between 2.44 and 2.60 cm'. Percentage uncertainty (0.08/2.52 × 100 ≈ 3%) shows how much that doubt matters relative to the size of the value, which is why measuring something larger (a longer fall, many fringes at once) improves a result.",
+    "There are two kinds of error. Random error scatters readings both ways — repeats and averaging help. Systematic error shifts every reading the same way, like a ruler whose zero is misplaced or a meter that wasn't zeroed — repeats don't help at all. Precision is about how close repeats are to each other; accuracy is about how close they are to the true value.",
+    "When you combine quantities, their doubts combine. Adding or subtracting: add the absolute uncertainties. Multiplying or dividing: add the percentage uncertainties. Raising to a power: multiply the percentage by the power, because d² is really d × d — so the diameter of a wire, appearing squared in the area, counts twice.",
+    "Graphs are the strongest tool. Rearrange the theory into y = mx + c so the expected graph is a straight line; the gradient and intercept then carry physical meaning. A line of best fit averages out random scatter, a non-zero intercept hints at a systematic error, and the steepest or shallowest line that still passes through all the error bars (the worst acceptable line) gives the uncertainty in the gradient."
+   ],
+   "buildup": [
+    "1. Absolute uncertainty: half the range of repeats, or the instrument resolution if there is no spread. Percentage uncertainty = absolute / value × 100%.",
+    "2. y = a + b or a − b: Δy = Δa + Δb (absolute uncertainties add).",
+    "3. y = ab or a/b: %y = %a + %b (percentages add).",
+    "4. y = aⁿ: %y = n × %a. So for ρ = m/((4/3)πr³), %ρ = %m + 3 × %r.",
+    "5. Linearise: e.g. h = ½gt² → t² = (2/g)h is y = mx; g = 2/gradient.",
+    "6. Gradient uncertainty = |best gradient − worst gradient|; % uncertainty = that / best gradient × 100, then apply any power linking the gradient to the answer.",
+    "7. Consistency test: compare % difference from an accepted value with the % uncertainty (or check whether the accepted value lies inside the ± range)."
+   ],
+   "misconceptions": [
+    {
+     "wrong": "Repeating readings and averaging makes a measurement more precise / removes all error.",
+     "right": "It reduces random error only. For precision use an instrument with finer resolution or measure a larger quantity; a systematic error needs a different fix."
+    },
+    {
+     "wrong": "A systematic offset in x changes the gradient.",
+     "right": "A constant offset shifts the line but leaves the gradient unchanged; it shows up as a non-zero intercept."
+    },
+    {
+     "wrong": "The percentage uncertainty of d counts once in a formula with d².",
+     "right": "Multiply by the power: 2 × %d for d², 3 × %d for d³."
+    },
+    {
+     "wrong": "'The values are close, so it's accurate.'",
+     "right": "Back it with numbers: % difference compared with % uncertainty, or whether ranges overlap."
+    },
+    {
+     "wrong": "The most precise instrument is always best.",
+     "right": "Match range and resolution to the job: a mm ruler for a 0.100 ± 0.002 m height; a micrometer for a wire diameter."
+    }
+   ],
+   "sim": "uncertainty",
+   "sim_guide": "Generate repeat readings with only random scatter and watch the mean settle while the spread stays the same; then add a systematic offset and see every reading move together, unaffected by averaging. On the graph view, drag the worst acceptable line through the error bars and see how the gradient uncertainty grows when the bars widen.",
+   "exam_shapes": [
+    {
+     "shape": "Combine percentage uncertainties, including powers",
+     "moves": [
+      "uncertainty"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2019",
+       "q": "3(a)(v)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2025",
+       "q": "2(a)(ii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "15"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2022",
+       "q": "24(b)(ii)3"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "22(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Worst acceptable line and gradient uncertainty",
+     "moves": [
+      "uncertainty",
+      "graph-draw"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "3(b)(i)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2020",
+       "q": "3(b)(iii)"
+      },
+      {
+       "paper": 2,
+       "slug": "nov2021",
+       "q": "7(a)(iv)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "27(b)(iv)"
+      }
+     ]
+    },
+    {
+     "shape": "Is the result consistent with an accepted value?",
+     "moves": [
+      "evaluate",
+      "uncertainty"
+     ],
+     "marks_typical": "2–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "21(c)(iii)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2025",
+       "q": "22(b)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2024",
+       "q": "26(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Choose an instrument and technique for a measurement",
+     "moves": [
+      "plan"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2022",
+       "q": "1(a)"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2018",
+       "q": "6(c)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2021",
+       "q": "22(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2023",
+       "q": "21(b)"
+      }
+     ]
+    },
+    {
+     "shape": "Base units and homogeneity of an equation",
+     "moves": [
+      "units",
+      "show-that"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2016",
+       "q": "4(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "22(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2018",
+       "q": "20"
+      },
+      {
+       "paper": 1,
+       "slug": "jun2017",
+       "q": "26(a)"
+      }
+     ]
+    },
+    {
+     "shape": "Systematic vs random error and their effect on a graph",
+     "moves": [
+      "recall-fact",
+      "explain-chain"
+     ],
+     "marks_typical": "1–3",
+     "refs": [
+      {
+       "paper": 1,
+       "slug": "jun2016",
+       "q": "22(a)"
+      },
+      {
+       "paper": 1,
+       "slug": "nov2020",
+       "q": "24(a)(i)"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "10"
+      },
+      {
+       "paper": 1,
+       "slug": "specimen",
+       "q": "23(c)"
+      }
+     ]
+    },
+    {
+     "shape": "Six-mark plan: method, measurements, linearised graph, uncertainty",
+     "moves": [
+      "plan",
+      "linearise",
+      "uncertainty"
+     ],
+     "marks_typical": "6",
+     "refs": [
+      {
+       "paper": 2,
+       "slug": "jun2024",
+       "q": "3"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2023",
+       "q": "2"
+      },
+      {
+       "paper": 2,
+       "slug": "jun2017",
+       "q": "3(b)"
+      }
+     ]
+    }
+   ],
+   "translate": [
+    {
+     "understand": "Repeats tell you the spread.",
+     "write": "'Absolute uncertainty = half the range'; then '% uncertainty = (absolute / mean) × 100%'."
+    },
+    {
+     "understand": "Doubts combine by the rules.",
+     "write": "Show each fractional/percentage term and the sum: '%ρ = %m + 3 × %d = 2% + 3 × 4% = 14%' — no bald '14%'."
+    },
+    {
+     "understand": "A graph gradient carries the physics.",
+     "write": "'Gradient = 2/g' (state what it equals), gradient from a triangle covering more than half the line, values read to half a square."
+    },
+    {
+     "understand": "Worst line sets the gradient's doubt.",
+     "write": "'Steepest/shallowest line through all error bars; % uncertainty = |m_best − m_worst| / m_best × 100%.'"
+    },
+    {
+     "understand": "Consistency needs a numerical comparison.",
+     "write": "'% difference = 2.6%, which is less than the 3.3% uncertainty, so the values are consistent.'"
+    },
+    {
+     "understand": "Precision vs accuracy.",
+     "write": "Precision: readings close to each other (small spread); accuracy: close to the true value."
+    },
+    {
+     "understand": "Reaction time, not 'human error'.",
+     "write": "Name the specific limitation and its effect, e.g. 'reaction time is large compared with 0.6 s, so use an electronic timer'."
+    },
+    {
+     "understand": "Units check equations.",
+     "write": "Base-unit proofs: write each quantity in kg, m, s, A and show the cancellation; the closing statement alone scores nothing."
+    }
+   ],
+   "traps": [
+    "Answer not to the stated number of significant figures when the question demands 2 s.f. (0.72, not 0.716).",
+    "Percentage difference divided by the experimental value, or given as a ratio, instead of relative to the accepted value.",
+    "Using the instrument resolution or the full range instead of half the range of repeats.",
+    "Gradient from a single data point, or a small triangle, rather than the drawn best-fit line.",
+    "Six-markers missing a strand (no analysis, or no uncertainty when asked) are capped at Level 2."
+   ],
+   "stats": {
+    "parts": 180,
+    "marks": 403,
+    "sessions": 22
+   }
+  }
+ ]
+}

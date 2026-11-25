@@ -76,3 +76,14 @@ for f in ('maths','other'):
 if les:
     json.dump(les,open(out+'/skill-lessons.json','w'),ensure_ascii=False,separators=(',',':'))
     print('skill lessons',len(les))
+
+# ---- concepts and practice set ----
+cs=[]
+for f in ('m123','m4'):
+    pth=S+'/concepts/'+f+'.json'
+    if os.path.exists(pth): cs+=json.load(open(pth)).get('concepts',[])
+if cs:
+    json.dump({'concepts':cs},open(out+'/concepts.json','w'),ensure_ascii=False,separators=(',',':')); print('concepts',len(cs))
+pth=S+'/practice/set.json'
+if os.path.exists(pth):
+    json.dump(json.load(open(pth)),open(out+'/practice.json','w'),ensure_ascii=False,separators=(',',':')); print('practice set')
