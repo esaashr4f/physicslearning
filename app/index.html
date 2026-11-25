@@ -1691,6 +1691,79 @@ function Playbook({ data, open, openSpec }) {
   </div></div>`;
 }
 
+/* ---------- Textbook vs exams ---------- */
+const TYPE_ORDER = ["mcq", "calculation-single-step", "calculation-multi-step", "explain", "define-state", "show-that", "sketch-draw", "describe", "practical-method", "graph-read", "graph-gradient", "uncertainty-error", "level-of-response", "compare-suggest"];
+function pagesTxt(ps) { if (!ps?.length) return ""; const u = [...new Set(ps)].sort((a, b) => a - b); return "p." + u.join(", "); }
+function TextbookView({ data, open }) {
+  const ref = useRef(null); useLenis(ref);
+  const T = data.textbook; if (!T) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Textbook analysis not loaded</h2></div></div></div>`;
+  const M = T.meta; const defs = data.definitions?.items || []; const K = data.knowledge?.items || [];
+  const cmpRow = (label, b, e) => html`<tr key=${label}><td style=${{ textAlign: "left" }}>${label}</td><td>${(b || 0).toFixed(1)}%</td><td>${(e || 0).toFixed(1)}%</td>
+    <td class="bar"><div style=${{ display: "grid", gap: "2px" }}><div class="s1" style=${{ height: "6px", width: Math.min(100, (b || 0) * 2.5) + "%", borderRadius: "0 2px 2px 0" }}></div><div class="s3" style=${{ height: "6px", width: Math.min(100, (e || 0) * 2.5) + "%", borderRadius: "0 2px 2px 0" }}></div></div></td></tr>`;
+  const emph = T.emphasis.filter(e => e.pages || e.marks).slice().sort((a, b) => (b.ratio ?? 99) - (a.ratio ?? 99));
+  const risky = Object.entries(T.links.definitions).filter(([, v]) => v.verdict !== "safe");
+  const MV = ["chain", "explain-chain", "graph-read", "recall-fact", "vectors", "ratio", "show-that", "plan", "uncertainty", "linearise", "energy", "definition", "evaluate", "given-formula"];
+  return html`<div class="ins" ref=${ref}><div class="ins-inner">
+    <div class="hero">
+      <span class="eyebrow">Oxford A Level Physics for OCR (AS half) · ${M.pages} pages · ${M.book_items} book questions vs ${M.exam_parts} exam parts</span>
+      <h2>The textbook vs <em>the exams</em></h2>
+      <p>Every page indexed to the spec and every worked example and question tagged with the same scheme as the exam papers, so the two can be compared directly. The book's text is not reproduced here; page numbers refer to your copy.</p>
+      <div class="stats">
+        <div class="stat"><b>${T.coverage.knowledge.full}/${Object.values(T.coverage.knowledge).reduce((a, b) => a + b, 0)}</b><span>knowledge items fully taught</span></div>
+        <div class="stat"><b>${T.coverage.definitions.safe}/${Object.values(T.coverage.definitions).reduce((a, b) => a + b, 0)}</b><span>book definitions that would score</span></div>
+        <div class="stat"><b>${T.difficulty.book["1"]}%</b><span>of book questions are easy (exams ${T.difficulty.exam["1"]}%)</span></div>
+        <div class="stat"><b>${T.types.book["level-of-response"] || 0}</b><span>six-mark practice questions in the book</span></div>
+      </div>
+    </div>
+
+    <section><h3>What's different, in short</h3><div class="cards2">${T.findings.map((f, i) => html`<div class="rule" key=${i}><h4>${f.title}</h4><p>${f.body}</p></div>`)}</div></section>
+
+    <section><h3>How to use the book alongside everything else</h3><div class="panel"><ol class="steps">${T.use.map((u, i) => html`<li key=${i}>${u}</li>`)}</ol></div></section>
+
+    <section><h3>Where the book's space goes vs where the marks are</h3>
+      <p class="sub">Share of the book's teaching pages vs share of exam marks, by spec sub-section. A ratio above 1 means the exams give it more weight than the book; below 1, the book spends more space than the marks justify.</p>
+      <div class="panel" style=${{ overflowX: "auto" }}><table class="dtab"><thead><tr><th style=${{ textAlign: "left" }}>Sub-section</th><th>Book pages</th><th>Book %</th><th>Exam %</th><th>Exam ÷ book</th><th>Marks per page</th></tr></thead>
+        <tbody>${emph.map(e => html`<tr key=${e.sec}><td style=${{ textAlign: "left" }}><b style=${{ fontFamily: "var(--f-mono)", color: "var(--accent)" }}>${e.sec}</b> ${e.title}</td><td>${e.pages}</td><td>${e.book}%</td><td>${e.exam}%</td>
+          <td style=${{ fontWeight: 700, color: e.ratio == null ? "var(--pen)" : e.ratio >= 1.3 ? "var(--pen)" : e.ratio <= 0.6 ? "var(--ink-3)" : "var(--ink)" }}>${e.ratio == null ? "not in book" : "×" + e.ratio}</td><td>${e.marks_per_page ?? "–"}</td></tr>`)}</tbody></table>
+      <p class="sub" style=${{ margin: "10px 0 0" }}>Red: the exams weight it far more than the book does, so supplement it. Grey: the book over-invests; skim.</p></div>
+    </section>
+
+    <section><h3>The book's practice vs real exam questions</h3>
+      <div class="cols2">
+        <div class="panel" style=${{ overflowX: "auto" }}><h4>Question types (share of items)</h4><table class="dtab"><thead><tr><th style=${{ textAlign: "left" }}>Type</th><th>Book</th><th>Exam</th><th></th></tr></thead><tbody>${TYPE_ORDER.map(k => cmpRow(tl(k), T.types.book[k], T.types.exam[k]))}</tbody></table>
+          <div class="legend3"><span><i class="s1"></i>Book</span><span><i class="s3"></i>Exam</span></div></div>
+        <div class="panel" style=${{ overflowX: "auto" }}><h4>Moves needed (share of items)</h4><table class="dtab"><thead><tr><th style=${{ textAlign: "left" }}>Move</th><th>Book</th><th>Exam</th><th></th></tr></thead><tbody>${MV.map(k => cmpRow(MOVE_LABEL[k], T.moves.book[k], T.moves.exam[k]))}</tbody></table>
+          <div class="legend3"><span><i class="s1"></i>Book</span><span><i class="s3"></i>Exam</span></div></div>
+      </div>
+      <div class="panel" style=${{ marginTop: "14px" }}><h4>Difficulty</h4><table class="dtab"><thead><tr><th style=${{ textAlign: "left" }}></th><th>Easy</th><th>Standard</th><th>Hard</th></tr></thead><tbody>
+        <tr><td style=${{ textAlign: "left" }}>Book (${M.book_items} items)</td><td>${T.difficulty.book["1"]}%</td><td>${T.difficulty.book["2"]}%</td><td>${T.difficulty.book["3"]}%</td></tr>
+        <tr><td style=${{ textAlign: "left" }}>Exams (${M.exam_parts} parts)</td><td>${T.difficulty.exam["1"]}%</td><td>${T.difficulty.exam["2"]}%</td><td>${T.difficulty.exam["3"]}%</td></tr></tbody></table></div>
+    </section>
+
+    <section><h3>Definitions: book wording vs mark-scheme wording</h3>
+      <p class="sub">${T.coverage.definitions.safe} safe, ${T.coverage.definitions.risky} risky, ${T.coverage.definitions.absent} not defined in the book. For the risky ones, learn the mark-scheme version in the Definitions drill.</p>
+      <div class="nms">${risky.map(([id, v]) => { const d = defs.find(x => x.id === id); return html`<div class="nm" key=${id} style=${{ gap: "6px" }}><header><b>${d?.term || id}</b><span class=${"sev" + (v.verdict === "risky" ? " all" : "")}>${v.verdict === "risky" ? "risky in the book" : "not defined in the book"}</span>${v.pages.length ? html`<span class="pill">${pagesTxt(v.pages)}</span>` : null}</header>
+        ${v.note ? html`<p style=${{ margin: 0, fontSize: "13.5px" }}>${v.note}</p>` : null}${d ? html`<p style=${{ margin: 0, fontSize: "13px", color: "var(--accent)" }}>Mark-scheme version: ${d.model}</p>` : null}</div>`; })}</div>
+    </section>
+
+    <section class="cols2">
+      <div class="panel"><h4>In the book but never examined</h4><p class="sub" style=${{ margin: "0 0 8px" }}>Real page space with no exam marks across 22 papers. Read for interest; skip for revision.</p>
+        <ul>${T.not_examined.slice().sort((a, b) => (b.words_approx || 0) - (a.words_approx || 0)).map((x, i) => html`<li key=${i}><b>${x.what}</b>${x.pages.length ? html` <span class="shared">${pagesTxt(x.pages)}</span>` : null}${x.why_not ? html` · <span class="shared">${x.why_not}</span>` : null}</li>`)}</ul></div>
+      <div class="panel"><h4>Needed in exams but not taught in the book</h4><p class="sub" style=${{ margin: "0 0 8px" }}>Learn these elsewhere: the Techniques lessons, Definitions drill and Final gap check cover them.</p>
+        <ul>${T.exam_not_in_book.map((x, i) => html`<li key=${i}><b>${x.what || x.id}</b>${x.note ? html` · <span class="shared">${x.note}</span>` : null}</li>`)}</ul></div>
+    </section>
+
+    <section class="cols2">
+      <div class="panel"><h4>Errors and scan problems in the book</h4><ul>${T.errors.map((e, i) => html`<li key=${i}><b>p.${e.page}:</b> ${e.issue} <span style=${{ color: "var(--accent)" }}>${e.fix}</span></li>`)}</ul></div>
+      <div class="panel"><h4>Pages beyond the AS spec (${T.beyond.length})</h4><ul>${T.beyond.map((b, i) => html`<li key=${i}><b>p.${b.page}</b> ${b.note}</li>`)}</ul></div>
+    </section>
+
+    <section><h3>Knowledge items and where the book teaches them</h3>
+      <div class="panel" style=${{ overflowX: "auto" }}><table class="forms"><tbody>${K.map(it => { const L2 = T.links.knowledge[it.id]; return html`<tr key=${it.id}><td style=${{ fontFamily: "var(--f-body)", whiteSpace: "normal" }}>${it.name}</td><td style=${{ fontFamily: "var(--f-mono)" }}>${L2 ? pagesTxt(L2.pages) : ""}</td><td style=${{ color: L2?.coverage === "full" ? "var(--ink-3)" : "var(--pen)" }}>${L2?.coverage || ""}${L2?.note ? " · " + L2.note : ""}</td></tr>`; })}</tbody></table></div>
+    </section>
+  </div></div>`;
+}
+
 /* ---------- Skills breakdown ---------- */
 function SkillsBreakdown({ data, open }) {
   const SS = data.subskills; const all = useMemo(() => data.all.filter(q => !q.withdrawn && q.sub), [data.all]);
@@ -1749,6 +1822,7 @@ function GapCheck({ data }) {
       <div class="blk"><span class="h">Check yourself</span><p style=${{ margin: 0, fontSize: "13.5px" }}>${g.check}</p>
         ${shown[g.id] ? html`<p style=${{ margin: 0, fontSize: "13.5px", color: "var(--accent)" }}>${g.answer}</p>` : html`<button class="link" onClick=${() => setShown(s => ({ ...s, [g.id]: true }))}>Show answer</button>`}</div>
       ${g.seen_where?.length ? html`<span class="shared">Seen in: ${g.seen_where.join(", ")}</span>` : null}
+      ${(() => { const b = data.textbook?.links.gaps[g.id]; if (!b) return null; return html`<span class="shared" style=${{ color: b.coverage === "absent" ? "var(--pen)" : "var(--accent)" }}>${b.coverage === "absent" ? "Not in your textbook" : "Textbook " + pagesTxt(b.pages) + (b.coverage === "partial" ? " (partly)" : "")}</span>`; })()}
       <label style=${{ fontSize: "13px", display: "flex", gap: "6px", alignItems: "center" }}><input type="checkbox" id=${"gap-" + g.id} checked=${!!done[g.id]} onChange=${e => setDone(d => ({ ...d, [g.id]: e.target.checked }))} /> I know this</label>
     </div>`)}</div>
   </div>`;
@@ -1793,7 +1867,8 @@ function KnowledgeMap({ data, open }) {
               <input type="checkbox" id=${"km-" + it.id} checked=${!!ticks[it.id]} onChange=${e => setTicks(t => ({ ...t, [it.id]: e.target.checked }))} aria-label=${"Secure: " + it.name} />
               <button class="nm2" onClick=${() => setOpenId(on ? null : it.id)} aria-expanded=${on}>${it.name}${it.sheet === true ? html`<span class="badge2 sheet">in booklet</span>` : it.recall ? html`<span class="badge2 recall">must recall</span>` : it.kind === "E" ? html`<span class="badge2">derive or learn</span>` : null}
                 ${it.text || (it.from?.length ? "" : "") ? html`<small>${it.text || ""}</small>` : null}
-                ${it.from?.length ? html`<small>Follows from: ${it.from.map(f => KNOW[f]?.name || f).join(", ")}</small>` : null}</button>
+                ${it.from?.length ? html`<small>Follows from: ${it.from.map(f => KNOW[f]?.name || f).join(", ")}</small>` : null}
+                ${data.textbook?.links.knowledge[it.id]?.pages.length ? html`<small style=${{ color: "var(--accent)" }}>Textbook ${pagesTxt(data.textbook.links.knowledge[it.id].pages)}</small>` : null}</button>
               <span class="bar"><i style=${{ width: (o.marks / maxM * 100) + "%" }}></i></span>
               <span class="v">${Math.round(o.marks)} m · ${o.parts.length}</span>
             </div>
@@ -1851,6 +1926,7 @@ function DefDrill({ data, open }) {
       <textarea id=${"dd-" + cur.id} placeholder="Write the definition as you would in the exam…" value=${txt} onInput=${e => setTxt(e.target.value)} aria-label=${"Your definition of " + cur.term}></textarea>
       ${!shown ? html`<div style=${{ display: "flex", gap: "8px" }}><button class="btn" onClick=${() => setShown(true)}>Reveal and check</button><button class="ib" onClick=${() => next()}>Skip</button></div>` : html`
         <div class="blk"><span class="h">Model answer · key words underlined</span><div class="dd-model">${highlight(cur)}</div></div>
+        ${(() => { const b = data.textbook?.links.definitions[cur.id]; if (!b) return null; return html`<div class="blk"><span class="h">Your textbook${b.pages.length ? " (" + pagesTxt(b.pages) + ")" : ""}</span><p style=${{ margin: 0, fontSize: "13px", color: b.verdict === "safe" ? "var(--ink-2)" : "var(--pen)" }}>${b.verdict === "safe" ? "The book's wording would score." : b.verdict === "risky" ? "Risky: " + (b.note || "the book's wording misses a key word.") : "Not defined in the book; learn it from here."}</p></div>`; })()}
         <div class="blk"><span class="h">${txt.trim() ? "Key words in your answer" : "Key words the mark needs"}</span><div class="dd-checks">${cur.keys.map((g, j) => { const hit = g.some(k => low.includes(k.toLowerCase())); return html`<span key=${j} class=${txt.trim() ? (hit ? "ok" : "no") : ""}>${txt.trim() ? (hit ? "✓ " : "✗ ") : ""}${g[0]}${g.length > 1 ? ` (or ${g.slice(1).join(", ")})` : ""}</span>`; })}</div></div>
         ${cur.refused.length ? html`<div class="blk pen"><span class="h">Refused by the mark schemes</span><ul>${cur.refused.map((r, j) => html`<li key=${j} style=${{ fontWeight: txt.trim() && low.includes(r.t) ? 700 : 400 }}>${txt.trim() && low.includes(r.t) ? "You wrote this: " : ""}"${r.t}" — ${r.why}</li>`)}</ul></div>` : null}
         ${(() => { const refs = refsFor(cur); if (!refs.length) return html`<p class="shared">Not asked directly as a definition in the 22 papers, but used in other questions.</p>`;
@@ -2169,7 +2245,7 @@ function App() {
   const [data, setData] = useState({ all: [], byPaper: {}, ins: {}, regions: {}, ready: false });
   const init = store.get("sel", { paper: 1, slug: "jun2024" });
   const [sel, setSel] = useState({ paper: init.paper || 1, slug: SLABEL[init.slug] ? init.slug : "jun2024", q: null, nonce: 0 });
-  const fromHash = () => ({ "#insights": "insights", "#paper": "paper", "#spec": "spec", "#playbook": "playbook", "#techniques": "techniques" })[location.hash] || "questions";
+  const fromHash = () => ({ "#insights": "insights", "#paper": "paper", "#spec": "spec", "#playbook": "playbook", "#techniques": "techniques", "#textbook": "textbook" })[location.hash] || "questions";
   const [specQ, setSpecQ] = useState({ q: "", n: 0 });
   const [view, setView] = useState(fromHash);
   useEffect(() => { store.set("sel", { paper: sel.paper, slug: sel.slug }); }, [sel.paper, sel.slug]);
@@ -2194,13 +2270,14 @@ function App() {
       fetch("data/subskills.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/gaps.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/skill-lessons.json").then(r => r.ok ? r.json() : null).catch(() => null),
-    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge, subskills, gaps, skillLessons]) => {
+      fetch("data/textbook.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge, subskills, gaps, skillLessons, textbook]) => {
       KNOW = Object.fromEntries((knowledge?.items || []).map(i => [i.id, i]));
       const rcIndex = {}; for (const r of rootcause?.parts || []) rcIndex[`${r.paper}:${r.slug}:${r.q}`] = r;
       const nmIndex = {};
       for (const it of nearmiss?.items || []) for (const r of it.refs || []) (nmIndex[`${r.paper}:${r.slug}:${r.q}`] ||= []).push(it);
       const byPaper = {}; for (const q of all) (byPaper[`${q.paper}:${q.slug}`] ||= []).push(q);
-      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, definitions, knowledge, subskills, gaps, skillLessons, ready: true });
+      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, definitions, knowledge, subskills, gaps, skillLessons, textbook, ready: true });
     });
   }, []);
   const hardMarks = useMemo(() => { const m = {}; for (const q of data.all) if (!q.withdrawn && q.difficulty === 3) { const k = `${q.paper}:${q.slug}`; m[k] = (m[k] || 0) + (+q.marks || 0); } for (const q of data.all) { const k = `${q.paper}:${q.slug}`; if (!(k in m)) m[k] = 0; } return m; }, [data.all]);
@@ -2218,6 +2295,7 @@ function App() {
           <button aria-pressed=${view === "spec"} onClick=${() => go("spec")}>Spec</button>
           <button aria-pressed=${view === "playbook"} onClick=${() => go("playbook")}>Playbook</button>
           <button aria-pressed=${view === "techniques"} onClick=${() => go("techniques")}>Techniques</button>
+          <button aria-pressed=${view === "textbook"} onClick=${() => go("textbook")}>Textbook</button>
           <button aria-pressed=${view === "insights"} onClick=${() => go("insights")}>Insights</button>
         </nav>
       </header>
@@ -2231,7 +2309,7 @@ function App() {
               return html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label + (h != null ? ` · ${h} hard marks` : "")}><span class="y">${s.y}</span><span class="m">${s.m}</span>${lvl ? html`<span class="dif" aria-label=${`${h} hard marks`}>${[1, 2, 3].map(i => html`<i key=${i} class=${i <= lvl ? "on" : ""}></i>`)}</span>` : null}</button>`; })}
           </div>
         </div>
-        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} query=${specQ} />` : view === "playbook" ? html`<${Playbook} data=${data} open=${open} openSpec=${openSpec} />` : view === "techniques" ? html`<${Techniques} data=${data} open=${open} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}
+        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} query=${specQ} />` : view === "playbook" ? html`<${Playbook} data=${data} open=${open} openSpec=${openSpec} />` : view === "techniques" ? html`<${Techniques} data=${data} open=${open} />` : view === "textbook" ? html`<${TextbookView} data=${data} open=${open} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}
     </div>`;
 }
 ReactDOM.createRoot(document.getElementById("root")).render(html`<${App} />`);

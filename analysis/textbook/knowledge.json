@@ -1,0 +1,2943 @@
+{
+ "knowledge": {
+  "P-energy": {
+   "pages": [
+    87,
+    84,
+    90
+   ],
+   "coverage": "full"
+  },
+  "P-momentum": {
+   "pages": [
+    114,
+    115,
+    118
+   ],
+   "coverage": "full"
+  },
+  "P-charge": {
+   "pages": [
+    141,
+    142,
+    183
+   ],
+   "coverage": "full"
+  },
+  "P-kirchhoff2": {
+   "pages": [
+    182,
+    183,
+    184
+   ],
+   "coverage": "full"
+  },
+  "P-newton2": {
+   "pages": [
+    117,
+    118,
+    58
+   ],
+   "coverage": "full"
+  },
+  "P-newton1": {
+   "pages": [
+    112,
+    69,
+    70
+   ],
+   "coverage": "full"
+  },
+  "P-newton3": {
+   "pages": [
+    113,
+    118
+   ],
+   "coverage": "full"
+  },
+  "P-moments": {
+   "pages": [
+    70,
+    71
+   ],
+   "coverage": "full"
+  },
+  "P-vectors": {
+   "pages": [
+    26,
+    27,
+    30,
+    52
+   ],
+   "coverage": "full"
+  },
+  "P-superposition": {
+   "pages": [
+    234,
+    235
+   ],
+   "coverage": "full"
+  },
+  "P-photon": {
+   "pages": [
+    254,
+    255,
+    260,
+    261
+   ],
+   "coverage": "full"
+  },
+  "P-duality": {
+   "pages": [
+    266,
+    267
+   ],
+   "coverage": "full"
+  },
+  "P-resistance": {
+   "pages": [
+    157,
+    182,
+    183,
+    186
+   ],
+   "coverage": "full"
+  },
+  "P-waves": {
+   "pages": [
+    206,
+    209,
+    210
+   ],
+   "coverage": "full"
+  },
+  "E-speed": {
+   "pages": [
+    34,
+    35
+   ],
+   "coverage": "full"
+  },
+  "E-suvat": {
+   "pages": [
+    43,
+    44,
+    45,
+    46
+   ],
+   "coverage": "full"
+  },
+  "E-F=ma": {
+   "pages": [
+    58,
+    118
+   ],
+   "coverage": "full"
+  },
+  "E-W=mg": {
+   "pages": [
+    59
+   ],
+   "coverage": "full"
+  },
+  "E-F=dp/dt": {
+   "pages": [
+    117,
+    118,
+    119
+   ],
+   "coverage": "full"
+  },
+  "E-p=mv": {
+   "pages": [
+    114
+   ],
+   "coverage": "full"
+  },
+  "E-moment": {
+   "pages": [
+    69,
+    72
+   ],
+   "coverage": "full"
+  },
+  "E-density": {
+   "pages": [
+    77
+   ],
+   "coverage": "full"
+  },
+  "E-pressure": {
+   "pages": [
+    78,
+    79,
+    80
+   ],
+   "coverage": "full"
+  },
+  "E-upthrust": {
+   "pages": [
+    80,
+    81
+   ],
+   "coverage": "full"
+  },
+  "E-work": {
+   "pages": [
+    84,
+    85
+   ],
+   "coverage": "full"
+  },
+  "E-Ek": {
+   "pages": [
+    88,
+    89
+   ],
+   "coverage": "full"
+  },
+  "E-Ep": {
+   "pages": [
+    89,
+    90
+   ],
+   "coverage": "full"
+  },
+  "E-power": {
+   "pages": [
+    91,
+    92
+   ],
+   "coverage": "full"
+  },
+  "E-efficiency": {
+   "pages": [
+    92,
+    93
+   ],
+   "coverage": "full"
+  },
+  "E-hooke": {
+   "pages": [
+    96,
+    97
+   ],
+   "coverage": "full"
+  },
+  "E-elastic": {
+   "pages": [
+    100,
+    101
+   ],
+   "coverage": "full",
+   "note": "Area rule given; no warning that ½Fx needs the linear region."
+  },
+  "E-stress-strain": {
+   "pages": [
+    104,
+    105,
+    106
+   ],
+   "coverage": "full"
+  },
+  "E-Q=It": {
+   "pages": [
+    134,
+    135
+   ],
+   "coverage": "full"
+  },
+  "E-Anev": {
+   "pages": [
+    144,
+    145,
+    146
+   ],
+   "coverage": "full"
+  },
+  "E-W=VQ": {
+   "pages": [
+    152,
+    153,
+    154,
+    176
+   ],
+   "coverage": "full"
+  },
+  "E-eV": {
+   "pages": [
+    155,
+    156
+   ],
+   "coverage": "full"
+  },
+  "E-R=V/I": {
+   "pages": [
+    157,
+    158
+   ],
+   "coverage": "full"
+  },
+  "E-resistivity": {
+   "pages": [
+    165,
+    166,
+    167
+   ],
+   "coverage": "full"
+  },
+  "E-elec-power": {
+   "pages": [
+    174,
+    175,
+    176
+   ],
+   "coverage": "full"
+  },
+  "E-kWh": {
+   "pages": [
+    177,
+    178
+   ],
+   "coverage": "full"
+  },
+  "E-series-parallel": {
+   "pages": [
+    186,
+    187
+   ],
+   "coverage": "full"
+  },
+  "E-emf": {
+   "pages": [
+    192,
+    193,
+    195
+   ],
+   "coverage": "full"
+  },
+  "E-divider": {
+   "pages": [
+    198,
+    199,
+    201
+   ],
+   "coverage": "full"
+  },
+  "E-v=fλ": {
+   "pages": [
+    209,
+    210,
+    223
+   ],
+   "coverage": "full"
+  },
+  "E-intensity": {
+   "pages": [
+    219,
+    220,
+    221
+   ],
+   "coverage": "full"
+  },
+  "E-phase": {
+   "pages": [
+    212
+   ],
+   "coverage": "full"
+  },
+  "E-pathdiff": {
+   "pages": [
+    236,
+    237
+   ],
+   "coverage": "full"
+  },
+  "E-young": {
+   "pages": [
+    241,
+    242
+   ],
+   "coverage": "full"
+  },
+  "E-nodes": {
+   "pages": [
+    243,
+    246,
+    249,
+    251
+   ],
+   "coverage": "full"
+  },
+  "E-refraction": {
+   "pages": [
+    227,
+    228,
+    230
+   ],
+   "coverage": "full"
+  },
+  "E-photon": {
+   "pages": [
+    254,
+    255
+   ],
+   "coverage": "full"
+  },
+  "E-photoelectric": {
+   "pages": [
+    263,
+    264
+   ],
+   "coverage": "full"
+  },
+  "E-photon-rate": {
+   "pages": [
+    258
+   ],
+   "coverage": "partial",
+   "note": "Only an end-of-topic question; no worked method for photons per second."
+  },
+  "E-debroglie": {
+   "pages": [
+    267,
+    268
+   ],
+   "coverage": "full"
+  },
+  "E-eV-joule": {
+   "pages": [
+    255,
+    256
+   ],
+   "coverage": "full"
+  },
+  "D-kinematics": {
+   "pages": [
+    24,
+    25,
+    36,
+    39
+   ],
+   "coverage": "full"
+  },
+  "D-graph-meaning": {
+   "pages": [
+    35,
+    40,
+    41,
+    119
+   ],
+   "coverage": "full",
+   "note": "F–x area on p100; s–t, v–t, F–t all covered."
+  },
+  "D-forces": {
+   "pages": [
+    63,
+    59,
+    66,
+    80
+   ],
+   "coverage": "full"
+  },
+  "D-terminal": {
+   "pages": [
+    66,
+    67
+   ],
+   "coverage": "full",
+   "note": "Intro says drag 'balances' weight; examiners want resultant force zero."
+  },
+  "D-centre-gravity": {
+   "pages": [
+    61,
+    62
+   ],
+   "coverage": "full"
+  },
+  "D-couple": {
+   "pages": [
+    72,
+    73
+   ],
+   "coverage": "full"
+  },
+  "D-materials": {
+   "pages": [
+    96,
+    102,
+    105,
+    107
+   ],
+   "coverage": "full"
+  },
+  "D-collisions": {
+   "pages": [
+    116
+   ],
+   "coverage": "full"
+  },
+  "D-impulse": {
+   "pages": [
+    119,
+    120
+   ],
+   "coverage": "full"
+  },
+  "D-current": {
+   "pages": [
+    134,
+    138,
+    139,
+    143
+   ],
+   "coverage": "full",
+   "note": "Mean drift velocity used in I = Anev but never formally defined."
+  },
+  "D-emf-pd": {
+   "pages": [
+    152,
+    153,
+    158
+   ],
+   "coverage": "full"
+  },
+  "D-resistivity": {
+   "pages": [
+    165,
+    166
+   ],
+   "coverage": "full"
+  },
+  "D-internal": {
+   "pages": [
+    193,
+    192,
+    195
+   ],
+   "coverage": "full"
+  },
+  "D-wave-terms": {
+   "pages": [
+    209,
+    212
+   ],
+   "coverage": "full",
+   "note": "Phase difference defined loosely as a difference in displacements."
+  },
+  "D-transverse": {
+   "pages": [
+    206,
+    207,
+    208
+   ],
+   "coverage": "full"
+  },
+  "D-polarisation": {
+   "pages": [
+    217,
+    218
+   ],
+   "coverage": "full",
+   "note": "Says oscillations in 'one direction'; mark schemes want 'one plane'."
+  },
+  "D-coherence": {
+   "pages": [
+    236,
+    235
+   ],
+   "coverage": "full"
+  },
+  "D-diffraction": {
+   "pages": [
+    217
+   ],
+   "coverage": "full"
+  },
+  "D-stationary": {
+   "pages": [
+    243,
+    244,
+    246
+   ],
+   "coverage": "full"
+  },
+  "D-refraction": {
+   "pages": [
+    227,
+    229,
+    230
+   ],
+   "coverage": "full",
+   "note": "Critical angle explained via 90° refraction but not formally defined."
+  },
+  "D-photon": {
+   "pages": [
+    254,
+    255
+   ],
+   "coverage": "full"
+  },
+  "D-workfunction": {
+   "pages": [
+    261,
+    260,
+    264
+   ],
+   "coverage": "full",
+   "note": "Threshold frequency not phrased as the 'minimum' frequency."
+  },
+  "D-electronvolt": {
+   "pages": [
+    255,
+    256
+   ],
+   "coverage": "full"
+  },
+  "D-si": {
+   "pages": [
+    20,
+    21,
+    22,
+    23
+   ],
+   "coverage": "full"
+  },
+  "D-errors": {
+   "pages": [
+    50,
+    107
+   ],
+   "coverage": "absent",
+   "note": "Errors appendix not in these pages; only passing mentions of inaccuracy."
+  },
+  "F-em-spectrum": {
+   "pages": [
+    222,
+    223
+   ],
+   "coverage": "full"
+  },
+  "F-ldr-thermistor": {
+   "pages": [
+    169,
+    172
+   ],
+   "coverage": "full"
+  },
+  "F-iv-curves": {
+   "pages": [
+    161,
+    162,
+    164
+   ],
+   "coverage": "full"
+  },
+  "F-carriers": {
+   "pages": [
+    138,
+    139,
+    140
+   ],
+   "coverage": "full"
+  },
+  "F-circuit-symbols": {
+   "pages": [
+    150,
+    151,
+    140,
+    153
+   ],
+   "coverage": "full"
+  },
+  "F-stationary-patterns": {
+   "pages": [
+    246,
+    249,
+    250,
+    251
+   ],
+   "coverage": "full"
+  },
+  "F-drag-factors": {
+   "pages": [
+    66
+   ],
+   "coverage": "full"
+  },
+  "F-material-graphs": {
+   "pages": [
+    96,
+    102,
+    105,
+    107
+   ],
+   "coverage": "full"
+  },
+  "F-polarisation-waves": {
+   "pages": [
+    218
+   ],
+   "coverage": "full"
+  },
+  "F-photoelectric-obs": {
+   "pages": [
+    260,
+    261
+   ],
+   "coverage": "full"
+  },
+  "F-electron-diffraction": {
+   "pages": [
+    266,
+    267
+   ],
+   "coverage": "partial",
+   "note": "Graphite diffraction shown; rings shrinking at higher speed never stated."
+  },
+  "F-stopping": {
+   "pages": [
+    47,
+    48
+   ],
+   "coverage": "full"
+  },
+  "F-prefixes": {
+   "pages": [
+    21
+   ],
+   "coverage": "full"
+  },
+  "K-instruments": {
+   "pages": [
+    77,
+    107,
+    50,
+    213
+   ],
+   "coverage": "partial",
+   "note": "Instruments named; resolution and choosing between them not discussed."
+  },
+  "K-method": {
+   "pages": [
+    15,
+    107
+   ],
+   "coverage": "partial",
+   "note": "Only skills checklist and brief repeat-reading tips; no variables or range."
+  },
+  "K-safety": {
+   "pages": [
+    106,
+    196
+   ],
+   "coverage": "partial",
+   "note": "Only wire-snapping eye protection and EHT supply safety mentioned."
+  },
+  "K-graph": {
+   "pages": [
+    35,
+    37,
+    42,
+    51
+   ],
+   "coverage": "partial",
+   "note": "Gradients, tangents, areas taught; graph-drawing appendix A2 not included."
+  },
+  "K-linearise": {
+   "pages": [
+    51,
+    167,
+    195,
+    257
+   ],
+   "coverage": "full"
+  },
+  "K-uncertainty": {
+   "pages": [],
+   "coverage": "absent",
+   "note": "Uncertainty appendix A3 is outside these pages."
+  },
+  "K-evaluate": {
+   "pages": [
+    50,
+    51,
+    15
+   ],
+   "coverage": "partial",
+   "note": "Brief: sources of inaccuracy for g, ignore anomalies; no evaluation method."
+  },
+  "K-pag": {
+   "pages": [
+    49,
+    106,
+    167,
+    195
+   ],
+   "coverage": "full",
+   "note": "All AS core practicals described: also p68, 160, 241, 250, 256, 230."
+  },
+  "M-rearrange": {
+   "pages": [
+    44,
+    45,
+    89
+   ],
+   "coverage": "full"
+  },
+  "M-units": {
+   "pages": [
+    20,
+    21,
+    22
+   ],
+   "coverage": "full"
+  },
+  "M-sigfigs": {
+   "pages": [
+    106,
+    134,
+    175
+   ],
+   "coverage": "partial",
+   "note": "Worked examples quote s.f.; no rules for choosing significant figures."
+  },
+  "M-ratio": {
+   "pages": [
+    66,
+    101,
+    145,
+    220
+   ],
+   "coverage": "full"
+  },
+  "M-trig": {
+   "pages": [
+    27,
+    28,
+    30,
+    31
+   ],
+   "coverage": "full"
+  },
+  "M-geometry": {
+   "pages": [
+    107,
+    166,
+    219
+   ],
+   "coverage": "full"
+  },
+  "M-straight-line": {
+   "pages": [
+    51,
+    105,
+    167,
+    195
+   ],
+   "coverage": "full"
+  },
+  "M-estimate": {
+   "pages": [
+    78,
+    73
+   ],
+   "coverage": "full"
+  }
+ },
+ "definitions": {
+  "n2": {
+   "pages": [
+    117
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe",
+   "note": "Book also stresses F = ma is only the constant-mass special case."
+  },
+  "n1": {
+   "pages": [
+    112
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "n3": {
+   "pages": [
+    113
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true,
+    false
+   ],
+   "refused_used": [],
+   "verdict": "risky",
+   "note": "Formal statement omits 'same type'; it appears in the next paragraph. Add it to the definition."
+  },
+  "cons-mom": {
+   "pages": [
+    114
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "elastic-col": {
+   "pages": [
+    116
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe",
+   "note": "Given as a table row (kinetic energy conserved), not a sentence."
+  },
+  "inelastic-col": {
+   "pages": [
+    116
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe",
+   "note": "Table row only; state that kinetic energy is not conserved while total energy is."
+  },
+  "impulse": {
+   "pages": [
+    119
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "moments": {
+   "pages": [
+    70
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe",
+   "note": "Book says 'rotational equilibrium'; plain 'equilibrium' is fine."
+  },
+  "moment": {
+   "pages": [
+    69,
+    70
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "couple": {
+   "pages": [
+    72
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "equilibrium": {
+   "pages": [
+    69,
+    70
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true,
+    false
+   ],
+   "refused_used": [],
+   "verdict": "risky",
+   "note": "Book says net force and net moment are zero; add 'about any point'."
+  },
+  "cog": {
+   "pages": [
+    61
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe",
+   "note": "Book attaches the 'weight appears to act' wording to centre of mass; same point here."
+  },
+  "terminal": {
+   "pages": [
+    66,
+    67
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [
+    "balanced"
+   ],
+   "verdict": "risky",
+   "note": "Opening sentence says drag 'balances' weight; write resultant force zero, so velocity constant."
+  },
+  "upthrust": {
+   "pages": [
+    80
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "density": {
+   "pages": [
+    77
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "pressure": {
+   "pages": [
+    78
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "work": {
+   "pages": [
+    84
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "power": {
+   "pages": [
+    91
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "efficiency": {
+   "pages": [
+    93
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "hooke": {
+   "pages": [
+    97
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe",
+   "note": "Book uses elastic limit as the boundary; limit of proportionality is more precise."
+  },
+  "elastic-def": {
+   "pages": [
+    96,
+    102
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "plastic-def": {
+   "pages": [
+    96,
+    102
+   ],
+   "stated": true,
+   "keys_met": [
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "uts": {
+   "pages": [
+    105
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "young": {
+   "pages": [
+    105
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "vector": {
+   "pages": [
+    25
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "accel": {
+   "pages": [
+    39
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "displacement": {
+   "pages": [
+    25,
+    36
+   ],
+   "stated": true,
+   "keys_met": [
+    false,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "risky",
+   "note": "Book only says displacement is a vector; define it as distance in a stated direction."
+  },
+  "stopping": {
+   "pages": [
+    47
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "accuracy": {
+   "pages": [],
+   "stated": false,
+   "keys_met": [
+    false,
+    false
+   ],
+   "refused_used": [],
+   "verdict": "absent",
+   "note": "Not defined in these pages: accuracy means close to the true value, precision means small spread."
+  },
+  "errors": {
+   "pages": [
+    50
+   ],
+   "stated": false,
+   "keys_met": [
+    false,
+    false
+   ],
+   "refused_used": [],
+   "verdict": "absent",
+   "note": "Not defined: systematic shifts all readings the same way; random scatters readings either side."
+  },
+  "current": {
+   "pages": [
+    134
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "coulomb": {
+   "pages": [
+    135
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "pd": {
+   "pages": [
+    152
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "emf": {
+   "pages": [
+    153
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "volt": {
+   "pages": [
+    152
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "ohm": {
+   "pages": [
+    158
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "ohms-law": {
+   "pages": [
+    158
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "resistivity": {
+   "pages": [
+    166
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe",
+   "note": "Write it as RA/L for a component of that material; give the unit Ω m."
+  },
+  "kirchhoff1": {
+   "pages": [
+    141,
+    183
+   ],
+   "stated": true,
+   "keys_met": [
+    false,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "risky",
+   "note": "Formal statement says 'any point'; examiners expect 'junction'. Junction appears later on p183."
+  },
+  "kirchhoff2": {
+   "pages": [
+    182
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "lostvolts": {
+   "pages": [
+    193
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "numdensity": {
+   "pages": [
+    143
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe",
+   "note": "Keep 'free' and 'per unit volume'; avoid plain 'electrons per cubic metre'."
+  },
+  "drift": {
+   "pages": [
+    144,
+    145
+   ],
+   "stated": false,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "absent",
+   "note": "Term used in I = Anev but never defined: average velocity of charge carriers along the conductor."
+  },
+  "progressive": {
+   "pages": [
+    206
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "wave-terms": {
+   "pages": [
+    209,
+    244
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [
+    "distance between two peaks"
+   ],
+   "verdict": "risky",
+   "note": "Peak-to-peak given as an example; lead with minimum distance between adjacent points in phase."
+  },
+  "phase-diff": {
+   "pages": [
+    212
+   ],
+   "stated": true,
+   "keys_met": [
+    false,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "risky",
+   "note": "Book calls it a difference in displacements; state the fraction of a cycle between two points, in degrees/radians."
+  },
+  "transverse": {
+   "pages": [
+    206,
+    208
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "polarised": {
+   "pages": [
+    217,
+    218
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [
+    "one direction"
+   ],
+   "verdict": "risky",
+   "note": "Book says oscillations in 'one direction only'; say oscillations confined to one plane."
+  },
+  "superposition": {
+   "pages": [
+    234
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "coherence": {
+   "pages": [
+    236
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "path-diff": {
+   "pages": [
+    236
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "interference": {
+   "pages": [
+    235,
+    236
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    false
+   ],
+   "refused_used": [],
+   "verdict": "risky",
+   "note": "Book's sentence omits coherence; add superposition of coherent waves giving a stable pattern."
+  },
+  "constructive": {
+   "pages": [
+    235,
+    236
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "diffraction": {
+   "pages": [
+    217
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "stationary": {
+   "pages": [
+    243
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "node": {
+   "pages": [
+    243
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "refractive": {
+   "pages": [
+    227
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe",
+   "note": "Given as n = c/v; say it in words with 'in a vacuum'."
+  },
+  "critical": {
+   "pages": [
+    229,
+    230
+   ],
+   "stated": false,
+   "keys_met": [
+    false,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "risky",
+   "note": "Never formally defined; state the angle of incidence giving a 90° angle of refraction."
+  },
+  "photon": {
+   "pages": [
+    254,
+    255
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "ev": {
+   "pages": [
+    255
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "photoelectric": {
+   "pages": [
+    259
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "workfn": {
+   "pages": [
+    261
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "threshold": {
+   "pages": [
+    260,
+    264
+   ],
+   "stated": true,
+   "keys_met": [
+    false,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "risky",
+   "note": "Book says emission only 'above a certain frequency'; state minimum frequency of radiation to emit electrons."
+  },
+  "kemax": {
+   "pages": [
+    263,
+    264
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  },
+  "debroglie": {
+   "pages": [
+    267
+   ],
+   "stated": true,
+   "keys_met": [
+    true,
+    true
+   ],
+   "refused_used": [],
+   "verdict": "safe"
+  }
+ },
+ "gaps": {
+  "g1": {
+   "pages": [
+    116
+   ],
+   "coverage": "partial",
+   "note": "Named once as a timing option; dot spacing and 50 Hz not explained."
+  },
+  "g2": {
+   "pages": [
+    115,
+    116
+   ],
+   "coverage": "full"
+  },
+  "g3": {
+   "pages": [
+    116,
+    115
+   ],
+   "coverage": "partial",
+   "note": "Methods listed in one sentence; no full procedure."
+  },
+  "g4": {
+   "pages": [
+    49,
+    50,
+    51
+   ],
+   "coverage": "full"
+  },
+  "g5": {
+   "pages": [
+    50,
+    116
+   ],
+   "coverage": "partial",
+   "note": "Two-gate timing for g only; card length ÷ blocked time not shown."
+  },
+  "g6": {
+   "pages": [
+    68
+   ],
+   "coverage": "partial",
+   "note": "Motion-sensor method only; no ball-bearing with markers or equal-time test."
+  },
+  "g7": {
+   "pages": [
+    62
+   ],
+   "coverage": "full"
+  },
+  "g8": {
+   "pages": [
+    102,
+    103
+   ],
+   "coverage": "full"
+  },
+  "g9": {
+   "pages": [
+    106,
+    107
+   ],
+   "coverage": "full"
+  },
+  "g10": {
+   "pages": [
+    215,
+    216,
+    236
+   ],
+   "coverage": "partial",
+   "note": "Ripple-tank wave diagrams; apparatus, lamp and stroboscope not described."
+  },
+  "g11": {
+   "pages": [
+    226,
+    238,
+    245
+   ],
+   "coverage": "full"
+  },
+  "g12": {
+   "pages": [
+    225
+   ],
+   "coverage": "full"
+  },
+  "g13": {
+   "pages": [
+    238
+   ],
+   "coverage": "full"
+  },
+  "g14": {
+   "pages": [
+    250
+   ],
+   "coverage": "full"
+  },
+  "g15": {
+   "pages": [
+    247
+   ],
+   "coverage": "full"
+  },
+  "g16": {
+   "pages": [
+    245
+   ],
+   "coverage": "full"
+  },
+  "g17": {
+   "pages": [
+    230
+   ],
+   "coverage": "full"
+  },
+  "g18": {
+   "pages": [
+    256,
+    257
+   ],
+   "coverage": "full"
+  },
+  "g19": {
+   "pages": [
+    259,
+    260
+   ],
+   "coverage": "full"
+  },
+  "g20": {
+   "pages": [
+    266,
+    267
+   ],
+   "coverage": "full"
+  },
+  "g21": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g22": {
+   "pages": [
+    68,
+    116
+   ],
+   "coverage": "partial",
+   "note": "Data-loggers mentioned; advantages not explained."
+  },
+  "g23": {
+   "pages": [
+    15
+   ],
+   "coverage": "absent",
+   "note": "Recording-results appendix not in these pages."
+  },
+  "g24": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g25": {
+   "pages": [
+    161,
+    48
+   ],
+   "coverage": "partial",
+   "note": "Straight line through origin for a resistor; no general test."
+  },
+  "g26": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g27": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g28": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g29": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g30": {
+   "pages": [
+    144
+   ],
+   "coverage": "partial",
+   "note": "Only one 'show homogeneous' question."
+  },
+  "g31": {
+   "pages": [
+    97,
+    104,
+    166,
+    219
+   ],
+   "coverage": "full"
+  },
+  "g32": {
+   "pages": [
+    119
+   ],
+   "coverage": "full"
+  },
+  "g33": {
+   "pages": [
+    22,
+    23,
+    134
+   ],
+   "coverage": "full"
+  },
+  "g34": {
+   "pages": [
+    59,
+    88
+   ],
+   "coverage": "partial",
+   "note": "Notes which equations are not given; no data-sheet overview."
+  },
+  "g35": {
+   "pages": [
+    30
+   ],
+   "coverage": "full"
+  },
+  "g36": {
+   "pages": [
+    26,
+    27,
+    30
+   ],
+   "coverage": "full"
+  },
+  "g37": {
+   "pages": [
+    31,
+    118
+   ],
+   "coverage": "partial",
+   "note": "Subtraction shown; change in velocity on reversal only as a question."
+  },
+  "g38": {
+   "pages": [
+    24,
+    25
+   ],
+   "coverage": "full"
+  },
+  "g39": {
+   "pages": [
+    241
+   ],
+   "coverage": "partial",
+   "note": "Used in the double-slit derivation only."
+  },
+  "g40": {
+   "pages": [
+    241
+   ],
+   "coverage": "partial",
+   "note": "Only ≈ and >> explained in a study tip."
+  },
+  "g41": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g42": {
+   "pages": [
+    66,
+    101,
+    220
+   ],
+   "coverage": "partial",
+   "note": "Square and inverse-square cases appear; no sketching practice."
+  },
+  "g43": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g44": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g45": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g46": {
+   "pages": [
+    48
+   ],
+   "coverage": "partial",
+   "note": "Only 'show proportional' questions."
+  },
+  "g47": {
+   "pages": [
+    34,
+    35
+   ],
+   "coverage": "full"
+  },
+  "g48": {
+   "pages": [
+    40
+   ],
+   "coverage": "partial",
+   "note": "Only a 'sketch the a–t graph' question."
+  },
+  "g49": {
+   "pages": [
+    40,
+    42,
+    55
+   ],
+   "coverage": "partial",
+   "note": "Ball up a ramp and falling into water; no bouncing-ball graph."
+  },
+  "g50": {
+   "pages": [
+    54,
+    55
+   ],
+   "coverage": "partial",
+   "note": "Horizontal component constant; speed at top not stated."
+  },
+  "g51": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g52": {
+   "pages": [
+    29,
+    64,
+    65,
+    75
+   ],
+   "coverage": "full"
+  },
+  "g53": {
+   "pages": [
+    65
+   ],
+   "coverage": "partial",
+   "note": "One lift question only."
+  },
+  "g54": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g55": {
+   "pages": [
+    66
+   ],
+   "coverage": "full"
+  },
+  "g56": {
+   "pages": [
+    68,
+    89
+   ],
+   "coverage": "partial",
+   "note": "Skydiver questions only; parachute deceleration not explained."
+  },
+  "g57": {
+   "pages": [
+    62,
+    71
+   ],
+   "coverage": "partial",
+   "note": "One sentence and a tipping-cylinder question."
+  },
+  "g58": {
+   "pages": [
+    70,
+    71
+   ],
+   "coverage": "full"
+  },
+  "g59": {
+   "pages": [
+    74,
+    75,
+    76
+   ],
+   "coverage": "full"
+  },
+  "g60": {
+   "pages": [
+    78,
+    79,
+    80
+   ],
+   "coverage": "full"
+  },
+  "g61": {
+   "pages": [
+    80
+   ],
+   "coverage": "full"
+  },
+  "g62": {
+   "pages": [
+    80,
+    81
+   ],
+   "coverage": "full"
+  },
+  "g63": {
+   "pages": [
+    89
+   ],
+   "coverage": "full"
+  },
+  "g64": {
+   "pages": [
+    89
+   ],
+   "coverage": "full"
+  },
+  "g65": {
+   "pages": [
+    92
+   ],
+   "coverage": "full"
+  },
+  "g66": {
+   "pages": [
+    85,
+    89,
+    90
+   ],
+   "coverage": "full"
+  },
+  "g67": {
+   "pages": [
+    89,
+    48
+   ],
+   "coverage": "full"
+  },
+  "g68": {
+   "pages": [
+    34,
+    35
+   ],
+   "coverage": "partial",
+   "note": "Average-speed cameras only."
+  },
+  "g69": {
+   "pages": [
+    105
+   ],
+   "coverage": "full",
+   "note": "But p96 treats elastic limit as end of the straight line."
+  },
+  "g70": {
+   "pages": [
+    100,
+    101
+   ],
+   "coverage": "partial",
+   "note": "Not stated that ½Fx applies only to the linear region."
+  },
+  "g71": {
+   "pages": [
+    105
+   ],
+   "coverage": "full"
+  },
+  "g72": {
+   "pages": [
+    104,
+    107,
+    108
+   ],
+   "coverage": "full"
+  },
+  "g73": {
+   "pages": [
+    117,
+    116
+   ],
+   "coverage": "partial",
+   "note": "Airbags explained; crumple mentioned; seat belts absent."
+  },
+  "g74": {
+   "pages": [
+    118
+   ],
+   "coverage": "partial",
+   "note": "Only a rebounding-ball question."
+  },
+  "g75": {
+   "pages": [
+    118
+   ],
+   "coverage": "partial",
+   "note": "Only a hosepipe question."
+  },
+  "g76": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g77": {
+   "pages": [
+    135,
+    136
+   ],
+   "coverage": "full"
+  },
+  "g78": {
+   "pages": [
+    143
+   ],
+   "coverage": "full"
+  },
+  "g79": {
+   "pages": [
+    144,
+    145
+   ],
+   "coverage": "full"
+  },
+  "g80": {
+   "pages": [
+    145,
+    146
+   ],
+   "coverage": "full"
+  },
+  "g81": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g82": {
+   "pages": [
+    170,
+    171
+   ],
+   "coverage": "full"
+  },
+  "g83": {
+   "pages": [
+    164
+   ],
+   "coverage": "full"
+  },
+  "g84": {
+   "pages": [
+    159,
+    162
+   ],
+   "coverage": "full"
+  },
+  "g85": {
+   "pages": [
+    166,
+    169
+   ],
+   "coverage": "full"
+  },
+  "g86": {
+   "pages": [
+    160,
+    202
+   ],
+   "coverage": "full"
+  },
+  "g87": {
+   "pages": [
+    201,
+    202
+   ],
+   "coverage": "full"
+  },
+  "g88": {
+   "pages": [
+    140,
+    153,
+    200
+   ],
+   "coverage": "partial",
+   "note": "Ideal meters covered; loading only for potential dividers."
+  },
+  "g89": {
+   "pages": [
+    183,
+    195
+   ],
+   "coverage": "full"
+  },
+  "g90": {
+   "pages": [
+    193,
+    196
+   ],
+   "coverage": "full"
+  },
+  "g91": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g92": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g93": {
+   "pages": [
+    177,
+    178
+   ],
+   "coverage": "full"
+  },
+  "g94": {
+   "pages": [
+    163,
+    178
+   ],
+   "coverage": "partial",
+   "note": "LED efficiency noted; lamp-swap question only."
+  },
+  "g95": {
+   "pages": [
+    210,
+    211,
+    213
+   ],
+   "coverage": "full"
+  },
+  "g96": {
+   "pages": [
+    216
+   ],
+   "coverage": "full"
+  },
+  "g97": {
+   "pages": [
+    217
+   ],
+   "coverage": "full"
+  },
+  "g98": {
+   "pages": [
+    219,
+    220
+   ],
+   "coverage": "full"
+  },
+  "g99": {
+   "pages": [
+    222
+   ],
+   "coverage": "full"
+  },
+  "g100": {
+   "pages": [
+    218,
+    226
+   ],
+   "coverage": "full"
+  },
+  "g101": {
+   "pages": [
+    227
+   ],
+   "coverage": "full"
+  },
+  "g102": {
+   "pages": [
+    230,
+    231
+   ],
+   "coverage": "full"
+  },
+  "g103": {
+   "pages": [
+    234,
+    235
+   ],
+   "coverage": "full"
+  },
+  "g104": {
+   "pages": [
+    236,
+    238,
+    241
+   ],
+   "coverage": "full"
+  },
+  "g105": {
+   "pages": [
+    240
+   ],
+   "coverage": "full"
+  },
+  "g106": {
+   "pages": [
+    242
+   ],
+   "coverage": "partial",
+   "note": "Only end-of-topic questions."
+  },
+  "g107": {
+   "pages": [
+    244,
+    245
+   ],
+   "coverage": "full"
+  },
+  "g108": {
+   "pages": [
+    244
+   ],
+   "coverage": "full"
+  },
+  "g109": {
+   "pages": [
+    260
+   ],
+   "coverage": "full"
+  },
+  "g110": {
+   "pages": [
+    264,
+    265
+   ],
+   "coverage": "full"
+  },
+  "g111": {
+   "pages": [
+    268
+   ],
+   "coverage": "full"
+  },
+  "g112": {
+   "pages": [
+    266,
+    269
+   ],
+   "coverage": "full"
+  },
+  "g113": {
+   "pages": [
+    256,
+    265
+   ],
+   "coverage": "full"
+  },
+  "g114": {
+   "pages": [
+    254,
+    240
+   ],
+   "coverage": "full"
+  },
+  "g115": {
+   "pages": [
+    224
+   ],
+   "coverage": "absent",
+   "note": "Only a telescope benefits/drawbacks question."
+  },
+  "g116": {
+   "pages": [
+    86,
+    87
+   ],
+   "coverage": "full"
+  },
+  "g117": {
+   "pages": [
+    79
+   ],
+   "coverage": "absent"
+  },
+  "g118": {
+   "pages": [
+    77
+   ],
+   "coverage": "full"
+  },
+  "g119": {
+   "pages": [
+    135,
+    138
+   ],
+   "coverage": "partial",
+   "note": "Lattice ions and particle charges; no nucleus/ion formation."
+  },
+  "g120": {
+   "pages": [
+    136
+   ],
+   "coverage": "partial",
+   "note": "Gain or loss of electrons; friction not explained."
+  },
+  "g121": {
+   "pages": [],
+   "coverage": "absent"
+  },
+  "g122": {
+   "pages": [
+    206,
+    208,
+    222
+   ],
+   "coverage": "partial",
+   "note": "Longitudinal and needs a medium; no hearing range."
+  },
+  "g123": {
+   "pages": [
+    224
+   ],
+   "coverage": "partial",
+   "note": "Only a radar-pulse question."
+  },
+  "g124": {
+   "pages": [
+    222,
+    256
+   ],
+   "coverage": "full"
+  },
+  "g125": {
+   "pages": [
+    255
+   ],
+   "coverage": "absent",
+   "note": "Only X-ray cell damage mentioned."
+  },
+  "g126": {
+   "pages": [
+    51,
+    59,
+    90
+   ],
+   "coverage": "full"
+  },
+  "g127": {
+   "pages": [
+    22
+   ],
+   "coverage": "absent",
+   "note": "Only the unit appears; topic is A level Year 2."
+  },
+  "g128": {
+   "pages": [
+    23
+   ],
+   "coverage": "full"
+  },
+  "g129": {
+   "pages": [
+    71
+   ],
+   "coverage": "absent",
+   "note": "Only a forearm moments question."
+  }
+ },
+ "not_examined": [
+  {
+   "what": "Collisions in two dimensions (oblique snooker collisions, resolving momenta, particle tracks)",
+   "pages": [
+    121,
+    122
+   ],
+   "words_approx": 650,
+   "why_not": "A level only; book itself says not assessed at AS"
+  },
+  {
+   "what": "Topic-opening context stories (cheetah GPS, Bugatti, Baumgartner jump, Tees bridge, Dinorwig, Three Gorges, LHC, SPECT, night vision, spacecraft charging)",
+   "pages": [
+    39,
+    49,
+    69,
+    91,
+    174,
+    141,
+    254,
+    263
+   ],
+   "words_approx": 4000,
+   "why_not": "Application only; context never examined"
+  },
+  {
+   "what": "Strain gauge with Wheatstone bridge, and electron-in-atom stationary-wave extension",
+   "pages": [
+    273
+   ],
+   "words_approx": 500,
+   "why_not": "Beyond AS; module extension tasks"
+  },
+  {
+   "what": "Millikan's oil-drop experiment history",
+   "pages": [
+    136,
+    137
+   ],
+   "words_approx": 330,
+   "why_not": "Historical; exams only use charge quantisation"
+  },
+  {
+   "what": "Optical fibres (core/cladding, step-index and graded-index)",
+   "pages": [
+    230,
+    231
+   ],
+   "words_approx": 300,
+   "why_not": "Application; never appears in AS papers"
+  },
+  {
+   "what": "Buildings in tension/compression and barometers/millibars extension",
+   "pages": [
+    127
+   ],
+   "words_approx": 350,
+   "why_not": "Extension research tasks, not in spec"
+  },
+  {
+   "what": "Superconductivity and the Meissner effect",
+   "pages": [
+    167,
+    168
+   ],
+   "words_approx": 280,
+   "why_not": "Beyond AS spec"
+  },
+  {
+   "what": "Thin-film interference in oil films",
+   "pages": [
+    239
+   ],
+   "words_approx": 250,
+   "why_not": "Beyond AS spec"
+  },
+  {
+   "what": "Energy stored per unit volume under a stress–strain graph; aeroplane materials",
+   "pages": [
+    108
+   ],
+   "words_approx": 250,
+   "why_not": "Beyond AS; application only"
+  },
+  {
+   "what": "Partial polarisation by reflection, polarising sunglasses, aligning TV/radio aerials, microwave-oven door",
+   "pages": [
+    218,
+    226
+   ],
+   "words_approx": 250,
+   "why_not": "Applications only; never asked"
+  },
+  {
+   "what": "Atmospheric windows and siting telescopes on mountains or in space",
+   "pages": [
+    223,
+    224
+   ],
+   "words_approx": 220,
+   "why_not": "Application only"
+  },
+  {
+   "what": "Crystallography with X-rays and electrons (DNA image)",
+   "pages": [
+    269
+   ],
+   "words_approx": 180,
+   "why_not": "Application only"
+  },
+  {
+   "what": "Thermionic emission and electron-gun construction",
+   "pages": [
+    155
+   ],
+   "words_approx": 200,
+   "why_not": "Only eV = ½mv² is examined"
+  },
+  {
+   "what": "Infrared astronomy with LDRs (Herschel)",
+   "pages": [
+    173
+   ],
+   "words_approx": 200,
+   "why_not": "Application only"
+  },
+  {
+   "what": "Linear accelerator (LINAC) drift tubes",
+   "pages": [
+    156
+   ],
+   "words_approx": 180,
+   "why_not": "Beyond AS; application"
+  },
+  {
+   "what": "Relativistic mass extension",
+   "pages": [
+    59
+   ],
+   "words_approx": 150,
+   "why_not": "Beyond A level spec"
+  },
+  {
+   "what": "Photon momentum p = h/λ and radiation pressure",
+   "pages": [
+    120
+   ],
+   "words_approx": 150,
+   "why_not": "Beyond AS spec"
+  },
+  {
+   "what": "Seismic P- and S-waves as an example of wave types",
+   "pages": [
+    206
+   ],
+   "words_approx": 150,
+   "why_not": "Context only; never examined"
+  },
+  {
+   "what": "Terminal-velocity experiment using a motion sensor and a polystyrene ball over a pulley",
+   "pages": [
+    68
+   ],
+   "words_approx": 150,
+   "why_not": "Exams use ball-bearing or video-timing methods instead"
+  },
+  {
+   "what": "Average-speed check cameras and tachographs",
+   "pages": [
+    34,
+    35,
+    41
+   ],
+   "words_approx": 200,
+   "why_not": "Application only"
+  },
+  {
+   "what": "Barotrauma and deep-water divers",
+   "pages": [
+    81
+   ],
+   "words_approx": 140,
+   "why_not": "Application only"
+  },
+  {
+   "what": "Scanning tunnelling microscope and optical-microscope resolution",
+   "pages": [
+    217
+   ],
+   "words_approx": 150,
+   "why_not": "Context only"
+  },
+  {
+   "what": "Four fundamental forces and electrostatic origin of contact forces",
+   "pages": [
+    113
+   ],
+   "words_approx": 120,
+   "why_not": "Particle physics, A level module 6"
+  },
+  {
+   "what": "Hysteresis loop terminology and aeroplane-tyre heating",
+   "pages": [
+    102,
+    103
+   ],
+   "words_approx": 200,
+   "why_not": "Loading curves are examined; the term hysteresis never is"
+  },
+  {
+   "what": "Yield points, necking and breaking strength of mild steel",
+   "pages": [
+    105
+   ],
+   "words_approx": 100,
+   "why_not": "Detail beyond what mark schemes use"
+  },
+  {
+   "what": "Perpetual motion machines",
+   "pages": [
+    86
+   ],
+   "words_approx": 120,
+   "why_not": "Context only"
+  },
+  {
+   "what": "Sankey diagrams",
+   "pages": [
+    87
+   ],
+   "words_approx": 60,
+   "why_not": "GCSE skill; never examined at AS"
+  },
+  {
+   "what": "Noise-cancelling headphones",
+   "pages": [
+    234
+   ],
+   "words_approx": 90,
+   "why_not": "Application only"
+  },
+  {
+   "what": "Graphene (Nobel prize, Young modulus value, number density)",
+   "pages": [
+    143,
+    106
+   ],
+   "words_approx": 100,
+   "why_not": "Context only"
+  },
+  {
+   "what": "Mars Climate Orbiter unit mix-up, international prototype kilogram, Fahrenheit conversion",
+   "pages": [
+    20,
+    23,
+    58
+   ],
+   "words_approx": 250,
+   "why_not": "Historical or non-SI context"
+  },
+  {
+   "what": "Cosmic microwave background polarisation and inflation",
+   "pages": [
+    225
+   ],
+   "words_approx": 70,
+   "why_not": "Context only"
+  },
+  {
+   "what": "Named histories: Ibn Sahl/Snellius, Kirchhoff and Bunsen, tungsten lamps, Marconi patent",
+   "pages": [
+    228,
+    141,
+    160,
+    150
+   ],
+   "words_approx": 300,
+   "why_not": "Historical"
+  }
+ ],
+ "exam_not_in_book": [
+  {
+   "id": "D-errors / accuracy / errors",
+   "what": "Definitions of accuracy, precision, systematic, random and zero error",
+   "note": "Appendix A3 not in these pages; mark schemes refuse 'human error'"
+  },
+  {
+   "id": "K-uncertainty / g26",
+   "what": "Absolute and percentage uncertainty, combining uncertainties, worst-fit lines",
+   "note": "Absent"
+  },
+  {
+   "id": "g23 / g24 / K-graph",
+   "what": "Table headings and axis labels (quantity / unit), choosing graph scales, best-fit lines",
+   "note": "Recording-results appendix A2 missing"
+  },
+  {
+   "id": "g27 / g28 / g29 / K-method / K-evaluate",
+   "what": "Interpolation and extrapolation, repeatable vs reproducible, valid conclusions, variables, evaluating methods",
+   "note": "Absent or a one-line mention"
+  },
+  {
+   "id": "K-instruments",
+   "what": "Instrument resolution and choosing the right instrument",
+   "note": "Instruments named but resolution never discussed"
+  },
+  {
+   "id": "drift",
+   "what": "Definition of mean drift velocity",
+   "note": "Used in I = Anev without a definition"
+  },
+  {
+   "id": "critical / threshold",
+   "what": "Formal definitions of critical angle and threshold frequency (the 'minimum' wording)",
+   "note": "Only described indirectly"
+  },
+  {
+   "id": "g30",
+   "what": "Checking homogeneity of equations with base units",
+   "note": "One question only"
+  },
+  {
+   "id": "g41 / g45 / g46 / g43 / g44",
+   "what": "Quadratics in suvat, simultaneous equations (E and r), testing ratios in data, iterative modelling, probability for electron waves",
+   "note": "Absent"
+  },
+  {
+   "id": "g51 / g54 / g53 / g57",
+   "what": "Air resistance on projectiles, connected bodies and pulleys, lifts, toppling",
+   "note": "Absent or a single question"
+  },
+  {
+   "id": "g74 / g75 / g76",
+   "what": "Rebound momentum change, force from a stream of fluid, relative speed in elastic collisions",
+   "note": "Questions only, or absent"
+  },
+  {
+   "id": "g81 / g91 / g92",
+   "what": "Number density from density and molar mass, short-circuit current, maximum power transfer",
+   "note": "Absent"
+  },
+  {
+   "id": "g1 / g5 / g6 / g22",
+   "what": "Ticker timers, light-gate card timing, ball-bearing terminal-velocity method, why data-loggers are used",
+   "note": "Barely mentioned"
+  },
+  {
+   "id": "E-photon-rate",
+   "what": "Photons per second = power ÷ photon energy",
+   "note": "One question only"
+  },
+  {
+   "id": "F-electron-diffraction",
+   "what": "Electron diffraction rings get smaller as electron speed increases",
+   "note": "Not stated"
+  },
+  {
+   "id": "g121 / g122 / g123 / g125",
+   "what": "Mains 230 V 50 Hz, sound basics (hearing range), echoes, uses and hazards of EM waves",
+   "note": "Absent or a passing mention"
+  },
+  {
+   "id": "g115 / g117 / g127 / g129",
+   "what": "Benefits and risks, particle model and density, specific heat capacity, levers and gears",
+   "note": "Absent from the AS half"
+  },
+  {
+   "id": "g21",
+   "what": "Diffraction grating (AS limits)",
+   "note": "Absent (not examined at AS either)"
+  }
+ ]
+}

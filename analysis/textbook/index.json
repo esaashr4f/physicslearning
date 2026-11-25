@@ -1,0 +1,6204 @@
+{
+ "pages": [
+  {
+   "pdf": 1,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 20,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 2,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 0,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 3,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 19,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 4,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 295,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 5,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 159,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 6,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 394,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 7,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 405,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 8,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 403,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 9,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 34,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 10,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 376,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 11,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 339,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 12,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 98,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 13,
+   "book_page": null,
+   "chapter": "front matter",
+   "topic": null,
+   "spec": [],
+   "kind": "front-matter",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 279,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 14,
+   "book_page": 2,
+   "chapter": "1 Development of practical skills in physics",
+   "topic": "1.1 Practical skills assessed in written examinations",
+   "spec": [
+    "1.1.1",
+    "1.1.2",
+    "1.1.3",
+    "1.1.4"
+   ],
+   "kind": "practical",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 328,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 15,
+   "book_page": 3,
+   "chapter": "1 Development of practical skills in physics",
+   "topic": "1.1 Practical skills assessed in written examinations",
+   "spec": [
+    "1.1.2",
+    "1.1.3",
+    "1.1.4"
+   ],
+   "kind": "practical",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 176,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 16,
+   "book_page": 4,
+   "chapter": "1 Development of practical skills in physics",
+   "topic": "1.2 Practical skills assessed in practical endorsement",
+   "spec": [
+    "1.1.2"
+   ],
+   "kind": "practical",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 279,
+   "beyond_spec": true,
+   "notes": "Practical endorsement and PAGs assessed at A level only, not AS"
+  },
+  {
+   "pdf": 17,
+   "book_page": 5,
+   "chapter": "1 Development of practical skills in physics",
+   "topic": "1.2 Practical skills assessed in practical endorsement",
+   "spec": [],
+   "kind": "practical",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 264,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 18,
+   "book_page": 6,
+   "chapter": "module opener (Module 2)",
+   "topic": null,
+   "spec": [],
+   "kind": "other",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 336,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 19,
+   "book_page": 7,
+   "chapter": "module opener (Module 2)",
+   "topic": null,
+   "spec": [],
+   "kind": "maths-skills",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 335,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 20,
+   "book_page": 8,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.1 Quantities and units",
+   "spec": [
+    "2.1.1",
+    "2.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 375,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 21,
+   "book_page": 9,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.1 Quantities and units",
+   "spec": [
+    "2.1.1",
+    "2.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 2,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 542,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 22,
+   "book_page": 10,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.2 Derived units",
+   "spec": [
+    "2.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 423,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 23,
+   "book_page": 11,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.2 Derived units",
+   "spec": [
+    "2.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 365,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 24,
+   "book_page": 12,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.3 Scalar and vector quantities",
+   "spec": [
+    "2.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 447,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 25,
+   "book_page": 13,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.3 Scalar and vector quantities",
+   "spec": [
+    "2.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 2,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 351,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 26,
+   "book_page": 14,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.4 Adding vectors",
+   "spec": [
+    "2.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 457,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 27,
+   "book_page": 15,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.4 Adding vectors",
+   "spec": [
+    "2.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 3,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 383,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 28,
+   "book_page": 16,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.5 Resolving vectors",
+   "spec": [
+    "2.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 327,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 29,
+   "book_page": 17,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.5 Resolving vectors",
+   "spec": [
+    "2.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 353,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 30,
+   "book_page": 18,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.6 More on vectors",
+   "spec": [
+    "2.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 407,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 31,
+   "book_page": 19,
+   "chapter": "2 Foundations of physics",
+   "topic": "2.6 More on vectors",
+   "spec": [
+    "2.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 277,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 32,
+   "book_page": 20,
+   "chapter": "module opener (Module 3)",
+   "topic": null,
+   "spec": [],
+   "kind": "other",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 290,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 33,
+   "book_page": 21,
+   "chapter": "module opener (Module 3)",
+   "topic": null,
+   "spec": [],
+   "kind": "maths-skills",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 330,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 34,
+   "book_page": 22,
+   "chapter": "3 Motion",
+   "topic": "3.1 Distance and speed",
+   "spec": [
+    "3.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 279,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 35,
+   "book_page": 23,
+   "chapter": "3 Motion",
+   "topic": "3.1 Distance and speed",
+   "spec": [
+    "3.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 542,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 36,
+   "book_page": 24,
+   "chapter": "3 Motion",
+   "topic": "3.2 Displacement and velocity",
+   "spec": [
+    "3.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 396,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 37,
+   "book_page": 25,
+   "chapter": "3 Motion",
+   "topic": "3.2 Displacement and velocity",
+   "spec": [
+    "3.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 391,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 38,
+   "book_page": 26,
+   "chapter": "3 Motion",
+   "topic": "3.2 Displacement and velocity",
+   "spec": [
+    "3.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 189,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 39,
+   "book_page": 27,
+   "chapter": "3 Motion",
+   "topic": "3.3 Acceleration",
+   "spec": [
+    "3.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 344,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 40,
+   "book_page": 28,
+   "chapter": "3 Motion",
+   "topic": "3.3 Acceleration",
+   "spec": [
+    "3.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 376,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 41,
+   "book_page": 29,
+   "chapter": "3 Motion",
+   "topic": "3.4 More on velocity-time graphs",
+   "spec": [
+    "3.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 409,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 42,
+   "book_page": 30,
+   "chapter": "3 Motion",
+   "topic": "3.4 More on velocity-time graphs",
+   "spec": [
+    "3.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 430,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 43,
+   "book_page": 31,
+   "chapter": "3 Motion",
+   "topic": "3.5 Equations of motion",
+   "spec": [
+    "3.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 303,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 44,
+   "book_page": 32,
+   "chapter": "3 Motion",
+   "topic": "3.5 Equations of motion",
+   "spec": [
+    "3.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 2,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 322,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 45,
+   "book_page": 33,
+   "chapter": "3 Motion",
+   "topic": "3.5 Equations of motion",
+   "spec": [
+    "3.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 2,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 286,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 46,
+   "book_page": 34,
+   "chapter": "3 Motion",
+   "topic": "3.5 Equations of motion",
+   "spec": [
+    "3.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 340,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 47,
+   "book_page": 35,
+   "chapter": "3 Motion",
+   "topic": "3.6 Car stopping distances",
+   "spec": [
+    "3.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 428,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 48,
+   "book_page": 36,
+   "chapter": "3 Motion",
+   "topic": "3.6 Car stopping distances",
+   "spec": [
+    "3.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 375,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 49,
+   "book_page": 37,
+   "chapter": "3 Motion",
+   "topic": "3.7 Free fall and g",
+   "spec": [
+    "3.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 414,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 50,
+   "book_page": 38,
+   "chapter": "3 Motion",
+   "topic": "3.7 Free fall and g",
+   "spec": [
+    "3.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 368,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 51,
+   "book_page": 39,
+   "chapter": "3 Motion",
+   "topic": "3.7 Free fall and g",
+   "spec": [
+    "1.1.3",
+    "3.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 428,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 52,
+   "book_page": 40,
+   "chapter": "3 Motion",
+   "topic": "3.8 Projectile motion",
+   "spec": [
+    "3.1.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 361,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 53,
+   "book_page": 41,
+   "chapter": "3 Motion",
+   "topic": "3.8 Projectile motion",
+   "spec": [
+    "3.1.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 234,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 54,
+   "book_page": 42,
+   "chapter": "3 Motion",
+   "topic": "3.8 Projectile motion",
+   "spec": [
+    "3.1.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 2,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 339,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 55,
+   "book_page": 43,
+   "chapter": "3 Motion",
+   "topic": "3.8 Projectile motion",
+   "spec": [
+    "3.1.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 228,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 56,
+   "book_page": 44,
+   "chapter": "3 Motion",
+   "topic": null,
+   "spec": [
+    "2.1.2",
+    "2.3.1",
+    "3.1.1",
+    "3.1.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 3,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 329,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 57,
+   "book_page": 45,
+   "chapter": "3 Motion",
+   "topic": null,
+   "spec": [
+    "2.2.1",
+    "3.1.1",
+    "3.1.2",
+    "3.1.3"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 3,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 407,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 58,
+   "book_page": 46,
+   "chapter": "4 Forces in action",
+   "topic": "4.1 Force, mass, and weight",
+   "spec": [
+    "3.2.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 427,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 59,
+   "book_page": 47,
+   "chapter": "4 Forces in action",
+   "topic": "4.1 Force, mass, and weight",
+   "spec": [
+    "3.2.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 480,
+   "beyond_spec": true,
+   "notes": "Extension box on relativistic mass (special relativity)"
+  },
+  {
+   "pdf": 60,
+   "book_page": 48,
+   "chapter": "4 Forces in action",
+   "topic": "4.1 Force, mass, and weight",
+   "spec": [
+    "3.2.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 186,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 61,
+   "book_page": 49,
+   "chapter": "4 Forces in action",
+   "topic": "4.2 Centre of mass",
+   "spec": [
+    "3.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 418,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 62,
+   "book_page": 50,
+   "chapter": "4 Forces in action",
+   "topic": "4.2 Centre of mass",
+   "spec": [
+    "3.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 2,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 414,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 63,
+   "book_page": 51,
+   "chapter": "4 Forces in action",
+   "topic": "4.3 Free-body diagrams",
+   "spec": [
+    "3.2.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 274,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 64,
+   "book_page": 52,
+   "chapter": "4 Forces in action",
+   "topic": "4.3 Free-body diagrams",
+   "spec": [
+    "3.2.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 206,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 65,
+   "book_page": 53,
+   "chapter": "4 Forces in action",
+   "topic": "4.3 Free-body diagrams",
+   "spec": [
+    "3.2.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 317,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 66,
+   "book_page": 54,
+   "chapter": "4 Forces in action",
+   "topic": "4.4 Drag and terminal velocity",
+   "spec": [
+    "3.2.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 328,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 67,
+   "book_page": 55,
+   "chapter": "4 Forces in action",
+   "topic": "4.4 Drag and terminal velocity",
+   "spec": [
+    "3.2.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 273,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 68,
+   "book_page": 56,
+   "chapter": "4 Forces in action",
+   "topic": "4.4 Drag and terminal velocity",
+   "spec": [
+    "3.2.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 363,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 69,
+   "book_page": 57,
+   "chapter": "4 Forces in action",
+   "topic": "4.5 Moments and equilibrium",
+   "spec": [
+    "3.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 427,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 70,
+   "book_page": 58,
+   "chapter": "4 Forces in action",
+   "topic": "4.5 Moments and equilibrium",
+   "spec": [
+    "3.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 2,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 395,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 71,
+   "book_page": 59,
+   "chapter": "4 Forces in action",
+   "topic": "4.5 Moments and equilibrium",
+   "spec": [
+    "3.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 286,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 72,
+   "book_page": 60,
+   "chapter": "4 Forces in action",
+   "topic": "4.6 Couples and torques",
+   "spec": [
+    "3.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 2,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 387,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 73,
+   "book_page": 61,
+   "chapter": "4 Forces in action",
+   "topic": "4.6 Couples and torques",
+   "spec": [
+    "2.1.1",
+    "3.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 222,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 74,
+   "book_page": 62,
+   "chapter": "4 Forces in action",
+   "topic": "4.7 Triangle of forces",
+   "spec": [
+    "3.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 349,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 75,
+   "book_page": 63,
+   "chapter": "4 Forces in action",
+   "topic": "4.7 Triangle of forces",
+   "spec": [
+    "3.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 2,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 273,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 76,
+   "book_page": 64,
+   "chapter": "4 Forces in action",
+   "topic": "4.7 Triangle of forces",
+   "spec": [
+    "3.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 290,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 77,
+   "book_page": 65,
+   "chapter": "4 Forces in action",
+   "topic": "4.8 Density and pressure",
+   "spec": [
+    "3.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 324,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 78,
+   "book_page": 66,
+   "chapter": "4 Forces in action",
+   "topic": "4.8 Density and pressure",
+   "spec": [
+    "2.1.1",
+    "3.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 506,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 79,
+   "book_page": 67,
+   "chapter": "4 Forces in action",
+   "topic": "4.9 p = h rho g and Archimedes' principle",
+   "spec": [
+    "3.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 390,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 80,
+   "book_page": 68,
+   "chapter": "4 Forces in action",
+   "topic": "4.9 p = h rho g and Archimedes' principle",
+   "spec": [
+    "3.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 388,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 81,
+   "book_page": 69,
+   "chapter": "4 Forces in action",
+   "topic": "4.9 p = h rho g and Archimedes' principle",
+   "spec": [
+    "3.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 476,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 82,
+   "book_page": 70,
+   "chapter": "4 Forces in action",
+   "topic": null,
+   "spec": [
+    "2.3.1",
+    "3.2.1",
+    "3.2.2",
+    "3.2.3"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 4,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 327,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 83,
+   "book_page": 71,
+   "chapter": "4 Forces in action",
+   "topic": null,
+   "spec": [
+    "3.2.3",
+    "3.2.4"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 2,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 408,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 84,
+   "book_page": 72,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.1 Work done and energy",
+   "spec": [
+    "3.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 389,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 85,
+   "book_page": 73,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.1 Work done and energy",
+   "spec": [
+    "3.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 476,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 86,
+   "book_page": 74,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.2 Conservation of energy",
+   "spec": [
+    "3.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 419,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 87,
+   "book_page": 75,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.2 Conservation of energy",
+   "spec": [
+    "3.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 426,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 88,
+   "book_page": 76,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.3 Kinetic energy and gravitational potential energy",
+   "spec": [
+    "3.3.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 439,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 89,
+   "book_page": 77,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.3 Kinetic energy and gravitational potential energy",
+   "spec": [
+    "2.1.2",
+    "3.3.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 483,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 90,
+   "book_page": 78,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.3 Kinetic energy and gravitational potential energy",
+   "spec": [
+    "3.3.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 7,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 508,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 91,
+   "book_page": 79,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.4 Power and efficiency",
+   "spec": [
+    "3.3.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 386,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 92,
+   "book_page": 80,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.4 Power and efficiency",
+   "spec": [
+    "3.3.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 375,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 93,
+   "book_page": 81,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.4 Power and efficiency",
+   "spec": [
+    "3.3.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 7,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 294,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 94,
+   "book_page": 78,
+   "chapter": "5 Work, energy, and power",
+   "topic": "5.3 Kinetic energy and gravitational potential energy",
+   "spec": [
+    "3.3.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 7,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 511,
+   "beyond_spec": false,
+   "notes": "Duplicate scan of book p.78 (5.3 end); book p.82 appears at PDF 98"
+  },
+  {
+   "pdf": 95,
+   "book_page": 83,
+   "chapter": "5 Work, energy, and power",
+   "topic": null,
+   "spec": [
+    "3.3.1",
+    "3.3.2",
+    "3.3.3"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 4,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 474,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 96,
+   "book_page": 84,
+   "chapter": "6 Materials",
+   "topic": "6.1 Springs and Hooke's law",
+   "spec": [
+    "3.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 372,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 97,
+   "book_page": 85,
+   "chapter": "6 Materials",
+   "topic": "6.1 Springs and Hooke's law",
+   "spec": [
+    "3.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 383,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 98,
+   "book_page": 82,
+   "chapter": "5 Work, energy, and power",
+   "topic": null,
+   "spec": [
+    "2.1.2",
+    "3.3.1",
+    "3.3.2",
+    "3.3.3"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 4,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 346,
+   "beyond_spec": false,
+   "notes": "Out-of-order scan: book p.82 (Ch.5 practice questions start); book p.86 missing from PDF"
+  },
+  {
+   "pdf": 99,
+   "book_page": 87,
+   "chapter": "6 Materials",
+   "topic": "6.1 Springs and Hooke's law",
+   "spec": [
+    "3.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 2,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 284,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 100,
+   "book_page": 88,
+   "chapter": "6 Materials",
+   "topic": "6.2 Elastic potential energy",
+   "spec": [
+    "3.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 465,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 101,
+   "book_page": 89,
+   "chapter": "6 Materials",
+   "topic": "6.2 Elastic potential energy",
+   "spec": [
+    "3.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 425,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 102,
+   "book_page": 90,
+   "chapter": "6 Materials",
+   "topic": "6.3 Deforming materials",
+   "spec": [
+    "3.4.1",
+    "3.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 463,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 103,
+   "book_page": 91,
+   "chapter": "6 Materials",
+   "topic": "6.3 Deforming materials",
+   "spec": [
+    "3.4.1",
+    "3.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 341,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 104,
+   "book_page": 92,
+   "chapter": "6 Materials",
+   "topic": "6.4 Stress, strain, and the Young modulus",
+   "spec": [
+    "3.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 321,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 105,
+   "book_page": 93,
+   "chapter": "6 Materials",
+   "topic": "6.4 Stress, strain, and the Young modulus",
+   "spec": [
+    "3.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 353,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 106,
+   "book_page": 94,
+   "chapter": "6 Materials",
+   "topic": "6.4 Stress, strain, and the Young modulus",
+   "spec": [
+    "3.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 347,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 107,
+   "book_page": 95,
+   "chapter": "6 Materials",
+   "topic": "6.4 Stress, strain, and the Young modulus",
+   "spec": [
+    "1.1.2",
+    "3.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 388,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 108,
+   "book_page": 96,
+   "chapter": "6 Materials",
+   "topic": "6.4 Stress, strain, and the Young modulus",
+   "spec": [
+    "3.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 424,
+   "beyond_spec": true,
+   "notes": "Extension: energy stored per unit volume from stress-strain area"
+  },
+  {
+   "pdf": 109,
+   "book_page": 97,
+   "chapter": "6 Materials",
+   "topic": null,
+   "spec": [
+    "2.2.1",
+    "3.3.3",
+    "3.4.1",
+    "3.4.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 5,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 445,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 110,
+   "book_page": 98,
+   "chapter": "6 Materials",
+   "topic": null,
+   "spec": [
+    "3.4.1",
+    "3.4.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 3,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 454,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 111,
+   "book_page": 99,
+   "chapter": "6 Materials",
+   "topic": null,
+   "spec": [
+    "3.4.1",
+    "3.4.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 3,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 483,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 112,
+   "book_page": 100,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.1 Newton's first and third laws of motion",
+   "spec": [
+    "3.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 418,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 113,
+   "book_page": 101,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.1 Newton's first and third laws of motion",
+   "spec": [
+    "3.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 458,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 114,
+   "book_page": 102,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.2 Linear momentum",
+   "spec": [
+    "3.5.1",
+    "3.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 406,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 115,
+   "book_page": 103,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.2 Linear momentum",
+   "spec": [
+    "3.5.1",
+    "3.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 343,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 116,
+   "book_page": 104,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.2 Linear momentum",
+   "spec": [
+    "3.5.1",
+    "3.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 385,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 117,
+   "book_page": 105,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.3 Newton's second law of motion",
+   "spec": [
+    "3.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 372,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 118,
+   "book_page": 106,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.3 Newton's second law of motion",
+   "spec": [
+    "3.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 554,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 119,
+   "book_page": 107,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.4 Impulse",
+   "spec": [
+    "3.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 343,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 120,
+   "book_page": 108,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.4 Impulse",
+   "spec": [
+    "3.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 415,
+   "beyond_spec": true,
+   "notes": "Extension box on photon momentum and radiation pressure"
+  },
+  {
+   "pdf": 121,
+   "book_page": 109,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.5 Collisions in two dimensions",
+   "spec": [
+    "3.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 380,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 122,
+   "book_page": 110,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": "7.5 Collisions in two dimensions",
+   "spec": [
+    "3.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 422,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 123,
+   "book_page": 111,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": null,
+   "spec": [
+    "2.1.2",
+    "3.1.2",
+    "3.3.2",
+    "3.5.1"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 3,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 421,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 124,
+   "book_page": 112,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": null,
+   "spec": [
+    "3.5.1",
+    "3.5.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 3,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 430,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 125,
+   "book_page": 113,
+   "chapter": "7 Laws of motion and momentum",
+   "topic": null,
+   "spec": [
+    "3.5.1",
+    "3.5.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 2,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 409,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 126,
+   "book_page": 114,
+   "chapter": "module summary (Module 3)",
+   "topic": null,
+   "spec": [
+    "3.1.1",
+    "3.1.2",
+    "3.1.3",
+    "3.2.1",
+    "3.2.2",
+    "3.2.3",
+    "3.2.4",
+    "3.3.1",
+    "3.3.2",
+    "3.3.3",
+    "3.4.1",
+    "3.4.2",
+    "3.5.1",
+    "3.5.2"
+   ],
+   "kind": "module-summary",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 203,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 127,
+   "book_page": 115,
+   "chapter": "module summary (Module 3)",
+   "topic": null,
+   "spec": [
+    "3.2.4",
+    "3.4.2"
+   ],
+   "kind": "module-summary",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 1
+   },
+   "words": 348,
+   "beyond_spec": true,
+   "notes": "Module tasks: roof truss structures, barometers, atmospheric pressure research"
+  },
+  {
+   "pdf": 128,
+   "book_page": 116,
+   "chapter": "module practice questions (Module 3)",
+   "topic": null,
+   "spec": [
+    "2.1.2",
+    "2.2.1",
+    "3.2.4",
+    "3.4.2",
+    "3.5.1"
+   ],
+   "kind": "module-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 5,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 401,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 129,
+   "book_page": 117,
+   "chapter": "module practice questions (Module 3)",
+   "topic": null,
+   "spec": [
+    "3.1.1",
+    "3.1.2",
+    "3.2.1",
+    "3.2.4",
+    "3.3.2"
+   ],
+   "kind": "module-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 4,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 317,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 130,
+   "book_page": 118,
+   "chapter": "module practice questions (Module 3)",
+   "topic": null,
+   "spec": [
+    "1.1.1",
+    "3.1.3",
+    "3.2.3",
+    "3.3.1",
+    "3.3.2"
+   ],
+   "kind": "module-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 2,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 347,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 131,
+   "book_page": 119,
+   "chapter": "module practice questions (Module 3)",
+   "topic": null,
+   "spec": [
+    "2.2.1",
+    "3.1.2",
+    "3.2.1",
+    "3.5.1",
+    "3.5.2"
+   ],
+   "kind": "module-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 1,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 346,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 132,
+   "book_page": 120,
+   "chapter": "module opener (Module 4)",
+   "topic": null,
+   "spec": [],
+   "kind": "other",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 319,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 133,
+   "book_page": 121,
+   "chapter": "module opener (Module 4)",
+   "topic": null,
+   "spec": [],
+   "kind": "maths-skills",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 313,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 134,
+   "book_page": 122,
+   "chapter": "8 Charge and current",
+   "topic": "8.1 Current and charge",
+   "spec": [
+    "4.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 432,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 135,
+   "book_page": 123,
+   "chapter": "8 Charge and current",
+   "topic": "8.1 Current and charge",
+   "spec": [
+    "4.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 457,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 136,
+   "book_page": 124,
+   "chapter": "8 Charge and current",
+   "topic": "8.1 Current and charge",
+   "spec": [
+    "4.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 271,
+   "beyond_spec": true,
+   "notes": "Millikan oil-drop experiment history box"
+  },
+  {
+   "pdf": 137,
+   "book_page": 125,
+   "chapter": "8 Charge and current",
+   "topic": "8.1 Current and charge",
+   "spec": [
+    "4.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 7,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 392,
+   "beyond_spec": true,
+   "notes": "Millikan oil-drop experiment continued, data-ethics questions"
+  },
+  {
+   "pdf": 138,
+   "book_page": 126,
+   "chapter": "8 Charge and current",
+   "topic": "8.2 Moving charges",
+   "spec": [
+    "4.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 402,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 139,
+   "book_page": 127,
+   "chapter": "8 Charge and current",
+   "topic": "8.2 Moving charges",
+   "spec": [
+    "4.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 400,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 140,
+   "book_page": 128,
+   "chapter": "8 Charge and current",
+   "topic": "8.2 Moving charges",
+   "spec": [
+    "4.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 317,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 141,
+   "book_page": 129,
+   "chapter": "8 Charge and current",
+   "topic": "8.3 Kirchhoff's first law",
+   "spec": [
+    "4.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 423,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 142,
+   "book_page": 130,
+   "chapter": "8 Charge and current",
+   "topic": "8.3 Kirchhoff's first law",
+   "spec": [
+    "4.1.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 275,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 143,
+   "book_page": 131,
+   "chapter": "8 Charge and current",
+   "topic": "8.4 Mean drift velocity",
+   "spec": [
+    "4.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 337,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 144,
+   "book_page": 132,
+   "chapter": "8 Charge and current",
+   "topic": "8.4 Mean drift velocity",
+   "spec": [
+    "2.1.2",
+    "4.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 380,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 145,
+   "book_page": 133,
+   "chapter": "8 Charge and current",
+   "topic": "8.4 Mean drift velocity",
+   "spec": [
+    "4.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 2,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 266,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 146,
+   "book_page": 134,
+   "chapter": "8 Charge and current",
+   "topic": "8.4 Mean drift velocity",
+   "spec": [
+    "4.1.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 401,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 147,
+   "book_page": 135,
+   "chapter": "8 Charge and current",
+   "topic": null,
+   "spec": [
+    "2.1.2",
+    "4.1.1"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 3,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 269,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 148,
+   "book_page": 136,
+   "chapter": "8 Charge and current",
+   "topic": null,
+   "spec": [
+    "4.1.1",
+    "4.1.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 4,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 278,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 149,
+   "book_page": 137,
+   "chapter": "8 Charge and current",
+   "topic": null,
+   "spec": [
+    "2.1.2",
+    "4.1.1",
+    "4.1.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 2,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 298,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 150,
+   "book_page": 138,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.1 Circuit symbols",
+   "spec": [
+    "4.2.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 415,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 151,
+   "book_page": 139,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.1 Circuit symbols",
+   "spec": [
+    "4.2.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 207,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 152,
+   "book_page": 140,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.2 Potential difference and electromotive force",
+   "spec": [
+    "4.2.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 318,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 153,
+   "book_page": 141,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.2 Potential difference and electromotive force",
+   "spec": [
+    "4.2.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 388,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 154,
+   "book_page": 142,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.2 Potential difference and electromotive force",
+   "spec": [
+    "2.1.2",
+    "4.2.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 363,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 155,
+   "book_page": 143,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.3 The electron gun",
+   "spec": [
+    "4.2.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 392,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 156,
+   "book_page": 144,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.3 The electron gun",
+   "spec": [
+    "4.2.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 454,
+   "beyond_spec": true,
+   "notes": "Extension box on linear particle accelerators (drift tubes)"
+  },
+  {
+   "pdf": 157,
+   "book_page": 145,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.4 Resistance",
+   "spec": [
+    "4.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 266,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 158,
+   "book_page": 146,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.4 Resistance",
+   "spec": [
+    "4.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 347,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 159,
+   "book_page": 147,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.4 Resistance",
+   "spec": [
+    "2.1.2",
+    "4.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 283,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 160,
+   "book_page": 148,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.5 I-V characteristics",
+   "spec": [
+    "4.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 363,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 161,
+   "book_page": 149,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.5 I-V characteristics",
+   "spec": [
+    "4.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 400,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 162,
+   "book_page": 150,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.5 I-V characteristics",
+   "spec": [
+    "4.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 284,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 163,
+   "book_page": 151,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.6 Diodes",
+   "spec": [
+    "4.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 444,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 164,
+   "book_page": 152,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.6 Diodes",
+   "spec": [
+    "4.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 363,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 165,
+   "book_page": 153,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.7 Resistance and resistivity",
+   "spec": [
+    "4.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 372,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 166,
+   "book_page": 154,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.7 Resistance and resistivity",
+   "spec": [
+    "4.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 330,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 167,
+   "book_page": 155,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.7 Resistance and resistivity",
+   "spec": [
+    "1.1.3",
+    "4.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 499,
+   "beyond_spec": true,
+   "notes": "Extension box on superconductivity and critical temperature"
+  },
+  {
+   "pdf": 168,
+   "book_page": 156,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.7 Resistance and resistivity",
+   "spec": [
+    "1.1.3",
+    "4.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 7,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 424,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 169,
+   "book_page": 157,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.8 The thermistor",
+   "spec": [
+    "4.2.3",
+    "4.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 402,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 170,
+   "book_page": 158,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.8 The thermistor",
+   "spec": [
+    "4.2.3",
+    "4.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 337,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 171,
+   "book_page": 159,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.8 The thermistor",
+   "spec": [
+    "4.2.3",
+    "4.2.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 298,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 172,
+   "book_page": 160,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.9 The LDR",
+   "spec": [
+    "4.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 410,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 173,
+   "book_page": 161,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.9 The LDR",
+   "spec": [
+    "4.2.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 360,
+   "beyond_spec": true,
+   "notes": "Application box on infrared astronomy using LDRs"
+  },
+  {
+   "pdf": 174,
+   "book_page": 162,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.10 Electrical energy and power",
+   "spec": [
+    "4.2.5"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 369,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 175,
+   "book_page": 163,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.10 Electrical energy and power",
+   "spec": [
+    "4.2.5"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 257,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 176,
+   "book_page": 164,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.10 Electrical energy and power",
+   "spec": [
+    "2.1.2",
+    "4.2.5"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 311,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 177,
+   "book_page": 165,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.11 Paying for electricity",
+   "spec": [
+    "4.2.5"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 440,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 178,
+   "book_page": 166,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": "9.11 Paying for electricity",
+   "spec": [
+    "4.2.5"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 2,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 491,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 179,
+   "book_page": 167,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": null,
+   "spec": [
+    "2.1.2",
+    "4.2.2",
+    "4.2.4",
+    "4.2.5",
+    "4.3.3"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 4,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 394,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 180,
+   "book_page": 168,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": null,
+   "spec": [
+    "4.2.3",
+    "4.2.4",
+    "4.2.5"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 3,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 432,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 181,
+   "book_page": 169,
+   "chapter": "9 Energy, power, and resistance",
+   "topic": null,
+   "spec": [
+    "4.2.4",
+    "4.2.5",
+    "4.3.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 2,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 374,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 182,
+   "book_page": 170,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.1 Kirchhoff's laws and circuits",
+   "spec": [
+    "4.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 419,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 183,
+   "book_page": 171,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.1 Kirchhoff's laws and circuits",
+   "spec": [
+    "4.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 533,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 184,
+   "book_page": 172,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.1 Kirchhoff's laws and circuits",
+   "spec": [
+    "4.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 1,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 330,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 185,
+   "book_page": 173,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.1 Kirchhoff's laws and circuits",
+   "spec": [
+    "4.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 2,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 98,
+   "beyond_spec": false,
+   "notes": "Short page: remainder of 10.1 summary questions"
+  },
+  {
+   "pdf": 186,
+   "book_page": 174,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.2 Combining resistors",
+   "spec": [
+    "4.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 424,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 187,
+   "book_page": 175,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.2 Combining resistors",
+   "spec": [
+    "4.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 2,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 304,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 188,
+   "book_page": 176,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.2 Combining resistors",
+   "spec": [
+    "4.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 167,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 189,
+   "book_page": 177,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.3 Analysing circuits",
+   "spec": [
+    "4.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 314,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 190,
+   "book_page": 178,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.3 Analysing circuits",
+   "spec": [
+    "4.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 260,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 191,
+   "book_page": 179,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.3 Analysing circuits",
+   "spec": [
+    "4.3.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 389,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 192,
+   "book_page": 182,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.4 Internal resistance",
+   "spec": [
+    "4.3.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 268,
+   "beyond_spec": false,
+   "notes": "Near-duplicate scan of book p.182 (also PDF 194); book p.180 missing from PDF"
+  },
+  {
+   "pdf": 193,
+   "book_page": 181,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.4 Internal resistance",
+   "spec": [
+    "4.3.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 420,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 194,
+   "book_page": 182,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.4 Internal resistance",
+   "spec": [
+    "4.3.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 268,
+   "beyond_spec": false,
+   "notes": "Book p.182; near-duplicate of PDF 192"
+  },
+  {
+   "pdf": 195,
+   "book_page": 183,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.4 Internal resistance",
+   "spec": [
+    "4.3.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 2,
+    "extension_boxes": 0
+   },
+   "words": 448,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 196,
+   "book_page": 184,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.4 Internal resistance",
+   "spec": [
+    "1.1.3",
+    "4.3.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 333,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 197,
+   "book_page": 185,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.4 Internal resistance",
+   "spec": [
+    "4.3.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 203,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 198,
+   "book_page": 186,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.5 Potential divider circuits",
+   "spec": [
+    "4.3.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 352,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 199,
+   "book_page": 187,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.5 Potential divider circuits",
+   "spec": [
+    "4.3.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 280,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 200,
+   "book_page": 188,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.5 Potential divider circuits",
+   "spec": [
+    "4.3.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 325,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 201,
+   "book_page": 189,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.6 Sensing circuits",
+   "spec": [
+    "4.3.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 444,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 202,
+   "book_page": 190,
+   "chapter": "10 Electrical circuits",
+   "topic": "10.6 Sensing circuits",
+   "spec": [
+    "4.3.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 411,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 203,
+   "book_page": 191,
+   "chapter": "10 Electrical circuits",
+   "topic": null,
+   "spec": [
+    "4.2.3",
+    "4.2.5",
+    "4.3.1"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 4,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 337,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 204,
+   "book_page": 192,
+   "chapter": "10 Electrical circuits",
+   "topic": null,
+   "spec": [
+    "4.2.4",
+    "4.3.1",
+    "4.3.3"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 2,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 302,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 205,
+   "book_page": 193,
+   "chapter": "10 Electrical circuits",
+   "topic": null,
+   "spec": [
+    "4.2.4",
+    "4.2.5",
+    "4.3.2",
+    "4.3.3"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 2,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 331,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 206,
+   "book_page": 194,
+   "chapter": "11 Waves 1",
+   "topic": "11.1 Progressive waves",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 467,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 207,
+   "book_page": 195,
+   "chapter": "11 Waves 1",
+   "topic": "11.1 Progressive waves",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 185,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 208,
+   "book_page": 196,
+   "chapter": "11 Waves 1",
+   "topic": "11.1 Progressive waves",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 321,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 209,
+   "book_page": 197,
+   "chapter": "11 Waves 1",
+   "topic": "11.2 Wave properties",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 317,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 210,
+   "book_page": 198,
+   "chapter": "11 Waves 1",
+   "topic": "11.2 Wave properties",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 377,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 211,
+   "book_page": 199,
+   "chapter": "11 Waves 1",
+   "topic": "11.2 Wave properties",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 162,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 212,
+   "book_page": 200,
+   "chapter": "11 Waves 1",
+   "topic": "11.2 Wave properties",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 343,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 213,
+   "book_page": 201,
+   "chapter": "11 Waves 1",
+   "topic": "11.2 Wave properties",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 380,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 214,
+   "book_page": 202,
+   "chapter": "11 Waves 1",
+   "topic": "11.2 Wave properties",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 349,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 215,
+   "book_page": 203,
+   "chapter": "11 Waves 1",
+   "topic": "11.3 Reflection and refraction",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 490,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 216,
+   "book_page": 204,
+   "chapter": "11 Waves 1",
+   "topic": "11.3 Reflection and refraction",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 331,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 217,
+   "book_page": 205,
+   "chapter": "11 Waves 1",
+   "topic": "11.4 Diffraction and polarisation",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 518,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 218,
+   "book_page": 206,
+   "chapter": "11 Waves 1",
+   "topic": "11.4 Diffraction and polarisation",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 384,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 219,
+   "book_page": 207,
+   "chapter": "11 Waves 1",
+   "topic": "11.5 Intensity",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 455,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 220,
+   "book_page": 208,
+   "chapter": "11 Waves 1",
+   "topic": "11.5 Intensity",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 212,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 221,
+   "book_page": 209,
+   "chapter": "11 Waves 1",
+   "topic": "11.5 Intensity",
+   "spec": [
+    "4.4.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 374,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 222,
+   "book_page": 210,
+   "chapter": "11 Waves 1",
+   "topic": "11.6 Electromagnetic waves",
+   "spec": [
+    "4.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 339,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 223,
+   "book_page": 211,
+   "chapter": "11 Waves 1",
+   "topic": "11.6 Electromagnetic waves",
+   "spec": [
+    "4.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 264,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 224,
+   "book_page": 212,
+   "chapter": "11 Waves 1",
+   "topic": "11.6 Electromagnetic waves",
+   "spec": [
+    "4.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 297,
+   "beyond_spec": true,
+   "notes": "Atmospheric transmission windows and siting of telescopes"
+  },
+  {
+   "pdf": 225,
+   "book_page": 213,
+   "chapter": "11 Waves 1",
+   "topic": "11.7 Polarisation of electromagnetic waves",
+   "spec": [
+    "4.4.1",
+    "4.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 415,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 226,
+   "book_page": 214,
+   "chapter": "11 Waves 1",
+   "topic": "11.7 Polarisation of electromagnetic waves",
+   "spec": [
+    "4.4.1",
+    "4.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 421,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 227,
+   "book_page": 215,
+   "chapter": "11 Waves 1",
+   "topic": "11.8 Refractive index",
+   "spec": [
+    "4.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 372,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 228,
+   "book_page": 216,
+   "chapter": "11 Waves 1",
+   "topic": "11.8 Refractive index",
+   "spec": [
+    "4.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 392,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 229,
+   "book_page": 217,
+   "chapter": "11 Waves 1",
+   "topic": "11.9 Total internal reflection",
+   "spec": [
+    "4.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 378,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 230,
+   "book_page": 218,
+   "chapter": "11 Waves 1",
+   "topic": "11.9 Total internal reflection",
+   "spec": [
+    "4.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 324,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 231,
+   "book_page": 219,
+   "chapter": "11 Waves 1",
+   "topic": "11.9 Total internal reflection",
+   "spec": [
+    "4.4.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 346,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 232,
+   "book_page": 220,
+   "chapter": "11 Waves 1",
+   "topic": null,
+   "spec": [
+    "4.4.1",
+    "4.4.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 5,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 382,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 233,
+   "book_page": 221,
+   "chapter": "11 Waves 1",
+   "topic": null,
+   "spec": [
+    "4.4.1",
+    "4.4.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 3,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 356,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 234,
+   "book_page": 222,
+   "chapter": "12 Waves 2",
+   "topic": "12.1 Superposition of waves",
+   "spec": [
+    "4.4.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 304,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 235,
+   "book_page": 223,
+   "chapter": "12 Waves 2",
+   "topic": "12.1 Superposition of waves",
+   "spec": [
+    "4.4.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 443,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 236,
+   "book_page": 224,
+   "chapter": "12 Waves 2",
+   "topic": "12.2 Interference",
+   "spec": [
+    "4.4.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 505,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 237,
+   "book_page": 225,
+   "chapter": "12 Waves 2",
+   "topic": "12.2 Interference",
+   "spec": [
+    "4.4.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 202,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 238,
+   "book_page": 226,
+   "chapter": "12 Waves 2",
+   "topic": "12.2 Interference",
+   "spec": [
+    "4.4.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 2,
+    "extension_boxes": 0
+   },
+   "words": 372,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 239,
+   "book_page": 227,
+   "chapter": "12 Waves 2",
+   "topic": "12.2 Interference",
+   "spec": [
+    "4.4.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 4,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 374,
+   "beyond_spec": true,
+   "notes": "Extension box on thin-film interference colours"
+  },
+  {
+   "pdf": 240,
+   "book_page": 228,
+   "chapter": "12 Waves 2",
+   "topic": "12.3 The Young double-slit experiment",
+   "spec": [
+    "4.4.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 395,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 241,
+   "book_page": 229,
+   "chapter": "12 Waves 2",
+   "topic": "12.3 The Young double-slit experiment",
+   "spec": [
+    "4.4.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 317,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 242,
+   "book_page": 230,
+   "chapter": "12 Waves 2",
+   "topic": "12.3 The Young double-slit experiment",
+   "spec": [
+    "4.4.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 385,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 243,
+   "book_page": 231,
+   "chapter": "12 Waves 2",
+   "topic": "12.4 Stationary waves",
+   "spec": [
+    "4.4.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 391,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 244,
+   "book_page": 232,
+   "chapter": "12 Waves 2",
+   "topic": "12.4 Stationary waves",
+   "spec": [
+    "4.4.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 285,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 245,
+   "book_page": 233,
+   "chapter": "12 Waves 2",
+   "topic": "12.4 Stationary waves",
+   "spec": [
+    "4.4.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 391,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 246,
+   "book_page": 234,
+   "chapter": "12 Waves 2",
+   "topic": "12.5 Harmonics",
+   "spec": [
+    "4.4.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 361,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 247,
+   "book_page": 235,
+   "chapter": "12 Waves 2",
+   "topic": "12.5 Harmonics",
+   "spec": [
+    "4.4.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 309,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 248,
+   "book_page": 236,
+   "chapter": "12 Waves 2",
+   "topic": "12.5 Harmonics",
+   "spec": [
+    "4.4.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 209,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 249,
+   "book_page": 237,
+   "chapter": "12 Waves 2",
+   "topic": "12.6 Stationary waves in air columns",
+   "spec": [
+    "4.4.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 363,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 250,
+   "book_page": 238,
+   "chapter": "12 Waves 2",
+   "topic": "12.6 Stationary waves in air columns",
+   "spec": [
+    "1.1.3",
+    "4.4.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 382,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 251,
+   "book_page": 239,
+   "chapter": "12 Waves 2",
+   "topic": "12.6 Stationary waves in air columns",
+   "spec": [
+    "4.4.4"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 237,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 252,
+   "book_page": 240,
+   "chapter": "12 Waves 2",
+   "topic": null,
+   "spec": [
+    "4.4.3"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 3,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 434,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 253,
+   "book_page": 241,
+   "chapter": "12 Waves 2",
+   "topic": null,
+   "spec": [
+    "4.4.4"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 2,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 481,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 254,
+   "book_page": 242,
+   "chapter": "13 Quantum physics",
+   "topic": "13.1 The photon model",
+   "spec": [
+    "4.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 431,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 255,
+   "book_page": 243,
+   "chapter": "13 Quantum physics",
+   "topic": "13.1 The photon model",
+   "spec": [
+    "4.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 409,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 256,
+   "book_page": 244,
+   "chapter": "13 Quantum physics",
+   "topic": "13.1 The photon model",
+   "spec": [
+    "4.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 1,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 445,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 257,
+   "book_page": 245,
+   "chapter": "13 Quantum physics",
+   "topic": "13.1 The photon model",
+   "spec": [
+    "1.1.3",
+    "4.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 222,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 258,
+   "book_page": 246,
+   "chapter": "13 Quantum physics",
+   "topic": "13.1 The photon model",
+   "spec": [
+    "4.5.1"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 9,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 260,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 259,
+   "book_page": 247,
+   "chapter": "13 Quantum physics",
+   "topic": "13.2 The photoelectric effect",
+   "spec": [
+    "4.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 416,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 260,
+   "book_page": 248,
+   "chapter": "13 Quantum physics",
+   "topic": "13.2 The photoelectric effect",
+   "spec": [
+    "4.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 458,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 261,
+   "book_page": 249,
+   "chapter": "13 Quantum physics",
+   "topic": "13.2 The photoelectric effect",
+   "spec": [
+    "4.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 414,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 262,
+   "book_page": 250,
+   "chapter": "13 Quantum physics",
+   "topic": "13.2 The photoelectric effect",
+   "spec": [
+    "4.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 5,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 376,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 263,
+   "book_page": 251,
+   "chapter": "13 Quantum physics",
+   "topic": "13.3 Einstein's photoelectric effect equation",
+   "spec": [
+    "4.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 374,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 264,
+   "book_page": 252,
+   "chapter": "13 Quantum physics",
+   "topic": "13.3 Einstein's photoelectric effect equation",
+   "spec": [
+    "4.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 394,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 265,
+   "book_page": 253,
+   "chapter": "13 Quantum physics",
+   "topic": "13.3 Einstein's photoelectric effect equation",
+   "spec": [
+    "4.5.2"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 314,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 266,
+   "book_page": 254,
+   "chapter": "13 Quantum physics",
+   "topic": "13.4 Wave-particle duality",
+   "spec": [
+    "4.5.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 1,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 502,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 267,
+   "book_page": 255,
+   "chapter": "13 Quantum physics",
+   "topic": "13.4 Wave-particle duality",
+   "spec": [
+    "4.5.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 1,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 1,
+    "synoptic_links": 2,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 273,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 268,
+   "book_page": 256,
+   "chapter": "13 Quantum physics",
+   "topic": "13.4 Wave-particle duality",
+   "spec": [
+    "4.5.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 1
+   },
+   "words": 267,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 269,
+   "book_page": 257,
+   "chapter": "13 Quantum physics",
+   "topic": "13.4 Wave-particle duality",
+   "spec": [
+    "4.5.3"
+   ],
+   "kind": "content",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 6,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 0
+   },
+   "words": 462,
+   "beyond_spec": true,
+   "notes": "Electron and X-ray crystallography application, DNA history"
+  },
+  {
+   "pdf": 270,
+   "book_page": 258,
+   "chapter": "13 Quantum physics",
+   "topic": null,
+   "spec": [
+    "4.5.1",
+    "4.5.2",
+    "4.5.3"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 6,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 493,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 271,
+   "book_page": 259,
+   "chapter": "13 Quantum physics",
+   "topic": null,
+   "spec": [
+    "4.4.1",
+    "4.5.1",
+    "4.5.2"
+   ],
+   "kind": "practice-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 2,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 317,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 272,
+   "book_page": 260,
+   "chapter": "module summary (Module 4)",
+   "topic": null,
+   "spec": [
+    "4.1.1",
+    "4.1.2",
+    "4.2.1",
+    "4.2.2",
+    "4.2.3",
+    "4.2.4",
+    "4.2.5",
+    "4.3.1",
+    "4.3.2",
+    "4.3.3",
+    "4.4.1",
+    "4.4.2",
+    "4.4.3",
+    "4.4.4",
+    "4.5.1",
+    "4.5.2",
+    "4.5.3"
+   ],
+   "kind": "module-summary",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 142,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 273,
+   "book_page": 261,
+   "chapter": "module summary (Module 4)",
+   "topic": null,
+   "spec": [
+    "4.2.4",
+    "4.3.3",
+    "4.4.4",
+    "4.5.3"
+   ],
+   "kind": "module-summary",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 0,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 1,
+    "extension_boxes": 1
+   },
+   "words": 513,
+   "beyond_spec": true,
+   "notes": "Wheatstone bridge strain gauge; quantised atomic energy via de Broglie standing waves"
+  },
+  {
+   "pdf": 274,
+   "book_page": 262,
+   "chapter": "module practice questions (Module 4)",
+   "topic": null,
+   "spec": [
+    "2.2.1",
+    "4.1.2",
+    "4.3.1",
+    "4.4.2",
+    "4.4.4",
+    "4.5.1"
+   ],
+   "kind": "module-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 6,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 338,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 275,
+   "book_page": 263,
+   "chapter": "module practice questions (Module 4)",
+   "topic": null,
+   "spec": [
+    "4.3.2",
+    "4.4.2",
+    "4.4.3",
+    "4.4.4",
+    "4.5.1",
+    "4.5.2"
+   ],
+   "kind": "module-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 4,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 408,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 276,
+   "book_page": 264,
+   "chapter": "module practice questions (Module 4)",
+   "topic": null,
+   "spec": [
+    "4.2.3",
+    "4.3.1",
+    "4.4.2"
+   ],
+   "kind": "module-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 2,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 333,
+   "beyond_spec": false,
+   "notes": ""
+  },
+  {
+   "pdf": 277,
+   "book_page": 265,
+   "chapter": "module practice questions (Module 4)",
+   "topic": null,
+   "spec": [
+    "4.2.3",
+    "4.2.5",
+    "4.3.2",
+    "4.5.1",
+    "4.5.3"
+   ],
+   "kind": "module-questions",
+   "features": {
+    "worked_examples": 0,
+    "summary_questions": 0,
+    "practice_questions": 1,
+    "study_tips": 0,
+    "synoptic_links": 0,
+    "application_boxes": 0,
+    "extension_boxes": 0
+   },
+   "words": 413,
+   "beyond_spec": false,
+   "notes": ""
+  }
+ ]
+}
