@@ -1,0 +1,253 @@
+{
+ "1(a)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Gradient of braking section of v\u2013t graph."
+ },
+ "1(b)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Area under whole v\u2013t graph (trapezium) for stopping distance."
+ },
+ "1(c)": {
+  "moves": [
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Judge model: real deceleration not constant or instant; forces vary with speed."
+ },
+ "2(a)(i)": {
+  "moves": [
+   "show-that",
+   "chain"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Mean diameter \u2192 sphere volume \u2192 mass from density."
+ },
+ "2(a)(ii)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Half-range for diameter, triple its percentage, add density's."
+ },
+ "2(b)(i)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Total mass \u2192 submerged depth from displaced water \u2192 height above surface."
+ },
+ "2(b)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Denser water \u2192 same weight needs smaller displaced volume \u2192 x increases."
+ },
+ "3(a)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Conventional current direction for negative carriers' motion."
+ },
+ "3(a)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Attraction to terminal implies carrier sign; distance moved implies relative speed."
+ },
+ "3(b)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Potential divider substitution."
+ },
+ "3(b)(ii)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Voltage ratio equals resistance ratio for thermistor value."
+ },
+ "3(b)(iii)": {
+  "moves": [
+   "evaluate",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Huge fixed resistor takes almost all pd \u2192 reading barely changes \u2192 unsuitable."
+ },
+ "4(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Both energy per charge; emf converts to electrical, pd from electrical."
+ },
+ "4(b)": {
+  "moves": [
+   "plan",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Potentiometer null method; emf ratio equals balance-length ratio."
+ },
+ "5(a)(i)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Free-body diagram with balanced horizontal and vertical force pairs."
+ },
+ "5(a)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Constant speed so push equals friction (Newton's first law)."
+ },
+ "5(b)(i)": {
+  "moves": [
+   "show-that",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Combine P = W/t, W = Fx and v = x/t algebraically."
+ },
+ "5(b)(ii)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Height gained = distance \u00d7 sin(angle); work = mgh."
+ },
+ "5(b)(iii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Total force from gravity component plus friction, then P = Fv."
+ },
+ "6(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "State conservation of momentum with closed-system condition."
+ },
+ "6(b)(i)": {
+  "moves": [
+   "show-that",
+   "chain"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Speed from card length/time, then momentum."
+ },
+ "6(b)(ii)": {
+  "moves": [
+   "vectors",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Rebound momentum from timing, opposite sign so change sums magnitudes."
+ },
+ "6(b)(iii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Velocity = impulse/mass."
+ },
+ "6(c)": {
+  "moves": [
+   "show-that",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Common speed from momentum conservation, compare KE before and after."
+ },
+ "7(a)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Photon energy hc/\u03bb, then rate = power/energy."
+ },
+ "7(b)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Coherent: constant phase difference."
+ },
+ "7(b)(ii)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Calipers across many fringes, divide by number of spacings."
+ },
+ "7(b)(iii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Rearrange \u03bb = ax/D for a by substitution."
+ },
+ "7(c)(i)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Wavelength in glass = air wavelength / n."
+ },
+ "7(c)(ii)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Geometry gives 30\u00b0 refraction angle in equilateral prism; Snell's law for incidence."
+ },
+ "8": {
+  "moves": [
+   "plan",
+   "linearise",
+   "given-formula",
+   "graph-read",
+   "uncertainty"
+  ],
+  "scaffolded": true,
+  "steps": 5,
+  "why": "Measure LED striking pd; gradient h/e and intercept \u2212K/e from given graph; worst line for % in h."
+ }
+}

@@ -1,0 +1,383 @@
+{
+ "1": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall order of magnitude of UV wavelengths."
+ },
+ "2": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall wording of both Kirchhoff laws."
+ },
+ "3": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Convert angles measured to boundary into angles to normal for Snell's law."
+ },
+ "4": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Fringe spacing proportional to \u03bb/a; choose largest ratio."
+ },
+ "5": {
+  "moves": [
+   "energy",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Change in KE from speeds, then divide by time for power."
+ },
+ "6": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "270\u00b0 phase corresponds to three-quarter wavelength path difference."
+ },
+ "7": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Solve parallel resistance equation for the unknown resistor."
+ },
+ "8": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Current from terminal p.d. over R, then lost volts over current."
+ },
+ "9": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Compare forces times perpendicular distances on scale diagram."
+ },
+ "10": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Charge from electron count over time with microsecond conversion."
+ },
+ "11": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Useful power from work over time, then divide by efficiency."
+ },
+ "12": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Rotating polariser changes transmitted intensity."
+ },
+ "13": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Extension scales with L/E at fixed load and area."
+ },
+ "14": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Pick falling resistance-temperature curve for NTC."
+ },
+ "15": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Constant moment means x inversely proportional to F."
+ },
+ "16": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Interpret I-V graphs to judge component behaviour."
+ },
+ "17": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "UV photoelectric effect removes electrons."
+ },
+ "18": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Energy equals N times eV in joules."
+ },
+ "19": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Both wave types can form stationary waves."
+ },
+ "20": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Intensity requires power and cross-sectional area."
+ },
+ "21(a)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Distance is area under v-t graph split into shapes."
+ },
+ "21(b)(i)": {
+  "moves": [
+   "graph-read",
+   "show-that"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Gradient of initial v-t section gives acceleration."
+ },
+ "21(b)(ii)": {
+  "moves": [
+   "vectors",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Resolve rope tension horizontally; resultant minus resistance equals ma."
+ },
+ "22(a)": {
+  "moves": [
+   "plan",
+   "linearise"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Load spring repeatedly, plot force against compression, gradient is k."
+ },
+ "22(b)": {
+  "moves": [
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "KE transferred to GPE during rise."
+ },
+ "22(c)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Compression from length change in cm to m, then \u00bdkx\u00b2."
+ },
+ "22(d)": {
+  "moves": [
+   "energy",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Some elastic energy becomes GPE before B, so equation incomplete."
+ },
+ "23(a)": {
+  "moves": [
+   "graph-read",
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Gradients are forces, equal magnitude and opposite sign."
+ },
+ "23(b)": {
+  "moves": [
+   "graph-read",
+   "vectors",
+   "show-that"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Sum signed momenta before and after from graphs."
+ },
+ "23(c)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Total momentum divided by combined mass."
+ },
+ "23(d)": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Rearrange s = \u00bdgt\u00b2 for fall time."
+ },
+ "24(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Fixed nodes and antinodes indicate stationary waves."
+ },
+ "24(b)(i)": {
+  "moves": [
+   "plan",
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Suggest method for frequency plus improvement to accuracy."
+ },
+ "24(b)(ii)1": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Fundamental wavelength is twice wire length."
+ },
+ "24(b)(ii)2": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Wave speed from v = f\u03bb."
+ },
+ "24(b)(ii)3": {
+  "moves": [
+   "uncertainty",
+   "given-formula"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Combine percentage uncertainties in supplied T formula, doubling for f\u00b2."
+ },
+ "25(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "p.d. and emf share the volt unit."
+ },
+ "25(b)(i)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Sketch p.d. falling from 1.5 V to zero with decreasing gradient."
+ },
+ "25(b)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Series wire increases total resistance, reduces current, p.d. halves at B."
+ },
+ "25(c)(i)": {
+  "moves": [
+   "chain",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Wire p.d. by subtraction, resistance, then resistivity with mm\u00b2 converted."
+ },
+ "25(c)(ii)": {
+  "moves": [
+   "rearrange",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Rearrange I = Anev for drift velocity with area in m\u00b2."
+ },
+ "26(a)(i)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Photon energy inferred from metal A is below C's work function."
+ },
+ "26(a)(ii)": {
+  "moves": [
+   "ratio",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Threshold wavelength scales inversely with work function; answer in nm."
+ },
+ "26(a)(iii)": {
+  "moves": [
+   "chain",
+   "energy",
+   "units",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Max KE from photoelectric equation, speed or momentum, then de Broglie."
+ },
+ "26(b)(i)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Draw best-fit line through data."
+ },
+ "26(b)(ii)": {
+  "moves": [
+   "graph-read",
+   "linearise"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Gradient is h; use line equation to find intercept equal to \u2212\u03c6."
+ }
+}

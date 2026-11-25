@@ -1,0 +1,262 @@
+{
+ "1(a)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Longitudinal: oscillations parallel to energy transfer."
+ },
+ "1(a)(ii)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Convert frequency to period and amplitude to divisions; sketch sinusoidal trace."
+ },
+ "1(b)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Pick typical microwave and X-ray wavelengths."
+ },
+ "1(b)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "State two properties of EM waves."
+ },
+ "2(a)(i)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "f = c/\u03bb."
+ },
+ "2(a)(ii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Speed in glass from n, then wavelength from v/f."
+ },
+ "2(b)(i)1": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Law of reflection gives equal angle."
+ },
+ "2(b)(i)2": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Snell's law glass to air."
+ },
+ "2(b)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Refraction angle grows to 90\u00b0 at critical angle (~41\u00b0 from 1/n), then TIR."
+ },
+ "2(c)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Red has lower refractive index so same internal path but bends less on exit."
+ },
+ "3(a)(i)": {
+  "moves": [
+   "show-that",
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Gradient from large triangle on best-fit line."
+ },
+ "3(a)(ii)": {
+  "moves": [
+   "linearise",
+   "given-formula",
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "From given x = Mg/k + R gradient is g/k; k = g/gradient with unit and s.f."
+ },
+ "3(b)(i)": {
+  "moves": [
+   "graph-draw",
+   "uncertainty"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Draw steepest/shallowest line through all error bars."
+ },
+ "3(b)(ii)": {
+  "moves": [
+   "graph-read",
+   "uncertainty"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Gradient of the worst acceptable line."
+ },
+ "3(b)(iii)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Percentage difference between best and worst gradients carried to k."
+ },
+ "4": {
+  "moves": [
+   "plan",
+   "linearise",
+   "given-formula"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Method to set and measure launch speed and range; plot R vs v, Q from gradient\u00b2\u00b7g."
+ },
+ "5(a)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Initial gradient of s\u2013t graph."
+ },
+ "5(b)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Decreasing gradient after 0.75 s means velocity decreasing."
+ },
+ "5(c)": {
+  "moves": [
+   "show-that",
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Draw tangent at 1.75 s and find its gradient."
+ },
+ "5(d)": {
+  "moves": [
+   "graph-read",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Deceleration from velocity change over time from graph, then F = ma."
+ },
+ "5(e)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Reaction time fixed so thinking distance halves; braking distance \u221d u\u00b2 quarters, time halves."
+ },
+ "6(a)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Volume of cylinder, mass from weight, then density."
+ },
+ "6(b)(i)": {
+  "moves": [
+   "graph-read",
+   "vectors"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Measure tension from scale drawing."
+ },
+ "6(b)(ii)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Construct closed triangle of forces to scale to find second tension."
+ },
+ "6(b)(iii)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Measure cord angle from triangle of forces."
+ },
+ "6(c)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Moments about toppling edge: force \u00d7 height = weight \u00d7 radius."
+ },
+ "7(a)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "R = P/I\u00b2."
+ },
+ "7(a)(ii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Charge from current \u00d7 time in seconds, then divide by e."
+ },
+ "7(a)(iii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Rearrange I = nAve for v by substitution."
+ },
+ "7(b)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Energy in kWh (kW \u00d7 h) times unit price."
+ },
+ "7(c)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Semiconductor has fewer carriers so higher resistivity."
+ },
+ "8": {
+  "moves": [
+   "explain-chain",
+   "energy",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Higher pd \u2192 more momentum \u2192 shorter \u03bb \u2192 closer rings; combine eV = \u00bdmv\u00b2, \u03bb = h/p."
+ }
+}

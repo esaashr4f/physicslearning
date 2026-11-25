@@ -391,6 +391,77 @@ button { font: inherit; color: inherit; }
 .chip[aria-pressed="true"] .dif i { background: color-mix(in srgb, var(--surface) 40%, transparent); }
 .chip[aria-pressed="true"] .dif i.on { background: var(--surface); }
 @media (max-width: 900px) { .lv { grid-template-columns: minmax(0, 1fr); } .dtab td.bar { width: 30%; } }
+
+/* near misses */
+.nm-tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.nm-tools input, .nm-tools select { font: inherit; font-size: 13px; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); min-width: 0; }
+.nm-tools input { flex: 1 1 220px; }
+.nms { display: grid; gap: 10px; }
+.nm { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); padding: 14px 16px; display: grid; gap: 10px; }
+.nm header { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.nm header b { font: 700 15px/1.25 var(--f-display); margin-right: 4px; }
+.nm .flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.nm .flow div { border-radius: 8px; padding: 10px 12px; font-size: 13px; display: grid; gap: 4px; align-content: start; }
+.nm .flow span { font: 600 10px/1 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; }
+.nm .lk { background: var(--surface-2); border: 1px solid var(--rule); }
+.nm .lk span { color: var(--ink-3); }
+.nm .wl { background: var(--pen-soft); border: 1px solid color-mix(in srgb, var(--pen) 35%, transparent); }
+.nm .wl span { color: var(--pen); }
+.nm .ws { background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+.nm .ws span { color: var(--accent); }
+.nm .refs { display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.nm .refs .link { font: 500 12px/1.4 var(--f-mono); }
+.sev { font: 600 10px/1 var(--f-mono); letter-spacing: .04em; padding: 4px 6px; border-radius: 4px; border: 1px solid var(--rule); color: var(--ink-2); }
+.sev.all { color: var(--pen); border-color: var(--pen); }
+.note details.er summary { color: var(--pen); }
+.perf { font: 600 10px/1 var(--f-mono); text-transform: uppercase; letter-spacing: .06em; }
+.perf.well { color: #2e7d4f; } .perf.mixed { color: var(--ink-2); } .perf.poorly { color: var(--pen); }
+.note .warn { border-left: 3px solid var(--pen); background: var(--pen-soft); border-radius: 0 6px 6px 0; padding: 6px 10px; font-size: 12.5px; display: grid; gap: 2px; }
+.note .warn b { font: 600 10px/1.2 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--pen); }
+@media (max-width: 760px) { .nm .flow { grid-template-columns: minmax(0, 1fr); } }
+
+/* techniques */
+.tq-layout { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 36px; align-items: start; }
+.tq-nav { position: sticky; top: 16px; display: grid; gap: 2px; }
+.tq-nav button { border: 1px solid transparent; background: none; text-align: left; padding: 7px 10px; border-radius: 8px; cursor: pointer; color: var(--ink-2); font-size: 13px; display: flex; justify-content: space-between; gap: 8px; }
+.tq-nav button small { font: 500 11px/1.4 var(--f-mono); color: var(--ink-3); }
+.tq-nav button:hover { background: var(--surface); }
+.tq-nav button.on { background: var(--ink); color: var(--surface); }
+.tq-nav button.on small { color: color-mix(in srgb, var(--surface) 70%, transparent); }
+.lesson { display: grid; gap: 18px; min-width: 0; }
+.lesson h3 { margin: 0; font: 800 clamp(26px, 3.4vw, 38px)/1.05 var(--f-display); letter-spacing: -.02em; }
+.lesson .lead { margin: 0; font-size: 16px; color: var(--ink-2); max-width: 70ch; }
+.ev { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.ev div { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; }
+.ev b { display: block; font: 700 24px/1 var(--f-display); font-variant-numeric: tabular-nums; }
+.ev span { font-size: 12px; color: var(--ink-3); }
+.steps { margin: 0; padding: 0; list-style: none; counter-reset: st; display: grid; gap: 8px; }
+.steps li { display: grid; grid-template-columns: 28px 1fr; gap: 10px; font-size: 14px; }
+.steps li::before { counter-increment: st; content: counter(st); font: 700 12px/26px var(--f-mono); width: 26px; height: 26px; text-align: center; border-radius: 6px; background: var(--accent); color: var(--surface); }
+.worked { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 16px 18px; display: grid; gap: 10px; }
+.worked .prob { font-size: 14px; }
+.worked ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; font: 400 13.5px/1.5 var(--f-body); }
+.worked .ans { font: 600 13px/1.4 var(--f-mono); color: var(--accent); }
+.forms { width: 100%; border-collapse: collapse; font-size: 13px; }
+.forms th, .forms td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.forms th { font: 600 10px/1.2 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.forms td:first-child { font-family: var(--f-mono); white-space: nowrap; }
+.prac-tools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 8px; }
+.prac { display: grid; gap: 4px; }
+.prac button { display: grid; grid-template-columns: 54px 180px minmax(0, 1fr) auto; gap: 10px; align-items: baseline; text-align: left; border: 1px solid var(--rule); background: var(--surface); border-radius: 8px; padding: 8px 10px; cursor: pointer; font-size: 13px; }
+.prac button:hover { border-color: var(--accent); }
+.prac .ref { font: 600 12px/1.3 var(--f-mono); }
+.prac .mk { font: 600 12px/1 var(--f-mono); color: var(--pen); white-space: nowrap; }
+.prac .why { display: block; color: var(--ink-3); font-size: 12px; }
+.vt td.hi { font-weight: 700; }
+@media (max-width: 900px) {
+  .tq-layout { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .tq-nav { position: static; display: flex; flex-wrap: wrap; gap: 4px; }
+  .tq-nav button { border-color: var(--rule); background: var(--surface); font-size: 12px; }
+  .ev { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .prac button { grid-template-columns: 44px minmax(0, 1fr) auto; }
+  .prac button .ctx { grid-column: 1 / -1; }
+}
 /* ---------- insights ---------- */
 .ins { overflow: auto; min-height: 0; }
 .ins-inner { max-width: 1180px; margin: 0 auto; padding-block: 0 80px; padding-left: var(--gutter-l); padding-right: var(--gutter-r); display: grid; gap: 56px; }
@@ -504,6 +575,7 @@ const SESSIONS = [
   { slug: "jun2025", y: "2025", m: "June", label: "June 2025" },
 ];
 const SLABEL = Object.fromEntries(SESSIONS.map(s => [s.slug, s.label]));
+const ER_AVAIL = new Set(["jun2018", "jun2019", "nov2020", "jun2022", "jun2023", "jun2024", "jun2025"]);
 const PAPERS = { 1: { name: "Paper 1", sub: "Breadth in physics" }, 2: { name: "Paper 2", sub: "Depth in physics" } };
 const TYPE_LABEL = {
   "mcq": "Multiple choice", "define-state": "Define / state", "describe": "Describe", "explain": "Explain",
@@ -721,7 +793,8 @@ function Bench({ data, sel, setSel }) {
     if (q.ms_page) { setRight("ms"); setJumpR({ page: q.ms_page, nonce: Math.random() }); }
   };
   const qpUrl = `pdf/p${paper}-${slug}-qp.pdf`;
-  const msUrl = right === "ms" ? `pdf/p${paper}-${slug}-ms.pdf` : "pdf/booklet.pdf";
+  useEffect(() => { if (right === "er" && !ER_AVAIL.has(slug)) setRight("ms"); }, [slug]);
+  const msUrl = right === "ms" ? `pdf/p${paper}-${slug}-ms.pdf` : right === "er" ? `pdf/p${paper}-${slug}-er.pdf` : "pdf/booklet.pdf";
   const sess = SLABEL[slug];
 
   const onDown = (e) => {
@@ -745,7 +818,8 @@ function Bench({ data, sel, setSel }) {
       <button class="btn pen" onClick=${() => { setRevealed(true); }}>Reveal mark scheme</button>
     </div></div>`;
   const msExtra = html`
-    <button class="ib" aria-pressed=${right === "booklet"} onClick=${() => setRight(r => r === "ms" ? "booklet" : "ms")} title="Swap the right pane to the data, formulae and relationships booklet">Formulae</button>
+    <button class="ib" aria-pressed=${right === "booklet"} onClick=${() => setRight(r => r === "booklet" ? "ms" : "booklet")} title="Swap the right pane to the data, formulae and relationships booklet">Formulae</button>
+    ${ER_AVAIL.has(slug) && html`<button class="ib" aria-pressed=${right === "er"} onClick=${() => setRight(r => r === "er" ? "ms" : "er")} title="Swap the right pane to OCR's examiners' report for this paper">Examiners' report</button>`}
     <button class="ib" aria-pressed=${hidden} onClick=${() => { setHidden(h => !h); setRevealed(false); }} title="Cover the mark scheme until you choose to reveal it">Practice mode</button>`;
 
   return html`
@@ -772,7 +846,7 @@ function Bench({ data, sel, setSel }) {
         </div>
         <div class="divider" role="separator" aria-orientation="vertical" aria-label="Resize panes" tabIndex="0" onPointerDown=${onDown} onKeyDown=${onKey}><i></i></div>
         <div class=${"pane-wrap" + (mob === "qp" ? " hide-mob" : "")}>
-          <${Pane} kind="ms" title=${right === "ms" ? "Mark scheme" : "Formulae booklet"} subtitle=${right === "ms" ? `${PAPERS[paper].name} · ${sess}` : "Data, formulae and relationships"} url=${msUrl} jump=${right === "ms" ? jumpR : null} extra=${msExtra} cover=${coverEl} />
+          <${Pane} kind="ms" title=${right === "ms" ? "Mark scheme" : right === "er" ? "Examiners' report" : "Formulae booklet"} subtitle=${right === "booklet" ? "Data, formulae and relationships" : `${PAPERS[paper].name} · ${sess}`} url=${msUrl} jump=${right === "ms" ? jumpR : null} extra=${msExtra} cover=${coverEl} />
         </div>
       </div>
       ${pop && html`<div class="qpop" style=${{ left: Math.max(8, pop.x) + "px", top: pop.y + "px" }}>
@@ -894,7 +968,12 @@ function buildQuestions(reg, parts) {
   });
 }
 
-function PartNote({ p, showAnswer }) {
+function erFor(ex, p) {
+  const rep = ex?.[`p${p.paper}-${p.slug}`]; if (!rep) return null;
+  let l = p.q.replace(/\)\d+$/, ")");
+  for (;;) { if (rep.parts?.[l]) return rep.parts[l]; const m = l.match(/^(.*)\([a-z]+\)$/); if (!m) return null; l = m[1]; }
+}
+function PartNote({ p, showAnswer, nm, er }) {
   const L = (arr) => arr && arr.length ? html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>` : null;
   return html`<div class="note">
     <header><b>${p.q}</b><span class="pill mk">${p.marks} mark${p.marks == 1 ? "" : "s"}</span><span class="pill ty">${tl(p.type)}</span>${p.command_word && html`<span class="pill">${p.command_word}</span>`}${p.withdrawn && html`<span class="pill mk">Withdrawn by OCR</span>`}</header>
@@ -905,6 +984,14 @@ function PartNote({ p, showAnswer }) {
       ${p.allow_reject_ignore?.length ? html`<div class="blk"><span class="h">Allow / reject / ignore</span>${L(p.allow_reject_ignore)}</div>` : null}
       ${p.pitfalls?.length ? html`<div class="blk pen"><span class="h">Where marks are lost</span>${L(p.pitfalls)}</div>` : null}
       ${p.equations?.length ? html`<div class="blk"><span class="h">Equations</span><span class="ans">${p.equations.join("  ·  ")}</span></div>` : null}
+    </details>`}
+    ${showAnswer && nm && nm.length ? nm.slice(0, 3).map((it, i) => html`<div class="warn" key=${i}><b>Watch out · ${it.topic}</b><span>${it.looks_right} → ${it.what_scores}</span></div>`) : null}
+    ${showAnswer && er && html`<details class="er">
+      <summary>Examiners' report${er.performance ? html` · <span class=${"perf " + er.performance.split(" ")[0]}>${er.performance}</span>` : null}</summary>
+      ${er.common_errors?.length ? html`<div class="blk pen"><span class="h">Mistakes candidates made</span>${L(er.common_errors)}</div>` : null}
+      ${er.misconceptions?.length ? html`<div class="blk pen"><span class="h">Misconceptions</span>${L(er.misconceptions)}</div>` : null}
+      ${er.mcq_distractor ? html`<div class="blk"><span class="h">Most popular wrong answer</span><p style=${{ margin: 0 }}>${er.mcq_distractor}</p></div>` : null}
+      ${er.good_practice?.length ? html`<div class="blk"><span class="h">What strong answers did</span>${L(er.good_practice)}</div>` : null}
     </details>`}
     ${!showAnswer && html`<span class="shared">${p.topic || ""}${p.subtopic ? " · " + p.subtopic : ""}</span>`}
   </div>`;
@@ -999,7 +1086,7 @@ function QBench({ data, sel }) {
                 ${r.msPage && html`<div class="ptag"><b>Mark scheme page ${r.msPage}</b></div><${Crop} url=${msUrl} seg=${[r.msPage, 0, 0]} box=${reg.ms} full=${true} side="ms" />`}
                 ${r.shared && html`<div class="shared">Marked together with ${r.shared}, shown above.</div>`}
                 ${r.sharedPage && html`<div class="shared">On mark scheme page ${r.sharedPage}, shown above.</div>`}`}
-              ${r.parts.map(p => html`<${PartNote} key=${p.q} p=${p} showAnswer=${open} />`)}
+              ${r.parts.map(p => html`<${PartNote} key=${p.q} p=${p} showAnswer=${open} nm=${data.nmIndex?.[`${p.paper}:${p.slug}:${p.q}`]} er=${erFor(data.examiners, p)} />`)}
             </div>
           </div>`;
         })}
@@ -1208,6 +1295,18 @@ function Playbook({ data, open, openSpec }) {
     return { rep, tr, ctx: CTX.map(([k, r]) => ({ k, ...count(r) })).sort((a, b) => b.m - a.m), app: APP.map(([k, r]) => ({ k, ...count(r) })).sort((a, b) => b.n - a.n) };
   }, [all, data.spec]);
   const secTitle = (k) => data.spec?.sections?.[k] || "";
+  const nm = data.nearmiss || null;
+  const [nmCat, setNmCat] = useState("all"), [nmTxt, setNmTxt] = useState(""), [nmPaper, setNmPaper] = useState("all"), [nmSev, setNmSev] = useState("all"), [nmLimit, setNmLimit] = useState(30);
+  const nmCats = useMemo(() => { const m = {}; for (const it of nm?.items || []) m[it.category] = (m[it.category] || 0) + 1; return Object.entries(m).sort((a, b) => b[1] - a[1]); }, [nm]);
+  const nmList = useMemo(() => {
+    const t = nmTxt.trim().toLowerCase();
+    return (nm?.items || []).filter(it => (nmCat === "all" || it.category === nmCat) && (nmSev === "all" || it.severity === nmSev)
+      && (nmPaper === "all" || (it.refs || []).some(r => String(r.paper) === nmPaper))
+      && (!t || [it.topic, it.looks_right, it.why_lost, it.what_scores].join(" ").toLowerCase().includes(t)))
+      .sort((a, b) => (b.refs?.length || 0) - (a.refs?.length || 0));
+  }, [nm, nmCat, nmTxt, nmPaper, nmSev]);
+  const CAT = { "wording": "Wording", "definitions": "Definitions", "units-and-prefixes": "Units and prefixes", "rounding-and-sig-figs": "Rounding and sig figs", "calculation-method": "Calculation method", "graphs-and-reading": "Graphs and reading", "diagrams-and-sketches": "Diagrams and sketches", "vectors-and-direction": "Vectors and direction", "practical-and-uncertainty": "Practical and uncertainty", "multiple-choice": "Multiple choice", "six-mark-answers": "Six-mark answers", "explanations": "Explanations", "marking-rules": "Marking rules" };
+  const findQ = (r) => all.find(q => q.paper == r.paper && q.slug === r.slug && q.q === r.q);
   const stale = useMemo(() => {
     const last = {}; const codes = data.spec?.outcomes || [];
     for (const q of all) for (const c of q.spec_points || []) last[c] = Math.max(last[c] ?? -1, idx(q.slug));
@@ -1221,7 +1320,7 @@ function Playbook({ data, open, openSpec }) {
   }, [all]);
   const letters = useMemo(() => { const m = { A: 0, B: 0, C: 0, D: 0 }; for (const q of all) if (q.type === "mcq") { const l = (q.answer || "").match(/^[A-D]/)?.[0]; if (l) m[l]++; } return m; }, [all]);
 
-  const SECTIONS = [["pb-papers", "The two papers"], ["pb-diff", "Difficulty"], ["pb-content", "Content"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
+  const SECTIONS = [["pb-papers", "The two papers"], ["pb-diff", "Difficulty"], ["pb-content", "Content"], ["pb-near", "Near misses"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
   const goto = (id) => { const el = ref.current?.querySelector("#" + id); if (!el) return; lenis.current ? lenis.current.scrollTo(el, { offset: -12 }) : el.scrollIntoView(); };
   const L = (arr) => html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>`;
   const lbl = (p) => p === "1" ? "M1 Practical" : p === "2" ? "M2 Foundations" : p === "3" ? "M3 Forces" : p === "4" ? "M4 Electrons, waves, photons" : p;
@@ -1277,6 +1376,17 @@ function Playbook({ data, open, openSpec }) {
             </table></div>
             <div class="legend3"><span><i class="s1"></i>Easy</span><span><i class="s2"></i>Standard</span><span><i class="s3"></i>Hard</span></div>
           </div>`)}</div>
+          ${pb.moves && html`<div class="panel" style=${{ marginTop: "16px" }}>
+            <h4>What makes a part harder: the moves it needs</h4>
+            <p class="sub" style=${{ margin: "0 0 10px" }}>Share of written (non-multiple-choice) parts at each level that need each move.</p>
+            <div style=${{ overflowX: "auto" }}><table class="dtab">
+              <thead><tr><th>Move</th><th>Easy</th><th>Std</th><th>Hard</th><th></th></tr></thead>
+              <tbody>${pb.moves.rows.map(([k, a, b, c]) => html`<tr key=${k}><td>${k}</td><td>${a}%</td><td>${b}%</td><td style=${{ fontWeight: 700 }}>${c}%</td>
+                <td class="bar"><div style=${{ display: "grid", gap: "2px" }}>${[a, b, c].map((v, i) => html`<div key=${i} class=${"s" + (i + 1)} style=${{ height: "5px", width: v + "%", borderRadius: "0 2px 2px 0" }}></div>`)}</div></td></tr>`)}</tbody>
+            </table></div>
+            <div class="legend3"><span><i class="s1"></i>Easy</span><span><i class="s2"></i>Standard</span><span><i class="s3"></i>Hard</span></div>
+          </div>
+          <div class="cards2" style=${{ marginTop: "14px" }}>${pb.moves.notes.map((r, i) => html`<div class="rule" key=${i}><h4>${r.title}</h4><p>${r.body}</p></div>`)}</div>`}
           <p class="sub" style=${{ marginTop: "14px" }}>Paper 2 carries about twice the hard marks of Paper 1, mostly through its six-mark answers. Easy and standard marks make up about 88% of Paper 1 and 76% of Paper 2, so securing them comes first. For mock practice, the hardest sets are June 2016 Paper 1 and June 2018 Paper 2; the gentlest are June 2018 and November 2021 Paper 1. The dots on each session button in the Questions tab show its hard-mark load. Ratings are from this analysis, not OCR.</p>
         </section>`}
 
@@ -1294,6 +1404,32 @@ function Playbook({ data, open, openSpec }) {
             <div class="panel"><h4>Apparatus you're expected to know</h4><div class="ctxs">${content.app.map(c => html`<div key=${c.k}>${c.k}<span>${c.n} parts · ${c.s}/11</span></div>`)}</div></div>
           </div>
           <div class="cards2" style=${{ marginTop: "14px" }}>${pb.content.map((r, i) => html`<div class="rule" key=${i}><h4>${r.title}</h4><p>${r.body}</p></div>`)}</div>
+        </section>`}
+
+        ${nm && html`<section id="pb-near">
+          <h3>Near misses: losing marks while doing it right</h3>
+          <p class="sub">Answers that look right but aren't credited, wording that is almost right, and rigid marking rules, taken from the allow / not / ignore notes in every mark scheme. ${nm.items.length} cases, most frequent first. The same warnings appear under each affected part in the Questions tab.</p>
+          <div class="nm-tools">
+            <input id="nm-search" type="search" placeholder="Search near misses…" value=${nmTxt} onInput=${e => { setNmTxt(e.target.value); setNmLimit(30); }} aria-label="Search near misses" />
+            <select id="nm-cat" value=${nmCat} onChange=${e => { setNmCat(e.target.value); setNmLimit(30); }} aria-label="Category"><option value="all">All categories</option>${nmCats.map(([c, n]) => html`<option key=${c} value=${c}>${CAT[c] || c} (${n})</option>`)}</select>
+            <select id="nm-paper" value=${nmPaper} onChange=${e => setNmPaper(e.target.value)} aria-label="Paper"><option value="all">Both papers</option><option value="1">Paper 1</option><option value="2">Paper 2</option></select>
+            <select id="nm-sev" value=${nmSev} onChange=${e => setNmSev(e.target.value)} aria-label="Severity"><option value="all">Any severity</option><option value="lose all marks for that part">Lose the whole part</option><option value="lose one mark">Lose one mark</option><option value="capped">Capped</option><option value="risk only">Risk only</option></select>
+          </div>
+          <p class="sub" style=${{ margin: "0 0 10px" }}>${nmList.length} shown</p>
+          <div class="nms">${nmList.slice(0, nmLimit).map((it, i) => html`<article class="nm" key=${i}>
+            <header><b>${it.topic}</b><span class="pill">${CAT[it.category] || it.category}</span><span class=${"sev" + (it.severity === "lose all marks for that part" ? " all" : "")}>${it.severity}</span><span class="pill">${(it.refs || []).length} question${(it.refs || []).length === 1 ? "" : "s"}</span></header>
+            <div class="flow">
+              <div class="lk"><span>Looks right</span>${it.looks_right}</div>
+              <div class="wl"><span>Why it loses marks</span>${it.why_lost}</div>
+              <div class="ws"><span>What scores</span>${it.what_scores}</div>
+            </div>
+            ${(it.refs || []).length ? html`<div class="refs">${it.refs.slice(0, 10).map((r, j) => html`<button key=${j} class="link" onClick=${() => open(r.paper, r.slug, findQ(r))}>P${r.paper} ${SLABEL[r.slug] || r.slug} Q${r.q}</button>`)}${it.refs.length > 10 ? html`<span class="shared">+${it.refs.length - 10} more</span>` : null}</div>` : null}
+          </article>`)}</div>
+          ${nmList.length > nmLimit && html`<button class="btn more" onClick=${() => setNmLimit(l => l + 40)}>Show ${Math.min(40, nmList.length - nmLimit)} more</button>`}
+          <div class="cols2" style=${{ marginTop: "16px" }}>
+            ${(nm.general || []).length ? html`<div class="panel"><h4>Rules that catch people out</h4>${L(nm.general)}</div>` : null}
+            ${(nm.leniencies || []).length ? html`<div class="panel"><h4>What you don't need to worry about</h4><p class="sub" style=${{ margin: "0 0 8px" }}>Things the mark schemes explicitly ignore or allow.</p><ul>${nm.leniencies.slice(0, 30).map((l, i) => html`<li key=${i}><b>${l.topic}:</b> ${l.detail}</li>`)}</ul></div>` : null}
+          </div>
         </section>`}
 
         <section id="pb-mech">
@@ -1383,6 +1519,107 @@ function Playbook({ data, open, openSpec }) {
           </div>
         </section>
       </div>
+    </div>
+  </div></div>`;
+}
+
+/* ---------- Techniques ---------- */
+const MOVE_LABEL = { chain: "Chaining equations", rearrange: "Rearranging", linearise: "Linearising", "graph-read": "Reading graphs", "graph-draw": "Plotting and sketching", "explain-chain": "Cause → effect explanations", ratio: "Ratio and scaling", vectors: "Vectors and directions", plan: "Planning experiments", uncertainty: "Uncertainty", evaluate: "Judging and deciding", "given-formula": "Unfamiliar formulae", energy: "Energy chains", "show-that": "Show that", definition: "Definitions", units: "Base units", estimate: "Estimates", "recall-fact": "Factual recall" };
+function useMoveStats(all, examiners) {
+  return useMemo(() => {
+    const tagged = all.filter(q => Array.isArray(q.moves));
+    const lvl = [1, 2, 3].map(d => tagged.filter(q => q.difficulty === d && q.type !== "mcq"));
+    const perf = (q) => erFor(examiners, q)?.performance || null;
+    const by = {};
+    for (const q of tagged) for (const m of q.moves) {
+      const o = by[m] ||= { parts: [], marks: 0, unscaf: 0, poor: 0, judged: 0 };
+      o.parts.push(q); o.marks += +q.marks || 0; if (q.scaffolded === false) o.unscaf++;
+      const pf = perf(q); if (pf) { o.judged++; if (/poor/.test(pf)) o.poor++; }
+    }
+    const share = (m, d) => { const L = lvl[d - 1]; return L.length ? Math.round(L.filter(q => q.moves.includes(m)).length / L.length * 100) : 0; };
+    const scaf = [1, 2].map(pp => [1, 3].map(d => { const L = lvl[d - 1].filter(q => q.paper === pp && q.scaffolded != null); return L.length ? Math.round(L.filter(q => q.scaffolded === true).length / L.length * 100) : 0; }));
+    const steps = [1, 2, 3].map(d => { const L = lvl[d - 1].filter(q => q.steps); return L.length ? (L.reduce((t, q) => t + q.steps, 0) / L.length).toFixed(1) : "–"; });
+    const nmoves = [1, 2, 3].map(d => { const L = lvl[d - 1]; return L.length ? (L.reduce((t, q) => t + q.moves.length, 0) / L.length).toFixed(1) : "–"; });
+    const judged = tagged.filter(q => perf(q)); const poorAll = judged.filter(q => /poor/.test(perf(q))).length;
+    return { tagged: tagged.length, by, share, scaf, steps, nmoves, lvlN: lvl.map(l => l.length), poorBase: judged.length ? Math.round(poorAll / judged.length * 100) : null, judged: judged.length, perf };
+  }, [all, examiners]);
+}
+function Techniques({ data, open }) {
+  const ref = useRef(null); const lenis = useLenis(ref);
+  const T = data.techniques; const all = useMemo(() => data.all.filter(q => !q.withdrawn), [data.all]);
+  const st = useMoveStats(all, data.examiners);
+  const [cur, setCur] = useState(() => store.get("tech", "overview"));
+  const [onlyUnscaf, setOnlyUnscaf] = useState(false), [limit, setLimit] = useState(25);
+  useEffect(() => { store.set("tech", cur); setLimit(25); if (lenis.current) lenis.current.scrollTo(0, { immediate: true }); else if (ref.current) ref.current.scrollTop = 0; }, [cur]);
+  if (!T) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Techniques not loaded</h2></div></div></div>`;
+  const lessons = T.lessons; const L = lessons.find(l => l.id === cur);
+  const moveRows = Object.keys(MOVE_LABEL).filter(m => st.by[m]).sort((a, b) => st.share(b, 3) - st.share(a, 3));
+  const lessonView = L && (() => {
+    const s2 = st.by[L.id] || { parts: [], marks: 0, unscaf: 0, poor: 0, judged: 0 };
+    const list = s2.parts.filter(q => !onlyUnscaf || q.scaffolded === false).slice().sort((a, b) => (a.difficulty - b.difficulty) || (SESSIONS.findIndex(s => s.slug === b.slug) - SESSIONS.findIndex(s => s.slug === a.slug)));
+    return html`<div class="lesson">
+      <span class="eyebrow">Technique</span>
+      <h3>${L.title}</h3>
+      <p class="lead">${L.what}</p>
+      <div class="ev">
+        <div><b>${s2.parts.length}</b><span>question parts need it (${s2.marks} marks)</span></div>
+        <div><b>${st.share(L.id, 1)}% → ${st.share(L.id, 3)}%</b><span>of easy → hard written parts</span></div>
+        <div><b>${s2.parts.length ? Math.round(s2.unscaf / s2.parts.length * 100) : 0}%</b><span>where you find the route yourself</span></div>
+        <div><b>${s2.judged ? Math.round(s2.poor / s2.judged * 100) + "%" : "–"}</b><span>rated poorly answered by examiners${st.poorBase != null ? ` (all parts: ${st.poorBase}%)` : ""}</span></div>
+      </div>
+      <div class="cols2">
+        <div class="panel"><h4>How to spot it</h4><ul>${L.spot.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul></div>
+        <div class="panel"><h4>Traps</h4><ul>${L.traps.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul></div>
+      </div>
+      <div class="panel"><h4>Method</h4><ol class="steps">${L.steps.map((x, i) => html`<li key=${i}>${x}</li>`)}</ol></div>
+      ${L.forms && html`<div class="panel"><h4>Which graph to plot: common forms</h4><div style=${{ overflowX: "auto" }}><table class="forms">
+        <thead><tr><th>Equation form</th><th>Plot</th><th>Gradient</th><th>Intercept</th><th>Example</th></tr></thead>
+        <tbody>${L.forms.map((f, i) => html`<tr key=${i}>${f.map((c, j) => html`<td key=${j}>${c}</td>`)}</tr>`)}</tbody></table></div></div>`}
+      <div class="worked"><span class="eyebrow">Worked example (original)</span><div class="prob">${L.example.problem}</div><ol>${L.example.solution.map((x, i) => html`<li key=${i}>${x}</li>`)}</ol><div class="ans">Answer: ${L.example.answer}</div></div>
+      <div>
+        <h4 style=${{ margin: "0 0 8px", font: "700 18px/1.2 var(--f-display)" }}>Practise on real questions (${list.length})</h4>
+        <div class="prac-tools"><label style=${{ fontSize: "13px", display: "flex", gap: "6px", alignItems: "center" }}><input type="checkbox" id="only-unscaf" checked=${onlyUnscaf} onChange=${e => setOnlyUnscaf(e.target.checked)} /> Only parts where you must find the route yourself</label><span class="shared">Ordered easy → hard, newest first.</span></div>
+        <div class="prac">${list.slice(0, limit).map(q => html`<button key=${q.paper + q.slug + q.q} onClick=${() => open(q.paper, q.slug, q)}>
+          <span class="dot3" title=${["", "Easy", "Standard", "Hard"][q.difficulty]}>${[1, 2, 3].map(i => html`<i key=${i} class=${i <= q.difficulty ? "on" : ""}></i>`)}</span>
+          <span class="ref">P${q.paper} ${SLABEL[q.slug]} Q${q.q}</span>
+          <span class="ctx">${q.context}${q.moves_why ? html`<span class="why">${q.moves_why}</span>` : null}</span>
+          <span class="mk">${q.marks} m</span></button>`)}</div>
+        ${list.length > limit && html`<button class="btn more" onClick=${() => setLimit(l => l + 40)}>Show ${Math.min(40, list.length - limit)} more</button>`}
+      </div>
+    </div>`;
+  })();
+  const overview = html`<div class="lesson">
+    <span class="eyebrow">Techniques · ${st.tagged} of ${all.length} parts tagged by reading each question and mark scheme</span>
+    <h3>The moves behind every question</h3>
+    <p class="lead">${T.intro}</p>
+    <div class="ev">
+      <div><b>${st.nmoves[0]} → ${st.nmoves[2]}</b><span>moves per written part, easy → hard</span></div>
+      <div><b>${st.steps[0]} → ${st.steps[2]}</b><span>reasoning steps, easy → hard</span></div>
+      <div><b>${st.scaf[1][0]}% → ${st.scaf[1][1]}%</b><span>Paper 2 parts that guide you through the route, easy → hard (Paper 1: ${st.scaf[0][0]}% → ${st.scaf[0][1]}%)</span></div>
+      <div><b>${st.poorBase != null ? st.poorBase + "%" : "–"}</b><span>of ${st.judged} examiner-rated parts were poorly answered</span></div>
+    </div>
+    ${T.checks && html`<div class="panel"><h4>What we checked</h4><p class="sub" style=${{ margin: "0 0 10px" }}>Earlier claims re-tested against the hand-read tags and the examiners' reports.</p>
+      <div style=${{ overflowX: "auto" }}><table class="dtab"><thead><tr><th>Claim</th><th style=${{ textAlign: "left" }}>Verdict</th><th style=${{ textAlign: "left" }}>Evidence</th></tr></thead>
+      <tbody>${T.checks.map((c, i) => html`<tr key=${i}><td style=${{ textAlign: "left" }}>${c.claim}</td><td style=${{ textAlign: "left", fontWeight: 700, color: /Wrong|Revised|Partly/.test(c.verdict) ? "var(--pen)" : "var(--accent)" }}>${c.verdict}</td><td style=${{ textAlign: "left", color: "var(--ink-2)" }}>${c.detail}</td></tr>`)}</tbody></table></div></div>`}
+    ${T.examiner_view && html`<div class="panel"><h4>What the examiners' reports add</h4><ul>${T.examiner_view.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>
+      <div class="rep" style=${{ marginTop: "12px" }}>${Object.entries(st.by).filter(([m, o]) => o.judged >= 8).sort((a, b) => b[1].poor / b[1].judged - a[1].poor / a[1].judged).map(([m, o]) => html`<div class="row" key=${m} style=${{ gridTemplateColumns: "minmax(0,1fr) 120px 60px" }}><span>${MOVE_LABEL[m]}</span><span class="track" style=${{ height: "8px", background: "var(--surface-2)", borderRadius: "4px", overflow: "hidden" }}><i style=${{ display: "block", height: "100%", width: Math.round(o.poor / o.judged * 100) + "%", background: "var(--pen)" }}></i></span><span>${Math.round(o.poor / o.judged * 100)}%</span></div>`)}</div>
+      <p class="sub" style=${{ margin: "8px 0 0" }}>Share of examiner-rated parts needing each move that were rated poorly answered (moves with at least 8 rated parts).</p></div>`}
+    <div class="panel"><h4>Which moves each level needs (verified)</h4>
+      <p class="sub" style=${{ margin: "0 0 10px" }}>Share of written parts (not multiple choice) at each level that need the move: ${st.lvlN[0]} easy, ${st.lvlN[1]} standard, ${st.lvlN[2]} hard. Click a move to learn it.</p>
+      <div style=${{ overflowX: "auto" }}><table class="dtab vt"><thead><tr><th>Move</th><th>Easy</th><th>Std</th><th>Hard</th><th></th></tr></thead>
+      <tbody>${moveRows.map(m => { const v = [1, 2, 3].map(d => st.share(m, d)); const has = lessons.some(l => l.id === m);
+        return html`<tr key=${m}><td>${has ? html`<button class="link" onClick=${() => setCur(m)}>${MOVE_LABEL[m]}</button>` : MOVE_LABEL[m]}</td><td>${v[0]}%</td><td>${v[1]}%</td><td class="hi">${v[2]}%</td>
+          <td class="bar"><div style=${{ display: "grid", gap: "2px" }}>${v.map((x, i) => html`<div key=${i} class=${"s" + (i + 1)} style=${{ height: "5px", width: x + "%", borderRadius: "0 2px 2px 0" }}></div>`)}</div></td></tr>`; })}</tbody></table></div>
+      <div class="legend3"><span><i class="s1"></i>Easy</span><span><i class="s2"></i>Standard</span><span><i class="s3"></i>Hard</span></div>
+    </div>
+  </div>`;
+  return html`<div class="ins" ref=${ref}><div class="ins-inner" style=${{ paddingTop: "28px" }}>
+    <div class="tq-layout">
+      <nav class="tq-nav" aria-label="Techniques">
+        <button class=${cur === "overview" ? "on" : ""} onClick=${() => setCur("overview")}><span>Overview</span></button>
+        ${lessons.map(l => html`<button key=${l.id} class=${cur === l.id ? "on" : ""} onClick=${() => setCur(l.id)}><span>${l.title.split(":")[0]}</span><small>${st.by[l.id]?.parts.length || 0}</small></button>`)}
+      </nav>
+      ${cur === "overview" || !L ? overview : lessonView}
     </div>
   </div></div>`;
 }
@@ -1564,7 +1801,7 @@ function App() {
   const [data, setData] = useState({ all: [], byPaper: {}, ins: {}, regions: {}, ready: false });
   const init = store.get("sel", { paper: 1, slug: "jun2024" });
   const [sel, setSel] = useState({ paper: init.paper || 1, slug: SLABEL[init.slug] ? init.slug : "jun2024", q: null, nonce: 0 });
-  const fromHash = () => ({ "#insights": "insights", "#paper": "paper", "#spec": "spec", "#playbook": "playbook" })[location.hash] || "questions";
+  const fromHash = () => ({ "#insights": "insights", "#paper": "paper", "#spec": "spec", "#playbook": "playbook", "#techniques": "techniques" })[location.hash] || "questions";
   const [specQ, setSpecQ] = useState({ q: "", n: 0 });
   const [view, setView] = useState(fromHash);
   useEffect(() => { store.set("sel", { paper: sel.paper, slug: sel.slug }); }, [sel.paper, sel.slug]);
@@ -1580,9 +1817,14 @@ function App() {
       fetch("data/regions.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
       fetch("data/spec.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/playbook.json").then(r => r.ok ? r.json() : null).catch(() => null),
-    ]).then(([all, ins, regions, spec, playbook]) => {
+      fetch("data/nearmiss.json").then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch("data/examiners.json").then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch("data/techniques.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques]) => {
+      const nmIndex = {};
+      for (const it of nearmiss?.items || []) for (const r of it.refs || []) (nmIndex[`${r.paper}:${r.slug}:${r.q}`] ||= []).push(it);
       const byPaper = {}; for (const q of all) (byPaper[`${q.paper}:${q.slug}`] ||= []).push(q);
-      setData({ all, byPaper, ins, regions, spec, playbook, ready: true });
+      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, ready: true });
     });
   }, []);
   const hardMarks = useMemo(() => { const m = {}; for (const q of data.all) if (!q.withdrawn && q.difficulty === 3) { const k = `${q.paper}:${q.slug}`; m[k] = (m[k] || 0) + (+q.marks || 0); } for (const q of data.all) { const k = `${q.paper}:${q.slug}`; if (!(k in m)) m[k] = 0; } return m; }, [data.all]);
@@ -1599,6 +1841,7 @@ function App() {
           <button aria-pressed=${view === "paper"} onClick=${() => go("paper")}>Whole paper</button>
           <button aria-pressed=${view === "spec"} onClick=${() => go("spec")}>Spec</button>
           <button aria-pressed=${view === "playbook"} onClick=${() => go("playbook")}>Playbook</button>
+          <button aria-pressed=${view === "techniques"} onClick=${() => go("techniques")}>Techniques</button>
           <button aria-pressed=${view === "insights"} onClick=${() => go("insights")}>Insights</button>
         </nav>
       </header>
@@ -1612,7 +1855,7 @@ function App() {
               return html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label + (h != null ? ` · ${h} hard marks` : "")}><span class="y">${s.y}</span><span class="m">${s.m}</span>${lvl ? html`<span class="dif" aria-label=${`${h} hard marks`}>${[1, 2, 3].map(i => html`<i key=${i} class=${i <= lvl ? "on" : ""}></i>`)}</span>` : null}</button>`; })}
           </div>
         </div>
-        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} query=${specQ} />` : view === "playbook" ? html`<${Playbook} data=${data} open=${open} openSpec=${openSpec} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}
+        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} query=${specQ} />` : view === "playbook" ? html`<${Playbook} data=${data} open=${open} openSpec=${openSpec} />` : view === "techniques" ? html`<${Techniques} data=${data} open=${open} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}
     </div>`;
 }
 ReactDOM.createRoot(document.getElementById("root")).render(html`<${App} />`);

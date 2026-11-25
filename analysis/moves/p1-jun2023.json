@@ -1,0 +1,329 @@
+{
+ "1": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall typical microwave wavelength."
+ },
+ "2": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Equilibrium forces must form closed triangle on scale diagram."
+ },
+ "3": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Significant diffraction needs wavelength similar to atomic spacing."
+ },
+ "4": {
+  "moves": [
+   "linearise"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Interpret gradient of R against L as resistivity over area."
+ },
+ "5": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Find critical angle from n and compare with 45\u00b0 incidence."
+ },
+ "6": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Component of pull along motion times speed gives power."
+ },
+ "7": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Two cells in series: total emf and internal resistance, solve for r."
+ },
+ "8": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Select correct photoelectric statement."
+ },
+ "9": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Series wires share current and same material carrier density."
+ },
+ "10": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Resistance depends on length; resistivity is a material property."
+ },
+ "11": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Combine pressure definition with circular area from diameter."
+ },
+ "12": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Shorter wavelength means larger photon energy so higher threshold p.d."
+ },
+ "13": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Single filter transmits same intensity of unpolarised light at any angle."
+ },
+ "14": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Free fall from rest gives straight v-t line through origin."
+ },
+ "15": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Resolve both tensions vertically to balance weight."
+ },
+ "16": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Two-force equilibrium needs equal, opposite, collinear forces."
+ },
+ "17": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Frequency fixed by source; speed falls in shallow water."
+ },
+ "18": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Heating raises filament resistance, increasing its share of p.d."
+ },
+ "19": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Kirchhoff's first law with current directions."
+ },
+ "20": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Positive charge gain means electrons lost; divide by e."
+ },
+ "21(a)": {
+  "moves": [
+   "graph-read",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Gradient of force-extension graph with mm converted to m."
+ },
+ "21(b)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Micrometer diameter at several places, average, compute area."
+ },
+ "21(c)(i)": {
+  "moves": [
+   "show-that",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Combine stress, strain and Hooke's law definitions algebraically."
+ },
+ "21(c)(ii)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": true,
+  "steps": 3,
+  "why": "Evaluate E and add percentage uncertainties of k, L, A."
+ },
+ "21(c)(iii)": {
+  "moves": [
+   "uncertainty",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Compare percentage difference with percentage uncertainty to judge consistency."
+ },
+ "22(a)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Molecules oscillate parallel to energy transfer forming high and low pressure regions."
+ },
+ "22(b)(i)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Incident and reflected waves superpose: in phase antinodes, antiphase nodes."
+ },
+ "22(b)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Amplitude falls with distance so cancellation incomplete, worsening away from reflector."
+ },
+ "22(b)(iii)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Node spacing is half wavelength, then v = f\u03bb."
+ },
+ "22(b)(iv)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Measure over several node spacings to reduce uncertainty."
+ },
+ "23(a)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Work = charge times p.d., using electron charge in joules."
+ },
+ "23(b)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Photon energy proportional to f; emission only if it exceeds work function."
+ },
+ "23(c)(i)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Intensity sets photon rate; one-to-one release; current is charge flow rate."
+ },
+ "23(c)(ii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Photon energy, times rate gives power, divide by area for intensity."
+ },
+ "24(a)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Momentum change with rebound velocity negative, divided by contact time."
+ },
+ "24(b)": {
+  "moves": [
+   "show-that",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Horizontal distance from speed and time; check it lies within ring."
+ },
+ "25(a)": {
+  "moves": [
+   "uncertainty",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Short intervals versus reaction time justify video for lower uncertainty."
+ },
+ "25(b)": {
+  "moves": [
+   "plan",
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Avoid parallax by aligning camera with scale."
+ },
+ "25(c)": {
+  "moves": [
+   "show-that",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Equal distances per interval show constant speed near 0.27 m/s."
+ },
+ "25(d)": {
+  "moves": [
+   "given-formula",
+   "rearrange",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Rearrange supplied terminal velocity formula for radius, double, classify particle."
+ }
+}

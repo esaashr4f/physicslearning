@@ -1,0 +1,40 @@
+{"paper":1,"slug":"jun2018",
+"overview":[
+"Solutions were generally well laid out, with clear rearrangement, substitution and sensible significant figures; command words were mostly understood.",
+"The biggest source of lost calculation marks was rounding or truncating intermediate values; keep full values in the calculator until the end.",
+"Use precise technical vocabulary (e.g. path difference is not the same as phase difference) and name quantities rather than using letter labels in explanations.",
+"Bullet-pointed answers are a good way to communicate multi-step explanations clearly.",
+"Know what is in the Data, Formulae and Relationships booklet (e.g. h and c) rather than recalling values under pressure.",
+"In MCQs, underline key data and use quick jottings or sketches; Questions 3, 9, 10 and 11 were the hardest."
+],
+"assessment_for_learning":[
+"Annotate diagrams and underline key words (e.g. 'uniform') in multiple-choice questions to steer away from distractors.",
+"Lay out calculations by listing known and unknown quantities, then the equation, substitution and answer.",
+"In 'show' questions give the final value to more significant figures than the value quoted in the question.",
+"Practise converting area units carefully: 1 mm^2 = 10^-6 m^2."
+],
+"parts":{
+"3":{"performance":"poorly answered","common_errors":["Did not combine weight and drag vectorially to find the resultant direction"],"good_practice":["Sketched a vertical weight vector plus a small drag vector opposite to the velocity and added them"],"mcq_distractor":"A and D were the most popular wrong answers; candidates did not add the small drag (opposite to motion) to the weight."},
+"6":{"performance":"well answered","good_practice":["Recognised that with constant current in a series circuit, p.d. is proportional to power","Annotated the circuit and used P = VI with the calculated current"],"mcq_distractor":"C was the popular distractor."},
+"9":{"performance":"poorly answered","common_errors":["Overlooked that the rod is uniform, so its centre of gravity coincides with the cable attachment point"],"misconceptions":["Not recognising that for equilibrium of three forces the lines of action must pass through a common point"],"good_practice":["Underlined the key word 'uniform'"],"mcq_distractor":"All distractors were roughly equally popular; only about a third chose C."},
+"10":{"performance":"poorly answered","common_errors":["Took only the triangular area (braking distance) instead of the whole area under the v-t graph"],"misconceptions":["Confusing braking distance with stopping distance (thinking + braking)"],"good_practice":["Used thinking distance and reaction time to find the initial speed, then the braking distance"],"mcq_distractor":"A was the popular distractor - it represents the braking distance only."},
+"11":{"performance":"poorly answered","common_errors":["Carried out lengthy calculations and arrived at distractors instead of applying Newton's second law directly"],"misconceptions":["Not recognising that force equals rate of change of momentum and that kg m s^-2 is the newton"]},
+"17":{"performance":"mixed","common_errors":["Did not realise the maximum KE of a photoelectron is photon energy minus work function, ruling out 3.0 eV"],"mcq_distractor":"A was the most popular distractor."},
+"21(a)":{"performance":"poorly answered","common_errors":["Described light-gate arrangements instead of using ruler and stopwatch","Used inappropriate equations of motion","Did not state that final velocity is twice the mean velocity"]},
+"21(b)(i)":{"performance":"well answered","good_practice":["Listed known and unknown quantities, used v^2 = u^2 + 2as with clear substitution and correct s.f."]},
+"22(b)":{"performance":"mixed","common_errors":["Triangle of forces lacked labels","Force arrows drawn in incorrect directions"],"good_practice":["Clearly labelled triangle with the 90 degree angle between the two tensions marked"]},
+"22(c)":{"performance":"mixed","common_errors":["Success undermined by a poorly annotated triangle of forces in (b)"],"good_practice":["Used Pythagoras, trigonometry, vertical resolution or sine/cosine rule","Gave the final value to more s.f. than the 'show' value (e.g. 3.39 N)"]},
+"23(a)":{"performance":"mixed","common_errors":["Did not mention at least two of upthrust, tension and weight","Quoted Archimedes' principle generically without applying it to the tube","Confused mass and weight when describing upthrust","Confused string tension with upthrust"],"misconceptions":["Treating upthrust and tension as the same force"],"good_practice":["Identified weight and upthrust, stated that upthrust increases as the water rises, and that upthrust equals tension plus weight"]},
+"23(b)":{"performance":"well answered","common_errors":["Giving the answer to one significant figure (penalised once in the paper)"],"good_practice":["Found the resultant force, then the mass from the weight, then the acceleration"]},
+"24(a)(ii)":{"performance":"mixed","common_errors":["Referred to Ohm's law or I-V characteristics instead of using resistance values","Correct reasoning but then named a diode, LDR or filament lamp"],"good_practice":["Calculated resistance at different p.d.s and used it to justify the component"]},
+"24(b)":{"performance":"mixed","common_errors":["Converted 12 mm^2 using 10^-3 instead of 10^-6, giving 0.1 ohm instead of 100 ohm","Used the parallel resistor equation for a series combination"],"good_practice":["Converted area units correctly before using the resistivity equation"]},
+"25(a)":{"performance":"poorly answered","common_errors":["Could not explain how to read the period from the oscilloscope trace","Referred to the wavelength of the trace and used v = f lambda"],"misconceptions":["Treating the horizontal axis of an oscilloscope trace as distance rather than time"],"good_practice":["Stated f = 1/T"]},
+"25(b)(i)":{"performance":"well answered","good_practice":["Drew a curve of amplitude 1.0 um in antiphase (180 degrees)"]},
+"25(b)(ii)":{"performance":"poorly answered","common_errors":["Did not mention intensity at all","Discussed destructive interference without using the answer to (b)(i)"],"good_practice":["Linked the smaller resultant amplitude to reduced intensity using intensity proportional to amplitude^2"]},
+"25(b)(iii)":{"performance":"poorly answered","common_errors":["Gave generic comments on interference without using the given data","Referred to phase difference when path difference was meant"],"good_practice":["Identified a path difference of half a wavelength (17 cm) giving destructive interference at Q"]},
+"26(b)":{"performance":"mixed","good_practice":["Stated light is slower in water, frequency is unchanged, so wavelength decreases via v = f lambda"]},
+"26(c)":{"performance":"poorly answered","common_errors":["Ray diagram unclear","Marked the critical angle in air rather than inside the block","Gave a generic rectangular-block sin i vs sin r practical instead of a critical-angle method"],"good_practice":["Selected n = 1/sin C from the data booklet"]},
+"27(b)(i)":{"performance":"poorly answered","common_errors":["Used pi R^2 or (4/3) pi R^3 instead of 4 pi R^2 for the sphere area"],"good_practice":["Used intensity = power / (4 pi R^2) with well-structured steps"]},
+"27(b)(ii)":{"performance":"well answered","good_practice":["Used E = hc/lambda with correct rearrangement and powers of ten"]},
+"27(b)(iii)":{"performance":"mixed","common_errors":["Divided the intensity, rather than the total power, by the photon energy","Converted the photon energy from J to eV before dividing"],"good_practice":["Divided total power output by energy per photon"]}
+}}

@@ -1,0 +1,376 @@
+{
+ "1": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Combine percentage uncertainties, tripling the radius term for r cubed."
+ },
+ "2": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Resultant of tension upward and weight downward equals ma; solve for tension."
+ },
+ "3": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall floating condition and upthrust equals weight of displaced fluid."
+ },
+ "4": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Single substitution into F = kx with compression read from diagram."
+ },
+ "5": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Compare upward and downward forces to give downward resultant."
+ },
+ "6": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify that pressure is largest on smallest face area."
+ },
+ "7": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recognise drag is zero at release so both start with acceleration g."
+ },
+ "8": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Efficiency gives useful power, then P = Fv gives lifting speed."
+ },
+ "9": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Distances in successive seconds under uniform acceleration follow 1:3:5:7 scaling."
+ },
+ "10": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Classify zero offset as systematic and reading scatter as random error."
+ },
+ "11": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall photon properties: uncharged, energy hc/\u03bb, speed changes in glass."
+ },
+ "12": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Read displacement-time graph to find point half a cycle from X."
+ },
+ "13": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Judge refraction/reflection statements from recalled wave behaviour at boundaries."
+ },
+ "14": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall electrons drift towards positive terminal."
+ },
+ "15": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Check statements; energy equals power times time."
+ },
+ "16": {
+  "moves": [
+   "chain",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Rearrange emf equation for R, then use it in P = I\u00b2R."
+ },
+ "17": {
+  "moves": [
+   "graph-read",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Read period from graph, convert to frequency, then wave equation for wavelength."
+ },
+ "18": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Reason via V = \u03b5 \u2212 Ir how each change alters current and terminal p.d."
+ },
+ "19": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Determine particle motion direction by shifting waveform along travel direction."
+ },
+ "20": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Read I-V curve to deduce how V/I varies."
+ },
+ "21(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "State definition of vector plus an example."
+ },
+ "21(b)(i)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Circumference divided by lap time gives speed."
+ },
+ "21(b)(ii)": {
+  "moves": [
+   "graph-read",
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Displacement is straight-line distance from start; peaks at diameter mid-lap."
+ },
+ "21(c)": {
+  "moves": [
+   "vectors",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Find resultant of two angled forces by cosine rule, then F = ma."
+ },
+ "22(a)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Acceleration is gradient of v-t graph, which decreases."
+ },
+ "22(b)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Describe light gate timing for speed, balance for mass, then compute KE."
+ },
+ "22(c)(i)": {
+  "moves": [
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Friction transfers some GPE to thermal energy so KE not linear."
+ },
+ "22(c)(ii)": {
+  "moves": [
+   "graph-read",
+   "energy",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Read energy loss from both graphs, equate to work against friction, divide by distance."
+ },
+ "23(a)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Extension proportional to strain in the table, so scale from other rows."
+ },
+ "23(b)(i)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Plot missing point and draw best-fit line."
+ },
+ "23(b)(ii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Measure gradient of stress-strain line to get Young modulus."
+ },
+ "23(c)": {
+  "moves": [
+   "uncertainty",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Zero error: true area smaller, stress larger, so gradient and true E larger."
+ },
+ "24(a)": {
+  "moves": [
+   "ratio",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Combine resistors in series and parallel, then compare currents as a ratio."
+ },
+ "24(b)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Higher current heats filaments, resistance rises, so current less than doubles."
+ },
+ "24(c)(i)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Find resistance from meter readings, then resistivity from RA/L."
+ },
+ "24(c)(ii)": {
+  "moves": [
+   "explain-chain",
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Identify a systematic limitation and link it to an overestimated resistance."
+ },
+ "25(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall coherent means constant phase difference."
+ },
+ "25(b)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Antiphase superposition is destructive but unequal amplitudes leave non-zero oscillation."
+ },
+ "25(c)(i)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Link path difference to phase and to constructive or destructive interference."
+ },
+ "25(c)(ii)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Fringe spacing proportional to wavelength, so wider spacing means longer wavelength."
+ },
+ "25(c)(iii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Blocking one slit removes two-source interference leaving diffraction."
+ },
+ "26(a)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "State an environmental benefit of lower electrical energy use."
+ },
+ "26(a)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Photon energy depends on frequency, not intensity, so unchanged."
+ },
+ "26(b)(i)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Rings are diffraction, implying wave behaviour, since wavelength matches atomic spacing."
+ },
+ "26(b)(ii)": {
+  "moves": [
+   "show-that",
+   "energy",
+   "chain",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "eV = \u00bdmv\u00b2 rearranged for speed, then de Broglie wavelength from momentum."
+ },
+ "26(b)(iii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall peer review or replication as validation."
+ }
+}

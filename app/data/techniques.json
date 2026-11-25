@@ -1,0 +1,595 @@
+{
+ "intro": "Every question part in the 22 papers was read and tagged with the moves it needs. Hard questions use the same AS physics as easy ones: what changes is which moves they need, how many, and whether the question breaks the route down for you. Learn each move on its own, then practise it on the real questions listed under it.",
+ "lessons": [
+  {
+   "id": "linearise",
+   "title": "Linearising: choosing what to plot",
+   "what": "Turning an equation into the straight-line form y = mx + c so that a graph of two measured quantities has a gradient or intercept that contains the thing you want to find. Hard questions often say 'determine X using a graph' without telling you what to plot.",
+   "spot": [
+    "'Use a graph to determine…' or 'describe how the data can be analysed'",
+    "An equation in the stem with a constant you're asked to find",
+    "Six-mark practical plans (the analysis strand needs this)",
+    "'Show that the graph should be a straight line'",
+    "A table of two measured quantities and an unknown constant"
+   ],
+   "steps": [
+    "Write the equation that links what you measure to the unknown (X).",
+    "Decide which quantity you control (independent, goes on x) and which you measure (dependent, goes on y).",
+    "Rearrange into the form (y-quantity) = (gradient) × (x-quantity) + (intercept). The x and y quantities may be functions such as t², 1/λ or √h.",
+    "Everything that is constant, including X, must end up inside the gradient or the intercept, never on an axis.",
+    "State the plot ('plot y against x'), write what the gradient (and intercept) equals, then rearrange to give X.",
+    "Say what the graph should look like: a straight line, through the origin if there is no intercept term."
+   ],
+   "forms": [
+    [
+     "y = kx",
+     "y against x",
+     "k",
+     "0 (through origin)",
+     "Hooke's law F = kx: F against x, gradient k"
+    ],
+    [
+     "y = mx + c",
+     "y against x",
+     "m",
+     "c",
+     "E = V + Ir → V = −rI + E: V against I, gradient −r, y-intercept E"
+    ],
+    [
+     "y = kxⁿ (n known)",
+     "y against xⁿ",
+     "k",
+     "0",
+     "s = ½gt² (from rest): s against t², gradient g/2"
+    ],
+    [
+     "y = k/x",
+     "y against 1/x",
+     "k",
+     "0",
+     "eV = hc/λ: V against 1/λ, gradient hc/e"
+    ],
+    [
+     "y = k√x",
+     "y against √x, or y² against x",
+     "k (or k²)",
+     "0",
+     "t = √(2h/g): t against √h, gradient √(2/g)"
+    ],
+    [
+     "y = mx − c",
+     "y against x",
+     "m",
+     "−c",
+     "KEmax = hf − φ: KEmax against f, gradient h, y-intercept −φ, x-intercept f₀"
+    ],
+    [
+     "Quantity ∝ product",
+     "the varied quantity on x",
+     "product of constants",
+     "0",
+     "R = ρL/A: R against L, gradient ρ/A"
+    ]
+   ],
+   "example": {
+    "problem": "A student hangs masses on a long wire of original length 2.40 m and cross-sectional area 2.0 × 10⁻⁷ m², and measures the extension x for each load F. Explain how a graph can be used to find the Young modulus E, and find E if the gradient of the graph is 1.25 × 10⁴ N m⁻¹.",
+    "solution": [
+     "Start from E = stress / strain = (F/A) / (x/L), so F = (EA/L) × x.",
+     "This has the form y = mx: plot F (y-axis) against x (x-axis). It should be a straight line through the origin.",
+     "Gradient = EA/L, so E = gradient × L / A.",
+     "E = 1.25 × 10⁴ × 2.40 / 2.0 × 10⁻⁷ = 1.5 × 10¹¹ Pa."
+    ],
+    "answer": "Plot F against x; E = gradient × L/A = 1.5 × 10¹¹ Pa"
+   },
+   "traps": [
+    "Putting a constant on an axis instead of in the gradient",
+    "Forgetting the minus sign when the gradient is −r",
+    "Reading the y-intercept off an axis that doesn't start at zero (a false origin)",
+    "Saying 'plot a graph' without naming both axes",
+    "Using a gradient without its axis multipliers (×10⁻³ etc.)"
+   ]
+  },
+  {
+   "id": "chain",
+   "title": "Chaining equations",
+   "what": "Questions where no single equation gives the answer: you find an intermediate quantity with one equation and feed it into another. Unscaffolded versions don't tell you what the intermediate quantity is.",
+   "spot": [
+    "The quantity asked for isn't in any equation together with the data given",
+    "Several pieces of data in the stem, some not yet used",
+    "Long calculation parts worth 3–4 marks",
+    "Words like 'hence', or a value from an earlier part that you're expected to reuse"
+   ],
+   "steps": [
+    "Write the target quantity and list every known with its unit converted to SI.",
+    "Pick an equation that contains the target. Circle the quantity in it that you don't know yet.",
+    "Find a second equation that gives that missing quantity from your knowns. Repeat until every input is known: you have built a chain backwards from the answer.",
+    "Now work forwards, writing each equation, the substitution and the intermediate result with its unit.",
+    "Keep full calculator values for intermediates; round only the final answer.",
+    "Check the final unit and size make sense."
+   ],
+   "example": {
+    "problem": "A wire of length 1.50 m and diameter 0.40 mm is made of metal with resistivity 4.9 × 10⁻⁷ Ω m. It is connected across a 3.0 V supply with negligible internal resistance. Find the power dissipated.",
+    "solution": [
+     "Target P. P = V²/R needs R. R = ρL/A needs A. A = πd²/4 uses the diameter.",
+     "A = π × (0.40 × 10⁻³)² / 4 = 1.257 × 10⁻⁷ m²",
+     "R = 4.9 × 10⁻⁷ × 1.50 / 1.257 × 10⁻⁷ = 5.85 Ω",
+     "P = 3.0² / 5.85 = 1.54 W"
+    ],
+    "answer": "1.5 W"
+   },
+   "traps": [
+    "Using the diameter as the radius",
+    "Not converting mm to m before squaring (a factor of 10⁶)",
+    "Rounding the intermediate R to 6 Ω and getting 1.5 W by luck, or a wrong 3rd s.f. in a show-that",
+    "Skipping the written intermediate: if the final answer is wrong you lose the method marks too"
+   ]
+  },
+  {
+   "id": "explain-chain",
+   "title": "Cause → change → effect explanations",
+   "what": "Written explanations marked point by point. Each mark is usually one link in a chain: what changed, the physics that connects it, what that changes, and what is observed.",
+   "spot": [
+    "'Explain why…', 'Explain the effect of…', 'State and explain…'",
+    "A change to a set-up (brighter light, longer wire, hotter thermistor)",
+    "2–4 marks with no calculation"
+   ],
+   "steps": [
+    "Count the marks: that's roughly the number of links needed.",
+    "Cause: state precisely what changes (use the physics name of the quantity).",
+    "Mechanism: name the law or relationship that connects it (e.g. V = IR, superposition, one photon frees one electron).",
+    "Consequence: say what quantity changes and in which direction ('increases', not 'changes').",
+    "Effect: link to what the question asks about (the reading, the brightness, the pattern).",
+    "Write it as linked sentences using 'so' or 'therefore', one idea per sentence, with no 'it' that could mean two things."
+   ],
+   "example": {
+    "problem": "An LDR and a fixed resistor are in series across a battery. A voltmeter is connected across the fixed resistor. Explain what happens to the voltmeter reading when the light gets brighter. [3]",
+    "solution": [
+     "Cause: brighter light means the resistance of the LDR decreases.",
+     "Mechanism: in a series circuit the supply p.d. is shared in proportion to resistance, so the LDR's share of the p.d. decreases.",
+     "Effect: the p.d. across the fixed resistor (the voltmeter reading) increases, since the total stays the same."
+    ],
+    "answer": "Reading increases (three linked points)"
+   },
+   "traps": [
+    "Stating the conclusion without the mechanism (scores 1 of 3)",
+    "'It changes' instead of the direction",
+    "Using the wrong quantity ('more current' when the question is about p.d.)",
+    "Contradicting yourself in a second sentence: the right point is then cancelled"
+   ]
+  },
+  {
+   "id": "graph-read",
+   "title": "Reading values, gradients and areas from graphs",
+   "what": "Taking numbers off a given graph: a value, an intercept, a gradient (straight line or tangent), or an area that represents a physical quantity.",
+   "spot": [
+    "'Use the graph to determine…'",
+    "Velocity–time, force–extension, I–V, stress–strain or force–time graphs",
+    "'Show that the acceleration/stiffness/… is…'"
+   ],
+   "steps": [
+    "Read the axis labels and units, including multipliers like ×10⁻³ or /mm.",
+    "Gradient: draw a triangle covering at least half the line; use points on the line, not data points; gradient = Δy/Δx with units.",
+    "Curve: draw a tangent touching at the required point only, then use a large triangle on the tangent.",
+    "Area: decide what it means (v–t area = displacement, F–x area = work, F–t area = impulse); count squares or split into shapes; multiply by the value of one square.",
+    "Intercept: only read it at x = 0. If the x-axis starts elsewhere (a false origin), calculate it from y = mx + c instead."
+   ],
+   "example": {
+    "problem": "A velocity–time graph is a straight line from (0 s, 4.0 m s⁻¹) to (5.0 s, 14.0 m s⁻¹). Find the acceleration and the distance travelled.",
+    "solution": [
+     "Acceleration = gradient = (14.0 − 4.0) / (5.0 − 0) = 2.0 m s⁻²",
+     "Distance = area under the line = trapezium = ½ × (4.0 + 14.0) × 5.0 = 45 m"
+    ],
+    "answer": "2.0 m s⁻²; 45 m"
+   },
+   "traps": [
+    "Ignoring the axis multiplier",
+    "A small triangle or one data point for the gradient",
+    "Reading an intercept off a false origin",
+    "Area of the triangle only, forgetting the rectangle under it"
+   ]
+  },
+  {
+   "id": "graph-draw",
+   "title": "Plotting and sketching",
+   "what": "Plotting data points with a best-fit line, or sketching the shape of a relationship. Sketches are marked on features, not precision.",
+   "spot": [
+    "'Plot the missing point and draw the line of best fit'",
+    "'Sketch a graph to show…'",
+    "'On the same axes, draw…'"
+   ],
+   "steps": [
+    "Plotting: within half a small square; use a sharp cross or dot.",
+    "Best-fit line: ruled if straight, smooth single curve otherwise; balance points either side; don't force it through the origin unless physics says so.",
+    "Sketch: label both axes with quantity (and unit if asked); start at the right point; show the correct shape (straight, curving up, levelling off, inverse); mark key values (intercepts, maximum, asymptote) the question mentions.",
+    "If comparing two lines, make the difference obvious and correct in direction (steeper, higher, later)."
+   ],
+   "example": {
+    "problem": "Sketch the current–p.d. (I–V) graph for a filament lamp.",
+    "solution": [
+     "Line through the origin.",
+     "Gradient decreases as V increases (the curve bends towards the V-axis) because the filament heats up and its resistance increases.",
+     "Symmetrical in the negative quadrant."
+    ],
+    "answer": "S-shaped curve through the origin, flattening at higher |V|"
+   },
+   "traps": [
+    "Joining points dot-to-dot",
+    "Sketch not starting from the origin when it should",
+    "Unlabelled axes",
+    "Curving the wrong way"
+   ]
+  },
+  {
+   "id": "ratio",
+   "title": "Ratio and scaling arguments",
+   "what": "Working out how a quantity changes when another changes by a factor, without needing all the values. Common in multiple choice and 'what happens if…' parts.",
+   "spot": [
+    "'doubled', 'halved', 'three times', 'new value'",
+    "Multiple-choice options like ×2, ×4, ×½",
+    "Two wires, two cells or two waves being compared"
+   ],
+   "steps": [
+    "Write the equation linking the quantities.",
+    "List what stays constant and what changes, with the factor for each change.",
+    "Write the new/old ratio: multiply the factors with their powers (a square gives factor², a 1/x gives 1/factor).",
+    "Watch for hidden changes: stretching a wire at constant volume changes A as well as L."
+   ],
+   "example": {
+    "problem": "A wire is stretched to twice its length. Its volume and resistivity don't change. By what factor does its resistance change?",
+    "solution": [
+     "R = ρL/A. Volume constant means A × L constant, so doubling L halves A.",
+     "R_new / R_old = (2L / ½A) / (L / A) = 4."
+    ],
+    "answer": "×4"
+   },
+   "traps": [
+    "Changing only one variable when two are linked",
+    "Forgetting the square (intensity ∝ amplitude², area ∝ d²)",
+    "Inverting the ratio"
+   ]
+  },
+  {
+   "id": "vectors",
+   "title": "Vectors, angles and directions",
+   "what": "Resolving a vector into components, combining vectors, and keeping track of direction (signs) for displacement, velocity, momentum and force.",
+   "spot": [
+    "A force or velocity at an angle",
+    "Objects moving in opposite directions (collisions, rebounds)",
+    "Projectiles",
+    "Equilibrium with three forces"
+   ],
+   "steps": [
+    "Choose and state a positive direction.",
+    "Resolve: the component next to the angle uses cos, the one opposite uses sin.",
+    "Add components along each direction separately; recombine with Pythagoras and tan if a resultant is needed.",
+    "For momentum and velocity changes, subtract with signs: a rebound means the velocity changes sign, so the change is larger than either speed.",
+    "Triangle of forces: arrows follow round head-to-tail and the triangle closes for equilibrium."
+   ],
+   "example": {
+    "problem": "A 0.20 kg ball hits a wall at 8.0 m s⁻¹ and rebounds at 6.0 m s⁻¹ along the same line. Find the change in momentum.",
+    "solution": [
+     "Take towards the wall as positive.",
+     "Initial p = 0.20 × 8.0 = +1.6 kg m s⁻¹; final p = 0.20 × (−6.0) = −1.2 kg m s⁻¹.",
+     "Δp = −1.2 − 1.6 = −2.8 kg m s⁻¹, so the magnitude is 2.8 kg m s⁻¹, directed away from the wall."
+    ],
+    "answer": "2.8 kg m s⁻¹"
+   },
+   "traps": [
+    "Subtracting speeds (0.4 kg m s⁻¹) instead of adding for a rebound",
+    "Swapping sin and cos",
+    "Adding magnitudes of forces at an angle"
+   ]
+  },
+  {
+   "id": "plan",
+   "title": "Planning an experiment",
+   "what": "Describing a method that would actually work and analysing its results. Six-mark Paper 2 questions are levelled: every strand must be present for Level 3.",
+   "spot": [
+    "'Describe how an experiment can be carried out…'",
+    "'Plan an experiment…'",
+    "An asterisk (*) on the question number",
+    "'…and how the data can be analysed'"
+   ],
+   "steps": [
+    "Diagram: labelled, showing how the apparatus connects.",
+    "Measurements: name the instrument for each quantity (micrometer for diameter, metre rule for length, light gates for short times).",
+    "Variables: what you change (and the range), what you measure, what you keep constant.",
+    "Procedure: repeat readings and take means; take enough values (at least 5–6) over a wide range.",
+    "Safety: one specific risk and precaution for this set-up.",
+    "Analysis: the straight-line graph you'd plot and how its gradient or intercept gives the answer (use the linearising method).",
+    "Uncertainty: if asked, how you'd estimate it (worst line, or percentage uncertainties)."
+   ],
+   "example": {
+    "problem": "Outline a plan to find the resistivity of a metal wire.",
+    "solution": [
+     "Diagram: wire taped to a metre rule; crocodile clip contacts; ammeter in series, voltmeter across the length used.",
+     "Measure the diameter with a micrometer at several places and take the mean; A = πd²/4.",
+     "Vary the length L between clips (e.g. 10 cm to 80 cm); record V and I for each, R = V/I.",
+     "Keep current small and switch off between readings so the wire doesn't heat up (temperature changes resistance; also a burn risk).",
+     "Plot R against L: straight line through origin, gradient = ρ/A, so ρ = gradient × A."
+    ],
+    "answer": "ρ = gradient × A"
+   },
+   "traps": [
+    "No analysis section (caps you at Level 2)",
+    "'Wear goggles' with no link to the actual hazard",
+    "Naming 'a ruler' for a diameter",
+    "Describing the control variable without saying how it's kept constant"
+   ]
+  },
+  {
+   "id": "uncertainty",
+   "title": "Uncertainties and consistency",
+   "what": "Calculating absolute and percentage uncertainties, combining them, finding the uncertainty in a gradient, and deciding whether a result agrees with an accepted value.",
+   "spot": [
+    "Values given as 'x ± y'",
+    "'Calculate the percentage uncertainty in…'",
+    "'Is the result consistent with…'",
+    "Error bars on a graph"
+   ],
+   "steps": [
+    "Percentage uncertainty = absolute uncertainty / value × 100%.",
+    "Multiplying or dividing: add the percentage uncertainties.",
+    "Powers: multiply the percentage uncertainty by the power (d² doubles it). Constants such as π add nothing.",
+    "Gradient: uncertainty = |best gradient − worst gradient|, where the worst line is the steepest or shallowest line still passing through all error bars.",
+    "Consistency: the result agrees if the accepted value lies within value ± absolute uncertainty; or compare percentage difference with percentage uncertainty."
+   ],
+   "example": {
+    "problem": "A wire's diameter is 0.50 ± 0.01 mm, its length 80.0 ± 0.1 cm and its resistance has a 3% uncertainty. Find the percentage uncertainty in the resistivity ρ = RA/L.",
+    "solution": [
+     "Diameter: 0.01 / 0.50 = 2%; area ∝ d², so 4%.",
+     "Length: 0.1 / 80.0 = 0.125%.",
+     "Resistance: 3%.",
+     "Total = 4 + 0.125 + 3 ≈ 7%."
+    ],
+    "answer": "About 7%"
+   },
+   "traps": [
+    "Adding absolute uncertainties of quantities with different units",
+    "Not doubling for a square",
+    "Calling a result 'accurate' because the uncertainty is small (that's precision)"
+   ]
+  },
+  {
+   "id": "evaluate",
+   "title": "Judging and deciding",
+   "what": "Using a calculation or data to make a decision: is a claim true, is it enough, which option is better. The final mark is for a conclusion that matches your number.",
+   "spot": [
+    "'Decide whether…', 'Is the student correct?', 'Determine whether… is enough'",
+    "A claim or target value in the stem"
+   ],
+   "steps": [
+    "Calculate the deciding quantity (show it).",
+    "Compare it explicitly with the threshold or claim ('2.3 s is more than 2.0 s').",
+    "State the conclusion in the question's words. If your number is wrong but the conclusion follows from it, you usually still get the conclusion mark (ecf).",
+    "If uncertainties are given, include them in the comparison."
+   ],
+   "example": {
+    "problem": "A 700 W heater must supply 100 kJ. Is 2 minutes long enough?",
+    "solution": [
+     "Energy in 2 minutes = 700 × 120 = 84 kJ.",
+     "84 kJ is less than 100 kJ.",
+     "So 2 minutes is not long enough (it needs about 143 s)."
+    ],
+    "answer": "No"
+   },
+   "traps": [
+    "Giving 'yes' or 'no' with no calculation",
+    "A conclusion that contradicts your own number",
+    "Forgetting to convert minutes to seconds"
+   ]
+  },
+  {
+   "id": "energy",
+   "title": "Energy chains",
+   "what": "Following energy from one store to another and equating them: GPE to KE, electrical work eV to KE, work done against friction, elastic energy to KE.",
+   "spot": [
+    "Falling, swinging, sliding or launched objects",
+    "Electrons accelerated through a p.d.",
+    "'Assume no energy is lost'",
+    "De Broglie wavelength of an accelerated particle"
+   ],
+   "steps": [
+    "Identify the start store and end store (and any losses).",
+    "Write energy before = energy after (+ losses).",
+    "Cancel mass if it appears on both sides.",
+    "Solve for the unknown, then continue the chain if needed (e.g. speed → momentum → wavelength)."
+   ],
+   "example": {
+    "problem": "An electron is accelerated from rest through 150 V. Find its de Broglie wavelength. (e = 1.60 × 10⁻¹⁹ C, m = 9.11 × 10⁻³¹ kg, h = 6.63 × 10⁻³⁴ J s)",
+    "solution": [
+     "eV = ½mv²: v = √(2eV/m) = √(2 × 1.60 × 10⁻¹⁹ × 150 / 9.11 × 10⁻³¹) = 7.26 × 10⁶ m s⁻¹",
+     "p = mv = 9.11 × 10⁻³¹ × 7.26 × 10⁶ = 6.61 × 10⁻²⁴ kg m s⁻¹",
+     "λ = h/p = 6.63 × 10⁻³⁴ / 6.61 × 10⁻²⁴ = 1.0 × 10⁻¹⁰ m"
+    ],
+    "answer": "1.0 × 10⁻¹⁰ m"
+   },
+   "traps": [
+    "Using eV in electronvolts as if it were joules",
+    "Forgetting the square root",
+    "Using the p.d. instead of the energy"
+   ]
+  },
+  {
+   "id": "show-that",
+   "title": "Show-that questions",
+   "what": "The answer is printed, so the marks are for the working. About half the mark schemes give the final value no mark at all.",
+   "spot": [
+    "'Show that… is about…'",
+    "A value printed in the question"
+   ],
+   "steps": [
+    "Write the equation and the substitution with every number visible.",
+    "Calculate your own value to at least one more significant figure than printed (3.39 for 'about 3.4').",
+    "If you can't get it, use the printed value in later parts: it's given so you can carry on."
+   ],
+   "example": {
+    "problem": "Show that the resistance of a 2.0 m wire of cross-sectional area 3.1 × 10⁻⁷ m² and resistivity 1.7 × 10⁻⁸ Ω m is about 0.11 Ω.",
+    "solution": [
+     "R = ρL/A = 1.7 × 10⁻⁸ × 2.0 / 3.1 × 10⁻⁷",
+     "R = 0.1097 Ω, which is about 0.11 Ω"
+    ],
+    "answer": "0.1097 Ω"
+   },
+   "traps": [
+    "Writing only '= 0.11 Ω'",
+    "Working backwards from the printed value",
+    "Giving the same number of s.f. as printed"
+   ]
+  },
+  {
+   "id": "definition",
+   "title": "Definitions that score",
+   "what": "Recall questions where one precise word earns or loses the mark.",
+   "spot": [
+    "'Define…', 'State what is meant by…'",
+    "1–2 marks, no data"
+   ],
+   "steps": [
+    "Learn the exact form with its qualifier.",
+    "Include every part (a law often has two conditions).",
+    "Don't add a second, contradictory version."
+   ],
+   "example": {
+    "problem": "State what is meant by the work function of a metal.",
+    "solution": [
+     "The minimum energy needed to remove an electron from the surface of the metal."
+    ],
+    "answer": "Must include 'minimum'"
+   },
+   "traps": [
+    "Missing 'minimum', 'constant', 'perpendicular' or 'about any point'",
+    "F = ma for Newton's second law instead of rate of change of momentum",
+    "Amplitude instead of displacement"
+   ]
+  },
+  {
+   "id": "units",
+   "title": "Base units and homogeneity",
+   "what": "Expressing a unit in base units (kg, m, s, A) or checking that an equation's two sides match.",
+   "spot": [
+    "'Show that the unit of … is …'",
+    "'Determine the S.I. base units of…'",
+    "A constant in an unfamiliar equation"
+   ],
+   "steps": [
+    "Write the defining equation of the unit.",
+    "Replace each derived unit with base units step by step.",
+    "Collect powers."
+   ],
+   "example": {
+    "problem": "Express the volt in S.I. base units.",
+    "solution": [
+     "V = W/Q = J / (A s)",
+     "J = N m = kg m s⁻² × m = kg m² s⁻²",
+     "V = kg m² s⁻² / (A s) = kg m² s⁻³ A⁻¹"
+    ],
+    "answer": "kg m² s⁻³ A⁻¹"
+   },
+   "traps": [
+    "Leaving a derived unit (N, J) in the answer",
+    "Using C as a base unit (it is A s)"
+   ]
+  },
+  {
+   "id": "estimate",
+   "title": "Estimates",
+   "what": "Calculating with sensible assumed values. Marked on reasonable assumptions and the right order of magnitude.",
+   "spot": [
+    "'Estimate…'",
+    "Missing data you're expected to supply"
+   ],
+   "steps": [
+    "State each assumed value.",
+    "Use simple round numbers.",
+    "Give the answer to 1 or 2 s.f."
+   ],
+   "example": {
+    "problem": "Estimate the kinetic energy of a sprinter.",
+    "solution": [
+     "Assume mass 70 kg and speed 10 m s⁻¹.",
+     "KE = ½ × 70 × 10² = 3500 J ≈ 4 × 10³ J"
+    ],
+    "answer": "About 4 kJ"
+   },
+   "traps": [
+    "Unstated assumptions",
+    "Silly values (a person of 7 kg)"
+   ]
+  },
+  {
+   "id": "given-formula",
+   "title": "Using an equation you've never seen",
+   "what": "The question gives a formula not on the data sheet. You don't need to know where it comes from: treat it like any other equation, often combined with linearising.",
+   "spot": [
+    "'The relationship between… is given by…'",
+    "Unfamiliar symbols defined in the stem"
+   ],
+   "steps": [
+    "Match every symbol to a quantity in the question.",
+    "Substitute in SI units, or rearrange to linear form if a graph is involved.",
+    "Check the units of the answer against what the question expects."
+   ],
+   "example": {
+    "problem": "The period T of a mass m on a spring of stiffness k is T = 2π√(m/k). What should be plotted to get a straight line through the origin, and what is the gradient?",
+    "solution": [
+     "Square: T² = (4π²/k) × m.",
+     "Plot T² against m: gradient = 4π²/k, so k = 4π²/gradient."
+    ],
+    "answer": "T² against m; gradient 4π²/k"
+   },
+   "traps": [
+    "Freezing because the formula is unfamiliar",
+    "Plotting T against m (not a straight line)"
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "claim": "Harder parts stack more moves on the same physics",
+   "verdict": "Holds",
+   "detail": "0.9 → 1.4 → 2.0 moves and 1.3 → 2.2 → 3.4 steps per written part from easy to hard."
+  },
+  {
+   "claim": "Our easy / standard / hard ratings match reality",
+   "verdict": "Holds",
+   "detail": "Examiners rated 14% of easy parts poorly answered, 32% of standard and 46% of hard; 'well answered' falls from 57% to 2%."
+  },
+  {
+   "claim": "Chaining equations marks the jump to hard",
+   "verdict": "Holds, smaller",
+   "detail": "4% → 15% → 25% of parts, not the 8% → 51% the first keyword estimate suggested."
+  },
+  {
+   "claim": "Linearising is the biggest jump",
+   "verdict": "Revised",
+   "detail": "It does rise (1% → 15%) but appears in only about 30 parts. Explanations, chaining, planning and given formulae are bigger markers of hard parts."
+  },
+  {
+   "claim": "Explanations peak at standard",
+   "verdict": "Wrong",
+   "detail": "Cause → effect explanations rise steadily to 26% of hard parts, the most common hard move."
+  },
+  {
+   "claim": "Hard parts come after part (a)",
+   "verdict": "Mostly",
+   "detail": "51 of 72 hard parts are (b) onwards or whole six-markers, but 15 are an (a)."
+  },
+  {
+   "claim": "Circuits hold the hardest marks",
+   "verdict": "Partly",
+   "detail": "True for our difficulty ratings, but examiners report more poor answers on evaluation, drag, Newton's laws, moments and refraction."
+  },
+  {
+   "claim": "Show-that working is where the marks are",
+   "verdict": "Holds",
+   "detail": "Show-that parts are the best answered move (only 8% poorly answered) but 33 near-miss references say the final value alone scores nothing."
+  }
+ ],
+ "examiner_view": [
+  "Ratio and scaling reasoning is the most poorly answered move (48% of rated parts), even though we rated many of those parts standard.",
+  "Planning (41%), uncertainty (40%), explanations and judging data (36% each) come next.",
+  "Show-that (8%), rearranging (18%), reading graphs (19%) and linearising (20%) are the best handled: when you know the move, candidates usually manage it.",
+  "Best-answered topics: resistance, wave–particle duality, density and pressure, photons, collisions and kinematics graphs."
+ ]
+}

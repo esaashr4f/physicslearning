@@ -1,0 +1,322 @@
+{
+ "1": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify ampere as the SI base unit."
+ },
+ "2": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Constructive interference needs whole-wavelength path difference."
+ },
+ "3": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Double length doubles R; carrier density is a material property."
+ },
+ "4": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Crossed polariser blocks at 90\u00b0, transmits again at 180\u00b0."
+ },
+ "5": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Combine series and parallel parts of the network."
+ },
+ "6": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Adjacent loops of stationary wave are in antiphase."
+ },
+ "7": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Higher intensity raises emission rate, not electron energy."
+ },
+ "8": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Gap similar to wavelength: microwaves diffract."
+ },
+ "9": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Newton third law pairs act on different bodies."
+ },
+ "10": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Total momentum is conserved without external forces."
+ },
+ "11": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Choose junction where current in equals current out."
+ },
+ "12": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Double-slit does not demonstrate refraction."
+ },
+ "13": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Fringe spacing from six spacings, mm converted, then \u03bb = ax/D."
+ },
+ "14": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Wavelength twice node spacing, then f = v/\u03bb."
+ },
+ "15": {
+  "moves": [
+   "units",
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "EPE gained on compression from \u00bdkx\u00b2."
+ },
+ "16": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Brittle material: linear graph to fracture without plastic region."
+ },
+ "17": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Pick correct statement of emf."
+ },
+ "18": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Critical angle from n; compare with incidence to predict TIR."
+ },
+ "19": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Add percentage uncertainties of V, I and t."
+ },
+ "20": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Upthrust equals weight of displaced water."
+ },
+ "21(a)": {
+  "moves": [
+   "show-that",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Combine three cells' emf and internal resistance; substitute terminal p.d. into P = IV."
+ },
+ "21(b)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Large internal resistance wastes power as heat, leaving less for bulb."
+ },
+ "22(a)": {
+  "moves": [
+   "vectors",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Horizontal component of pull for work, then divide by time."
+ },
+ "22(b)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Weight times perpendicular distance, with N m unit required."
+ },
+ "22(c)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Bending knees reduces perpendicular distance, so moment and spinal force smaller."
+ },
+ "23(a)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Circuit with meters, record temperature, V and I during cooling; R = V/I."
+ },
+ "23(b)": {
+  "moves": [
+   "graph-read",
+   "chain",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Read thermistor R and LED threshold, potential divider shows LED p.d. exceeds it."
+ },
+ "24(a)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Drag rises with speed until balancing weight; zero resultant gives constant velocity."
+ },
+ "24(b)": {
+  "moves": [
+   "energy",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Equate GPE lost to KE and solve for speed."
+ },
+ "24(c)": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Mean time, then rearrange s = \u00bdgt\u00b2 for g."
+ },
+ "24(d)": {
+  "moves": [
+   "plan",
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Electronic timing or greater height reduces timing uncertainty."
+ },
+ "24(e)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Sketch accelerating fall then decelerating rise to lower height."
+ },
+ "25(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "KEmax is the maximum kinetic energy of photoelectrons."
+ },
+ "25(b)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Photons absorbed one-to-one, electrons emitted, charge falls, leaf drops."
+ },
+ "25(c)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Photon energy below work function so no electron escapes."
+ },
+ "26(a)": {
+  "moves": [
+   "uncertainty",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Tube excludes ambient light so onset of emission is judged accurately."
+ },
+ "26(b)": {
+  "moves": [
+   "graph-read",
+   "linearise"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Gradient of V against f is h/e; multiply by e."
+ },
+ "26(c)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Percentage difference from accepted value."
+ },
+ "26(d)": {
+  "moves": [
+   "chain",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Blue photon energy, then photon rate; compare with red to judge claim."
+ }
+}

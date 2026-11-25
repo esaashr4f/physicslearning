@@ -1,0 +1,356 @@
+{
+ "1": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Kirchhoff's first law expresses conservation of charge."
+ },
+ "2": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Pythagoras for perpendicular forces; balancing force opposite their resultant."
+ },
+ "3": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Choose a-t graph starting at g and decaying to zero."
+ },
+ "4": {
+  "moves": [
+   "ratio",
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Add energies, then speed scales with root of KE ratio."
+ },
+ "5": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Period from frequency; match trace divisions to time-base."
+ },
+ "6": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Stationary wave amplitude varies between nodes and antinodes."
+ },
+ "7": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Combine \u03bb = h/p with p from kinetic energy."
+ },
+ "8": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Same material and area so drift velocity proportional to current share."
+ },
+ "9": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Force constant from extra weight over extension in metres."
+ },
+ "10": {
+  "moves": [
+   "vectors",
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Perpendicular distance shrinks with cosine as beam rises; pick matching graph."
+ },
+ "11": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Floating object: upthrust equals weight."
+ },
+ "12": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Impulse equals force times time."
+ },
+ "13": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Reaction time from constant section; braking distance as area under slope."
+ },
+ "14": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "At rest drag is zero, upthrust exceeds weight so acceleration upward."
+ },
+ "15": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Moments balance to locate cable position range."
+ },
+ "16": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Unit of charge is the coulomb."
+ },
+ "17": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Compare base units; work and moment both N m."
+ },
+ "18": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Closed tube fundamental is quarter wavelength, then f = v/\u03bb."
+ },
+ "19": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Interpret stress-strain graph shape as elastic behaviour."
+ },
+ "20": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Ions carry current in electrolytes; conventional current from positive."
+ },
+ "21(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Recall momentum and kinetic energy conserved in elastic collision."
+ },
+ "21(b)": {
+  "moves": [
+   "vectors",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Zero total momentum conserved, so skateboarder moves opposite with smaller speed."
+ },
+ "22(a)": {
+  "moves": [
+   "units",
+   "show-that"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Divide newton base units by velocity squared units."
+ },
+ "22(b)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Percentage uncertainty doubles for v\u00b2, add F's, convert to absolute."
+ },
+ "23(a)(i)": {
+  "moves": [
+   "vectors",
+   "graph-draw"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Draw resultant tail-to-head on vector diagram."
+ },
+ "23(a)(ii)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Cosine rule or scale measurement gives resultant speed."
+ },
+ "23(b)(i)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Stress from force over area, strain from E, extension from strain."
+ },
+ "23(b)(ii)": {
+  "moves": [
+   "graph-read",
+   "vectors",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Identify accelerating and decelerating phases; tension above or below weight."
+ },
+ "24(a)(i)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Non-zero intercept implies systematic error such as lead resistance."
+ },
+ "24(a)(ii)": {
+  "moves": [
+   "plan",
+   "linearise"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Gradient of R against L is \u03c1/A; measure diameter with micrometer."
+ },
+ "24(b)(i)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Divide total power by power per mat."
+ },
+ "24(b)(ii)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Resistivity from R = \u03c1L/A."
+ },
+ "25(a)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Internal resistance adds to total resistance, so current is less."
+ },
+ "25(b)": {
+  "moves": [
+   "graph-read",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Read lamp p.d.s and currents from graph, combine parallel and series resistances."
+ },
+ "26(a)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Graphs show constant phase difference."
+ },
+ "26(b)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Read period from graph; frequency as reciprocal."
+ },
+ "26(c)": {
+  "moves": [
+   "graph-read",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Intensity proportional to amplitude squared; ratio of amplitudes from graph."
+ },
+ "26(d)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Add the two displacements read at the given time."
+ },
+ "27(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "State the principle of superposition."
+ },
+ "27(b)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Path differences give constructive and destructive interference along road."
+ },
+ "27(c)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Fringe spacing from car speed and time, then \u03bb = ax/D."
+ },
+ "28(a)": {
+  "moves": [
+   "graph-read",
+   "explain-chain",
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "One-to-one photon interaction; KEmax = hc/\u03bb \u2212 \u03c6 falls to zero at threshold."
+ },
+ "28(b)(i)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Photon energy from hc/\u03bb."
+ },
+ "28(b)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Power over photon energy gives photon rate."
+ }
+}

@@ -1,0 +1,326 @@
+{
+ "1": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Rearrange I = Anev for drift velocity."
+ },
+ "2": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Perpendicular separation of angled forces via trig, then torque."
+ },
+ "3": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Reduce series and parallel parts of network stepwise."
+ },
+ "4": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall UV wavelength order of magnitude."
+ },
+ "5": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Wavelength from pictured pattern and pipe length, then f = v/\u03bb."
+ },
+ "6": {
+  "moves": [
+   "chain",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Photon energy hf minus work function converted from eV."
+ },
+ "7": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "De Broglie wavelength with speed as 5% of c."
+ },
+ "8": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Highest maximum stress on curves gives greatest UTS."
+ },
+ "9": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Express pressure with giga prefix."
+ },
+ "10": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Withdrawn item, not marked."
+ },
+ "11": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Fall distance from heights, then v\u00b2 = 2as."
+ },
+ "12": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Intensity controls emission rate above threshold."
+ },
+ "13": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Pythagoras and tangent give balancing force size and angle."
+ },
+ "14": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identical elastic head-on collision: each rebounds with reversed velocity."
+ },
+ "15": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Add mass uncertainty to three times side uncertainty."
+ },
+ "16": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Steepest v-t section gives greatest rate of change of momentum."
+ },
+ "17": {
+  "moves": [
+   "graph-read",
+   "estimate",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Estimate area under force-time graph with ms converted."
+ },
+ "18": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Current from emf over total resistance."
+ },
+ "19": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Pick correct power definition."
+ },
+ "20": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Intensity proportional to amplitude squared, so factor four."
+ },
+ "21(a)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Forces differ in type and act on same body, so not a third-law pair."
+ },
+ "21(b)(i)": {
+  "moves": [
+   "vectors",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Mass from weight, then resultant upward force equals ma for reaction."
+ },
+ "21(b)(ii)": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Rearrange s = \u00bdat\u00b2 to find time."
+ },
+ "21(c)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Constant velocity means zero resultant so reading equals weight."
+ },
+ "22(a)(i)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Residual liquid would change effective refractive index."
+ },
+ "22(a)(ii)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify light wavelength as a control variable."
+ },
+ "22(b)": {
+  "moves": [
+   "uncertainty",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Absolute uncertainty gives range overlapping two types; identification not secure."
+ },
+ "22(c)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Define critical angle."
+ },
+ "22(c)(ii)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Ray box method to locate critical case, tracing rays and measuring angle."
+ },
+ "22(c)(iii)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "n = 1/sinC."
+ },
+ "23(a)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Input power from VI, then efficiency as output over input."
+ },
+ "23(b)": {
+  "moves": [
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Compute time or energy needed and compare to three minutes."
+ },
+ "23(c)(i)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Reflection from metal walls; incident and reflected waves superpose."
+ },
+ "23(c)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Antinodes have maximum amplitude so most heating; nodes least."
+ },
+ "24(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "State principle of moments with equilibrium condition."
+ },
+ "24(b)(i)": {
+  "moves": [
+   "show-that",
+   "chain",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Moments give spring tension, then k from extension in metres."
+ },
+ "24(b)(ii)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Elastic energy \u00bdkx\u00b2 with mm converted."
+ },
+ "24(c)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Same tension but larger moment arm, so larger force needed."
+ },
+ "25(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Oscillations perpendicular to propagation and confined to one plane."
+ },
+ "25(b)(i)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Sketch cos\u00b2-shaped intensity with maxima 180\u00b0 apart."
+ },
+ "25(b)(ii)": {
+  "moves": [
+   "vectors",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Receiver detects only a component of wave, lowering intensity."
+ }
+}

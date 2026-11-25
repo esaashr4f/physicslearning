@@ -1,0 +1,284 @@
+{
+ "1(a)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Circumference over period with radius in metres."
+ },
+ "1(b)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Same speed but velocity direction roughly reversed half an orbit later."
+ },
+ "1(c)(i)": {
+  "moves": [
+   "show-that",
+   "units",
+   "ratio"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Convert 30 minutes to seconds and form ratio of periods."
+ },
+ "1(c)(ii)": {
+  "moves": [
+   "given-formula",
+   "ratio"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Use given r\u00b3 \u221d T\u00b2: scale radius by cube root of period ratio squared."
+ },
+ "2(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Newton's second law in momentum form."
+ },
+ "2(b)(i)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Impulse = m\u0394v with N s unit."
+ },
+ "2(b)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "F = impulse/time."
+ },
+ "2(c)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Perfectly elastic means KE conserved."
+ },
+ "2(c)(ii)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Momentum conservation with signed rebound velocity; solve for added mass."
+ },
+ "3": {
+  "moves": [
+   "plan",
+   "linearise",
+   "given-formula",
+   "graph-read",
+   "uncertainty"
+  ],
+  "scaffolded": true,
+  "steps": 5,
+  "why": "Timing method; gradient of t vs \u221ah is \u221a(2/g); worst line, % in g twice gradient's."
+ },
+ "4(a)(i)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Calipers/micrometer, repeat at several positions and average."
+ },
+ "4(a)(ii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Prism volume from triangle area \u00d7 thickness, then density."
+ },
+ "4(b)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Centre of gravity definition."
+ },
+ "4(b)(ii)": {
+  "moves": [
+   "show-that",
+   "ratio"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Construct medians on scale drawing; scale measured distance to real size."
+ },
+ "4(c)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Zero resultant force and zero resultant moment about any point."
+ },
+ "4(c)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Weight from mass, then moments about support for holding force."
+ },
+ "5(a)(i)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "f = c/\u03bb expressed in THz."
+ },
+ "5(a)(ii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Speed from n, frequency unchanged, wavelength = v/f."
+ },
+ "5(b)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Angles measured from the normal."
+ },
+ "5(b)(ii)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Ray-box method: narrow beam, outline block, mark rays, join, measure with protractor."
+ },
+ "5(b)(iii)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Snell's law for refraction angle."
+ },
+ "5(b)(iv)": {
+  "moves": [
+   "show-that",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Find incidence angle at Q by geometry, critical angle from 1/n, compare to judge TIR."
+ },
+ "5(b)(v)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Reflect at Q then refract out bending away from normal."
+ },
+ "6(a)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Period from trace divisions \u00d7 timebase, then f = 1/T."
+ },
+ "6(b)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Draw node at closed end, antinode at open end."
+ },
+ "6(c)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Closed tube next harmonic is three times fundamental."
+ },
+ "7(a)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "No current so no lost volts; reading equals emf."
+ },
+ "7(a)(ii)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "r = lost volts / current."
+ },
+ "7(a)(iii)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Combine parallel groups and add in series."
+ },
+ "7(b)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "W = I\u00b2rt."
+ },
+ "7(b)(ii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Q = It, then divide by e."
+ },
+ "7(b)(iii)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Currents split I/2 and I/3; drift speed \u221d current gives 1.5."
+ },
+ "7(c)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Removing a parallel branch raises resistance so current falls."
+ },
+ "7(c)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Smaller current means fewer lost volts so terminal pd rises."
+ },
+ "8": {
+  "moves": [
+   "plan",
+   "estimate"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Describe electron diffraction setup and rings; estimate car mass/speed, compare \u03bb = h/mv."
+ }
+}

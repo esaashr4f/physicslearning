@@ -1,0 +1,253 @@
+{
+ "1(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Coherent means constant phase difference."
+ },
+ "1(b)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Subtract two distances for path difference."
+ },
+ "1(b)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Minimum corresponds to \u03c0 phase difference."
+ },
+ "1(b)(iii)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "First minimum path difference is \u03bb/2, so double it."
+ },
+ "1(c)(i)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Period from divisions \u00d7 timebase, then f = 1/T."
+ },
+ "1(c)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "v = f\u03bb with kHz value."
+ },
+ "2(a)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Area under force\u2013extension graph is work done/energy."
+ },
+ "2(a)(ii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Estimate area under curve by counting squares with square value."
+ },
+ "2(a)(iii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Energy lost as heat in rubber during cycle."
+ },
+ "2(b)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Stress = F/A."
+ },
+ "2(b)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Strain = stress/E."
+ },
+ "2(b)(iii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Extension = strain \u00d7 length."
+ },
+ "2(b)(iv)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "E = \u00bdFx."
+ },
+ "2(c)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Doubling diameter quadruples area \u2192 extension quarters \u2192 energy quarters."
+ },
+ "3(a)": {
+  "moves": [
+   "definition",
+   "vectors",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Compute signed momenta and KE before/after each collision; classify elastic/inelastic."
+ },
+ "3(b)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Impulse = triangle area of F\u2013t graph, then divide by mass."
+ },
+ "4(a)(i)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Circle area from diameter."
+ },
+ "4(a)(ii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Volume, mass from density, then weight."
+ },
+ "4(b)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Displaced water mass equals weight; volume from density; depth = volume/area."
+ },
+ "4(c)": {
+  "moves": [
+   "ratio",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Same weight displaced, less dense oil \u2192 larger volume \u2192 deeper; depth \u221d 1/\u03c1."
+ },
+ "5(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Apply Kirchhoff's second law, E = V + Ir, rearranged."
+ },
+ "5(b)": {
+  "moves": [
+   "linearise"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "For V = E \u2212 Ir, intercept is E and gradient is \u2212r."
+ },
+ "5(c)(i)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Read V at given current, R = V/I."
+ },
+ "5(c)(ii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Power from V and I, then energy over time in seconds."
+ },
+ "5(c)(iii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Q = It with unit."
+ },
+ "6": {
+  "moves": [
+   "plan",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Design LDR potential divider; choose resistor values meeting thresholds; explain variable-resistor adjustment."
+ },
+ "7(a)(i)": {
+  "moves": [
+   "show-that",
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Gradient from large triangle with powers of ten."
+ },
+ "7(a)(ii)": {
+  "moves": [
+   "linearise"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Gradient equals hc/e so h = gradient \u00d7 e/c."
+ },
+ "7(a)(iii)": {
+  "moves": [
+   "graph-draw",
+   "uncertainty"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Draw worst acceptable line through error bars."
+ },
+ "7(a)(iv)": {
+  "moves": [
+   "uncertainty",
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Worst-line gradient, difference from best, percentage uncertainty."
+ },
+ "7(b)(i)": {
+  "moves": [
+   "chain",
+   "energy",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Photon energy hc/\u03bb, \u03c6 from eV to J, KEmax = difference."
+ },
+ "7(b)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Intensity alters photon rate not photon energy, so KEmax unchanged."
+ }
+}

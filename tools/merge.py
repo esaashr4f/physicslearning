@@ -18,3 +18,27 @@ for f in sorted(glob.glob(S+'/regions/p*.json')):
     reg[os.path.basename(f)[:-5]]=json.load(open(f))
 json.dump(reg,open(out+'/regions.json','w'),separators=(',',':'))
 print(len(qs),'parts', sum(1 for q in qs if q['spec_points']),'mapped', os.path.getsize(out+'/questions.json')//1024,'KB questions', os.path.getsize(out+'/regions.json')//1024,'KB regions')
+
+# ---- near misses, examiners' reports, moves ----
+nm={'items':[],'leniencies':[],'general':[]}
+for f in sorted(glob.glob(S+'/nearmiss/p*.json')):
+    d=json.load(open(f)); p=int(os.path.basename(f)[1])
+    for it in d.get('items',[]): it['paper']=p; nm['items'].append(it)
+    for it in d.get('leniencies',[]): it['paper']=p; nm['leniencies'].append(it)
+    for g in d.get('general',[]):
+        if g not in nm['general']: nm['general'].append(g)
+if nm['items']:
+    json.dump(nm,open(out+'/nearmiss.json','w'),ensure_ascii=False,separators=(',',':'))
+ex={}
+for f in sorted(glob.glob(S+'/ercomments/p*.json')):
+    ex[os.path.basename(f)[:-5]]=json.load(open(f))
+if ex: json.dump(ex,open(out+'/examiners.json','w'),ensure_ascii=False,separators=(',',':'))
+mv={os.path.basename(f)[:-5]:json.load(open(f)) for f in glob.glob(S+'/moves/p*.json')}
+if mv:
+    qs=json.load(open(out+'/questions.json'))
+    for q in qs:
+        m=mv.get(f"p{q['paper']}-{q['slug']}",{}).get(q['q'])
+        if m: q['moves']=m.get('moves',[]); q['scaffolded']=m.get('scaffolded'); q['steps']=m.get('steps'); q['moves_why']=m.get('why','')
+    with open(out+'/questions.json','w') as fh:
+        fh.write('[\n'+',\n'.join(json.dumps(x,ensure_ascii=False) for x in qs)+'\n]\n')
+print('nearmiss',len(nm['items']),'examiner reports',len(ex),'moves files',len(mv))

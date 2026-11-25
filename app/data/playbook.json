@@ -346,11 +346,11 @@
   },
   {
    "title": "Difficulty only creeps up",
-   "body": "Section B and Paper 2 get only slightly harder towards the end. The hardest parts are the six-mark answers and long multi-step calculations, not simply the last question, so don't save the end of the paper for last if you're short of time."
+   "body": "Section B and Paper 2 get only slightly harder towards the end. The hardest parts are the six-mark answers and long multi-step calculations, and 15 of the 72 hardest parts are an opening (a), so don't save effort for the last question."
   },
   {
    "title": "Circuits are where hard marks hide",
-   "body": "Potential dividers are the single hardest topic, and circuit topics together (drift velocity, resistance, resistivity, internal resistance, potential dividers) make up about a quarter of the hardest parts. Uncertainty calculations are the next hardest."
+   "body": "By our difficulty ratings, potential dividers and other circuit topics hold many of the hardest parts. The examiners' reports add a different angle: the topics most often 'poorly answered' were evaluating experiments, drag and terminal velocity, Newton's laws and momentum, moments and equilibrium, and refraction and wave basics, while circuits sat in the middle. Revise both lists."
   },
   {
    "title": "Both papers test the same topics in the same session",
@@ -420,5 +420,115 @@
    "title": "Familiar settings recur",
    "body": "Balls and projectiles, sound in tubes, cars and stopping, trolleys colliding, floating objects, springs and metal plates in the photoelectric effect appear in almost every session. Unfamiliar settings are usually these same physics ideas in new clothes."
   }
- ]
+ ],
+ "moves": {
+  "rows": [
+   [
+    "Cause → effect explanation",
+    4,
+    17,
+    26
+   ],
+   [
+    "Chain two or more equations",
+    4,
+    15,
+    25
+   ],
+   [
+    "Plan an experiment",
+    6,
+    7,
+    21
+   ],
+   [
+    "Read a graph",
+    9,
+    15,
+    18
+   ],
+   [
+    "Linearise (choose what to plot)",
+    1,
+    5,
+    15
+   ],
+   [
+    "Vectors and directions",
+    4,
+    11,
+    15
+   ],
+   [
+    "Use an unfamiliar given formula",
+    0,
+    1,
+    12
+   ],
+   [
+    "Uncertainty",
+    2,
+    9,
+    12
+   ],
+   [
+    "Ratio and scaling",
+    1,
+    7,
+    11
+   ],
+   [
+    "Rearrange non-trivially",
+    3,
+    7,
+    11
+   ],
+   [
+    "Judge or decide from data",
+    0,
+    5,
+    8
+   ],
+   [
+    "Show that",
+    11,
+    11,
+    4
+   ],
+   [
+    "Definition",
+    14,
+    3,
+    1
+   ],
+   [
+    "Simple recall",
+    16,
+    7,
+    1
+   ]
+  ],
+  "notes": [
+   {
+    "title": "Hard means stacking moves",
+    "body": "Verified by reading every part: easy written parts need 0.9 moves and about 1.3 reasoning steps on average, standard 1.4 moves and 2.2 steps, hard 2.0 moves and 3.4 steps. The physics is the same AS content; the number of linked moves is what changes."
+   },
+   {
+    "title": "Explanations get harder, not easier",
+    "body": "Cause → effect explanations rise from 4% of easy parts to 26% of hard ones, making them the most common move in hard parts. Six-mark explanation questions and multi-link 'explain' parts are where they sit. (This corrects an earlier estimate that said explanations peaked at standard.)"
+   },
+   {
+    "title": "Unfamiliar formulae and planning appear almost only in hard parts",
+    "body": "A formula given in the question shows up in 12% of hard parts and almost never below. Planning an experiment jumps from 7% at standard to 21% at hard. Both are concentrated in Paper 2's six-mark questions."
+   },
+   {
+    "title": "Linearising is rarer than it looks, but decisive",
+    "body": "Only about 30 parts need you to choose or interpret what to plot (15% of hard parts). Since 2022 the six-mark graph questions usually give the equation, and since 2023 often the plotted graph too, so the skill tested is interpreting the gradient and intercept rather than inventing the plot."
+   },
+   {
+    "title": "The step up usually comes after part (a), but not always",
+    "body": "Of 72 hard parts, 25 are a (b), 15 a (c) and 11 are whole six-mark questions, but 15 are an (a). Don't assume the first part is always gentle."
+   }
+  ]
+ }
 }

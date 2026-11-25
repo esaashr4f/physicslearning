@@ -1,0 +1,349 @@
+{
+ "1": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Match quantities with correct units, e.g. strain unitless."
+ },
+ "2": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Accuracy is closeness to true value; choose value furthest from 9.81."
+ },
+ "3": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Top surface at mid-span of sagging slab is most compressed."
+ },
+ "4": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Area under force-time graph is impulse, not work."
+ },
+ "5": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Torque of couple then multiply by angle of one revolution for work."
+ },
+ "6": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify LDR in series with ammeter as monitoring circuit."
+ },
+ "7": {
+  "moves": [
+   "chain",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Power saving times hours in kWh, then times unit cost."
+ },
+ "8": {
+  "moves": [
+   "vectors",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Rearrange W = Fx cos\u03b8 and take inverse cosine."
+ },
+ "9": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Constant volume: area falls as length rises, so R scales with length squared."
+ },
+ "10": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Potential divider: voltmeter share proportional to resistance fraction at extremes."
+ },
+ "11": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Constructive interference needs path difference a whole number of wavelengths."
+ },
+ "12": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "sinC = 1/n so largest index gives smallest critical angle."
+ },
+ "13": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Combine P = Fv with drag proportional to v\u00b2 to give v cubed."
+ },
+ "14": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Energy = VIt with prefixes and hours converted to seconds."
+ },
+ "15": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Charge must be an integer multiple of e."
+ },
+ "16": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Resultant drawn tip-to-tail from start to finish."
+ },
+ "17": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Divide power base units by m\u00b2 for intensity units."
+ },
+ "18": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Recognise fall distance is to ball's bottom; rearrange s = \u00bdgt\u00b2."
+ },
+ "19": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Polarisable transverse EM wave with cm wavelength is microwaves."
+ },
+ "20": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Closed tube has node at closed end, antinode at open end."
+ },
+ "21(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "State zero resultant moment condition."
+ },
+ "21(b)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Newton third law pair of weight acts on Earth."
+ },
+ "21(b)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Weight and normal force act on same object so not a third-law pair."
+ },
+ "21(c)(i)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Resolve each cable tension vertically and add."
+ },
+ "21(c)(ii)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Weight equals vertical force; divide by g."
+ },
+ "21(c)(iii)": {
+  "moves": [
+   "ratio",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Rearrange Young modulus for extension; factors of tension and E cancel."
+ },
+ "22(a)": {
+  "moves": [
+   "graph-read",
+   "vectors",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Velocity as gradient; speed rises, direction reverses, rebound speed smaller."
+ },
+ "22(b)": {
+  "moves": [
+   "graph-read",
+   "show-that"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Read fall distance or time from graph, then suvat to impact speed."
+ },
+ "22(c)": {
+  "moves": [
+   "graph-read",
+   "show-that"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Draw tangent at bounce and compute its gradient."
+ },
+ "22(d)": {
+  "moves": [
+   "vectors",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Velocity change adds speeds due to reversal; momentum change over contact time."
+ },
+ "23(a)(i)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Wire resistance from per-length value, parallel combination, add internal, then current."
+ },
+ "23(a)(ii)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Compare power in internal resistance with total cell power."
+ },
+ "23(b)": {
+  "moves": [
+   "graph-read",
+   "explain-chain",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Read currents at 3 V and 6 V from graph to compare series and parallel totals."
+ },
+ "24(a)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Measure incidence and refraction angles to normal; Snell's law; accuracy improvement."
+ },
+ "24(b)(i)": {
+  "moves": [
+   "graph-draw",
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Draw best-fit line through f vs 1/L data and find gradient."
+ },
+ "24(b)(ii)": {
+  "moves": [
+   "linearise",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Combine v = f\u03bb and \u03bb = 2L to show gradient is v/2."
+ },
+ "24(b)(iii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Double the gradient for speed of sound."
+ },
+ "24(b)(iv)": {
+  "moves": [
+   "uncertainty",
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Suggest change making L larger to reduce percentage uncertainty."
+ },
+ "25(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Electron diffraction evidences wave behaviour."
+ },
+ "25(b)(i)": {
+  "moves": [
+   "show-that",
+   "energy",
+   "units",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Convert eV to joules, equate to \u00bdmv\u00b2, solve for speed."
+ },
+ "25(b)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "De Broglie wavelength from h over mv."
+ },
+ "25(c)": {
+  "moves": [
+   "explain-chain",
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "One photon per electron; energy conserved via hf = \u03c6 + KEmax; threshold condition."
+ }
+}

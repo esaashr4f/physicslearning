@@ -1,0 +1,247 @@
+{
+ "1(a)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Micrometer/calipers on diameter, repeat in orientations, average, halve."
+ },
+ "1(b)": {
+  "moves": [
+   "show-that",
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Mass difference over volume with g\u2192kg and cm\u00b3\u2192m\u00b3 conversions shown."
+ },
+ "1(c)": {
+  "moves": [
+   "show-that",
+   "chain"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Sphere volume from radius, then upthrust = \u03c1Vg."
+ },
+ "1(d)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Terminal velocity is gradient of straight section of s\u2013t graph."
+ },
+ "1(d)(ii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Draw tangent at given time and find gradient."
+ },
+ "1(e)": {
+  "moves": [
+   "given-formula",
+   "chain",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Drag = weight \u2212 upthrust, then given Stokes' law for \u03b7 with derived unit."
+ },
+ "2": {
+  "moves": [
+   "plan",
+   "linearise",
+   "given-formula"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Light-gate method varying M; plot 1/v\u00b2 vs M; Q from gradient, R from intercept."
+ },
+ "3(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Zero resultant force and zero resultant moment."
+ },
+ "3(b)(i)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Vertical force balance for weight of M, then divide by g."
+ },
+ "3(b)(ii)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Sum moments about A and equate to string force \u00d7 distance."
+ },
+ "4(a)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "mgh substitution."
+ },
+ "4(a)(ii)": {
+  "moves": [
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "GPE \u2192 KE gives impact speed."
+ },
+ "4(b)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Horizontal distance = speed \u00d7 time."
+ },
+ "4(b)(ii)": {
+  "moves": [
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Initial KE plus GPE lost gives final KE."
+ },
+ "4(b)(iii)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "tan\u207b\u00b9 of vertical over horizontal velocity components."
+ },
+ "5(a)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "v = c/n twice."
+ },
+ "5(b)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "sin C = 1/n."
+ },
+ "5(c)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Incidence 45\u00b0 exceeds critical angle so TIR at both faces; draw path."
+ },
+ "5(d)(i)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Critical angle from ratio of refractive indices."
+ },
+ "5(d)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Below critical angle, ray refracts into oil bending away from normal."
+ },
+ "6(a)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Electron wave nature, \u03bb comparable to atomic spacing \u2192 diffraction; random crystals \u2192 rings."
+ },
+ "6(b)": {
+  "moves": [
+   "energy",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Combine eV = \u00bdmv\u00b2 and p = mv to get p = \u221a(2meV)."
+ },
+ "7(a)(i)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Total power over voltage gives current."
+ },
+ "7(a)(ii)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Energy in kWh from kW \u00d7 hours, times price."
+ },
+ "7(b)": {
+  "moves": [
+   "rearrange",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Area from resistivity equation, then diameter via d = \u221a(4A/\u03c0)."
+ },
+ "7(c)(i)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Draw circuit with ammeter in series and voltmeter in parallel."
+ },
+ "7(c)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "R = V/I."
+ },
+ "7(c)(iii)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Add percentage uncertainties of V and I."
+ },
+ "7(c)(iv)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Smaller battery current \u2192 less heating \u2192 lower metal resistance."
+ },
+ "7(c)(v)": {
+  "moves": [
+   "plan",
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Improve by varying pd and plotting V\u2013I graph, using more precise meters."
+ },
+ "8": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Direct and reflected waves superpose; Pythagoras path differences step by \u03bb/2 \u2192 \u03bb."
+ }
+}

@@ -1,0 +1,3794 @@
+{
+ "items": [
+  {
+   "category": "definitions",
+   "topic": "Newton's second law",
+   "looks_right": "Writing F = ma, or 'force is proportional to the change in momentum over time'.",
+   "why_lost": "F = ma is a special case, not the law; the 'change ... over time' phrasing is explicitly rejected because it does not say rate.",
+   "what_scores": "Resultant force is (directly) proportional to (or equal to) the rate of change of momentum.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "24(a)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Archimedes' principle / upthrust",
+   "looks_right": "Upthrust equals the mass (or volume) of fluid displaced.",
+   "why_lost": "Only 'weight' of fluid displaced is accepted; mass and volume are rejected. In an explanation, merely restating the principle is not a detail point: you must say the weight displaced is increasing/constant.",
+   "what_scores": "Upthrust = weight of fluid displaced; when explaining a changing force, say the weight of water displaced increases (or is constant once fully submerged).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "23(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "15"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "3"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Coherence",
+   "looks_right": "Coherent waves 'are in phase' or 'have the same frequency/wavelength'.",
+   "why_lost": "Same frequency/wavelength is ignored as insufficient; the defining idea is a 'constant' phase difference. In MCQ the frequency distractor is the trap.",
+   "what_scores": "There is a constant phase difference between the waves (the value of the phase difference does not matter).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "25(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "26(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "18"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Interference",
+   "looks_right": "Interference is when waves 'meet', 'combine' or 'interact'.",
+   "why_lost": "'Combine/meet/interact' are rejected as substitutes for superposition, and the waves must be coherent.",
+   "what_scores": "The superposition of coherent waves (or of waves with a constant phase difference).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(b)(i)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Principle of superposition",
+   "looks_right": "The resultant amplitude equals the sum of the individual amplitudes.",
+   "why_lost": "'Amplitude' is rejected; the principle is about displacements at a point and instant.",
+   "what_scores": "Where waves meet, the resultant displacement equals the sum of the individual displacements ('vector sum' is ignored, neither needed nor penalised).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "27(a)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Threshold frequency",
+   "looks_right": "The minimum frequency of the wave needed to release electrons.",
+   "why_lost": "The bare word 'wave' is rejected; the scheme wants EM radiation/light/photon. Writing just the symbol f0 is not accepted as naming the threshold frequency.",
+   "what_scores": "The minimum frequency of electromagnetic radiation (photons) that will release (surface) electrons / cause photoemission.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "28(a)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Work function and Einstein's equation",
+   "looks_right": "Writing 'hf = phi + KEmax' and defining hf as 'Planck constant times frequency'.",
+   "why_lost": "The mark requires the equation to be an energy statement: hf must be identified as the energy of a photon. An equation is required, not just words.",
+   "what_scores": "Energy of photon = work function + maximum KE of electron; work function = minimum energy needed to remove an electron from the surface.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "28(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "definitions",
+   "topic": "KEmax in Einstein's equation",
+   "looks_right": "Saying KEmax is 'the kinetic energy of the electrons'.",
+   "why_lost": "Bare 'KE' is ignored; the mark needs both 'maximum' and that it is of the emitted (photo)electrons.",
+   "what_scores": "The maximum kinetic energy of an emitted (released/ejected) photoelectron.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "25(a)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Refractive index",
+   "looks_right": "n = c/v with c described as the speed of light in air, or without mentioning light at all.",
+   "why_lost": "c must be the speed of light in a vacuum ('air' is rejected) and light must be mentioned; symbols are only accepted if defined.",
+   "what_scores": "Refractive index = speed of light in vacuum / speed of light in the material.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(b)(i)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Critical angle",
+   "looks_right": "The critical angle is 'the minimum angle for total internal reflection'.",
+   "why_lost": "That description is ignored (treated as not enough); the definition is about the refracted ray.",
+   "what_scores": "The angle of incidence for which the angle of refraction is 90 degrees (refracted ray travels along the boundary).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "22(c)(i)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Principle of moments / second equilibrium condition",
+   "looks_right": "Clockwise moments equal anticlockwise moments.",
+   "why_lost": "In a 'state the principle' question a separate mark is for the condition 'for equilibrium', and moments must be about the same point.",
+   "what_scores": "For a body in equilibrium, the sum of clockwise moments about a point equals the sum of anticlockwise moments about the same point (or net moment = 0).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "definitions",
+   "topic": "Conserved quantities in collisions",
+   "looks_right": "Listing kinetic energy as conserved in an inelastic collision.",
+   "why_lost": "KE is explicitly rejected for an inelastic collision; only momentum, total energy and mass are conserved. (For a perfectly elastic collision KE is conserved and scores.)",
+   "what_scores": "Inelastic: momentum and total energy (or mass). Perfectly elastic: momentum and kinetic energy (total energy/mass also allowed).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "21(a)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Vector quantity",
+   "looks_right": "Stating that a vector has magnitude and direction but forgetting the example (or giving speed).",
+   "why_lost": "The single mark needs both a correct definition and a correct vector example.",
+   "what_scores": "Has both magnitude and direction, e.g. velocity / force / displacement.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "21(a)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "definitions",
+   "topic": "Plane polarised wave",
+   "looks_right": "Saying the oscillations are in one direction only.",
+   "why_lost": "Two separate marks: oscillations perpendicular to the direction of energy transfer AND confined to one plane; referring to 'waves' oscillating is ignored.",
+   "what_scores": "Oscillations (of the field/particles) are perpendicular to the direction of propagation and occur in one plane only.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "25(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "definitions",
+   "topic": "Longitudinal sound waves",
+   "looks_right": "Describing compressions as regions where the amplitude varies.",
+   "why_lost": "References to varying amplitude are rejected; need molecules oscillating parallel to energy transfer, producing high/low pressure (closer/further apart) regions.",
+   "what_scores": "Molecules oscillate parallel to the direction of energy transfer, creating compressions (high pressure, molecules close) and rarefactions (low pressure, far apart).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(a)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Momentum conservation with the Earth",
+   "looks_right": "Saying the 'ground' gains equal and opposite momentum to a falling ball.",
+   "why_lost": "In the momentum-conservation question 'ground' was rejected: the Earth must be named as part of the system. (In the N3-partner question 'ground' or 'planet' was allowed, so 'Earth' is the safe word every time.)",
+   "what_scores": "The Earth gains an equal and opposite momentum (or experiences an upward force and moves up very slightly).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(b)(i)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "wording",
+   "topic": "Terminal velocity / equilibrium statements",
+   "looks_right": "Saying 'the forces are balanced' or 'it is in equilibrium' or that a reading will 'stay the same'.",
+   "why_lost": "'Balanced', 'equilibrium' and 'stay the same' are ignored as too vague; the scheme wants the resultant (net) force to be zero, then zero acceleration/constant velocity, or an actual value.",
+   "what_scores": "Weight = air resistance (+ upthrust), so resultant force = 0, so acceleration = 0 / constant velocity; give a number (e.g. 700 N) when asked for a reading.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "21(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "21(b)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Amplitude vs displacement",
+   "looks_right": "As ripples spread out 'the displacement decreases', or 'A decreases' with A undefined.",
+   "why_lost": "'Displacement' is rejected where amplitude is meant, and an undefined symbol is not credited.",
+   "what_scores": "The amplitude decreases, and intensity is proportional to amplitude squared.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "25(b)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Path difference vs phase difference",
+   "looks_right": "Path difference is '1.5 cycles', or the waves are 'pi/2 out of phase', or 'phase difference is lambda/2'.",
+   "why_lost": "Path difference is a length in wavelengths; phase difference is an angle. Mixing them (cycles for path, lambda/2 for phase, pi/2 for antiphase) is rejected.",
+   "what_scores": "Path difference = 1.5 lambda (or lambda/2), so waves arrive in antiphase (phase difference 180 degrees / pi rad), so destructive interference.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "25(b)(iii)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "wording",
+   "topic": "Specific vs general interference condition",
+   "looks_right": "Answering 'path difference is (n + 1/2) lambda' for a specific point.",
+   "why_lost": "A bare general formula is rejected when the question gives actual distances: you must show that this point's path difference is half a wavelength.",
+   "what_scores": "Calculate the path difference (e.g. 17 cm = lambda/2), then conclude destructive interference.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "25(b)(iii)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "wording",
+   "topic": "Strictly greater than",
+   "looks_right": "'The supply must be at least / equal to 2.6 V for the LED to light.'",
+   "why_lost": "'At least' and 'equal to' are rejected; the scheme wants the p.d. to exceed the threshold.",
+   "what_scores": "The p.d. must be greater than 2.6 V (allow +/-0.1 V), e.g. use two 1.5 V cells in series with correct polarity.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "27(b)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Mass vs weight in practical descriptions",
+   "looks_right": "'Weigh the wire' or 'measure the weight' when you need the mass; writing 'gravity' for g.",
+   "why_lost": "Measuring 'weight' is rejected when mass is needed (though 'weigh using scales to get mass' is allowed); 'gravity' is not accepted for g.",
+   "what_scores": "Measure the mass with a (digital) balance; weight = mg using g = 9.81 m s^-2 (or a newtonmeter for weight).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "26(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "23(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Naming forces precisely",
+   "looks_right": "Calling the force 'buoyancy', or blaming the decreasing acceleration on 'drag and upthrust'.",
+   "why_lost": "'Buoyancy' alone is not a force name ('buoyancy force' or upthrust is); adding upthrust to the reason is rejected unless you explain it falls as the tube leaves the water.",
+   "what_scores": "Upthrust / buoyancy force; decreasing acceleration is due to increasing drag (water resistance) or upthrust falling as the tube emerges.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "23(c)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Wave behaviour in a new medium",
+   "looks_right": "'v decreases and c stays the same' using symbols only.",
+   "why_lost": "Bare symbols v or c are not credited; the comparison must be stated in words (speed of light less in water, frequency same, wavelength smaller).",
+   "what_scores": "Speed is lower in water; frequency is the same; wavelength is smaller (in water).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(b)(ii)1"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Defining your symbols",
+   "looks_right": "Writing p = W/A or similar without saying what W and A are, or using an undefined symbol in an explanation.",
+   "why_lost": "Some schemes state that every symbol must be defined or previously mentioned; undefined symbols lose the mark.",
+   "what_scores": "Define every symbol (W = weight of cylinder, A = cross-sectional area) or write the quantities in words.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(b)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Electroscope and photoemission",
+   "looks_right": "'Electrons are emitted from the gold leaf' or 'the leaf becomes positively charged'.",
+   "why_lost": "Emission from the leaf, and any reference to positive charge, are rejected; the plate/electroscope loses electrons so becomes less negative.",
+   "what_scores": "Electrons on the metal plate each absorb one photon and are emitted; the electroscope loses negative charge so the leaf falls.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "25(b)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Apparatus names",
+   "looks_right": "Listing 'a ray of light' as the apparatus for a critical-angle experiment.",
+   "why_lost": "'Ray of light' is not accepted as apparatus; name a laser or ray box (or protractor).",
+   "what_scores": "Use a ray box or laser and a protractor; mark the critical angle between incident ray and normal.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(c)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Reaction time vs 'human error'",
+   "looks_right": "Justifying a video camera/automatic timer because it 'reduces human error'.",
+   "why_lost": "'Human error' is ignored as too vague; the specific issue is human reaction time (about 0.2 s) being large compared with the interval.",
+   "what_scores": "State that reaction time is large compared with the short time, so a video/light gate/electronic timer reduces the (percentage) uncertainty in time.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "25(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "24(d)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "wording",
+   "topic": "Stationary waves in a microwave oven",
+   "looks_right": "'Maxima and minima cause hot spots' or 'the waves are coherent'.",
+   "why_lost": "Maxima/minima and coherence are ignored; marks are for reflection from the metal walls, superposition, and naming nodes/antinodes with amplitude and energy transfer.",
+   "what_scores": "Microwaves reflect off the walls and superpose; antinodes (max amplitude) give maximum heating, nodes minimum, so heating is uneven.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "23(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "23(c)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Newton's third law pairs (graphs/forces)",
+   "looks_right": "Answering 'action equals reaction' or just 'Newton's third law'.",
+   "why_lost": "Quoting the law or 'action = reaction' is rejected; you must describe the forces: same magnitude, opposite direction, at every instant. 'The change in momentum is the same' is ignored.",
+   "what_scores": "The force on the asteroid/object B is equal in magnitude and opposite in direction to that on the comet/A at all times; on momentum-time graphs the gradients are equal in size and opposite in sign.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "24(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "23(a)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "explanations",
+   "topic": "Why weight and normal contact force are not an N3 pair",
+   "looks_right": "Saying they are not a pair because they are 'different sizes' or point in particular directions, or naming them contact/non-contact.",
+   "why_lost": "References to direction/size and naming the forces are ignored; the A mark needs at least one correct reason.",
+   "what_scores": "They are different types of force and/or both act on the same object, therefore not an N3 pair.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "21(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "16"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "explanations",
+   "topic": "Intensity of circular ripples",
+   "looks_right": "Amplitude decreases and intensity follows the inverse-square law.",
+   "why_lost": "Adding I proportional to 1/x^2 loses the mark (ripples spread over a circle, not a sphere); 1/x is allowed.",
+   "what_scores": "Amplitude decreases as the wave spreads, and intensity is proportional to amplitude squared (or constant power over an increasing area).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(a)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Interference maxima and minima",
+   "looks_right": "Mentioning 'constructive and destructive interference' without saying where each occurs.",
+   "why_lost": "Without linking constructive to maxima/bright and destructive to minima/dark (and giving path/phase conditions) only one mark is available.",
+   "what_scores": "Maxima: constructive interference, phase difference 0 / path difference n lambda. Minima: destructive, phase difference 180 degrees / path difference (n + 1/2) lambda.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "27(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "25(c)(i)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "explanations",
+   "topic": "Waves of unequal amplitude in antiphase",
+   "looks_right": "The particle stays at rest because the waves cancel.",
+   "why_lost": "Cancellation is only complete for equal amplitudes; here the net amplitude is non-zero.",
+   "what_scores": "Destructive interference occurs but the resultant amplitude is non-zero (reduced), so the particle still oscillates.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "25(b)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "explanations",
+   "topic": "Stationary wave formation",
+   "looks_right": "Describing two waves 'super-imposing' or just 'waves don't move'.",
+   "why_lost": "'Super impose' and 'the waves don't move' are ignored; marks are for reflection, superposition/interference of incident and reflected waves, and the node/antinode link.",
+   "what_scores": "Wave reflects at the end/wall; incident and reflected waves superpose; constructive gives antinodes, destructive gives nodes.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "26(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "23(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "24(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Nodes with non-zero amplitude",
+   "looks_right": "Assuming nodes always have zero amplitude.",
+   "why_lost": "The reflected wave has smaller amplitude than the incident wave, so destructive interference is incomplete; the scheme wants that reason and the trend with distance.",
+   "what_scores": "Intensity/amplitude falls with distance, so the reflected wave is weaker; cancellation at nodes is incomplete, with the difference growing further from the reflector.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(b)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Diffraction explanation",
+   "looks_right": "Writing only 'the sound/microwaves diffract' when diffraction is already given in the question.",
+   "why_lost": "Repeating the stem word earns nothing; you must describe the spreading and give the size condition.",
+   "what_scores": "Waves spread out through the gap, because the gap width is comparable to the wavelength.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(a)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Electron diffraction evidence",
+   "looks_right": "Saying the rings show electrons interfere, or 'electrons behave like photons'.",
+   "why_lost": "Marks need diffraction by atoms/atomic spacing and the de Broglie wavelength being comparable to that spacing.",
+   "what_scores": "Electrons behave as waves, are diffracted by gaps between carbon atoms, as their de Broglie wavelength is similar to atomic spacing.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "26(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "4"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Photoelectric effect: photon model",
+   "looks_right": "Explaining with intensity or with 'KEmax = hf - phi' alone.",
+   "why_lost": "KEmax = hf - phi by itself is rejected (it must be linked to wavelength via c = f lambda when lambda varies); intensity does not explain the threshold. Marks need photons and one-to-one interaction.",
+   "what_scores": "One photon interacts with one electron; photon energy = hc/lambda; electrons emitted only if photon energy is greater than or equal to the work function; KEmax = hc/lambda - phi.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "28(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "23(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "25(c)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Photocurrent and intensity",
+   "looks_right": "'More intensity means more energy so more current.'",
+   "why_lost": "Needs the photon-rate argument: intensity proportional to rate of photons, one-to-one interaction, and current as rate of flow of charge.",
+   "what_scores": "Intensity is proportional to the number of photons per second; each releases one electron; current = rate of flow of charge, so current is proportional to intensity.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "23(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "26(a)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "e.m.f. vs p.d.",
+   "looks_right": "Difference: 'e.m.f. is for the cell and p.d. is for the resistor'.",
+   "why_lost": "The difference must be stated as energy transfer direction (to electrical vs from electrical, charges gain vs lose energy).",
+   "what_scores": "Similarity: same unit/both energy per unit charge. Difference: e.m.f. is energy transferred to electrical per coulomb; p.d. is energy transferred from electrical per coulomb.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "25(a)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "25(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Terminal p.d. and lost volts",
+   "looks_right": "'More resistance so the voltage goes up.'",
+   "why_lost": "M1 then A1: resistance up leads to current down; then the lost volts (Ir) fall, so V = E - Ir rises. Skipping the current step loses the dependent mark.",
+   "what_scores": "Total resistance increases, so current decreases, so p.d. across r (Ir) decreases, so terminal p.d. increases.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "24(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "25(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Why large internal resistance is bad",
+   "looks_right": "'The bulb will be dimmer' or 'the batteries need replacing more often'.",
+   "why_lost": "These consequences are ignored; the scheme wants the energy/p.d. argument.",
+   "what_scores": "More energy is dissipated as heat in the internal resistance, so less is transferred to the bulb (larger lost volts, smaller p.d. across the bulb).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "21(b)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Filament lamps / non-ohmic behaviour",
+   "looks_right": "'The lamps are non-ohmic' as the whole explanation.",
+   "why_lost": "Several independent points are needed: resistance increases with current because temperature rises; bald 'non-ohmic' is only one of them.",
+   "what_scores": "Higher current makes the filament hotter, so its resistance increases; total resistance rises (by about 1.5 times), so current does not double.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "24(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "23(b)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "explanations",
+   "topic": "Thermistor in a circuit",
+   "looks_right": "'The circuit gets hotter so resistance drops', or saying the voltmeter reading falls on a supply with no internal resistance.",
+   "why_lost": "'Temperature of the circuit' is ignored; it must be the thermistor that warms. With no internal resistance the supply p.d. stays 3.0 V.",
+   "what_scores": "Current heats the thermistor; its resistance decreases (more charge carriers); current rises; voltmeter across an ideal supply stays the same.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "23(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "24(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "24(a)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Moments in lifting / levers",
+   "looks_right": "Bending knees 'moves the centre of mass' or 'the knees act as the pivot'.",
+   "why_lost": "Centre of mass changes and knee/elbow pivots are ignored; the key is the perpendicular distance to the hips.",
+   "what_scores": "The perpendicular distance between the line of action of the weight and the hips is reduced, so the moment is reduced, so the force on the spine is reduced.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "22(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(c)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Tension in an accelerating wire",
+   "looks_right": "Stating the tension changes at Y and Z without identifying acceleration vs deceleration.",
+   "why_lost": "First mark is for linking the v-t graph to acceleration at Y and deceleration at Z; 'downward acceleration' at Z is ignored.",
+   "what_scores": "Accelerating up at Y so T > 7.5 N (weight); decelerating at Z so T < 7.5 N.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "23(b)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "explanations",
+   "topic": "Energy transfer at a spring's natural length",
+   "looks_right": "Saying KE converts to elastic potential energy as the clown rises above the natural length.",
+   "why_lost": "Elastic PE is rejected for this stage: the spring is no longer compressed. Thermal energy to the surroundings is ignored.",
+   "what_scores": "Kinetic energy is transferred to gravitational potential energy.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "22(d)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "explanations",
+   "topic": "Skateboarder throwing a ball",
+   "looks_right": "'The skateboarder moves backwards because of the force of the throw.'",
+   "why_lost": "Three separate points: direction (opposite to ball), conservation of momentum (equal and opposite momenta), and total momentum zero (or slower speed than ball).",
+   "what_scores": "Person moves left (opposite to ball); momentum is conserved so momentum of person = momentum of ball in the opposite direction; total momentum stays zero, so person's speed is less.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "21(b)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "explanations",
+   "topic": "Radio waves vs X-rays",
+   "looks_right": "'X-rays have longer wavelength', or describing their uses.",
+   "why_lost": "Wrong-direction physics loses the mark; uses are ignored.",
+   "what_scores": "They have different wavelength/frequency (or photon energy); X-rays have much shorter wavelength.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "27(a)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "explanations",
+   "topic": "Speed of EM waves",
+   "looks_right": "'Both travel at c.'",
+   "why_lost": "'c' on its own is ignored; you need 'same speed' or speed of light / 3.0e8 m s^-1.",
+   "what_scores": "Both travel at the same speed (the speed of light, 3.0 x 10^8 m s^-1).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "24(a)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "explanations",
+   "topic": "Total internal reflection condition",
+   "looks_right": "'TIR does not occur because the angle is less than the critical angle.'",
+   "why_lost": "The angle comparison is rejected; for light going into a higher-index material TIR is impossible at any angle.",
+   "what_scores": "TIR (and a critical angle) only exist for light travelling into a lower refractive index (optically less dense) material.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(b)(ii)3"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "5"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "units-and-prefixes",
+   "topic": "SI prefix conversions (POT)",
+   "looks_right": "Correct method with lengths left in mm/cm, mass in g, wavelength in nm, power in mW, energy in kJ or time in minutes.",
+   "why_lost": "A power-of-ten slip loses the mark where it occurs (POT), though later marks can be ECF. Typical credited-but-capped answers: 4 N/m from mm extension, 6000 m/s from cm, 100 instead of 100 000 J, 3 instead of 180 s.",
+   "what_scores": "Convert to SI before substituting (mm x10^-3, cm x10^-2, nm x10^-9, mW x10^-3, kJ x10^3, g / 1000, min x 60).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "21(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "26(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "23(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "27(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "22(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "21(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "5"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "16"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "4"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "units-and-prefixes",
+   "topic": "Area units",
+   "looks_right": "Converting mm^2 to m^2 by x10^-3, or squaring a value that is already an area.",
+   "why_lost": "mm^2 to m^2 is x10^-6; squaring an area (e.g. (1.2e-6)^2) is wrong physics, not POT, so that C1 and dependent marks are lost.",
+   "what_scores": "1 mm^2 = 1 x 10^-6 m^2; use the area as given.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "24(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "25(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "16"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "units-and-prefixes",
+   "topic": "Electronvolts vs joules",
+   "looks_right": "Using KE = 210 (J) for a 210 eV electron, or subtracting a work function in eV from a photon energy in J.",
+   "why_lost": "Treating eV as J is wrong physics (XP), so later marks do not follow; mixed units give a wrong answer in MCQ.",
+   "what_scores": "Convert: energy (J) = eV x 1.60 x 10^-19; work in one unit consistently.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "6"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "26(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "26(a)(iii)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "units-and-prefixes",
+   "topic": "Newtons vs kilograms",
+   "looks_right": "Using 7.5 N as if it were a mass and multiplying (or dividing) by g.",
+   "why_lost": "Treated as a special case worth only 1 mark.",
+   "what_scores": "A load given in newtons is already the force; F = 7.5 N.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "23(b)(i)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "units-and-prefixes",
+   "topic": "Milliseconds on time axes",
+   "looks_right": "Reading a 4.0 ms period and writing f = 0.25.",
+   "why_lost": "Omitting the kilo/milli factor gives only one mark.",
+   "what_scores": "Period = 4.0 x 10^-3 s so f = 250 Hz.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "26(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "17"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "units-and-prefixes",
+   "topic": "Units requested as a separate mark",
+   "looks_right": "Correct number for a rate of change of momentum but no unit, or 'kg m s^-1'.",
+   "why_lost": "When the question asks for a unit, a separate B mark is for it.",
+   "what_scores": "kg m s^-2 or N (newton); moment in N m.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "21(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "22(b)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "units-and-prefixes",
+   "topic": "Homogeneity / base-unit proofs",
+   "looks_right": "Writing 'both sides are m s^-1 so it is homogeneous' without the algebra.",
+   "why_lost": "The final statement carries no mark (A0); the mark is for clear base-unit algebra.",
+   "what_scores": "Write each quantity in base units (N = kg m s^-2, mu = kg m^-1) and show the cancellation leading to m s^-1 (or kg m^-1).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "26(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "22(a)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "rounding-and-sig-figs",
+   "topic": "Answers to 1 s.f.",
+   "looks_right": "Writing 0.7 s, 0.03 m or 8 x 10^3 on the answer line.",
+   "why_lost": "With 2 s.f. data a 1 s.f. answer is an SF error, penalised once in the paper (some parts explicitly waive it - see leniencies).",
+   "what_scores": "Give at least 2 s.f. (0.73 s, 0.027 m).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "21(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(a)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "rounding-and-sig-figs",
+   "topic": "Answer must be to 2 s.f. when the question says so",
+   "looks_right": "Absolute uncertainty given as 0.716 or 1.63 (more figures 'to be safe').",
+   "why_lost": "When the question demands 2 s.f., the A1 needs exactly 2 s.f.; the usual 'more s.f. is fine' rule does not apply.",
+   "what_scores": "Round to the required 2 s.f. (0.72 kg m^-1, 1.6 m s^-2, 0.53 N).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "24(b)(ii)3"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "rounding-and-sig-figs",
+   "topic": "Show-that answers",
+   "looks_right": "Ending with the value printed in the question (e.g. 3.5 x 10^-11 m or 'about 9 x 10^6').",
+   "why_lost": "The given value carries no mark; you must show working and give your answer to more s.f. than quoted (e.g. 8.6 x 10^6, 3.39 N). A tension given as 3.4 N must be shown to at least 3 s.f.",
+   "what_scores": "Full substitution with an unrounded result to one more s.f. than given.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "26(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "22(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "27(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "21(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "21(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "26(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "21(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(b)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "rounding-and-sig-figs",
+   "topic": "Premature rounding",
+   "looks_right": "Rounding an intermediate mass to 0.08 kg then finishing the calculation.",
+   "why_lost": "0.08 kg (1 s.f.) is rejected for the mass mark (0.082 accepted); the answer can still earn partial credit.",
+   "what_scores": "Carry at least 3 s.f. through working (0.0815 kg) and round only at the end.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "23(b)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "rounding-and-sig-figs",
+   "topic": "Rounding correctly",
+   "looks_right": "Rounding 4.946 s to 5.0 s.",
+   "why_lost": "To 2 s.f. 4.946 is 4.9; 5.0 is explicitly rejected (4.95 accepted). MCQ: 7.26 x 10^6 must round to 7.3, not 7.2.",
+   "what_scores": "Round, don't truncate or overshoot: 4.9 s (or 4.95 s); 7.3.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "23(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "17"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Change in momentum/velocity on rebound",
+   "looks_right": "Subtracting speeds when a ball bounces back (7.2 - 3.6, 4.9 - 3.5), or using +420 for a rebound velocity.",
+   "why_lost": "Direction reversal means the magnitudes add; using the difference is credited with only 1 mark (e.g. 44 N, 4.0 N, 6.8 m s^-1). Conversely, adding momenta that should be subtracted scored zero (80 N).",
+   "what_scores": "Assign signs: delta v = 4.9 - (-3.5) = 8.4 m s^-1; delta p = m(7.2 - (-3.6)); use -420 for the rebound.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "24(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "23(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "15"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Wrong acceleration in suvat",
+   "looks_right": "Using g = 9.81 m s^-2 for a trolley on a ramp or a lift whose acceleration is given.",
+   "why_lost": "Using 9.81 instead of the given acceleration is wrong physics (lift) or credited at most 1 mark (ramp).",
+   "what_scores": "Use the stated acceleration (3.0 m s^-2, 2.4 m s^-2) in the suvat equation.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "21(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "21(b)(ii)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Using g = 10",
+   "looks_right": "Taking g = 10 m s^-2 for speed.",
+   "why_lost": "Penalised where it changes the 2 s.f. answer (6.8 kg instead of 6.9 kg loses the A mark), penalised only once across linked parts; allowed when it gives the same 2 s.f. answer, and ECF allowed in some parts.",
+   "what_scores": "Use g = 9.81 m s^-2 (9.8 is accepted).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "21(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "21(b)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Scale reading in an accelerating lift",
+   "looks_right": "R = 700 - 71.4 x 2.4 = 530 N, or just ma = 171 N.",
+   "why_lost": "Sign of ma wrong (530 N) scores 2 of 3; quoting only ma (168/171 N) or 532 N scores 1. You must also show the mass determination (700/9.81).",
+   "what_scores": "R - mg = ma, so R = 700 + (700/9.81)(2.4) = 870 N.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "21(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "2"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "11"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Radius vs diameter",
+   "looks_right": "Using the diameter (0.24 mm, 0.62 mm) in pi r^2, or using diameter ratio instead of area ratio.",
+   "why_lost": "Diameter-for-radius plus POT gives at most 2 of 3 marks; in MCQs it produces the distractor.",
+   "what_scores": "Halve the diameter first: A = pi (d/2)^2 = pi d^2/4; area scales as diameter squared.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "23(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "12"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "12"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "17"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "5"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Number density n",
+   "looks_right": "Using the total number of free electrons as n in I = Anev.",
+   "why_lost": "n is number per unit volume; using the total count gets only 1 mark.",
+   "what_scores": "n = total free electrons / volume (A x L), then v = I/(Ane).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "25(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "3"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Wavelength from stationary waves / half-wavelength data",
+   "looks_right": "Taking node spacing or one loop as the full wavelength (lambda = 0.40 m, lambda = L).",
+   "why_lost": "One loop = lambda/2, so lambda = 2 x spacing; using the half-wavelength as lambda limits you (e.g. 30 m s^-1 gets 1 of 2 or 2 of 3).",
+   "what_scores": "lambda = 2 x node-to-node distance (2 x 0.62 = 1.24 m; 2 x 0.84 = 1.68 m).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "26(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "26(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "24(b)(ii)1"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "14"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "18"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Finding a quantity from a gradient, not a point",
+   "looks_right": "Calculating u^2/x from a single data point or point on the line.",
+   "why_lost": "Where the method is 'gradient', a single-point ratio is rejected as not a gradient determination.",
+   "what_scores": "Draw/use the best-fit line and take a gradient from a large triangle; then apply the relationship (gradient = 2a).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "24(a)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Missing factor from the equation",
+   "looks_right": "From v^2 = 2ax, setting gradient = a; forgetting the 1/2 in E = 1/2 kx^2.",
+   "why_lost": "Gradient = 2a; F = 920 x 16 scores only the first mark. Omitting 1/2 in EPE gives the wrong MCQ option.",
+   "what_scores": "Write the equation in y = mx form first to identify what the gradient equals.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "15"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(b)(ii)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Compression/extension as a difference",
+   "looks_right": "Using 0.45 m (or 0.25 m) rather than the change in length 0.20 m.",
+   "why_lost": "x is the change from natural length; E = 1/2 F x is ignored as a method here.",
+   "what_scores": "x = 0.45 - 0.25 = 0.20 m; E = 1/2 x 1.7e4 x 0.20^2 = 340 J.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "22(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "22(a)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Moment arms",
+   "looks_right": "Using 4.5 - 1.5 as a lever distance.",
+   "why_lost": "Subtracting distances is wrong physics (XP) so no further credit.",
+   "what_scores": "Each moment uses the perpendicular distance from the pivot: 340 x 4.5 = T x 1.5.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "22(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "2"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Surface area of a sphere",
+   "looks_right": "Using pi r^2 for the area over which a star radiates.",
+   "why_lost": "Wrong physics; in a show-that question this means no marks at all.",
+   "what_scores": "Surface area = 4 pi r^2; intensity = P / (4 pi r^2).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "27(b)(i)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Filament lamps in a combination",
+   "looks_right": "Assuming the two parallel lamps have the same resistance as the single series lamp (30 ohm each, so 15 ohm in parallel).",
+   "why_lost": "A filament lamp's resistance depends on its p.d./current; taking 15 ohm for the parallel pair is labelled wrong physics. Each lamp must be read off the I-V graph at its own p.d.",
+   "what_scores": "Find the series lamp's p.d. (6.0 V) and the parallel lamps' p.d. (2.0 V, 0.10 A, so 20 ohm each, 10 ohm combined) from the graph, then total 40 ohm.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "25(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "23(b)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Internal resistance in circuit calculations",
+   "looks_right": "Finding current from e.m.f. / external resistance only, or including only one cell's internal resistance.",
+   "why_lost": "Ignoring r gives the MCQ distractor (0.47 V, 75 mA, 5.0 ohm); in structured parts the total must include r (and each cell's r).",
+   "what_scores": "I = e.m.f. / (R_external + total r); terminal p.d. = E - Ir.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "23(a)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "7"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "18"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "7"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "16"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Using the whole wire instead of part",
+   "looks_right": "Using the full 16 ohm (+2) for a contact at the midpoint.",
+   "why_lost": "Credited 2 of 3; only the section in the circuit counts.",
+   "what_scores": "R = 2.0 + 8.0 = 10 ohm for half the wire, then I = 1.2/10 and r from E = V + Ir.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "24(b)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Efficiency as a percentage",
+   "looks_right": "Giving efficiency as 0.61 when a percentage is asked.",
+   "why_lost": "0.61 scores 2 of 3; no ECF if the input power is wrong.",
+   "what_scores": "Efficiency = useful output / total input x 100% = 61%.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "8"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "11"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Mass from a resultant force",
+   "looks_right": "Forgetting to find the mass (W/g) before using F = ma.",
+   "why_lost": "Evidence of mass determination is needed for the method mark.",
+   "what_scores": "m = W/g (e.g. 0.8/9.81 = 0.0815 kg), then a = F_resultant/m.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "23(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "21(b)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Average velocity formula",
+   "looks_right": "Writing s = 1/2 v t and stopping.",
+   "why_lost": "s = 1/2 vt is rejected; v must be made the subject (v = 2 x average velocity).",
+   "what_scores": "v = 2s/t (from s = (u+v)t/2 with u = 0), with s from a rule and t from a stopwatch.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "21(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Resolving forces",
+   "looks_right": "Using sin when the angle needs cos (or using tan^-1(a/g) for a slope angle).",
+   "why_lost": "Using tan^-1 is wrong physics; the complement angle (78 degrees) gets 1 mark; wrong trig gives MCQ distractors.",
+   "what_scores": "Component along the motion = F cos(theta) with theta from the direction of motion; a = g sin(theta) for slope.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "21(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "22(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "21(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "8"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "6"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(c)(i)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Data distances",
+   "looks_right": "Using x = 1800 m when the geometry needs 3600 m; using v = f lambda with the car's speed.",
+   "why_lost": "Halving the distance is XP (gives 90 m); v = f lambda with the car speed is rejected.",
+   "what_scores": "x = 200 x 18 = 3600 m then lambda = ax/D.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "27(c)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Photons per second",
+   "looks_right": "Using the total energy rather than energy per photon, or wrong units.",
+   "why_lost": "Number per second = power / energy per photon; failing to compute E = hc/lambda first loses marks.",
+   "what_scores": "E = hc/lambda (or hf), then N = P / E.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "27(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "27(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "28(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "23(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "24(c)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Kinetic energy of accelerated electron",
+   "looks_right": "1/2 mv^2 = V (forgetting e).",
+   "why_lost": "Energy gained is eV; omitting e is XP.",
+   "what_scores": "1/2 m v^2 = eV, then lambda = h/(mv).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "26(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "15"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "14"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "calculation-method",
+   "topic": "Potential divider p.d.",
+   "looks_right": "Using total supply p.d. across the wire rather than the difference.",
+   "why_lost": "The p.d. across the wire is 14.4 - 12.0 = 2.4 V; ECF credit if wrong value used (e.g. 8.4 V gives 3 marks).",
+   "what_scores": "Subtract to find p.d. across the component, R = V/I, then rho = RA/L.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "25(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "23(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "9"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "graphs-and-reading",
+   "topic": "Resistance from I-V graphs",
+   "looks_right": "R = 1/gradient, or 'R is constant because the line is straight'.",
+   "why_lost": "Both are rejected: resistance at a point is V/I, and a straight line not through the origin does not mean constant resistance.",
+   "what_scores": "Read V and I at a point (within one small square) and compute R = V/I at two points to show the trend.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "27(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "20"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "16"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "graphs-and-reading",
+   "topic": "Tangents on curved graphs",
+   "looks_right": "Drawing a tangent at roughly the right time, or calculating gradient without showing values.",
+   "why_lost": "The A1 is only awarded if the tangent is at the specified time and the value falls in range; you must show delta s and delta t.",
+   "what_scores": "Draw the tangent at exactly the given time; use a large triangle; show the readings.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "21(c)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "graphs-and-reading",
+   "topic": "Velocity from displacement-time graph",
+   "looks_right": "Describing velocity changes without saying gradient = velocity (or implying it).",
+   "why_lost": "A separate mark requires an explicit statement that gradient equals velocity; it cannot be implied.",
+   "what_scores": "State 'velocity = gradient of the s-t graph' then describe constant/increasing/decreasing/zero gradient.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "21(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "21(b)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "graphs-and-reading",
+   "topic": "Misreading the graph",
+   "looks_right": "Reading 2.2 V instead of 2.4 V, or amplitude 2.2 instead of 2.4.",
+   "why_lost": "Transcription/reading errors lose that mark (TE) though ECF follows.",
+   "what_scores": "Read carefully to the nearest half small square; check scale factors on axes (x10^7, x10^-3, x10^14).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "23(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "26(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "23(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(b)(iii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "graphs-and-reading",
+   "topic": "Area under v-t graph",
+   "looks_right": "Using the final velocity times time.",
+   "why_lost": "Distance is area under the graph, split into parts.",
+   "what_scores": "Sum the area of trapezium/rectangle sections.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "21(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "13"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "graphs-and-reading",
+   "topic": "Best-fit lines",
+   "looks_right": "A freehand/wobbly line, or forcing the line through an anomalous point.",
+   "why_lost": "Freehand lines are rejected; the line should ignore anomalies (e.g. not drawn through the outlier).",
+   "what_scores": "Ruled straight line with balanced scatter, ignoring anomalous points.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "26(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "23(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "26(b)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "graphs-and-reading",
+   "topic": "Gradient triangles",
+   "looks_right": "Using a small triangle for the gradient.",
+   "why_lost": "Some schemes require the triangle to cover at least half the line.",
+   "what_scores": "Use a triangle spanning at least half the drawn line.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "24(a)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "graphs-and-reading",
+   "topic": "Y-intercept and work function",
+   "looks_right": "Reading the intercept when the axes don't start at zero.",
+   "why_lost": "Use the straight-line equation with gradient to find intercept.",
+   "what_scores": "phi = h f - KEmax using y = mx + c; check axes begin at 0.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "26(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(b)(iii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "graphs-and-reading",
+   "topic": "Period from oscilloscope",
+   "looks_right": "Mentioning wavelength or simply 'find T'.",
+   "why_lost": "Any reference to wavelength loses the mark; 'determine T' alone is insufficient.",
+   "what_scores": "Count squares for one period and multiply by the time-base setting; f = 1/T.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "25(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "diagrams-and-sketches",
+   "topic": "Force arrows on a ramp",
+   "looks_right": "Tension drawn parallel to the ramp; weight perpendicular to the ramp; a double-headed tension arrow.",
+   "why_lost": "All three rejected: tension acts along the string; weight is vertically down.",
+   "what_scores": "Single arrow along the string for tension; vertical arrow for weight.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "21(b)(i)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "diagrams-and-sketches",
+   "topic": "Triangle of forces",
+   "looks_right": "Drawing three sides without arrows, or with inconsistent arrow directions.",
+   "why_lost": "Arrows must go consistently around the triangle (all three); the weight side must be longest.",
+   "what_scores": "Closed triangle with arrows tip-to-tail all the same direction.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "7"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "2"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "diagrams-and-sketches",
+   "topic": "Sketching waves in antiphase",
+   "looks_right": "Drawing a triangular/zigzag profile.",
+   "why_lost": "Triangular profiles are rejected; need a sinusoidal curve with correct amplitude.",
+   "what_scores": "Smooth sinusoidal curve of amplitude 1.0 (+/-0.2) in antiphase.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "25(b)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "diagrams-and-sketches",
+   "topic": "Graph sketches of motion",
+   "looks_right": "Drawing straight lines for a falling/rising ball's height-time graph.",
+   "why_lost": "Straight lines imply constant velocity and are rejected.",
+   "what_scores": "Curves of increasing negative gradient (falling) and decreasing positive gradient (rising) to a lower maximum.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "24(e)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "21(b)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "diagrams-and-sketches",
+   "topic": "Sketching p.d. on a potential divider",
+   "looks_right": "Drawing a straight line from 1.5 V to 0.",
+   "why_lost": "A straight line gets only the first mark; the A mark needs a curve of decreasing gradient.",
+   "what_scores": "Curve from 1.5 V at A to 0 V at B with decreasing gradient.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "25(b)(i)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "diagrams-and-sketches",
+   "topic": "Circuit diagrams",
+   "looks_right": "Voltmeter in series, ammeter in parallel, or wrong symbols.",
+   "why_lost": "Marks require all symbols correct and meters correctly placed.",
+   "what_scores": "Ammeter in series, voltmeter in parallel, correct variable resistor/power symbols.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "25(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "23(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "diagrams-and-sketches",
+   "topic": "Ray diagram for critical angle",
+   "looks_right": "Marking the angle between ray and surface.",
+   "why_lost": "Critical angle must be marked between the incident ray and the normal.",
+   "what_scores": "Draw incident ray inside block, refracted ray along edge; mark C between incident ray and normal.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "3"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "20"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "diagrams-and-sketches",
+   "topic": "Polarisation intensity sketch",
+   "looks_right": "Drawing a sinusoidal curve with wrong period.",
+   "why_lost": "Peaks must be 180 degrees apart with minima near zero at 90 and 270.",
+   "what_scores": "cos^2-shaped curve (sin^2 allowed with correct positions).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "25(b)(i)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "vectors-and-direction",
+   "topic": "Adding velocities vs adding masses",
+   "looks_right": "Just defining a vector ('has magnitude and direction') when asked how adding velocities differs from adding masses.",
+   "why_lost": "The second mark needs the consequence: vector addition depends on direction (triangle/resolving, can cancel), whereas masses simply add.",
+   "what_scores": "Mass is scalar so values just add; velocity is a vector so its direction (sign, vector triangle, resolving) matters - velocities can cancel.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "21(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "4"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "vectors-and-direction",
+   "topic": "Resultant needs a direction",
+   "looks_right": "Giving the resultant of the spring tensions as 4.8 N and stopping.",
+   "why_lost": "Magnitude and direction are separate marks; a balancing force must be stated as upwards / opposite to the weight.",
+   "what_scores": "Resultant = W = 4.8 N, directed upwards (opposite to the weight), because the vertical resultant is zero.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "22(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "2"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "vectors-and-direction",
+   "topic": "Ambiguous resolved components",
+   "looks_right": "Writing both 680 cos55 and 680 sin55 and moving on.",
+   "why_lost": "If both components appear it must be clear which is horizontal (390 N) or the mark is not given.",
+   "what_scores": "State that the horizontal component is 680 cos55 = 390 N, then 390 - R = ma.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "21(b)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "vectors-and-direction",
+   "topic": "Sign of an answer that is a magnitude",
+   "looks_right": "Worrying that the deceleration or force came out negative.",
+   "why_lost": "Not a risk here - signs were ignored for deceleration, force and velocity answers - but direction-dependent working (delta v, delta p) must still use signs correctly.",
+   "what_scores": "Use signs consistently in the working; a final negative magnitude is fine where the scheme ignores sign.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "21(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "23(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "23(c)"
+    }
+   ],
+   "severity": "risk only"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Repeat readings as a precision improvement",
+   "looks_right": "Suggesting 'repeat the readings and average' to reduce the uncertainty of a measurement.",
+   "why_lost": "Explicitly rejected as the improvement mark (the scheme says repeating improves accuracy, not precision); a bare 'repeat measurements' is also refused in the mu experiment.",
+   "what_scores": "Use an instrument with higher resolution (micrometer/vernier, balance reading to 0.01 g), measure a longer length, or plot a graph and take its gradient.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "26(b)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Measuring radius instead of diameter",
+   "looks_right": "'Measure the radius of the cylinder with a ruler.'",
+   "why_lost": "Measuring a radius directly is rejected; you cannot locate the centre.",
+   "what_scores": "Measure the diameter (micrometer / callipers) at several places and average; A = pi d^2/4.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "21(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "24(a)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Choosing a too-precise instrument",
+   "looks_right": "Picking a micrometer or vernier callipers for a 0.100 m height because it is 'more precise'.",
+   "why_lost": "Callipers and micrometer are rejected; the uncertainty (+/-0.002 m) and range match a mm-scale ruler.",
+   "what_scores": "Ruler (or tape measure) with a mm scale.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "22(a)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Percentage uncertainty with powers",
+   "looks_right": "Adding the percentage uncertainties of v and F (or f, m, L) straight.",
+   "why_lost": "A squared quantity contributes twice its percentage (cubed three times); not doubling earns at most a single ECF mark (e.g. 4% leading to 0.32 N). MCQ distractors are built on this.",
+   "what_scores": "Total % = sum of (power x % uncertainty of each quantity), e.g. 2 x 2.5% + 1.0% + 0.5% = 6.5%; then absolute = % x value.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "24(b)(ii)3"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "21(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "1"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "8"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "15"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "13"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "8"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Quoting g instead of calculating it",
+   "looks_right": "Writing g = 9.8 m s^-2 when the question gives d and v to calculate g.",
+   "why_lost": "Quoting 9.8 does not earn the first mark; the working g = v^2/2d with the data must be seen.",
+   "what_scores": "Calculate g from the data (1.4^2 / (2 x 0.100)) and show the uncertainty steps.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "22(b)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Improvements must be specific and justified",
+   "looks_right": "'Repeat for a range of heights and average' or 'reduce human error' as the timing improvement.",
+   "why_lost": "Improvements must relate to the measurement asked about (time) and be paired with why they reduce uncertainty; repeats and human error are ignored.",
+   "what_scores": "Use light gates/data logger or a video with frame rate (removes reaction time), or increase the height so the time is longer (smaller % uncertainty); in wave experiments measure across several nodes or use lower frequency.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "24(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(b)(iv)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(b)(iv)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "25(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Leaving out an anomalous reading",
+   "looks_right": "Quietly averaging only two of three timings.",
+   "why_lost": "Omitting a value is only credited if it is clearly identified as anomalous; otherwise only one mark.",
+   "what_scores": "Either average all three (0.63 s), or explicitly label 0.68 s as anomalous and average the rest.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "24(c)"
+    }
+   ],
+   "severity": "capped"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Percentage difference denominator",
+   "looks_right": "Dividing the difference by the experimental value, or giving the experimental/accepted ratio.",
+   "why_lost": "Computing the ratio (52.8% leading to 50%) is rejected; % difference is relative to the accepted value.",
+   "what_scores": "% difference = (accepted - experimental) / accepted x 100 (about 47-49%).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(c)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Judging consistency/validity",
+   "looks_right": "'The values are close so the result is accurate' or 'within error' with no numbers.",
+   "why_lost": "The conclusion must be backed by a numerical comparison: % difference vs % uncertainty, or an uncertainty range that does/doesn't include other values.",
+   "what_scores": "Calculate the range or % difference, compare with the uncertainty, then conclude (consistent / identification invalid because the range also covers type Y).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "21(c)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "24(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "23(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "23(b)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Systematic error and a graph",
+   "looks_right": "Saying a constant offset in x changes the gradient (and therefore the deceleration).",
+   "why_lost": "A constant systematic error shifts the line but leaves the gradient unchanged; also a non-zero intercept is attributed to a zero/systematic error (contact or lead resistance).",
+   "what_scores": "The gradient stays the same; the line is just shifted. Intercept on R-L graph: meter not zeroed / resistance of leads or clips.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "22(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "24(a)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "10"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Direction of an error's effect",
+   "looks_right": "Correctly spotting a zero error but stating the wrong effect on Young modulus or resistivity.",
+   "why_lost": "Marks follow the chain: diameter too big -> area too big -> stress too small -> true E larger; a limitation needs its effect on R stated.",
+   "what_scores": "Trace each step explicitly (area, stress, gradient, E), or for resistivity say why measured R is too large (clip contact resistance, ammeter resistance, heating, shorter length).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "23(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "24(c)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Uncertainty from a graph",
+   "looks_right": "'Draw another line and compare.'",
+   "why_lost": "Need a worst-fit (max/min gradient) line AND how the percentage is calculated.",
+   "what_scores": "Draw the worst acceptable line; % uncertainty = |h_best - h_worst| / h_best x 100 (or half-range / mean x 100).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(b)(iv)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "LED threshold / onset of emission",
+   "looks_right": "'Increase the voltage until the LED lights up.'",
+   "why_lost": "Needs a means of adjusting p.d., correct polarity, 'just lit', and a way of seeing the faint onset (tube, darkened room); the tube's purpose is to remove ambient light making the onset easier to judge.",
+   "what_scores": "Variable supply/resistor with LED forward-biased, voltmeter across LED; increase p.d. until it just lights; view through a tube / turn off room lights.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Speed from a light gate",
+   "looks_right": "'The light gate measures the speed.'",
+   "why_lost": "Separate mark for how speed is obtained; mass must also be measured for KE.",
+   "what_scores": "Speed = length of interrupt card / time to pass the gate; mass from a balance; KE = 1/2 m v^2.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "22(b)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Describing technique not calculation",
+   "looks_right": "Filling a method answer with Snell's law calculations; using n = c/v for a lab method.",
+   "why_lost": "Calculation methods are ignored in technique marks, and n = c/v is rejected in a lab refractive-index method; angles must be measured from the normal.",
+   "what_scores": "Trace rays, draw the normal, measure i and r (or critical angle) with a protractor; n = sin i / sin r (or 1/sin C); plot sin i vs sin r.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "22(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(c)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Collecting enough data",
+   "looks_right": "Describing one measurement of V and I at one temperature.",
+   "why_lost": "Marks for a range of readings (at least 5 / regular intervals), recording temperature with each, and R = V/I correctly rearranged.",
+   "what_scores": "Record temperature, V and I at regular intervals as it cools (5+ readings), calculate R = V/I for each.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "25(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "22(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "practical-and-uncertainty",
+   "topic": "Terminal velocity check",
+   "looks_right": "Doing one distance/time calculation.",
+   "why_lost": "A second calculation (or justification that intervals are equal) is needed to show terminal velocity was reached.",
+   "what_scores": "Compute v for two intervals after 0.2 s and show they're equal (~0.27 m s^-1).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "25(c)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Square-root scaling with energy",
+   "looks_right": "Halving the accelerating p.d. halves the speed; doubling p.d. or KE halves the de Broglie wavelength; losing 1/4 of KE gives 0.75v.",
+   "why_lost": "Speed and momentum go as the square root of kinetic energy, so the factor is sqrt(2) (or sqrt(0.75)).",
+   "what_scores": "u/sqrt2, lambda0/sqrt2, 0.87v.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "15"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "14"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "14"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "5"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Elastic energy with a stiffer spring",
+   "looks_right": "E proportional to x^2, so one third of the extension gives E/9.",
+   "why_lost": "The springs differ: same load, different k. With F fixed, E = 1/2 F x, so E/3.",
+   "what_scores": "Use E = 1/2 F x when the force is the same.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "8"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Rate of change of momentum vs impulse",
+   "looks_right": "Multiplying force by time to get the rate of change of momentum, or picking momentum as having the force's graph shape.",
+   "why_lost": "Rate of change of momentum equals the force itself; F x t is impulse (the change). Acceleration has the same shape as force.",
+   "what_scores": "Rate of change of momentum = resultant force (100 kg m s^-2); greatest force where v-t gradient is steepest.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "11"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "6"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "16"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "12"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Stationary means no acceleration",
+   "looks_right": "At its lowest point / top of bounce the body is momentarily at rest, so acceleration is zero.",
+   "why_lost": "Velocity can be zero while acceleration is not.",
+   "what_scores": "At the turning point there is still a resultant force, so it accelerates (upwards for the diving bird).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "14"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "14"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "18"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Angles from the surface vs normal",
+   "looks_right": "Using the angle between ray and surface in n1 sin(theta1) = n2 sin(theta2).",
+   "why_lost": "Snell's law uses angles to the normal; the given 80 degrees/20 degrees must be converted.",
+   "what_scores": "Convert to angle from the normal (90 - angle) before applying Snell's law; check against the critical angle for TIR.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "20"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "3"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "5"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Wire stretched or rescaled",
+   "looks_right": "Tripling length triples R; stretching to 1.5L multiplies R by 1.5.",
+   "why_lost": "Area changes too (diameter doubles means area x4; constant volume means area / 1.5); n is a material property unchanged by dimensions.",
+   "what_scores": "R proportional to L/A: stretched to 1.5L at constant volume gives 2.25R; same material keeps the same n.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "5"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "9"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "3"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Distances in suvat",
+   "looks_right": "Distance in the 4th second = total in 4 s; using full height rather than height fallen.",
+   "why_lost": "Careful with which interval/distance the question asks for.",
+   "what_scores": "Use s(4) - s(3); the drop is 4.5 - 2.5 = 2.0 m; subtract ball radius/diameter correctly.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "9"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "11"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "18"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Fringe spacing from several fringes",
+   "looks_right": "Taking 9 mm across 6 spacings as one fringe spacing.",
+   "why_lost": "Divide the measured width by the number of spacings.",
+   "what_scores": "x = 9 mm / 6 = 1.5 mm, then lambda = ax/D.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "13"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Phase within stationary waves",
+   "looks_right": "Points in adjacent loops are pi/2 out of phase.",
+   "why_lost": "Within a loop all points are in phase; adjacent loops are in antiphase (pi).",
+   "what_scores": "Phase difference between adjacent loops = pi (180 degrees).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "6"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "12"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Power in parallel/divider circuits",
+   "looks_right": "Using P = I^2 R with the same current for parallel resistors, or least power from smallest resistance.",
+   "why_lost": "In parallel the p.d. is the same, so P = V^2/R; least power from greatest total resistance.",
+   "what_scores": "P = V^2 / R in parallel; ratio of powers in R and 2R is 2.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "19"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "6"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "9"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Kirchhoff and conservation",
+   "looks_right": "Kirchhoff's first law conserves energy / the term 'charge' appears in it.",
+   "why_lost": "First law: charge conservation (stated in terms of current); second law: energy.",
+   "what_scores": "First law conserves charge; usually phrased with current.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "1"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "2"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "12"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Upthrust on a floating object",
+   "looks_right": "Upthrust = 80% of weight because 80% is submerged.",
+   "why_lost": "For any floating object upthrust equals its full weight.",
+   "what_scores": "Upthrust = weight of the object = 6.0 N.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "11"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "15"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Work done by forces",
+   "looks_right": "A couple does no work; using path length for work against weight.",
+   "why_lost": "A couple rotating through a revolution does work = torque x 2 pi; work against weight uses vertical height only.",
+   "what_scores": "W = torque x angle (rad); W = mg x vertical height.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "5"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "2"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "13"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "multiple-choice",
+   "topic": "Electrons vs charge",
+   "looks_right": "A positively charged drop gained electrons.",
+   "why_lost": "Positive charge means electrons were lost; conduction electrons drift towards the positive terminal; in electrolytes carriers are ions.",
+   "what_scores": "Number lost = charge / e; electrons drift opposite to conventional current.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "20"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "14"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "20"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "marking-rules",
+   "topic": "Wrong physics (XP) vs slips",
+   "looks_right": "A wrong equation that happens to give the right number (e.g. halving a distance, subtracting lever arms, eV as J, pi r^2 for a sphere).",
+   "why_lost": "XP is not an error carried forward: the mark is lost and later dependent marks usually go too. An incorrect equation is wrong physics even if it gives the correct answer. Arithmetic, transcription and POT slips lose only the mark where they occur.",
+   "what_scores": "Write the correct physical equation first; if you slip, it is better to be a POT/arithmetic slip than a wrong formula.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "24(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "21(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "27(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "25(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "27(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "21(b)(ii)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "marking-rules",
+   "topic": "No ECF across a 'show that'",
+   "looks_right": "Carrying forward your own (wrong) value of T into the next part.",
+   "why_lost": "When a value is given in a show-that, the next part has no ECF from your own answer; use the printed value (e.g. 3.4 N). (Using the given value is fully credited.)",
+   "what_scores": "Always use the stated value from the show-that in subsequent parts.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "22(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(b)(ii)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "marking-rules",
+   "topic": "Fractions vs decimals for ratios",
+   "looks_right": "Giving the ratio of powers as an unsimplified fraction (31/92).",
+   "why_lost": "A fraction was rejected for the ratio in 2019, whereas 2/9 was explicitly allowed in the specimen - so a decimal is the safe form.",
+   "what_scores": "Give a decimal ratio (0.34, or 0.34:1; 0.22).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "23(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "24(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "marking-rules",
+   "topic": "M marks gate A marks",
+   "looks_right": "A correct conclusion (e.g. 'not a Newton 3 pair', 'destructive interference', 'increases') with no reason.",
+   "why_lost": "Where the reasoning is the M mark, a bare conclusion scores nothing (A depends on M).",
+   "what_scores": "Always give the reason first (different types/same object; path difference = 1.5 lambda; perpendicular distance increases), then the conclusion.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "21(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "25(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(a)(ii)"
+    }
+   ],
+   "severity": "lose all marks for that part"
+  },
+  {
+   "category": "marking-rules",
+   "topic": "Statements must be explicit (B marks)",
+   "looks_right": "Implying 'gradient = velocity' by talking about gradients.",
+   "why_lost": "Some B marks say the statement must be clear and not implied.",
+   "what_scores": "Write the key relationship explicitly in words.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  },
+  {
+   "category": "marking-rules",
+   "topic": "Contradictions",
+   "looks_right": "Hedging: adding I proportional to 1/x^2 alongside a correct amplitude argument, or listing several reasons.",
+   "why_lost": "Contradictory or extra wrong physics in the same answer cancels the mark (CON).",
+   "what_scores": "Give one clear correct answer; don't hedge.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "23(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "27(a)"
+    }
+   ],
+   "severity": "lose one mark"
+  }
+ ],
+ "leniencies": [
+  {
+   "topic": "Signs of answers",
+   "detail": "The sign of a deceleration, force, momentum change or resultant displacement is ignored; magnitude is enough.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "21(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "23(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "23(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "26(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(b)(iv)"
+    }
+   ]
+  },
+  {
+   "topic": "1 s.f. accepted in specific parts",
+   "detail": "Some parts explicitly allow a 1 s.f. answer without the SF penalty (e.g. 4.0 deceleration as 4, 0.3 W, 4 x 10^-19 J, 2 m/s, 8 ohm, ratio 1, 4 mats, 8 x 10^3 kg/m^3, 30 N m, uncertainties to 1 s.f.).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "21(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "24(a)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "27(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "23(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "23(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(c)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "26(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "22(b)"
+    }
+   ]
+  },
+  {
+   "topic": "Extra significant figures",
+   "detail": "Giving more s.f. than justified is never penalised (unless the question demands a set number).",
+   "refs": []
+  },
+  {
+   "topic": "Speed vs velocity",
+   "detail": "'Speed' is accepted for 'velocity' when describing motion from an s-t graph.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "21(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "23(b)(ii)"
+    }
+   ]
+  },
+  {
+   "topic": "Interference vs superposition in stationary waves",
+   "detail": "'Interference' accepted in place of 'superposition' for stationary wave formation.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "26(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(b)(i)"
+    }
+   ]
+  },
+  {
+   "topic": "g = 9.8",
+   "detail": "g = 9.8 m s^-2 accepted as well as 9.81; g = 10 allowed where it gives the same 2 s.f. answer.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "21(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(b)"
+    }
+   ]
+  },
+  {
+   "topic": "Using a printed show-that value",
+   "detail": "Using the rounded given value (e.g. 9 x 10^6 m/s, 90 000 N/m, 3.4 N) in the next part still earns full credit.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "22(d)"
+    }
+   ]
+  },
+  {
+   "topic": "Accuracy/precision terms",
+   "detail": "Misuse of 'accuracy' and 'precision' was ignored in the mu experiment as long as the procedure was sensible.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "26(b)"
+    }
+   ]
+  },
+  {
+   "topic": "Labels and orientation",
+   "detail": "Missing graph label Y ignored; triangle of forces orientation ignored; ray directions and extra reflected rays ignored; no labelling of rays/normal needed.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "23(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(c)"
+    }
+   ]
+  },
+  {
+   "topic": "Arrow placement",
+   "detail": "Force arrows may be drawn anywhere on the diagram if directions are correct.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "21(b)(i)"
+    }
+   ]
+  },
+  {
+   "topic": "Ranges for graph readings",
+   "detail": "Read-offs and gradients accepted within stated ranges (e.g. gradient 15.5-16.5, 160-180 Hz m, 1.40-1.60, h 6.4-7.4 x 10^-34; times 0.30-0.40 s).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "26(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "21(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "26(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(b)"
+    }
+   ]
+  },
+  {
+   "topic": "Scale drawings",
+   "detail": "Correct scale drawing accepted for full marks within tolerance (4.5 +/- 0.1 N; 5.4-5.6 cm leading to 7.1 +/- 0.2 m/s).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "21(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "23(a)(ii)"
+    }
+   ]
+  },
+  {
+   "topic": "Alternative methods",
+   "detail": "Any correct method (sine/cosine rule, components, KE route, potential divider, suvat variants) earns full marks; 'any subject' for equations.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "24(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "23(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "21(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "23(b)(i)"
+    }
+   ]
+  },
+  {
+   "topic": "Repeated POT",
+   "detail": "The same POT error in a value (0.54 mm^2) is not penalised again in a later part.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "25(c)(ii)"
+    }
+   ]
+  },
+  {
+   "topic": "Powers of ten in justifications",
+   "detail": "Powers of ten and units ignored in a qualitative resistance justification; POT errors ignored in supporting calculations.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "27(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "24(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "23(a)"
+    }
+   ]
+  },
+  {
+   "topic": "Answer line extras",
+   "detail": "A value of k or g written on the answer line next to the uncertainty is ignored.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "22(b)"
+    }
+   ]
+  },
+  {
+   "topic": "Irrelevant extras",
+   "detail": "Energy lost, drag, coherence, thermal energy to surroundings, 'waves don't move', references to frequency/threshold in de Broglie questions are ignored rather than penalised.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "23(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "23(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "22(d)"
+    }
+   ]
+  },
+  {
+   "topic": "Photoelectron wording",
+   "detail": "'Photoelectron' accepted for electron; loose 'electrons and photons' plural given benefit of doubt.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(c)"
+    }
+   ]
+  },
+  {
+   "topic": "Earth/ground for N3 partner",
+   "detail": "For the N3 partner of weight, 'planet' or 'ground' was allowed.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(b)(i)"
+    }
+   ]
+  },
+  {
+   "topic": "Sin^2 curve",
+   "detail": "sin^2-shaped intensity curve accepted (if positions correct).",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "25(b)(i)"
+    }
+   ]
+  },
+  {
+   "topic": "Coherence phase value",
+   "detail": "An incorrect value for the constant phase difference is ignored.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "26(a)"
+    }
+   ]
+  },
+  {
+   "topic": "Rounding of intermediate values",
+   "detail": "Rounded intermediate values (e.g. 12.1 N, 5.6 x 10^17) are accepted.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "28(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(b)(ii)"
+    }
+   ]
+  },
+  {
+   "topic": "Variable resistor symbol",
+   "detail": "ECF allowed for an incorrect variable-resistor symbol in the internal resistance circuit; battery symbol for cell allowed.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "25(b)"
+    }
+   ]
+  },
+  {
+   "topic": "Extension vs compression",
+   "detail": "'Extension' accepted for 'compression'; W = mg route allowed.",
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "22(a)"
+    }
+   ]
+  }
+ ],
+ "general": [
+  "Significant figures: if data are to 2 s.f., any answer of 2 or more s.f. is accepted; more s.f. than justified is never penalised; fewer than 2 s.f. is penalised once only in the whole paper (some parts waive it, and some demand exactly 2 s.f.).",
+  "ECF: within a question, arithmetic errors (AE), transcription/misreading errors (TE) and power-of-ten/prefix errors (POT) lose only the mark where they happen; later marks follow through. Wrong physics or an incorrect equation (XP) gets no ECF, even if it gives the right number.",
+  "Show-that questions: the final printed value carries no mark (A0); you are marked on working and must give a value to more s.f. than the given one.",
+  "Mark types: B marks must be explicitly seen; M marks must be seen and gate the A marks; C marks can be implied by later correct working (so a correct answer with sparse working can still score), but B and M marks cannot be implied.",
+  "Contradictions (CON): if a response contradicts itself, the mark is lost even if one part is correct.",
+  "MCQ: if two letters are given for a single-answer question, no mark is awarded even if one is correct.",
+  "Crossed-out work: if a clear alternative is given, the crossed-out version is not marked; if not, it may be marked if legible.",
+  "List questions: only the required number of responses is marked, left to right, line by line - extra responses can't rescue you and wrong first responses use up the slots.",
+  "Longer answers: if two separate attempts are left, only the first is marked.",
+  "Substitution: unless stated otherwise, an equation may be written with any subject.",
+  "Underlined words are essential; bracketed words are optional; '/' separates alternatives; AW = alternative wording; ORA = reverse argument accepted.",
+  "g = 10 instead of 9.81 is penalised (first use) where it changes the 2 s.f. answer.",
+  "Annotation '^' (omission) means the answer is not wrong but not enough - typical of near-miss explanations."
+ ]
+}

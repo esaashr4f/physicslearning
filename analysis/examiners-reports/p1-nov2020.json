@@ -1,0 +1,31 @@
+{"paper":1,"slug":"nov2020",
+"overview":[
+"This autumn report gives broad commentary only, with few question-by-question details.",
+"Calculations in Section B were generally well done and logically set out; most finished in time though about 1 in 10 omitted 28(b)(ii).",
+"Weaker candidates wrote too much working for numerical MCQs, recalled definitions poorly (e.g. confusing work function with threshold frequency), and left symbols undefined.",
+"Premature rounding and poor recall of unit prefixes (e.g. nano) cost marks.",
+"Stronger candidates used the data booklet well, showed every step in 'show' questions, matched answer length to the marks and used scientific vocabulary precisely."
+],
+"assessment_for_learning":[
+"For numerical MCQs identify the key physics and proportionalities (e.g. v proportional to sqrt(KE)) rather than doing full calculations; eliminate impossible options.",
+"Learn basic physics thoroughly - gaps lead to guessing on simple MCQs.",
+"Use short sentences or bullet points in explanations to avoid contradicting earlier correct statements.",
+"Use the number of marks as a guide to the number of distinct physics points needed.",
+"Underline key terms (e.g. maxima and minima) and reflect before writing.",
+"Use the paper as a mock to practise timing, command words, carrying unrounded values through, and absolute uncertainty."
+],
+"parts":{
+"3":{"performance":"mixed","good_practice":["Recognised air resistance rises with speed so the resultant force and acceleration decrease; eliminated graphs with increasing or constant acceleration"]},
+"4":{"performance":"poorly answered","good_practice":["Wrote KE = 1/2 mv^2 and energy gained = eV, ruled out a speed decrease, and scaled speed by sqrt(3.5)"]},
+"14":{"performance":"poorly answered"},
+"21(b)":{"performance":"mixed","common_errors":["Stated that total momentum of the system equals the final momentum of the ball","Wrote contradictory statements"],"good_practice":["Person moves left, conservation of momentum or Newton's third law, total momentum stays zero, person's speed smaller than the ball's"]},
+"22(a)":{"good_practice":["Showed every step leading to the 'show' value"]},
+"22(b)":{"performance":"mixed","common_errors":["Rounded intermediate values prematurely"],"good_practice":["Calculated absolute uncertainty to reach a conclusion from the data"]},
+"23(b)(i)":{"common_errors":["Premature rounding leading to wrong final answer"]},
+"23(b)(ii)":{"performance":"mixed","common_errors":["Said the drone was accelerating and still moving upwards at Z"],"misconceptions":["Misreading a negatively sloping v-t section - it means deceleration"]},
+"26(c)":{"performance":"poorly answered","common_errors":["Gave the amplitude ratio 2.4 instead of 2.4^2 = 5.76","Wrote a fraction on the answer line"],"misconceptions":["Forgetting that intensity is proportional to amplitude squared"]},
+"27(b)":{"performance":"mixed","common_errors":["Described constructive and destructive interference without linking them to the maxima and minima"],"good_practice":["Explained maxima/minima using path or phase difference"]},
+"28(a)":{"performance":"mixed","misconceptions":["Treating threshold frequency and work function as synonyms"],"good_practice":["Explained no emission above lambda0 because each photon's energy is less than the work function"]},
+"28(b)(i)":{"common_errors":["Poor recall of the nano prefix"]},
+"28(b)(ii)":{"performance":"poorly answered","common_errors":["Divided laser power by 1.60 x 10^-19 J instead of the photon energy 4.06 x 10^-19 J","About 1 in 10 omitted it"]}
+}}

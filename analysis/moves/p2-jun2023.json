@@ -1,0 +1,287 @@
+{
+ "1(a)(i)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Gradient of braking section of v\u2013t graph."
+ },
+ "1(a)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "F = ma with earlier deceleration."
+ },
+ "1(a)(iii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Total area under v\u2013t graph: rectangle plus triangle."
+ },
+ "1(a)(iv)": {
+  "moves": [
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Work by brakes equals initial KE (or force \u00d7 braking distance)."
+ },
+ "1(b)": {
+  "moves": [
+   "graph-draw",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Half speed: same reaction time, same gradient so braking time halves; sketch."
+ },
+ "1(c)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Longer reaction time lengthens flat section only."
+ },
+ "1(c)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Greater friction steepens braking slope only."
+ },
+ "2": {
+  "moves": [
+   "plan",
+   "linearise",
+   "given-formula"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Timing terminal velocity for various d; plot v vs d\u00b2; K from gradient with densities."
+ },
+ "3(a)": {
+  "moves": [
+   "show-that",
+   "vectors"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Resolve launch velocity with angle to vertical."
+ },
+ "3(b)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "v\u00b2 = u\u00b2 + 2as vertically, then square root."
+ },
+ "3(c)": {
+  "moves": [
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Initial KE plus GPE lost (or resolve and recombine components) gives impact KE."
+ },
+ "3(d)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Momentum is a vector; gravity changes velocity magnitude and direction."
+ },
+ "4(a)(i)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Name vernier calipers for 0.1 mm readings."
+ },
+ "4(a)(ii)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Difference of lengths with uncertainties added."
+ },
+ "4(a)(iii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Series combination k = 18 N/m, F = kx, then M = F/g to 2 s.f."
+ },
+ "4(a)(iv)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "\u00bdkx\u00b2 with combined constant."
+ },
+ "4(b)(i)": {
+  "moves": [
+   "linearise",
+   "rearrange",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Gradient of F\u2013x equals AE/L; convert N/mm to N/m; solve for A."
+ },
+ "4(b)(ii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Area under non-linear force\u2013extension graph by counting squares."
+ },
+ "5(a)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Water waves transverse: oscillation perpendicular to travel."
+ },
+ "5(a)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Oscillations confined to vertical plane so polarised."
+ },
+ "5(b)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "f = v/\u03bb."
+ },
+ "5(c)(i)": {
+  "moves": [
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Path difference as multiple of \u03bb is 2.5, so decide destructive."
+ },
+ "5(c)(ii)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Path difference \u2192 fraction of wavelength \u2192 phase difference in radians."
+ },
+ "6(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify filament lamp from I\u2013V shape."
+ },
+ "6(b)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Pick voltmeter whose range and resolution match a reading to 0.01 V."
+ },
+ "6(c)(i)": {
+  "moves": [
+   "show-that",
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Read lamp current from graph, subtract from total, R = V/I."
+ },
+ "6(c)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Open-circuit reading is emf; r from lost volts over current."
+ },
+ "6(d)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Lower R \u2192 lower total resistance \u2192 larger current \u2192 more lost volts \u2192 terminal pd falls."
+ },
+ "7": {
+  "moves": [
+   "plan",
+   "linearise",
+   "given-formula",
+   "graph-read",
+   "uncertainty"
+  ],
+  "scaffolded": true,
+  "steps": 5,
+  "why": "Find fundamental f; gradient of given 1/f vs d graph = \u22124/v; worst line for % uncertainty."
+ },
+ "8(a)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Electrons absorb photon energy exceeding work function."
+ },
+ "8(a)(ii)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Define threshold frequency."
+ },
+ "8(b)(i)": {
+  "moves": [
+   "show-that",
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Convert eV to joules."
+ },
+ "8(b)(ii)": {
+  "moves": [
+   "energy",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Photon energy = \u03c6 + KEmax (or f), then \u03bb = c/f."
+ },
+ "8(c)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "KEmax unchanged by intensity."
+ },
+ "8(c)(ii)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Doubling intensity doubles photon rate so emission rate doubles."
+ }
+}

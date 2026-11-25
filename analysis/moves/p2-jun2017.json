@@ -1,0 +1,240 @@
+{
+ "1(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Stopping distance as thinking plus braking distance."
+ },
+ "1(b)(i)": {
+  "moves": [
+   "show-that",
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Convert km per hour to m per second."
+ },
+ "1(b)(ii)1": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Direct \u00bdmv\u00b2 substitution."
+ },
+ "1(b)(ii)2": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Choose suvat with v = 0 and solve for deceleration."
+ },
+ "1(b)(ii)3": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "F = ma with mass and earlier deceleration (or work/distance)."
+ },
+ "1(b)(iii)": {
+  "moves": [
+   "explain-chain",
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Weight component down slope adds to braking force \u2192 larger deceleration \u2192 shorter distance."
+ },
+ "2(a)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Subtract original length to get extensions."
+ },
+ "2(b)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": true,
+  "steps": 3,
+  "why": "Label, scale, plot points and draw ruled best-fit line."
+ },
+ "2(c)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Gradient of best-fit line."
+ },
+ "2(d)": {
+  "moves": [
+   "linearise",
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Gradient is e/F so force constant is its reciprocal; correct unit credited."
+ },
+ "2(e)": {
+  "moves": [
+   "definition",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "State Hooke's law and judge from straightness/origin of line."
+ },
+ "2(f)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Series springs: constant scales as 1/n, so three versus two gives 2/3."
+ },
+ "3(a)(i)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Choose micrometer/calipers and repeat at different orientations."
+ },
+ "3(a)(ii)": {
+  "moves": [
+   "show-that",
+   "chain"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Sphere volume from diameter, then mass from density."
+ },
+ "3(a)(iii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Upthrust from displaced water, weight, then balance for holding force."
+ },
+ "3(b)": {
+  "moves": [
+   "plan",
+   "linearise"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Method checking terminal velocity, timing; plot v vs r\u00b2, K from gradient."
+ },
+ "4(a)(i)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "R = V\u00b2/P."
+ },
+ "4(a)(ii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Cross-sectional area from radius, then length from resistivity equation."
+ },
+ "4(a)(iii)": {
+  "moves": [
+   "definition",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Ohm's law requires constant temperature; judge element does not obey it."
+ },
+ "4(b)": {
+  "moves": [
+   "chain",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Energy in kWh from power \u00d7 hours \u00d7 number, then cost from tariff."
+ },
+ "4(c)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Potential divider fraction of supply across fixed resistor."
+ },
+ "4(c)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Temperature up \u2192 thermistor R falls \u2192 current up \u2192 larger pd across fixed resistor."
+ },
+ "5(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Define phase difference and coherence."
+ },
+ "5(b)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Bright at whole-wavelength path difference, dark at odd half-wavelengths."
+ },
+ "5(b)(ii)1": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Fringe spacing from pattern width over spacings, then \u03bb = ax/D."
+ },
+ "5(b)(ii)2": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Add percentage uncertainties of a, D and pattern width."
+ },
+ "5(c)(i)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Photon energy hc/\u03bb, then photon rate = power/energy."
+ },
+ "5(c)(ii)": {
+  "moves": [
+   "units",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Compare photon energy with work function after eV\u2013J conversion; decide no emission."
+ },
+ "6(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Contrast energy transfer and amplitude variation in progressive vs stationary waves."
+ },
+ "6(b)": {
+  "moves": [
+   "explain-chain",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Reflection/superposition with node/antinode ends explains harmonics; \u03bb from L then v = f\u03bb."
+ }
+}

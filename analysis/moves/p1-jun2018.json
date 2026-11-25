@@ -1,0 +1,366 @@
+{
+ "1": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Maximum velocity is where the s-t gradient is steepest."
+ },
+ "2": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Pick definition stated purely in terms of quantities."
+ },
+ "3": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Combine weight with small opposing drag to find resultant direction."
+ },
+ "4": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Momentum conservation: Q gains what P loses."
+ },
+ "5": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Resistance scales with length over diameter squared."
+ },
+ "6": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Same series current so p.d. shares in proportion to power."
+ },
+ "7": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Total resistance with internal resistance gives current, then V = IR."
+ },
+ "8": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Double percentage uncertainty of I, add that of R."
+ },
+ "9": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Three non-parallel forces in equilibrium must pass through one point."
+ },
+ "10": {
+  "moves": [
+   "graph-read",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Compare areas under v-t graph for braking versus thinking distances."
+ },
+ "11": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Rate of change of momentum equals applied force."
+ },
+ "12": {
+  "moves": [
+   "chain",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Weight from mass, area from radius in mm converted, then stress."
+ },
+ "13": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Light frees more charge carriers, increasing number density."
+ },
+ "14": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Energy per electron divided by charge gives p.d."
+ },
+ "15": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Opposing impulse subtracted from initial momentum, giving reversed direction."
+ },
+ "16": {
+  "moves": [
+   "estimate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Charge from It, divide by e, then express order of magnitude."
+ },
+ "17": {
+  "moves": [
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Photoelectric equation gives max KE; select value exceeding it."
+ },
+ "18": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Coherence means constant phase difference."
+ },
+ "19": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Pattern shows three-quarter wavelength in tube; scale up."
+ },
+ "20": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Reduce joule to SI base units."
+ },
+ "21(a)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Measure distance and time; final speed twice average speed from rest."
+ },
+ "21(b)(i)": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Rearrange v\u00b2 = u\u00b2 + 2as for acceleration."
+ },
+ "21(b)(ii)": {
+  "moves": [
+   "given-formula",
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Use the supplied a = g sin\u03b8 and inverse sine for angle."
+ },
+ "22(a)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Equilibrium: resultant of spring forces balances weight, upward."
+ },
+ "22(b)": {
+  "moves": [
+   "vectors",
+   "graph-draw"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Draw closed right-angled triangle of forces with consistent arrows."
+ },
+ "22(c)": {
+  "moves": [
+   "show-that",
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Resolve tensions at 45\u00b0 or Pythagoras to balance weight."
+ },
+ "22(d)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Extension from F = kx, then elastic energy."
+ },
+ "23(a)": {
+  "moves": [
+   "graph-read",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Rising upthrust with displaced water explains graph, constant once submerged."
+ },
+ "23(b)": {
+  "moves": [
+   "vectors",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Resultant of upthrust and weight, mass from weight, then a = F/m."
+ },
+ "23(c)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Drag rises with speed, reducing resultant force."
+ },
+ "24(a)(i)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Power equals p.d. times current."
+ },
+ "24(a)(ii)": {
+  "moves": [
+   "evaluate",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Use V/I trend and symmetric conduction to identify thermistor."
+ },
+ "24(b)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Resistance from resistivity, add series resistor, then current."
+ },
+ "25(a)": {
+  "moves": [
+   "plan",
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Period from divisions times time-base, then frequency as reciprocal."
+ },
+ "25(b)(i)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Sketch antiphase sinusoid of specified amplitude."
+ },
+ "25(b)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Superposed amplitude reduced; intensity proportional to amplitude squared."
+ },
+ "25(b)(iii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Path difference equals half wavelength so antiphase, destructive."
+ },
+ "26(a)(i)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Wave equation with GHz converted to Hz."
+ },
+ "26(a)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Slit width similar to wavelength causes significant diffraction."
+ },
+ "26(b)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Frequency fixed by source; lower speed so shorter wavelength."
+ },
+ "26(c)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Ray box method to find critical angle; n = 1/sinC."
+ },
+ "27(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Radio and X-rays differ in wavelength or frequency."
+ },
+ "27(b)(i)": {
+  "moves": [
+   "show-that",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Surface area of sphere from radius, then intensity as power over area."
+ },
+ "27(b)(ii)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Photon energy from hc/\u03bb."
+ },
+ "27(b)(iii)": {
+  "moves": [
+   "estimate"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Assume all photons at given wavelength; divide power by photon energy."
+ }
+}

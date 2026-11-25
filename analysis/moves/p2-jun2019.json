@@ -1,0 +1,253 @@
+{
+ "1(a)(i)": {
+  "moves": [
+   "show-that",
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Gradient of v\u2013t line gives acceleration."
+ },
+ "1(a)(ii)": {
+  "moves": [
+   "show-that",
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Read impact speed from graph, then \u00bdmv\u00b2."
+ },
+ "1(b)(i)": {
+  "moves": [
+   "energy",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Take 80% of KE, rearrange \u00bdmv\u00b2 for rebound speed."
+ },
+ "1(b)(ii)": {
+  "moves": [
+   "graph-draw",
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Draw line from negative rebound velocity with same gradient g up to zero."
+ },
+ "1(b)(iii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Area under rebound section of v\u2013t graph gives height."
+ },
+ "1(c)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Drag grows with speed \u2192 resultant force falls \u2192 gradient decreases, lower impact speed."
+ },
+ "2(a)": {
+  "moves": [
+   "definition",
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Define material terms and compare materials using graph shape and gradient."
+ },
+ "2(b)": {
+  "moves": [
+   "estimate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Assume adult weight, share over three legs, area = force/stress."
+ },
+ "3(a)(i)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Choose calipers or micrometer for diameter."
+ },
+ "3(a)(ii)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Mean of readings with half-range uncertainty."
+ },
+ "3(a)(iii)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Sphere volume from radius in metres."
+ },
+ "3(a)(iv)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Density = mass/volume to 2 s.f."
+ },
+ "3(a)(v)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Percentage uncertainty in mass plus three times that of diameter."
+ },
+ "3(b)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Extension from lengths, weight from mass, then k = F/x."
+ },
+ "3(c)(i)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Spring tension from new extension, then upthrust = weight \u2212 tension."
+ },
+ "3(c)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Liquid density from upthrust = \u03c1Vg."
+ },
+ "4(a)(i)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Combine parallel groups then add in series."
+ },
+ "4(a)(ii)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Share of supply pd in proportion to group resistance."
+ },
+ "4(a)(iii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Current through Y from V/R, then Q = It."
+ },
+ "4(a)(iv)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "W = VQ with earlier values."
+ },
+ "4(b)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Drift velocity \u221d current for identical wires; compare branch currents \u2192 1.5 times."
+ },
+ "4(c)": {
+  "moves": [
+   "definition",
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Define number density and rank conductor, semiconductor, insulator."
+ },
+ "5(a)(i)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Read amplitude from displacement\u2013distance graph."
+ },
+ "5(a)(ii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Read wavelength from graph."
+ },
+ "5(a)(iii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Read horizontal shift as fraction of \u03bb, convert to radians."
+ },
+ "5(a)(iv)": {
+  "moves": [
+   "ratio",
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Intensity \u221d amplitude\u00b2; ratio of squared amplitudes from graph."
+ },
+ "5(b)": {
+  "moves": [
+   "plan",
+   "linearise"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Two-speaker interference method; plot x against 1/f, v from gradient."
+ },
+ "6(a)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Define threshold frequency."
+ },
+ "6(a)(ii)": {
+  "moves": [
+   "graph-read",
+   "linearise"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Threshold frequency is the f-axis intercept of KEmax\u2013f graph."
+ },
+ "6(a)(iii)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "\u03c6 = hf0 then convert joules to eV."
+ },
+ "6(b)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Describe electron diffraction rings through graphite and wavelength dependence."
+ }
+}

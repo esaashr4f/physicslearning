@@ -1,0 +1,154 @@
+{
+ "paper": 2,
+ "slug": "nov2020",
+ "overview": [
+  "Broad commentary only for this autumn series; a good range of marks with no time pressure.",
+  "Show working in numerical questions and make the method explicit in 'show' questions, rearranging so the unknown is the subject.",
+  "Weaker candidates omitted explanatory detail and calculation steps, misused units and conversions, and were unsure of definitions, graphs and uncertainties.",
+  "Stronger candidates reasoned clearly, used sensible sketches, and answered quantitatively wherever data was given.",
+  "Take care when adding to diagrams and sketches on provided grids."
+ ],
+ "assessment_for_learning": [
+  "Be able to describe light-gate methods: what is measured to find speed or acceleration, and that gates connect to a timer or data logger.",
+  "Choose a graph that should give a straight line and explain how unknowns come from the gradient and/or intercept.",
+  "Worst acceptable line: steepest or shallowest line passing through all error bars.",
+  "Learn unit prefixes (e.g. nm vs pm) and check that answers are physically reasonable (nothing faster than light).",
+  "Gradients: two easily read points on the line at least half its length apart; never use table points off the line.",
+  "Give answers as decimals to at least 2 s.f., not surds or fractions.",
+  "Remember A = pi r^2 = pi d^2/4 and moment = force x perpendicular distance."
+ ],
+ "parts": {
+  "1(a)(ii)": {
+   "performance": "mixed",
+   "common_errors": [
+    "Did not use the grid to keep amplitude and period consistent"
+   ],
+   "good_practice": [
+    "Peaks two squares above and troughs two below, period of 4 cm consistent at peaks, troughs and zero crossings"
+   ]
+  },
+  "1(b)(i)": {
+   "performance": "mixed",
+   "common_errors": [
+    "Confused 200 nm with 200 pm"
+   ]
+  },
+  "2(a)(ii)": {
+   "common_errors": [
+    "Gave a speed greater than the speed of light (4.59 x 10^8 m/s) without questioning it"
+   ]
+  },
+  "2(b)(ii)": {
+   "common_errors": [
+    "Answered qualitatively without calculating the critical angle"
+   ]
+  },
+  "3(a)(i)": {
+   "performance": "mixed",
+   "good_practice": [
+    "Clearly identified the points on the line used for the gradient"
+   ]
+  },
+  "3(b)(i)": {
+   "misconceptions": [
+    "Unclear what a worst acceptable line is: it is the steepest or shallowest line passing through all error bars"
+   ]
+  },
+  "3(b)(iii)": {
+   "good_practice": [
+    "Showed working clearly when finding the percentage uncertainty"
+   ]
+  },
+  "4": {
+   "performance": "mixed",
+   "good_practice": [
+    "Workable diagram with support, a release method (slope or spring) and a way of measuring launch velocity",
+    "Repeated R for the same v and averaged; included safety",
+    "Marked the landing point with sand or paint",
+    "Found launch velocity from energy conversion or light gates (ball diameter for one gate, close spacing for two)",
+    "Plotted a suitable graph and found Q from the gradient"
+   ]
+  },
+  "5(b)": {
+   "performance": "mixed",
+   "common_errors": [
+    "Said the gradient changes rather than decreases"
+   ]
+  },
+  "5(c)": {
+   "performance": "well answered",
+   "good_practice": [
+    "Drew a reasonable tangent"
+   ]
+  },
+  "5(d)": {
+   "performance": "poorly answered",
+   "common_errors": [
+    "Included the thinking time instead of only the braking time"
+   ]
+  },
+  "5(e)": {
+   "performance": "poorly answered",
+   "common_errors": [
+    "Did not quantify effects"
+   ],
+   "good_practice": [
+    "Applied halving of the initial speed to thinking distance, thinking time, braking distance and braking time quantitatively"
+   ]
+  },
+  "6(a)": {
+   "performance": "well answered",
+   "common_errors": [
+    "Calculated the volume incorrectly"
+   ]
+  },
+  "6(b)(i)": {
+   "common_errors": [
+    "Left the answer as a surd (2 sqrt 5)"
+   ]
+  },
+  "6(b)(ii)": {
+   "performance": "mixed",
+   "common_errors": [
+    "Did not use the scale for the final answer"
+   ],
+   "good_practice": [
+    "Labelled forces with correct directions"
+   ]
+  },
+  "6(c)": {
+   "performance": "poorly answered",
+   "common_errors": [
+    "Used the wrong forces and distances in the moments calculation"
+   ],
+   "misconceptions": [
+    "Moment requires the perpendicular distance"
+   ]
+  },
+  "7(a)(iii)": {
+   "common_errors": [
+    "Used N instead of n"
+   ]
+  },
+  "7(b)": {
+   "performance": "poorly answered",
+   "common_errors": [
+    "Used 150 W rather than 0.150 kW",
+    "Converted the time to seconds for a kWh calculation"
+   ]
+  },
+  "8": {
+   "performance": "mixed",
+   "common_errors": [
+    "Confused speed v with potential difference V",
+    "Did not state the rings become brighter"
+   ],
+   "misconceptions": [
+    "Using E = hc/lambda (photon equation) for electron de Broglie wavelength"
+   ],
+   "good_practice": [
+    "Equated eV to kinetic energy, used momentum and lambda = h/p to link wavelength to V"
+   ]
+  }
+ }
+}

@@ -1,0 +1,285 @@
+{
+ "1(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "State oscillation direction relative to energy transfer for each wave type."
+ },
+ "1(b)(i)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Read trace height in divisions and apply y-sensitivity."
+ },
+ "1(b)(ii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Period from divisions \u00d7 time-base, then f = 1/T."
+ },
+ "1(b)(iii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Wave equation substitution using earlier frequency."
+ },
+ "1(c)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Intensity \u221d amplitude\u00b2; quarter intensity halves trace height."
+ },
+ "2(a)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "State principle of superposition."
+ },
+ "2(a)(ii)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Define coherence as constant phase difference."
+ },
+ "2(b)1": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Path difference at first maximum is one wavelength."
+ },
+ "2(b)2": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Path difference at second minimum is 1.5 wavelengths."
+ },
+ "2(c)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Fringe spacing inversely proportional to slit separation, so decreases."
+ },
+ "3(a)(i)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Time to apex from vertical velocity over g."
+ },
+ "3(a)(ii)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Horizontal component from distance over time."
+ },
+ "3(a)(iii)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Pythagoras combining perpendicular velocity components."
+ },
+ "3(b)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Direct kinetic energy substitution."
+ },
+ "3(b)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Direct mgh substitution."
+ },
+ "3(b)(iii)": {
+  "moves": [
+   "energy"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "KE at top = initial KE minus GPE gained."
+ },
+ "3(c)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Sketch trajectory lower throughout, peaking earlier with air resistance."
+ },
+ "4(a)": {
+  "moves": [
+   "units",
+   "show-that"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Express joule and coulomb in base units, substitute into V = W/Q."
+ },
+ "4(b)(i)": {
+  "moves": [
+   "show-that",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Find pd across fixed resistor, then potential divider ratio for LDR resistance."
+ },
+ "4(b)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Current from total emf over total resistance."
+ },
+ "4(c)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Light lowers LDR resistance \u2192 current up \u2192 more pd on fixed resistor \u2192 voltmeter falls."
+ },
+ "5(a)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Volume from mass over density."
+ },
+ "5(b)(i)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Justify large plates: contact over whole putty cross-section."
+ },
+ "5(b)(ii)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Choose micrometer/calipers and repeat diameter along length."
+ },
+ "5(c)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Square a tabulated length."
+ },
+ "5(c)(ii)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Double percentage uncertainty of L for L\u00b2."
+ },
+ "5(d)(i)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Plot point and draw best-fit straight line."
+ },
+ "5(d)(ii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Gradient from large triangle on best-fit line."
+ },
+ "5(e)": {
+  "moves": [
+   "linearise",
+   "given-formula",
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Use given R = \u03c1L\u00b2/V: gradient equals \u03c1/V; multiply by V; give \u03a9 m unit."
+ },
+ "6(a)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Describe safe loading-to-break method, diameter measurement and stress = F/A analysis."
+ },
+ "6(b)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Sketch linear brittle curve and rubber hysteresis loop."
+ },
+ "7(a)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Link photon energy vs work function and intensity to electroscope leaf behaviour as photon evidence."
+ },
+ "7(b)": {
+  "moves": [
+   "energy",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Convert eV work function to joules; KEmax = hf \u2212 \u03c6."
+ },
+ "8(a)": {
+  "moves": [
+   "show-that",
+   "energy",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "eV = \u00bdmv\u00b2 rearranged with square root for speed."
+ },
+ "8(b)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "de Broglie \u03bb = h/mv with earlier speed."
+ },
+ "8(c)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Higher pd \u2192 larger momentum \u2192 shorter wavelength \u2192 smaller rings."
+ }
+}

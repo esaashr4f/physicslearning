@@ -1,0 +1,241 @@
+{
+ "1(a)": {
+  "moves": [
+   "explain-chain",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Moments about wall pivot: weight at half the lever arm so vertical wire force is half weight."
+ },
+ "1(b)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Resolve tension: given vertical component, divide by sin30."
+ },
+ "1(c)(i)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Draw wall force direction through intersection of other two lines of action."
+ },
+ "1(c)(ii)": {
+  "moves": [
+   "vectors",
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "State three coplanar forces in equilibrium are concurrent / closed triangle."
+ },
+ "2(a)": {
+  "moves": [
+   "show-that",
+   "vectors"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Horizontal component via cosine; vertical component zero at apex."
+ },
+ "2(b)(i)": {
+  "moves": [
+   "vectors",
+   "chain"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Resolve vertical launch speed, then suvat with given time to apex."
+ },
+ "2(b)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Horizontal speed times total flight time (twice apex time); simple symmetry step."
+ },
+ "2(c)": {
+  "moves": [
+   "show-that",
+   "vectors",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Resolve at 30\u00b0, find flight time via suvat, then horizontal range to reach given distance."
+ },
+ "2(d)": {
+  "moves": [
+   "vectors",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Compare landing speed and angle; choose trajectory with reason based on horizontal component."
+ },
+ "3(a)(i)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Read peak force and contact duration from F\u2013t graph."
+ },
+ "3(a)(ii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Impulse is area under F\u2013t graph, estimated by counting squares."
+ },
+ "3(b)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Direct F = ma with given peak force and mass."
+ },
+ "3(b)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Impulse equals change of momentum; divide by mass."
+ },
+ "3(c)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Momentum change with reversal (speeds add), then divide by contact time."
+ },
+ "4(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Name electrons and ions as charge carriers."
+ },
+ "4(b)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "I = Q/t direct substitution."
+ },
+ "4(b)(ii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Electrons per second = current divided by e."
+ },
+ "4(b)(iii)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Substitute into I = nAve for drift velocity."
+ },
+ "4(c)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Charge conservation / Kirchhoff's first law in series."
+ },
+ "4(c)(ii)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Drift velocity inversely proportional to area, so doubles."
+ },
+ "5(a)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Pd across series resistor, remaining pd, branch current, then R from V/I."
+ },
+ "5(b)": {
+  "moves": [
+   "plan",
+   "explain-chain",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Design LDR circuit; light up \u2192 R falls \u2192 meter rises; justify resistor giving largest change."
+ },
+ "6(a)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Successive resonances differ by half wavelength, then v = f\u03bb."
+ },
+ "6(b)": {
+  "moves": [
+   "uncertainty",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Higher frequency gives shorter lengths so larger percentage uncertainty; judge less accurate."
+ },
+ "6(c)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Reflection and superposition form nodes/antinodes; compare molecule motion at node and antinode."
+ },
+ "7(a)": {
+  "moves": [
+   "plan",
+   "linearise"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Method for judging LED switch-on pd; choose Vmin vs 1/\u03bb, gradient hc/e gives h."
+ },
+ "7(b)(i)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Wave model predicts no threshold frequency and KE linked to intensity not frequency."
+ },
+ "7(b)(ii)1": {
+  "moves": [
+   "graph-read",
+   "linearise"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Gradient of KEmax against f graph equals h."
+ },
+ "7(b)(ii)2": {
+  "moves": [
+   "graph-read",
+   "linearise"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Threshold frequency is the f-intercept."
+ },
+ "7(b)(ii)3": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Work function = h \u00d7 threshold frequency using earlier values."
+ }
+}

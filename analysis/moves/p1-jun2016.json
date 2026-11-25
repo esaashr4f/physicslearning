@@ -1,0 +1,351 @@
+{
+ "1": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Express the watt correctly in terms of other units."
+ },
+ "2": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Only the vertical component of displacement counts for work against weight."
+ },
+ "3": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Polarisation implies a transverse wave."
+ },
+ "4": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Electron diffraction needs wavelength comparable to atomic spacing."
+ },
+ "5": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify spectrum region for a 50 micrometre wavelength."
+ },
+ "6": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Acceleration is proportional to resultant force so graphs share shape."
+ },
+ "7": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Choose closed tip-to-tail triangle of three forces in equilibrium."
+ },
+ "8": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Same force, energy \u00bdFx proportional to extension, so one third."
+ },
+ "9": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Find p.d. across known resistor, deduce load p.d., then P = VI."
+ },
+ "10": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recognise internal forces cancel so external force on system is zero."
+ },
+ "11": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Opposing emfs subtract to give net emf and current direction; series current uniform."
+ },
+ "12": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Apply Kirchhoff's first law with current directions from the diagram."
+ },
+ "13": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Add percentage uncertainties of V and I."
+ },
+ "14": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Locate zero velocity after rebound on the v-t graph."
+ },
+ "15": {
+  "moves": [
+   "ratio",
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "eV = \u00bdmv\u00b2 gives v proportional to root V, so halving V scales by 1/\u221a2."
+ },
+ "16": {
+  "moves": [
+   "chain",
+   "rearrange",
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Photoelectric equation gives max KE, then rearrange KE formula for speed."
+ },
+ "17": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Extension inversely proportional to area, energy \u00bdFx, area ratio squared from diameters."
+ },
+ "18": {
+  "moves": [
+   "vectors",
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Only horizontal velocity component remains, so KE scales by cos\u00b230\u00b0."
+ },
+ "19": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Same p.d. so power inversely proportional to resistance."
+ },
+ "20": {
+  "moves": [
+   "vectors",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Convert surface angle to normal angle, then Snell's law from glass to air."
+ },
+ "21(a)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Mass scalar adds simply; velocity vector addition must account for direction."
+ },
+ "21(b)(i)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Draw tension along string and weight vertically down."
+ },
+ "21(b)(ii)": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Rearrange s = \u00bdat\u00b2 for t, requiring a square root."
+ },
+ "22(a)": {
+  "moves": [
+   "uncertainty",
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Systematic shift moves line but leaves gradient unchanged."
+ },
+ "22(b)": {
+  "moves": [
+   "graph-read",
+   "linearise",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Gradient of u\u00b2 against x equals 2a; then F = ma."
+ },
+ "23(a)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Describe measuring weight and diameter, computing area and pressure, improving precision."
+ },
+ "23(b)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "State Archimedes' principle."
+ },
+ "23(b)(ii)": {
+  "moves": [
+   "chain",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Upthrust from reading difference, volume from upthrust, then density from mass/volume."
+ },
+ "24(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "State Newton's second law in momentum form."
+ },
+ "24(b)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall momentum and total energy conserved."
+ },
+ "24(b)(ii)": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Newton's third law: equal magnitude, opposite direction force at every instant."
+ },
+ "24(c)": {
+  "moves": [
+   "vectors",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Momentum conservation with rebound velocity negative, solved for carbon atom speed."
+ },
+ "25(a)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Compare emf and p.d. definitions in terms of energy transfer per charge."
+ },
+ "25(a)(ii)": {
+  "moves": [
+   "chain",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Number density from count over volume, then rearrange I = Anev for v."
+ },
+ "25(b)": {
+  "moves": [
+   "plan",
+   "linearise"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Design circuit, vary resistance, plot V against I with gradient \u2212r."
+ },
+ "26(a)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Points half a wavelength apart move in antiphase."
+ },
+ "26(a)(ii)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Wavelength doubled, v = f\u03bb, then percentage uncertainty carried to speed."
+ },
+ "26(b)(i)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Reflections at fixed ends superpose with incident waves forming stationary wave."
+ },
+ "26(b)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "One loop is half a wavelength, so \u03bb is twice length."
+ },
+ "27(a)": {
+  "moves": [
+   "graph-read",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Use graph values with R = V/I to describe resistance changes across ranges."
+ },
+ "27(b)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Reverse bias and insufficient p.d. stop conduction; reverse and add cells."
+ },
+ "27(c)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Photon energy from hc/\u03bb, then divide power by photon energy."
+ }
+}

@@ -1,0 +1,252 @@
+{
+ "1(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Identify negative gradient as deceleration and straight line as constant."
+ },
+ "1(b)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Area under v\u2013t graph gives braking distance; compare with 20 m to line."
+ },
+ "2": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Design motor-lifting experiment, measurements, efficiency = mgh/IVt."
+ },
+ "3(a)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Choose ruler and electronic timing with start/stop mechanisms."
+ },
+ "3(b)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Square a time value."
+ },
+ "3(c)(i)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Plot point and draw best-fit line."
+ },
+ "3(c)(ii)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Gradient of t\u00b2 against h."
+ },
+ "3(d)(i)": {
+  "moves": [
+   "show-that",
+   "rearrange"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Set u = 0 in s = ut + \u00bdat\u00b2 and rearrange for t\u00b2."
+ },
+ "3(d)(ii)": {
+  "moves": [
+   "linearise"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Gradient equals 2/g so g = 2/gradient."
+ },
+ "4(a)": {
+  "moves": [
+   "show-that",
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Moments about pivot with perpendicular component T sin30 against weight at centre."
+ },
+ "4(b)": {
+  "moves": [
+   "rearrange",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Combine stress, strain and Young modulus to solve for extension."
+ },
+ "5(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "State Newton's second law in momentum form."
+ },
+ "5(b)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "p = mv."
+ },
+ "5(b)(ii)": {
+  "moves": [
+   "graph-read",
+   "vectors",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Impulse from triangle area; reversal so subtract initial momentum; divide by mass."
+ },
+ "5(b)(iii)": {
+  "moves": [
+   "definition",
+   "evaluate"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Elastic means KE conserved; lower rebound speed shows it isn't."
+ },
+ "6(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify lamp and resistor from I\u2013V curve shapes."
+ },
+ "6(b)": {
+  "moves": [
+   "graph-read",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Read branch currents at terminal pd, find lost volts, then r = lost volts/I."
+ },
+ "6(c)(i)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Micrometer with repeats in different places and average."
+ },
+ "6(c)(ii)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Single-strand area from diameter, multiply by 17 strands, then resistivity."
+ },
+ "6(c)(iii)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Sum percentage uncertainties, doubling diameter's."
+ },
+ "7(a)": {
+  "moves": [
+   "explain-chain",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 5,
+  "why": "Reflection and superposition form stationary wave; max\u2013min spacing \u03bb/4 gives \u03bb, then f."
+ },
+ "7(b)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Plane-polarised microwaves blocked or transmitted depending on grille orientation."
+ },
+ "8(a)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Two direct n = c/v substitutions."
+ },
+ "8(a)(ii)": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Frequency unchanged so wavelength scales by 1/n."
+ },
+ "8(b)(i)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Snell's law substitution."
+ },
+ "8(b)(ii)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Compare refractive indices to sketch bending toward then away from normal."
+ },
+ "9(a)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "hf is the energy of one photon."
+ },
+ "9(a)(ii)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Define work function."
+ },
+ "9(b)(i)": {
+  "moves": [
+   "show-that",
+   "energy",
+   "units",
+   "chain",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Convert \u03c6 to J, KEmax = hf \u2212 \u03c6, then rearrange \u00bdmv\u00b2 for speed."
+ },
+ "9(b)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Photon energy set by frequency; intensity only alters photon number so max speed unchanged."
+ },
+ "9(c)": {
+  "moves": [],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "\u03bb = h/mv substitution."
+ }
+}

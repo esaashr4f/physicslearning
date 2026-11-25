@@ -1,0 +1,354 @@
+{
+ "1": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Complete statement of Archimedes' principle."
+ },
+ "2": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify LDR as not an emf source."
+ },
+ "3": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Select correct photoelectric statement."
+ },
+ "4": {
+  "moves": [
+   "given-formula",
+   "rearrange",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Equate weight to supplied drag expression; grams to kg; solve for v."
+ },
+ "5": {
+  "moves": [
+   "energy",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Remaining KE fraction, speed scales with its square root."
+ },
+ "6": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Same supply, least power means greatest total resistance via V\u00b2/R."
+ },
+ "7": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Compute \u00bdFx for each spring and compare."
+ },
+ "8": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Stress and Young modulus share base units since strain unitless."
+ },
+ "9": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Classify conductor and insulator by carrier density."
+ },
+ "10": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Longer thinner wire raises resistance, changing current and p.d. readings."
+ },
+ "11": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Interference with diffraction explains fringes."
+ },
+ "12": {
+  "moves": [
+   "chain",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Area from diameter, then resistivity = RA/L."
+ },
+ "13": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify harmonic from pattern; fundamental is frequency divided by harmonic number."
+ },
+ "14": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Momentum proportional to root KE so wavelength divides by \u221a2."
+ },
+ "15": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Read fraction of period separating points to get phase difference."
+ },
+ "16": {
+  "moves": [
+   "units",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Convert eV to J, then \u03bb = hc/E to identify region."
+ },
+ "17": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Choose correct column heading with power of ten and 2 s.f."
+ },
+ "18": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Range uses horizontal velocity component times flight time."
+ },
+ "19": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Electron diffraction shows wave nature of electrons."
+ },
+ "20": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Area under force-time graph is impulse."
+ },
+ "21(a)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Equal time intervals with growing gaps mean increasing speed."
+ },
+ "21(b)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "No resultant force on trolley so by first law it remains at rest."
+ },
+ "21(c)(i)": {
+  "moves": [
+   "graph-read",
+   "show-that"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Tangent gradient at 4.0 s, or read s and use suvat."
+ },
+ "21(c)(ii)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 3,
+  "why": "Momentum change over time, with correct unit credited."
+ },
+ "22(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Mm-resolution ruler suits stated uncertainty."
+ },
+ "22(b)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Double v's percentage uncertainty, add d's, convert to absolute to 2 s.f."
+ },
+ "23(a)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "LED circuit with meters and variable supply; detect onset; shield from light."
+ },
+ "23(b)(i)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Divide current by electron charge."
+ },
+ "23(b)(ii)": {
+  "moves": [
+   "units",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Area from diameter in mm, then rearrange I = Anev."
+ },
+ "23(c)(i)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Current heats thermistor, resistance falls, its p.d. share falls."
+ },
+ "23(c)(ii)": {
+  "moves": [
+   "graph-read",
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Read p.d. from graph, current from fixed resistor, then thermistor R."
+ },
+ "24(a)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "All EM waves share speed c in vacuum."
+ },
+ "24(b)": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Frequency from c = f\u03bb."
+ },
+ "24(c)": {
+  "moves": [
+   "estimate",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Photon energies via hc/\u03bb; ratio gives number of visible photons."
+ },
+ "25(a)(i)": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Sound is longitudinal so cannot be polarised."
+ },
+ "25(a)(ii)": {
+  "moves": [
+   "plan"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Speaker, gap and microphone; spreading when gap comparable to wavelength."
+ },
+ "25(b)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Define refractive index as ratio of speeds."
+ },
+ "25(b)(ii)1": {
+  "moves": [
+   "explain-chain",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Frequency fixed, slower in B, so wavelength shorter by speed ratio."
+ },
+ "25(b)(ii)2": {
+  "moves": [
+   "rearrange",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Snell's law with index ratio, solve for refraction angle."
+ },
+ "25(b)(ii)3": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "TIR only when going into lower refractive index."
+ },
+ "26(a)": {
+  "moves": [
+   "show-that",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Take moments, substitute rod weight via density, rearrange for y."
+ },
+ "26(b)(i)": {
+  "moves": [
+   "graph-draw",
+   "graph-read"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Best-fit line through data and its gradient."
+ },
+ "26(b)(ii)": {
+  "moves": [
+   "linearise",
+   "rearrange"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Equate gradient to F/(AL\u03c1g) and solve for density."
+ }
+}

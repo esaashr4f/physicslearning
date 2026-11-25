@@ -1,0 +1,366 @@
+{
+ "1": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall EM waves are transverse, not longitudinal."
+ },
+ "2": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Recall refraction towards normal entering glass, away on leaving."
+ },
+ "3": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Compare areas under force-extension graphs for work done."
+ },
+ "4": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Resultant of two forces lies between their difference and sum."
+ },
+ "5": {
+  "moves": [
+   "vectors",
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "No horizontal force so horizontal velocity component is constant."
+ },
+ "6": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Impulse equals change in momentum, giving speed with mass."
+ },
+ "7": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify couple as equal, opposite, parallel non-collinear forces."
+ },
+ "8": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Parallel combination of equally uncertain resistors keeps same percentage uncertainty."
+ },
+ "9": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Less light raises LDR resistance, reducing current and fixed-resistor p.d."
+ },
+ "10": {
+  "moves": [
+   "rearrange",
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Equate eV to hc/\u03bb and rearrange for h."
+ },
+ "11": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Resultant of tension and weight gives ma; mass from weight over g."
+ },
+ "12": {
+  "moves": [],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Total power over supply voltage gives current."
+ },
+ "13": {
+  "moves": [
+   "energy"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Energy lost to resistance divided by slope distance gives force."
+ },
+ "14": {
+  "moves": [
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Momentum scales with root V so wavelength scales by 1/\u221a2."
+ },
+ "15": {
+  "moves": [
+   "recall-fact"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Stationary submerged object in equilibrium: upthrust balances weight."
+ },
+ "16": {
+  "moves": [
+   "chain",
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Convert mm\u00b2 to m\u00b2, power from intensity times area, then energy."
+ },
+ "17": {
+  "moves": [
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Force perpendicular to displacement does no work."
+ },
+ "18": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Combine series and parallel parts of network step by step."
+ },
+ "19": {
+  "moves": [
+   "estimate"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Estimate car mass to order of magnitude, then momentum."
+ },
+ "20": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Identify the coulomb as a derived unit."
+ },
+ "21(a)": {
+  "moves": [
+   "units"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "KE with mass converted from grams to kilograms."
+ },
+ "21(b)": {
+  "moves": [
+   "graph-read",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 4,
+  "why": "Velocity is gradient of s-t graph; describe constant, decreasing, zero phases."
+ },
+ "21(c)": {
+  "moves": [
+   "graph-read",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Read stopping distance or time, then kinematics with known initial speed."
+ },
+ "22(a)": {
+  "moves": [
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Take moments about the wall pivot and solve for pillar force."
+ },
+ "22(b)": {
+  "moves": [
+   "chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Strain from stress over Young modulus, then compression from strain times length."
+ },
+ "23(a)": {
+  "moves": [
+   "vectors",
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Include Earth in system; it gains equal and opposite momentum."
+ },
+ "23(b)(i)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Change in momentum over collision time read from graph gives force."
+ },
+ "23(b)(ii)": {
+  "moves": [
+   "graph-draw",
+   "vectors"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Sketch Y's momentum using conservation: equal and opposite changes to X."
+ },
+ "24(a)(i)": {
+  "moves": [
+   "chain",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Current from V/R, then rearrange I = Anev for drift velocity."
+ },
+ "24(a)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Heating lowers resistance, raising current; voltmeter fixed by ideal supply."
+ },
+ "24(b)(i)": {
+  "moves": [
+   "chain",
+   "rearrange"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Circuit resistance gives current, then emf equation solved for r."
+ },
+ "24(b)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "More resistance lowers current, reducing lost volts so terminal p.d. rises."
+ },
+ "25(a)(i)": {
+  "moves": [
+   "graph-read"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Read wavelength from displacement-distance graph."
+ },
+ "25(a)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Spreading reduces amplitude; intensity proportional to amplitude squared."
+ },
+ "25(b)(i)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Define interference as superposition of coherent waves."
+ },
+ "25(b)(ii)": {
+  "moves": [
+   "explain-chain"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Path difference is 1.5 wavelengths so antiphase, giving destructive interference."
+ },
+ "26(a)": {
+  "moves": [
+   "units",
+   "show-that"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Reduce base units of tension over mass per length to speed units."
+ },
+ "26(b)": {
+  "moves": [
+   "plan",
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Measure mass and length, compute \u03bc, and improve precision and accuracy."
+ },
+ "26(c)": {
+  "moves": [
+   "explain-chain",
+   "ratio"
+  ],
+  "scaffolded": false,
+  "steps": 3,
+  "why": "Constant speed so \u03bb inversely proportional to f; relate L to wavelengths."
+ },
+ "27(a)": {
+  "moves": [
+   "definition"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Define threshold frequency."
+ },
+ "27(b)(i)": {
+  "moves": [
+   "show-that"
+  ],
+  "scaffolded": false,
+  "steps": 1,
+  "why": "Set maximum KE to zero at threshold in Einstein's equation."
+ },
+ "27(b)(ii)": {
+  "moves": [
+   "graph-draw"
+  ],
+  "scaffolded": true,
+  "steps": 1,
+  "why": "Plot point and draw best-fit straight line."
+ },
+ "27(b)(iii)": {
+  "moves": [
+   "graph-read",
+   "linearise",
+   "units"
+  ],
+  "scaffolded": true,
+  "steps": 2,
+  "why": "Gradient of \u03c6 against f0 is h after converting eV to joules."
+ },
+ "27(b)(iv)": {
+  "moves": [
+   "uncertainty"
+  ],
+  "scaffolded": false,
+  "steps": 2,
+  "why": "Draw worst-fit line and compare gradients for percentage uncertainty."
+ }
+}
