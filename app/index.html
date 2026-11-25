@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>H156 Paper Bench</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -179,7 +180,8 @@ button { font: inherit; color: inherit; }
 @media (max-width: 560px) {
   .brand h1 { display: none; }
   .top { gap: 10px; }
-  .tabs button { padding: 6px 10px; font-size: 13px; }
+  .tabs { overflow-x: auto; scrollbar-width: none; min-width: 0; }
+  .tabs button { padding: 6px 9px; font-size: 12.5px; flex: none; }
 }
 
 /* ---------- question bench ---------- */
@@ -241,6 +243,56 @@ button { font: inherit; color: inherit; }
   .qcard { padding-left: var(--gutter-l); }
   .colhead { display: none; }
   .qrowx { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+}
+
+/* ---------- specification ---------- */
+.spec-sum { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.modbar { display: grid; gap: 8px; }
+.modrow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; font-size: 13px; }
+.modrow .track { grid-column: 1 / -1; height: 8px; border-radius: 4px; background: var(--surface-2); border: 1px solid var(--rule); overflow: hidden; }
+.modrow .track i { display: block; height: 100%; background: var(--accent); }
+.modrow .v { font: 500 12px/1.4 var(--f-mono); color: var(--ink-2); }
+.spec-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
+.spec-tools input { flex: 1 1 240px; font: inherit; font-size: 13px; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); min-width: 0; }
+.mod { display: grid; gap: 10px; margin-bottom: 28px; }
+.mod > h4 { margin: 0; font: 800 20px/1.15 var(--f-display); display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.mod > h4 small { font: 500 12px/1 var(--f-mono); color: var(--ink-3); }
+.subsec { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); overflow: hidden; }
+.subsec > header { display: flex; align-items: baseline; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+.subsec > header b { font: 600 12px/1 var(--f-mono); color: var(--accent); }
+.subsec > header span { font: 700 15px/1.2 var(--f-display); }
+.subsec > header em { margin-left: auto; font: 500 11px/1 var(--f-mono); font-style: normal; color: var(--ink-3); }
+.oc { border-top: 1px solid var(--rule); }
+.oc:first-of-type { border-top: 0; }
+.oc > button { width: 100%; border: 0; background: none; text-align: left; cursor: pointer; padding: 10px 14px; display: grid; grid-template-columns: 92px minmax(0, 1fr) auto; gap: 6px 14px; align-items: center; }
+.oc > button:hover { background: var(--surface-2); }
+.oc > button[disabled] { cursor: default; }
+.oc .code { font: 600 12px/1.3 var(--f-mono); color: var(--ink-2); }
+.oc.child .code { padding-left: 14px; }
+.oc .txt { font-size: 13px; line-height: 1.45; min-width: 0; }
+.oc .stat { display: flex; align-items: center; gap: 10px; justify-content: flex-end; }
+.strip { display: flex; gap: 2px; }
+.strip i { width: 7px; height: 14px; border-radius: 2px; background: var(--surface-2); border: 1px solid var(--rule); }
+.strip i.on { background: var(--accent); border-color: var(--accent); }
+.cnt { font: 600 12px/1 var(--f-mono); min-width: 64px; text-align: right; white-space: nowrap; }
+.badge { font: 600 10px/1 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; padding: 4px 6px; border-radius: 4px; white-space: nowrap; }
+.badge.never { color: var(--pen); background: var(--pen-soft); border: 1px solid color-mix(in srgb, var(--pen) 40%, transparent); }
+.badge.rare { color: var(--ink-2); background: var(--surface-2); border: 1px dashed var(--ink-3); }
+.oc-qs { padding: 4px 14px 14px 120px; display: grid; gap: 4px; }
+.oc-q { display: grid; grid-template-columns: 170px minmax(0, 1fr) auto; gap: 12px; align-items: baseline; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface-2); padding: 8px 10px; cursor: pointer; text-align: left; font-size: 13px; }
+.oc-q:hover { border-color: var(--accent); }
+.oc-q .ref { font: 600 12px/1.3 var(--f-mono); }
+.oc-q .mk { font: 600 12px/1 var(--f-mono); color: var(--pen); white-space: nowrap; }
+.never-list { display: grid; gap: 6px; font-size: 13px; }
+.never-list button { border: 0; background: none; padding: 0; text-align: left; cursor: pointer; color: var(--ink); display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 10px; }
+.never-list button:hover .t { text-decoration: underline; }
+.never-list .c { font: 600 12px/1.45 var(--f-mono); color: var(--pen); }
+@media (max-width: 760px) {
+  .oc > button { grid-template-columns: 76px minmax(0, 1fr); }
+  .oc .stat { grid-column: 2; justify-content: flex-start; }
+  .oc-qs { padding-left: 14px; }
+  .oc-q { grid-template-columns: minmax(0, 1fr) auto; }
+  .oc-q .ctx { grid-column: 1 / -1; }
 }
 
 /* ---------- insights ---------- */
@@ -863,6 +915,136 @@ function QBench({ data, sel }) {
   </div>`;
 }
 
+/* ---------- Specification coverage ---------- */
+const MODULES = { "1": "Development of practical skills in physics", "2": "Foundations of physics", "3": "Forces and motion", "4": "Electrons, waves and photons" };
+function SpecView({ data, open }) {
+  const ref = useRef(null); useLenis(ref);
+  const spec = data.spec || { sections: {}, outcomes: [] };
+  const [filter, setFilter] = useState("all"), [txt, setTxt] = useState(""), [openCode, setOpenCode] = useState(null), [paperF, setPaperF] = useState("all");
+  const stats = useMemo(() => {
+    const m = {};
+    for (const o of spec.outcomes) m[o.code] = { parts: [], marks: 0, sessions: new Set() };
+    for (const q of data.all) {
+      if (q.withdrawn || (paperF !== "all" && String(q.paper) !== paperF)) continue;
+      for (const c of q.spec_points || []) {
+        const s = m[c]; if (!s) continue;
+        s.parts.push(q); s.marks += +q.marks || 0; s.sessions.add(q.slug);
+      }
+    }
+    // a parent outcome with roman children also counts its children's questions
+    for (const o of spec.outcomes) {
+      const kids = spec.outcomes.filter(k => k.code !== o.code && k.code.startsWith(o.code + "("));
+      if (!kids.length) continue;
+      const s = m[o.code]; const seen = new Set(s.parts);
+      for (const k of kids) for (const q of m[k.code].parts) if (!seen.has(q)) { seen.add(q); s.parts.push(q); s.marks += +q.marks || 0; s.sessions.add(q.slug); }
+    }
+    for (const k in m) m[k].parts.sort((a, b) => SESSIONS.findIndex(s => s.slug === b.slug) - SESSIONS.findIndex(s => s.slug === a.slug) || a.paper - b.paper || cmpQ(a, b));
+    return m;
+  }, [data.all, spec, paperF]);
+  const isParent = useMemo(() => new Set(spec.outcomes.filter(o => spec.outcomes.some(k => k.code.startsWith(o.code + "("))).map(o => o.code)), [spec]);
+  const leafs = spec.outcomes.filter(o => !isParent.has(o.code));
+  const covered = leafs.filter(o => stats[o.code]?.parts.length);
+  const never = leafs.filter(o => !stats[o.code]?.parts.length);
+  const rare = leafs.filter(o => { const n = stats[o.code]?.sessions.size || 0; return n > 0 && n <= 2; });
+  const status = (c) => { const s = stats[c]; const n = s?.sessions.size || 0; return n === 0 ? "never" : n <= 2 ? "rare" : "ok"; };
+  const sectionsBy = useMemo(() => {
+    const out = {};
+    for (const o of spec.outcomes) (out[o.section] ||= []).push(o);
+    return out;
+  }, [spec]);
+  const modCov = Object.keys(MODULES).map(k => {
+    const ls = leafs.filter(o => o.code.startsWith(k + ".")); const c = ls.filter(o => stats[o.code]?.parts.length).length;
+    const marks = data.all.filter(q => (paperF === "all" || String(q.paper) === paperF) && (q.spec_points || [])[0]?.startsWith(k + ".")).reduce((s, q) => s + (+q.marks || 0), 0);
+    return { k, n: ls.length, c, marks };
+  });
+  const s = txt.trim().toLowerCase();
+  const show = (o) => {
+    if (s && !(o.code.toLowerCase().includes(s) || o.text.toLowerCase().includes(s) || (spec.sections[o.section] || "").toLowerCase().includes(s))) return false;
+    if (filter === "never") return status(o.code) === "never" && !isParent.has(o.code);
+    if (filter === "rare") return status(o.code) === "rare" && !isParent.has(o.code);
+    if (filter === "covered") return status(o.code) !== "never";
+    return true;
+  };
+  const jump = (code) => { setOpenCode(code); setFilter("all"); setTxt(""); requestAnimationFrame(() => { const el = ref.current?.querySelector(`[data-code="${CSS.escape(code)}"]`); if (el) el.scrollIntoView({ block: "center", behavior: REDUCED ? "auto" : "smooth" }); }); };
+
+  if (!spec.outcomes.length) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Specification not loaded</h2></div></div></div>`;
+  return html`<div class="ins" ref=${ref}><div class="ins-inner">
+    <div class="hero">
+      <span class="eyebrow">OCR A · H156 specification · ${leafs.length} learning outcomes</span>
+      <h2>What the papers <em>cover</em>, and what they don't</h2>
+      <p>Every past-paper question part is tagged with the learning outcomes it tests. Click any outcome to list every question on it, then open one to see it beside its mark scheme.</p>
+      <div class="stats">
+        <div class="stat"><b>${covered.length}</b><span>outcomes examined</span></div>
+        <div class="stat"><b>${never.length}</b><span>never examined</span></div>
+        <div class="stat"><b>${rare.length}</b><span>in only 1–2 sessions</span></div>
+        <div class="stat"><b>${Math.round(covered.length / Math.max(1, leafs.length) * 100)}%</b><span>of the spec covered</span></div>
+      </div>
+    </div>
+
+    <section class="spec-sum">
+      <div class="panel">
+        <h4>Coverage by module</h4>
+        <div class="modbar">${modCov.map(m => html`<div class="modrow" key=${m.k} title=${`${m.c} of ${m.n} outcomes examined`}>
+          <span>Module ${m.k} · ${MODULES[m.k]}</span><span class="v">${m.c}/${m.n}</span>
+          <span class="track"><i style=${{ width: (m.c / Math.max(1, m.n) * 100) + "%" }}></i></span></div>`)}</div>
+      </div>
+      <div class="panel">
+        <h4>Never examined (${never.length})</h4>
+        ${never.length ? html`<div class="never-list">${never.map(o => html`<button key=${o.code} onClick=${() => jump(o.code)}><span class="c">${o.code}</span><span class="t">${o.text}</span></button>`)}</div>` : html`<p class="sub">Every outcome has come up at least once.</p>`}
+      </div>
+    </section>
+
+    <section>
+      <div class="spec-tools">
+        <input id="spec-search" type="search" placeholder="Search the specification…" value=${txt} onInput=${e => setTxt(e.target.value)} aria-label="Search the specification" />
+        <div class="seg" role="group" aria-label="Show">
+          ${[["all", "All"], ["covered", "Examined"], ["rare", "Rarely examined"], ["never", "Never examined"]].map(([v, l]) => html`<button key=${v} aria-pressed=${filter === v} onClick=${() => setFilter(v)}><b>${l}</b></button>`)}
+        </div>
+        <div class="seg" role="group" aria-label="Paper">
+          ${[["all", "Both papers"], ["1", "Paper 1"], ["2", "Paper 2"]].map(([v, l]) => html`<button key=${v} aria-pressed=${paperF === v} onClick=${() => setPaperF(v)}><b>${l}</b></button>`)}
+        </div>
+      </div>
+      ${Object.keys(MODULES).map(mk => {
+        const subs = Object.keys(sectionsBy).filter(c => c.startsWith(mk + ".")).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+        const visible = subs.filter(sc => sectionsBy[sc].some(show));
+        if (!visible.length) return null;
+        return html`<div class="mod" key=${mk}>
+          <h4>Module ${mk}: ${MODULES[mk]}</h4>
+          ${visible.map(sc => {
+            const os = sectionsBy[sc]; const lf = os.filter(o => !isParent.has(o.code)); const cov = lf.filter(o => stats[o.code]?.parts.length).length;
+            const parentTitle = spec.sections[sc.split(".").slice(0, 2).join(".")] || "";
+            return html`<div class="subsec" key=${sc}>
+              <header><b>${sc}</b><span>${spec.sections[sc] || ""}</span><em>${parentTitle} · ${cov}/${lf.length} examined</em></header>
+              ${os.filter(show).map(o => {
+                const st = stats[o.code]; const n = st.parts.length; const on = openCode === o.code; const stt = status(o.code); const child = /\)\([ivx]+\)$/.test(o.code);
+                return html`<div class=${"oc" + (child ? " child" : "")} key=${o.code} data-code=${o.code}>
+                  <button onClick=${() => n && setOpenCode(on ? null : o.code)} aria-expanded=${n ? on : null} disabled=${!n}>
+                    <span class="code">${o.code}</span>
+                    <span class="txt">${o.text}</span>
+                    <span class="stat">
+                      ${stt === "never" ? html`<span class="badge never">Never examined</span>` : stt === "rare" ? html`<span class="badge rare">Rare</span>` : null}
+                      <span class="strip" aria-label=${`Examined in ${st.sessions.size} of ${SESSIONS.length} sessions`}>${SESSIONS.map(se => html`<i key=${se.slug} class=${st.sessions.has(se.slug) ? "on" : ""} title=${se.label}></i>`)}</span>
+                      <span class="cnt">${n ? `${n} part${n === 1 ? "" : "s"}` : "—"}</span>
+                    </span>
+                  </button>
+                  ${on && html`<div class="oc-qs">
+                    <span class="shared">${n} question part${n === 1 ? "" : "s"} · ${st.marks} marks · ${st.sessions.size} session${st.sessions.size === 1 ? "" : "s"}</span>
+                    ${st.parts.map(q => html`<button class="oc-q" key=${q.paper + q.slug + q.q} onClick=${() => open(q.paper, q.slug, q)}>
+                      <span class="ref">P${q.paper} · ${SLABEL[q.slug]} · Q${q.q}</span>
+                      <span class="ctx">${q.context}</span>
+                      <span class="mk">${q.marks} m</span>
+                    </button>`)}
+                  </div>`}
+                </div>`;
+              })}
+            </div>`;
+          })}
+        </div>`;
+      })}
+    </section>
+  </div></div>`;
+}
+
 /* ---------- Insights ---------- */
 function Insights({ data, open }) {
   const ref = useRef(null); useLenis(ref);
@@ -1040,7 +1222,7 @@ function App() {
   const [data, setData] = useState({ all: [], byPaper: {}, ins: {}, regions: {}, ready: false });
   const init = store.get("sel", { paper: 1, slug: "jun2024" });
   const [sel, setSel] = useState({ paper: init.paper || 1, slug: SLABEL[init.slug] ? init.slug : "jun2024", q: null, nonce: 0 });
-  const fromHash = () => ({ "#insights": "insights", "#paper": "paper" })[location.hash] || "questions";
+  const fromHash = () => ({ "#insights": "insights", "#paper": "paper", "#spec": "spec" })[location.hash] || "questions";
   const [view, setView] = useState(fromHash);
   useEffect(() => { store.set("sel", { paper: sel.paper, slug: sel.slug }); }, [sel.paper, sel.slug]);
   useEffect(() => {
@@ -1053,9 +1235,10 @@ function App() {
       fetch("data/questions.json").then(r => r.ok ? r.json() : []).catch(() => []),
       fetch("data/insights.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
       fetch("data/regions.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
-    ]).then(([all, ins, regions]) => {
+      fetch("data/spec.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([all, ins, regions, spec]) => {
       const byPaper = {}; for (const q of all) (byPaper[`${q.paper}:${q.slug}`] ||= []).push(q);
-      setData({ all, byPaper, ins, regions, ready: true });
+      setData({ all, byPaper, ins, regions, spec, ready: true });
     });
   }, []);
   const open = (paper, slug, q) => { setSel(s => ({ paper: +paper, slug, q: q || null, nonce: s.nonce + 1 })); go("questions"); };
@@ -1068,10 +1251,11 @@ function App() {
         <nav class="tabs" aria-label="View">
           <button aria-pressed=${view === "questions"} onClick=${() => go("questions")}>Questions</button>
           <button aria-pressed=${view === "paper"} onClick=${() => go("paper")}>Whole paper</button>
+          <button aria-pressed=${view === "spec"} onClick=${() => go("spec")}>Spec</button>
           <button aria-pressed=${view === "insights"} onClick=${() => go("insights")}>Insights</button>
         </nav>
       </header>
-      ${view !== "insights" ? html`
+      ${view === "questions" || view === "paper" ? html`
         <div class="rail">
           <div class="seg" role="group" aria-label="Paper">
             ${[1, 2].map(p => html`<button key=${p} aria-pressed=${sel.paper === p} onClick=${() => setSel(s => ({ ...s, paper: p, q: null }))}><b>${PAPERS[p].name}</b><small>${PAPERS[p].sub}</small></button>`)}
@@ -1080,7 +1264,7 @@ function App() {
             ${SESSIONS.map(s => html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label}><span class="y">${s.y}</span><span class="m">${s.m}</span></button>`)}
           </div>
         </div>
-        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div><${Insights} data=${data} open=${open} /></div>`}
+        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}
     </div>`;
 }
 ReactDOM.createRoot(document.getElementById("root")).render(html`<${App} />`);

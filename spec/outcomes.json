@@ -1,0 +1,994 @@
+{
+ "sections": {
+  "1.1": "Practical skills assessed in a written examination",
+  "1.1.1": "Planning",
+  "1.1.2": "Implementing",
+  "1.1.3": "Analysis",
+  "1.1.4": "Evaluation",
+  "2.1": "Physical quantities and units",
+  "2.1.1": "Physical quantities",
+  "2.1.2": "S.I. units",
+  "2.2": "Making measurements and analysing data",
+  "2.2.1": "Measurements and uncertainties",
+  "2.3": "Nature of quantities",
+  "2.3.1": "Scalars and vectors",
+  "3.1": "Motion",
+  "3.1.1": "Kinematics",
+  "3.1.2": "Linear motion",
+  "3.1.3": "Projectile motion",
+  "3.2": "Forces in action",
+  "3.2.1": "Dynamics",
+  "3.2.2": "Motion with non-uniform acceleration",
+  "3.2.3": "Equilibrium",
+  "3.2.4": "Density and pressure",
+  "3.3": "Work, energy and power",
+  "3.3.1": "Work and conservation of energy",
+  "3.3.2": "Kinetic and potential energies",
+  "3.3.3": "Power",
+  "3.4": "Materials",
+  "3.4.1": "Springs",
+  "3.4.2": "Mechanical properties of matter",
+  "3.5": "Newton’s laws of motion and momentum",
+  "3.5.1": "Newton’s laws of motion",
+  "3.5.2": "Collisions",
+  "4.1": "Charge and current",
+  "4.1.1": "Charge",
+  "4.1.2": "Mean drift velocity",
+  "4.2": "Energy, power and resistance",
+  "4.2.1": "Circuit symbols",
+  "4.2.2": "E.m.f. and p.d.",
+  "4.2.3": "Resistance",
+  "4.2.4": "Resistivity",
+  "4.2.5": "Power",
+  "4.3": "Electrical circuits",
+  "4.3.1": "Series and parallel circuits",
+  "4.3.2": "Internal resistance",
+  "4.3.3": "Potential dividers",
+  "4.4": "Waves",
+  "4.4.1": "Wave motion",
+  "4.4.2": "Electromagnetic waves",
+  "4.4.3": "Superposition",
+  "4.4.4": "Stationary waves",
+  "4.5": "Quantum physics",
+  "4.5.1": "Photons",
+  "4.5.2": "The photoelectric effect",
+  "4.5.3": "Wave–particle duality"
+ },
+ "outcomes": [
+  {
+   "code": "1.1.1(a)",
+   "section": "1.1.1",
+   "text": "experimental design, including to solve problems set in a practical context"
+  },
+  {
+   "code": "1.1.1(b)",
+   "section": "1.1.1",
+   "text": "identification of variables that must be controlled, where appropriate"
+  },
+  {
+   "code": "1.1.1(c)",
+   "section": "1.1.1",
+   "text": "evaluation that an experimental method is appropriate to meet the expected outcomes"
+  },
+  {
+   "code": "1.1.2(a)",
+   "section": "1.1.2",
+   "text": "how to use a wide range of practical apparatus and techniques correctly"
+  },
+  {
+   "code": "1.1.2(b)",
+   "section": "1.1.2",
+   "text": "appropriate units for measurements"
+  },
+  {
+   "code": "1.1.2(c)",
+   "section": "1.1.2",
+   "text": "presenting observations and data in an appropriate format"
+  },
+  {
+   "code": "1.1.3(a)",
+   "section": "1.1.3",
+   "text": "processing, analysing and interpreting qualitative and quantitative experimental results"
+  },
+  {
+   "code": "1.1.3(b)",
+   "section": "1.1.3",
+   "text": "use of appropriate mathematical skills for analysis of quantitative data"
+  },
+  {
+   "code": "1.1.3(c)",
+   "section": "1.1.3",
+   "text": "appropriate use of significant figures"
+  },
+  {
+   "code": "1.1.3(d)",
+   "section": "1.1.3",
+   "text": "plotting and interpreting suitable graphs from experimental results, including"
+  },
+  {
+   "code": "1.1.3(d)(i)",
+   "section": "1.1.3",
+   "text": "selection and labelling of axes with appropriate scales, quantities and units"
+  },
+  {
+   "code": "1.1.3(d)(ii)",
+   "section": "1.1.3",
+   "text": "measurement of gradients and intercepts"
+  },
+  {
+   "code": "1.1.4(a)",
+   "section": "1.1.4",
+   "text": "how to evaluate results and draw conclusions"
+  },
+  {
+   "code": "1.1.4(b)",
+   "section": "1.1.4",
+   "text": "the identification of anomalies in experimental measurements"
+  },
+  {
+   "code": "1.1.4(c)",
+   "section": "1.1.4",
+   "text": "the limitations in experimental procedures"
+  },
+  {
+   "code": "1.1.4(d)",
+   "section": "1.1.4",
+   "text": "precision and accuracy of measurements and data, including margins of error, percentage errors and uncertainties in apparatus"
+  },
+  {
+   "code": "1.1.4(e)",
+   "section": "1.1.4",
+   "text": "the refining of experimental design by suggestion of improvements to the procedures and apparatus."
+  },
+  {
+   "code": "2.1.1(a)",
+   "section": "2.1.1",
+   "text": "physical quantities have a numerical value and a unit"
+  },
+  {
+   "code": "2.1.1(b)",
+   "section": "2.1.1",
+   "text": "making estimates of physical quantities listed in this specification"
+  },
+  {
+   "code": "2.1.2(a)",
+   "section": "2.1.2",
+   "text": "Système Internationale (S.I.) base quantities and their units – mass (kg), length (m), time (s), current (A), temperature (K), amount of substance (mol)"
+  },
+  {
+   "code": "2.1.2(b)",
+   "section": "2.1.2",
+   "text": "derived units of S.I. base units"
+  },
+  {
+   "code": "2.1.2(c)",
+   "section": "2.1.2",
+   "text": "units listed in this specification"
+  },
+  {
+   "code": "2.1.2(d)",
+   "section": "2.1.2",
+   "text": "checking the homogeneity of physical equations using S.I. base units"
+  },
+  {
+   "code": "2.1.2(e)",
+   "section": "2.1.2",
+   "text": "prefixes and their symbols to indicate decimal submultiples or multiples of units – pico (p), nano (n), micro (μ), milli (m), centi (c), deci (d), kilo (k), mega (M), giga (G), tera (T)"
+  },
+  {
+   "code": "2.1.2(f)",
+   "section": "2.1.2",
+   "text": "the conventions used for labelling graph axes and table columns"
+  },
+  {
+   "code": "2.2.1(a)",
+   "section": "2.2.1",
+   "text": "systematic errors (including zero errors) and random errors in measurements"
+  },
+  {
+   "code": "2.2.1(b)",
+   "section": "2.2.1",
+   "text": "precision and accuracy"
+  },
+  {
+   "code": "2.2.1(c)",
+   "section": "2.2.1",
+   "text": "absolute and percentage uncertainties when data are combined by addition, subtraction, multiplication, division and raising to powers"
+  },
+  {
+   "code": "2.2.1(d)",
+   "section": "2.2.1",
+   "text": "graphical treatment of errors and uncertainties; line of best fit; worst line; absolute and percentage uncertainties; percentage difference"
+  },
+  {
+   "code": "2.3.1(a)",
+   "section": "2.3.1",
+   "text": "scalar and vector quantities"
+  },
+  {
+   "code": "2.3.1(b)",
+   "section": "2.3.1",
+   "text": "vector addition and subtraction"
+  },
+  {
+   "code": "2.3.1(c)",
+   "section": "2.3.1",
+   "text": "vector triangle to determine the resultant of any two coplanar vectors"
+  },
+  {
+   "code": "2.3.1(d)",
+   "section": "2.3.1",
+   "text": "resolving a vector into two perpendicular components; Fx = F cos θ; Fy = F sin θ"
+  },
+  {
+   "code": "3.1.1(a)",
+   "section": "3.1.1",
+   "text": "displacement, instantaneous speed, average speed, velocity and acceleration"
+  },
+  {
+   "code": "3.1.1(b)",
+   "section": "3.1.1",
+   "text": "graphical representations of displacement, speed, velocity and acceleration"
+  },
+  {
+   "code": "3.1.1(c)",
+   "section": "3.1.1",
+   "text": "Displacement–time graphs; velocity is gradient"
+  },
+  {
+   "code": "3.1.1(d)",
+   "section": "3.1.1",
+   "text": "Velocity–time graphs; acceleration is gradient; displacement is area under graph"
+  },
+  {
+   "code": "3.1.2(a)(i)",
+   "section": "3.1.2",
+   "text": "the equations of motion for constant acceleration in a straight line, including motion of bodies falling in a uniform gravitational field without air resistance: v = u + at; s = ½(u + v)t; s = ut + ½at²; v² = u² + 2as"
+  },
+  {
+   "code": "3.1.2(a)(ii)",
+   "section": "3.1.2",
+   "text": "techniques and procedures used to investigate the motion and collisions of objects"
+  },
+  {
+   "code": "3.1.2(b)(i)",
+   "section": "3.1.2",
+   "text": "acceleration g of free fall"
+  },
+  {
+   "code": "3.1.2(b)(ii)",
+   "section": "3.1.2",
+   "text": "techniques and procedures used to determine the acceleration of free fall, to include using trapdoor and electromagnet arrangement and light gates and timer arrangement"
+  },
+  {
+   "code": "3.1.2(c)",
+   "section": "3.1.2",
+   "text": "reaction time and thinking distance; braking distance and stopping distance for a vehicle"
+  },
+  {
+   "code": "3.1.3(a)",
+   "section": "3.1.3",
+   "text": "independence of the vertical and horizontal motion of a projectile"
+  },
+  {
+   "code": "3.1.3(b)",
+   "section": "3.1.3",
+   "text": "two-dimensional motion of a projectile with constant velocity in one direction and constant acceleration in a perpendicular direction"
+  },
+  {
+   "code": "3.2.1(a)",
+   "section": "3.2.1",
+   "text": "net force = mass × acceleration; F = ma"
+  },
+  {
+   "code": "3.2.1(b)",
+   "section": "3.2.1",
+   "text": "the newton as the unit of force"
+  },
+  {
+   "code": "3.2.1(c)",
+   "section": "3.2.1",
+   "text": "weight of an object; W = mg"
+  },
+  {
+   "code": "3.2.1(d)",
+   "section": "3.2.1",
+   "text": "the terms tension, normal contact force, upthrust and friction"
+  },
+  {
+   "code": "3.2.1(e)",
+   "section": "3.2.1",
+   "text": "free-body diagrams"
+  },
+  {
+   "code": "3.2.1(f)",
+   "section": "3.2.1",
+   "text": "one- and two-dimensional motion under constant force"
+  },
+  {
+   "code": "3.2.2(a)",
+   "section": "3.2.2",
+   "text": "drag as the frictional force experienced by an object travelling through a fluid"
+  },
+  {
+   "code": "3.2.2(b)",
+   "section": "3.2.2",
+   "text": "factors affecting drag for an object travelling through air"
+  },
+  {
+   "code": "3.2.2(c)",
+   "section": "3.2.2",
+   "text": "motion of objects falling in a uniform gravitational field in the presence of drag"
+  },
+  {
+   "code": "3.2.2(d)(i)",
+   "section": "3.2.2",
+   "text": "terminal velocity"
+  },
+  {
+   "code": "3.2.2(d)(ii)",
+   "section": "3.2.2",
+   "text": "techniques and procedures used to determine terminal velocity in fluids"
+  },
+  {
+   "code": "3.2.3(a)",
+   "section": "3.2.3",
+   "text": "moment of force; moment = Fx"
+  },
+  {
+   "code": "3.2.3(b)",
+   "section": "3.2.3",
+   "text": "couple; torque of a couple; torque = Fd"
+  },
+  {
+   "code": "3.2.3(c)",
+   "section": "3.2.3",
+   "text": "the principle of moments"
+  },
+  {
+   "code": "3.2.3(d)",
+   "section": "3.2.3",
+   "text": "centre of mass; centre of gravity; experimental determination of centre of gravity"
+  },
+  {
+   "code": "3.2.3(e)",
+   "section": "3.2.3",
+   "text": "equilibrium of an object under the action of forces and torques"
+  },
+  {
+   "code": "3.2.3(f)",
+   "section": "3.2.3",
+   "text": "condition for equilibrium of three coplanar forces; triangle of forces"
+  },
+  {
+   "code": "3.2.4(a)",
+   "section": "3.2.4",
+   "text": "density; ρ = m/V"
+  },
+  {
+   "code": "3.2.4(b)",
+   "section": "3.2.4",
+   "text": "pressure; p = F/A for solids, liquids and gases"
+  },
+  {
+   "code": "3.2.4(c)",
+   "section": "3.2.4",
+   "text": "p = hρg; upthrust on an object in a fluid; Archimedes’ principle"
+  },
+  {
+   "code": "3.3.1(a)",
+   "section": "3.3.1",
+   "text": "work done by a force; the unit joule"
+  },
+  {
+   "code": "3.3.1(b)",
+   "section": "3.3.1",
+   "text": "W = Fx cos θ for work done by a force"
+  },
+  {
+   "code": "3.3.1(c)",
+   "section": "3.3.1",
+   "text": "the principle of conservation of energy"
+  },
+  {
+   "code": "3.3.1(d)",
+   "section": "3.3.1",
+   "text": "energy in different forms; transfer and conservation"
+  },
+  {
+   "code": "3.3.1(e)",
+   "section": "3.3.1",
+   "text": "transfer of energy is equal to work done"
+  },
+  {
+   "code": "3.3.2(a)",
+   "section": "3.3.2",
+   "text": "kinetic energy of an object; Ek = ½mv²"
+  },
+  {
+   "code": "3.3.2(b)",
+   "section": "3.3.2",
+   "text": "gravitational potential energy of an object in a uniform gravitational field; Ep = mgh"
+  },
+  {
+   "code": "3.3.2(c)",
+   "section": "3.3.2",
+   "text": "the exchange between gravitational potential energy and kinetic energy"
+  },
+  {
+   "code": "3.3.3(a)",
+   "section": "3.3.3",
+   "text": "power; the unit watt; P = W/t"
+  },
+  {
+   "code": "3.3.3(b)",
+   "section": "3.3.3",
+   "text": "P = Fv"
+  },
+  {
+   "code": "3.3.3(c)",
+   "section": "3.3.3",
+   "text": "efficiency of a mechanical system; efficiency = useful output energy / total input energy × 100%"
+  },
+  {
+   "code": "3.4.1(a)",
+   "section": "3.4.1",
+   "text": "tensile and compressive deformation; extension and compression"
+  },
+  {
+   "code": "3.4.1(b)",
+   "section": "3.4.1",
+   "text": "Hooke’s law"
+  },
+  {
+   "code": "3.4.1(c)",
+   "section": "3.4.1",
+   "text": "force constant k of a spring or wire; F = kx"
+  },
+  {
+   "code": "3.4.1(d)(i)",
+   "section": "3.4.1",
+   "text": "force–extension (or compression) graphs for springs and wires"
+  },
+  {
+   "code": "3.4.1(d)(ii)",
+   "section": "3.4.1",
+   "text": "techniques and procedures used to investigate force–extension characteristics for arrangements which may include springs, rubber bands, polythene strips"
+  },
+  {
+   "code": "3.4.2(a)",
+   "section": "3.4.2",
+   "text": "force–extension (or compression) graph; work done is area under graph"
+  },
+  {
+   "code": "3.4.2(b)",
+   "section": "3.4.2",
+   "text": "elastic potential energy; E = ½Fx; E = ½kx²"
+  },
+  {
+   "code": "3.4.2(c)",
+   "section": "3.4.2",
+   "text": "stress, strain and ultimate tensile strength"
+  },
+  {
+   "code": "3.4.2(d)(i)",
+   "section": "3.4.2",
+   "text": "Young modulus = tensile stress / tensile strain; E = σ/ε"
+  },
+  {
+   "code": "3.4.2(d)(ii)",
+   "section": "3.4.2",
+   "text": "techniques and procedures used to determine the Young modulus for a metal"
+  },
+  {
+   "code": "3.4.2(e)",
+   "section": "3.4.2",
+   "text": "stress–strain graphs for typical ductile, brittle and polymeric materials"
+  },
+  {
+   "code": "3.4.2(f)",
+   "section": "3.4.2",
+   "text": "elastic and plastic deformations of materials"
+  },
+  {
+   "code": "3.5.1(a)",
+   "section": "3.5.1",
+   "text": "Newton’s three laws of motion"
+  },
+  {
+   "code": "3.5.1(b)",
+   "section": "3.5.1",
+   "text": "linear momentum; p = mv; vector nature of momentum"
+  },
+  {
+   "code": "3.5.1(c)",
+   "section": "3.5.1",
+   "text": "net force = rate of change of momentum; F = Δp/Δt"
+  },
+  {
+   "code": "3.5.1(d)",
+   "section": "3.5.1",
+   "text": "impulse of a force; impulse = F∆t"
+  },
+  {
+   "code": "3.5.1(e)",
+   "section": "3.5.1",
+   "text": "impulse is equal to the area under a force–time graph"
+  },
+  {
+   "code": "3.5.2(a)",
+   "section": "3.5.2",
+   "text": "the principle of conservation of momentum"
+  },
+  {
+   "code": "3.5.2(b)",
+   "section": "3.5.2",
+   "text": "collisions and interaction of bodies in one dimension and in two dimensions"
+  },
+  {
+   "code": "3.5.2(c)",
+   "section": "3.5.2",
+   "text": "perfectly elastic collision and inelastic collision."
+  },
+  {
+   "code": "4.1.1(a)",
+   "section": "4.1.1",
+   "text": "electric current as rate of flow of charge; I = ΔQ/Δt"
+  },
+  {
+   "code": "4.1.1(b)",
+   "section": "4.1.1",
+   "text": "the coulomb as the unit of charge −19"
+  },
+  {
+   "code": "4.1.1(c)",
+   "section": "4.1.1",
+   "text": "the elementary charge e equals 1.6 × 10 C"
+  },
+  {
+   "code": "4.1.1(d)",
+   "section": "4.1.1",
+   "text": "net charge on a particle or an object is quantised and a multiple of e"
+  },
+  {
+   "code": "4.1.1(e)",
+   "section": "4.1.1",
+   "text": "current as the movement of electrons in metals and movement of ions in electrolytes"
+  },
+  {
+   "code": "4.1.1(f)",
+   "section": "4.1.1",
+   "text": "conventional current and electron flow"
+  },
+  {
+   "code": "4.1.1(g)",
+   "section": "4.1.1",
+   "text": "Kirchhoff’s first law; conservation of charge"
+  },
+  {
+   "code": "4.1.2(a)",
+   "section": "4.1.2",
+   "text": "mean drift velocity of charge carriers"
+  },
+  {
+   "code": "4.1.2(b)",
+   "section": "4.1.2",
+   "text": "I = Anev, where n is the number density of charge carriers"
+  },
+  {
+   "code": "4.1.2(c)",
+   "section": "4.1.2",
+   "text": "distinction between conductors, semiconductors and insulators in terms of n"
+  },
+  {
+   "code": "4.2.1(a)",
+   "section": "4.2.1",
+   "text": "circuit symbols"
+  },
+  {
+   "code": "4.2.1(b)",
+   "section": "4.2.1",
+   "text": "circuit diagrams using these symbols"
+  },
+  {
+   "code": "4.2.2(a)",
+   "section": "4.2.2",
+   "text": "potential difference (p.d.); the unit volt"
+  },
+  {
+   "code": "4.2.2(b)",
+   "section": "4.2.2",
+   "text": "electromotive force (e.m.f.) of a source such as a cell or a power supply"
+  },
+  {
+   "code": "4.2.2(c)",
+   "section": "4.2.2",
+   "text": "distinction between e.m.f. and p.d. in terms of energy transfer"
+  },
+  {
+   "code": "4.2.2(d)",
+   "section": "4.2.2",
+   "text": "energy transfer; W = VQ; W = EQ"
+  },
+  {
+   "code": "4.2.2(e)",
+   "section": "4.2.2",
+   "text": "energy transfer eV = ½mv² for electrons and other charged particles"
+  },
+  {
+   "code": "4.2.3(a)",
+   "section": "4.2.3",
+   "text": "resistance; R = V/I; the unit ohm"
+  },
+  {
+   "code": "4.2.3(b)",
+   "section": "4.2.3",
+   "text": "Ohm’s law"
+  },
+  {
+   "code": "4.2.3(c)(i)",
+   "section": "4.2.3",
+   "text": "I–V characteristics of resistor, filament lamp, thermistor, diode and light-emitting diode (LED)"
+  },
+  {
+   "code": "4.2.3(c)(ii)",
+   "section": "4.2.3",
+   "text": "techniques and procedures used to investigate the electrical characteristics for a range of ohmic and non-ohmic components"
+  },
+  {
+   "code": "4.2.3(d)",
+   "section": "4.2.3",
+   "text": "light-dependent resistor (LDR); variation of resistance with light intensity"
+  },
+  {
+   "code": "4.2.4(a)(i)",
+   "section": "4.2.4",
+   "text": "resistivity of a material; the equation R = ρL/A"
+  },
+  {
+   "code": "4.2.4(a)(ii)",
+   "section": "4.2.4",
+   "text": "techniques and procedures used to determine the resistivity of a metal"
+  },
+  {
+   "code": "4.2.4(b)",
+   "section": "4.2.4",
+   "text": "the variation of resistivity of metals and semiconductors with temperature"
+  },
+  {
+   "code": "4.2.4(c)",
+   "section": "4.2.4",
+   "text": "negative temperature coefficient (NTC) thermistor; variation of resistance with temperature"
+  },
+  {
+   "code": "4.2.5(a)",
+   "section": "4.2.5",
+   "text": "the equations P = VI, P = I²R and P = V²/R"
+  },
+  {
+   "code": "4.2.5(b)",
+   "section": "4.2.5",
+   "text": "energy transfer; W = V I t"
+  },
+  {
+   "code": "4.2.5(c)",
+   "section": "4.2.5",
+   "text": "the kilowatt-hour (kW h) as a unit of energy; calculating the cost of energy"
+  },
+  {
+   "code": "4.3.1(a)",
+   "section": "4.3.1",
+   "text": "Kirchhoff’s second law; the conservation of energy"
+  },
+  {
+   "code": "4.3.1(b)",
+   "section": "4.3.1",
+   "text": "Kirchhoff’s first and second laws applied to electrical circuits"
+  },
+  {
+   "code": "4.3.1(c)",
+   "section": "4.3.1",
+   "text": "total resistance of two or more resistors in series; R = R1 + R2 + …"
+  },
+  {
+   "code": "4.3.1(d)",
+   "section": "4.3.1",
+   "text": "total resistance of two or more resistors in parallel; 1/R = 1/R1 + 1/R2 + …"
+  },
+  {
+   "code": "4.3.1(e)",
+   "section": "4.3.1",
+   "text": "analysis of circuits with components, including both series and parallel"
+  },
+  {
+   "code": "4.3.1(f)",
+   "section": "4.3.1",
+   "text": "analysis of circuits with more than one source of e.m.f"
+  },
+  {
+   "code": "4.3.2(a)",
+   "section": "4.3.2",
+   "text": "source of e.m.f.; internal resistance"
+  },
+  {
+   "code": "4.3.2(b)",
+   "section": "4.3.2",
+   "text": "terminal p.d.; ‘lost volts’"
+  },
+  {
+   "code": "4.3.2(c)(i)",
+   "section": "4.3.2",
+   "text": "the equations E = I(R + r) and E = V + Ir"
+  },
+  {
+   "code": "4.3.2(c)(ii)",
+   "section": "4.3.2",
+   "text": "techniques and procedures used to determine the internal resistance of a chemical cell or other source of e.m.f"
+  },
+  {
+   "code": "4.3.3(a)",
+   "section": "4.3.3",
+   "text": "potential divider circuit with components"
+  },
+  {
+   "code": "4.3.3(b)",
+   "section": "4.3.3",
+   "text": "potential divider circuits with variable components e.g. LDR and thermistor"
+  },
+  {
+   "code": "4.3.3(c)(i)",
+   "section": "4.3.3",
+   "text": "potential divider equations e.g. Vout = R2/(R1 + R2) × Vin and V1/V2 = R1/R2"
+  },
+  {
+   "code": "4.3.3(c)(ii)",
+   "section": "4.3.3",
+   "text": "techniques and procedures used to investigate potential divider circuits which may include a sensor such as a thermistor or an LDR"
+  },
+  {
+   "code": "4.4.1(a)",
+   "section": "4.4.1",
+   "text": "progressive waves; longitudinal and transverse waves"
+  },
+  {
+   "code": "4.4.1(b)(i)",
+   "section": "4.4.1",
+   "text": "displacement, amplitude, wavelength, period, phase difference, frequency and speed of a wave"
+  },
+  {
+   "code": "4.4.1(b)(ii)",
+   "section": "4.4.1",
+   "text": "techniques and procedures used to use an oscilloscope to determine frequency"
+  },
+  {
+   "code": "4.4.1(c)",
+   "section": "4.4.1",
+   "text": "the equation f = 1/T"
+  },
+  {
+   "code": "4.4.1(d)",
+   "section": "4.4.1",
+   "text": "the wave equation v = fλ"
+  },
+  {
+   "code": "4.4.1(e)",
+   "section": "4.4.1",
+   "text": "graphical representations of transverse and longitudinal waves"
+  },
+  {
+   "code": "4.4.1(f)(i)",
+   "section": "4.4.1",
+   "text": "reflection, refraction, polarisation and diffraction of all waves"
+  },
+  {
+   "code": "4.4.1(f)(ii)",
+   "section": "4.4.1",
+   "text": "techniques and procedures used to demonstrate wave effects using a ripple tank"
+  },
+  {
+   "code": "4.4.1(f)(iii)",
+   "section": "4.4.1",
+   "text": "techniques and procedures used to observe polarising effects using microwaves and light P"
+  },
+  {
+   "code": "4.4.1(g)",
+   "section": "4.4.1",
+   "text": "intensity of a progressive wave; I = P/A; intensity ∝ (amplitude)²"
+  },
+  {
+   "code": "4.4.2(a)",
+   "section": "4.4.2",
+   "text": "electromagnetic spectrum; properties of electromagnetic waves"
+  },
+  {
+   "code": "4.4.2(b)",
+   "section": "4.4.2",
+   "text": "orders of magnitude of wavelengths of the principal radiations from radio waves to gamma rays"
+  },
+  {
+   "code": "4.4.2(c)",
+   "section": "4.4.2",
+   "text": "plane polarised waves; polarisation of electromagnetic waves"
+  },
+  {
+   "code": "4.4.2(d)",
+   "section": "4.4.2",
+   "text": "refraction of light; refractive index; n = c/v; n sin θ = constant at a boundary where θ is the angle to the normal"
+  },
+  {
+   "code": "4.4.2(d)(ii)",
+   "section": "4.4.2",
+   "text": "techniques and procedures used to investigate refraction and total internal reflection of light using ray boxes, including transparent rectangular and semi-circular blocks"
+  },
+  {
+   "code": "4.4.2(e)",
+   "section": "4.4.2",
+   "text": "critical angle; sin C = 1/n; total internal reflection for light"
+  },
+  {
+   "code": "4.4.3(a)(i)",
+   "section": "4.4.3",
+   "text": "the principle of superposition of waves"
+  },
+  {
+   "code": "4.4.3(a)(ii)",
+   "section": "4.4.3",
+   "text": "techniques and procedures used for superposition experiments using sound, light and microwaves"
+  },
+  {
+   "code": "4.4.3(b)",
+   "section": "4.4.3",
+   "text": "graphical methods to illustrate the principle of superposition"
+  },
+  {
+   "code": "4.4.3(c)",
+   "section": "4.4.3",
+   "text": "interference, coherence, path difference and phase difference"
+  },
+  {
+   "code": "4.4.3(d)",
+   "section": "4.4.3",
+   "text": "constructive interference and destructive interference in terms of path difference and phase difference"
+  },
+  {
+   "code": "4.4.3(e)",
+   "section": "4.4.3",
+   "text": "two-source interference with sound and microwaves"
+  },
+  {
+   "code": "4.4.3(f)",
+   "section": "4.4.3",
+   "text": "Young double-slit experiment using visible light"
+  },
+  {
+   "code": "4.4.3(g)(i)",
+   "section": "4.4.3",
+   "text": "λ = ax/D for all waves where a ≪ D"
+  },
+  {
+   "code": "4.4.3(g)(ii)",
+   "section": "4.4.3",
+   "text": "techniques and procedures used to determine the wavelength of light using (1) a double-slit, and (2) a diffraction grating"
+  },
+  {
+   "code": "4.4.4(a)",
+   "section": "4.4.4",
+   "text": "stationary (standing) waves using microwaves, stretched strings and air columns"
+  },
+  {
+   "code": "4.4.4(b)",
+   "section": "4.4.4",
+   "text": "graphical representations of a stationary wave"
+  },
+  {
+   "code": "4.4.4(c)",
+   "section": "4.4.4",
+   "text": "similarities and the differences between stationary and progressive waves"
+  },
+  {
+   "code": "4.4.4(d)",
+   "section": "4.4.4",
+   "text": "nodes and antinodes"
+  },
+  {
+   "code": "4.4.4(e)(i)",
+   "section": "4.4.4",
+   "text": "stationary wave patterns for a stretched string and air columns in closed and open tubes"
+  },
+  {
+   "code": "4.4.4(e)(ii)",
+   "section": "4.4.4",
+   "text": "techniques and procedures used to determine the speed of sound in air by formation of stationary waves in a resonance tube"
+  },
+  {
+   "code": "4.4.4(f)",
+   "section": "4.4.4",
+   "text": "the idea that the separation between adjacent nodes (or antinodes) is equal to λ/2, where λ is the wavelength of the progressive wave"
+  },
+  {
+   "code": "4.4.4(g)",
+   "section": "4.4.4",
+   "text": "fundamental mode of vibration (1st harmonic); harmonics"
+  },
+  {
+   "code": "4.5.1(a)",
+   "section": "4.5.1",
+   "text": "the particulate nature (photon model) of electromagnetic radiation"
+  },
+  {
+   "code": "4.5.1(b)",
+   "section": "4.5.1",
+   "text": "photon as a quantum of energy of electromagnetic radiation"
+  },
+  {
+   "code": "4.5.1(c)",
+   "section": "4.5.1",
+   "text": "energy of a photon; E = hf and E = hc/λ"
+  },
+  {
+   "code": "4.5.1(d)",
+   "section": "4.5.1",
+   "text": "the electronvolt (eV) as a unit of energy"
+  },
+  {
+   "code": "4.5.1(e)(i)",
+   "section": "4.5.1",
+   "text": "using LEDs and the equation eV = hc/λ to estimate the value of Planck constant h"
+  },
+  {
+   "code": "4.5.1(e)(ii)",
+   "section": "4.5.1",
+   "text": "Determine the Planck constant using different coloured LEDs"
+  },
+  {
+   "code": "4.5.2(a)(i)",
+   "section": "4.5.2",
+   "text": "p hotoelectric effect, including a simple experiment to demonstrate this effect"
+  },
+  {
+   "code": "4.5.2(a)(ii)",
+   "section": "4.5.2",
+   "text": "demonstration of the photoelectric effect using, e.g. gold-leaf electroscope and zinc plate"
+  },
+  {
+   "code": "4.5.2(b)",
+   "section": "4.5.2",
+   "text": "a one-to-one interaction between a photon and a surface electron"
+  },
+  {
+   "code": "4.5.2(c)",
+   "section": "4.5.2",
+   "text": "Einstein’s photoelectric equation hf = φ + KEmax"
+  },
+  {
+   "code": "4.5.2(d)",
+   "section": "4.5.2",
+   "text": "work function; threshold frequency"
+  },
+  {
+   "code": "4.5.2(e)",
+   "section": "4.5.2",
+   "text": "the idea that the maximum kinetic energy of the photoelectrons is independent of the intensity of the incident radiation"
+  },
+  {
+   "code": "4.5.2(f)",
+   "section": "4.5.2",
+   "text": "the idea that rate of emission of photoelectrons above the threshold frequency is directly proportional to the intensity of the incident radiation"
+  },
+  {
+   "code": "4.5.3(a)",
+   "section": "4.5.3",
+   "text": "electron diffraction, including experimental evidence of this effect"
+  },
+  {
+   "code": "4.5.3(b)",
+   "section": "4.5.3",
+   "text": "diffraction of electrons travelling through a thin slice of polycrystalline graphite by the atoms of graphite and the spacing between the atoms"
+  },
+  {
+   "code": "4.5.3(c)",
+   "section": "4.5.3",
+   "text": "the de Broglie equation λ = h/p"
+  }
+ ]
+}
