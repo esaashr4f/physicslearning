@@ -352,6 +352,45 @@ button { font: inherit; color: inherit; }
   .must .n { grid-column: 3; }
 }
 
+
+/* difficulty + content */
+.lv { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.lv .rule h4 { display: flex; align-items: center; gap: 8px; }
+.lv .dot3 { display: inline-flex; gap: 3px; }
+.dot3 i { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--accent); }
+.dot3 i.on { background: var(--accent); }
+.lv .kv { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--ink-2); }
+.lv .kv b { font-family: var(--f-mono); color: var(--ink); }
+.lv .ex { display: grid; gap: 4px; }
+.lv .ex button { border: 1px solid var(--rule); background: var(--surface-2); border-radius: 6px; padding: 6px 8px; text-align: left; cursor: pointer; font-size: 12px; color: var(--ink-2); }
+.lv .ex button:hover { border-color: var(--accent); color: var(--ink); }
+.dtab { width: 100%; border-collapse: collapse; font-size: 13px; }
+.dtab th, .dtab td { padding: 6px 8px; border-bottom: 1px solid var(--rule); text-align: right; font-variant-numeric: tabular-nums; }
+.dtab th:first-child, .dtab td:first-child { text-align: left; }
+.dtab th { font: 600 10px/1.2 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.dtab td.bar { width: 46%; }
+.dtab tfoot td { font-weight: 600; border-bottom: 0; }
+.stack { display: flex; height: 12px; gap: 2px; }
+.stack i { display: block; height: 100%; border-radius: 2px; }
+.s1 { background: color-mix(in srgb, var(--accent) 28%, var(--surface)); }
+.s2 { background: color-mix(in srgb, var(--accent) 62%, var(--surface)); }
+.s3 { background: var(--accent); }
+.legend3 { display: flex; gap: 14px; font-size: 12px; color: var(--ink-2); margin-top: 10px; flex-wrap: wrap; }
+.legend3 span { display: inline-flex; align-items: center; gap: 6px; }
+.legend3 i { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+.rep { display: grid; gap: 6px; }
+.rep .row { display: grid; grid-template-columns: 54px minmax(0, 1fr) 70px; gap: 10px; align-items: center; font-size: 13px; }
+.rep .row b { font: 600 12px/1 var(--f-mono); color: var(--accent); }
+.rep .row span:last-child { font: 500 12px/1 var(--f-mono); text-align: right; color: var(--ink-2); }
+.ctxs { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 6px 18px; font-size: 13px; }
+.ctxs div { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px dashed var(--rule); padding: 6px 0; }
+.ctxs span { font: 500 12px/1.4 var(--f-mono); color: var(--ink-2); white-space: nowrap; }
+.chip .dif { display: flex; gap: 2px; margin-top: 3px; }
+.chip .dif i { width: 5px; height: 5px; border-radius: 50%; background: var(--rule); }
+.chip .dif i.on { background: var(--pen); }
+.chip[aria-pressed="true"] .dif i { background: color-mix(in srgb, var(--surface) 40%, transparent); }
+.chip[aria-pressed="true"] .dif i.on { background: var(--surface); }
+@media (max-width: 900px) { .lv { grid-template-columns: minmax(0, 1fr); } .dtab td.bar { width: 30%; } }
 /* ---------- insights ---------- */
 .ins { overflow: auto; min-height: 0; }
 .ins-inner { max-width: 1180px; margin: 0 auto; padding-block: 0 80px; padding-left: var(--gutter-l); padding-right: var(--gutter-r); display: grid; gap: 56px; }
@@ -1138,6 +1177,37 @@ function Playbook({ data, open, openSpec }) {
   const maxT = Math.max(...trend.map(t => t.pct), 1);
   const mcqN = all.filter(q => q.type === "mcq").length;
   const idx = (slug) => SESSIONS.findIndex(s => s.slug === slug);
+  const diffTab = useMemo(() => [1, 2].map(p => {
+    const rows = SESSIONS.map(se => { const qs = all.filter(q => q.paper === p && q.slug === se.slug); const m = [1, 2, 3].map(d => qs.filter(q => q.difficulty === d).reduce((t, q) => t + (+q.marks || 0), 0)); return { se, m, t: m[0] + m[1] + m[2] }; });
+    const tot = [0, 1, 2].map(i => rows.reduce((t, r) => t + r.m[i], 0)); return { p, rows, tot, T: tot[0] + tot[1] + tot[2] };
+  }), [all]);
+  const levels = useMemo(() => [1, 2, 3].map(d => {
+    const qs = all.filter(q => q.difficulty === d); const m = qs.reduce((t, q) => t + (+q.marks || 0), 0);
+    const tm = all.reduce((t, q) => t + (+q.marks || 0), 0);
+    const types = {}; for (const q of qs) types[q.type] = (types[q.type] || 0) + 1;
+    const cross = qs.filter(q => new Set((q.spec_points || []).map(c => c[0])).size > 1).length;
+    const av = m / Math.max(1, qs.length);
+    const pool = qs.filter(q => q.type !== "mcq").sort((a, b) => (Math.abs(a.marks - av) - Math.abs(b.marks - av)) || b.slug.localeCompare(a.slug));
+    const ex = []; const seen = new Set(); for (const q of pool) { if (seen.has(q.type)) continue; seen.add(q.type); ex.push(q); if (ex.length === 4) break; }
+    return { d, n: qs.length, m, share: Math.round(m / tm * 100), avg: (m / Math.max(1, qs.length)).toFixed(1), types: Object.entries(types).sort((a, b) => b[1] - a[1]).slice(0, 3), cross: Math.round(cross / Math.max(1, qs.length) * 100), ex };
+  }), [all]);
+  const content = useMemo(() => {
+    const codes = data.spec?.outcomes || []; const leafSec = {};
+    for (const o of codes) if (!codes.some(k => k.code.startsWith(o.code + "("))) leafSec[o.section] = (leafSec[o.section] || 0) + 1;
+    const mk = {}; let tm = 0; for (const q of all) { const sp = q.spec_points || []; for (const c of sp) { const k = c.split("(")[0]; mk[k] = (mk[k] || 0) + (+q.marks || 0) / sp.length; } tm += +q.marks || 0; }
+    const to = Object.values(leafSec).reduce((a, b) => a + b, 0);
+    const rep = Object.keys(leafSec).map(k => ({ k, ratio: ((mk[k] || 0) / tm) / (leafSec[k] / to), marks: Math.round(mk[k] || 0) })).sort((a, b) => b.ratio - a.ratio);
+    const early = new Set(["specimen", "jun2016", "jun2017", "jun2018", "jun2019", "nov2020"]);
+    const sh = (pred) => { const m = {}; let t = 0; for (const q of all) if (pred(q.slug)) { const sp = q.spec_points || []; for (const c of sp) { const k = c.split("(")[0]; m[k] = (m[k] || 0) + (+q.marks || 0) / sp.length; } t += +q.marks || 0; } for (const k in m) m[k] = m[k] / t * 100; return m; };
+    const e = sh(s => early.has(s)), l = sh(s => !early.has(s));
+    const tr = Object.keys({ ...e, ...l }).map(k => ({ k, e: e[k] || 0, l: l[k] || 0, d: (l[k] || 0) - (e[k] || 0) })).sort((a, b) => a.d - b.d);
+    const blob = q => [q.context, q.subtopic, q.answer, ...(q.marking_points || [])].join(" ").toLowerCase();
+    const count = (re) => { const hits = all.filter(q => re.test(blob(q))); return { n: hits.length, s: new Set(hits.map(q => q.slug)).size, m: hits.reduce((t, q) => t + (+q.marks || 0), 0) }; };
+    const CTX = [["Balls and projectiles", /\bball\b|projectile|thrown|launched/], ["Sound in tubes and loudspeakers", /tube|pipe|loudspeaker|sound/], ["Trolleys and collisions", /trolley|collid|collision/], ["Cars and stopping", /\bcar\b|vehicle|braking|driver/], ["Springs", /spring/], ["Photoelectric metal plates", /photoelectr|metal plate|zinc|sodium/], ["Floating and upthrust", /float|boat|upthrust|submerg/], ["Stretching wires", /wire.*(stretch|extension|young)|young modulus/], ["LEDs", /\bled\b|leds/], ["Thermistors", /thermistor/], ["Electron diffraction", /electron diffraction|graphite|electron beam/], ["Microwaves", /microwave/], ["LDRs", /\bldr\b|light-dependent/], ["Lasers", /laser/]];
+    const APP = [["Voltmeter", /voltmeter/], ["Metre rule", /metre rule|ruler/], ["Ammeter", /ammeter/], ["Micrometer", /micrometer/], ["Vernier calipers", /vernier|caliper/], ["Oscilloscope", /oscilloscope/], ["Polarising filter", /polari[sz]/], ["Top-pan balance", /balance/], ["Light gates", /light gate/], ["Stopwatch", /stop.?watch|stopclock/], ["Protractor", /protractor/], ["Signal generator", /signal generator/], ["Data logger", /data.?logger/]];
+    return { rep, tr, ctx: CTX.map(([k, r]) => ({ k, ...count(r) })).sort((a, b) => b.m - a.m), app: APP.map(([k, r]) => ({ k, ...count(r) })).sort((a, b) => b.n - a.n) };
+  }, [all, data.spec]);
+  const secTitle = (k) => data.spec?.sections?.[k] || "";
   const stale = useMemo(() => {
     const last = {}; const codes = data.spec?.outcomes || [];
     for (const q of all) for (const c of q.spec_points || []) last[c] = Math.max(last[c] ?? -1, idx(q.slug));
@@ -1151,7 +1221,7 @@ function Playbook({ data, open, openSpec }) {
   }, [all]);
   const letters = useMemo(() => { const m = { A: 0, B: 0, C: 0, D: 0 }; for (const q of all) if (q.type === "mcq") { const l = (q.answer || "").match(/^[A-D]/)?.[0]; if (l) m[l]++; } return m; }, [all]);
 
-  const SECTIONS = [["pb-papers", "The two papers"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
+  const SECTIONS = [["pb-papers", "The two papers"], ["pb-diff", "Difficulty"], ["pb-content", "Content"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
   const goto = (id) => { const el = ref.current?.querySelector("#" + id); if (!el) return; lenis.current ? lenis.current.scrollTo(el, { offset: -12 }) : el.scrollIntoView(); };
   const L = (arr) => html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>`;
   const lbl = (p) => p === "1" ? "M1 Practical" : p === "2" ? "M2 Foundations" : p === "3" ? "M3 Forces" : p === "4" ? "M4 Electrons, waves, photons" : p;
@@ -1182,6 +1252,49 @@ function Playbook({ data, open, openSpec }) {
           </div>`)}</div>
           <p class="sub" style=${{ marginTop: "14px" }}>Paper 1 is won on recall and precise wording: multiple choice and explanations together outweigh the calculations. Paper 2 is won on working and the two six-mark answers. Module 4 outweighs Module 3 on both.</p>
         </section>
+
+        ${pb.difficulty && html`<section id="pb-diff">
+          <h3>Easy, standard and hard: what each needs</h3>
+          <p class="sub">Every question part was rated by how much it asks of you. These profiles come from all ${all.length} rated parts; open an example to see one.</p>
+          <div class="lv">${pb.difficulty.map(L1 => { const st = levels[L1.level - 1]; return html`<div class="rule" key=${L1.level}>
+            <h4><span class="dot3">${[1, 2, 3].map(i => html`<i key=${i} class=${i <= L1.level ? "on" : ""}></i>`)}</span>${L1.name}</h4>
+            <div class="kv"><span><b>${st.share}%</b> of marks</span><span><b>${st.avg}</b> marks per part</span><span><b>${st.cross}%</b> cross-topic</span></div>
+            <p>${L1.what}</p>
+            <div class="blk"><span class="h">What it requires</span><ul>${L1.requires.map((r, i) => html`<li key=${i}>${r}</li>`)}</ul></div>
+            <div class="blk"><span class="h">Most common forms</span><p>${st.types.map(([t, n]) => `${tl(t)} (${n})`).join(", ")}</p></div>
+            <div class="blk"><span class="h">How to tackle it</span><p>${L1.tackle}</p></div>
+            <div class="blk ex"><span class="h">Examples</span>${st.ex.map(q => html`<button key=${q.paper + q.slug + q.q} onClick=${() => open(q.paper, q.slug, q)}>P${q.paper} ${SLABEL[q.slug]} Q${q.q} · ${q.marks}m · ${q.context}</button>`)}</div>
+          </div>`; })}</div>
+
+          <div class="cols2" style=${{ marginTop: "16px" }}>${diffTab.map(t => html`<div class="panel" key=${t.p}>
+            <h4>${PAPERS[t.p].name}: marks by difficulty</h4>
+            <div style=${{ overflowX: "auto" }}><table class="dtab">
+              <thead><tr><th>Session</th><th>Easy</th><th>Std</th><th>Hard</th><th></th></tr></thead>
+              <tbody>${t.rows.map(r => html`<tr key=${r.se.slug} title=${`${r.se.label}: ${r.m[0]} easy, ${r.m[1]} standard, ${r.m[2]} hard`}>
+                <td>${r.se.label}</td><td>${r.m[0]}</td><td>${r.m[1]}</td><td style=${{ fontWeight: r.m[2] >= 16 ? 700 : 400 }}>${r.m[2]}</td>
+                <td class="bar"><div class="stack">${r.m.map((v, i) => v ? html`<i key=${i} class=${"s" + (i + 1)} style=${{ flex: v }}></i>` : null)}</div></td></tr>`)}</tbody>
+              <tfoot><tr><td>All sessions</td>${t.tot.map((v, i) => html`<td key=${i}>${Math.round(v / t.T * 100)}%</td>`)}<td></td></tr></tfoot>
+            </table></div>
+            <div class="legend3"><span><i class="s1"></i>Easy</span><span><i class="s2"></i>Standard</span><span><i class="s3"></i>Hard</span></div>
+          </div>`)}</div>
+          <p class="sub" style=${{ marginTop: "14px" }}>Paper 2 carries about twice the hard marks of Paper 1, mostly through its six-mark answers. Easy and standard marks make up about 88% of Paper 1 and 76% of Paper 2, so securing them comes first. For mock practice, the hardest sets are June 2016 Paper 1 and June 2018 Paper 2; the gentlest are June 2018 and November 2021 Paper 1. The dots on each session button in the Questions tab show its hard-mark load. Ratings are from this analysis, not OCR.</p>
+        </section>`}
+
+        ${pb.content && html`<section id="pb-content">
+          <h3>Content: what gets weight, and what's changing</h3>
+          <p class="sub">Each topic's share of marks compared with its share of the spec's learning outcomes. A ratio above 1 means the topic earns more marks than its size suggests.</p>
+          <div class="cols2">
+            <div class="panel"><h4>Punches above its weight</h4><div class="rep">${content.rep.slice(0, 8).map(r => html`<div class="row" key=${r.k}><b>${r.k}</b><span>${secTitle(r.k)}</span><span>×${r.ratio.toFixed(1)}</span></div>`)}</div></div>
+            <div class="panel"><h4>Lighter than its size</h4><div class="rep">${content.rep.slice(-8).reverse().map(r => html`<div class="row" key=${r.k}><b>${r.k}</b><span>${secTitle(r.k)}</span><span>×${r.ratio.toFixed(1)}</span></div>`)}</div></div>
+            <div class="panel"><h4>Rising: more marks since 2021</h4><p class="sub" style=${{ margin: "0 0 10px" }}>Share of marks, Specimen–Nov 2020 → Nov 2021–June 2025.</p><div class="rep">${content.tr.slice(-7).reverse().map(r => html`<div class="row" key=${r.k}><b>${r.k}</b><span>${secTitle(r.k)}</span><span>${r.e.toFixed(1)}→${r.l.toFixed(1)}%</span></div>`)}</div></div>
+            <div class="panel"><h4>Falling: fewer marks since 2021</h4><p class="sub" style=${{ margin: "0 0 10px" }}>Still examined, just less heavily.</p><div class="rep">${content.tr.slice(0, 7).map(r => html`<div class="row" key=${r.k}><b>${r.k}</b><span>${secTitle(r.k)}</span><span>${r.e.toFixed(1)}→${r.l.toFixed(1)}%</span></div>`)}</div></div>
+          </div>
+          <div class="cols2" style=${{ marginTop: "14px" }}>
+            <div class="panel"><h4>Settings that keep coming back</h4><div class="ctxs">${content.ctx.map(c => html`<div key=${c.k}>${c.k}<span>${c.s}/11 · ${c.m}m</span></div>`)}</div></div>
+            <div class="panel"><h4>Apparatus you're expected to know</h4><div class="ctxs">${content.app.map(c => html`<div key=${c.k}>${c.k}<span>${c.n} parts · ${c.s}/11</span></div>`)}</div></div>
+          </div>
+          <div class="cards2" style=${{ marginTop: "14px" }}>${pb.content.map((r, i) => html`<div class="rule" key=${i}><h4>${r.title}</h4><p>${r.body}</p></div>`)}</div>
+        </section>`}
 
         <section id="pb-mech">
           <h3>How marks are actually awarded</h3>
@@ -1472,6 +1585,7 @@ function App() {
       setData({ all, byPaper, ins, regions, spec, playbook, ready: true });
     });
   }, []);
+  const hardMarks = useMemo(() => { const m = {}; for (const q of data.all) if (!q.withdrawn && q.difficulty === 3) { const k = `${q.paper}:${q.slug}`; m[k] = (m[k] || 0) + (+q.marks || 0); } for (const q of data.all) { const k = `${q.paper}:${q.slug}`; if (!(k in m)) m[k] = 0; } return m; }, [data.all]);
   const openSpec = (code) => { setSpecQ(o => ({ q: code, n: o.n + 1 })); go("spec"); };
   const open = (paper, slug, q) => { setSel(s => ({ paper: +paper, slug, q: q || null, nonce: s.nonce + 1 })); go("questions"); };
 
@@ -1494,7 +1608,8 @@ function App() {
             ${[1, 2].map(p => html`<button key=${p} aria-pressed=${sel.paper === p} onClick=${() => setSel(s => ({ ...s, paper: p, q: null }))}><b>${PAPERS[p].name}</b><small>${PAPERS[p].sub}</small></button>`)}
           </div>
           <div class="sessions" role="group" aria-label="Exam session">
-            ${SESSIONS.map(s => html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label}><span class="y">${s.y}</span><span class="m">${s.m}</span></button>`)}
+            ${SESSIONS.map(s => { const h = hardMarks[`${sel.paper}:${s.slug}`]; const lvl = h == null ? 0 : h >= 16 ? 3 : h >= 9 ? 2 : 1;
+              return html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label + (h != null ? ` · ${h} hard marks` : "")}><span class="y">${s.y}</span><span class="m">${s.m}</span>${lvl ? html`<span class="dif" aria-label=${`${h} hard marks`}>${[1, 2, 3].map(i => html`<i key=${i} class=${i <= lvl ? "on" : ""}></i>`)}</span>` : null}</button>`; })}
           </div>
         </div>
         ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} query=${specQ} />` : view === "playbook" ? html`<${Playbook} data=${data} open=${open} openSpec=${openSpec} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}

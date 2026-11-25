@@ -360,5 +360,65 @@
    "title": "Quantum links to energy and circuits",
    "body": "The recurring cross-topic calculations join quantum physics to earlier work: photon rate from an LED's power, photoelectron speed from kinetic energy, and de Broglie wavelength from an accelerating p.d. via eV = ½mv². Practise these chains end to end."
   }
+ ],
+ "difficulty": [
+  {
+   "level": 1,
+   "name": "Easy",
+   "what": "One idea, one step. Recall a definition or fact, substitute straight into a single equation, read a value off a graph, or pick a multiple-choice answer you either know or don't.",
+   "requires": [
+    "Exact recall of definitions, units and standard facts",
+    "Choosing the one equation that fits and substituting correctly",
+    "Reading graphs and scales accurately",
+    "Usually 1–2 marks, rarely more than one equation"
+   ],
+   "tackle": "These are speed and accuracy marks. Answer briefly, use the precise key word, convert units, and move on."
+  },
+  {
+   "level": 2,
+   "name": "Standard",
+   "what": "Two or three linked steps. Combine two equations, rearrange before substituting, take a gradient and use it, explain a cause-and-effect chain, or work through an uncertainty.",
+   "requires": [
+    "Rearranging and chaining two equations, carrying an intermediate value",
+    "Linking a physical change to its effect in a short explanation",
+    "Using a graph quantitatively: gradient, intercept or area",
+    "Basic uncertainty work and sensible significant figures"
+   ],
+   "tackle": "Write the working as a chain so each step earns its C1 mark, and in explanations name the physics at every link."
+  },
+  {
+   "level": 3,
+   "name": "Hard",
+   "what": "Planning, judgement or synthesis. Six-mark experiment designs, multi-stage calculations that cross topics, evaluating data against a claim, sketching an unfamiliar graph, or applying ideas to a setting you haven't seen.",
+   "requires": [
+    "Designing a complete method with analysis (most hard marks are six-mark answers)",
+    "Deciding the route through a problem yourself: no prompts for intermediate steps",
+    "Combining topics, e.g. quantum with energy, or circuits with materials",
+    "Judging data: consistency, uncertainty, whether a conclusion is valid"
+   ],
+   "tackle": "Plan before writing. For calculations, write down what you're finding and the equation chain first. For six-markers, follow the Level 3 checklist so no strand is missed."
+  }
+ ],
+ "content": [
+  {
+   "title": "Recall equations",
+   "body": "The spec says five equations must be recalled rather than looked up: F = ma, W = mg, Ek = ½mv², Ep = mgh and R = V/I. They are needed in dozens of parts, so know them cold."
+  },
+  {
+   "title": "Planning is never multiple choice",
+   "body": "Experimental design (1.1.1), using apparatus (1.1.2) and circuit symbols (4.2.1) only appear in written Section B and Paper 2 parts. Practise writing methods, not just recognising them."
+  },
+  {
+   "title": "Diffraction gratings are a gap",
+   "body": "The spec lists finding the wavelength of light with a diffraction grating as a technique (4.4.3(g)(ii)), but no question in any of the 22 papers has used one; every wavelength-of-light question uses a double slit. Know how the grating practical is set up and what is measured, as it is examinable."
+  },
+  {
+   "title": "Drag appears in a narrow way",
+   "body": "Terminal velocity is tested through a few repeated set-ups: a ball or paper cone falling, drag proportional to v², and data-logged distance–time readings. Skydiver-style questions hardly appear."
+  },
+  {
+   "title": "Familiar settings recur",
+   "body": "Balls and projectiles, sound in tubes, cars and stopping, trolleys colliding, floating objects, springs and metal plates in the photoelectric effect appear in almost every session. Unfamiliar settings are usually these same physics ideas in new clothes."
+  }
  ]
 }
