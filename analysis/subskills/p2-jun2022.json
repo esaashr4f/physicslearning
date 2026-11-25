@@ -1,0 +1,230 @@
+{
+ "1(a)": {
+  "sub": [
+   "K1",
+   "K2",
+   "K4"
+  ],
+  "detail": "micrometer/calipers on diameter in several orientations, average, halve"
+ },
+ "1(b)": {
+  "sub": [
+   "E1",
+   "M1",
+   "M2"
+  ],
+  "detail": "oil mass 169 − 96 g → kg; 87 cm³ → 87 × 10⁻⁶ m³; ρ = m/V"
+ },
+ "1(c)": {
+  "sub": [
+   "M18",
+   "M1",
+   "E2",
+   "E4"
+  ],
+  "detail": "V = 4/3 π(8.1 mm → m)³; upthrust = ρVg"
+ },
+ "1(d)(i)": {
+  "sub": [
+   "D3",
+   "D5"
+  ],
+  "detail": "terminal velocity = constant velocity, gradient of straight part of s–t graph"
+ },
+ "1(d)(ii)": {
+  "sub": [
+   "M22"
+  ],
+  "detail": "tangent at 0.20 s on s–t curve; gradient ≈ 1.2 m/s"
+ },
+ "1(e)": {
+  "sub": [
+   "P4",
+   "E5",
+   "E2",
+   "M1",
+   "M7",
+   "D4"
+  ],
+  "detail": "drag = mg − upthrust; rearrange given F = 6πηrv for η; unit kg m⁻¹ s⁻¹"
+ },
+ "2": {
+  "sub": [
+   "K19",
+   "K1",
+   "K3",
+   "K5",
+   "K9",
+   "K10"
+  ],
+  "detail": "light gate and card give v; vary M, fix d; plot 1/v² against M; intercept R, gradient gives Q"
+ },
+ "3(a)": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "equilibrium: zero resultant force in any direction and zero moment about any point"
+ },
+ "3(b)(i)": {
+  "sub": [
+   "P5",
+   "E2"
+  ],
+  "detail": "upward 3.9 N = sum of weights; M = 1.31 N / 9.81"
+ },
+ "3(b)(ii)": {
+  "sub": [
+   "P5"
+  ],
+  "detail": "moments about A: clockwise sum 0.946 N m = 3.9 N × d"
+ },
+ "4(a)(i)": {
+  "sub": [
+   "E2"
+  ],
+  "detail": "mgh with 0.16 kg, 2.5 m"
+ },
+ "4(a)(ii)": {
+  "sub": [
+   "P1",
+   "E2",
+   "M8"
+  ],
+  "detail": "GPE lost = ½mv², v = √(2E/m)"
+ },
+ "4(b)(i)": {
+  "sub": [
+   "E2"
+  ],
+  "detail": "constant horizontal speed: 12 m/s × 0.71 s"
+ },
+ "4(b)(ii)": {
+  "sub": [
+   "P1",
+   "E2"
+  ],
+  "detail": "final KE = ½ × 0.16 × 12² + 3.9 J"
+ },
+ "4(b)(iii)": {
+  "sub": [
+   "M15"
+  ],
+  "detail": "tan⁻¹(7.0/12) for impact angle"
+ },
+ "5(a)": {
+  "sub": [
+   "E1",
+   "M6"
+  ],
+  "detail": "v = c/n for glass and oil, 3 s.f."
+ },
+ "5(b)": {
+  "sub": [
+   "E1",
+   "M15"
+  ],
+  "detail": "sin C = 1/1.52"
+ },
+ "5(c)": {
+  "sub": [
+   "P2",
+   "F3"
+  ],
+  "detail": "45° incidence exceeds 41° critical angle: TIR at both faces, ray returns parallel"
+ },
+ "5(d)(i)": {
+  "sub": [
+   "E3",
+   "M15"
+  ],
+  "detail": "glass–oil boundary: sin C = 1.46/1.52"
+ },
+ "5(d)(ii)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "45° < 74° so ray refracts into oil, bending away from normal"
+ },
+ "6(a)": {
+  "sub": [
+   "F2",
+   "P7"
+  ],
+  "detail": "electron waves diffract with λ ≈ atomic spacing; random crystal orientation gives rings"
+ },
+ "6(b)": {
+  "sub": [
+   "E5",
+   "E1",
+   "M5"
+  ],
+  "detail": "given λ = h/√(2meV) with λ = h/p gives p = √(2meV) at 1800 V"
+ },
+ "7(a)(i)": {
+  "sub": [
+   "E1",
+   "M7"
+  ],
+  "detail": "I = (1100 + 1700) W / 230 V"
+ },
+ "7(a)(ii)": {
+  "sub": [
+   "M1",
+   "M3",
+   "E1"
+  ],
+  "detail": "2.8 kW × 0.5 h × 18p"
+ },
+ "7(b)": {
+  "sub": [
+   "E1",
+   "M7",
+   "M17",
+   "M8"
+  ],
+  "detail": "A = ρL/R; d = √(4A/π)"
+ },
+ "7(c)(i)": {
+  "sub": [
+   "K6",
+   "F6"
+  ],
+  "detail": "four-cell battery symbol, ammeter in series, voltmeter across ring"
+ },
+ "7(c)(ii)": {
+  "sub": [
+   "E2"
+  ],
+  "detail": "R = 6.2 V / 0.34 A"
+ },
+ "7(c)(iii)": {
+  "sub": [
+   "K11",
+   "K12",
+   "M12"
+  ],
+  "detail": "% uncertainty of V plus % of I"
+ },
+ "7(c)(iv)": {
+  "sub": [
+   "F1",
+   "P2"
+  ],
+  "detail": "small battery current: cooler wire, metal resistance lower when cool"
+ },
+ "7(c)(v)": {
+  "sub": [
+   "K17",
+   "K4"
+  ],
+  "detail": "vary p.d. for several readings and plot V–I; higher-resolution meters"
+ },
+ "8": {
+  "sub": [
+   "P6",
+   "D3",
+   "M16"
+  ],
+  "detail": "direct + reflected waves superpose; reflected path 2√(50² + y²); λ/2 steps of 1.4 cm give λ = 2.8 cm"
+ }
+}

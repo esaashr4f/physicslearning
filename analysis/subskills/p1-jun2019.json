@@ -1,0 +1,301 @@
+{
+ "1": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "charge in coulombs; strain unitless; force constant N m⁻¹; power in W"
+ },
+ "2": {
+  "sub": [
+   "D3",
+   "F7"
+  ],
+  "detail": "accuracy is closeness to true value; g = 9.81 m s⁻², so 9.0 is least accurate"
+ },
+ "3": {
+  "sub": [
+   "F1"
+  ],
+  "detail": "sagging slab is compressed most on top surface at mid-span"
+ },
+ "4": {
+  "sub": [
+   "D5"
+  ],
+  "detail": "area under force–time graph is impulse, not work"
+ },
+ "5": {
+  "sub": [
+   "E5",
+   "E4"
+  ],
+  "detail": "torque of couple = 0.12 × 8.2 × 10⁻² m; work per revolution = torque × 2π"
+ },
+ "6": {
+  "sub": [
+   "F1",
+   "K6"
+  ],
+  "detail": "LDR in series with ammeter and supply gives light-dependent current"
+ },
+ "7": {
+  "sub": [
+   "M4",
+   "M12",
+   "E4"
+  ],
+  "detail": "(600 − 120) W → kW × 2000 h = 960 kW h saved × 15.4 p"
+ },
+ "8": {
+  "sub": [
+   "E1",
+   "M15"
+  ],
+  "detail": "cos θ = 52/(12 × 9.6), inverse cosine gives 63°"
+ },
+ "9": {
+  "sub": [
+   "M11"
+  ],
+  "detail": "constant volume: L × 1.5 means A ÷ 1.5, so R ∝ L², × 2.25"
+ },
+ "10": {
+  "sub": [
+   "E1",
+   "P2"
+  ],
+  "detail": "voltmeter across variable resistor: 0 when 0 Ω, 4.0 × 3R/4R at maximum"
+ },
+ "11": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "in-phase sources: path difference 20 cm = 2λ gives constructive interference"
+ },
+ "12": {
+  "sub": [
+   "E1",
+   "M11"
+  ],
+  "detail": "sin C = 1/n, largest n gives smallest critical angle"
+ },
+ "13": {
+  "sub": [
+   "E1",
+   "M11"
+  ],
+  "detail": "P = Fv with drag ∝ v² gives P ∝ v³"
+ },
+ "14": {
+  "sub": [
+   "E1",
+   "M1",
+   "M3",
+   "M5"
+  ],
+  "detail": "W = VIt with 120 kV, 8.0 µA, 2.0 h → 7200 s"
+ },
+ "15": {
+  "sub": [
+   "F2",
+   "D3"
+  ],
+  "detail": "charge quantised in multiples of e; 8.0 × 10⁻¹⁹ C = 5e"
+ },
+ "16": {
+  "sub": [
+   "D6"
+  ],
+  "detail": "vectors added tip-to-tail; resultant from start to end"
+ },
+ "17": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "I = P/A: kg m² s⁻³ ÷ m² = kg s⁻³"
+ },
+ "18": {
+  "sub": [
+   "E3",
+   "M8",
+   "M1"
+  ],
+  "detail": "fall distance 10.2 cm (bottom of ball); s = ½gt², rearrange for t"
+ },
+ "19": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "only transverse waves polarise; microwaves have cm wavelengths"
+ },
+ "20": {
+  "sub": [
+   "F4"
+  ],
+  "detail": "closed end node, open end antinode"
+ },
+ "21(a)": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "equilibrium also needs zero resultant moment about any point"
+ },
+ "21(b)(i)": {
+  "sub": [
+   "D2",
+   "P4"
+  ],
+  "detail": "third-law partner of weight is ball's gravitational pull on the Earth"
+ },
+ "21(b)(ii)": {
+  "sub": [
+   "D2",
+   "P2"
+  ],
+  "detail": "W and N act on same object and are different types, so not a third-law pair"
+ },
+ "21(c)(i)": {
+  "sub": [
+   "M14",
+   "M15"
+  ],
+  "detail": "resolve each tension vertically with correct angle (cos 50°, sin 10°) and add"
+ },
+ "21(c)(ii)": {
+  "sub": [
+   "E2",
+   "M7",
+   "P4"
+  ],
+  "detail": "equilibrium: vertical force = weight; m = 68/9.81"
+ },
+ "21(c)(iii)": {
+  "sub": [
+   "M9",
+   "M10",
+   "E3"
+  ],
+  "detail": "x = FL/(AE); F and E both scale by 1.29, so ratio 1.0"
+ },
+ "22(a)": {
+  "sub": [
+   "D5",
+   "M25",
+   "M23"
+  ],
+  "detail": "velocity = gradient of s–t: speed rises, reverses at 0.50 s, smaller rebound speed"
+ },
+ "22(b)": {
+  "sub": [
+   "M23",
+   "E3"
+  ],
+  "detail": "read drop 1.23 m or time 0.50 s; v² = 2gs or v = gt"
+ },
+ "22(c)": {
+  "sub": [
+   "M22",
+   "M20"
+  ],
+  "detail": "tangent to s–t curve just after bounce; gradient gives rebound speed"
+ },
+ "22(d)": {
+  "sub": [
+   "M25",
+   "E1",
+   "M1",
+   "M3"
+  ],
+  "detail": "Δv = 4.9 + 3.5 with reversal; F = mΔv/Δt, 56 g and 1.8 ms converted"
+ },
+ "23(a)(i)": {
+  "sub": [
+   "E4",
+   "E3",
+   "M1",
+   "M6"
+  ],
+  "detail": "9.5 Ω m⁻¹ × 0.40 m; parallel combination; add r; I = ε/R; 2 s.f."
+ },
+ "23(a)(ii)": {
+  "sub": [
+   "E3",
+   "E4"
+  ],
+  "detail": "power wasted I²r over total power εI"
+ },
+ "23(b)": {
+  "sub": [
+   "F1",
+   "M23",
+   "P2"
+  ],
+  "detail": "series lamps 3.0 V each → 0.36 A; parallel 6.0 V each → 0.50 A each, total 1.0 A"
+ },
+ "24(a)": {
+  "sub": [
+   "K18",
+   "K2",
+   "K4"
+  ],
+  "detail": "measure i and r from normals with protractor; n = sin i / sin r; plot or repeat"
+ },
+ "24(b)(i)": {
+  "sub": [
+   "K7",
+   "M20"
+  ],
+  "detail": "straight best-fit line through f against 1/L; large-triangle gradient"
+ },
+ "24(b)(ii)": {
+  "sub": [
+   "E6",
+   "M19",
+   "F4"
+  ],
+  "detail": "node spacing λ/2 so v = 2fL; f = (v/2)(1/L) matches y = mx"
+ },
+ "24(b)(iii)": {
+  "sub": [
+   "K10"
+  ],
+  "detail": "v = 2 × gradient = 340 m s⁻¹"
+ },
+ "24(b)(iv)": {
+  "sub": [
+   "K17",
+   "K11"
+  ],
+  "detail": "lower frequency or measure across several nodes so L larger, smaller % uncertainty"
+ },
+ "25(a)": {
+  "sub": [
+   "F2"
+  ],
+  "detail": "electron diffraction is evidence of wave behaviour"
+ },
+ "25(b)(i)": {
+  "sub": [
+   "M4",
+   "E2",
+   "M8",
+   "M5"
+  ],
+  "detail": "210 eV → J; ½mv² = KE with electron mass; v = √(2KE/m)"
+ },
+ "25(b)(ii)": {
+  "sub": [
+   "E1",
+   "M5"
+  ],
+  "detail": "λ = h/(mv) with electron mass and speed"
+ },
+ "25(c)": {
+  "sub": [
+   "P7",
+   "D1",
+   "P1"
+  ],
+  "detail": "one photon frees one electron; hf = φ + KEmax; φ minimum energy; need hf ≥ φ"
+ }
+}

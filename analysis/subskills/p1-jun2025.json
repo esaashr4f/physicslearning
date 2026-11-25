@@ -1,0 +1,292 @@
+{
+ "1": {
+  "sub": [
+   "E1",
+   "M7",
+   "M5"
+  ],
+  "detail": "v = I/(Ane) with A = 4.0 × 10⁻⁶ m², n = 8.5 × 10²⁸ m⁻³"
+ },
+ "2": {
+  "sub": [
+   "M14",
+   "E1",
+   "D3"
+  ],
+  "detail": "couple torque = 2100 N × perpendicular separation 4.0 sin 40° m"
+ },
+ "3": {
+  "sub": [
+   "E3",
+   "E4"
+  ],
+  "detail": "reduce four 10 Ω network step by step using series and parallel rules"
+ },
+ "4": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "UV roughly 10⁻⁸ to 4 × 10⁻⁷ m"
+ },
+ "5": {
+  "sub": [
+   "F4",
+   "E1"
+  ],
+  "detail": "open pipe: antinodes both ends; count half-wavelengths in 1.4 m; f = v/λ"
+ },
+ "6": {
+  "sub": [
+   "E1",
+   "M4",
+   "M5"
+  ],
+  "detail": "KEmax = hf − φ with 3.7 eV → J"
+ },
+ "7": {
+  "sub": [
+   "E1",
+   "M5"
+  ],
+  "detail": "λ = h/(m × 0.05c) with electron mass"
+ },
+ "8": {
+  "sub": [
+   "D1",
+   "D5"
+  ],
+  "detail": "UTS is the maximum stress on each stress–strain curve"
+ },
+ "9": {
+  "sub": [
+   "M1"
+  ],
+  "detail": "10⁹ Pa = 1 GPa, so 2.1 GPa"
+ },
+ "10": {
+  "sub": [
+   "P4",
+   "D2"
+  ],
+  "detail": "withdrawn by OCR; floating: upthrust equals object's weight and displaced fluid's weight"
+ },
+ "11": {
+  "sub": [
+   "E3",
+   "M8",
+   "M25"
+  ],
+  "detail": "fall distance 4.5 − 2.5 = 2.0 m; v² = 2gs from rest"
+ },
+ "12": {
+  "sub": [
+   "P7",
+   "F2"
+  ],
+  "detail": "above threshold, intensity (photon rate) sets emission rate"
+ },
+ "13": {
+  "sub": [
+   "M16",
+   "M15",
+   "P4"
+  ],
+  "detail": "balancing F = √(6.0² + 5.0²) = 7.8 N; angle via tan⁻¹"
+ },
+ "14": {
+  "sub": [
+   "D3",
+   "P1"
+  ],
+  "detail": "elastic: momentum and KE conserved, identical particles each rebound at v"
+ },
+ "15": {
+  "sub": [
+   "K12",
+   "M18"
+  ],
+  "detail": "cube volume = side³: 8% + 3 × 2% = 14%"
+ },
+ "16": {
+  "sub": [
+   "D5",
+   "P4"
+  ],
+  "detail": "rate of change of momentum ∝ v–t gradient, steepest during impact"
+ },
+ "17": {
+  "sub": [
+   "M21",
+   "M3",
+   "D5"
+  ],
+  "detail": "impulse = area under F–t graph with ms → s"
+ },
+ "18": {
+  "sub": [
+   "E1",
+   "M7",
+   "M1"
+  ],
+  "detail": "I = ε/(R + r) = 1.50/20.5, expressed in mA"
+ },
+ "19": {
+  "sub": [
+   "D1"
+  ],
+  "detail": "power: energy transferred per unit time, using quantities not units"
+ },
+ "20": {
+  "sub": [
+   "M11"
+  ],
+  "detail": "intensity ∝ amplitude²: doubling amplitude gives ×4"
+ },
+ "21(a)": {
+  "sub": [
+   "D2",
+   "P2"
+  ],
+  "detail": "weight and normal force: different types, same body, so not third-law pair"
+ },
+ "21(b)(i)": {
+  "sub": [
+   "P4",
+   "E2",
+   "M7"
+  ],
+  "detail": "m = 700/9.81; R − 700 = m × 2.4"
+ },
+ "21(b)(ii)": {
+  "sub": [
+   "E3",
+   "M8"
+  ],
+  "detail": "from rest 8.5 = ½ × 2.4 × t², t = √(2s/a)"
+ },
+ "21(c)": {
+  "sub": [
+   "D2",
+   "P4"
+  ],
+  "detail": "constant velocity: zero resultant, reading equals 700 N"
+ },
+ "22(a)(i)": {
+  "sub": [
+   "K17"
+  ],
+  "detail": "leftover liquid film would change the effective refractive index being matched"
+ },
+ "22(a)(ii)": {
+  "sub": [
+   "K3"
+  ],
+  "detail": "control wavelength of light (or liquid temperature)"
+ },
+ "22(b)": {
+  "sub": [
+   "K11",
+   "K14",
+   "M12"
+  ],
+  "detail": "±1.5% of 1.52 = ±0.023; range 1.497–1.543 overlaps Y and Z"
+ },
+ "22(c)(i)": {
+  "sub": [
+   "D1"
+  ],
+  "detail": "critical angle: incidence giving 90° refraction angle"
+ },
+ "22(c)(ii)": {
+  "sub": [
+   "K18",
+   "K2"
+  ],
+  "detail": "ray through curved side to centre of flat edge; adjust until grazing; trace normal, protractor"
+ },
+ "22(c)(iii)": {
+  "sub": [
+   "E1",
+   "M7"
+  ],
+  "detail": "n = 1/sin 42°"
+ },
+ "23(a)": {
+  "sub": [
+   "E1",
+   "M12"
+  ],
+  "detail": "input VI = 1150 W; efficiency = 700/1150 × 100%"
+ },
+ "23(b)": {
+  "sub": [
+   "E1",
+   "M3",
+   "M1"
+  ],
+  "detail": "t = 100 kJ / 700 W ≈ 140 s vs 3 min = 180 s"
+ },
+ "23(c)(i)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "microwaves reflect off metal walls; incident and reflected waves superpose"
+ },
+ "23(c)(ii)": {
+  "sub": [
+   "F4",
+   "P2"
+  ],
+  "detail": "antinodes maximum amplitude and heating, nodes minimum"
+ },
+ "24(a)": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "equilibrium: sum of clockwise moments = sum of anticlockwise about same point"
+ },
+ "24(b)(i)": {
+  "sub": [
+   "P5",
+   "E4",
+   "M1"
+  ],
+  "detail": "340 × 4.5 = T × 1.5 gives T; k = T/x with 12 mm → m"
+ },
+ "24(b)(ii)": {
+  "sub": [
+   "E1",
+   "M1"
+  ],
+  "detail": "E = ½kx² with x = 12 × 10⁻³ m"
+ },
+ "24(c)": {
+  "sub": [
+   "P5",
+   "P2"
+  ],
+  "detail": "same extension so same T; larger arm for T needs larger moment, so F increases"
+ },
+ "25(a)": {
+  "sub": [
+   "D3",
+   "F3"
+  ],
+  "detail": "plane polarised: transverse oscillations confined to one plane"
+ },
+ "25(b)(i)": {
+  "sub": [
+   "F3",
+   "M26"
+  ],
+  "detail": "received intensity max at 0°, 180°, 360°, near zero at 90°, 270°, cos²-shaped"
+ },
+ "25(b)(ii)": {
+  "sub": [
+   "F3",
+   "P2",
+   "M14"
+  ],
+  "detail": "transmitter at 45°: only component detected, same pattern lower intensity"
+ }
+}

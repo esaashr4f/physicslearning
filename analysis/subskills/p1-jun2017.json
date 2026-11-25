@@ -1,0 +1,305 @@
+{
+ "1": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "EM waves are transverse, not longitudinal"
+ },
+ "2": {
+  "sub": [
+   "F3",
+   "P2"
+  ],
+  "detail": "ray bends towards normal entering prism, away from normal leaving"
+ },
+ "3": {
+  "sub": [
+   "D5"
+  ],
+  "detail": "work done = area under force–extension graph up to breaking"
+ },
+ "4": {
+  "sub": [
+   "M25",
+   "P4"
+  ],
+  "detail": "resultant of 3.0 N and 4.0 N lies between their difference and sum"
+ },
+ "5": {
+  "sub": [
+   "P4",
+   "F5"
+  ],
+  "detail": "no horizontal force on projectile so horizontal velocity constant"
+ },
+ "6": {
+  "sub": [
+   "D3",
+   "P4"
+  ],
+  "detail": "impulse = change of momentum, so impulse/mass gives final speed from rest"
+ },
+ "7": {
+  "sub": [
+   "D3"
+  ],
+  "detail": "couple: equal, opposite, parallel forces not in line"
+ },
+ "8": {
+  "sub": [
+   "K12",
+   "M10"
+  ],
+  "detail": "scaling both resistors by same fraction scales parallel total equally: 10%"
+ },
+ "9": {
+  "sub": [
+   "F1",
+   "P2"
+  ],
+  "detail": "less light raises LDR resistance; current and fixed-resistor p.d. fall"
+ },
+ "10": {
+  "sub": [
+   "E4",
+   "M7"
+  ],
+  "detail": "striking voltage eV equals photon energy hc/λ, rearranged for h"
+ },
+ "11": {
+  "sub": [
+   "P4",
+   "E2",
+   "M7"
+  ],
+  "detail": "mass = 30/g; T = W + ma"
+ },
+ "12": {
+  "sub": [
+   "E3",
+   "M7"
+  ],
+  "detail": "total power 30 W, I = P/V"
+ },
+ "13": {
+  "sub": [
+   "P1",
+   "E1"
+  ],
+  "detail": "energy lost 100 − 60 J over 5.0 m along slope: F = W/d"
+ },
+ "14": {
+  "sub": [
+   "M11",
+   "M9"
+  ],
+  "detail": "eV = p²/2m so p ∝ √V; λ = h/p ∝ 1/√V"
+ },
+ "15": {
+  "sub": [
+   "P4"
+  ],
+  "detail": "stationary submerged object in equilibrium: upthrust equals weight"
+ },
+ "16": {
+  "sub": [
+   "M2",
+   "E4"
+  ],
+  "detail": "1.0 mm² → 1.0 × 10⁻⁶ m²; P = IA then E = Pt"
+ },
+ "17": {
+  "sub": [
+   "E1",
+   "P2"
+  ],
+  "detail": "normal contact force perpendicular to displacement does no work, W = Fx cos θ"
+ },
+ "18": {
+  "sub": [
+   "E3",
+   "E4"
+  ],
+  "detail": "combine series and parallel parts of network step by step"
+ },
+ "19": {
+  "sub": [
+   "M24",
+   "E1"
+  ],
+  "detail": "car mass ~10³ kg so momentum ~10⁴ kg m s⁻¹"
+ },
+ "20": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "coulomb is derived (A s), not an SI base unit"
+ },
+ "21(a)": {
+  "sub": [
+   "E2",
+   "M1"
+  ],
+  "detail": "Ek = ½mv² with 900 g → 0.900 kg"
+ },
+ "21(b)": {
+  "sub": [
+   "D5",
+   "M23"
+  ],
+  "detail": "velocity = gradient of s–t: constant, decreasing, then zero"
+ },
+ "21(c)": {
+  "sub": [
+   "M23",
+   "E3",
+   "M7",
+   "M25"
+  ],
+  "detail": "stopping distance/time read from graph; suvat with v = 0 for deceleration"
+ },
+ "22(a)": {
+  "sub": [
+   "P5"
+  ],
+  "detail": "weight at midpoint 2.5 m; moments about wall: 9100 × 2.5 = F × 3.5"
+ },
+ "22(b)": {
+  "sub": [
+   "E4",
+   "M7",
+   "M5"
+  ],
+  "detail": "strain = stress/E then compression = strain × 2.3 m"
+ },
+ "23(a)": {
+  "sub": [
+   "P2",
+   "P3"
+  ],
+  "detail": "system must include Earth, which gains equal and opposite momentum"
+ },
+ "23(b)(i)": {
+  "sub": [
+   "M20",
+   "D5",
+   "E1"
+  ],
+  "detail": "force = gradient of p–t graph, Δp/Δt over collision time"
+ },
+ "23(b)(ii)": {
+  "sub": [
+   "P1",
+   "P3"
+  ],
+  "detail": "total momentum constant: Y gains what X loses between 0.40 and 0.60 s"
+ },
+ "24(a)(i)": {
+  "sub": [
+   "E4",
+   "E2",
+   "M7"
+  ],
+  "detail": "I = V/R = 0.030 A then v = I/(Ane)"
+ },
+ "24(a)(ii)": {
+  "sub": [
+   "F1",
+   "P2"
+  ],
+  "detail": "heated NTC thermistor: resistance falls, current rises; ideal supply p.d. unchanged"
+ },
+ "24(b)(i)": {
+  "sub": [
+   "E4",
+   "E3",
+   "M7"
+  ],
+  "detail": "midpoint gives 8.0 Ω; I = 1.2/10; ε = V + Ir for r"
+ },
+ "24(b)(ii)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "more wire resistance → less current → smaller lost volts Ir → V rises"
+ },
+ "25(a)(i)": {
+  "sub": [
+   "M23"
+  ],
+  "detail": "read adjacent crest separation 4 cm from displacement–distance graph"
+ },
+ "25(a)(ii)": {
+  "sub": [
+   "P2",
+   "M11"
+  ],
+  "detail": "wave spreads so amplitude falls; intensity ∝ amplitude²"
+ },
+ "25(b)(i)": {
+  "sub": [
+   "D1"
+  ],
+  "detail": "interference: superposition of coherent waves"
+ },
+ "25(b)(ii)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "path difference 4.5 cm = 1.5λ so antiphase, destructive"
+ },
+ "26(a)": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "N → kg m s⁻²; √(T/μ) base units reduce to m s⁻¹"
+ },
+ "26(b)": {
+  "sub": [
+   "K1",
+   "K2",
+   "K4"
+  ],
+  "detail": "balance for mass, ruler for length, μ = m/L; finer resolution, repeat or graph"
+ },
+ "26(c)": {
+  "sub": [
+   "F4",
+   "P2",
+   "M11"
+  ],
+  "detail": "speed fixed by tension; L = λ/2, λ, 3λ/2; λ ∝ 1/f"
+ },
+ "27(a)": {
+  "sub": [
+   "D1"
+  ],
+  "detail": "threshold frequency: minimum frequency releasing surface electrons"
+ },
+ "27(b)(i)": {
+  "sub": [
+   "E6"
+  ],
+  "detail": "set KEmax = 0 at f₀ in hf = φ + KEmax"
+ },
+ "27(b)(ii)": {
+  "sub": [
+   "K7"
+  ],
+  "detail": "plot missing point within half square; ruled best-fit line"
+ },
+ "27(b)(iii)": {
+  "sub": [
+   "M20",
+   "K10",
+   "M4"
+  ],
+  "detail": "gradient of φ–f₀ = h after converting eV to J"
+ },
+ "27(b)(iv)": {
+  "sub": [
+   "K13"
+  ],
+  "detail": "worst-fit line; % uncertainty = |h_best − h_worst| / h_best × 100"
+ }
+}

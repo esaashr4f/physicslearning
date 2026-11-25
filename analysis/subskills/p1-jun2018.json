@@ -1,0 +1,317 @@
+{
+ "1": {
+  "sub": [
+   "D5"
+  ],
+  "detail": "greatest velocity at steepest part of displacement–time graph"
+ },
+ "2": {
+  "sub": [
+   "D1"
+  ],
+  "detail": "definition must use quantities: e.m.f. as energy transferred per unit charge"
+ },
+ "3": {
+  "sub": [
+   "P4"
+  ],
+  "detail": "weight down plus small drag opposing velocity: resultant nearly vertically down"
+ },
+ "4": {
+  "sub": [
+   "P1"
+  ],
+  "detail": "momentum conserved: Q gains the 30 kg m s⁻¹ that P loses"
+ },
+ "5": {
+  "sub": [
+   "M11"
+  ],
+  "detail": "R ∝ L/d²: 3 × length, 2 × diameter gives 3/4 of original"
+ },
+ "6": {
+  "sub": [
+   "M10",
+   "E1"
+  ],
+  "detail": "series lamps same current so p.d. ∝ power: 2/8 of 16 V"
+ },
+ "7": {
+  "sub": [
+   "E3",
+   "E4"
+  ],
+  "detail": "I = ε/(R + r) = 1.4/7.0, then V = IR across 2.0 Ω"
+ },
+ "8": {
+  "sub": [
+   "K12"
+  ],
+  "detail": "P = I²R: 2 × 5% + 10% = 20%"
+ },
+ "9": {
+  "sub": [
+   "P5"
+  ],
+  "detail": "three non-parallel forces in equilibrium are concurrent; hinge force through that point"
+ },
+ "10": {
+  "sub": [
+   "M21",
+   "M11",
+   "F5"
+  ],
+  "detail": "braking area from v–t graph twice thinking area: 10 + 20 m"
+ },
+ "11": {
+  "sub": [
+   "D2",
+   "D4"
+  ],
+  "detail": "rate of change of momentum equals resultant force, 100 kg m s⁻²"
+ },
+ "12": {
+  "sub": [
+   "M17",
+   "M1",
+   "E2",
+   "E1"
+  ],
+  "detail": "0.62 mm diameter → radius 0.31 mm → m; A = πr²; σ = mg/A"
+ },
+ "13": {
+  "sub": [
+   "F1",
+   "E5"
+  ],
+  "detail": "light frees more charge carriers, n rises so resistance falls"
+ },
+ "14": {
+  "sub": [
+   "M4",
+   "E1"
+  ],
+  "detail": "30 keV / 20 = 1.5 keV per electron → 1500 V"
+ },
+ "15": {
+  "sub": [
+   "M25",
+   "E1"
+  ],
+  "detail": "impulse 3.0 × 1.5 opposes: 2.0 − 4.5 = −2.5 kg m s⁻¹, reversed"
+ },
+ "16": {
+  "sub": [
+   "M1",
+   "E1",
+   "M24"
+  ],
+  "detail": "Q = It = 0.10 C with 10 mA; N = Q/e ≈ 6 × 10¹⁷ → 10¹⁸"
+ },
+ "17": {
+  "sub": [
+   "E1",
+   "F2"
+  ],
+  "detail": "KEmax = 5.0 − 3.0 = 2.0 eV; photoelectron energies range from 0 up to KEmax"
+ },
+ "18": {
+  "sub": [
+   "D3"
+  ],
+  "detail": "coherent sources have constant phase difference"
+ },
+ "19": {
+  "sub": [
+   "F4",
+   "M7",
+   "M1"
+  ],
+  "detail": "closed tube pattern shows ¾λ in 60 cm, so λ = 80 cm"
+ },
+ "20": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "J = N m = kg m² s⁻²"
+ },
+ "21(a)": {
+  "sub": [
+   "K2",
+   "K1",
+   "E3"
+  ],
+  "detail": "ruler and stopwatch; from rest v = 2s/t using s = ½(u + v)t"
+ },
+ "21(b)(i)": {
+  "sub": [
+   "E3",
+   "M7"
+  ],
+  "detail": "v² = u² + 2as rearranged for a over 1.10 m"
+ },
+ "21(b)(ii)": {
+  "sub": [
+   "E5",
+   "M15"
+  ],
+  "detail": "given a = g sin θ; θ = sin⁻¹(a/g)"
+ },
+ "22(a)": {
+  "sub": [
+   "P4",
+   "P5"
+  ],
+  "detail": "equilibrium: tension resultant equals weight 4.8 N, upwards"
+ },
+ "22(b)": {
+  "sub": [
+   "P5"
+  ],
+  "detail": "closed right-angled triangle, W longest, arrows nose to tail"
+ },
+ "22(c)": {
+  "sub": [
+   "M14",
+   "M16",
+   "P5"
+  ],
+  "detail": "resolve: 2T sin 45° = 4.8 or Pythagoras 2T² = 4.8²"
+ },
+ "22(d)": {
+  "sub": [
+   "E4",
+   "M7"
+  ],
+  "detail": "x = F/k = 3.4/24, then E = ½kx² (or F²/2k)"
+ },
+ "23(a)": {
+  "sub": [
+   "P4",
+   "D2"
+  ],
+  "detail": "F = U − W; upthrust = weight of water displaced, rises then constant when submerged"
+ },
+ "23(b)": {
+  "sub": [
+   "P4",
+   "E2",
+   "M7"
+  ],
+  "detail": "resultant 4.2 − 0.8 N; m = W/g; a = F/m"
+ },
+ "23(c)": {
+  "sub": [
+   "F5",
+   "P4"
+  ],
+  "detail": "drag increases with speed, reducing resultant and acceleration"
+ },
+ "24(a)(i)": {
+  "sub": [
+   "E1",
+   "M1"
+  ],
+  "detail": "P = VI with 30 mA → 0.030 A"
+ },
+ "24(a)(ii)": {
+  "sub": [
+   "F1",
+   "E2"
+  ],
+  "detail": "R = V/I from table falls with current both ways: thermistor, not diode"
+ },
+ "24(b)": {
+  "sub": [
+   "M2",
+   "E4",
+   "E3"
+  ],
+  "detail": "1.2 mm² → 1.2 × 10⁻⁶ m²; R = ρL/A = 100 Ω; add 68 Ω; I = V/R"
+ },
+ "25(a)": {
+  "sub": [
+   "M23",
+   "K19",
+   "E1"
+  ],
+  "detail": "period = divisions × time-base setting; f = 1/T"
+ },
+ "25(b)(i)": {
+  "sub": [
+   "M26",
+   "P6"
+  ],
+  "detail": "antiphase: inverted sinusoid, amplitude 1.0 µm, 180° shift"
+ },
+ "25(b)(ii)": {
+  "sub": [
+   "P6",
+   "M11"
+  ],
+  "detail": "antiphase superposition leaves 2.0 µm amplitude; I ∝ A²"
+ },
+ "25(b)(iii)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "path difference 17 cm = λ/2 so destructive interference"
+ },
+ "26(a)(i)": {
+  "sub": [
+   "E1",
+   "M1",
+   "M7"
+  ],
+  "detail": "λ = c/f with 11 GHz → 1.1 × 10¹⁰ Hz"
+ },
+ "26(a)(ii)": {
+  "sub": [
+   "F3",
+   "P2"
+  ],
+  "detail": "diffraction significant when slit width ≈ wavelength"
+ },
+ "26(b)": {
+  "sub": [
+   "F3",
+   "P2"
+  ],
+  "detail": "frequency unchanged; slower in water so wavelength shorter"
+ },
+ "26(c)": {
+  "sub": [
+   "K18",
+   "K2"
+  ],
+  "detail": "semicircular block, increase angle until refracted ray grazes surface; n = 1/sin C"
+ },
+ "27(a)": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "radio and X-rays differ in wavelength/frequency and photon energy"
+ },
+ "27(b)(i)": {
+  "sub": [
+   "M18",
+   "E1",
+   "M5"
+  ],
+  "detail": "sphere area 4πr²; I = P/(4πr²)"
+ },
+ "27(b)(ii)": {
+  "sub": [
+   "E1",
+   "M5"
+  ],
+  "detail": "E = hc/λ with λ = 5.0 × 10⁻⁷ m"
+ },
+ "27(b)(iii)": {
+  "sub": [
+   "E4",
+   "M5"
+  ],
+  "detail": "photons per second = stellar power / photon energy"
+ }
+}

@@ -1,0 +1,275 @@
+{
+ "1": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "ampere is an SI base unit; volt, ohm, coulomb derived"
+ },
+ "2": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "constructive interference needs path difference of whole wavelengths, e.g. λ"
+ },
+ "3": {
+  "sub": [
+   "M10",
+   "F1"
+  ],
+  "detail": "R ∝ L at fixed area so 2R; number density is a material property, unchanged"
+ },
+ "4": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "polarised screen through filter: dark at 90°, normal again at 180°"
+ },
+ "5": {
+  "sub": [
+   "E3",
+   "E4"
+  ],
+  "detail": "combine series and parallel parts of the four-resistor network"
+ },
+ "6": {
+  "sub": [
+   "F4",
+   "M26"
+  ],
+  "detail": "adjacent loops of stationary wave oscillate in antiphase: π rad"
+ },
+ "7": {
+  "sub": [
+   "P7",
+   "F2"
+  ],
+  "detail": "higher intensity → more photons per second → higher emission rate, same KEmax"
+ },
+ "8": {
+  "sub": [
+   "F3",
+   "P2"
+  ],
+  "detail": "diffraction significant when wavelength ≈ 3 cm gap: microwaves"
+ },
+ "9": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "third-law pairs act on different bodies, not the same one"
+ },
+ "10": {
+  "sub": [
+   "D2",
+   "P2"
+  ],
+  "detail": "no external force: total momentum conserved; KE not in inelastic collision"
+ },
+ "11": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "Kirchhoff's first law: currents into junction equal currents out"
+ },
+ "12": {
+  "sub": [
+   "F2",
+   "P6"
+  ],
+  "detail": "double slit shows diffraction and interference, not refraction"
+ },
+ "13": {
+  "sub": [
+   "E1",
+   "M1",
+   "M7"
+  ],
+  "detail": "x = 9 mm ÷ 6 spacings; λ = ax/D with mm converted"
+ },
+ "14": {
+  "sub": [
+   "F4",
+   "E1"
+  ],
+  "detail": "node spacing λ/2 → λ = 1.4 m; f = v/λ"
+ },
+ "15": {
+  "sub": [
+   "E1",
+   "P2"
+  ],
+  "detail": "E = ½ × 4900 × 0.50² = 610 J, compression increases stored energy"
+ },
+ "16": {
+  "sub": [
+   "F1"
+  ],
+  "detail": "brittle: straight stress–strain line ending abruptly, no plastic region"
+ },
+ "17": {
+  "sub": [
+   "D1"
+  ],
+  "detail": "e.m.f.: energy transferred to electrical per unit charge through the source"
+ },
+ "18": {
+  "sub": [
+   "E1",
+   "M15",
+   "E7"
+  ],
+  "detail": "sin C = 1/1.5 → 42°; compare with incidence at P from 50° geometry"
+ },
+ "19": {
+  "sub": [
+   "K12"
+  ],
+  "detail": "W = VIt: add percentage uncertainties of V, I and t"
+ },
+ "20": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "upthrust = weight of water displaced = mass displaced × g"
+ },
+ "21(a)": {
+  "sub": [
+   "E6",
+   "E3"
+  ],
+  "detail": "series cells: 3ε and 3r; V = 3ε − 3Ir; P = IV"
+ },
+ "21(b)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "large r wastes I²r inside battery, less power to bulb"
+ },
+ "22(a)": {
+  "sub": [
+   "M14",
+   "E4",
+   "E1"
+  ],
+  "detail": "W = Fx cos 50° = 32 cos 50° × 3.5; P = W/t over 6 s"
+ },
+ "22(b)": {
+  "sub": [
+   "E1",
+   "E2",
+   "D4"
+  ],
+  "detail": "moment = 5 × 9.81 × 0.6 m; unit N m"
+ },
+ "22(c)": {
+  "sub": [
+   "P5",
+   "P2"
+  ],
+  "detail": "bending knees reduces perpendicular distance, so smaller moment and spine force"
+ },
+ "23(a)": {
+  "sub": [
+   "K6",
+   "K4",
+   "K18",
+   "E2"
+  ],
+  "detail": "ammeter series, voltmeter across thermistor; record T, V, I at ≥5 intervals; R = V/I"
+ },
+ "23(b)": {
+  "sub": [
+   "M23",
+   "F1",
+   "E1",
+   "P3"
+  ],
+  "detail": "read 30 Ω at 30 °C and LED ~3.0 V turn-on; divider gives 3.2 V > 3.0 V"
+ },
+ "24(a)": {
+  "sub": [
+   "P4",
+   "F5"
+  ],
+  "detail": "drag grows with speed until equals weight: zero resultant, zero acceleration"
+ },
+ "24(b)": {
+  "sub": [
+   "E3",
+   "M8"
+  ],
+  "detail": "v² = 2gs (or mgh = ½mv²) from rest, v = √(2 × 9.81 × 2.0)"
+ },
+ "24(c)": {
+  "sub": [
+   "M13",
+   "E3",
+   "M7"
+  ],
+  "detail": "mean of three times = 0.63 s; s = ½gt² rearranged for g"
+ },
+ "24(d)": {
+  "sub": [
+   "K17",
+   "K19"
+  ],
+  "detail": "light gates/trap door or video remove reaction time; or larger height"
+ },
+ "24(e)": {
+  "sub": [
+   "D5",
+   "P1"
+  ],
+  "detail": "h–t gradient is velocity: steepens falling, flattens rising; lower rebound max"
+ },
+ "25(a)": {
+  "sub": [
+   "D3"
+  ],
+  "detail": "KEmax: maximum kinetic energy of emitted photoelectrons"
+ },
+ "25(b)": {
+  "sub": [
+   "P7",
+   "F2"
+  ],
+  "detail": "one photon frees one electron from plate; losing negative charge drops leaf"
+ },
+ "25(c)": {
+  "sub": [
+   "P7",
+   "P2"
+  ],
+  "detail": "below threshold photon energy < work function: no electron escapes"
+ },
+ "26(a)": {
+  "sub": [
+   "K17",
+   "K2"
+  ],
+  "detail": "tube blocks ambient light so LED switch-on is easier to judge"
+ },
+ "26(b)": {
+  "sub": [
+   "M20",
+   "K10",
+   "M5"
+  ],
+  "detail": "gradient of V–f over most of line = h/e; h = gradient × 1.6 × 10⁻¹⁹"
+ },
+ "26(c)": {
+  "sub": [
+   "M12",
+   "K14"
+  ],
+  "detail": "|6.63 − 3.5| / 6.63 × 100% ≈ 47%"
+ },
+ "26(d)": {
+  "sub": [
+   "E4",
+   "M1",
+   "M5"
+  ],
+  "detail": "blue photon E = hf; N = 1 mW / E ≈ 2.4 × 10¹⁵, fewer than red"
+ }
+}

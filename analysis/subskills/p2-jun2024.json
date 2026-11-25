@@ -1,0 +1,255 @@
+{
+ "1(a)": {
+  "sub": [
+   "E2",
+   "M1"
+  ],
+  "detail": "speed = 2πr/T with r = 1.19 km → m"
+ },
+ "1(b)": {
+  "sub": [
+   "D6"
+  ],
+  "detail": "velocity is a vector: same speed, roughly opposite direction"
+ },
+ "1(c)(i)": {
+  "sub": [
+   "M3"
+  ],
+  "detail": "periods in h and min to common unit, minus 30 min; form ratio"
+ },
+ "1(c)(ii)": {
+  "sub": [
+   "E5",
+   "M11",
+   "M6"
+  ],
+  "detail": "given r³ ∝ T²: r_new = 1.19 × (0.958)^(2/3) km, 3 s.f."
+ },
+ "2(a)": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "Newton's second law: net force ∝ rate of change of momentum"
+ },
+ "2(b)(i)": {
+  "sub": [
+   "E1",
+   "D4"
+  ],
+  "detail": "impulse = Δp = 0.16 × 20; unit N s"
+ },
+ "2(b)(ii)": {
+  "sub": [
+   "E1",
+   "M7"
+  ],
+  "detail": "F = Δp/Δt over 0.033 s"
+ },
+ "2(c)(i)": {
+  "sub": [
+   "D3"
+  ],
+  "detail": "perfectly elastic: total KE conserved"
+ },
+ "2(c)(ii)": {
+  "sub": [
+   "P1",
+   "E1",
+   "M25",
+   "M7"
+  ],
+  "detail": "0.16 × 20 = (m + 0.16) × 8 + 0.16 × (−12); solve for m"
+ },
+ "3": {
+  "sub": [
+   "K19",
+   "K1",
+   "K2",
+   "K10",
+   "K13",
+   "K12",
+   "M20"
+  ],
+  "detail": "electromagnet–trapdoor timer, metre rule, set square; g = 2/gradient²; worst line; % g = 2 × % gradient"
+ },
+ "4(a)(i)": {
+  "sub": [
+   "K1",
+   "K2",
+   "K4"
+  ],
+  "detail": "calipers at several positions, mean"
+ },
+ "4(a)(ii)": {
+  "sub": [
+   "M18",
+   "M1",
+   "E1"
+  ],
+  "detail": "V = ½ × 0.600 × 0.750 × 2.83 cm → m; ρ = m/V"
+ },
+ "4(b)(i)": {
+  "sub": [
+   "D3"
+  ],
+  "detail": "centre of gravity: point where whole weight appears to act"
+ },
+ "4(b)(ii)": {
+  "sub": [
+   "M23"
+  ],
+  "detail": "draw medians to locate C; scale 1 cm = 0.05 m"
+ },
+ "4(c)(i)": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "equilibrium: zero resultant force, zero resultant moment about any point"
+ },
+ "4(c)(ii)": {
+  "sub": [
+   "P5",
+   "E2"
+  ],
+  "detail": "moments about PQ: 3.98g × 0.25 m = F × 0.75 m"
+ },
+ "5(a)(i)": {
+  "sub": [
+   "E1",
+   "M1"
+  ],
+  "detail": "f = c/λ with 588 nm → m; answer in THz"
+ },
+ "5(a)(ii)": {
+  "sub": [
+   "E1",
+   "E4",
+   "F3",
+   "M1"
+  ],
+  "detail": "v = c/n; frequency unchanged; λ = v/f in nm"
+ },
+ "5(b)(i)": {
+  "sub": [
+   "F6"
+  ],
+  "detail": "draw normal; angles measured from normal to rays"
+ },
+ "5(b)(ii)": {
+  "sub": [
+   "K18",
+   "K2"
+  ],
+  "detail": "narrow ray, dim room, outline block, crosses far apart, join, protractor from normal"
+ },
+ "5(b)(iii)": {
+  "sub": [
+   "E1",
+   "M15"
+  ],
+  "detail": "sin r = sin 49.9°/1.52"
+ },
+ "5(b)(iv)": {
+  "sub": [
+   "M15",
+   "E1",
+   "P2"
+  ],
+  "detail": "incidence at Q = 90° − 30° = 60°; C = sin⁻¹(1/1.52) = 41°; 60° > C so TIR"
+ },
+ "5(b)(v)": {
+  "sub": [
+   "P2",
+   "F3"
+  ],
+  "detail": "equal-angle reflection at Q, then refraction out bending away from normal"
+ },
+ "6(a)": {
+  "sub": [
+   "M23",
+   "M3",
+   "E1"
+  ],
+  "detail": "4 cm per cycle × 1 ms/cm = 4 ms; f = 1/T"
+ },
+ "6(b)": {
+  "sub": [
+   "F4"
+  ],
+  "detail": "closed tube fundamental: node at closed end, antinode at open end"
+ },
+ "6(c)": {
+  "sub": [
+   "F4"
+  ],
+  "detail": "closed tube: odd harmonics only, next = 3 × 250 Hz"
+ },
+ "7(a)(i)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "zero current, so no lost volts: terminal p.d. = e.m.f."
+ },
+ "7(a)(ii)": {
+  "sub": [
+   "E1",
+   "M1",
+   "M7"
+  ],
+  "detail": "r = (4.57 − 4.50) V / 18.0 mA → A"
+ },
+ "7(a)(iii)": {
+  "sub": [
+   "E1"
+  ],
+  "detail": "parallel pair 150 Ω + parallel trio 100 Ω (or 4.50/0.018)"
+ },
+ "7(b)(i)": {
+  "sub": [
+   "E1",
+   "E4"
+  ],
+  "detail": "W = I²r t with 0.018 A, 3.9 Ω, 300 s"
+ },
+ "7(b)(ii)": {
+  "sub": [
+   "E1",
+   "E2",
+   "M5"
+  ],
+  "detail": "Q = It over 300 s; N = Q/e"
+ },
+ "7(b)(iii)": {
+  "sub": [
+   "P1",
+   "E1",
+   "M10"
+  ],
+  "detail": "I/2 vs I/3 in identical branches; v ∝ I so ratio 1.5"
+ },
+ "7(c)(i)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "removing a parallel resistor raises total resistance, current falls"
+ },
+ "7(c)(ii)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "smaller current, fewer lost volts, terminal p.d. rises"
+ },
+ "8": {
+  "sub": [
+   "F2",
+   "P7",
+   "K5",
+   "M24",
+   "M1",
+   "M3",
+   "E1"
+  ],
+  "detail": "graphite electron diffraction rings, HV safety; estimate car mass, 110 km/h → m/s; λ = h/mv ≈ 10⁻³⁸ m"
+ }
+}

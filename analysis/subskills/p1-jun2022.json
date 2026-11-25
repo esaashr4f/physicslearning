@@ -1,0 +1,326 @@
+{
+ "1": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "UV wavelengths roughly 10–400 nm, so 2 × 10⁻⁷ m"
+ },
+ "2": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "Kirchhoff's laws stated with current, e.m.f. and p.d., not charge"
+ },
+ "3": {
+  "sub": [
+   "M15",
+   "E1"
+  ],
+  "detail": "angles to boundary → 90° − angle to normal before applying n sin θ"
+ },
+ "4": {
+  "sub": [
+   "M10",
+   "E1"
+  ],
+  "detail": "x = λD/a: largest λ, smallest a gives widest fringes"
+ },
+ "5": {
+  "sub": [
+   "E2",
+   "E4"
+  ],
+  "detail": "ΔKE = ½ × 1000 × (20² − 15²); P = ΔE/t over 2.4 s"
+ },
+ "6": {
+  "sub": [
+   "P6",
+   "M26"
+  ],
+  "detail": "270° phase difference means ¾λ = 3.0 cm path difference"
+ },
+ "7": {
+  "sub": [
+   "E1",
+   "M7"
+  ],
+  "detail": "1/4.0 = 1/12 + 1/R gives R = 6.0 Ω"
+ },
+ "8": {
+  "sub": [
+   "E4",
+   "E3"
+  ],
+  "detail": "I = 0.90/6.0; lost volts 1.2 − 0.90; r = lost volts / I"
+ },
+ "9": {
+  "sub": [
+   "P5",
+   "M23"
+  ],
+  "detail": "moment = force × perpendicular distance measured on scaled diagram"
+ },
+ "10": {
+  "sub": [
+   "E1",
+   "M3",
+   "M5"
+  ],
+  "detail": "Q = Ne; I = Q/t with 1.2 µs → s"
+ },
+ "11": {
+  "sub": [
+   "M12",
+   "E4"
+  ],
+  "detail": "useful power = 4.0 × 0.90 / 1.8; input = useful ÷ 0.20"
+ },
+ "12": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "rotating polariser changes transmitted intensity only"
+ },
+ "13": {
+  "sub": [
+   "M11",
+   "M9"
+  ],
+  "detail": "x = FL/(AE): 1.5 × length, 3 × E → half the extension"
+ },
+ "14": {
+  "sub": [
+   "F1"
+  ],
+  "detail": "NTC thermistor resistance falls non-linearly with temperature"
+ },
+ "15": {
+  "sub": [
+   "P5",
+   "M11"
+  ],
+  "detail": "constant moment: F × x fixed so x ∝ 1/F"
+ },
+ "16": {
+  "sub": [
+   "F1",
+   "D5"
+  ],
+  "detail": "straight I–V through origin ohmic; curving filament lamp resistance rises"
+ },
+ "17": {
+  "sub": [
+   "F2",
+   "P7"
+  ],
+  "detail": "UV photons remove electrons from negatively charged zinc"
+ },
+ "18": {
+  "sub": [
+   "E1",
+   "M9"
+  ],
+  "detail": "W = VQ with Q = Ne"
+ },
+ "19": {
+  "sub": [
+   "F3",
+   "F4"
+  ],
+  "detail": "sound and EM both form stationary waves; sound longitudinal, needs medium"
+ },
+ "20": {
+  "sub": [
+   "D1"
+  ],
+  "detail": "intensity = power ÷ cross-sectional area"
+ },
+ "21(a)": {
+  "sub": [
+   "M21",
+   "M23"
+  ],
+  "detail": "area under v–t: trapezium ½(4.0 + 10.0) × 3.0 plus rectangle 10.0 × 5.0"
+ },
+ "21(b)(i)": {
+  "sub": [
+   "M20",
+   "D5"
+  ],
+  "detail": "acceleration = gradient of v–t, 6.0/3.0"
+ },
+ "21(b)(ii)": {
+  "sub": [
+   "M14",
+   "P4",
+   "E2"
+  ],
+  "detail": "680 cos 55° − R = 150 × 2.0"
+ },
+ "22(a)": {
+  "sub": [
+   "K18",
+   "K9",
+   "K10"
+  ],
+  "detail": "range of loads, measure compression, plot F against compression; gradient = k"
+ },
+ "22(b)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "rising and slowing: kinetic energy becomes gravitational potential energy"
+ },
+ "22(c)": {
+  "sub": [
+   "E1",
+   "M1"
+  ],
+  "detail": "compression (45 − 25) cm → 0.20 m; E = ½kx²"
+ },
+ "22(d)": {
+  "sub": [
+   "P1",
+   "P3"
+  ],
+  "detail": "some elastic energy becomes GPE between A and B, so not all ½mv²"
+ },
+ "23(a)": {
+  "sub": [
+   "D2",
+   "M20",
+   "D5"
+  ],
+  "detail": "p–t gradients are forces: equal size, opposite sign (±24 000 N)"
+ },
+ "23(b)": {
+  "sub": [
+   "P1",
+   "M25",
+   "M23"
+  ],
+  "detail": "read signed momenta: 20 − 30 = −10 before; −4 − 6 = −10 after"
+ },
+ "23(c)": {
+  "sub": [
+   "P1",
+   "M7"
+  ],
+  "detail": "combined mass 5.0 kg: v = total momentum / total mass"
+ },
+ "23(d)": {
+  "sub": [
+   "E3",
+   "M8",
+   "E7"
+  ],
+  "detail": "vertical motion independent, from rest: 120 = ½gt²"
+ },
+ "24(a)": {
+  "sub": [
+   "F4"
+  ],
+  "detail": "stationary waves show fixed nodes and antinodes"
+ },
+ "24(b)(i)": {
+  "sub": [
+   "K2",
+   "K19",
+   "K17"
+  ],
+  "detail": "signal generator reading or microphone + oscilloscope f = 1/T; improvement e.g. time many cycles"
+ },
+ "24(b)(ii)1": {
+  "sub": [
+   "F4"
+  ],
+  "detail": "fundamental between fixed ends: λ = 2L = 1.24 m"
+ },
+ "24(b)(ii)2": {
+  "sub": [
+   "E1"
+  ],
+  "detail": "v = fλ = 58 × 1.24"
+ },
+ "24(b)(ii)3": {
+  "sub": [
+   "K12",
+   "M6"
+  ],
+  "detail": "%T = 2 × 2.5% + 1.0% + 0.5% = 6.5%; absolute 0.53 N to 2 s.f."
+ },
+ "25(a)": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "e.m.f. and p.d. both measured in volts"
+ },
+ "25(b)(i)": {
+  "sub": [
+   "P2",
+   "E1"
+  ],
+  "detail": "wire–resistor parallel part changes divider ratio: 1.5 V falling to 0 with decreasing gradient"
+ },
+ "25(b)(ii)": {
+  "sub": [
+   "P2",
+   "M10"
+  ],
+  "detail": "series: p.d. shared by resistance, 1.5 V falling to 0.75 V; total R rises, I falls"
+ },
+ "25(c)(i)": {
+  "sub": [
+   "E4",
+   "M2",
+   "M7"
+  ],
+  "detail": "wire p.d. 14.4 − 12.0 V; R = V/I; 0.54 mm² → m²; ρ = RA/L"
+ },
+ "25(c)(ii)": {
+  "sub": [
+   "E1",
+   "M7",
+   "M2"
+  ],
+  "detail": "v = I/(Ane) with A = 0.54 × 10⁻⁶ m²"
+ },
+ "26(a)(i)": {
+  "sub": [
+   "P7",
+   "P2"
+  ],
+  "detail": "A just emits so photon energy 3.2 eV, below C's 3.3 eV work function"
+ },
+ "26(a)(ii)": {
+  "sub": [
+   "E1",
+   "M4",
+   "M11"
+  ],
+  "detail": "λ = hc/φ, or 380 nm × 3.2/6.4 by inverse proportion"
+ },
+ "26(a)(iii)": {
+  "sub": [
+   "E4",
+   "M4",
+   "M8"
+  ],
+  "detail": "KEmax = 5.3 − 4.1 eV → J; v from ½mv²; λ = h/mv"
+ },
+ "26(b)(i)": {
+  "sub": [
+   "K7"
+  ],
+  "detail": "straight best-fit line through KEmax–f points"
+ },
+ "26(b)(ii)": {
+  "sub": [
+   "M20",
+   "M19",
+   "K8",
+   "K10"
+  ],
+  "detail": "KEmax = hf − φ: gradient h, then intercept −φ found via line equation"
+ }
+}

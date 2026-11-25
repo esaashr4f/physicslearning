@@ -501,6 +501,27 @@ button { font: inherit; color: inherit; }
 .need-chips span { font: 500 11px/1.3 var(--f-mono); padding: 3px 6px; border-radius: 4px; background: var(--surface-2); border: 1px solid var(--rule); color: var(--ink-2); }
 .need-chips span.D, .need-chips span.F { border-color: var(--pen); color: var(--pen); }
 @media (max-width: 760px) { .km-row > div.hd { grid-template-columns: 22px minmax(0, 1fr) 56px; } .km-row .bar { display: none; } .km-qs { padding-left: 10px; } }
+
+/* skills breakdown + gaps */
+.sk-grp { display: grid; gap: 6px; margin-bottom: 22px; }
+.sk-grp > h4 { margin: 0 0 4px; font: 700 18px/1.2 var(--f-display); }
+.sk-row { border: 1px solid var(--rule); background: var(--surface); border-radius: 8px; }
+.sk-row > button { width: 100%; border: 0; background: none; text-align: left; cursor: pointer; padding: 9px 12px; display: grid; grid-template-columns: 44px minmax(0, 1fr) 140px 74px; gap: 10px; align-items: center; }
+.sk-row .id { font: 600 12px/1 var(--f-mono); color: var(--accent); }
+.sk-row .nm3 { font-size: 13.5px; }
+.sk-row .nm3 small { display: block; color: var(--ink-3); font-size: 12px; }
+.sk-row .bar { height: 8px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
+.sk-row .bar i { display: block; height: 100%; background: var(--accent); }
+.sk-row .v { font: 600 12px/1 var(--f-mono); text-align: right; color: var(--ink-2); }
+.sk-body { padding: 0 12px 12px 66px; display: grid; gap: 6px; }
+.gap-row { border: 1px solid var(--rule); background: var(--surface); border-radius: 10px; padding: 12px 14px; display: grid; gap: 8px; }
+.gap-row header { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.gap-row header b { font: 700 15px/1.25 var(--f-display); }
+.gap-row.done { opacity: .55; }
+.prio { font: 600 10px/1 var(--f-mono); text-transform: uppercase; letter-spacing: .06em; padding: 4px 6px; border-radius: 4px; border: 1px solid var(--rule); }
+.prio.high { color: var(--pen); border-color: var(--pen); }
+.prio.medium { color: var(--accent); border-color: var(--accent); }
+@media (max-width: 760px) { .sk-row > button { grid-template-columns: 40px minmax(0, 1fr) 64px; } .sk-row .bar { display: none; } .sk-body { padding-left: 12px; } }
 /* ---------- insights ---------- */
 .ins { overflow: auto; min-height: 0; }
 .ins-inner { max-width: 1180px; margin: 0 auto; padding-block: 0 80px; padding-left: var(--gutter-l); padding-right: var(--gutter-r); display: grid; gap: 56px; }
@@ -1664,6 +1685,61 @@ function Playbook({ data, open, openSpec }) {
   </div></div>`;
 }
 
+/* ---------- Skills breakdown ---------- */
+function SkillsBreakdown({ data, open }) {
+  const SS = data.subskills; const all = useMemo(() => data.all.filter(q => !q.withdrawn && q.sub), [data.all]);
+  const [openId, setOpenId] = useState(null);
+  const st = useMemo(() => { const m = {}; for (const q of all) for (const id of q.sub) { const o = m[id] ||= { parts: [], marks: 0 }; o.parts.push(q); o.marks += +q.marks || 0; } return m; }, [all]);
+  if (!SS) return null;
+  const maxN = Math.max(1, ...Object.values(st).map(o => o.parts.length));
+  return html`<div class="lesson">
+    <span class="eyebrow">Skills breakdown · ${all.length} parts tagged</span>
+    <h3>Every skill the papers use, defined</h3>
+    <p class="lead">Each part was re-read and tagged with the specific maths skills, practical skills, and ways of using equations, definitions, facts and principles it needs. Counts are parts and the marks those parts carry (a part can need several skills). Click any skill to see the questions and the exact instance in each.</p>
+    ${Object.entries(SS.groups).map(([g, gname]) => { const items = SS.items.filter(i => i.g === g).sort((a, b) => (st[b.id]?.parts.length || 0) - (st[a.id]?.parts.length || 0));
+      return html`<div class="sk-grp" key=${g}><h4>${gname}</h4>
+        ${items.map(it => { const o = st[it.id] || { parts: [], marks: 0 }; const on = openId === it.id;
+          return html`<div class="sk-row" key=${it.id}>
+            <button onClick=${() => setOpenId(on ? null : it.id)} aria-expanded=${on}>
+              <span class="id">${it.id}</span><span class="nm3">${it.name}<small>${it.what}</small></span>
+              <span class="bar"><i style=${{ width: (o.parts.length / maxN * 100) + "%" }}></i></span><span class="v">${o.parts.length} · ${o.marks} m</span></button>
+            ${on && html`<div class="sk-body"><p class="shared" style=${{ margin: 0 }}>Example: ${it.example}</p>
+              ${o.parts.slice().sort((a, b) => SESSIONS.findIndex(s => s.slug === b.slug) - SESSIONS.findIndex(s => s.slug === a.slug)).slice(0, 40).map(q => html`<button class="oc-q" key=${q.paper + q.slug + q.q} onClick=${() => open(q.paper, q.slug, q)} style=${{ gridTemplateColumns: "170px minmax(0,1fr) auto" }}><span class="ref">P${q.paper} ${SLABEL[q.slug]} Q${q.q}</span><span class="ctx">${q.subdetail || q.context}</span><span class="mk">${q.marks} m</span></button>`)}
+              ${o.parts.length > 40 ? html`<span class="shared">+${o.parts.length - 40} more</span>` : null}</div>`}
+          </div>`; })}
+      </div>`; })}
+  </div>`;
+}
+
+/* ---------- Final gap check ---------- */
+function GapCheck({ data }) {
+  const G = data.gaps; const [grp, setGrp] = useState("all"), [pr, setPr] = useState("all"), [shown, setShown] = useState({}), [done, setDone] = useState(() => store.get("gaps", {}));
+  useEffect(() => { store.set("gaps", done); }, [done]);
+  if (!G) return html`<div class="lesson"><span class="eyebrow">Last step</span><h3>Final gap check</h3><p class="lead">The gap list is still being compiled.</p></div>`;
+  const groups = [...new Set(G.gaps.map(g => g.group))];
+  const rank = { high: 0, medium: 1, low: 2 };
+  const list = G.gaps.filter(g => (grp === "all" || g.group === grp) && (pr === "all" || g.priority === pr)).sort((a, b) => (rank[a.priority] - rank[b.priority]) || (b.seen - a.seen));
+  const doneN = G.gaps.filter(g => done[g.id]).length;
+  return html`<div class="lesson">
+    <span class="eyebrow">Last step · ${G.gaps.length} possible holes</span>
+    <h3>Final gap check</h3>
+    <p class="lead">Things the exam can assume that sit outside the main knowledge list: details in the spec's guidance column, its maths requirements, How Science Works, and GCSE knowledge that AS questions build on. Go through this once everything else is secure. Try each check question before revealing the answer; tick what you know.</p>
+    <div class="dd-tools">
+      <select id="gap-grp" value=${grp} onChange=${e => setGrp(e.target.value)} aria-label="Area"><option value="all">All areas</option>${groups.map(g => html`<option key=${g} value=${g}>${g}</option>`)}</select>
+      <select id="gap-pr" value=${pr} onChange=${e => setPr(e.target.value)} aria-label="Priority"><option value="all">Any priority</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select>
+      <span class="dd-progress"><i style=${{ width: (doneN / G.gaps.length * 100) + "%" }}></i></span><span class="shared">${doneN}/${G.gaps.length} covered</span>
+    </div>
+    <div class="nms">${list.map(g => html`<div class=${"gap-row" + (done[g.id] ? " done" : "")} key=${g.id}>
+      <header><b>${g.name}</b><span class=${"prio " + g.priority}>${g.priority}</span><span class="pill">${g.group}</span><span class="pill">${g.source}</span>${g.seen ? html`<span class="pill mk">needed in ${g.seen} past ${g.seen === 1 ? "place" : "places"}</span>` : html`<span class="pill">not yet needed</span>`}</header>
+      <p style=${{ margin: 0, fontSize: "13.5px" }}>${g.what}</p>
+      <div class="blk"><span class="h">Check yourself</span><p style=${{ margin: 0, fontSize: "13.5px" }}>${g.check}</p>
+        ${shown[g.id] ? html`<p style=${{ margin: 0, fontSize: "13.5px", color: "var(--accent)" }}>${g.answer}</p>` : html`<button class="link" onClick=${() => setShown(s => ({ ...s, [g.id]: true }))}>Show answer</button>`}</div>
+      ${g.seen_where?.length ? html`<span class="shared">Seen in: ${g.seen_where.join(", ")}</span>` : null}
+      <label style=${{ fontSize: "13px", display: "flex", gap: "6px", alignItems: "center" }}><input type="checkbox" id=${"gap-" + g.id} checked=${!!done[g.id]} onChange=${e => setDone(d => ({ ...d, [g.id]: e.target.checked }))} /> I know this</label>
+    </div>`)}</div>
+  </div>`;
+}
+
 /* ---------- Knowledge map ---------- */
 function KnowledgeMap({ data, open }) {
   const Kn = data.knowledge; const all = useMemo(() => data.all.filter(q => !q.withdrawn && q.needs), [data.all]);
@@ -1891,11 +1967,13 @@ function Techniques({ data, open }) {
       <nav class="tq-nav" aria-label="Techniques">
         ${A && html`<button class=${cur === "anatomy" ? "on" : ""} onClick=${() => setCur("anatomy")}><span>How a question is built</span></button>`}
         ${data.knowledge && html`<button class=${cur === "know" ? "on" : ""} onClick=${() => setCur("know")}><span>Knowledge map</span><small>${data.knowledge.items.length}</small></button>`}
+        ${data.subskills && html`<button class=${cur === "skills" ? "on" : ""} onClick=${() => setCur("skills")}><span>Skills breakdown</span><small>${data.subskills.items.length}</small></button>`}
         ${data.definitions && html`<button class=${cur === "defs" ? "on" : ""} onClick=${() => setCur("defs")}><span>Definitions drill</span><small>${data.definitions.items.length}</small></button>`}
         <button class=${cur === "overview" ? "on" : ""} onClick=${() => setCur("overview")}><span>Overview</span></button>
         ${lessons.map(l => html`<button key=${l.id} class=${cur === l.id ? "on" : ""} onClick=${() => setCur(l.id)}><span>${l.title.split(":")[0]}</span><small>${st.by[l.id]?.parts.length || 0}</small></button>`)}
+        <button class=${cur === "gaps" ? "on" : ""} onClick=${() => setCur("gaps")} style=${{ marginTop: "10px", borderTop: "1px solid var(--rule)", borderRadius: 0, paddingTop: "12px" }}><span>Final gap check</span><small>${data.gaps?.gaps.length || ""}</small></button>
       </nav>
-      ${cur === "know" && data.knowledge ? html`<${KnowledgeMap} data=${data} open=${open} />` : cur === "defs" && data.definitions ? html`<${DefDrill} data=${data} open=${open} />` : cur === "anatomy" && A ? anatomyView : cur === "overview" || !L ? overview : lessonView}
+      ${cur === "gaps" ? html`<${GapCheck} data=${data} />` : cur === "skills" && data.subskills ? html`<${SkillsBreakdown} data=${data} open=${open} />` : cur === "know" && data.knowledge ? html`<${KnowledgeMap} data=${data} open=${open} />` : cur === "defs" && data.definitions ? html`<${DefDrill} data=${data} open=${open} />` : cur === "anatomy" && A ? anatomyView : cur === "overview" || !L ? overview : lessonView}
     </div>
   </div></div>`;
 }
@@ -2099,13 +2177,15 @@ function App() {
       fetch("data/rootcause.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/definitions.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/knowledge.json").then(r => r.ok ? r.json() : null).catch(() => null),
-    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge]) => {
+      fetch("data/subskills.json").then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch("data/gaps.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge, subskills, gaps]) => {
       KNOW = Object.fromEntries((knowledge?.items || []).map(i => [i.id, i]));
       const rcIndex = {}; for (const r of rootcause?.parts || []) rcIndex[`${r.paper}:${r.slug}:${r.q}`] = r;
       const nmIndex = {};
       for (const it of nearmiss?.items || []) for (const r of it.refs || []) (nmIndex[`${r.paper}:${r.slug}:${r.q}`] ||= []).push(it);
       const byPaper = {}; for (const q of all) (byPaper[`${q.paper}:${q.slug}`] ||= []).push(q);
-      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, definitions, knowledge, ready: true });
+      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, definitions, knowledge, subskills, gaps, ready: true });
     });
   }, []);
   const hardMarks = useMemo(() => { const m = {}; for (const q of data.all) if (!q.withdrawn && q.difficulty === 3) { const k = `${q.paper}:${q.slug}`; m[k] = (m[k] || 0) + (+q.marks || 0); } for (const q of data.all) { const k = `${q.paper}:${q.slug}`; if (!(k in m)) m[k] = 0; } return m; }, [data.all]);

@@ -1,0 +1,288 @@
+{
+ "1": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "microwaves have wavelengths of a few cm, e.g. 3 cm"
+ },
+ "2": {
+  "sub": [
+   "P5",
+   "P4"
+  ],
+  "detail": "equilibrium forces drawn tip-to-tail must form a closed triangle"
+ },
+ "3": {
+  "sub": [
+   "F2",
+   "P7"
+  ],
+  "detail": "significant electron diffraction when de Broglie λ ≈ atomic spacing"
+ },
+ "4": {
+  "sub": [
+   "D5",
+   "M19"
+  ],
+  "detail": "R = ρL/A so gradient of R–L graph = ρ/A"
+ },
+ "5": {
+  "sub": [
+   "E1",
+   "M15",
+   "E7"
+  ],
+  "detail": "sin C = 1/1.5 gives C ≈ 42°; 45° exceeds C, so TIR"
+ },
+ "6": {
+  "sub": [
+   "E5",
+   "M14"
+  ],
+  "detail": "P = Fv cos θ: 250 cos 15° × 2.1"
+ },
+ "7": {
+  "sub": [
+   "E3",
+   "M7"
+  ],
+  "detail": "series cells: ε = 6.0 V, total r = 2r; ε = I(R + 2r)"
+ },
+ "8": {
+  "sub": [
+   "F2",
+   "P7"
+  ],
+  "detail": "KEmax depends on frequency not intensity; instant; one photon frees one electron"
+ },
+ "9": {
+  "sub": [
+   "P2",
+   "E5"
+  ],
+  "detail": "series: same current; same copper, so same carrier density n"
+ },
+ "10": {
+  "sub": [
+   "D1",
+   "P2"
+  ],
+  "detail": "resistance depends on length; resistivity is a material property, constant"
+ },
+ "11": {
+  "sub": [
+   "E1",
+   "M17",
+   "M9"
+  ],
+  "detail": "p = F/A with A = πd²/4 → 4F/(πd²)"
+ },
+ "12": {
+  "sub": [
+   "P7",
+   "F3",
+   "M11"
+  ],
+  "detail": "eV₀ ≈ hc/λ: green shorter λ than red, so higher threshold p.d."
+ },
+ "13": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "unpolarised light through a single rotating filter: intensity unchanged"
+ },
+ "14": {
+  "sub": [
+   "D5",
+   "F5"
+  ],
+  "detail": "free fall from rest: straight v–t line through origin, gradient g"
+ },
+ "15": {
+  "sub": [
+   "M14",
+   "P5"
+  ],
+  "detail": "resolve vertically: two T cos θ components balance W"
+ },
+ "16": {
+  "sub": [
+   "P4",
+   "D2"
+  ],
+  "detail": "equilibrium forces act on one body; third-law pairs act on different bodies"
+ },
+ "17": {
+  "sub": [
+   "F3",
+   "P2"
+  ],
+  "detail": "frequency set by source; waves slow in shallow water"
+ },
+ "18": {
+  "sub": [
+   "F1",
+   "P2"
+  ],
+  "detail": "heating filament raises resistance and its share of p.d."
+ },
+ "19": {
+  "sub": [
+   "D2",
+   "P1"
+  ],
+  "detail": "Kirchhoff's first law at junction: currents in = currents out"
+ },
+ "20": {
+  "sub": [
+   "F6",
+   "E1",
+   "M7"
+  ],
+  "detail": "positive charge gained means electrons lost; n = Q/e = 25"
+ },
+ "21(a)": {
+  "sub": [
+   "M20",
+   "M1",
+   "K8"
+  ],
+  "detail": "gradient of F–x graph, extension 2.5 mm → m"
+ },
+ "21(b)": {
+  "sub": [
+   "K1",
+   "K2",
+   "M17"
+  ],
+  "detail": "micrometer at several places and orientations, average; A = πd²/4"
+ },
+ "21(c)(i)": {
+  "sub": [
+   "E6",
+   "M9"
+  ],
+  "detail": "E = (F/A)/(x/L) with F = kx gives E = kL/A"
+ },
+ "21(c)(ii)": {
+  "sub": [
+   "E5",
+   "K12",
+   "M5"
+  ],
+  "detail": "E = kL/A substituted; % uncertainties 0.05 + 2 + 1.25 added"
+ },
+ "21(c)(iii)": {
+  "sub": [
+   "K14",
+   "M12"
+  ],
+  "detail": "% difference ≈ 2.6% less than 3.3% uncertainty, so consistent"
+ },
+ "22(a)": {
+  "sub": [
+   "F3",
+   "D3"
+  ],
+  "detail": "molecules oscillate parallel to energy transfer forming compressions and rarefactions"
+ },
+ "22(b)(i)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "incident and reflected waves superpose: in phase antinodes, antiphase nodes"
+ },
+ "22(b)(ii)": {
+  "sub": [
+   "P6",
+   "P2"
+  ],
+  "detail": "amplitude falls with distance/reflection so waves can't fully cancel; better match near reflector"
+ },
+ "22(b)(iii)": {
+  "sub": [
+   "F4",
+   "E1"
+  ],
+  "detail": "node spacing λ/2: λ = 1.68 m; v = fλ"
+ },
+ "22(b)(iv)": {
+  "sub": [
+   "K17",
+   "K2"
+  ],
+  "detail": "measure across several node spacings (or lower f, repeat) to cut % uncertainty"
+ },
+ "23(a)": {
+  "sub": [
+   "E1"
+  ],
+  "detail": "W = VQ = 3.0 × 1.60 × 10⁻¹⁹ J"
+ },
+ "23(b)": {
+  "sub": [
+   "P7",
+   "P2"
+  ],
+  "detail": "one photon gives hf to one electron; emission only if hf ≥ work function"
+ },
+ "23(c)(i)": {
+  "sub": [
+   "P7",
+   "D3"
+  ],
+  "detail": "intensity ∝ photon rate; one photon per electron; current = charge per second"
+ },
+ "23(c)(ii)": {
+  "sub": [
+   "E4",
+   "M5"
+  ],
+  "detail": "E = hf; power = E × emission rate; I = P/A"
+ },
+ "24(a)": {
+  "sub": [
+   "M25",
+   "E1",
+   "M3"
+  ],
+  "detail": "Δp with rebound reversal: 0.058 × (7.2 + 3.6); F = Δp/Δt with 52 ms"
+ },
+ "24(b)": {
+  "sub": [
+   "E3",
+   "E7"
+  ],
+  "detail": "horizontal velocity constant: 3.6 × 0.58 = 2.09 m within 1.85–2.15 m"
+ },
+ "25(a)": {
+  "sub": [
+   "K19",
+   "F7"
+  ],
+  "detail": "0.1 s intervals comparable to ~0.2 s reaction time; video gives finer timing"
+ },
+ "25(b)": {
+  "sub": [
+   "K16",
+   "K2"
+  ],
+  "detail": "avoid parallax: camera level with and perpendicular to the scale"
+ },
+ "25(c)": {
+  "sub": [
+   "E2",
+   "M1",
+   "M23"
+  ],
+  "detail": "equal 2.7 cm per 0.1 s from table → constant 0.27 m s⁻¹"
+ },
+ "25(d)": {
+  "sub": [
+   "E5",
+   "M8",
+   "M1"
+  ],
+  "detail": "rearrange given terminal velocity formula for r (square root); d = 2r ≈ 1.0 mm → sand"
+ }
+}

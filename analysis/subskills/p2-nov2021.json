@@ -1,0 +1,241 @@
+{
+ "1(a)": {
+  "sub": [
+   "D3"
+  ],
+  "detail": "coherent = constant phase difference"
+ },
+ "1(b)(i)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "path difference = 2.08 − 2.00 m"
+ },
+ "1(b)(ii)": {
+  "sub": [
+   "P6",
+   "M26"
+  ],
+  "detail": "minimum means antiphase: π rad"
+ },
+ "1(b)(iii)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "first minimum: path difference = λ/2, so λ = 2 × 0.08"
+ },
+ "1(c)(i)": {
+  "sub": [
+   "K19",
+   "M23",
+   "E1"
+  ],
+  "detail": "divisions per cycle × time-base = T; f = 1/T"
+ },
+ "1(c)(ii)": {
+  "sub": [
+   "E1",
+   "M1"
+  ],
+  "detail": "v = fλ with 2.1 kHz → Hz"
+ },
+ "2(a)(i)": {
+  "sub": [
+   "D5"
+  ],
+  "detail": "area under F–x loading curve = work done / energy stored"
+ },
+ "2(a)(ii)": {
+  "sub": [
+   "M21"
+  ],
+  "detail": "count ~31 squares × energy per square (0.025 m × 2.5 N)"
+ },
+ "2(a)(iii)": {
+  "sub": [
+   "F1"
+  ],
+  "detail": "rubber hysteresis: energy difference dissipated as heat"
+ },
+ "2(b)(i)": {
+  "sub": [
+   "E1",
+   "M5"
+  ],
+  "detail": "σ = 49 N / 1.4 × 10⁻⁷ m²"
+ },
+ "2(b)(ii)": {
+  "sub": [
+   "E1",
+   "M1",
+   "M7"
+  ],
+  "detail": "ε = σ/E with 180 GPa → Pa; no unit"
+ },
+ "2(b)(iii)": {
+  "sub": [
+   "E1",
+   "M7"
+  ],
+  "detail": "x = ε × 2.2 m"
+ },
+ "2(b)(iv)": {
+  "sub": [
+   "E1"
+  ],
+  "detail": "E = ½Fx with 49 N"
+ },
+ "2(c)": {
+  "sub": [
+   "M11"
+  ],
+  "detail": "double d → 4× area → ¼ extension at same load → ¼ energy"
+ },
+ "3(a)": {
+  "sub": [
+   "P1",
+   "D3",
+   "E1",
+   "E2",
+   "M25"
+  ],
+  "detail": "total momentum 0.15 kg m/s before and after; KE conserved only in Expt 1; A rebounds negative"
+ },
+ "3(b)": {
+  "sub": [
+   "M21",
+   "D5",
+   "E1",
+   "M7"
+  ],
+  "detail": "impulse = ½ × 0.4 s × 18 N; v = impulse / 0.045 kg"
+ },
+ "4(a)(i)": {
+  "sub": [
+   "M17",
+   "M1"
+  ],
+  "detail": "πd²/4 with d = 2.9 cm → m"
+ },
+ "4(a)(ii)": {
+  "sub": [
+   "M18",
+   "M1",
+   "E1",
+   "E2",
+   "E4"
+  ],
+  "detail": "V = A × 0.120 m; m = ρV; W = mg"
+ },
+ "4(b)": {
+  "sub": [
+   "P4",
+   "E2",
+   "E1",
+   "E4"
+  ],
+  "detail": "floating: upthrust = weight, displaced water mass 0.0316 kg → volume; depth = V/A"
+ },
+ "4(c)": {
+  "sub": [
+   "P4",
+   "M11",
+   "P2"
+  ],
+  "detail": "same weight of oil displaced; depth ∝ 1/ρ: 0.048 × 1000/900"
+ },
+ "5(a)": {
+  "sub": [
+   "E6",
+   "P1"
+  ],
+  "detail": "Kirchhoff 2: e.m.f. = V + Ir, rearranged to V = E − Ir"
+ },
+ "5(b)": {
+  "sub": [
+   "M19",
+   "K10"
+  ],
+  "detail": "V = −rI + E: y-intercept E, gradient −r"
+ },
+ "5(c)(i)": {
+  "sub": [
+   "M23",
+   "E2",
+   "M1"
+  ],
+  "detail": "read V at 25 mA → A; R = V/I"
+ },
+ "5(c)(ii)": {
+  "sub": [
+   "E1",
+   "E4",
+   "M3"
+  ],
+  "detail": "P = VI; W = Pt with 5.0 min → 300 s"
+ },
+ "5(c)(iii)": {
+  "sub": [
+   "E1",
+   "M3",
+   "D4"
+  ],
+  "detail": "Q = It over 300 s; unit coulomb"
+ },
+ "6": {
+  "sub": [
+   "K6",
+   "F1",
+   "F6",
+   "E1",
+   "M24",
+   "P2"
+  ],
+  "detail": "LDR–fixed resistor divider, voltmeter across fixed R; values for >5 V bright, <1 V dark; variable resistor adjusts"
+ },
+ "7(a)(i)": {
+  "sub": [
+   "M20",
+   "K8",
+   "M5"
+  ],
+  "detail": "large triangle on V–1/λ line, powers of ten on 1/λ axis"
+ },
+ "7(a)(ii)": {
+  "sub": [
+   "K10",
+   "M7",
+   "M6"
+  ],
+  "detail": "gradient = hc/e so h = gradient × e / c; 2 s.f."
+ },
+ "7(a)(iii)": {
+  "sub": [
+   "K13"
+  ],
+  "detail": "steepest or shallowest line through all error bars"
+ },
+ "7(a)(iv)": {
+  "sub": [
+   "K13",
+   "M20",
+   "M12"
+  ],
+  "detail": "worst gradient; |best − worst| / best × 100"
+ },
+ "7(b)(i)": {
+  "sub": [
+   "M4",
+   "M1",
+   "E1",
+   "E4"
+  ],
+  "detail": "4.1 eV → J; E = hc/λ with 98 nm → m; KEmax = E − φ"
+ },
+ "7(b)(ii)": {
+  "sub": [
+   "P7"
+  ],
+  "detail": "photon energy fixed by λ; intensity only changes photon rate"
+ }
+}

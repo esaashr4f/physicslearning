@@ -1,0 +1,233 @@
+{
+ "1(a)(i)": {
+  "sub": [
+   "D5",
+   "M20"
+  ],
+  "detail": "acceleration = gradient of v–t, e.g. 4.7/0.48 with large triangle"
+ },
+ "1(a)(ii)": {
+  "sub": [
+   "M23",
+   "E2",
+   "M1"
+  ],
+  "detail": "read 4.7 m/s off graph; ½mv² with 57 g → kg"
+ },
+ "1(b)(i)": {
+  "sub": [
+   "M12",
+   "E2",
+   "M8"
+  ],
+  "detail": "80% of 0.63 J; v = √(2KE/m)"
+ },
+ "1(b)(ii)": {
+  "sub": [
+   "M25",
+   "D5",
+   "E1"
+  ],
+  "detail": "rebound velocity −4.2 m/s; same gradient g; reaches zero after 4.2/9.81 s"
+ },
+ "1(b)(iii)": {
+  "sub": [
+   "M21",
+   "D5"
+  ],
+  "detail": "height = triangle area ½ × 4.2 × 0.43 (or v²/2g)"
+ },
+ "1(c)": {
+  "sub": [
+   "P4",
+   "D5"
+  ],
+  "detail": "drag rises with speed, resultant force falls: v–t gradient decreases, lower impact speed"
+ },
+ "2(a)": {
+  "sub": [
+   "D3",
+   "D6",
+   "F1",
+   "D5"
+  ],
+  "detail": "explain elastic, plastic, ductile, brittle, UTS, Young modulus; J ductile and stiffer, K brittle"
+ },
+ "2(b)": {
+  "sub": [
+   "M24",
+   "F7",
+   "E2",
+   "E1",
+   "M1",
+   "M7"
+  ],
+  "detail": "assume adult ~700 N, share over 3 legs; A = F/σ with 2.3 MPa → Pa"
+ },
+ "3(a)(i)": {
+  "sub": [
+   "K1"
+  ],
+  "detail": "vernier calipers or micrometer for ~2.5 cm sphere"
+ },
+ "3(a)(ii)": {
+  "sub": [
+   "M13",
+   "K11"
+  ],
+  "detail": "mean of three diameters; uncertainty = half the range"
+ },
+ "3(a)(iii)": {
+  "sub": [
+   "M18",
+   "M1"
+  ],
+  "detail": "4/3 πr³ with r = 1.26 cm → m"
+ },
+ "3(a)(iv)": {
+  "sub": [
+   "E1",
+   "M1",
+   "M6"
+  ],
+  "detail": "ρ = m/V with 23 g → kg; answer to 2 s.f."
+ },
+ "3(a)(v)": {
+  "sub": [
+   "K11",
+   "K12",
+   "M12"
+  ],
+  "detail": "% in mass plus 3 × % in diameter (V ∝ d³)"
+ },
+ "3(b)": {
+  "sub": [
+   "E1",
+   "E2",
+   "M1",
+   "M7"
+  ],
+  "detail": "extension 0.096 − 0.078 m; F = mg with 23 g; k = F/x"
+ },
+ "3(c)(i)": {
+  "sub": [
+   "P4",
+   "E1"
+  ],
+  "detail": "spring tension kx; upthrust = weight − tension in equilibrium"
+ },
+ "3(c)(ii)": {
+  "sub": [
+   "E2",
+   "M7"
+  ],
+  "detail": "upthrust = ρVg rearranged for liquid density"
+ },
+ "4(a)(i)": {
+  "sub": [
+   "E1"
+  ],
+  "detail": "two 60 Ω in parallel = 30 Ω, three = 20 Ω, series sum 50 Ω"
+ },
+ "4(a)(ii)": {
+  "sub": [
+   "E1"
+  ],
+  "detail": "p.d. shares in ratio 30/50 of 9 V"
+ },
+ "4(a)(iii)": {
+  "sub": [
+   "E2",
+   "E1",
+   "E4",
+   "M3",
+   "D4"
+  ],
+  "detail": "I = 5.4/60; Q = It with 2 min → 120 s; unit coulomb"
+ },
+ "4(a)(iv)": {
+  "sub": [
+   "E1"
+  ],
+  "detail": "W = VQ (or VIt) for resistor Y"
+ },
+ "4(b)": {
+  "sub": [
+   "P1",
+   "E1",
+   "M10"
+  ],
+  "detail": "current splits equally: 0.090 A vs 0.060 A; v ∝ I so Y is 1.5×"
+ },
+ "4(c)": {
+  "sub": [
+   "D1",
+   "F1"
+  ],
+  "detail": "n = free carriers per unit volume; copper ≫ carbon ≫ ceramic"
+ },
+ "5(a)(i)": {
+  "sub": [
+   "M23"
+  ],
+  "detail": "amplitude read off displacement–distance graph"
+ },
+ "5(a)(ii)": {
+  "sub": [
+   "M23"
+  ],
+  "detail": "wavelength read off graph"
+ },
+ "5(a)(iii)": {
+  "sub": [
+   "M23",
+   "M26"
+  ],
+  "detail": "0.5 m offset ÷ 4.0 m × 2π rad"
+ },
+ "5(a)(iv)": {
+  "sub": [
+   "E2",
+   "M11"
+  ],
+  "detail": "I ∝ A²: (0.45/0.15)² = 9"
+ },
+ "5(b)": {
+  "sub": [
+   "K1",
+   "K2",
+   "K3",
+   "K5",
+   "K9",
+   "K10"
+  ],
+  "detail": "two speakers, one generator; microphone finds maxima; ear defenders; plot x vs 1/f; v = a × gradient/D"
+ },
+ "6(a)(i)": {
+  "sub": [
+   "D1"
+  ],
+  "detail": "threshold frequency = minimum frequency to release electrons"
+ },
+ "6(a)(ii)": {
+  "sub": [
+   "K8",
+   "D5"
+  ],
+  "detail": "f-axis intercept of KEmax–f graph"
+ },
+ "6(a)(iii)": {
+  "sub": [
+   "E1",
+   "M4"
+  ],
+  "detail": "φ = hf₀ then J → eV"
+ },
+ "6(b)": {
+  "sub": [
+   "F2",
+   "P7"
+  ],
+  "detail": "electron diffraction rings through graphite; λ = h/p comparable to atomic spacing"
+ }
+}

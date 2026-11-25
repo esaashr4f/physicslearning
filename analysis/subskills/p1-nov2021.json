@@ -1,0 +1,311 @@
+{
+ "1": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "Archimedes: upthrust equals weight of fluid displaced"
+ },
+ "2": {
+  "sub": [
+   "F1"
+  ],
+  "detail": "LDR dissipates energy, so is not a source of e.m.f."
+ },
+ "3": {
+  "sub": [
+   "F2",
+   "P7"
+  ],
+  "detail": "instant emission above threshold; intensity changes number not KEmax"
+ },
+ "4": {
+  "sub": [
+   "E5",
+   "P4",
+   "M1",
+   "M8"
+  ],
+  "detail": "terminal velocity: 0.13v² = mg with 30 g → kg; v = √(mg/0.13)"
+ },
+ "5": {
+  "sub": [
+   "P1",
+   "M11"
+  ],
+  "detail": "KE falls 16 → 12 J; v ∝ √KE gives √0.75 = 0.87v"
+ },
+ "6": {
+  "sub": [
+   "E3",
+   "M11",
+   "E4"
+  ],
+  "detail": "fixed supply: P = V²/R least for arrangement with largest total resistance"
+ },
+ "7": {
+  "sub": [
+   "E1",
+   "M10"
+  ],
+  "detail": "compare ½Fx for each spring from table (cm units cancel in comparison)"
+ },
+ "8": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "strain unitless, so stress and Young modulus both Pa"
+ },
+ "9": {
+  "sub": [
+   "F1",
+   "D6"
+  ],
+  "detail": "n ~10²⁸ m⁻³ is a conductor (metal); ~10⁵ m⁻³ an insulator"
+ },
+ "10": {
+  "sub": [
+   "M11",
+   "P2",
+   "F1"
+  ],
+  "detail": "longer thinner wire has larger R: current falls, wire's p.d. share rises"
+ },
+ "11": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "double-slit fringes from diffraction plus interference"
+ },
+ "12": {
+  "sub": [
+   "M17",
+   "M7",
+   "E1"
+  ],
+  "detail": "A = πd²/4 with d = 2.0 × 10⁻² m; ρ = RA/L"
+ },
+ "13": {
+  "sub": [
+   "F4",
+   "M10"
+  ],
+  "detail": "count loops: third harmonic at 72 Hz, fundamental 24 Hz"
+ },
+ "14": {
+  "sub": [
+   "M11",
+   "M9"
+  ],
+  "detail": "p = √(2mE): doubling KE divides λ by √2"
+ },
+ "15": {
+  "sub": [
+   "M26",
+   "M23"
+  ],
+  "detail": "fraction of period between points × 360° gives 180°–270°"
+ },
+ "16": {
+  "sub": [
+   "M4",
+   "E1",
+   "F3"
+  ],
+  "detail": "2.5 eV → J; λ = hc/E ≈ 500 nm lies in visible range"
+ },
+ "17": {
+  "sub": [
+   "M6",
+   "M1"
+  ],
+  "detail": "table heading quantity / unit with 10⁶ factor; 7 260 000 Pa → 7.3 to 2 s.f."
+ },
+ "18": {
+  "sub": [
+   "M14",
+   "F5"
+  ],
+  "detail": "horizontal component 200 cos 30° constant, range = u cos θ × t"
+ },
+ "19": {
+  "sub": [
+   "F2"
+  ],
+  "detail": "electron diffraction by graphite shows electrons behave as waves"
+ },
+ "20": {
+  "sub": [
+   "D5"
+  ],
+  "detail": "impulse = area under force–time graph"
+ },
+ "21(a)": {
+  "sub": [
+   "P2",
+   "D3"
+  ],
+  "detail": "drops leave at equal time intervals; increasing spacing shows increasing speed"
+ },
+ "21(b)": {
+  "sub": [
+   "D2",
+   "P4"
+  ],
+  "detail": "Newton's first law: negligible resultant force on trolley, so stays at rest"
+ },
+ "21(c)(i)": {
+  "sub": [
+   "M22",
+   "M20",
+   "E3"
+  ],
+  "detail": "tangent to s–t at 4.0 s and its gradient; or s = ½at² then v = at"
+ },
+ "21(c)(ii)": {
+  "sub": [
+   "E1",
+   "D4",
+   "M23"
+  ],
+  "detail": "Δp = 1200 × 10 over 4.0 s; unit N or kg m s⁻²"
+ },
+ "22(a)": {
+  "sub": [
+   "K1"
+  ],
+  "detail": "±0.002 m height measured with mm-scale ruler"
+ },
+ "22(b)": {
+  "sub": [
+   "K12",
+   "M6"
+  ],
+  "detail": "%g = 2 × %v + %d ≈ 16%; absolute 1.6 m s⁻² to 2 s.f."
+ },
+ "23(a)": {
+  "sub": [
+   "K6",
+   "K18",
+   "K17"
+  ],
+  "detail": "voltmeter across LED, ammeter in series, vary p.d. until just lit; shield from room light"
+ },
+ "23(b)(i)": {
+  "sub": [
+   "E1",
+   "M7",
+   "M5"
+  ],
+  "detail": "electrons per second = I/e = 0.045 / 1.6 × 10⁻¹⁹"
+ },
+ "23(b)(ii)": {
+  "sub": [
+   "M17",
+   "M1",
+   "E1",
+   "M7"
+  ],
+  "detail": "radius 0.12 mm → m; A = πr²; solve I = Anev for v"
+ },
+ "23(c)(i)": {
+  "sub": [
+   "F1",
+   "P2"
+  ],
+  "detail": "current heats NTC thermistor, resistance falls, its p.d. share falls"
+ },
+ "23(c)(ii)": {
+  "sub": [
+   "M23",
+   "E3",
+   "E4",
+   "M7"
+  ],
+  "detail": "read 2.4 V; resistor p.d. 3.6 V gives I = 0.30 A; R = V/I"
+ },
+ "24(a)": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "all EM waves travel at c in a vacuum"
+ },
+ "24(b)": {
+  "sub": [
+   "E1",
+   "M7",
+   "M5"
+  ],
+  "detail": "f = c/λ with λ = 2.5 × 10⁻¹¹ m"
+ },
+ "24(c)": {
+  "sub": [
+   "E4",
+   "M11",
+   "M24"
+  ],
+  "detail": "photon energy ∝ 1/λ; ratio X-ray energy to ~500 nm photon energy"
+ },
+ "25(a)(i)": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "sound is longitudinal so cannot be polarised"
+ },
+ "25(a)(ii)": {
+  "sub": [
+   "K2",
+   "F3"
+  ],
+  "detail": "speaker, gap, microphone; sound spreads beyond gap of width ≈ wavelength"
+ },
+ "25(b)(i)": {
+  "sub": [
+   "D1"
+  ],
+  "detail": "n = speed of light in vacuum ÷ speed in material"
+ },
+ "25(b)(ii)1": {
+  "sub": [
+   "F3",
+   "P2",
+   "M10"
+  ],
+  "detail": "frequency unchanged; higher n so slower; v = fλ gives shorter λ in B"
+ },
+ "25(b)(ii)2": {
+  "sub": [
+   "E1",
+   "M15"
+  ],
+  "detail": "n_A sin 60° = 1.3 n_A sin θ; inverse sine gives 42°"
+ },
+ "25(b)(ii)3": {
+  "sub": [
+   "E7",
+   "F3"
+  ],
+  "detail": "TIR only going into lower refractive index, so not from A to B"
+ },
+ "26(a)": {
+  "sub": [
+   "E6",
+   "P5",
+   "M18"
+  ],
+  "detail": "moments about pivot: weight ρALg × y = F × x, rearranged"
+ },
+ "26(b)(i)": {
+  "sub": [
+   "K7",
+   "M20"
+  ],
+  "detail": "straight best-fit line; gradient from large triangle"
+ },
+ "26(b)(ii)": {
+  "sub": [
+   "K10",
+   "M7"
+  ],
+  "detail": "gradient = F/(ALρg), solve for ρ"
+ }
+}

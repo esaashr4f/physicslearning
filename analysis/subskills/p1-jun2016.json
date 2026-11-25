@@ -1,0 +1,306 @@
+{
+ "1": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "watt defined from other units: one joule per second"
+ },
+ "2": {
+  "sub": [
+   "E1",
+   "P3"
+  ],
+  "detail": "work against weight uses only the vertical height moved, W = Fx cos θ"
+ },
+ "3": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "polarisation by rotating filter shows light is a transverse wave"
+ },
+ "4": {
+  "sub": [
+   "F2",
+   "P7"
+  ],
+  "detail": "electron diffraction needs de Broglie wavelength comparable to atomic spacing"
+ },
+ "5": {
+  "sub": [
+   "F3",
+   "M1"
+  ],
+  "detail": "50 µm lies in the infrared region of the EM spectrum"
+ },
+ "6": {
+  "sub": [
+   "P4",
+   "M10"
+  ],
+  "detail": "a = F/m with constant mass, so acceleration–time has same shape as force–time"
+ },
+ "7": {
+  "sub": [
+   "P4",
+   "P5"
+  ],
+  "detail": "equilibrium forces W, friction, normal join tip-to-tail in a closed triangle"
+ },
+ "8": {
+  "sub": [
+   "E1",
+   "M10"
+  ],
+  "detail": "same load, a third of the extension: E = ½Fx gives E/3"
+ },
+ "9": {
+  "sub": [
+   "E3",
+   "E4",
+   "M1"
+  ],
+  "detail": "p.d. across load section from divider currents; P = VI with 1 mA"
+ },
+ "10": {
+  "sub": [
+   "D2",
+   "P2"
+  ],
+  "detail": "internal forces cancel; zero external force so momentum conserved"
+ },
+ "11": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "opposing e.m.f.s subtract; net 2.0 V drives anticlockwise current, same throughout series loop"
+ },
+ "12": {
+  "sub": [
+   "D2",
+   "P1"
+  ],
+  "detail": "Kirchhoff's first law with arrow directions: currents in equal currents out"
+ },
+ "13": {
+  "sub": [
+   "K12",
+   "M1"
+  ],
+  "detail": "R = V/I: add 4.0% and 2.5% uncertainties to get 6.5%"
+ },
+ "14": {
+  "sub": [
+   "D5",
+   "M25"
+  ],
+  "detail": "top of bounce is where velocity crosses zero after rebound on v–t graph"
+ },
+ "15": {
+  "sub": [
+   "M11",
+   "E2"
+  ],
+  "detail": "eV = ½mv² so v ∝ √V; halving V gives u/√2"
+ },
+ "16": {
+  "sub": [
+   "E1",
+   "M8",
+   "M5"
+  ],
+  "detail": "KEmax = 4.8 − 3.2 (×10⁻¹⁹ J); v = √(2KE/m) with electron mass"
+ },
+ "17": {
+  "sub": [
+   "M11",
+   "E4"
+  ],
+  "detail": "extension ∝ 1/A with A ∝ d²; same F so energy ½Fx ratio (0.8/0.2)² = 16"
+ },
+ "18": {
+  "sub": [
+   "M14",
+   "M11",
+   "E2"
+  ],
+  "detail": "at top only horizontal component v cos 30° remains: KE = K cos²30° = 0.75K"
+ },
+ "19": {
+  "sub": [
+   "E3",
+   "M11"
+  ],
+  "detail": "parallel same p.d.: P = V²/R so R gets twice the power of 2R"
+ },
+ "20": {
+  "sub": [
+   "M15",
+   "E1",
+   "F7"
+  ],
+  "detail": "80° to surface → 10° to normal; n ≈ 1.5 assumed; sin r = 1.5 sin 10°"
+ },
+ "21(a)": {
+  "sub": [
+   "D6",
+   "P2"
+  ],
+  "detail": "mass scalar adds arithmetically; velocity vector so directions combined"
+ },
+ "21(b)(i)": {
+  "sub": [
+   "P4"
+  ],
+  "detail": "free-body: tension along string up the ramp, weight vertically down"
+ },
+ "21(b)(ii)": {
+  "sub": [
+   "E3",
+   "M8"
+  ],
+  "detail": "from rest s = ½at², rearrange t = √(2s/a)"
+ },
+ "22(a)": {
+  "sub": [
+   "K16",
+   "D5"
+  ],
+  "detail": "systematic error shifts all x equally, so gradient unchanged"
+ },
+ "22(b)": {
+  "sub": [
+   "M20",
+   "K10",
+   "M19",
+   "E2"
+  ],
+  "detail": "gradient of u² against x = 2a from v² = u² + 2as; F = ma with 920 kg"
+ },
+ "23(a)": {
+  "sub": [
+   "K1",
+   "K2",
+   "M17",
+   "E2"
+  ],
+  "detail": "weight by newtonmeter or balance × g; diameter by micrometer/callipers; A = πd²/4; p = W/A"
+ },
+ "23(b)(i)": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "Archimedes: upthrust equals weight of fluid displaced"
+ },
+ "23(b)(ii)": {
+  "sub": [
+   "P4",
+   "E4",
+   "E2",
+   "M7"
+  ],
+  "detail": "upthrust 9.0 − 7.8 N; V = U/(ρ_water g); m = W/g; ρ = m/V"
+ },
+ "24(a)": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "resultant force proportional to rate of change of momentum"
+ },
+ "24(b)(i)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "momentum and total energy conserved even though KE is not"
+ },
+ "24(b)(ii)": {
+  "sub": [
+   "D2",
+   "P4"
+  ],
+  "detail": "Newton's third law: equal and opposite force at every instant, graph inverted"
+ },
+ "24(c)": {
+  "sub": [
+   "P1",
+   "M25",
+   "M7"
+  ],
+  "detail": "momentum conservation with rebounding hydrogen velocity taken negative"
+ },
+ "25(a)(i)": {
+  "sub": [
+   "D1",
+   "D4"
+  ],
+  "detail": "both energy per unit charge in volts; e.m.f. into electrical, p.d. out of electrical"
+ },
+ "25(a)(ii)": {
+  "sub": [
+   "M18",
+   "E4",
+   "M1",
+   "M7"
+  ],
+  "detail": "n = N/(A × L) for cylinder volume; I = Anev for v with 3.0 mA"
+ },
+ "25(b)": {
+  "sub": [
+   "K18",
+   "K6",
+   "K9",
+   "K10"
+  ],
+  "detail": "vary resistor, record V and I; plot V against I; gradient = −r from ε = V + Ir"
+ },
+ "26(a)(i)": {
+  "sub": [
+   "F4",
+   "P6"
+  ],
+  "detail": "points half a wavelength apart move in antiphase, opposite directions"
+ },
+ "26(a)(ii)": {
+  "sub": [
+   "F4",
+   "M1",
+   "E1",
+   "K12"
+  ],
+  "detail": "loop = λ/2 so λ = 0.80 m; v = fλ; 5% uncertainty carried to ±3 m s⁻¹"
+ },
+ "26(b)(i)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "reflection at fixed ends then superposition of incident and reflected waves"
+ },
+ "26(b)(ii)": {
+  "sub": [
+   "F4"
+  ],
+  "detail": "one loop is half a wavelength, so λ = 2 × XY"
+ },
+ "27(a)": {
+  "sub": [
+   "F1",
+   "E2",
+   "M23"
+  ],
+  "detail": "read I–V graph; R = V/I: very large below 2.6 V, then decreasing"
+ },
+ "27(b)": {
+  "sub": [
+   "F1",
+   "K6"
+  ],
+  "detail": "LED reverse-biased and 1.5 V below ~2.6 V threshold; reverse and add cells"
+ },
+ "27(c)": {
+  "sub": [
+   "E4",
+   "M1",
+   "M5"
+  ],
+  "detail": "E = hc/λ with 480 nm; photons per second = 1.2 mW / E"
+ }
+}

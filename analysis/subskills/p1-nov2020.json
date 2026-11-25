@@ -1,0 +1,312 @@
+{
+ "1": {
+  "sub": [
+   "D2",
+   "P2"
+  ],
+  "detail": "Kirchhoff's first law expresses conservation of charge"
+ },
+ "2": {
+  "sub": [
+   "M16",
+   "P4"
+  ],
+  "detail": "balancing force = √(6.2² + 4.5²) = 7.7 N, opposite to the resultant"
+ },
+ "3": {
+  "sub": [
+   "P4",
+   "F5"
+  ],
+  "detail": "acceleration starts at g, falls non-linearly to zero as drag grows"
+ },
+ "4": {
+  "sub": [
+   "M11",
+   "P1"
+  ],
+  "detail": "KE rises 100 → 350 eV, so v scales by √3.5"
+ },
+ "5": {
+  "sub": [
+   "M23",
+   "E1"
+  ],
+  "detail": "T = 1/250 = 4 ms spans 4 divisions → 1 ms per division"
+ },
+ "6": {
+  "sub": [
+   "F4"
+  ],
+  "detail": "stationary-wave amplitude varies node to antinode; progressive amplitude uniform"
+ },
+ "7": {
+  "sub": [
+   "M9",
+   "E2",
+   "M8"
+  ],
+  "detail": "Ek = p²/2m so p = √(2mKE); λ = h/p with proton mass"
+ },
+ "8": {
+  "sub": [
+   "E5",
+   "M10",
+   "P2"
+  ],
+  "detail": "same wire, so v ∝ I; branch current split by resistance gives 0.40v"
+ },
+ "9": {
+  "sub": [
+   "E1",
+   "E2",
+   "M1"
+  ],
+  "detail": "extra weight 0.20 × 9.81 N over extra extension 1.5 cm → m"
+ },
+ "10": {
+  "sub": [
+   "P5",
+   "M14"
+  ],
+  "detail": "moment of weight = W(L/2) cos θ: maximum at 0°, zero at 90°"
+ },
+ "11": {
+  "sub": [
+   "P4"
+  ],
+  "detail": "floating block in equilibrium: upthrust equals its 6.0 N weight"
+ },
+ "12": {
+  "sub": [
+   "E1"
+  ],
+  "detail": "Δp = FΔt = 3.5 × 2.0"
+ },
+ "13": {
+  "sub": [
+   "D5",
+   "M21",
+   "F5"
+  ],
+  "detail": "reaction time from constant-speed section; braking distance = area under sloping part"
+ },
+ "14": {
+  "sub": [
+   "P4"
+  ],
+  "detail": "at rest drag is zero; upthrust exceeds weight, so acceleration upward"
+ },
+ "15": {
+  "sub": [
+   "P5",
+   "M7"
+  ],
+  "detail": "moments about hinge: 0.75W × x = 0.40W gives x ≈ 0.53 m"
+ },
+ "16": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "charge in coulombs"
+ },
+ "17": {
+  "sub": [
+   "D4"
+  ],
+  "detail": "work and moment both N m = kg m² s⁻²"
+ },
+ "18": {
+  "sub": [
+   "F4",
+   "E1",
+   "M7"
+  ],
+  "detail": "closed tube fundamental: L = λ/4, λ = 0.68 m; f = v/λ"
+ },
+ "19": {
+  "sub": [
+   "F1",
+   "D5"
+  ],
+  "detail": "unloading line retraces loading line: material is elastic"
+ },
+ "20": {
+  "sub": [
+   "F6",
+   "F1"
+  ],
+  "detail": "ions carry current in electrolyte; conventional current from + to −"
+ },
+ "21(a)": {
+  "sub": [
+   "D3"
+  ],
+  "detail": "perfectly elastic: momentum and kinetic energy conserved"
+ },
+ "21(b)": {
+  "sub": [
+   "P1",
+   "P2"
+  ],
+  "detail": "zero initial momentum: person moves left with equal and opposite momentum, slower"
+ },
+ "22(a)": {
+  "sub": [
+   "D4",
+   "M7"
+  ],
+  "detail": "k = F/v²; kg m s⁻² ÷ m² s⁻² = kg m⁻¹"
+ },
+ "22(b)": {
+  "sub": [
+   "K12",
+   "K11",
+   "M6"
+  ],
+  "detail": "%k = %F + 2 × %v = 26%; convert to absolute 0.72, 2 s.f."
+ },
+ "23(a)(i)": {
+  "sub": [
+   "D6"
+  ],
+  "detail": "resultant drawn from tail of 9.0 vector to head of 4.2 vector"
+ },
+ "23(a)(ii)": {
+  "sub": [
+   "M16",
+   "M15"
+  ],
+  "detail": "cosine rule with included angle 50° (or measure scale diagram)"
+ },
+ "23(b)(i)": {
+  "sub": [
+   "E4",
+   "M7",
+   "M5"
+  ],
+  "detail": "σ = F/A, strain = σ/E, extension = strain × L"
+ },
+ "23(b)(ii)": {
+  "sub": [
+   "P4",
+   "D5"
+  ],
+  "detail": "v–t gradient shows accelerating at Y (T > 7.5 N), decelerating at Z (T < 7.5 N)"
+ },
+ "24(a)(i)": {
+  "sub": [
+   "K16"
+  ],
+  "detail": "non-zero intercept: systematic error such as lead/contact resistance or zero error"
+ },
+ "24(a)(ii)": {
+  "sub": [
+   "K1",
+   "K10",
+   "M17",
+   "K2"
+  ],
+  "detail": "micrometer for diameter at several places; A = πd²/4; ρ = gradient × A"
+ },
+ "24(b)(i)": {
+  "sub": [
+   "M1"
+  ],
+  "detail": "1.2 kW → 1200 W ÷ 300 W = 4 mats"
+ },
+ "24(b)(ii)": {
+  "sub": [
+   "E1",
+   "M7",
+   "M5"
+  ],
+  "detail": "ρ = RA/L with R = 180 Ω, L = 25 m, A = 6.7 × 10⁻⁸ m²"
+ },
+ "25(a)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "internal resistance adds to total, so current less than 0.150 A (lost volts)"
+ },
+ "25(b)": {
+  "sub": [
+   "F1",
+   "M23",
+   "E2",
+   "E3"
+  ],
+  "detail": "lamp A at 6.0 V; parallel lamps each 2.0 V, 0.10 A; R = V/I and combine"
+ },
+ "26(a)": {
+  "sub": [
+   "D3",
+   "M23"
+  ],
+  "detail": "graphs show constant phase difference, so coherent"
+ },
+ "26(b)": {
+  "sub": [
+   "M23",
+   "M1",
+   "E1"
+  ],
+  "detail": "period 4.0 ms read from graph; f = 1/T"
+ },
+ "26(c)": {
+  "sub": [
+   "M11"
+  ],
+  "detail": "I ∝ A²: (24/10)² = 5.8 I₀"
+ },
+ "26(d)": {
+  "sub": [
+   "P6",
+   "M23"
+  ],
+  "detail": "add the two displacements read at t = 2.5 ms"
+ },
+ "27(a)": {
+  "sub": [
+   "D2"
+  ],
+  "detail": "resultant displacement equals sum of individual displacements"
+ },
+ "27(b)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "maxima path difference nλ (constructive), minima (n + ½)λ (destructive)"
+ },
+ "27(c)": {
+  "sub": [
+   "P3",
+   "E4",
+   "M7"
+  ],
+  "detail": "moving car: x = speed × time; λ = ax/D for two-source radio pattern"
+ },
+ "28(a)": {
+  "sub": [
+   "P7",
+   "D5"
+  ],
+  "detail": "one photon per electron; KEmax = hc/λ − φ falls with λ; zero at threshold λ"
+ },
+ "28(b)(i)": {
+  "sub": [
+   "E1",
+   "M1",
+   "M5"
+  ],
+  "detail": "E = hc/λ with 490 nm → m"
+ },
+ "28(b)(ii)": {
+  "sub": [
+   "E1",
+   "M1",
+   "M5"
+  ],
+  "detail": "photons per second = 0.230 W / 4.06 × 10⁻¹⁹ J"
+ }
+}

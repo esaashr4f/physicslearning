@@ -1,0 +1,254 @@
+{
+ "1(a)(i)": {
+  "sub": [
+   "D5",
+   "M20"
+  ],
+  "detail": "deceleration = v–t gradient: 18 m/s over 2.7 s"
+ },
+ "1(a)(ii)": {
+  "sub": [
+   "E2"
+  ],
+  "detail": "F = ma with 1200 kg"
+ },
+ "1(a)(iii)": {
+  "sub": [
+   "F5",
+   "D5",
+   "M21"
+  ],
+  "detail": "thinking rectangle 18 × 0.7 plus braking triangle ½ × 18 × 2.7"
+ },
+ "1(a)(iv)": {
+  "sub": [
+   "E1",
+   "P1"
+  ],
+  "detail": "brake work = F × braking distance = initial KE"
+ },
+ "1(b)": {
+  "sub": [
+   "F5",
+   "D5",
+   "M10"
+  ],
+  "detail": "same 0.7 s reaction at 9 m/s; same gradient so braking time halves"
+ },
+ "1(c)(i)": {
+  "sub": [
+   "F5"
+  ],
+  "detail": "tired driver: longer reaction, longer horizontal section only"
+ },
+ "1(c)(ii)": {
+  "sub": [
+   "F5",
+   "D5"
+  ],
+  "detail": "more resistive track: larger braking force, steeper slope"
+ },
+ "2": {
+  "sub": [
+   "K1",
+   "K2",
+   "K4",
+   "K5",
+   "K9",
+   "K10"
+  ],
+  "detail": "time balls between marks after terminal speed; micrometer for d; plot v vs d²; K = (ρ−σ)g/(18 × gradient)"
+ },
+ "3(a)": {
+  "sub": [
+   "M14"
+  ],
+  "detail": "22.3 cos 84° with angle measured from vertical"
+ },
+ "3(b)": {
+  "sub": [
+   "E1",
+   "M8"
+  ],
+  "detail": "v² = 2.33² + 2 × 9.81 × 2.4, square root"
+ },
+ "3(c)": {
+  "sub": [
+   "M14",
+   "M16",
+   "E2",
+   "E4"
+  ],
+  "detail": "horizontal 22.3 sin 84°, combine with 7.25 m/s by Pythagoras, then ½mv²"
+ },
+ "3(d)": {
+  "sub": [
+   "P4",
+   "P2"
+  ],
+  "detail": "gravity is a resultant force so velocity and hence vector momentum change"
+ },
+ "4(a)(i)": {
+  "sub": [
+   "K1"
+  ],
+  "detail": "vernier calipers read to 0.1 mm"
+ },
+ "4(a)(ii)": {
+  "sub": [
+   "K11",
+   "K12"
+  ],
+  "detail": "extension = difference of readings; absolute uncertainties ±0.1 add to ±0.2 mm"
+ },
+ "4(a)(iii)": {
+  "sub": [
+   "P4",
+   "E1",
+   "E2",
+   "M1",
+   "M6"
+  ],
+  "detail": "series springs share load so k = 18 N/m; W = kx, mm → m; M = W/g, 2 s.f."
+ },
+ "4(a)(iv)": {
+  "sub": [
+   "E1"
+  ],
+  "detail": "½kx² for combined spring (or sum of both)"
+ },
+ "4(b)(i)": {
+  "sub": [
+   "K10",
+   "M9",
+   "M1",
+   "M7"
+  ],
+  "detail": "F–x gradient = EA/L; 1.6 N mm⁻¹ → 1600 N m⁻¹; A = gradient × L/E"
+ },
+ "4(b)(ii)": {
+  "sub": [
+   "D5",
+   "M21",
+   "M1"
+  ],
+  "detail": "work = area under F–x by counting squares, mm extension → m"
+ },
+ "5(a)(i)": {
+  "sub": [
+   "D6"
+  ],
+  "detail": "water waves transverse: oscillation ⊥ travel"
+ },
+ "5(a)(ii)": {
+  "sub": [
+   "D3"
+  ],
+  "detail": "plane polarised: oscillations in one (vertical) plane only"
+ },
+ "5(b)": {
+  "sub": [
+   "E1"
+  ],
+  "detail": "f = v/λ = 8.0/3.2"
+ },
+ "5(c)(i)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "path difference 8.0 cm = 2.5λ so destructive"
+ },
+ "5(c)(ii)": {
+  "sub": [
+   "P6",
+   "M26"
+  ],
+  "detail": "7.2 cm = 2.25λ → quarter cycle = π/2 rad"
+ },
+ "6(a)": {
+  "sub": [
+   "F1"
+  ],
+  "detail": "curved I–V graph = filament lamp"
+ },
+ "6(b)": {
+  "sub": [
+   "K1"
+  ],
+  "detail": "5.72 V reading implies 0.01 V resolution meter on 0–20 V range"
+ },
+ "6(c)(i)": {
+  "sub": [
+   "M23",
+   "P1",
+   "E2",
+   "M1"
+  ],
+  "detail": "lamp current 180 mA from graph; R takes 220 − 180 mA; R = 4.8/0.040"
+ },
+ "6(c)(ii)": {
+  "sub": [
+   "P3",
+   "E1",
+   "M7"
+  ],
+  "detail": "open-switch reading = e.m.f.; r = (5.72 − 4.80)/0.220"
+ },
+ "6(d)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "smaller R: current up, lost volts Ir up, terminal p.d. down"
+ },
+ "7": {
+  "sub": [
+   "K2",
+   "K19",
+   "M20",
+   "K10",
+   "K13",
+   "M12"
+  ],
+  "detail": "raise f to first loudest resonance; period from time-base; gradient = −4/v; worst line for % uncertainty"
+ },
+ "8(a)(i)": {
+  "sub": [
+   "P7"
+  ],
+  "detail": "electron absorbs one photon whose energy exceeds work function"
+ },
+ "8(a)(ii)": {
+  "sub": [
+   "D1"
+  ],
+  "detail": "threshold frequency = minimum frequency to release an electron"
+ },
+ "8(b)(i)": {
+  "sub": [
+   "M4"
+  ],
+  "detail": "1.9 eV × 1.60 × 10⁻¹⁹"
+ },
+ "8(b)(ii)": {
+  "sub": [
+   "E1",
+   "E4",
+   "M1",
+   "M5"
+  ],
+  "detail": "hf = hf₀ + KEmax with 990 THz → Hz; λ = c/f"
+ },
+ "8(c)(i)": {
+  "sub": [
+   "P7"
+  ],
+  "detail": "photon energy unchanged by intensity, KEmax same"
+ },
+ "8(c)(ii)": {
+  "sub": [
+   "P7",
+   "M10"
+  ],
+  "detail": "double intensity → double photon rate → double emission rate"
+ }
+}

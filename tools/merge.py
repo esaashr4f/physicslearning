@@ -56,3 +56,14 @@ if km:
     with open(out+'/questions.json','w') as fh:
         fh.write('[\n'+',\n'.join(json.dumps(x,ensure_ascii=False) for x in qs)+'\n]\n')
     print('knowledge maps',len(km))
+
+# ---- fine-grained sub-skills ----
+stg={os.path.basename(f)[:-5]:json.load(open(f)) for f in glob.glob(S+'/subtags/p*.json')}
+if stg:
+    qs=json.load(open(out+'/questions.json'))
+    for q in qs:
+        m=stg.get(f"p{q['paper']}-{q['slug']}",{}).get(q['q'])
+        if m: q['sub']=m.get('sub',[]); q['subdetail']=m.get('detail','')
+    with open(out+'/questions.json','w') as fh:
+        fh.write('[\n'+',\n'.join(json.dumps(x,ensure_ascii=False) for x in qs)+'\n]\n')
+    print('subtag files',len(stg))

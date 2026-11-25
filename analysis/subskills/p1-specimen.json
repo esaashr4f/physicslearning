@@ -1,0 +1,326 @@
+{
+ "1": {
+  "sub": [
+   "K12"
+  ],
+  "detail": "%ρ = %m + 3×%r because volume of sphere ∝ r³: 6% + 15% = 21%"
+ },
+ "2": {
+  "sub": [
+   "P4",
+   "E2"
+  ],
+  "detail": "resultant T − mg = ma upward, so T = m(g + a) = 7.0 × 11.8"
+ },
+ "3": {
+  "sub": [
+   "P4",
+   "P2"
+  ],
+  "detail": "floating cork in equilibrium: upthrust equals weight of displaced water, not its mass"
+ },
+ "4": {
+  "sub": [
+   "E1",
+   "M1",
+   "M25"
+  ],
+  "detail": "compression 5.0 − 4.0 = 1.0 cm → 0.010 m; k = F/x"
+ },
+ "5": {
+  "sub": [
+   "P4"
+  ],
+  "detail": "downward acceleration needs weight greater than upthrust plus drag combined"
+ },
+ "6": {
+  "sub": [
+   "E1",
+   "E2",
+   "M11"
+  ],
+  "detail": "p = mg/A greatest on the face with smallest area ab (inverse relation)"
+ },
+ "7": {
+  "sub": [
+   "P4",
+   "F5"
+  ],
+  "detail": "drag zero at release so both balls start with acceleration g"
+ },
+ "8": {
+  "sub": [
+   "M12",
+   "E4",
+   "E2"
+  ],
+  "detail": "useful power = 20% of 9.6 W = 1.92 W; P = Fv with F = mg gives v"
+ },
+ "9": {
+  "sub": [
+   "E3",
+   "M9"
+  ],
+  "detail": "suvat from rest: distances in successive seconds go 1:3:5:7, so 12 m → 28 m"
+ },
+ "10": {
+  "sub": [
+   "K16"
+  ],
+  "detail": "ruler zero offset gives systematic error; reading still has random error"
+ },
+ "11": {
+  "sub": [
+   "P7",
+   "F3"
+  ],
+  "detail": "photons uncharged, E = hc/λ, light slows in glass"
+ },
+ "12": {
+  "sub": [
+   "M26",
+   "M23"
+  ],
+  "detail": "antiphase = 180° = half a period along the displacement–time graph"
+ },
+ "13": {
+  "sub": [
+   "F3",
+   "P2"
+  ],
+  "detail": "ray bending away from normal means faster medium; wavelength changes; not critical angle"
+ },
+ "14": {
+  "sub": [
+   "F6"
+  ],
+  "detail": "electrons drift towards positive terminal, opposite to conventional current"
+ },
+ "15": {
+  "sub": [
+   "D3",
+   "E2"
+  ],
+  "detail": "60 W rating means 60 J per second, so 120 J in 2.0 s"
+ },
+ "16": {
+  "sub": [
+   "M1",
+   "E3",
+   "E4",
+   "M7"
+  ],
+  "detail": "350 mA → A; R = ε/I − r from ε = I(R + r); then P = I²R"
+ },
+ "17": {
+  "sub": [
+   "M23",
+   "M1",
+   "E4"
+  ],
+  "detail": "period 2.0 ms read from graph; f = 1/T then λ = v/f"
+ },
+ "18": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "V = ε − Ir: larger ε or larger external R raises terminal p.d."
+ },
+ "19": {
+  "sub": [
+   "F3"
+  ],
+  "detail": "shift transverse waveform forward to see point P moving down"
+ },
+ "20": {
+  "sub": [
+   "F1",
+   "E2",
+   "D5"
+  ],
+  "detail": "diode resistance V/I (not gradient) falls as current rises steeply above 0.7 V"
+ },
+ "21(a)": {
+  "sub": [
+   "D1",
+   "D6"
+  ],
+  "detail": "vector has magnitude and direction; give example such as velocity"
+ },
+ "21(b)(i)": {
+  "sub": [
+   "E2"
+  ],
+  "detail": "speed = circumference 2π × 0.60 m divided by 20 s"
+ },
+ "21(b)(ii)": {
+  "sub": [
+   "D3",
+   "D5"
+  ],
+  "detail": "displacement is straight-line distance from start: max 1.2 m (diameter) at 10 s, zero at 20 s"
+ },
+ "21(c)": {
+  "sub": [
+   "M14",
+   "M16",
+   "E2",
+   "M1"
+  ],
+  "detail": "resultant of 5.0 N and 7.0 N at 40° by resolving/cosine rule; a = F/m, 320 g → kg"
+ },
+ "22(a)": {
+  "sub": [
+   "D5"
+  ],
+  "detail": "acceleration is v–t gradient; gradient decreases so acceleration decreases"
+ },
+ "22(b)": {
+  "sub": [
+   "K1",
+   "K19",
+   "K18",
+   "E2"
+  ],
+  "detail": "light gate and timer for speed (card length/time); balance for mass; Ek = ½mv²"
+ },
+ "22(c)(i)": {
+  "sub": [
+   "P2"
+  ],
+  "detail": "friction transfers some lost Ep to thermal energy, so Ek not linear in d"
+ },
+ "22(c)(ii)": {
+  "sub": [
+   "P1",
+   "E1",
+   "M1",
+   "M23"
+  ],
+  "detail": "work against friction = 0.50 − 0.36 J read from graphs; F = W/d with 90 cm → m"
+ },
+ "23(a)": {
+  "sub": [
+   "E1",
+   "M7"
+  ],
+  "detail": "extension = strain × original length from the table"
+ },
+ "23(b)(i)": {
+  "sub": [
+   "K7"
+  ],
+  "detail": "plot missing point within half a square; straight best-fit line"
+ },
+ "23(b)(ii)": {
+  "sub": [
+   "M20",
+   "K10",
+   "M5"
+  ],
+  "detail": "Young modulus = gradient of stress–strain line, large triangle, standard form"
+ },
+ "23(c)": {
+  "sub": [
+   "K16",
+   "M17",
+   "P2"
+  ],
+  "detail": "oversized diameter → area too large → stress too small → true E larger"
+ },
+ "24(a)": {
+  "sub": [
+   "E3",
+   "M11"
+  ],
+  "detail": "series 3R vs parallel 2R/3; current ∝ 1/R gives ratio 2/9"
+ },
+ "24(b)": {
+  "sub": [
+   "F1",
+   "P2"
+  ],
+  "detail": "filament temperature rises with current so resistance rises; non-ohmic"
+ },
+ "24(c)(i)": {
+  "sub": [
+   "E2",
+   "E4",
+   "M7"
+  ],
+  "detail": "R = V/I = 1.80/0.026 then ρ = RA/L"
+ },
+ "24(c)(ii)": {
+  "sub": [
+   "K17",
+   "K16"
+  ],
+  "detail": "e.g. contact resistance of clips or heating makes measured R, hence ρ, too large"
+ },
+ "25(a)": {
+  "sub": [
+   "D3"
+  ],
+  "detail": "coherent: constant phase difference"
+ },
+ "25(b)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "antiphase waves of unequal amplitude: destructive superposition, non-zero resultant"
+ },
+ "25(c)(i)": {
+  "sub": [
+   "P6"
+  ],
+  "detail": "bright where path difference nλ (constructive), dark at (n + ½)λ (destructive)"
+ },
+ "25(c)(ii)": {
+  "sub": [
+   "P2",
+   "M10"
+  ],
+  "detail": "fringe spacing x = λD/a ∝ λ, so B has longer wavelength"
+ },
+ "25(c)(iii)": {
+  "sub": [
+   "P6",
+   "F2"
+  ],
+  "detail": "one slit blocked: no two-source interference, only single-slit diffraction"
+ },
+ "26(a)(i)": {
+  "sub": [
+   "F5"
+  ],
+  "detail": "lower power LEDs: less electricity generated, less CO₂ / less disposal"
+ },
+ "26(a)(ii)": {
+  "sub": [
+   "P7"
+  ],
+  "detail": "photon energy E = hf depends on frequency, not intensity"
+ },
+ "26(b)(i)": {
+  "sub": [
+   "F2",
+   "P7"
+  ],
+  "detail": "rings are diffraction; electron de Broglie wavelength ≈ graphite atomic spacing"
+ },
+ "26(b)(ii)": {
+  "sub": [
+   "E4",
+   "E2",
+   "M8",
+   "M5"
+  ],
+  "detail": "eV = ½mv² for v (square root), then λ = h/mv with constants"
+ },
+ "26(b)(iii)": {
+  "sub": [
+   "D3"
+  ],
+  "detail": "validation by peer review and independent replication"
+ }
+}
