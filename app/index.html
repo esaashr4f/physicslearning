@@ -295,6 +295,63 @@ button { font: inherit; color: inherit; }
   .oc-q .ctx { grid-column: 1 / -1; }
 }
 
+/* ---------- playbook ---------- */
+.pb { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 40px; align-items: start; }
+.pb-toc { position: sticky; top: 16px; display: grid; gap: 2px; padding-top: 8px; }
+.pb-toc span { font: 600 10px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); padding: 0 8px 8px; }
+.pb-toc button { border: 0; background: none; text-align: left; padding: 6px 8px; border-radius: 6px; cursor: pointer; color: var(--ink-2); font-size: 13px; }
+.pb-toc button:hover { background: var(--surface); color: var(--ink); }
+.pb-body { display: grid; gap: 56px; min-width: 0; }
+.pb-body section { scroll-margin-top: 16px; }
+.cards2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.rule { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); padding: 16px; display: grid; gap: 8px; align-content: start; }
+.rule h4 { margin: 0; font: 700 16px/1.25 var(--f-display); }
+.rule p { margin: 0; font-size: 13px; color: var(--ink-2); }
+.rule .st { font: 500 11px/1.3 var(--f-mono); color: var(--accent); }
+.prof { width: 100%; border-collapse: collapse; font-size: 13px; }
+.prof th, .prof td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.prof th { font: 600 10px/1.2 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.prof td.n { font-family: var(--f-mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.prof .bar2 { display: inline-block; height: 8px; border-radius: 0 3px 3px 0; background: var(--accent); vertical-align: middle; margin-right: 8px; }
+.cmd { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 10px 18px; font-size: 13px; }
+.cmd dt { font: 600 13px/1.45 var(--f-mono); color: var(--accent); }
+.cmd dd { margin: 0; color: var(--ink-2); }
+.check { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; counter-reset: c; }
+.check li { display: grid; grid-template-columns: 26px 1fr; gap: 10px; align-items: baseline; font-size: 14px; }
+.check li::before { counter-increment: c; content: counter(c); font: 600 11px/22px var(--f-mono); text-align: center; width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--pen); color: var(--pen); }
+.lorq { display: grid; gap: 6px; }
+.must { display: grid; gap: 4px; }
+.must label { display: grid; grid-template-columns: 20px 100px minmax(0, 1fr) auto; gap: 10px; align-items: baseline; font-size: 13px; padding: 6px 8px; border-radius: 6px; cursor: pointer; }
+.must label:hover { background: var(--surface); }
+.must label.done .t { color: var(--ink-3); text-decoration: line-through; }
+.must .c { font: 600 12px/1.4 var(--f-mono); color: var(--accent); }
+.must .n { font: 500 11px/1 var(--f-mono); color: var(--ink-3); white-space: nowrap; }
+.eqs { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px; }
+.eqs div { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.eqs b { font: 600 14px/1.3 var(--f-mono); }
+.eqs span { font: 500 11px/1 var(--f-mono); color: var(--ink-3); white-space: nowrap; }
+.units { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 6px 18px; font-size: 13px; }
+.units div { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px dashed var(--rule); padding: 6px 0; }
+.units b { font-family: var(--f-mono); font-weight: 600; }
+.units span { color: var(--ink-2); text-align: right; }
+.traps { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.trap header { display: flex; align-items: baseline; gap: 8px; }
+.trap header b { font: 600 11px/1 var(--f-mono); color: var(--accent); }
+.trend { display: grid; grid-template-columns: repeat(11, minmax(0, 1fr)); gap: 6px; align-items: end; height: 150px; padding: 10px 0 0; border-bottom: 1px solid var(--rule); }
+.trend div { position: relative; background: var(--accent); border-radius: 4px 4px 0 0; min-height: 2px; }
+.trend div span { position: absolute; top: -18px; left: 0; right: 0; text-align: center; font: 500 11px/1 var(--f-mono); color: var(--ink-2); }
+.trend-x { display: grid; grid-template-columns: repeat(11, minmax(0, 1fr)); gap: 6px; font: 500 10px/1.2 var(--f-mono); color: var(--ink-3); text-align: center; padding-top: 6px; }
+@media (max-width: 900px) {
+  .pb { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .pb-toc { position: static; display: flex; flex-wrap: wrap; gap: 4px; }
+  .pb-toc span { display: none; }
+  .pb-toc button { border: 1px solid var(--rule); background: var(--surface); font-size: 12px; }
+  .cmd { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .cmd dd { margin-bottom: 10px; }
+  .must label { grid-template-columns: 20px 80px minmax(0, 1fr); }
+  .must .n { grid-column: 3; }
+}
+
 /* ---------- insights ---------- */
 .ins { overflow: auto; min-height: 0; }
 .ins-inner { max-width: 1180px; margin: 0 auto; padding-block: 0 80px; padding-left: var(--gutter-l); padding-right: var(--gutter-r); display: grid; gap: 56px; }
@@ -917,10 +974,10 @@ function QBench({ data, sel }) {
 
 /* ---------- Specification coverage ---------- */
 const MODULES = { "1": "Development of practical skills in physics", "2": "Foundations of physics", "3": "Forces and motion", "4": "Electrons, waves and photons" };
-function SpecView({ data, open }) {
+function SpecView({ data, open, query }) {
   const ref = useRef(null); useLenis(ref);
   const spec = data.spec || { sections: {}, outcomes: [] };
-  const [filter, setFilter] = useState("all"), [txt, setTxt] = useState(""), [openCode, setOpenCode] = useState(null), [paperF, setPaperF] = useState("all");
+  const [filter, setFilter] = useState("all"), [txt, setTxt] = useState(() => query?.q || ""), [openCode, setOpenCode] = useState(null), [paperF, setPaperF] = useState("all");
   const stats = useMemo(() => {
     const m = {};
     for (const o of spec.outcomes) m[o.code] = { parts: [], marks: 0, sessions: new Set() };
@@ -963,8 +1020,14 @@ function SpecView({ data, open }) {
     if (filter === "never") return status(o.code) === "never" && !isParent.has(o.code);
     if (filter === "rare") return status(o.code) === "rare" && !isParent.has(o.code);
     if (filter === "covered") return status(o.code) !== "never";
+    if (filter === "must") return (stats[o.code]?.sessions.size || 0) >= 9;
     return true;
   };
+  useEffect(() => {
+    const c = query?.q; if (!c) return;
+    setTxt(c);
+    if (spec.outcomes.some(o => o.code === c)) setOpenCode(c);
+  }, [query?.n]);
   const jump = (code) => { setOpenCode(code); setFilter("all"); setTxt(""); requestAnimationFrame(() => { const el = ref.current?.querySelector(`[data-code="${CSS.escape(code)}"]`); if (el) el.scrollIntoView({ block: "center", behavior: REDUCED ? "auto" : "smooth" }); }); };
 
   if (!spec.outcomes.length) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Specification not loaded</h2></div></div></div>`;
@@ -998,7 +1061,7 @@ function SpecView({ data, open }) {
       <div class="spec-tools">
         <input id="spec-search" type="search" placeholder="Search the specification…" value=${txt} onInput=${e => setTxt(e.target.value)} aria-label="Search the specification" />
         <div class="seg" role="group" aria-label="Show">
-          ${[["all", "All"], ["covered", "Examined"], ["rare", "Rarely examined"], ["never", "Never examined"]].map(([v, l]) => html`<button key=${v} aria-pressed=${filter === v} onClick=${() => setFilter(v)}><b>${l}</b></button>`)}
+          ${[["all", "All"], ["must", "Almost every year"], ["covered", "Examined"], ["rare", "Rarely examined"], ["never", "Never examined"]].map(([v, l]) => html`<button key=${v} aria-pressed=${filter === v} onClick=${() => setFilter(v)}><b>${l}</b></button>`)}
         </div>
         <div class="seg" role="group" aria-label="Paper">
           ${[["all", "Both papers"], ["1", "Paper 1"], ["2", "Paper 2"]].map(([v, l]) => html`<button key=${v} aria-pressed=${paperF === v} onClick=${() => setPaperF(v)}><b>${l}</b></button>`)}
@@ -1042,6 +1105,147 @@ function SpecView({ data, open }) {
         </div>`;
       })}
     </section>
+  </div></div>`;
+}
+
+/* ---------- Exam playbook ---------- */
+function Playbook({ data, open, openSpec }) {
+  const ref = useRef(null); const lenis = useLenis(ref);
+  const pb = data.playbook || {};
+  const all = useMemo(() => data.all.filter(q => !q.withdrawn), [data.all]);
+  const [done, setDone] = useState(() => store.get("revised", {}));
+  useEffect(() => { store.set("revised", done); }, [done]);
+  const specText = useMemo(() => Object.fromEntries((data.spec?.outcomes || []).map(o => [o.code, o.text])), [data.spec]);
+
+  const profile = useMemo(() => [1, 2].map(p => {
+    const qs = all.filter(q => q.paper === p); const m = qs.reduce((s, q) => s + (+q.marks || 0), 0);
+    const by = {}; for (const q of qs) by[q.type] = (by[q.type] || 0) + (+q.marks || 0);
+    const mods = {}; for (const q of qs) { const k = (q.spec_points?.[0] || "?")[0]; mods[k] = (mods[k] || 0) + (+q.marks || 0); }
+    return { p, m, types: Object.entries(by).sort((a, b) => b[1] - a[1]).slice(0, 6), mods };
+  }), [all]);
+  const must = useMemo(() => {
+    const ses = {}, parts = {};
+    for (const q of all) for (const c of q.spec_points || []) { (ses[c] ||= new Set()).add(q.slug); parts[c] = (parts[c] || 0) + 1; }
+    return Object.keys(ses).filter(c => ses[c].size >= 9).sort((a, b) => a.localeCompare(b, undefined, { numeric: true })).map(c => ({ c, n: ses[c].size, parts: parts[c] }));
+  }, [all]);
+  const lor = useMemo(() => all.filter(q => q.type === "level-of-response").sort((a, b) => SESSIONS.findIndex(s => s.slug === b.slug) - SESSIONS.findIndex(s => s.slug === a.slug)), [all]);
+  const eqs = useMemo(() => { const m = {}; for (const q of all) for (const e of q.equations || []) { const k = e.trim(); m[k] = (m[k] || 0) + 1; } return Object.entries(m).sort((a, b) => b[1] - a[1]).slice(0, 30); }, [all]);
+  const trend = useMemo(() => SESSIONS.map(s => {
+    const qs = all.filter(q => q.slug === s.slug); const m = qs.reduce((t, q) => t + (+q.marks || 0), 0) || 1;
+    const pr = qs.filter(q => (q.spec_points || []).some(c => c.startsWith("1.") || c.startsWith("2.2"))).reduce((t, q) => t + (+q.marks || 0), 0);
+    return { s, pct: Math.round(pr / m * 100) };
+  }), [all]);
+  const maxT = Math.max(...trend.map(t => t.pct), 1);
+  const mcqN = all.filter(q => q.type === "mcq").length;
+  const letters = useMemo(() => { const m = { A: 0, B: 0, C: 0, D: 0 }; for (const q of all) if (q.type === "mcq") { const l = (q.answer || "").match(/^[A-D]/)?.[0]; if (l) m[l]++; } return m; }, [all]);
+
+  const SECTIONS = [["pb-papers", "The two papers"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-trend", "Trends"]];
+  const goto = (id) => { const el = ref.current?.querySelector("#" + id); if (!el) return; lenis.current ? lenis.current.scrollTo(el, { offset: -12 }) : el.scrollIntoView(); };
+  const L = (arr) => html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>`;
+  const lbl = (p) => p === "1" ? "M1 Practical" : p === "2" ? "M2 Foundations" : p === "3" ? "M3 Forces" : p === "4" ? "M4 Electrons, waves, photons" : p;
+
+  if (!pb.mechanics) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Playbook not loaded</h2></div></div></div>`;
+  return html`<div class="ins" ref=${ref}><div class="ins-inner">
+    <div class="hero">
+      <span class="eyebrow">OCR A · H156 · exam playbook</span>
+      <h2>How to <em>answer</em> these papers</h2>
+      <p>${pb.intro}</p>
+      <p style=${{ fontSize: "14px" }}>${pb.timing}</p>
+    </div>
+    <div class="pb">
+      <nav class="pb-toc" aria-label="Playbook sections"><span>On this page</span>${SECTIONS.map(([id, t]) => html`<button key=${id} onClick=${() => goto(id)}>${t}</button>`)}</nav>
+      <div class="pb-body">
+
+        <section id="pb-papers">
+          <h3>The two papers reward different things</h3>
+          <p class="sub">Share of all marks across every session, by question type and by spec module.</p>
+          <div class="cols2">${profile.map(pp => html`<div class="panel" key=${pp.p}>
+            <h4>${PAPERS[pp.p].name} · ${PAPERS[pp.p].sub}</h4>
+            <table class="prof"><thead><tr><th>Question type</th><th style=${{ textAlign: "right" }}>Share</th></tr></thead><tbody>
+              ${pp.types.map(([t, m]) => html`<tr key=${t}><td>${tl(t)}</td><td class="n"><span class="bar2" style=${{ width: Math.round(m / pp.m * 160) + "px" }}></span>${Math.round(m / pp.m * 100)}%</td></tr>`)}
+            </tbody></table>
+            <table class="prof" style=${{ marginTop: "14px" }}><thead><tr><th>Main module tested</th><th style=${{ textAlign: "right" }}>Share</th></tr></thead><tbody>
+              ${["4", "3", "1", "2"].filter(k => pp.mods[k]).map(k => html`<tr key=${k}><td>${lbl(k)}</td><td class="n">${Math.round(pp.mods[k] / pp.m * 100)}%</td></tr>`)}
+            </tbody></table>
+          </div>`)}</div>
+          <p class="sub" style=${{ marginTop: "14px" }}>Paper 1 is won on recall and precise wording: multiple choice and explanations together outweigh the calculations. Paper 2 is won on working and the two six-mark answers. Module 4 outweighs Module 3 on both.</p>
+        </section>
+
+        <section id="pb-mech">
+          <h3>How marks are actually awarded</h3>
+          <p class="sub">Habits of the mark schemes that you can use to your advantage.</p>
+          <div class="cards2">${pb.mechanics.map((r, i) => html`<div class="rule" key=${i}><h4>${r.title}</h4><p>${r.body}</p><span class="st">${r.stat}</span></div>`)}</div>
+        </section>
+
+        <section id="pb-cmd">
+          <h3>What each command word needs</h3>
+          <div class="panel"><dl class="cmd">${pb.commands.map(c => html`<${React.Fragment} key=${c.word}><dt>${c.word}</dt><dd>${c.need}</dd></${React.Fragment}>`)}</dl></div>
+        </section>
+
+        <section id="pb-prac">
+          <h3>Practical skills: the biggest single source of marks</h3>
+          <p class="sub">Analysis skills (1.1.3) carry more marks than any physics sub-section, and planning (1.1.1) is close behind. They turn up inside ordinary physics questions.</p>
+          <div class="cards2">${pb.practical.map((r, i) => html`<div class="rule" key=${i}><h4>${r.title}</h4><p>${r.body}</p></div>`)}</div>
+        </section>
+
+        <section id="pb-lor">
+          <h3>Six-mark questions</h3>
+          <p class="sub">${pb.lor.summary}</p>
+          <div class="cols2">
+            <div class="panel"><h4>Level 3 checklist for a practical plan</h4><ol class="check">${pb.lor.checklist.map((c, i) => html`<li key=${i}>${c}</li>`)}</ol>
+              <p class="sub" style=${{ margin: "14px 0 0" }}>${pb.lor.note}</p></div>
+            <div class="panel"><h4>All ${lor.length} six-mark questions</h4>
+              <div class="lorq">${lor.map(q => html`<button class="oc-q" style=${{ gridTemplateColumns: "150px minmax(0,1fr)" }} key=${q.paper + q.slug + q.q} onClick=${() => open(q.paper, q.slug, q)}>
+                <span class="ref">${SLABEL[q.slug]} · Q${q.q}</span><span class="ctx">${q.context}</span></button>`)}</div></div>
+          </div>
+        </section>
+
+        <section id="pb-must">
+          <h3>Must-know: examined in at least 9 of 11 sessions</h3>
+          <p class="sub">${must.length} learning outcomes come up almost every year. Tick them off as you revise; ticks are saved in this browser only.</p>
+          <div class="panel"><div class="must">${must.map(m => html`<label key=${m.c} class=${done[m.c] ? "done" : ""}>
+            <input type="checkbox" id=${"must-" + m.c} checked=${!!done[m.c]} onChange=${e => setDone(d => ({ ...d, [m.c]: e.target.checked }))} />
+            <span class="c">${m.c}</span><span class="t">${specText[m.c] || ""}</span>
+            <button class="link n" onClick=${e => { e.preventDefault(); openSpec(m.c); }}>${m.n}/11 · ${m.parts} parts →</button></label>`)}</div>
+            <p class="sub" style=${{ margin: "12px 0 0" }}>${Object.values(done).filter(Boolean).length} of ${must.length} ticked.</p></div>
+        </section>
+
+        <section id="pb-traps">
+          <h3>Topic traps from the mark schemes</h3>
+          <p class="sub">The specific slips the mark schemes reject, topic by topic. Each card opens the questions on that topic.</p>
+          <div class="traps">${pb.traps.map(t => html`<div class="rule trap" key=${t.topic}>
+            <header><b>${t.spec}</b><h4>${t.topic}</h4></header>${L(t.items)}
+            <button class="link" onClick=${() => openSpec(t.spec)}>Questions on ${t.spec} →</button></div>`)}</div>
+        </section>
+
+        <section id="pb-units">
+          <h3>Unit conversions that cost marks</h3>
+          <p class="sub">Unit and prefix slips are flagged in roughly 90 mark-scheme notes. A power-of-ten slip costs one mark and is then carried forward.</p>
+          <div class="panel"><div class="units">${pb.units.map(([a, b]) => html`<div key=${a}><b>${a}</b><span>${b}</span></div>`)}</div></div>
+        </section>
+
+        <section id="pb-eq">
+          <h3>Equation bank, by how often it's needed</h3>
+          <p class="sub">The equations used in the most question parts across all 22 papers. All are on the data sheet or must be recalled; know when each applies.</p>
+          <div class="eqs">${eqs.map(([e, n]) => html`<div key=${e}><b>${e}</b><span>${n} parts</span></div>`)}</div>
+        </section>
+
+        <section id="pb-mcq">
+          <h3>Multiple-choice tactics</h3>
+          <p class="sub">${mcqN} multiple-choice questions analysed. Correct answers: A ${letters.A}, B ${letters.B}, C ${letters.C}, D ${letters.D}.</p>
+          <div class="panel">${L(pb.mcq)}</div>
+        </section>
+
+        <section id="pb-trend">
+          <h3>Practical and uncertainty marks by session</h3>
+          <p class="sub">Share of each session's marks (both papers) on Module 1 practical skills and 2.2 uncertainties. It has stayed between about a fifth and a third, peaking in recent sessions.</p>
+          <div class="panel">
+            <div class="trend" role="img" aria-label="Practical marks share by session">${trend.map(t => html`<div key=${t.s.slug} style=${{ height: (t.pct / maxT * 100) + "%" }} title=${`${t.s.label}: ${t.pct}%`}><span>${t.pct}%</span></div>`)}</div>
+            <div class="trend-x">${trend.map(t => html`<span key=${t.s.slug}>${t.s.y === "SAM" ? "SAM" : (t.s.m === "Nov" ? "N" : "J") + t.s.y.slice(2)}</span>`)}</div>
+          </div>
+        </section>
+      </div>
+    </div>
   </div></div>`;
 }
 
@@ -1222,7 +1426,8 @@ function App() {
   const [data, setData] = useState({ all: [], byPaper: {}, ins: {}, regions: {}, ready: false });
   const init = store.get("sel", { paper: 1, slug: "jun2024" });
   const [sel, setSel] = useState({ paper: init.paper || 1, slug: SLABEL[init.slug] ? init.slug : "jun2024", q: null, nonce: 0 });
-  const fromHash = () => ({ "#insights": "insights", "#paper": "paper", "#spec": "spec" })[location.hash] || "questions";
+  const fromHash = () => ({ "#insights": "insights", "#paper": "paper", "#spec": "spec", "#playbook": "playbook" })[location.hash] || "questions";
+  const [specQ, setSpecQ] = useState({ q: "", n: 0 });
   const [view, setView] = useState(fromHash);
   useEffect(() => { store.set("sel", { paper: sel.paper, slug: sel.slug }); }, [sel.paper, sel.slug]);
   useEffect(() => {
@@ -1236,11 +1441,13 @@ function App() {
       fetch("data/insights.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
       fetch("data/regions.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
       fetch("data/spec.json").then(r => r.ok ? r.json() : null).catch(() => null),
-    ]).then(([all, ins, regions, spec]) => {
+      fetch("data/playbook.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([all, ins, regions, spec, playbook]) => {
       const byPaper = {}; for (const q of all) (byPaper[`${q.paper}:${q.slug}`] ||= []).push(q);
-      setData({ all, byPaper, ins, regions, spec, ready: true });
+      setData({ all, byPaper, ins, regions, spec, playbook, ready: true });
     });
   }, []);
+  const openSpec = (code) => { setSpecQ(o => ({ q: code, n: o.n + 1 })); go("spec"); };
   const open = (paper, slug, q) => { setSel(s => ({ paper: +paper, slug, q: q || null, nonce: s.nonce + 1 })); go("questions"); };
 
   return html`
@@ -1252,6 +1459,7 @@ function App() {
           <button aria-pressed=${view === "questions"} onClick=${() => go("questions")}>Questions</button>
           <button aria-pressed=${view === "paper"} onClick=${() => go("paper")}>Whole paper</button>
           <button aria-pressed=${view === "spec"} onClick=${() => go("spec")}>Spec</button>
+          <button aria-pressed=${view === "playbook"} onClick=${() => go("playbook")}>Playbook</button>
           <button aria-pressed=${view === "insights"} onClick=${() => go("insights")}>Insights</button>
         </nav>
       </header>
@@ -1264,7 +1472,7 @@ function App() {
             ${SESSIONS.map(s => html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label}><span class="y">${s.y}</span><span class="m">${s.m}</span></button>`)}
           </div>
         </div>
-        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}
+        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} query=${specQ} />` : view === "playbook" ? html`<${Playbook} data=${data} open=${open} openSpec=${openSpec} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}
     </div>`;
 }
 ReactDOM.createRoot(document.getElementById("root")).render(html`<${App} />`);

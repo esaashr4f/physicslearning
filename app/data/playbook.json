@@ -1,0 +1,84 @@
+{
+ "intro": "Everything learned from reading all 22 H156 papers and their mark schemes side by side: how marks are actually awarded, where they are lost, and what keeps coming back. Figures update from the question data in this tool.",
+ "mechanics": [
+  {"title": "Working earns most calculation marks", "body": "Multi-step calculations are usually marked C1 C1 A1. The two C1 marks are for correct substitution, so clear working still scores 2 of 3 with a wrong final answer. A bare answer that is wrong scores nothing.", "stat": "53 of 91 multi-step parts use C1 C1 A1"},
+  {"title": "In a show-that, the method is the mark", "body": "About half the show-that schemes give the final printed value A0. Show every substitution, then give your value to one more significant figure than printed (3.39 for 3.4, 839 for 840). Rounding to the printed value without the extra figure is the most common slip.", "stat": "27 of 55 show-that parts give the final value A0"},
+  {"title": "Error carried forward has limits", "body": "Arithmetic slips, transcription errors and power-of-ten (POT) errors cost one mark, then later parts are marked on your wrong value (ecf). Using the wrong physics (XP), such as the wrong equation or squaring an area, is not carried forward and loses the dependent marks.", "stat": "ecf is mentioned in about 100 mark-scheme notes"},
+  {"title": "Contradictions and hedging score zero", "body": "If you write a right and a wrong statement, the mark is lost. Only the number of list items asked for is marked, in order. Two letters in a multiple-choice box score nothing.", "stat": "Applies on every paper"},
+  {"title": "Significant figures", "body": "Give 2 or 3 s.f. by default. Too few is penalised once per paper. When a question asks for a set number of s.f., the final mark needs exactly that number.", "stat": "24 parts ask for a stated number of s.f."},
+  {"title": "Use g = 9.81 m s⁻²", "body": "Using g = 10 is penalised wherever it changes a 2 s.f. answer, except in estimates.", "stat": "Flagged in 11 mark-scheme notes"},
+  {"title": "When a unit mark exists", "body": "A unit only costs a mark when the question asks for it and the scheme has a separate unit mark (Ω m, Pa s, C, N s). If the unit is printed on the answer line you need not repeat it, but a wrong unit you add can still contradict your answer.", "stat": "6 parts carry a B1 for the unit alone"}
+ ],
+ "commands": [
+  {"word": "Calculate", "need": "A numerical answer with working. Show the equation, the substituted values in SI units, then the answer to sensible s.f."},
+  {"word": "Determine", "need": "Usually a value from data or a graph, or several steps. Show what you read off (draw it on the graph) and how you used it."},
+  {"word": "Show (that)", "need": "Every step visible, ending with your own value to more s.f. than the printed one. A missing step loses the method mark."},
+  {"word": "Explain", "need": "A chain of reasoning: cause → what changes → effect, using the physics term at each link. Count the marks: 2 marks means two linked points, 3 marks a full chain."},
+  {"word": "State", "need": "A short answer, no reasoning needed. Precision of the key word matters more than length."},
+  {"word": "Describe", "need": "What happens or what you would do, step by step. For practicals: apparatus, what you measure and with what, and how."},
+  {"word": "Suggest", "need": "Any sensible physics-based answer is credited. Never leave it blank."},
+  {"word": "Estimate", "need": "Sensible assumed values (state them), one significant figure is fine, and the order of magnitude must be right."},
+  {"word": "Sketch / Draw", "need": "Shape and key features, not precision: labelled axes, correct start point, smooth line, arrows that follow round in a vector triangle, a ruled best-fit line."}
+ ],
+ "practical": [
+  {"title": "Gradients", "body": "Draw a large triangle covering at least half your line and use points on the line, not data points. Include the axis multipliers (×10⁻³ and so on). Small triangles and single data points are rejected."},
+  {"title": "Worst line", "body": "Uncertainty in a gradient = |best gradient − worst gradient|. The worst line is the steepest or shallowest line through all the error bars."},
+  {"title": "Combining uncertainties", "body": "Add percentage uncertainties when multiplying or dividing, and multiply by the power for squares and cubes (r² doubles it). Diameter-squared terms are where this is usually tested."},
+  {"title": "Tangents", "body": "For a rate on a curve, draw a tangent touching at that point only, then use a large triangle on the tangent."},
+  {"title": "Improving an experiment", "body": "Credit goes to specific improvements tied to the stated problem: a named instrument with better resolution, repeating and averaging, a larger range, data logger or light gates for short times. 'Be more careful' scores nothing."},
+  {"title": "Measuring small things", "body": "Wire diameter: micrometer, several places along the wire, take the mean. Never a ruler. Length: metre rule; time: light gates or a data logger for fast events."},
+  {"title": "Percentage difference", "body": "Compare your value with the accepted one: |yours − accepted| / accepted × 100%. Several papers ask whether a result is 'consistent' — compare the difference with the uncertainty."}
+ ],
+ "lor": {
+  "summary": "Each Paper 2 has two six-mark Level of Response questions, marked as a whole: the examiner picks a level (L1 1–2, L2 3–4, L3 5–6) from how complete and clear the answer is, then a mark within it.",
+  "checklist": [
+   "A labelled diagram of the set-up",
+   "Named measuring instruments for every quantity",
+   "What you vary, what you measure, and what you keep constant",
+   "A safety point specific to this experiment (not 'wear goggles' unless it fits)",
+   "The straight-line graph you would plot, with axes named",
+   "How the gradient or intercept gives the answer, including any formula rearrangement",
+   "If asked, how you would get the percentage uncertainty"
+  ],
+  "note": "Answers that describe the method well but stop before the analysis usually cap at Level 2. Explanation-style six-markers (e.g. comparing materials, explaining a phenomenon) need every term in the question defined and used."
+ },
+ "units": [
+  ["eV ↔ J", "× or ÷ 1.60 × 10⁻¹⁹"],
+  ["nm, μm, mm", "× 10⁻⁹, 10⁻⁶, 10⁻³ m"],
+  ["mm² → m²", "× 10⁻⁶ (not 10⁻³)"],
+  ["cm² → m²", "× 10⁻⁴"],
+  ["GPa, MPa", "× 10⁹, 10⁶ Pa"],
+  ["mW, kW", "× 10⁻³, 10³ W"],
+  ["GHz, MHz", "× 10⁹, 10⁶ Hz"],
+  ["g → kg", "÷ 1000"],
+  ["ms, minutes, hours", "convert to seconds"],
+  ["kW h → J", "× 3.6 × 10⁶"],
+  ["Diameter → area", "A = πd²/4; halve d before using r"]
+ ],
+ "traps": [
+  {"topic": "Photoelectric effect", "spec": "4.5.2", "items": ["Work function and threshold frequency definitions need 'minimum'", "Explain with one photon to one electron; intensity changes the number of electrons, not their energy", "A wave-model explanation scores nothing", "Convert eV to J before using hf = φ + KEmax", "Taking a square root to get speed from KE is often forgotten"]},
+  {"topic": "Photons and LEDs", "spec": "4.5.1", "items": ["Convert nm and mW before substituting", "Photon rate = power ÷ energy of one photon; don't invert it", "Planck constant from LEDs: plot V against 1/λ, gradient = hc/e", "Doubling frequency doubles photon energy; it does not double the number of photons"]},
+  {"topic": "Stationary waves", "spec": "4.4.4", "items": ["Node to node is λ/2, not λ", "A closed end is a node, an open end an antinode", "Explain formation by reflection and superposition of waves of the same frequency travelling in opposite directions", "Fundamental in a closed tube: L = λ/4", "Know the differences from progressive waves: energy transfer, amplitude and phase between points"]},
+  {"topic": "Superposition and interference", "spec": "4.4.3", "items": ["Coherence means a constant phase difference, not 'same phase'", "In λ = ax/D, x is one fringe spacing: divide the span by the number of gaps", "Path difference nλ gives constructive, (n + ½)λ destructive", "Phase difference is in degrees or radians as asked; check which"]},
+  {"topic": "Refraction and polarisation", "spec": "4.4.2", "items": ["Angles are measured from the normal", "sin C = 1/n only for light going from the denser medium into air", "Above the critical angle there is no refracted ray", "Polarisation: intensity falls to zero at 90°, back to maximum at 180°"]},
+  {"topic": "Wave basics", "spec": "4.4.1", "items": ["Read period from a time graph and wavelength from a distance graph; don't mix them", "Intensity ∝ amplitude²: doubling amplitude quadruples intensity", "Phase difference = (distance ÷ λ) × 360°", "Convert ms, cm and GHz"]},
+  {"topic": "Potential dividers", "spec": "4.3.3", "items": ["Vout = R2/(R1 + R2) × Vin with all resistances in the same unit (kΩ vs Ω)", "Explain sensors in a chain: light or temperature → resistance → share of p.d. → output", "Use the correct LDR and thermistor symbols", "In practical answers, include calibration or a reference value"]},
+  {"topic": "Internal resistance", "spec": "4.3.2", "items": ["E = V + Ir: plot V against I, gradient = −r, intercept = E", "Lost volts rise with current, so terminal p.d. falls", "Voltmeter goes across the cell, ammeter in series", "Don't forget the minus sign when reading r from the gradient"]},
+  {"topic": "Resistivity", "spec": "4.2.4", "items": ["Use cross-sectional area πd²/4 with d in metres", "Unit of resistivity is Ω m, not Ω m⁻¹", "Measure diameter with a micrometer in several places", "Plot R against L: gradient = ρ/A"]},
+  {"topic": "Current and drift velocity", "spec": "4.1.2", "items": ["I = Anev: a thinner wire means a higher drift velocity for the same current", "Number density n is per m³", "Conventional current is opposite to electron flow"]},
+  {"topic": "Materials", "spec": "3.4.2", "items": ["Convert GPa and mm² before substituting", "Elastic energy is the area under the force–extension graph; don't drop the ½", "Young modulus is the gradient of the linear part of stress against strain", "Use weight (mg) as the force, not mass"]},
+  {"topic": "Momentum and Newton's laws", "spec": "3.5.1", "items": ["State Newton's second law as force ∝ rate of change of momentum, not F = ma alone", "Opposite directions: add speeds for the change in momentum", "Impulse = area under force–time graph; unit N s", "Newton's third law pairs act on different objects and are the same type of force"]},
+  {"topic": "Projectiles", "spec": "3.1.3", "items": ["Horizontal velocity is constant; vertical motion has g", "Resolve the launch velocity: horizontal v cos θ, vertical v sin θ — don't swap them", "At the top, vertical velocity is zero but KE is not", "With air resistance: lower and shorter, not symmetrical"]},
+  {"topic": "Equilibrium and moments", "spec": "3.2.3", "items": ["Principle of moments: sum of clockwise = sum of anticlockwise moments about any point", "Moment = force × perpendicular distance", "A triangle of forces must close, with arrows following round", "Resolve forces; never add magnitudes of forces at an angle"]},
+  {"topic": "Density, pressure, upthrust", "spec": "3.2.4", "items": ["Convert cm and g before using ρ = m/V", "p = hρg uses depth in metres", "Upthrust equals the weight of fluid displaced", "A floating object: upthrust = its weight"]},
+  {"topic": "Kinematics and stopping", "spec": "3.1.2", "items": ["Say u = 0 when dropped from rest", "Thinking distance depends on speed and reaction time; braking distance depends on speed² and the braking force", "Displacement is the area under a v–t graph; acceleration is its gradient", "Use g = 9.81 m s⁻²"]}
+ ],
+ "mcq": [
+  "Answers are spread evenly across A, B, C and D, so there is no letter to guess towards.",
+  "Waves (4.4) supply the most questions, then forces in action (3.2) and circuits (4.2).",
+  "About a third are pure recall, and about a third need a quick calculation. Do the working in the margin; it takes less time than guessing wrong.",
+  "Difficulty doesn't rise through Section A, so skip and come back rather than slowing down.",
+  "Budget roughly a minute each, about 20–25 minutes for Section A."
+ ],
+ "timing": "Both papers are 70 marks in 1 hour 30 minutes: about 1.3 minutes per mark. Leave 10–12 minutes for each six-mark question on Paper 2."
+}
