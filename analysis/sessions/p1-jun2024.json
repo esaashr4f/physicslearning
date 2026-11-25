@@ -1,0 +1,1148 @@
+{
+ "paper": 1,
+ "session": "June 2024",
+ "slug": "jun2024",
+ "total_marks": 70,
+ "general_conventions": [
+  "M1 = method mark; a later A1 that depends on it cannot be scored without it; in 'show that' items the final A mark is often A0 (the given value earns nothing on its own).",
+  "C1 = compensatory method mark, awarded automatically if the final answer is correct; A1 = accuracy mark for the final value; B1 = independent mark for a stated fact or step.",
+  "ECF (error carried forward): later numerical parts can earn full credit if consistent with an earlier wrong answer; ECF is allowed after arithmetic (AE), transcription (TE) and power-of-ten (POT) errors but not after wrong physics / wrong equation (XP).",
+  "POT: power-of-ten slip (usually an SI-prefix conversion) loses the mark where it occurs, then ECF applies.",
+  "SF: giving more significant figures than justified is not penalised; too few is dealt with in individual guidance (often 1 SF is allowed where stated); the SF penalty is applied only once in the paper unless a question explicitly demands a given number of SF.",
+  "XP: use of an incorrect equation counts as wrong physics even if it happens to give the right number.",
+  "CON: a contradiction within the same response cancels the mark; BOD = benefit of doubt; ^ marks an omission (not wrong but incomplete).",
+  "Notation: '/' separates alternatives; Reject/Not = not creditworthy; Ignore = irrelevant extra; Allow = acceptable; words in brackets are not essential; underlined words must be present; AW = alternative wording; ORA = or reverse argument.",
+  "General rule for Section B: substitution into an equation may be made with any quantity as subject unless the guidance says otherwise.",
+  "Significant figures: if data are given to 2 SF allow answers to 2 or more SF; fewer than 2 SF penalised once only in the whole paper unless guidance says otherwise.",
+  "B marks are independent; M marks must be seen and A marks depend on them; C marks can be credited implicitly from correct later working.",
+  "MCQ: two responses for a single-answer question score zero; contradictory responses score zero.",
+  "Level-of-response guidance (generic): level by science content (best fit), mark within level by the communication statement. No LoR question on this paper (template sentence left as 'X and Y').",
+  "Anomalies: MS labels Q24 parts as 24(a)(i) and 24(b)(ii) although the QP has plain 24(a) and 24(b); 26(c) is phrased as 'percentage uncertainty' but is actually a percentage difference from the accepted value."
+ ],
+ "questions": [
+  {
+   "q": "1",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 9,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.1 Physical quantities and units",
+   "subtopic": "S.I. base units",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Identify the S.I. base unit from a list of electrical units.",
+   "answer": "A (amp)",
+   "marking_points": [
+    "B1: A (amp)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "2",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "path difference for constructive interference",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Possible path difference for constructive interference.",
+   "answer": "D (λ)",
+   "marking_points": [
+    "B1: D (λ)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "3",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2 Energy, power and resistance",
+   "subtopic": "resistance and number density",
+   "type": "mcq",
+   "secondary_types": [
+    "explain"
+   ],
+   "command_word": "Which/What",
+   "context": "Resistance and carrier density of a same-material wire with double length.",
+   "answer": "C (2R, n)",
+   "marking_points": [
+    "B1: C (2R, n)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "n is a property of the material, not the dimensions."
+   ],
+   "equations": [
+    "R = ρL/A"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "4",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "polarisation by a filter",
+   "type": "mcq",
+   "secondary_types": [
+    "explain"
+   ],
+   "command_word": "Which/What",
+   "context": "Brightness of a polarised screen through a filter rotated 90° then 180°.",
+   "answer": "B (dark, normal)",
+   "marking_points": [
+    "B1: B (dark, normal)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3 Electrical circuits",
+   "subtopic": "series-parallel network",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Total resistance of a four-resistor network between P and Q.",
+   "answer": "B (133 Ω)",
+   "marking_points": [
+    "B1: B (133 Ω)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "R = R1 + R2",
+    "1/R = 1/R1 + 1/R2"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "6",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "phase in stationary waves",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Phase difference between points in adjacent loops of a stationary wave.",
+   "answer": "D (π)",
+   "marking_points": [
+    "B1: D (π)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Within one loop all points are in phase; adjacent loops are in antiphase."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 5,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5 Quantum physics",
+   "subtopic": "photoelectric effect and intensity",
+   "type": "mcq",
+   "secondary_types": [
+    "explain"
+   ],
+   "command_word": "Which/What",
+   "context": "Effect of increasing intensity on photoemission.",
+   "answer": "B (rate of emission increases)",
+   "marking_points": [
+    "B1: B (rate of emission increases)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "8",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 5,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "diffraction gap vs wavelength",
+   "type": "mcq",
+   "secondary_types": [
+    "explain"
+   ],
+   "command_word": "Which/What",
+   "context": "Which EM radiation diffracts significantly through a 3 cm gap.",
+   "answer": "A (microwaves)",
+   "marking_points": [
+    "B1: A (microwaves)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "9",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 5,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5 Newton's laws of motion and momentum",
+   "subtopic": "Newton's third law pairs",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Which statement is not true of an N3 force pair.",
+   "answer": "B (act on same body)",
+   "marking_points": [
+    "B1: B (act on same body)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "10",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5 Newton's laws of motion and momentum",
+   "subtopic": "conservation of momentum, inelastic",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Quantity conserved in an inelastic collision with no external forces.",
+   "answer": "C (total momentum of X + Y)",
+   "marking_points": [
+    "B1: C (total momentum of X + Y)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "11",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3 Electrical circuits",
+   "subtopic": "Kirchhoff's first law",
+   "type": "mcq",
+   "secondary_types": [
+    "other"
+   ],
+   "command_word": "Which/What",
+   "context": "Which junction diagram satisfies conservation of charge.",
+   "answer": "D",
+   "marking_points": [
+    "B1: D"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "12",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "Young double-slit",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Which property of light is not demonstrated by the double-slit experiment.",
+   "answer": "B (refraction)",
+   "marking_points": [
+    "B1: B (refraction)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "13",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "Young double-slit calculation",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Wavelength from D = 3.5 m, a = 1.5 mm, 6 fringe spacings = 9 mm.",
+   "answer": "A (6.4 × 10^-7 m)",
+   "marking_points": [
+    "B1: A (6.4 × 10^-7 m)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Using 9 mm as one fringe spacing instead of dividing by 6."
+   ],
+   "equations": [
+    "λ = ax/D"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "14",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "stationary sound waves",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Frequency given node spacing 0.7 m and v = 340 m/s.",
+   "answer": "A (243 Hz)",
+   "marking_points": [
+    "B1: A (243 Hz)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Using λ = 0.7 m gives 486 Hz."
+   ],
+   "equations": [
+    "λ = 2 × node spacing",
+    "v = fλ"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "15",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4 Materials",
+   "subtopic": "elastic potential energy",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Change in EPE when spring k = 4900 N/m compressed 0.50 m.",
+   "answer": "C (increases by 610 J)",
+   "marking_points": [
+    "B1: C (increases by 610 J)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Forgetting the ½ (1200 J); thinking compression reduces stored energy."
+   ],
+   "equations": [
+    "E = ½kx^2"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "16",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 8,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4 Materials",
+   "subtopic": "brittle stress–strain",
+   "type": "mcq",
+   "secondary_types": [
+    "graph-read"
+   ],
+   "command_word": "Which/What",
+   "context": "Pick the stress–strain graph for a brittle material.",
+   "answer": "A",
+   "marking_points": [
+    "B1: A"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "17",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 8,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3 Electrical circuits",
+   "subtopic": "e.m.f. definition",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Correct statement about the e.m.f. of a cell.",
+   "answer": "D",
+   "marking_points": [
+    "B1: D"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "18",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 8,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "total internal reflection in semicircular block",
+   "type": "mcq",
+   "secondary_types": [
+    "explain"
+   ],
+   "command_word": "Which/What",
+   "context": "Path of ray at P in a semicircular block, n = 1.5, given the 50° angle.",
+   "answer": "A",
+   "marking_points": [
+    "B1: A"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "sin C = 1/n"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "19",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 9,
+   "ms_page": 9,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2 Making measurements and analysing data",
+   "subtopic": "combining uncertainties",
+   "type": "mcq",
+   "secondary_types": [
+    "uncertainty-error"
+   ],
+   "command_word": "Which/What",
+   "context": "Percentage uncertainty in W = VIt from given measurement uncertainties.",
+   "answer": "C (2.9%)",
+   "marking_points": [
+    "B1: C (2.9%)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "%W = %V + %I + %t"
+   ],
+   "skills": [
+    "uncertainty"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "20",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 9,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2 Forces in action",
+   "subtopic": "upthrust (Archimedes)",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Calculation giving the upthrust on an immersed object.",
+   "answer": "C (mass of water displaced × g)",
+   "marking_points": [
+    "B1: C (mass of water displaced × g)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "21(a)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 11,
+   "ms_page": 10,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3 Electrical circuits",
+   "subtopic": "internal resistance and power",
+   "type": "show-that",
+   "secondary_types": [
+    "derivation"
+   ],
+   "command_word": "Show that",
+   "context": "Show power to bulb from three series cells (ε, r each) is 3I(ε − Ir).",
+   "answer": "P = IV with V = 3ε − 3Ir.",
+   "marking_points": [
+    "B1: ε = Ir + IR (or V = ε − Ir)",
+    "M1: total internal resistance 3r and total e.m.f. 3ε",
+    "A1: clear steps to P = 3I(ε − Ir) (via P = IV or P = I^2R)"
+   ],
+   "allow_reject_ignore": [
+    "Any correct rearrangement for B1.",
+    "Not reference to 3I as current."
+   ],
+   "pitfalls": [
+    "Tripling the current instead of e.m.f. and r."
+   ],
+   "equations": [
+    "ε = I(R + r)",
+    "P = IV"
+   ],
+   "skills": [
+    "derivation"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "21(b)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 11,
+   "ms_page": 10,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3 Electrical circuits",
+   "subtopic": "effect of internal resistance",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Suggest",
+   "context": "Why a large internal resistance is undesirable for a torch battery.",
+   "answer": "More energy wasted as heat inside battery / more lost volts, so less power to bulb.",
+   "marking_points": [
+    "B1: more energy dissipated in r (or larger lost volts / more power I^2r)",
+    "B1: so less energy/p.d./power delivered to the bulb"
+   ],
+   "allow_reject_ignore": [
+    "Ignore references to less current, dimmer bulb or replacing batteries more often."
+   ],
+   "pitfalls": [
+    "Only saying 'bulb dimmer' with no energy/p.d. reasoning."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "22(a)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 12,
+   "ms_page": 11,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3 Work, energy and power",
+   "subtopic": "power with angled force",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Power when a 32 N pull at 50° moves a box 3.5 m in 6 s.",
+   "answer": "12 W",
+   "marking_points": [
+    "C1: use cos50° (or sin40°)",
+    "C1: P = 3.5 × 32cos50° / 6",
+    "A1: 12 W"
+   ],
+   "allow_reject_ignore": [
+    "Allow v = 3.5/6 = 0.583 m/s route."
+   ],
+   "pitfalls": [
+    "Using sin50° or the full 32 N."
+   ],
+   "equations": [
+    "W = Fs cosθ",
+    "P = W/t"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "22(b)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 13,
+   "ms_page": 11,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2 Forces in action",
+   "subtopic": "moment of a force",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Moment about hip of a 5 kg box at 0.6 m perpendicular distance, with unit.",
+   "answer": "29.4 N m",
+   "marking_points": [
+    "C1: 5 × 9.81 × 0.6",
+    "A1: 29.4 N m (unit required)"
+   ],
+   "allow_reject_ignore": [
+    "Allow 29 (2 SF) / 30 (1 SF)."
+   ],
+   "pitfalls": [
+    "Using mass not weight; unit N/m or J."
+   ],
+   "equations": [
+    "moment = Fd"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "22(c)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 13,
+   "ms_page": 11,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2 Forces in action",
+   "subtopic": "moments and safe lifting",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Explain why bending knees reduces risk to spine.",
+   "answer": "Perpendicular distance from load line of action to hips is reduced, so moment smaller, so force on spine smaller.",
+   "marking_points": [
+    "B1: perpendicular distance between weight line and hips reduced",
+    "M1: moment reduced",
+    "A1: so force on spine reduced"
+   ],
+   "allow_reject_ignore": [
+    "Allow pivot/fulcrum for hips; allow turning effect.",
+    "Ignore centre of mass changes or knees as pivot."
+   ],
+   "pitfalls": [
+    "Saying weight is reduced."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "23(a)",
+   "section": "B",
+   "marks": 4,
+   "qp_page": 15,
+   "ms_page": 12,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3 Electrical circuits",
+   "subtopic": "thermistor R–θ experiment",
+   "type": "practical-method",
+   "secondary_types": [
+    "sketch-draw"
+   ],
+   "command_word": "Describe",
+   "context": "Describe obtaining enough data (with circuit diagram) to plot thermistor resistance vs temperature as water cools.",
+   "answer": "Supply with ammeter in series and voltmeter across thermistor; record T, V, I at regular intervals, ≥5 readings; R = V/I.",
+   "marking_points": [
+    "B1: correct circuit — supply, ammeter in series, voltmeter in parallel with thermistor",
+    "B1: record temperature with thermometer and corresponding V and I as water cools",
+    "B1: at least 5 readings / regular intervals",
+    "B1: R calculated using R = V/I"
+   ],
+   "allow_reject_ignore": [
+    "All symbols must be correct; ignore extra components."
+   ],
+   "pitfalls": [
+    "Voltmeter in series; wrong thermistor symbol; not stating R = V/I."
+   ],
+   "equations": [
+    "R = V/I"
+   ],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "23(b)",
+   "section": "B",
+   "marks": 4,
+   "qp_page": 16,
+   "ms_page": 12,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3 Electrical circuits",
+   "subtopic": "potential divider sensing circuit",
+   "type": "explain",
+   "secondary_types": [
+    "calculation-multi-step",
+    "graph-read"
+   ],
+   "command_word": "Explain",
+   "context": "Use thermistor R–θ graph and LED I–V graph to explain LED switching on above 30 °C.",
+   "answer": "At 30 °C thermistor ≈30 Ω so LED p.d. = 55/85 × 5 = 3.2 V, above LED turn-on ~3.0 V.",
+   "marking_points": [
+    "C1: LED switches on at about 3.0 V (from I–V graph)",
+    "C1: thermistor resistance 30 Ω at 30 °C",
+    "C1: V_LED = 55/(55+30) × 5",
+    "A1: 3.2 V > 3.0 V"
+   ],
+   "allow_reject_ignore": [
+    "ECF for wrong graph reading.",
+    "Alternative: thermistor p.d. 2 V gives 37 Ω, i.e. switches on at ~26 °C."
+   ],
+   "pitfalls": [
+    "Not quantifying; mixing which resistor the LED is across."
+   ],
+   "equations": [
+    "Vout = R2/(R1+R2) × Vin"
+   ],
+   "skills": [
+    "graph",
+    "data-analysis"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "24(a)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 18,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2 Forces in action",
+   "subtopic": "terminal velocity",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Explain why a falling feather reaches terminal velocity.",
+   "answer": "Drag grows with speed until it equals weight; resultant force zero, so no acceleration, constant velocity.",
+   "marking_points": [
+    "B1: weight = air resistance (+ upthrust)",
+    "B1: resultant force zero",
+    "B1: acceleration zero / constant velocity"
+   ],
+   "allow_reject_ignore": [
+    "Ignore 'forces balanced' for the second mark.",
+    "Ignore 'velocity decreases'."
+   ],
+   "pitfalls": [
+    "Saying the weight decreases."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "24(b)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 18,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1 Motion",
+   "subtopic": "free fall speed",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Impact speed of a ball dropped 2.0 m with no air resistance.",
+   "answer": "6.3 m s^-1",
+   "marking_points": [
+    "C1: mgh = ½mv^2 or v^2 = u^2 + 2as",
+    "C1: 9.81 × 2.0 = ½v^2",
+    "A1: 6.3 m/s"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "v^2 = u^2 + 2as",
+    "mgh = ½mv^2"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "24(c)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 19,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1 Motion",
+   "subtopic": "g from timing data",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Calculate g from three timings of a 2.0 m drop.",
+   "answer": "10.1 m s^-2",
+   "marking_points": [
+    "C1: mean t = (0.62+0.68+0.60)/3 = 0.63 s",
+    "C1: 2.0 = ½ × g × 0.63^2",
+    "A1: 10.1 m/s^2"
+   ],
+   "allow_reject_ignore": [
+    "Allow excluding 0.68 if identified as anomalous (t = 0.61 s, g = 10.75); otherwise 1 mark.",
+    "Allow 9.97 and 10."
+   ],
+   "pitfalls": [
+    "Using one reading; using v = s/t."
+   ],
+   "equations": [
+    "s = ½gt^2"
+   ],
+   "skills": [
+    "data-analysis"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "24(d)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 19,
+   "ms_page": 13,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1 Practical skills assessed in a written examination",
+   "subtopic": "improving timing",
+   "type": "practical-evaluate",
+   "secondary_types": [],
+   "command_word": "Suggest",
+   "context": "Suggest one improvement to the timing investigation.",
+   "answer": "Use electronic timing (light gates/trap door/video) to remove reaction time, or increase height to reduce % uncertainty in t.",
+   "marking_points": [
+    "M1: electronic timing method (trap door + timer, light gates, video)",
+    "A1: removes reaction-time errors",
+    "OR M1: increase height; A1: longer time reduces % uncertainty"
+   ],
+   "allow_reject_ignore": [
+    "Improvement must relate to time measurement; ignore 'human error' and 'repeat for range of heights'."
+   ],
+   "pitfalls": [
+    "Suggesting only 'repeat and average'."
+   ],
+   "equations": [],
+   "skills": [
+    "practical",
+    "uncertainty"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "24(e)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 19,
+   "ms_page": 14,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1 Motion",
+   "subtopic": "sketch h–t for bouncing ball",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Sketch",
+   "context": "Sketch height vs time from release to first rebound maximum.",
+   "answer": "Curve down from 2.0 m with increasing steepness to 0, then curve up with decreasing gradient to below 2.0 m at tmax.",
+   "marking_points": [
+    "B1: from 2 m on y-axis, increasingly negative gradient to h = 0",
+    "B1: from h = 0, decreasing positive gradient to max below 2 m at tmax"
+   ],
+   "allow_reject_ignore": [
+    "Not straight lines (constant velocity)."
+   ],
+   "pitfalls": [
+    "Rebounding to full 2.0 m; straight-line segments."
+   ],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "25(a)",
+   "section": "B",
+   "marks": 1,
+   "qp_page": 20,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5 Quantum physics",
+   "subtopic": "KEmax meaning",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "State the meaning of KEmax in Einstein's equation.",
+   "answer": "Maximum kinetic energy of emitted photoelectrons.",
+   "marking_points": [
+    "B1: maximum KE of emitted (photo)electrons"
+   ],
+   "allow_reject_ignore": [
+    "Accept released/escaped; ignore just 'KE'."
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "25(b)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 21,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5 Quantum physics",
+   "subtopic": "photoelectric electroscope",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Explain why the negatively charged electroscope leaf falls under EM radiation.",
+   "answer": "Electrons absorb photons (one-to-one), are emitted from the plate, so charge falls and leaf drops.",
+   "marking_points": [
+    "B1: electrons absorb photons (one-to-one)",
+    "B1: electrons emitted from the metal plate/surface",
+    "B1: electroscope loses negative charge so leaf falls"
+   ],
+   "allow_reject_ignore": [
+    "Not emitted from gold leaf; not reference to becoming positive."
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "25(c)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 21,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5 Quantum physics",
+   "subtopic": "threshold frequency",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Explain why below-threshold radiation leaves leaf unchanged.",
+   "answer": "Photon energy less than work function, so no electron gets enough energy to escape.",
+   "marking_points": [
+    "B1: photon energy < work function",
+    "B1: electron does not gain enough energy to be emitted"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Suggesting longer exposure would work."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "26(a)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 23,
+   "ms_page": 16,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1 Practical skills assessed in a written examination",
+   "subtopic": "Planck constant via LEDs — accuracy",
+   "type": "practical-evaluate",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Explain how viewing LED through a cardboard tube improves accuracy.",
+   "answer": "Removes ambient light so onset of faint emission is easier to judge.",
+   "marking_points": [
+    "B1: tube excludes ambient light",
+    "B1: easier to judge when LED just starts emitting"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "26(b)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 24,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5 Quantum physics",
+   "subtopic": "h from V–f graph",
+   "type": "graph-gradient",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Use V against f graph to find Planck constant.",
+   "answer": "3.5 × 10^-34 J s (3.4–3.5)",
+   "marking_points": [
+    "B1: gradient using at least half the line (Δf ≥ 3.5×10^14)",
+    "C1: eV = hf so h = gradient × 1.6×10^-19",
+    "A1: 3.5 × 10^-34 J s"
+   ],
+   "allow_reject_ignore": [
+    "Range 3.4–3.5 × 10^-34 to 2 SF."
+   ],
+   "pitfalls": [
+    "Small gradient triangle; forgetting ×e; ignoring 10^14 axis factor."
+   ],
+   "equations": [
+    "eV = hf"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "26(c)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 25,
+   "ms_page": 16,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2 Making measurements and analysing data",
+   "subtopic": "percentage difference from accepted value",
+   "type": "uncertainty-error",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Percentage difference between student's h and accepted 6.63 × 10^-34 J s.",
+   "answer": "47% (47–49%)",
+   "marking_points": [
+    "C1: (6.63 − 3.5)/6.63 × 10^-34 ratio",
+    "A1: 47%"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (b).",
+    "Not 50% from 52.8% (ratio of student/accepted)."
+   ],
+   "pitfalls": [
+    "Dividing by the student's value; computing ratio instead of difference."
+   ],
+   "equations": [],
+   "skills": [
+    "uncertainty"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "26(d)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 25,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5 Quantum physics",
+   "subtopic": "photon emission rate",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Deduce",
+   "context": "Decide by calculation whether a 1 mW blue LED emits more photons/s than red LED (3.3 × 10^15 s^-1).",
+   "answer": "Blue: 2.4 × 10^15 s^-1 < red; student incorrect.",
+   "marking_points": [
+    "C1: blue photon energy = 6.63×10^-34 × 6.38×10^14 = 4.23×10^-19 J",
+    "C1: number per second = 1×10^-3 / 4.23×10^-19",
+    "A1: 2.4 × 10^15, fewer than red, so student wrong"
+   ],
+   "allow_reject_ignore": [
+    "Allow routes via v = fλ and E = hc/λ."
+   ],
+   "pitfalls": [
+    "Not stating a conclusion; mW conversion."
+   ],
+   "equations": [
+    "E = hf",
+    "N = P/E"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  }
+ ]
+}

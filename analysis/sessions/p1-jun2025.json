@@ -1,0 +1,1185 @@
+{
+ "paper": 1,
+ "session": "June 2025",
+ "slug": "jun2025",
+ "total_marks": 69,
+ "general_conventions": [
+  "M1 = method mark; a later A1 that depends on it cannot be scored without it; in 'show that' items the final A mark is often A0 (the given value earns nothing on its own).",
+  "C1 = compensatory method mark, awarded automatically if the final answer is correct; A1 = accuracy mark for the final value; B1 = independent mark for a stated fact or step.",
+  "ECF (error carried forward): later numerical parts can earn full credit if consistent with an earlier wrong answer; ECF is allowed after arithmetic (AE), transcription (TE) and power-of-ten (POT) errors but not after wrong physics / wrong equation (XP).",
+  "POT: power-of-ten slip (usually an SI-prefix conversion) loses the mark where it occurs, then ECF applies.",
+  "SF: giving more significant figures than justified is not penalised; too few is dealt with in individual guidance (often 1 SF is allowed where stated); the SF penalty is applied only once in the paper unless a question explicitly demands a given number of SF.",
+  "XP: use of an incorrect equation counts as wrong physics even if it happens to give the right number.",
+  "CON: a contradiction within the same response cancels the mark; BOD = benefit of doubt; ^ marks an omission (not wrong but incomplete).",
+  "Notation: '/' separates alternatives; Reject/Not = not creditworthy; Ignore = irrelevant extra; Allow = acceptable; words in brackets are not essential; underlined words must be present; AW = alternative wording; ORA = or reverse argument.",
+  "General rule for Section B: substitution into an equation may be made with any quantity as subject unless the guidance says otherwise.",
+  "Significant figures: if data are given to 2 SF allow answers to 2 or more SF; fewer than 2 SF penalised once only in the whole paper unless guidance says otherwise.",
+  "B marks are independent; M marks must be seen and A marks depend on them; C marks can be credited implicitly from correct later working.",
+  "MCQ: two responses for a single-answer question score zero; contradictory responses score zero.",
+  "NR (no response) for blank answers, unrelated comments or non-attempt marks; 0 for attempts that earn nothing (including copying out the question).",
+  "Level-of-response guidance (2025 wording): find the level by working down from the highest; position within level from 'borderline' (bottom) to 'consistently meets criteria' (top). No LoR question on this paper.",
+  "ANOMALY: OCR removed Section A Question 10 because of an error; paper total is 69 (original numbering kept). Q10 is listed with marks 0 and withdrawn=true.",
+  "Anomaly: MS Section A total row still says 20 (actually 19 after removal) and the Q25 total row says 15 although its parts sum to 7."
+ ],
+ "questions": [
+  {
+   "q": "1",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.1 Charge and current",
+   "subtopic": "drift velocity",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Mean drift velocity from A, n and I for a metal wire.",
+   "answer": "B (2.8 × 10^-5 m s^-1)",
+   "marking_points": [
+    "B1: B (2.8 × 10^-5 m s^-1)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "I = Anev"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "2",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2 Forces in action",
+   "subtopic": "torque of a couple",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Torque of two opposite 2100 N forces at 40° to the ends of a 4.0 m beam.",
+   "answer": "C (5400 N m)",
+   "marking_points": [
+    "B1: C (5400 N m)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Using cos40° instead of the perpendicular component; using half the beam length only once."
+   ],
+   "equations": [
+    "torque = F × perpendicular separation"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "3",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3 Electrical circuits",
+   "subtopic": "resistor network",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Total resistance of a four 10 Ω resistor network between X and Y.",
+   "answer": "B (10 Ω)",
+   "marking_points": [
+    "B1: B (10 Ω)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "4",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "EM spectrum — UV wavelengths",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Possible ultraviolet wavelength.",
+   "answer": "B (10^-8 m)",
+   "marking_points": [
+    "B1: B (10^-8 m)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "5",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "stationary waves in an open pipe",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Frequency of the pictured stationary sound wave in a 1.4 m open pipe.",
+   "answer": "C (350 Hz)",
+   "marking_points": [
+    "B1: C (350 Hz)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Miscounting the number of wavelengths in the pipe from the diagram."
+   ],
+   "equations": [
+    "v = fλ"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "6",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5 Quantum physics",
+   "subtopic": "Einstein photoelectric equation",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Max KE of photoelectrons for f = 2.2 × 10^15 Hz and φ = 3.7 eV.",
+   "answer": "B (8.7 × 10^-19 J)",
+   "marking_points": [
+    "B1: B (8.7 × 10^-19 J)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Not converting eV to J before subtracting."
+   ],
+   "equations": [
+    "hf = φ + KEmax"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5 Quantum physics",
+   "subtopic": "de Broglie wavelength",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Wavelength of an electron at 5% of c.",
+   "answer": "D (4.9 × 10^-11 m)",
+   "marking_points": [
+    "B1: D (4.9 × 10^-11 m)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "λ = h/(mv)"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "8",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4 Materials",
+   "subtopic": "ultimate tensile strength",
+   "type": "mcq",
+   "secondary_types": [
+    "graph-read"
+   ],
+   "command_word": "Which/What",
+   "context": "Material with greatest UTS from stress–strain curves.",
+   "answer": "B",
+   "marking_points": [
+    "B1: B"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "9",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 5,
+   "ms_page": 9,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.1 Physical quantities and units",
+   "subtopic": "SI prefixes",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Express 2.1 × 10^9 Pa with a prefix.",
+   "answer": "A (2.1 GPa)",
+   "marking_points": [
+    "B1: A (2.1 GPa)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "10",
+   "section": "A",
+   "marks": 0,
+   "qp_page": 5,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2 Forces in action",
+   "subtopic": "upthrust on a floating object",
+   "type": "mcq",
+   "secondary_types": [
+    "explain"
+   ],
+   "command_word": "Which/What",
+   "context": "Pick which quantity does not affect upthrust on a floating object.",
+   "answer": "WITHDRAWN — no valid answer (question removed by OCR)",
+   "marking_points": [
+    "Question removed from the mark scheme due to an error; not marked (0 marks). Paper total reduced to 69."
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Why it is flawed: for a floating body upthrust equals the body's weight, so the object's mass does affect it, and all listed quantities can matter."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2,
+   "withdrawn": true,
+   "original_marks": 1
+  },
+  {
+   "q": "11",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 5,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1 Motion",
+   "subtopic": "free fall suvat",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Speed after falling from 4.5 m to 2.5 m above ground.",
+   "answer": "B (6.3 m s^-1)",
+   "marking_points": [
+    "B1: B (6.3 m s^-1)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Using 2.5 m or 4.5 m instead of the 2.0 m fallen."
+   ],
+   "equations": [
+    "v^2 = u^2 + 2as"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "12",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5 Quantum physics",
+   "subtopic": "photoelectric emission rate",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Which quantity affects photoelectron emission rate above threshold.",
+   "answer": "A (intensity)",
+   "marking_points": [
+    "B1: A (intensity)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "13",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2 Forces in action",
+   "subtopic": "equilibrium of three forces",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Find F and θ for equilibrium with 6.0 N and 5.0 N perpendicular forces.",
+   "answer": "A (7.8 N, 40°)",
+   "marking_points": [
+    "B1: A (7.8 N, 40°)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Choosing the complementary angle (50°)."
+   ],
+   "equations": [
+    "F = √(6.0^2 + 5.0^2)",
+    "tanθ = opposite/adjacent"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "14",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5 Newton's laws of motion and momentum",
+   "subtopic": "elastic collision",
+   "type": "mcq",
+   "secondary_types": [
+    "explain"
+   ],
+   "command_word": "Which/What",
+   "context": "Outcome of head-on elastic collision of identical particles at equal speeds.",
+   "answer": "D (each rebounds at v)",
+   "marking_points": [
+    "B1: D (each rebounds at v)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "15",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 9,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2 Making measurements and analysing data",
+   "subtopic": "uncertainty in density",
+   "type": "mcq",
+   "secondary_types": [
+    "uncertainty-error"
+   ],
+   "command_word": "Which/What",
+   "context": "Percentage uncertainty in density of a cube: mass 8%, side 2%.",
+   "answer": "C (14%)",
+   "marking_points": [
+    "B1: C (14%)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Forgetting volume = L^3 (gives 10%)."
+   ],
+   "equations": [
+    "%ρ = %m + 3 × %L"
+   ],
+   "skills": [
+    "uncertainty"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "16",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 8,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5 Newton's laws of motion and momentum",
+   "subtopic": "rate of change of momentum on v–t graph",
+   "type": "mcq",
+   "secondary_types": [
+    "graph-gradient"
+   ],
+   "command_word": "Which/What",
+   "context": "Section of a bouncing ball's v–t graph with greatest rate of change of momentum.",
+   "answer": "C",
+   "marking_points": [
+    "B1: C"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "The bounce (steepest gradient) gives the largest force."
+   ],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "17",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 8,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5 Newton's laws of motion and momentum",
+   "subtopic": "impulse from F–t graph",
+   "type": "mcq",
+   "secondary_types": [
+    "graph-area",
+    "estimate"
+   ],
+   "command_word": "Which/What",
+   "context": "Estimate impulse from area under force–time graph in ms.",
+   "answer": "A (0.20 N s)",
+   "marking_points": [
+    "B1: A (0.20 N s)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "graph",
+    "units",
+    "estimate"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "18",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 9,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3 Electrical circuits",
+   "subtopic": "internal resistance current",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Which/What",
+   "context": "Ammeter reading with 1.50 V cell, 0.50 Ω internal, 20 Ω load.",
+   "answer": "C (73 mA)",
+   "marking_points": [
+    "B1: C (73 mA)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Ignoring internal resistance (75 mA)."
+   ],
+   "equations": [
+    "I = ε/(R + r)"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "19",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 9,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2 Energy, power and resistance",
+   "subtopic": "definition of power in resistor",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Correct definition of power dissipated in a resistor.",
+   "answer": "B",
+   "marking_points": [
+    "B1: B"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "20",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 10,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "intensity and amplitude",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Which/What",
+   "context": "Effect on intensity of doubling amplitude.",
+   "answer": "D (increase ×4)",
+   "marking_points": [
+    "B1: D (increase ×4)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "I ∝ A^2"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "21(a)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 12,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5 Newton's laws of motion and momentum",
+   "subtopic": "Newton's third law pairs",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Discuss",
+   "context": "Whether weight and normal contact force on a person in a stationary lift form an N3 pair.",
+   "answer": "Not an N3 pair: different types of force and both act on the same body.",
+   "marking_points": [
+    "M1: different types of force (ORA)",
+    "M1: both act on the same object (ORA)",
+    "A1: therefore not an N3 pair"
+   ],
+   "allow_reject_ignore": [
+    "A1 requires at least one M mark.",
+    "Ignore naming forces and statements about direction/size."
+   ],
+   "pitfalls": [
+    "Concluding they are a pair because they are equal and opposite."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "21(b)(i)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 13,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5 Newton's laws of motion and momentum",
+   "subtopic": "apparent weight in accelerating lift",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Scale reading when lift accelerates upward at 2.4 m/s^2 (rest reading 700 N).",
+   "answer": "870 N",
+   "marking_points": [
+    "C1: m = 700/9.81 = 71.4 kg",
+    "C1: R − 700 = 71.4 × 2.4 (171 N)",
+    "A1: R = 870 N"
+   ],
+   "allow_reject_ignore": [
+    "Allow (9.81 + 2.4) × 71.4; ECF for g = 10.",
+    "530 N or 868 N scores 2; 532 N or 168 N scores 1."
+   ],
+   "pitfalls": [
+    "Subtracting ma (530 N); giving only the extra force."
+   ],
+   "equations": [
+    "R − mg = ma"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "21(b)(ii)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 13,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1 Motion",
+   "subtopic": "suvat — time",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Time for lift from rest at 2.4 m/s^2 to rise 8.5 m.",
+   "answer": "2.7 s",
+   "marking_points": [
+    "C1: 8.5 = ½ × 2.4 × t^2 (or v^2 = 2 × 2.4 × 8.5)",
+    "C1: t^2 = 7.08 (or v = 6.39 m/s)",
+    "A1: t = 2.7 s"
+   ],
+   "allow_reject_ignore": [
+    "Use of 9.81 is wrong physics (XP)."
+   ],
+   "pitfalls": [
+    "Using g instead of the lift's acceleration."
+   ],
+   "equations": [
+    "s = ut + ½at^2"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "21(c)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 13,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5 Newton's laws of motion and momentum",
+   "subtopic": "constant velocity — N1",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "State and explain",
+   "context": "Scale reading when lift descends at constant speed.",
+   "answer": "700 N, because resultant force is zero.",
+   "marking_points": [
+    "B1: resultant force zero",
+    "B1: reading 700 N"
+   ],
+   "allow_reject_ignore": [
+    "Ignore 'equilibrium' alone; 'stays the same' too vague."
+   ],
+   "pitfalls": [
+    "Assuming a downward-moving lift reduces the reading."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "22(a)(i)",
+   "section": "B",
+   "marks": 1,
+   "qp_page": 14,
+   "ms_page": 11,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1 Practical skills assessed in a written examination",
+   "subtopic": "experimental technique",
+   "type": "practical-evaluate",
+   "secondary_types": [],
+   "command_word": "Suggest",
+   "context": "Why glass must be cleaned between liquids in index-matching method.",
+   "answer": "Leftover liquid film would alter the refractive index observed.",
+   "marking_points": [
+    "B1: liquid layer on glass changes the (effective) refractive index"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "22(a)(ii)",
+   "section": "B",
+   "marks": 1,
+   "qp_page": 14,
+   "ms_page": 11,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1 Practical skills assessed in a written examination",
+   "subtopic": "control variables",
+   "type": "practical-method",
+   "secondary_types": [],
+   "command_word": "Suggest",
+   "context": "One other factor to control in the index-matching method.",
+   "answer": "Wavelength/frequency of light used (or liquid temperature/density).",
+   "marking_points": [
+    "B1: frequency/wavelength of light"
+   ],
+   "allow_reject_ignore": [
+    "Allow liquid temperature or density; ignore density of glass."
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "22(b)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 14,
+   "ms_page": 11,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2 Making measurements and analysing data",
+   "subtopic": "evaluating conclusion with uncertainty",
+   "type": "practical-evaluate",
+   "secondary_types": [
+    "uncertainty-error"
+   ],
+   "command_word": "Evaluate",
+   "context": "Evaluate identification as type Z given n = 1.52 ± 1.5% and type ranges.",
+   "answer": "Range ≈1.497–1.543 overlaps types Y and Z, so conclusion not secure.",
+   "marking_points": [
+    "C1: absolute uncertainty = 0.015 × 1.52 = 0.023",
+    "M1: range ≈ 1.497 to 1.543",
+    "A1: range includes Y as well as Z, so conclusion invalid"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Ignoring the uncertainty and agreeing with Z."
+   ],
+   "equations": [],
+   "skills": [
+    "uncertainty",
+    "data-analysis"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "22(c)(i)",
+   "section": "B",
+   "marks": 1,
+   "qp_page": 15,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "critical angle",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "Describe",
+   "context": "What critical angle means.",
+   "answer": "Angle of incidence at which refraction angle is 90°.",
+   "marking_points": [
+    "B1: angle of incidence for which angle of refraction is 90° (refracted ray along boundary)"
+   ],
+   "allow_reject_ignore": [
+    "Ignore 'minimum angle for TIR'."
+   ],
+   "pitfalls": [
+    "Only saying 'angle where TIR starts' without the 90° refraction condition."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "22(c)(ii)",
+   "section": "B",
+   "marks": 4,
+   "qp_page": 15,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "measuring critical angle with semicircular dish",
+   "type": "practical-method",
+   "secondary_types": [
+    "sketch-draw"
+   ],
+   "command_word": "Describe",
+   "context": "Describe accurately measuring critical angle in a semicircular liquid dish using a ray box.",
+   "answer": "Aim ray through curved side at centre of flat edge; vary angle until refracted ray grazes boundary; trace rays and normal; measure with protractor.",
+   "marking_points": [
+    "B1: ray aimed through curved side to the middle of the straight edge",
+    "B1: move ray box/rotate dish until critical case seen",
+    "B1 × 2: any two of — dish on paper with outline/normal drawn; trace incident ray; protractor measures angle; correct critical angle identified on diagram"
+   ],
+   "allow_reject_ignore": [
+    "Credit from a clear diagram; ignore calculation methods."
+   ],
+   "pitfalls": [
+    "Entering through the flat side; measuring angle from the surface not the normal."
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "22(c)(iii)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 15,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "refractive index from critical angle",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Refractive index from critical angle 42°.",
+   "answer": "1.49 (or 1.5)",
+   "marking_points": [
+    "C1: sin42° = 1/n",
+    "A1: n = 1.49"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "sin C = 1/n"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "23(a)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 16,
+   "ms_page": 12,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3 Work, energy and power",
+   "subtopic": "efficiency",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Percentage efficiency of microwave oven (230 V, 5 A in, 700 W out).",
+   "answer": "61%",
+   "marking_points": [
+    "C1: input = 230 × 5 = 1150 W",
+    "C1: 700 ÷ 1150",
+    "A1: 61%"
+   ],
+   "allow_reject_ignore": [
+    "No ECF for wrong input power.",
+    "0.61 scores two marks."
+   ],
+   "pitfalls": [],
+   "equations": [
+    "P = VI",
+    "efficiency = useful output / total input × 100%"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "23(b)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 16,
+   "ms_page": 12,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3 Work, energy and power",
+   "subtopic": "energy, power and time",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Deduce",
+   "context": "Decide whether at least 3 min is needed to give soup 100 kJ at 700 W.",
+   "answer": "Only ~140 s needed (700 W × 180 s = 126 kJ > 100 kJ), so 3 minutes is sufficient; any conclusion consistent with the numerical comparison is credited.",
+   "marking_points": [
+    "C1: t = 100 000/700 (or E = 700 × 180, or P = 100 000/180)",
+    "M1: 140 s (or 126 kJ, or 556 W)",
+    "A1: conclusion drawn from numerical comparison"
+   ],
+   "allow_reject_ignore": [
+    "One mark only if 100 used instead of 100 000 or 3 instead of 180."
+   ],
+   "pitfalls": [
+    "Using kJ or minutes without converting; no comparison stated."
+   ],
+   "equations": [
+    "P = E/t"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "23(c)(i)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 17,
+   "ms_page": 13,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "stationary waves in microwave oven",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "How stationary waves form inside the oven.",
+   "answer": "Microwaves reflect off the metal walls; incident and reflected waves superpose.",
+   "marking_points": [
+    "B1: microwaves reflect from metal walls",
+    "B1: incident and reflected waves interfere/superpose (nodes and antinodes)"
+   ],
+   "allow_reject_ignore": [
+    "Ignore references to coherence."
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "23(c)(ii)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 17,
+   "ms_page": 13,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "nodes and antinodes energy",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Why stationary waves cause uneven heating.",
+   "answer": "Antinodes have maximum amplitude so greatest heating; nodes minimal.",
+   "marking_points": [
+    "B1: antinodes max amplitude (or nodes min)",
+    "B1: energy transfer/heating greatest at antinodes (least at nodes)"
+   ],
+   "allow_reject_ignore": [
+    "Allow intensity for amplitude; ignore 'maxima/minima points'."
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "24(a)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 19,
+   "ms_page": 14,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2 Forces in action",
+   "subtopic": "principle of moments",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "State the principle of moments.",
+   "answer": "For equilibrium, total clockwise moment = total anticlockwise moment about the same point.",
+   "marking_points": [
+    "B1: for a body in equilibrium",
+    "B1: sum of clockwise moments = sum of anticlockwise moments about same point (or resultant moment zero)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Omitting 'in equilibrium' or 'about the same point'."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "24(b)(i)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 19,
+   "ms_page": 14,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4 Materials",
+   "subtopic": "moments + Hooke's law",
+   "type": "show-that",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Show that",
+   "context": "Show spring force constant ≈ 90 000 N/m from lever data and 12 mm extension.",
+   "answer": "T = 1020 N; k = 1020/0.012 = 85 000 N/m",
+   "marking_points": [
+    "M1: 340 × 4.5 = T × 1.5",
+    "M1: k = 1020 / 12×10^-3",
+    "A1: 85 000 N/m"
+   ],
+   "allow_reject_ignore": [
+    "Not 4.5 − 1.5 as distance: XP, no further credit."
+   ],
+   "pitfalls": [
+    "mm to m conversion; using distances measured from each other."
+   ],
+   "equations": [
+    "moment = Fd",
+    "F = kx"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "24(b)(ii)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 19,
+   "ms_page": 14,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4 Materials",
+   "subtopic": "elastic potential energy",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Elastic PE stored in the spring.",
+   "answer": "6.1 J (or 6.5 J using 90 000)",
+   "marking_points": [
+    "C1: ½ × 85 000 × (12×10^-3)^2 (or with 90 000)",
+    "A1: 6.1 J or 6.5 J"
+   ],
+   "allow_reject_ignore": [
+    "ECF from k; allow E = ½Fx with F = kx."
+   ],
+   "pitfalls": [],
+   "equations": [
+    "E = ½kx^2"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "24(c)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 20,
+   "ms_page": 14,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2 Forces in action",
+   "subtopic": "moments reasoning",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Discuss",
+   "context": "How F must change if spring attachment moves from A to B (further from pivot) for same extension.",
+   "answer": "T stays same, its moment arm increases, so F must increase to supply the larger moment.",
+   "marking_points": [
+    "B1: T unchanged (same extension)",
+    "M1: perpendicular distance of T from pivot increases",
+    "A1: so F must increase"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Assuming F decreases because the spring is further away."
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 3
+  },
+  {
+   "q": "25(a)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 21,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "plane polarisation",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Meaning of a plane polarised wave.",
+   "answer": "Oscillations perpendicular to energy transfer and confined to one plane.",
+   "marking_points": [
+    "B1: oscillations perpendicular to direction of propagation/energy transfer",
+    "B1: oscillations in one plane/direction only"
+   ],
+   "allow_reject_ignore": [
+    "Ignore 'waves'; allow a named direction e.g. vertical."
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "25(b)(i)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 21,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "Malus-type intensity vs angle",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Sketch",
+   "context": "Sketch received intensity as a metal grille rotates through 360°.",
+   "answer": "cos^2-shaped curve: maxima at 0°, 180°, 360°; near-zero minima at 90°, 270°.",
+   "marking_points": [
+    "B1: peaks 180° apart, troughs 180° apart, peaks and troughs 90° apart",
+    "B1: cos^2 shape with correct curvature at peaks and troughs",
+    "B1: max at 0°, 180°, 360°; minima near zero at 90° and 270°"
+   ],
+   "allow_reject_ignore": [
+    "Allow sin^2 shape for the shape mark."
+   ],
+   "pitfalls": [
+    "Drawing a single minimum per 360° or a triangular/zig-zag shape."
+   ],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "25(b)(ii)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 21,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4 Waves",
+   "subtopic": "polarisation with rotated transmitter",
+   "type": "compare-suggest",
+   "secondary_types": [],
+   "command_word": "Suggest and explain",
+   "context": "Effect on the pattern when transmitter rotated 45°.",
+   "answer": "Similar pattern but lower intensity: receiver only detects a component of the transmitted wave.",
+   "marking_points": [
+    "B1: same shape, reduced intensity",
+    "B1: receiver detects only a component of transmitted wave"
+   ],
+   "allow_reject_ignore": [
+    "Allow a named fraction; ignore any angular shift."
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 3
+  }
+ ]
+}

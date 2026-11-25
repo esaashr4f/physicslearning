@@ -1,0 +1,1009 @@
+{
+ "paper": 2,
+ "session": "June 2017",
+ "slug": "jun2017",
+ "total_marks": 70,
+ "general_conventions": [
+  "B marks are independent marks awarded only when the specific point is seen in the answer.",
+  "M marks are method marks; if an M mark is not scored, the A marks that depend on it cannot be scored.",
+  "C marks are compensatory method marks: they can be awarded even if the equation/step is not written, provided later correct working shows it was known.",
+  "A marks are accuracy/answer marks that depend on an M mark or allow C marks to be scored; A0 in a 'show that' means the given value earns no mark itself.",
+  "ECF (error carried forward): a wrong earlier answer used correctly later is not penalised again.",
+  "AW = alternative wording accepted; ORA = or reverse argument; '/' separates alternative acceptable answers; words in brackets are not essential; underlined words must be present.",
+  "'reject'/'not' = answers not worthy of credit; 'ignore' = irrelevant statements that neither gain nor lose credit; 'allow' = acceptable answers.",
+  "Annotations used include BOD (benefit of doubt), CON (contradiction), ECF, L1/L2/L3 (levels), TE (transcription error), POT (power-of-ten error), SF (significant figure error), WP (wrong physics or equation).",
+  "Significant figures: if data are given to 2 s.f., answers to 2 or more s.f. are allowed; an answer to fewer than 2 s.f. is penalised once only in the whole paper unless guidance says otherwise.",
+  "Level of Response (6-mark, asterisked) questions: examiner first decides the level (L1 1-2, L2 3-4, L3 5-6) from the science content against the descriptor, then the mark within the level from the quality of communication/line of reasoning; indicative points are guidance, not a checklist; 0 for no response worthy of credit.",
+  "Alternative correct answers and unexpected approaches must be credited fairly.",
+  "Additional RM Assessor annotations in this series include follow through, not answered question, rounding/repeated error and arithmetic error."
+ ],
+ "questions": [
+  {
+   "q": "1(a)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 6,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.2 Linear motion",
+   "subtopic": "stopping distance",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "Define",
+   "context": "Define stopping distance of a vehicle.",
+   "answer": "Thinking distance + braking distance.",
+   "marking_points": [
+    "B1: sum of thinking distance and braking distance"
+   ],
+   "allow_reject_ignore": [
+    "Allow total distance travelled from seeing a hazard until the vehicle stops"
+   ],
+   "pitfalls": [
+    "Giving only braking distance"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "1(b)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 6,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.1.2 S.I. units",
+   "subtopic": "unit conversion km/h to m/s",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Convert 61 km h^-1 to about 17 m s^-1.",
+   "answer": "61000/3600 = 16.9 m s^-1",
+   "marking_points": [
+    "M1: 61000/3600 = 16.94",
+    "A0: 17 m s^-1"
+   ],
+   "allow_reject_ignore": [
+    "v must be the subject"
+   ],
+   "pitfalls": [
+    "Dividing by 60 only"
+   ],
+   "equations": [],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "1(b)(ii)1",
+   "section": "",
+   "marks": 2,
+   "qp_page": 2,
+   "ms_page": 6,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3.2 Kinetic and potential energies",
+   "subtopic": "kinetic energy",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Initial KE of a 1.9 × 10^5 kg train.",
+   "answer": "2.7(5) × 10^7 J",
+   "marking_points": [
+    "C1: ½ × 1.9 × 10^5 × 17²",
+    "A1: 2.7(5) × 10^7 J"
+   ],
+   "allow_reject_ignore": [
+    "Using 16.9 gives 2.7 × 10^7 J"
+   ],
+   "pitfalls": [
+    "Using km h^-1 speed"
+   ],
+   "equations": [
+    "Ek = ½mv²"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "1(b)(ii)2",
+   "section": "",
+   "marks": 3,
+   "qp_page": 3,
+   "ms_page": 6,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.2 Linear motion",
+   "subtopic": "suvat deceleration",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Average deceleration stopping in 310 m.",
+   "answer": "0.47 m s^-2",
+   "marking_points": [
+    "C1: 0 = 17² + 2a × 310 (or t = 310/8.5 = 36.5 s)",
+    "C1: a = 289/620 (or 17/36.5)",
+    "A1: 0.47 m s^-2"
+   ],
+   "allow_reject_ignore": [
+    "Ignore negative sign",
+    "16.9 gives 0.46",
+    "Not 0.5"
+   ],
+   "pitfalls": [
+    "Rounding to 1 s.f. (0.5)"
+   ],
+   "equations": [
+    "v² = u² + 2as"
+   ],
+   "skills": [
+    "sig-figs"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "1(b)(ii)3",
+   "section": "",
+   "marks": 2,
+   "qp_page": 3,
+   "ms_page": 6,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.1 Dynamics",
+   "subtopic": "Newton's second law / work done",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Average braking force on the train.",
+   "answer": "≈8.9 × 10^4 N",
+   "marking_points": [
+    "C1: F = 1.9 × 10^5 × 0.47 (or 2.7 × 10^7/310)",
+    "A1: 89000 N"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (ii)1 and (ii)2",
+    "Allow 87100, 87400, 88000"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "F = ma",
+    "W = Fx"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "1(b)(iii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 3,
+   "ms_page": 6,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "braking on an incline",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "State and explain",
+   "context": "Compare stopping distance on an incline with level track, same braking force.",
+   "answer": "Shorter: weight component acts down slope with braking force (some KE → GPE), larger net decelerating force.",
+   "marking_points": [
+    "B1: weight component acts down incline/same direction as braking force (or some KE transferred to GPE)",
+    "B1: smaller distance as larger net opposing force / greater deceleration / less work by brakes"
+   ],
+   "allow_reject_ignore": [
+    "Not 'gravity will slow it down'",
+    "Not just 'down' or 'parallel'"
+   ],
+   "pitfalls": [
+    "Vague reference to gravity without component",
+    "Saying distance is the same"
+   ],
+   "equations": [
+    "F = ma",
+    "W sinθ component"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "2(a)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 7,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1.3 Analysis",
+   "subtopic": "processing data",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Complete",
+   "context": "Complete extension column for spring data.",
+   "answer": "e = 0, 1.0, 1.8, 2.8, 3.6, 4.6 cm",
+   "marking_points": [
+    "B1: column heading and all extension values correct"
+   ],
+   "allow_reject_ignore": [
+    "Allow 0 for 0.0",
+    "Not 1 for 1.0 (inconsistent d.p.)"
+   ],
+   "pitfalls": [
+    "Inconsistent decimal places",
+    "Missing column heading/unit"
+   ],
+   "equations": [
+    "e = L − L0"
+   ],
+   "skills": [
+    "data-analysis",
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "2(b)",
+   "section": "",
+   "marks": 4,
+   "qp_page": 6,
+   "ms_page": 7,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2.2 Graphs",
+   "subtopic": "plotting graph",
+   "type": "graph-plot",
+   "secondary_types": [],
+   "command_word": "Plot",
+   "context": "Plot e against F and draw best-fit line.",
+   "answer": "Labelled axes, sensible scale, accurate points, ruled best-fit line.",
+   "marking_points": [
+    "B1: y-axis labelled e/cm",
+    "B1: simple y scale using at least half the grid",
+    "B1: points plotted correctly (checked at (0.98,1.8) and (2.45,4.6)), blobs < half small square",
+    "B1: straight best-fit line drawn with ruler"
+   ],
+   "allow_reject_ignore": [
+    "Allow 'extension/cm' or 'e (cm)'",
+    "Tick labels at least every 2 large squares",
+    "Not freehand/wobbly line"
+   ],
+   "pitfalls": [
+    "Awkward scales (e.g. multiples of 3)",
+    "Using less than half the paper",
+    "Freehand lines"
+   ],
+   "equations": [],
+   "skills": [
+    "graph",
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "2(c)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 7,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2.2 Graphs",
+   "subtopic": "gradient",
+   "type": "graph-gradient",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Gradient of best-fit line.",
+   "answer": "1.80–1.94 cm N^-1",
+   "marking_points": [
+    "B1: gradient in range 1.80–1.94 (or 0.0180–0.0194)"
+   ],
+   "allow_reject_ignore": [
+    "Allow 1.8 or 1.9",
+    "Not 2 or 0.02",
+    "Ignore POT and s.f."
+   ],
+   "pitfalls": [
+    "Using a small triangle or data points off the line"
+   ],
+   "equations": [
+    "gradient = Δe/ΔF"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "2(d)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 8,
+   "ms_page": 7,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.1 Springs",
+   "subtopic": "force constant from gradient",
+   "type": "calculation-single-step",
+   "secondary_types": [
+    "graph-gradient"
+   ],
+   "command_word": "Determine",
+   "context": "Force constant of two-spring combination from gradient, with unit.",
+   "answer": "≈0.55 N cm^-1 (55 N m^-1)",
+   "marking_points": [
+    "C1: k2 = 1/gradient",
+    "A1: correct value with unit N cm^-1 or N m^-1 to 2 or 3 s.f."
+   ],
+   "allow_reject_ignore": [
+    "Unit must match power of ten"
+   ],
+   "pitfalls": [
+    "Taking k = gradient (graph is e vs F)",
+    "Wrong POT in unit"
+   ],
+   "equations": [
+    "F = ke"
+   ],
+   "skills": [
+    "graph",
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "2(e)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 8,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.1 Springs",
+   "subtopic": "Hooke's law",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "State and explain",
+   "context": "Whether the graph shows Hooke's law is obeyed.",
+   "answer": "Hooke's law: extension ∝ force; conclusion depends on whether the line is straight through origin.",
+   "marking_points": [
+    "B1: extension directly proportional to load (within elastic limit)",
+    "B1: graph is (or isn't) a straight line through the origin so law is (not) obeyed"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Stating 'straight line' without 'through the origin'"
+   ],
+   "equations": [
+    "F = ke"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "2(f)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 8,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.1 Springs",
+   "subtopic": "springs in series",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Ratio of force constants for three versus two identical springs in series.",
+   "answer": "k3/k2 = 2/3",
+   "marking_points": [
+    "C1: k1 = 2k2 or series rule k/n",
+    "A1: 2/3"
+   ],
+   "allow_reject_ignore": [
+    "Allow F = k1e = k2·2e = k3·3e",
+    "2:3 scores 1 mark only",
+    "Allow 0.66, 0.67"
+   ],
+   "pitfalls": [
+    "Giving 3/2 (inverting)"
+   ],
+   "equations": [
+    "1/k = 1/k1 + 1/k2"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "3(a)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 9,
+   "ms_page": 9,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1.2 Implementing",
+   "subtopic": "measuring diameter precisely",
+   "type": "practical-method",
+   "secondary_types": [],
+   "command_word": "Describe and explain",
+   "context": "How to measure a sphere's diameter precisely.",
+   "answer": "Micrometer/vernier calipers; repeat in different orientations and average.",
+   "marking_points": [
+    "B1: micrometer or vernier caliper",
+    "B1: repeat readings (in different directions) and average"
+   ],
+   "allow_reject_ignore": [
+    "Not ruler"
+   ],
+   "pitfalls": [
+    "Suggesting a ruler"
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "3(a)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 9,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.4 Density and pressure",
+   "subtopic": "density and volume of a sphere",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show mass of wooden sphere from density and diameter.",
+   "answer": "m = 650 × 4/3π(0.014)³ = 7.47 × 10^-3 kg",
+   "marking_points": [
+    "M1: V = 4/3 π (0.014)³ = 1.15 × 10^-5 m³",
+    "M1: m = 650 × 1.15 × 10^-5 = 7.47 × 10^-3 (correct POT)",
+    "A0: 0.0075 kg"
+   ],
+   "allow_reject_ignore": [
+    "Allow 4/3π(1.4)³ in cm³ for first M"
+   ],
+   "pitfalls": [
+    "Using diameter instead of radius",
+    "POT errors converting cm"
+   ],
+   "equations": [
+    "ρ = m/V",
+    "V = 4/3 πr³"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "3(a)(iii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 9,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.4 Density and pressure",
+   "subtopic": "upthrust",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Force needed to hold sphere fully submerged and stationary in water.",
+   "answer": "≈0.037–0.039 N",
+   "marking_points": [
+    "C1: upthrust = 1000 × 1.15 × 10^-5 × 9.81 = 0.11 N and weight = 0.0075 × 9.81 = 0.074 N (or 1.15 × 10^-5 × 9.81 × (1000−650))",
+    "A1: F = 0.037 N (or 0.039 N)"
+   ],
+   "allow_reject_ignore": [
+    "Allow ecf from (a)(ii)"
+   ],
+   "pitfalls": [
+    "Forgetting weight acts with the applied force",
+    "Equating F to upthrust only"
+   ],
+   "equations": [
+    "upthrust = ρVg",
+    "F + W = U"
+   ],
+   "skills": [],
+   "difficulty": 3
+  },
+  {
+   "q": "3(b)",
+   "section": "",
+   "marks": 6,
+   "qp_page": 10,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.2 Motion with non-uniform acceleration",
+   "subtopic": "terminal velocity vs radius experiment",
+   "type": "level-of-response",
+   "secondary_types": [],
+   "command_word": "Describe",
+   "context": "Describe a safe experiment (with diagram) to test v = Kr² for spheres in a liquid and find K.",
+   "answer": "Drop spheres of measured radii in long tube; time over marked intervals to confirm terminal velocity; plot v vs r², K = gradient.",
+   "marking_points": [
+    "L3 (5-6): clear procedure, measurements and analysis; well-developed logical reasoning",
+    "L2 (3-4): some procedure, some measurements and some analysis",
+    "L1 (1-2): limited procedure and limited measurements or limited analysis",
+    "0: nothing creditworthy",
+    "Procedure: labelled diagram; long tube; method to find terminal velocity and to check it is reached (equal times over equal distances); safety (tray for spills, gloves, clamp tube); method to retrieve sphere",
+    "Measurements: diameter by micrometer/caliper, averaged; distance and time (stopwatch, ruler, light gates with timer, video analysis); repeat for each r",
+    "Analysis: r = d/2; calculate v = distance/time; plot v against r²; K = gradient (straight line through origin)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Not checking terminal velocity is reached before timing",
+    "Plotting v against r rather than r²",
+    "Missing safety precautions"
+   ],
+   "equations": [
+    "v = Kr²",
+    "v = s/t"
+   ],
+   "skills": [
+    "practical",
+    "extended-writing",
+    "graph"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "4(a)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 12,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.5 Power",
+   "subtopic": "electrical power and resistance",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show heater element resistance ≈ 15 Ω from rated power and voltage.",
+   "answer": "R = 230²/3500 = 15.1 Ω",
+   "marking_points": [
+    "M1: R = 230²/3500 = 15.11 (or I = 15.2 A then R = V/I)",
+    "A0"
+   ],
+   "allow_reject_ignore": [
+    "Not 3500/230 = 15.2 (that is the current)"
+   ],
+   "pitfalls": [
+    "Confusing current value with resistance"
+   ],
+   "equations": [
+    "P = V²/R",
+    "P = VI"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "4(a)(ii)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 12,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.4 Resistivity",
+   "subtopic": "resistivity and wire length",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Length of heater wire from resistivity, radius and resistance.",
+   "answer": "≈8.9 m",
+   "marking_points": [
+    "C1: A = π(0.00055)² = 9.5 × 10^-7 m²",
+    "C1: L = 15 × 9.5 × 10^-7 / 1.6 × 10^-6",
+    "A1: 8.9 m"
+   ],
+   "allow_reject_ignore": [
+    "8.9 × 10^n scores 2 marks",
+    "Using 15.1 Ω gives 9.0 m"
+   ],
+   "pitfalls": [
+    "Not converting mm to m",
+    "Using diameter formula wrongly"
+   ],
+   "equations": [
+    "R = ρL/A",
+    "A = πr²"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "4(a)(iii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 13,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.3 Resistance",
+   "subtopic": "Ohm's law",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "State and explain",
+   "context": "Whether the heater element obeys Ohm's law.",
+   "answer": "No: Ohm's law needs constant temperature; element heats so resistance changes.",
+   "marking_points": [
+    "B1: V ∝ I provided physical conditions (temperature) constant",
+    "B1: temperature not constant so Ohm's law not obeyed"
+   ],
+   "allow_reject_ignore": [
+    "Allow one mark for 'not obeyed because resistance changes as temperature changes'"
+   ],
+   "pitfalls": [
+    "Defining Ohm's law as V = IR only"
+   ],
+   "equations": [
+    "V ∝ I"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "4(b)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 13,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.5 Power",
+   "subtopic": "cost of electrical energy (kWh)",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Weekly cost of running three heaters 7 hours each night at a given price per kWh.",
+   "answer": "≈£39.10",
+   "marking_points": [
+    "C1: energy = 3 × 3.5 × 7 × 7 = 514.5 kWh (any correct partial product)",
+    "A1: 514.5 × 7.6p = £39.10/£39.11"
+   ],
+   "allow_reject_ignore": [
+    "Using 17 hours (£94.96) scores 1",
+    "Allow 3910p or £39.1"
+   ],
+   "pitfalls": [
+    "Miscounting hours (midnight to 7 am is 7 h)",
+    "Using one heater only"
+   ],
+   "equations": [
+    "E = Pt",
+    "cost = kWh × price"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "4(c)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 14,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.3 Potential dividers",
+   "subtopic": "potential divider with thermistor",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Voltmeter reading across fixed resistor with thermistor and variable resistor in series.",
+   "answer": "0.71 V",
+   "marking_points": [
+    "C1: V = 1.1/(6.8 + 1.4 + 1.1) × 6",
+    "A1: 0.71 V"
+   ],
+   "allow_reject_ignore": [
+    "Allow via current I = 6/9300 = 6.5 × 10^-4 A",
+    "Allow 0.7"
+   ],
+   "pitfalls": [
+    "Omitting one of the resistors",
+    "Calculating pd across thermistor instead"
+   ],
+   "equations": [
+    "Vout = R/(Rtotal) × Vin"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "4(c)(ii)",
+   "section": "",
+   "marks": 4,
+   "qp_page": 15,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.3 Potential dividers",
+   "subtopic": "NTC thermistor behaviour",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "How voltmeter reading changes as thermistor temperature rises.",
+   "answer": "Thermistor resistance falls, total resistance falls/current rises, greater pd across fixed resistor, voltmeter reading increases.",
+   "marking_points": [
+    "B1: thermistor resistance decreases as temperature increases",
+    "B1: total resistance decreases or current increases",
+    "M1: greater share of pd across fixed resistor",
+    "A1: voltmeter reading increases"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Confusing NTC (resistance falls with temperature)",
+    "Concluding without the pd-share reasoning (A depends on M)"
+   ],
+   "equations": [
+    "V = IR"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(a)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 16,
+   "ms_page": 12,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "phase difference and coherence",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "Define",
+   "context": "Define phase difference and coherence.",
+   "answer": "Phase difference: angular difference between points/waves; coherence: constant phase difference.",
+   "marking_points": [
+    "B1: phase difference - difference in angle (degrees/radians) between points on a wave or similar points on two waves",
+    "B1: coherence - constant phase difference"
+   ],
+   "allow_reject_ignore": [
+    "Must compare points/waves; allow 'how far out of step'",
+    "Ignore 'same frequency'",
+    "Not 'same' or 'zero' phase difference"
+   ],
+   "pitfalls": [
+    "Saying coherent means 'in phase'"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "5(b)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 17,
+   "ms_page": 12,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "two-source interference path difference",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Explain bright line at P and dark line at Q via path difference.",
+   "answer": "P: path difference nλ (constructive); Q: path difference (n+½)λ (destructive).",
+   "marking_points": [
+    "B1: P - path difference is a whole number of wavelengths (constructive)",
+    "B1: Q - path difference is an odd number of half wavelengths (destructive)"
+   ],
+   "allow_reject_ignore": [
+    "Allow nλ or λ; not phase difference",
+    "Allow (n+½)λ; not just λ/2"
+   ],
+   "pitfalls": [
+    "Using phase difference instead of path difference",
+    "Giving only λ/2 for dark"
+   ],
+   "equations": [
+    "path difference = nλ",
+    "path difference = (n+½)λ"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(b)(ii)1",
+   "section": "",
+   "marks": 3,
+   "qp_page": 17,
+   "ms_page": 12,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "Young double-slit wavelength",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Wavelength from measured fringe pattern width, slit separation and screen distance.",
+   "answer": "≈5.25 × 10^-7 m",
+   "marking_points": [
+    "C1: fringe separation x = 4.22 mm (42.2 mm across 10 spacings)",
+    "C1: λ = 4.22 × 10^-3 × 0.56 × 10^-3 / 4.50",
+    "A1: 5.25 × 10^-7 m"
+   ],
+   "allow_reject_ignore": [
+    "x = 42.2 mm or 4.2 × 10^-2 m scores 0",
+    "Miscounting fringes (x = 3.84 mm, 4.77 × 10^-7 m) max 2"
+   ],
+   "pitfalls": [
+    "Miscounting number of fringe spacings",
+    "Using total width as x"
+   ],
+   "equations": [
+    "λ = ax/D"
+   ],
+   "skills": [
+    "data-analysis",
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "5(b)(ii)2",
+   "section": "",
+   "marks": 2,
+   "qp_page": 17,
+   "ms_page": 13,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2.1 Measurements and uncertainties",
+   "subtopic": "combining percentage uncertainties",
+   "type": "uncertainty-error",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Percentage uncertainty in wavelength from uncertainties in D, a and pattern width.",
+   "answer": "≈4.5 %",
+   "marking_points": [
+    "C1: any one fractional uncertainty (0.02/4.5, 0.02/0.56, 0.2/42.2)",
+    "A1: sum × 100 = 4.48 %",
+    "Alt: B1 λmax or λmin calculated; B1 Δλ/λ × 100 ≈ 4.4 or 4.6 %"
+   ],
+   "allow_reject_ignore": [
+    "Allow 4% or 5% with working",
+    "Ignore s.f."
+   ],
+   "pitfalls": [
+    "Multiplying or averaging uncertainties instead of adding percentages"
+   ],
+   "equations": [
+    "%U(λ) = %U(a) + %U(x) + %U(D)"
+   ],
+   "skills": [
+    "uncertainty"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "5(c)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 18,
+   "ms_page": 13,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.1 Photons",
+   "subtopic": "photon emission rate",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Photons emitted per second by 50.0 mW laser.",
+   "answer": "≈1.3 × 10^17 s^-1",
+   "marking_points": [
+    "C1: photon energy = hc/λ = 3.79 × 10^-19 J",
+    "A1: n = 0.050/3.79 × 10^-19 = 1.3 × 10^17"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (b)(ii)1"
+   ],
+   "pitfalls": [
+    "Not converting mW to W"
+   ],
+   "equations": [
+    "E = hc/λ",
+    "P = nE"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(c)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 18,
+   "ms_page": 13,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.2 The photoelectric effect",
+   "subtopic": "threshold for photoemission",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Whether green light causes emission from metal of work function 2.6 eV.",
+   "answer": "No: photon energy (≈2.4 eV) less than work function (4.16 × 10^-19 J).",
+   "marking_points": [
+    "M1: convert 2.6 eV = 4.16 × 10^-19 J (or photon energy 2.37 eV)",
+    "A1: photon energy less than work function so no emission"
+   ],
+   "allow_reject_ignore": [
+    "Allow conclusion consistent with (c)(i)"
+   ],
+   "pitfalls": [
+    "Arguing from intensity/power",
+    "Comparing quantities in different units"
+   ],
+   "equations": [
+    "E = hf",
+    "1 eV = 1.6 × 10^-19 J"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "6(a)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 20,
+   "ms_page": 14,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.4 Stationary waves",
+   "subtopic": "stationary vs progressive waves",
+   "type": "compare-suggest",
+   "secondary_types": [
+    "describe"
+   ],
+   "command_word": "Describe",
+   "context": "Difference between stationary and progressive waves.",
+   "answer": "Progressive transfers energy, same amplitude everywhere; stationary no net energy transfer, nodes/antinodes, varying amplitude.",
+   "marking_points": [
+    "B1: progressive wave transfers energy / all points same amplitude",
+    "B1: stationary wave no net energy transfer / has nodes with zero amplitude / amplitude varies"
+   ],
+   "allow_reject_ignore": [
+    "Comparison required for 2 marks",
+    "Stationary has nodes and antinodes alone = 1 mark"
+   ],
+   "pitfalls": [
+    "Describing only one type"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "6(b)",
+   "section": "",
+   "marks": 6,
+   "qp_page": 20,
+   "ms_page": 14,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.4 Stationary waves",
+   "subtopic": "resonance in closed and open tubes",
+   "type": "level-of-response",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Explain resonant frequencies in a closed and open tube; describe determining speed of sound.",
+   "answer": "Closed: node at closed end, antinode open end, L = λ/4, odd harmonics; open: antinodes both ends, L = λ/2, all harmonics; v = fλ ≈ 338 m s^-1.",
+   "marking_points": [
+    "L3 (5-6): clear explanation of observations and correct method for speed of sound; well-developed logical reasoning",
+    "L2 (3-4): clear explanation or correct method, or limited explanation and limited method",
+    "L1 (1-2): limited explanation or limited method",
+    "0: nothing creditworthy",
+    "Explanation: stationary wave from interference of incident and reflected waves; nodes and antinodes; node at closed end, antinode at open end; longitudinal oscillation direction of air; fundamental for closed (λ/4 = L, 130 Hz) and open (λ/2 = L, 260 Hz); harmonics for closed tube (odd multiples) and open tube (all multiples)",
+    "Speed of sound: correct λ–L link; v = fλ; v calculated for different harmonics/tubes or graphical method; ≈338 m s^-1"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Putting antinode at closed end",
+    "Ignoring the odd-only harmonics of closed tube",
+    "No speed calculation"
+   ],
+   "equations": [
+    "v = fλ",
+    "L = λ/4 (closed)",
+    "L = λ/2 (open)"
+   ],
+   "skills": [
+    "extended-writing",
+    "data-analysis"
+   ],
+   "difficulty": 3
+  }
+ ]
+}

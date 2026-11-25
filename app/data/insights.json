@@ -1,0 +1,3560 @@
+{
+ "headline": "Across 22 H156 papers (826 marked parts), marks go to visible, correctly-substituted working in SI units (C1 marks survive a wrong final answer and ECF carries slips forward), to precise key words in definitions and explanations (displacement not amplitude, constant phase difference, photon energy vs work function), and on Paper 2 to fully-planned practical answers that link method, measurements and a graph-based analysis.",
+ "types": [
+  {
+   "type": "mcq",
+   "label": "Multiple choice (Section A)",
+   "summary": "Paper 1 Section A only: 20 one-mark items per session (219 of 221 MCQs are on Paper 1; one 2-mark selection appears in P2 Nov 2020). About 55% are Module 4, with scaling, ratio and 'which statement is correct' items very common.",
+   "what_ms_wants": [
+    "A single letter; the mark is B1 for the correct letter only, with no credit for working.",
+    "Two letters for a single-answer item scores zero, even if one of them is right.",
+    "Items routinely test proportional reasoning (e.g. resistance when length and diameter both change, de Broglie wavelength when p.d. doubles) rather than long arithmetic.",
+    "Distractors are built from the classic slips: diameter used as radius, unsquared ratios, forgetting g, omitting internal resistance, adding vectors as scalars.",
+    "Definitions are tested by near-miss wording (e.g. which quantity must be constant for coherence, which statement about e.m.f. is correct)."
+   ],
+   "how_to_score": [
+    "Write a one-line calculation or ratio in the margin before choosing; most items reduce to a quick proportionality check.",
+    "For scaling items, write the formula with every variable and change one factor at a time (R = ρL/A with A ∝ d²).",
+    "Eliminate options that match a known slip (unsquared ratio, diameter for radius, scalar addition of forces).",
+    "Never leave a blank and never give two letters; budget about a minute per item (20 marks of a 70-mark paper)."
+   ],
+   "pitfalls": [
+    "Treating area as proportional to diameter rather than diameter squared (e.g. P1 Jun 2018 Q5, Nov 2021 Q12).",
+    "Halving or doubling where a square root is needed (de Broglie and energy scaling, P1 Jun 2017 Q14, Nov 2021 Q14).",
+    "Ignoring internal resistance in cell problems (P1 Jun 2018 Q7, Jun 2025 Q18).",
+    "Confusing equilibrium pairs with Newton's third law pairs, or electron flow with conventional current.",
+    "Misreading SI prefixes (µm/mm, mA, ms) in the stem."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "5"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "14"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "7"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "4"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "5"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "1(b)(i)"
+    }
+   ]
+  },
+  {
+   "type": "calculation-single-step",
+   "label": "Single-step calculations",
+   "summary": "113 parts, mostly 2 marks (74) or 1 mark (38); 81 are on Paper 2 where they open or follow on from a context. One equation, one substitution, one answer.",
+   "what_ms_wants": [
+    "The standard split is C1 for the correct substitution (or equation with values) then A1 for the answer; 69 of 113 parts are exactly C1 + A1.",
+    "A correct final answer earns the C1 automatically, so the working is insurance, not a requirement.",
+    "1-mark versions are a bare B1/A1 for the value; read-offs and table completions must match the table's decimal places.",
+    "ECF from an earlier part is the norm; a wrong value carried in correctly gets full credit here.",
+    "Where the question demands a set number of s.f. (e.g. '2 s.f.', '3 s.f.'), the A1 is withheld if not met.",
+    "Power-of-ten slips usually leave one mark (the C1) standing."
+   ],
+   "how_to_score": [
+    "Write the equation, then the substitution with values in SI units, then the answer: that order secures the C1 even after an arithmetic slip.",
+    "Convert prefixes before substituting (mA, mW, nm, GHz, kΩ, cm³, minutes and hours to seconds).",
+    "Give 2 or 3 s.f. unless told otherwise; 1 s.f. is only safe where the scheme says so.",
+    "If an earlier answer is used, show it in the substitution so ECF can be applied."
+   ],
+   "pitfalls": [
+    "Time not in seconds (5 min, 2 min, 5 hours) or mass in grams (P2 Nov 2021 5(c)(ii), Jun 2019 4(a)(iv)).",
+    "Squaring forgotten or misapplied: intensity ∝ amplitude² (P1 Nov 2020 26(c), P2 Jun 2019 5(a)(iv)).",
+    "Using total stopping distance where only braking distance applies, or the full e.m.f. where only lost volts apply.",
+    "Giving degrees when radians are asked for, or calculator left in radians for Snell's law.",
+    "Inverting a ratio (springs in series, refractive index, wavelength in glass multiplied by n instead of divided)."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "21(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "26(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "5(a)(iv)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "4(a)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "6(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "5(c)(iii)"
+    }
+   ]
+  },
+  {
+   "type": "calculation-multi-step",
+   "label": "Multi-step calculations",
+   "summary": "91 parts, typically 3 marks (61) with some 2- and 4-mark items, split evenly between Paper 1 Section B and Paper 2. They chain two or three equations (e.g. resistivity then current, photon energy then photon rate, impulse then rebound speed).",
+   "what_ms_wants": [
+    "The usual pattern is C1, C1, A1 (53 of 91 parts): one C1 for each correct intermediate value or substitution, A1 for the final value.",
+    "Correct final answer implies all C marks; with a wrong answer each correctly-reached intermediate still scores.",
+    "Schemes list specific wrong answers and what they earn (e.g. diameter used as radius or factor omitted scores 2 of 3; POT slip in the answer scores 2).",
+    "Wrong physics (XP), such as squaring the area or using the wrong equation, stops further credit, while AE, TE and POT errors are carried forward.",
+    "A few parts add a separate B1 for the unit (Ω m, Pa s, C, N) on top of the numerical marks.",
+    "Decision-style calculations ('deduce whether...') need a numerical comparison and a conclusion for the last mark."
+   ],
+   "how_to_score": [
+    "Label each intermediate (A = ..., R = ..., Δp = ...) and write its value to 3 s.f.; each labelled step is a potential C1.",
+    "Convert units first: mm² to m² is ×10⁻⁶, GPa to Pa, eV to J, mW to W, g to kg, cm to m.",
+    "For a rebound, write the change in momentum with a sign change (m(v + u)), not a difference of speeds.",
+    "Do not round intermediate values to 1 s.f.; keep extra figures until the end.",
+    "When asked to decide or compare, finish with a sentence that links your number to the claim."
+   ],
+   "pitfalls": [
+    "Diameter used as radius, or forgetting to square-root when finding a diameter (P2 Jun 2022 7(b), Nov 2021 23(b)(ii)).",
+    "Subtracting speeds instead of adding when an object reverses (P1 Jun 2019 22(d), Jun 2023 24(a), P2 specimen 3(c)).",
+    "Omitting a component of the circuit: internal resistance, second lamp, or the parallel branch (P1 Jun 2019 23(a)(i), Jun 2022 25(c)(i)).",
+    "Using weight where mass is needed or vice versa, and multiplying a force by g again.",
+    "Forgetting to subtract upthrust or the work function, or to divide by area or volume (n = N/V)."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "23(a)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "25(c)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "6(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "3(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(d)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "1(e)"
+    }
+   ]
+  },
+  {
+   "type": "explain",
+   "label": "Explain questions",
+   "summary": "98 parts, mostly 2–3 marks, on both papers (56 on Paper 1). They ask for a chain of reasoning: a physical cause, a quantity that changes, and the effect on what is observed.",
+   "what_ms_wants": [
+    "Mostly independent B1 points (178 B1 codes across this type), each for one distinct link in the chain.",
+    "Where reasoning is gated, an M1 (e.g. resistance falls / path difference = 1.5λ) must be scored before the A1 conclusion.",
+    "Named physics is required: superposition of incident and reflected waves, photon energy compared with work function, intensity ∝ amplitude², one photon per electron.",
+    "Quantitative support is often credited as an alternative route (calculations of R from graph values, gradients of p–t graphs).",
+    "Bare law names ('Newton's third law', 'diffraction' when it is in the stem) or vague words ('ground' for Earth, 'buoyancy' alone) are rejected.",
+    "Contradictions (e.g. naming both drag and upthrust unqualified) cancel the mark."
+   ],
+   "how_to_score": [
+    "Count the marks and write that many separate, linked statements (cause, then change, then consequence).",
+    "Use the defining quantity: say photon energy (hf) is less than the work function, not 'light is too weak'.",
+    "For circuit changes, go resistance, then current, then p.d. across each component, then meter reading.",
+    "Quote the relevant equation and say what is held constant (e.g. x = λD/a with λ and D constant).",
+    "Refer to the graph or data given when the question supplies one; schemes often cap marks without it."
+   ],
+   "pitfalls": [
+    "Intensity arguments in photoelectric answers (brighter light giving more energetic electrons).",
+    "Quoting a law without applying it (N3 with no description of equal and opposite forces, P1 Jun 2016 24(b)(ii)).",
+    "Saying 'at least 2.6 V' or 'equal to' where the scheme demands 'exceeds' (P1 Jun 2016 27(b)).",
+    "Forgetting reflection when explaining how stationary waves form.",
+    "Using the inverse-square law for spreading ripples, or 'displacement' where amplitude is meant."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "4(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "22(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "28(a)"
+    }
+   ]
+  },
+  {
+   "type": "define-state",
+   "label": "Definitions and 'state' recall",
+   "summary": "57 parts, almost all 1 mark (50), with 35 on Paper 2. Standard definitions and laws (coherence, Newton's second law, threshold frequency, work function, conditions for equilibrium, principle of moments).",
+   "what_ms_wants": [
+    "A precise textbook statement scored B1; multi-mark versions (equilibrium, moments, momentum conservation) give one B1 per condition.",
+    "Essential qualifiers carry the mark: 'constant' phase difference, 'minimum' frequency or energy, 'about any point', 'in any direction', 'no external force'.",
+    "Equations are accepted only with all symbols defined; F = ma alone is not credited for Newton's second law (seen 3 times).",
+    "Superposition must use displacement, not amplitude; refractive index must use the speed of light in a vacuum, not air.",
+    "Instrument choices must suit the range and resolution (micrometer or callipers, not a ruler, for millimetre-scale diameters)."
+   ],
+   "how_to_score": [
+    "Learn the exact definitions on the spec list and their qualifiers word for word.",
+    "For laws, state them in words first, then add the equation with symbols defined.",
+    "Read whether one or two points are needed and give exactly that many.",
+    "When asked for an example, give a correct example as well as the definition; both are needed for the mark."
+   ],
+   "pitfalls": [
+    "'Same' or 'zero' phase difference instead of constant phase difference for coherence (P2 Jun 2016 2(a)(ii), Jun 2025 7(b)(i)).",
+    "Omitting 'minimum' for threshold frequency and work function (P2 Jun 2019 6(a)(i), Jun 2018 9(a)(ii)).",
+    "Writing F = ma for Newton's second law (P1 Jun 2016 24(a), P2 Jun 2024 2(a)).",
+    "Dropping 'about any point' or 'in any direction' from equilibrium conditions (P2 Jun 2022 3(a), Jun 2024 4(c)(i)).",
+    "Saying 'energy' rather than 'kinetic energy' is conserved in an elastic collision."
+   ],
+   "example_refs": [
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "2(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "24(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "3(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "6(a)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "6(a)"
+    }
+   ]
+  },
+  {
+   "type": "show-that",
+   "label": "Show-that questions",
+   "summary": "55 parts (38 on Paper 2), 1–4 marks. The answer is given, often rounded, and is usually needed in the next part.",
+   "what_ms_wants": [
+    "Marks are for the working: 27 of 55 schemes give the final quoted value A0.",
+    "M1 for a correct substitution with the unknown as subject, then often a second M1/C1 for evaluating it to more figures than the given value.",
+    "The calculated value must be shown to more s.f. than the printed one (e.g. 839 for 'about 840', 3.39 for 3.4, 6.605 × 10⁻⁴ for 6.6 × 10⁻⁴).",
+    "Powers of ten must be visible for each quantity in some schemes (e.g. both mass and volume in SI).",
+    "Working backwards from the given value is sometimes allowed, but only when every step is shown.",
+    "Algebraic show-thats (homogeneity, E = kL/A, P = Fv) need each substitution written, not just the end result."
+   ],
+   "how_to_score": [
+    "Write the equation, substitute every value in SI, and give your result to at least one more s.f. than the printed value.",
+    "Make the requested quantity the subject; schemes sometimes reject a rearrangement that leaves it buried.",
+    "Use g = 9.81 m s⁻², not 10; using 10 has been explicitly disallowed.",
+    "For comparisons ('show that TIR occurs', 'show it lands in the ring'), state both numbers and the inequality.",
+    "Even if you cannot do it, use the given value in the next part; it is there to prevent a dead end."
+   ],
+   "pitfalls": [
+    "Writing only the final value, which earns nothing (A0).",
+    "Quoting the answer to the same s.f. as given (12 schemes flag this in pitfalls).",
+    "Using an alternative method the scheme excludes (gradient instead of an equation of motion, P1 Jun 2019 22(b)).",
+    "Diameter for radius in sphere volumes and areas (P2 Jun 2017 3(a)(ii), Nov 2021 4(a)(i)).",
+    "Forgetting a square root in speed-from-energy items (P2 Jun 2016 8(a), Jun 2018 9(b)(i))."
+   ],
+   "example_refs": [
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "1(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "4(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "5(b)(iv)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "21(c)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "6(c)"
+    }
+   ]
+  },
+  {
+   "type": "practical-method",
+   "label": "Practical method (point-marked)",
+   "summary": "26 parts of 1–4 marks, mostly Paper 1 Section B (18). They ask how to measure something (diameter, critical angle, refractive index, internal resistance, LED threshold p.d.) and how to make it accurate.",
+   "what_ms_wants": [
+    "B1 per creditworthy step: named instrument, what is measured, how the quantity is calculated, and one accuracy or precision improvement.",
+    "Diameters by micrometer or callipers, taken at several places or orientations and averaged, then halved for the radius.",
+    "Correct circuits with correct symbols: ammeter in series, voltmeter in parallel, a means of varying the p.d.",
+    "Analysis stated explicitly: what is plotted and what the gradient means (gradient = −r, gradient = k, ρ = gradient × A).",
+    "Light experiments: ray box with a single slit, angles measured to the normal, darkened room, rays marked with crosses far apart.",
+    "'Repeat readings' alone is not accepted as a precision improvement."
+   ],
+   "how_to_score": [
+    "Answer in the order instrument, measurement, calculation, improvement; one point per line.",
+    "Draw a labelled diagram or circuit where possible; schemes give credit from a clear diagram.",
+    "Name the specific instrument (micrometer, vernier callipers, light gate, data-logger), not 'measure it'.",
+    "State the equation used to process the data with the subject made clear."
+   ],
+   "pitfalls": [
+    "Suggesting a ruler for a small diameter (P2 Jun 2017 3(a)(i), Jun 2018 6(c)(i), Jun 2022 1(a)).",
+    "Measuring the radius directly or forgetting to halve the diameter.",
+    "Voltmeter in series or wrong component symbols (P1 Jun 2016 25(b), Jun 2024 23(a)).",
+    "Entering the semicircular block through the flat face or measuring angles from the surface (P1 Jun 2018 26(c), Jun 2025 22(c)(ii)).",
+    "Giving a method with no improvement or a vague one ('be careful', 'repeat')."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "22(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "1(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "3(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "23(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "5(b)(ii)"
+    }
+   ]
+  },
+  {
+   "type": "sketch-draw",
+   "label": "Sketches and drawings",
+   "summary": "25 parts of 1–4 marks: free-body and vector diagrams, triangles of forces, ray paths, stationary-wave patterns, v–t and momentum–time sketches, oscilloscope traces and circuit diagrams.",
+   "what_ms_wants": [
+    "Each feature is a separate mark: correct start and end values, correct shape or curvature, correct labels.",
+    "Force diagrams need arrows in the right directions with labels; equal lengths where forces balance.",
+    "Triangles of forces must close with arrows following nose to tail; scale drawings are checked to a tolerance (e.g. ±0.2 N).",
+    "Ray diagrams: bending towards the normal entering denser media, TIR shown where the angle exceeds the critical angle, emerging ray behaviour checked by eye.",
+    "Graph sketches: curves where motion is accelerating (no straight lines for a falling ball), correct axis crossings, peaks at the right places."
+   ],
+   "how_to_score": [
+    "Use a ruler for rays and forces, and label every arrow and key point (N, A, weight, normal contact force).",
+    "Mark known numerical values on the sketch (start value, intercept, amplitude in divisions).",
+    "Check physics constraints before drawing: odd harmonics for a closed pipe, frequency unchanged across a boundary, constant speed means balanced forces.",
+    "Keep the shape: decreasing gradient, cos² shape, or loop returning to the origin as required."
+   ],
+   "pitfalls": [
+    "Weight drawn perpendicular to a slope (P1 Jun 2016 21(b)(i)).",
+    "Straight lines where a curve is needed (P1 Jun 2022 25(b)(i), Jun 2024 24(e)).",
+    "Triangle of forces not closed or arrows not following round (P2 Nov 2020 6(b)(ii)).",
+    "Missing the normal reaction or unequal arrows at constant speed (P2 Jun 2025 5(a)(i)).",
+    "Amplitude drawn as peak-to-peak on an oscilloscope trace (P2 Nov 2020 1(a)(ii))."
+   ],
+   "example_refs": [
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "5(a)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "22(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "5(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "6(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "6(b)(ii)"
+    }
+   ]
+  },
+  {
+   "type": "level-of-response",
+   "label": "6-mark level-of-response questions",
+   "summary": "22 parts, all 6 marks and all on Paper 2: two per session (often Q2-ish and the last question). About two-thirds are 'describe an experiment and analyse the data' plans; the rest explain a phenomenon with calculation (stationary waves, interference, collisions, electron diffraction).",
+   "what_ms_wants": [
+    "The level is set by how fully the science covers each strand named in the stem (typically procedure, measurements and analysis), then the mark within the level by the quality of reasoning.",
+    "L3 (5–6) needs every strand clear and correct, e.g. a full method plus analysis reaching the requested quantity (and its percentage uncertainty where asked).",
+    "L2 (3–4) is a mixture: one strand detailed and another limited, or all strands partly done.",
+    "L1 (1–2) is fragmentary: a limited method or a limited analysis only.",
+    "Indicative content is guidance, not a checklist: labelled diagram, named instruments, control variables, repeats, a safety precaution, and the straight-line graph to plot with what the gradient and intercept give.",
+    "Recent schemes (2023–2025) also expect a worst acceptable line and percentage uncertainty in the derived quantity when the stem mentions uncertainty."
+   ],
+   "how_to_score": [
+    "Underline each command in the stem (describe, explain, determine, include uncertainty) and give each its own paragraph.",
+    "Always include a labelled diagram, named instruments with what each measures, and at least one specific safety point.",
+    "Rearrange the given equation into y = mx + c, say what to plot, and state how the unknown is found from gradient or intercept.",
+    "If data or a graph is provided, actually use it: calculate the gradient, the final value with unit, and the uncertainty from a worst-fit line.",
+    "Write in a logical order (set-up, then measure, then process) so the communication criterion for the top mark is met."
+   ],
+   "pitfalls": [
+    "Leaving out the analysis strand, which caps the answer below L3 (P2 Jun 2016 6(a)).",
+    "Plotting the wrong graph (v against r instead of r², x against f instead of 1/f; P2 Jun 2017 3(b), Jun 2019 5(b)).",
+    "Timing before terminal velocity is reached, or not checking it is reached (P2 Jun 2023 2).",
+    "No worst-fit line or not doubling the percentage uncertainty for a squared quantity (P2 Jun 2024 3, Jun 2025 8).",
+    "No safety point, or one that is generic rather than specific to the apparatus."
+   ],
+   "example_refs": [
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "3(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "2"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "3"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "8"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "7(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "3(a)"
+    }
+   ]
+  },
+  {
+   "type": "graph-read",
+   "label": "Reading and interpreting graphs",
+   "summary": "21 parts, mostly 1 mark, but with 4-mark 'describe how velocity/resistance changes' items on Paper 1. Data come from s–t, I–V, displacement–time and oscilloscope graphs.",
+   "what_ms_wants": [
+    "Values read to within a small square, with axis multipliers (×10¹⁵, ms) applied.",
+    "Describe-type graph items give B1 per time interval or voltage range described, plus B1 for naming what the gradient represents.",
+    "Resistance from an I–V graph is V/I at a point, never the reciprocal of the gradient.",
+    "Network problems using a lamp I–V graph need values read at the correct p.d. for each lamp; assuming constant resistance is wrong physics.",
+    "Period read from several cycles on an oscilloscope, then f = 1/T with the time-base converted to seconds."
+   ],
+   "how_to_score": [
+    "Write the value read and the point it came from (e.g. 'at V = 2.0 V, I = 0.10 A').",
+    "State explicitly 'velocity = gradient' or 'R = V/I' before describing changes.",
+    "Split descriptions into the time or voltage ranges shown on the graph and give numbers for the boundaries.",
+    "Check the axis labels for prefixes and powers of ten before using a reading."
+   ],
+   "pitfalls": [
+    "Using the gradient for resistance or saying R is constant on a straight section that does not pass through the origin (P1 Jun 2016 27(a)).",
+    "Not stating that velocity is the gradient (P1 Jun 2019 22(a)).",
+    "Peak-to-peak taken as amplitude, or half a cycle taken as the period (P2 Jun 2016 1(b)(i), Jun 2024 6(a)).",
+    "Ignoring the ×10¹⁵ axis factor (P2 Jun 2019 6(a)(ii))."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "27(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "25(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "6(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "6(a)(ii)"
+    }
+   ]
+  },
+  {
+   "type": "graph-gradient",
+   "label": "Gradients and tangents",
+   "summary": "20 parts of 1–3 marks on both papers: gradient of a best-fit line to get a constant (h, k, E, g, v), or a tangent to an s–t curve for instantaneous velocity.",
+   "what_ms_wants": [
+    "A large triangle: schemes demand the triangle span at least half the drawn line (or a minimum Δx).",
+    "Gradient values accepted only within a stated range (e.g. 160–180, 1.40–1.60, 9.50–10.50 m s⁻¹).",
+    "Points read from the line, not data points off it; a single data point ratio is rejected.",
+    "Axis powers of ten and unit conversions carried into the final constant (×10¹⁴ Hz, mm to m, eV to J).",
+    "For tangents, B1/M1 for a tangent at the correct time and M1 for Δs/Δt shown, A1 for the value."
+   ],
+   "how_to_score": [
+    "Draw the triangle across most of the line and write Δy and Δx with units and powers of ten.",
+    "Write the link between gradient and the physics (gradient = h/e, = 2a, = AE/L) before calculating.",
+    "For a tangent, use a long ruler line touching the curve at the given time; avoid chords.",
+    "Where the axes do not start at zero, do not read the intercept off the corner of the grid."
+   ],
+   "pitfalls": [
+    "Small gradient triangles (flagged in 11 schemes).",
+    "Forgetting the factor linking gradient to the quantity (e.g. 2 in v² = 2as, ×e for h; P1 Jun 2016 22(b), Jun 2024 26(b)).",
+    "Reading a false-origin intercept as the y-intercept (P1 Jun 2022 26(b)(ii)).",
+    "Including the thinking time in a braking gradient (P2 Jun 2023 1(a)(i), Jun 2025 1(a))."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "5(d)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "7(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "1(d)(ii)"
+    }
+   ]
+  },
+  {
+   "type": "compare-suggest",
+   "label": "Compare and suggest",
+   "summary": "18 short parts (mostly 2 marks) asking for a similarity and a difference, or a sensible reason in an unfamiliar context (e.m.f. vs p.d., progressive vs stationary waves, why a resistor choice is unsuitable).",
+   "what_ms_wants": [
+    "Paired B1 marks: one for each side of the comparison, so both items must be mentioned.",
+    "Comparatives are needed ('smaller number density', 'larger resistivity'), with reverse arguments accepted.",
+    "e.m.f. vs p.d.: similarity is energy transferred per unit charge; the difference must state both energy-transfer directions.",
+    "Suggestions must be tied to the physics of the context (e.g. lower current so lower temperature so lower resistance)."
+   ],
+   "how_to_score": [
+    "Write 'Similarity: ...' and 'Difference: ...' as separate lines.",
+    "Compare explicitly (X is greater than Y) rather than describing one item.",
+    "Link each suggestion to a cause and an effect; avoid one-word answers.",
+    "Use numbers from the context where possible (e.g. 5 kΩ is about 4% of 120 kΩ)."
+   ],
+   "pitfalls": [
+    "Describing only one of the two things being compared (P2 Jun 2017 6(a)).",
+    "Saying both are measured in volts as the similarity (P2 Jun 2025 4(a)).",
+    "Vague answers like 'good contact' or 'energy lost' without saying where (P2 Jun 2016 5(b)(i), Nov 2021 2(a)(iii)).",
+    "Getting the comparison direction backwards."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "25(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "4(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "6(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "3(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(b)"
+    }
+   ]
+  },
+  {
+   "type": "uncertainty-error",
+   "label": "Uncertainty calculations",
+   "summary": "17 parts of 1–3 marks on both papers: percentage uncertainty in a derived quantity, absolute uncertainty from percentages, uncertainty from half the range, or from a worst-fit line.",
+   "what_ms_wants": [
+    "C1 for a correct fractional or percentage uncertainty of one input, A1 for the combined total.",
+    "Percentages add for products and quotients; a power multiplies the percentage (×2 for squares, ×3 for cubes).",
+    "Absolute uncertainty in a difference is the sum of the absolute uncertainties.",
+    "Spread of repeated readings: half the range (or largest deviation from the mean) is the absolute uncertainty.",
+    "The max/min method is always accepted as an alternative.",
+    "Final absolute uncertainties are often required to 2 s.f., and bald rounded percentages without working are not allowed."
+   ],
+   "how_to_score": [
+    "List each percentage uncertainty with its power before adding.",
+    "Convert back to absolute uncertainty by multiplying the percentage by the value, and quote it to the requested s.f.",
+    "For worst-fit lines, uncertainty = |worst gradient − best gradient| / best gradient × 100%.",
+    "Show working even if the answer looks like a round number (e.g. 9.1%, not a bald 10%)."
+   ],
+   "pitfalls": [
+    "Not doubling or tripling for squared or cubed terms (P2 Jun 2018 6(c)(iii), Jun 2019 3(a)(v), P1 Nov 2021 22(b)).",
+    "Multiplying or averaging percentages instead of adding (P2 Jun 2017 5(b)(ii)2).",
+    "Using the instrument resolution when the spread of readings is larger (P2 Jun 2019 3(a)(ii)).",
+    "Giving ±0.1 for a difference of two readings each ±0.1 (P2 Jun 2023 4(a)(ii)).",
+    "Dividing by the worst gradient instead of the best (P2 Nov 2020 3(b)(iii))."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "22(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "6(c)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "3(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "4(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "7(a)(iv)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "24(b)(ii)3"
+    }
+   ]
+  },
+  {
+   "type": "practical-evaluate",
+   "label": "Evaluating experiments",
+   "summary": "14 parts of 1–3 marks, mostly Paper 1 (12): effect of a systematic or zero error, suggesting an improvement, or judging a result against an accepted value using its uncertainty.",
+   "what_ms_wants": [
+    "Improvement questions are M1/A1: a specific change (light gates, longer distance, several node spacings) and its consequence (removes reaction time, smaller percentage uncertainty).",
+    "Systematic and zero errors: say which direction the result shifts and why (e.g. larger diameter, so smaller stress, so smaller gradient).",
+    "Consistency judgements need a quantitative comparison (percentage difference or uncertainty range) before the conclusion.",
+    "Generic 'repeat readings', 'human error' or 'more accurate meters' score nothing."
+   ],
+   "how_to_score": [
+    "Name the change and then say exactly which uncertainty or error it reduces.",
+    "For a zero or systematic error, trace its effect step by step through the equation to the final value.",
+    "Compute the range value ± uncertainty and say whether the accepted value lies inside it.",
+    "Use data from the question (e.g. small time intervals compared with reaction time)."
+   ],
+   "pitfalls": [
+    "Saying 'close to' without a calculation (P1 Jun 2023 21(c)(iii)).",
+    "Ignoring the uncertainty range so a wrong identification is accepted (P1 Jun 2025 22(b)).",
+    "Stating a limitation without its effect on the measured value (P1 specimen 24(c)(ii)).",
+    "Getting the direction of a zero-error effect wrong (P1 specimen 23(c))."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "23(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "24(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "21(c)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "7(c)(v)"
+    }
+   ]
+  },
+  {
+   "type": "graph-plot",
+   "label": "Plotting and lines of best fit",
+   "summary": "8 parts of 1–2 marks (one 4-mark full plot on P2 Jun 2017): plot a missing point, draw a best-fit line, or draw a worst acceptable line through error bars.",
+   "what_ms_wants": [
+    "Points within half a small square, with dots smaller than half a square.",
+    "A single, thin, ruled straight line with a balance of points on each side; not forced through end or corner points.",
+    "Worst acceptable line: steepest or shallowest straight line that still passes through every error bar.",
+    "Full plots also reward axis labels with units and a simple scale using at least half the grid."
+   ],
+   "how_to_score": [
+    "Use a sharp pencil and a ruler; mark points as small crosses.",
+    "Choose scales in 1, 2 or 5 per division so plotting is easy to check.",
+    "Draw the worst line from the corner of the first error bar to the opposite corner of the last.",
+    "Label axes as quantity/unit."
+   ],
+   "pitfalls": [
+    "Freehand, thick or double lines (P2 Jun 2018 3(c)(i), P1 Jun 2017 27(b)(ii)).",
+    "Joining the first and last points instead of best fit (P2 Jun 2016 5(d)(i)).",
+    "Awkward scales (multiples of 3) or using less than half the grid (P2 Jun 2017 2(b)).",
+    "A worst line that misses an error bar (P2 Nov 2020 3(b)(i))."
+   ],
+   "example_refs": [
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "2(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "5(d)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "7(a)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "26(b)(i)"
+    }
+   ]
+  },
+  {
+   "type": "describe",
+   "label": "Describe (factual)",
+   "summary": "6 short parts (1–4 marks) that describe a process or a distinction without a calculation, e.g. transverse vs longitudinal waves, energy changes, evidence from electron diffraction.",
+   "what_ms_wants": [
+    "B1 per accurate descriptive point; multi-mark items let you choose any of a list.",
+    "Wave descriptions must refer oscillations to the direction of energy transfer or travel.",
+    "Electron diffraction descriptions need diffraction by atomic spacing, rings, and λ comparable to the spacing.",
+    "Energy descriptions must name the right stores for that stage (no elastic energy once the spring is at natural length)."
+   ],
+   "how_to_score": [
+    "Give one fact per mark, in short separate sentences.",
+    "Use 'oscillate' or 'vibrate', not 'move', for particles in a wave.",
+    "Name the evidence and what it shows rather than restating the question."
+   ],
+   "pitfalls": [
+    "Saying particles move along with the wave (P2 Jun 2016 1(a)).",
+    "Describing the photoelectric effect when asked about wave behaviour of electrons (P2 Jun 2019 6(b)).",
+    "Including an energy store that is not involved (P1 Jun 2022 22(b))."
+   ],
+   "example_refs": [
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "1(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "6(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "22(a)"
+    }
+   ]
+  },
+  {
+   "type": "derivation",
+   "label": "Derivations",
+   "summary": "5 parts (1–3 marks): derive a relationship from first principles (base units of the volt, t² = (2/g)h, P = Fv, V = E − Ir, gradient of f against 1/L).",
+   "what_ms_wants": [
+    "C1/M1 for the starting equation(s) quoted correctly (W = VQ, s = ut + ½at² with u = 0, P = W/t, Kirchhoff's second law).",
+    "A1 for clear algebra reaching the target form; the target itself may be A0.",
+    "Every substitution visible, including definitions such as v = x/t or C = A s.",
+    "When matching to y = mx + c, the gradient must be identified explicitly."
+   ],
+   "how_to_score": [
+    "Start from a named law or definition and state any condition (u = 0, sum of e.m.f.s = sum of p.d.s).",
+    "Write one algebraic step per line.",
+    "Finish by comparing with y = mx + c or the required expression."
+   ],
+   "pitfalls": [
+    "Not stating u = 0 (P2 Jun 2018 3(d)(i)).",
+    "Treating the coulomb as a base unit (P2 Jun 2016 4(a)).",
+    "Using λ = L instead of λ = 2L (P1 Jun 2019 24(b)(ii))."
+   ],
+   "example_refs": [
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "4(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "5(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "5(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(b)(ii)"
+    }
+   ]
+  },
+  {
+   "type": "graph-area",
+   "label": "Area under a graph",
+   "summary": "5 parts of 2–3 marks: distance from a v–t graph (stopping distances, buggy) or work done from a non-linear force–extension graph.",
+   "what_ms_wants": [
+    "C1 for stating or using area = distance (or energy), C1/M1 for a correct partial area or square count.",
+    "A1 for the total within a tolerance band.",
+    "Thinking distance (constant speed section) must be included in stopping distance.",
+    "For curves, counting squares with the value of one square stated, not ½Fx for the whole curve."
+   ],
+   "how_to_score": [
+    "Split the area into rectangles and triangles and write each value.",
+    "State the value of one grid square in SI units before counting.",
+    "Include every section from t = 0, including any initial non-zero velocity."
+   ],
+   "pitfalls": [
+    "Omitting the thinking distance (P2 Jun 2023 1(a)(iii), Jun 2025 1(b)).",
+    "Using ½Fx on a non-linear curve (P2 Jun 2023 4(b)(ii)).",
+    "Missing the area below the starting velocity (P1 Jun 2022 21(a))."
+   ],
+   "example_refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "21(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "1(a)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "4(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "2(a)(ii)"
+    }
+   ]
+  },
+  {
+   "type": "estimate",
+   "label": "Estimates",
+   "summary": "3 parts (1–3 marks) where a sensible assumed value or order-of-magnitude reasoning is needed (adult mass on a stool, photons per X-ray photon, photons per second from a star).",
+   "what_ms_wants": [
+    "B1 for a sensible assumed value within a stated range (e.g. adult mass 50–150 kg).",
+    "C1 for the correct relationship (stress = F/A, E = hc/λ ratio, N = P/E).",
+    "A1 for the answer; 1 s.f. is accepted and g = 10 is allowed in estimates.",
+    "ECF is given for a wrong assumed value, and a power-of-ten slip does not cost the method mark."
+   ],
+   "how_to_score": [
+    "State your assumption with a number and unit.",
+    "Share loads correctly (e.g. three legs) and use total power rather than intensity.",
+    "Give the answer to 1–2 s.f."
+   ],
+   "pitfalls": [
+    "Forgetting to divide the weight between supports, or using mass instead of weight (P2 Jun 2019 2(b)).",
+    "Using intensity instead of total power (P1 Jun 2018 27(b)(iii)).",
+    "Inverting the energy ratio (P1 Nov 2021 24(c))."
+   ],
+   "example_refs": [
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "2(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "24(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "27(b)(iii)"
+    }
+   ]
+  },
+  {
+   "type": "other",
+   "label": "Other (instrument range and resolution)",
+   "summary": "A single 1-mark part (P2 Jun 2023 6(b)) asking which voltmeter, by range and resolution, could have given a stated reading.",
+   "what_ms_wants": [
+    "B1 for the meter whose range covers the reading and whose resolution matches the number of decimal places shown.",
+    "The answer is a choice from the options given, not a description.",
+    "Range is checked before resolution.",
+    "No calculation is needed; the reasoning is in matching the reading's decimal places to the meter."
+   ],
+   "how_to_score": [
+    "Rule out any meter whose maximum is below the reading.",
+    "Match the decimal places of the reading to the meter resolution.",
+    "Give just the letter or name asked for."
+   ],
+   "pitfalls": [
+    "Picking a meter whose range is too small for the reading.",
+    "Choosing a finer resolution than the reading shows.",
+    "Confusing resolution with accuracy."
+   ],
+   "example_refs": [
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "6(b)"
+    }
+   ]
+  }
+ ],
+ "patterns": [
+  {
+   "title": "Resistivity of a wire or heating element",
+   "topic": "4.2.4 Resistivity",
+   "detail": "Appears in 9 of 11 sessions. Usually a 3-mark ρ = RA/L calculation where the area must be found from a diameter (sometimes a stranded cable or a wire in a circuit with other components), often followed by percentage uncertainty or an R–L graph method; MCQs test how R changes with length and diameter.",
+   "ms_expects": [
+    "A = πd²/4 (or πr²) with d converted from mm to m; mm² to m² is ×10⁻⁶.",
+    "R found first from V/I or from the circuit (subtracting other p.d.s), then ρ = RA/L with ρ as subject.",
+    "Graph route: plot R against L, ρ = gradient × A, diameter by micrometer at several places and averaged.",
+    "Unit Ω m (not Ω m⁻¹ or Ω) when a unit mark is offered.",
+    "Specific partial-credit answers listed for diameter-as-radius and missing factors (2 of 3 marks).",
+    "Percentage uncertainty: the diameter's percentage is doubled."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "24(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "25(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "24(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "24(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "24(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "24(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "5(e)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "4(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "6(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "6(c)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "7(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "5"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "9"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "4"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "10"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "10"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "12"
+    }
+   ]
+  },
+  {
+   "title": "Projectile launched horizontally or at an angle",
+   "topic": "3.1.3 Projectile motion",
+   "detail": "A ball, ramp or stone set-up that splits into components: show-that for a component or a time, then range, maximum height or impact speed, sometimes KE at impact and a sketch of the path with air resistance. Paper 2 specimen, Jun 2016, Jun 2022 and Jun 2023 each build a whole question on it; Paper 2 Nov 2020 makes it a 6-mark practical.",
+   "ms_expects": [
+    "Resolve with the right trig function for the angle given (to horizontal or to vertical).",
+    "Vertical and horizontal motions treated separately; no acceleration horizontally; vertical velocity zero at the top.",
+    "Use g = 9.81 m s⁻²; g = 10 is penalised.",
+    "Impact speed from combining components with Pythagoras, or by energy conservation.",
+    "With air resistance the path lies below the original everywhere and peaks earlier."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "23(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "24(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "3(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "3(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "3(a)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "3(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "4(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "4(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "4(b)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "3(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "3(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "3(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "2(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "2(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "2(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "2(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "2(d)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "4"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "18"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "5"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "3"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "18"
+    }
+   ]
+  },
+  {
+   "title": "Photoelectric effect, threshold frequency and work function",
+   "topic": "4.5.2 The photoelectric effect",
+   "detail": "Present in every session. A typical sequence is a definition (threshold frequency, work function), an Einstein-equation calculation with eV to J conversion, then an explanation of why intensity changes the emission rate but not KEmax; graph versions give h from a gradient and f₀ or φ from an intercept. The gold-leaf electroscope version recurs (P2 Jun 2016 6-marker, P1 Jun 2022 MCQ, P1 Jun 2024 25).",
+   "ms_expects": [
+    "One photon interacts with one electron; photon energy hf = φ + KEmax with each term defined.",
+    "Work function and threshold frequency defined with the word 'minimum'.",
+    "Emission only if photon energy is at least the work function; below threshold, no emission however intense or long the exposure.",
+    "Intensity sets the rate of photons and hence of electrons (and current), not KEmax.",
+    "eV converted with 1.60 × 10⁻¹⁹ J; THz and ×10¹⁵ axis factors handled.",
+    "KEmax–f graph: gradient = h, x-intercept = f₀, y-intercept = −φ (beware false origins)."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "27(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "26(a)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "26(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "26(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "26(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "23(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "23(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "23(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "25(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "25(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "25(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "28(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "7(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "7(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "5(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "9(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "9(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "9(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "9(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "6(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "6(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "6(a)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "8(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "8(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "8(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "8(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "8(c)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "8(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "7(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "7(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "7(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "7(b)(ii)1"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "7(b)(ii)2"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "7(b)(ii)3"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "16"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "17"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "17"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "8"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "7"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "6"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "12"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "3"
+    }
+   ]
+  },
+  {
+   "title": "Stationary waves: strings, resonance tubes and microwaves",
+   "topic": "4.4.4 Stationary waves",
+   "detail": "Asked in every session. Paper 1 usually has a 2–3 mark 'explain how the stationary wave forms' plus a speed calculation from node spacing; Paper 2 has had three 6-mark versions (open/closed tubes, microwave reflector, resonance tube with uncertainty). MCQs test closed and open pipe harmonics.",
+   "ms_expects": [
+    "Formation: a progressive wave reflects, and the incident and reflected waves (travelling in opposite directions) superpose or interfere.",
+    "Nodes from destructive interference, antinodes from constructive; node to node spacing is λ/2.",
+    "Closed pipe: node at the closed end, antinode at the open end, L = λ/4 for the fundamental, odd harmonics only; open pipe: antinodes at both ends, L = λ/2.",
+    "Speed from v = fλ, with successive resonance lengths differing by λ/2 to remove end correction.",
+    "Nodes not perfectly zero because the reflected wave has smaller amplitude than the incident wave.",
+    "Stationary waves transfer no net energy; amplitude varies with position."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "26(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "26(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "26(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(b)(iv)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "24(b)(ii)1"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "24(b)(ii)2"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "22(b)(iv)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "23(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "23(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "6(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "6(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "7(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "7"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "6(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "6(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "6(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "6(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "6(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "6(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "19"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "20"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "6"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "14"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "5"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "6"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "18"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "13"
+    }
+   ]
+  },
+  {
+   "title": "Potential divider with a thermistor or LDR",
+   "topic": "4.3.3 Potential dividers",
+   "detail": "A fixed resistor in series with a sensor; parts ask for the output p.d. from the divider equation, the sensor resistance from a reading, and a 3–4 mark explanation of how meter readings change when temperature or light changes. Paper 2 has twice made it a 6-mark design task (specimen, Nov 2021).",
+   "ms_expects": [
+    "Chain of reasoning: sensor resistance changes, total resistance changes, current changes, p.d. across the fixed resistor changes, so the output changes.",
+    "V_out = R/(R_total) × V_in, or find the current first; both routes accepted.",
+    "NTC thermistor resistance falls as temperature rises; LDR resistance falls as light intensity rises.",
+    "Meter position matters: voltmeter across the fixed resistor gives a reading that rises with light or temperature.",
+    "Choosing the fixed resistor comparable with the sensor's resistance range gives the largest change in output.",
+    "Some explanation items forbid using the divider equation; they want the current-based argument."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "24(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "25(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "23(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "23(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "23(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "4(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "4(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "4(c)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "4(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "3(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "3(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "3(b)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "6"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "5(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "9"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "9"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "6"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "10"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "14"
+    }
+   ]
+  },
+  {
+   "title": "Young modulus and stress–strain",
+   "topic": "3.4.2 Mechanical properties of matter",
+   "detail": "A wire, cable or pillar under load: stress, then strain, then extension (or the reverse to find E or A), often from a graph gradient with axis multipliers. Paper 2 has used it for a 6-mark breaking-stress practical and a 6-mark materials comparison; MCQs test brittle/ductile graphs and UTS.",
+   "ms_expects": [
+    "E = stress/strain = FL/(Ax); stress = F/A, strain = x/L.",
+    "Unit conversions: mm² to m², GPa to Pa, cm to m, and no extra factor of g when the load is already in newtons.",
+    "Graph route: E = gradient of stress–strain, or gradient of F–x = AE/L.",
+    "Area from a diameter measured with a micrometer at several points, averaged.",
+    "Materials vocabulary: elastic (returns to original length), plastic (permanent), brittle (no plastic region), ductile; steeper line means larger E.",
+    "Answers with right digits but wrong power of ten usually keep 2 of 3 marks."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(c)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "21(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "21(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "21(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "21(c)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "23(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "23(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "23(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "23(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "6(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "6(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "4(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "2(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "2(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "4(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "2(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "2(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "2(b)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "2(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "12"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "13"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "16"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "8"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "19"
+    }
+   ]
+  },
+  {
+   "title": "Drag, terminal velocity and Stokes' law",
+   "topic": "3.2.2 Motion with non-uniform acceleration / 3.2.1 Dynamics",
+   "detail": "Falling spheres or particles in a fluid: explain why terminal velocity is reached, show it from distance–time data or a graph, then use a drag formula (Stokes, F = kv²) with weight and upthrust. Paper 2 set 6-mark plans on it in Jun 2017 and Jun 2023.",
+   "ms_expects": [
+    "At terminal velocity weight = drag (+ upthrust), so resultant force and acceleration are zero.",
+    "Drag increases with speed, so acceleration decreases as the object speeds up.",
+    "Show terminal velocity is reached with equal distances in equal times, measured after the initial acceleration.",
+    "Stokes calculations subtract upthrust from weight and use radius (not diameter) in SI.",
+    "Experiment: long tube with marks, time over intervals, check constancy, plot v against r² (or d²) and use the gradient."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "23(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "25(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "25(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "25(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "25(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "22(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "3(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "1(d)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "1(d)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "1(e)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "2"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "3"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "4"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "7"
+    }
+   ]
+  },
+  {
+   "title": "E.m.f. and internal resistance",
+   "topic": "4.3.2 Internal resistance",
+   "detail": "Cells with internal resistance feeding a load or network: find r or E from two readings or a V–I graph, calculate current or power wasted, and explain why terminal p.d. changes with load. Found in every session, with frequent MCQs.",
+   "ms_expects": [
+    "E = V + Ir (or E = I(R + r)), derived from Kirchhoff's second law as sum of e.m.f.s = sum of p.d.s.",
+    "Open-circuit voltmeter reading equals the e.m.f. (no current, so no lost volts).",
+    "Lost volts = E − V, then r = lost volts / I with the total current.",
+    "V–I graph: y-intercept = E, gradient = −r; experiment varies a resistor and records V and I.",
+    "Reducing load resistance increases current, increases lost volts, so terminal p.d. falls (ORA accepted).",
+    "Large r is undesirable because more power is dissipated inside the cell and less is delivered."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "25(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "24(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "23(a)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "23(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "21(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "21(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "25(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "6(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "6(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "6(d)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "7(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "7(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "7(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "7(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "5(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "5(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "7"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "8"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "7"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "18"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "16"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "18"
+    }
+   ]
+  },
+  {
+   "title": "Moments, equilibrium and triangle of forces",
+   "topic": "3.2.3 Equilibrium",
+   "detail": "A beam, plank, lever, rod or prism held by a cable or pivot: state the conditions for equilibrium or the principle of moments, take moments to find a force or distance, and sometimes draw a triangle of forces or explain an everyday effect (bending knees when lifting).",
+   "ms_expects": [
+    "Two conditions: resultant force zero in any direction and resultant moment zero about any point.",
+    "Principle of moments stated for a body in equilibrium, about the same point.",
+    "Moment = force × perpendicular distance from the pivot, using the component of an inclined force (T sin θ).",
+    "Weight of a uniform object acts at its centre; mass converted to weight with g = 9.81.",
+    "Triangle of forces closes with arrows nose to tail; three non-parallel forces meet at a point.",
+    "Explanations follow: perpendicular distance changes, so moment changes, so the force needed changes."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "22(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "22(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "22(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "21(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "22(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "22(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "24(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "26(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "4(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "3(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "3(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "3(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "4(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "4(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "4(c)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "4(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "6(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "6(b)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "6(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "1(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "1(c)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "1(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "7"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "5"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "15"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "13"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "15"
+    }
+   ]
+  },
+  {
+   "title": "Collisions, impulse and rebounding balls",
+   "topic": "3.5.2 Collisions / 3.5.1 Newton's laws",
+   "detail": "Gliders, pucks or balls colliding or bouncing: momentum before and after, impulse from the area under an F–t graph, average force from change in momentum, and elastic vs inelastic decided by kinetic energy. Appears in every session, including a 6-mark air-track explanation (P2 Nov 2021).",
+   "ms_expects": [
+    "Momentum is a vector: a rebound changes sign, so Δp = m(v + u) for reversal.",
+    "Force = rate of change of momentum (F = Δp/Δt), and impulse = area under the F–t graph (½ × base × height for a triangle).",
+    "Conservation of momentum stated with 'no external force' or 'closed system'.",
+    "Elastic means kinetic energy is conserved; total energy and momentum are conserved in every collision.",
+    "Newton's third law on p–t graphs: gradients equal in size and opposite in sign.",
+    "Schemes list the sign-error answer and give it 1 mark."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "24(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "24(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "24(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "23(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "23(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "22(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "23(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "23(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "21(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "21(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "21(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "5(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "5(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "5(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "5(b)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "2(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "2(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "2(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "2(c)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "2(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "6(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "6(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "6(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "6(b)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "6(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "3(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "3(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "3(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "3(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "3(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "3(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "10"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "15"
+    }
+   ]
+  },
+  {
+   "title": "Refraction, critical angle and total internal reflection",
+   "topic": "4.4.2 Electromagnetic waves (refraction)",
+   "detail": "A glass block, semicircular block, prism or dish: Snell's law calculations, critical angle from n, a show-that that TIR occurs, ray-path drawings, and a practical method with a ray box. Paper 2 builds a whole question on it in Jun 2018, Nov 2020, Jun 2022 and Jun 2024.",
+   "ms_expects": [
+    "n = c/v with c the speed of light in a vacuum; n₁ sin θ₁ = n₂ sin θ₂ with angles measured from the normal.",
+    "sin C = 1/n (or n₂/n₁ between two media); TIR needs travel towards the lower-index medium and an angle of incidence greater than C.",
+    "Frequency is unchanged at a boundary; speed and wavelength both fall in the denser medium.",
+    "Method: single-slit ray box, darkened room, mark rays with crosses, protractor at the normal, n = sin i / sin r (or 1/sin C).",
+    "Ray diagrams: bends towards the normal on entering glass, away on leaving; TIR drawn as reflection at equal angles."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "26(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "24(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "22(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "22(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "22(c)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(b)(ii)1"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(b)(ii)2"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "25(b)(ii)3"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "8(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "8(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "8(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "8(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "5(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "5(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "5(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "5(d)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "5(d)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "5(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "5(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "5(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "5(b)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "5(b)(iv)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "5(b)(v)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "7(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "2(b)(i)2"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "2(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "2(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "3"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "5"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "13"
+    }
+   ]
+  },
+  {
+   "title": "Two-source interference, double slit and coherence",
+   "topic": "4.4.3 Superposition",
+   "detail": "Two dippers, speakers, slits or a source plus reflector: define coherence or superposition, decide constructive or destructive from a path difference, then find λ from x = λD/a or a phase difference. Paper 2 used 6-mark versions in Jun 2019 (sound fringes vs frequency) and Jun 2022 (microwave reflector).",
+   "ms_expects": [
+    "Coherent means constant phase difference (not 'same' or 'zero' phase difference).",
+    "Superposition: resultant displacement is the sum of the individual displacements (not amplitudes).",
+    "Maxima where path difference = nλ (phase difference 0); minima where it is (n + ½)λ (180° or π rad).",
+    "λ = ax/D with x measured across several fringes and divided by the number of spacings.",
+    "Phase difference given in radians when asked; path difference converted to fractions of λ first."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "25(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "25(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "25(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "26(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "27(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "27(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "27(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "25(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "25(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "25(c)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "25(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "2(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "2(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "2(b)1"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "2(b)2"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "2(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "5(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "5(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "5(b)(ii)1"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "5(b)(ii)2"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "5(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "8"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "5(c)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "5(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "7(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "7(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "7(b)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "1(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "1(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "1(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "1(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "18"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "11"
+    }
+   ]
+  },
+  {
+   "title": "Density, upthrust and floating objects",
+   "topic": "3.2.4 Density and pressure",
+   "detail": "A sphere, cylinder or loaded tube in a liquid: find density or volume (show-that), upthrust from Archimedes' principle, then the depth or height of a floating object and how it changes in a denser or less dense liquid. Paper 2 has a full question on it in Jun 2019, Jun 2022, Jun 2025 and Nov 2021.",
+   "ms_expects": [
+    "Upthrust = weight of fluid displaced (not mass or volume displaced) = ρ_fluid × V × g.",
+    "For a floating object, upthrust equals the object's weight; depth submerged = volume displaced / cross-sectional area.",
+    "Sphere volume (4/3)πr³ using radius; g and cm³ converted to SI with powers of ten shown.",
+    "Apparent weight in liquid = weight − upthrust (newtonmeter or spring methods).",
+    "In a denser liquid less volume is displaced, so the object floats higher (ORA)."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "23(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "23(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "23(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "3(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "3(a)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "3(a)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "3(a)(iv)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "3(c)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "3(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "1(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "1(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "2(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "2(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "2(b)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "6(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "4(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "4(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "4(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "4(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "4(a)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "15"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "20"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "11"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "1"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "3"
+    }
+   ]
+  },
+  {
+   "title": "Electron diffraction and de Broglie wavelength",
+   "topic": "4.5.3 Wave-particle duality",
+   "detail": "Electrons accelerated through a p.d. hit graphite: show the speed from eV = ½mv², calculate λ = h/mv, and explain how the rings show wave behaviour and change with p.d. Paper 2 set 6-mark versions in Nov 2020 and Jun 2024.",
+   "ms_expects": [
+    "Energy gained eV = ½mv², so v = √(2eV/m); p = mv.",
+    "λ = h/p, and λ ∝ 1/√V (not 1/V).",
+    "Rings show diffraction by the spaces between carbon atoms; diffraction is significant because λ is comparable to the atomic spacing.",
+    "Higher p.d. gives more momentum, shorter wavelength, less diffraction, so rings closer together.",
+    "Rings rather than spots because graphite crystals are randomly oriented."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2019",
+     "q": "25(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2022",
+     "q": "26(a)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "26(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "26(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "26(b)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "8(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "8(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2016",
+     "q": "8(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2018",
+     "q": "9(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2019",
+     "q": "6(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "6(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2022",
+     "q": "6(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2024",
+     "q": "8"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "8"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "4"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "14"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "3"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2025",
+     "q": "7"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "7"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "14"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "19"
+    }
+   ]
+  },
+  {
+   "title": "Stopping distance and braking from a v–t graph",
+   "topic": "3.1.2 Linear motion / 3.2.1 Dynamics",
+   "detail": "A car or train with a thinking phase then constant deceleration: deceleration from the gradient, braking force from F = ma, stopping distance from the area, and a sketch or explanation of what changes at a different speed or on a different surface. Paper 2 opens with it in Jun 2017, Nov 2020, Jun 2023 and Jun 2025.",
+   "ms_expects": [
+    "Stopping distance = thinking distance + braking distance (defined from seeing the hazard to stopping).",
+    "Deceleration = gradient of the braking section only; thinking time excluded from Δt.",
+    "Distance = area under the v–t graph including the constant-speed thinking section.",
+    "Braking force = ma (or from work done = KE lost), sign ignored.",
+    "At half speed: same thinking time and same deceleration, so the braking line has the same gradient."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "22(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "22(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "1(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "1(b)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "1(b)(ii)1"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "1(b)(ii)2"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "1(b)(ii)3"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "1(b)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "5(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "5(c)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "5(d)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2020",
+     "q": "5(e)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "1(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "1(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "1(a)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "1(a)(iv)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "1(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2023",
+     "q": "1(c)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "1(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "1(b)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "1(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "10"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "13"
+    }
+   ]
+  },
+  {
+   "title": "Photons from LEDs and lasers: photon rate and the Planck constant",
+   "topic": "4.5.1 Photons",
+   "detail": "An LED or laser of given power and wavelength: photon energy from E = hc/λ, photons per second from N = P/E, and in the practical version the striking p.d. of several LEDs plotted to find h. Paper 2 set 6-mark plans in the specimen and Jun 2025.",
+   "ms_expects": [
+    "E = hc/λ with λ in metres; N = P/E with P in watts (mW converted).",
+    "Photon energy depends on frequency, not intensity; doubling intensity doubles the photon rate only.",
+    "LED method: increase p.d. until the LED just lights, view it through a tube or in a darkened room, repeat and average.",
+    "eV = hc/λ, so V against 1/λ (or f) is a straight line with gradient hc/e (or h/e); h = e × gradient / c.",
+    "Percentage uncertainty in h from a worst acceptable line."
+   ],
+   "refs": [
+    {
+     "paper": 1,
+     "slug": "jun2016",
+     "q": "27(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "27(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2018",
+     "q": "27(b)(iii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "23(c)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(b)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(c)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2024",
+     "q": "26(d)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "28(b)(i)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2020",
+     "q": "28(b)(ii)"
+    },
+    {
+     "paper": 1,
+     "slug": "nov2021",
+     "q": "23(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "specimen",
+     "q": "26(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2017",
+     "q": "5(c)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "7(a)"
+    },
+    {
+     "paper": 2,
+     "slug": "jun2025",
+     "q": "8"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "7(a)(i)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "7(a)(ii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "7(a)(iii)"
+    },
+    {
+     "paper": 2,
+     "slug": "nov2021",
+     "q": "7(a)(iv)"
+    },
+    {
+     "paper": 2,
+     "slug": "specimen",
+     "q": "7(a)"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2017",
+     "q": "10"
+    },
+    {
+     "paper": 1,
+     "slug": "jun2023",
+     "q": "12"
+    }
+   ]
+  }
+ ],
+ "command_words": [
+  {
+   "word": "Calculate",
+   "ms_expects": "The most common word (169 parts): a numerical answer with C1 marks for each correct substitution or intermediate value and A1 for the final value, with units implied unless a unit mark is listed."
+  },
+  {
+   "word": "Select",
+   "ms_expects": "Paper 1 MCQs (121): one letter only, B1, and two letters score zero."
+  },
+  {
+   "word": "Which/What",
+   "ms_expects": "MCQ wording used from 2022 onward (100 items): a single correct option, often a ratio or a statement test."
+  },
+  {
+   "word": "Explain",
+   "ms_expects": "A linked chain of physics reasons, one B1 per link, using named principles and the data or graph supplied."
+  },
+  {
+   "word": "Determine",
+   "ms_expects": "A value obtained from data, a graph or an earlier part; read-offs, gradients or areas must be shown and fall within the scheme's range."
+  },
+  {
+   "word": "State",
+   "ms_expects": "A short, precise answer or definition with no reasoning needed; essential qualifiers (minimum, constant, any point) carry the mark."
+  },
+  {
+   "word": "Show (that)",
+   "ms_expects": "Full working toward a given value: substitution with the unknown as subject and a result to more s.f. than quoted; the given value alone is A0."
+  },
+  {
+   "word": "Describe",
+   "ms_expects": "For practicals, apparatus, measurements and analysis in order; for phenomena, factual points about what happens, one per mark."
+  },
+  {
+   "word": "Suggest",
+   "ms_expects": "A plausible, context-specific reason or improvement with its consequence; generic answers such as 'repeat readings' are rejected."
+  },
+  {
+   "word": "Draw / Sketch",
+   "ms_expects": "Marks for specific features: correct directions and labels for arrows, correct start, end and shape for graphs, ruled straight rays."
+  },
+  {
+   "word": "State and explain",
+   "ms_expects": "Usually M1 for the reasoning (often an equation with what is held constant) and A1 for the stated effect, which is not credited on its own."
+  },
+  {
+   "word": "Complete",
+   "ms_expects": "Fill a table, diagram or graph consistently with the given data (same decimal places, values to the requested s.f.)."
+  }
+ ],
+ "conventions": [
+  {
+   "code": "B1",
+   "meaning": "Independent mark for a specific point that must be seen; it does not depend on any other mark."
+  },
+  {
+   "code": "M1",
+   "meaning": "Method mark that must be seen; any A mark that depends on it cannot be scored without it."
+  },
+  {
+   "code": "C1",
+   "meaning": "Compensatory method mark: given for a correct step even if the final answer is wrong, and given automatically when the final answer is correct."
+  },
+  {
+   "code": "A1",
+   "meaning": "Accuracy or answer mark for the correct final value or conclusion; depends on the associated M or C marks."
+  },
+  {
+   "code": "A0",
+   "meaning": "Used on show-that lines: writing the given value earns nothing by itself; all credit is in the working."
+  },
+  {
+   "code": "ECF",
+   "meaning": "Error carried forward: a wrong earlier answer used correctly later is not penalised again, so later parts can still score full marks."
+  },
+  {
+   "code": "AE",
+   "meaning": "Arithmetic error: lose the mark where the slip happens, then ECF applies if there are no further errors."
+  },
+  {
+   "code": "TE",
+   "meaning": "Transcription error (miscopying data from the question, graph, data booklet or earlier answer): lose that mark only, then ECF."
+  },
+  {
+   "code": "POT",
+   "meaning": "Power-of-ten error, usually an SI prefix slip: lose the mark where it occurs, then ECF; schemes often list the POT answer as scoring all but one mark."
+  },
+  {
+   "code": "XP (WP)",
+   "meaning": "Wrong physics or wrong equation: no ECF follows, even if the number happens to come out right."
+  },
+  {
+   "code": "SF rule",
+   "meaning": "If data are given to 2 s.f., answers to 2 or more s.f. are accepted; too few s.f. is penalised once per paper, but when a question asks for a set number of s.f. the final mark needs exactly that."
+  },
+  {
+   "code": "any subject",
+   "meaning": "For a substitution mark the equation may be rearranged with any quantity as subject, unless the guidance says the unknown must be the subject."
+  },
+  {
+   "code": "AW / ORA",
+   "meaning": "Alternative wording with the same meaning is accepted; or reverse argument (arguing the opposite case correctly) is also credited."
+  },
+  {
+   "code": "allow / not (reject) / ignore",
+   "meaning": "'Allow' lists acceptable alternatives; 'not' or 'reject' lists answers that earn nothing; 'ignore' marks extra material that is neither credited nor penalised."
+  },
+  {
+   "code": "( ) and underlining",
+   "meaning": "Words in brackets are not essential; underlined words must appear for the mark; units in brackets are not needed when printed on the answer line."
+  },
+  {
+   "code": "CON",
+   "meaning": "A contradiction within one response cancels the mark even if one of the statements is correct; hedged extra answers in list questions gain nothing and only the requested number is marked, left to right."
+  },
+  {
+   "code": "BOD",
+   "meaning": "Benefit of doubt given to an answer that is not perfectly expressed but shows the right idea."
+  },
+  {
+   "code": "L1 / L2 / L3",
+   "meaning": "Level-of-response bands for the 6-mark asterisked questions: L1 = 1–2, L2 = 3–4, L3 = 5–6; a caret (e.g. L2^) marks the lower mark in a level."
+  },
+  {
+   "code": "Choosing a level",
+   "meaning": "Read the whole answer, place it by best fit on the science content against each strand, then award the higher or lower mark in that level by the quality of reasoning and communication; indicative points are guidance, not a checklist. From 2025 examiners work down from the top level, with borderline answers at the bottom of a level."
+  },
+  {
+   "code": "NR / 0",
+   "meaning": "NR is recorded for no response; 0 is given for an attempt with no creditworthy content, including copying the question."
+  }
+ ],
+ "golden_rules": [
+  "Show the substitution in every calculation: in 91 multi-step parts the usual split is C1 C1 A1, so correct working still scores 2 of 3 even when the final answer is wrong.",
+  "In a show-that, give your value to at least one more significant figure than printed (e.g. 3.39 for 3.4, 839 for 840): 27 of 55 show-that schemes give the final value A0, and 12 flag too few figures as the main slip.",
+  "Give answers to 2–3 s.f.: with 2 s.f. data, 2 or more s.f. is accepted and too few is penalised once per paper, but when a question asks for a set number of s.f. (24 parts do) the final mark needs exactly that.",
+  "Convert to SI before substituting: unit and prefix conversions (mm², nm, mW, eV, GPa, minutes and hours) are flagged in roughly 90 parts, and a POT slip costs one mark and is then carried forward.",
+  "Use the right equation: wrong physics (XP), such as squaring area or using 9.81 m s⁻² for a lift's acceleration, gets no error carried forward, while arithmetic, transcription and power-of-ten slips do.",
+  "Use g = 9.81 m s⁻², not 10; schemes penalise g = 10 where it changes the 2 s.f. answer (8 parts mention it), except in estimates.",
+  "Diameter is not radius: halve the measured diameter, square it for area, cube it for volume; this slip is listed as costing marks in at least 10 parts.",
+  "Units only cost a mark when the question asks for one and a separate unit mark is listed (6 parts have a B1 for the unit, e.g. Ω m, Pa s, C, N); when the unit is printed on the answer line it need not be repeated.",
+  "Definitions are marked on qualifiers: 'constant' phase difference, 'minimum' energy or frequency, 'about any point', 'displacement' not amplitude, and Newton's second law in terms of momentum, never F = ma alone.",
+  "When two velocities are opposite, add the speeds for the change in momentum; schemes list the subtracted answer as worth 1 mark at most.",
+  "Gradients come from a large triangle on your best-fit line (at least half its length), with axis multipliers included; single data points and small triangles are rejected in 11 schemes.",
+  "Percentage uncertainties add, and a power multiplies them (×2 for a square, ×3 for a cube); not doing so is the commonest uncertainty error.",
+  "A 6-mark Paper 2 answer reaches L3 only when every strand in the stem is covered: a labelled diagram, named instruments, what is varied and controlled, a specific safety point, the straight-line graph to plot, and how the gradient or intercept gives the answer (plus its percentage uncertainty if asked).",
+  "Never contradict yourself or hedge: contradictory statements score zero, only the requested number of list answers is marked, and two letters on an MCQ score nothing."
+ ]
+}

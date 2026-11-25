@@ -1,0 +1,1362 @@
+{
+ "paper": 1,
+ "session": "June 2018",
+ "slug": "jun2018",
+ "total_marks": 70,
+ "general_conventions": [
+  "Marks use OCR's MACB categories: B = independent mark that must be explicitly seen; M = method mark on which A marks depend; C = compensatory method mark that can be credited if later correct working implies it; A = accuracy/answer mark dependent on M or C.",
+  "Conventions: '/' separates alternative acceptable answers; reject/not = not creditworthy; ignore = irrelevant; allow = acceptable; bracketed words are not required; underlined words are essential; ECF = error carried forward; AW = alternative wording; ORA = or reverse argument; 'any subject' = equation may be rearranged in any form.",
+  "AE (arithmetic error): the mark where the slip occurs is lost but later working gets full ECF if no further errors. TE (transcription error, e.g. misreading data or a graph): lose that mark, then ECF. POT (power-of-ten, often SI prefix) errors: lose the mark where it occurs, then ECF.",
+  "ECF applies in numerical answers within a question for AE, TE and POT errors but NOT for XP (wrong physics or equation); an incorrect equation is wrong physics even if it happens to give the right answer.",
+  "SF: giving more significant figures than justified is not penalised; too few is handled within the scheme and penalised once only in the paper. With 2 s.f. data, 2 or more s.f. is accepted.",
+  "CON: a contradiction within a response loses the mark; BOD: benefit of doubt for a not totally satisfactory answer; ^ marks an omission where more is needed. Level-of-response annotations L1/L2/L3 (with ^ for the lower mark in a level) are available though this paper is mainly point-marked.",
+  "Section A: 20 multiple-choice items at 1 mark each; Section B: structured questions worth 50 marks; total 70. In 'show that' questions the final given value carries A0 – marks are for the working."
+ ],
+ "questions": [
+  {
+   "q": "1",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 5,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.1 Kinematics",
+   "subtopic": "velocity from s-t graph",
+   "type": "mcq",
+   "secondary_types": [
+    "graph-gradient"
+   ],
+   "command_word": "Select",
+   "context": "point of maximum velocity on displacement-time graph",
+   "answer": "B",
+   "marking_points": [
+    "B1: correct option B (steepest gradient)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "graph shape not visible in text"
+   ],
+   "equations": [
+    "v = Δs/Δt"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "2",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 5,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.1.1 Physical quantities",
+   "subtopic": "definitions using quantities",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Select",
+   "context": "definition using only quantities, not units",
+   "answer": "D e.m.f. as energy per unit charge",
+   "marking_points": [
+    "B1: correct option D (others mention seconds or amperes (units) or omit time)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "choosing A which uses ‘per second’"
+   ],
+   "equations": [],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "3",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 5,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.3 Projectile motion",
+   "subtopic": "resultant force on projectile",
+   "type": "mcq",
+   "secondary_types": [
+    "sketch-draw"
+   ],
+   "command_word": "Select",
+   "context": "direction of resultant force on ball in flight with small drag",
+   "answer": "B",
+   "marking_points": [
+    "B1: correct option B (nearly vertically down (weight dominates, drag slightly opposes motion))"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "diagram not visible in text"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "4",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 5,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5.2 Collisions",
+   "subtopic": "momentum change in collision",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Select",
+   "context": "change of momentum of Q when P’s momentum drops from 40 to 10 kg m s^-1",
+   "answer": "C 30 kg m s^-1",
+   "marking_points": [
+    "B1: correct option C (momentum conserved so Q gains what P loses)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "Δp_P = −Δp_Q"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "5",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 5,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.4 Resistivity",
+   "subtopic": "resistance scaling",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Select",
+   "context": "resistance of wire with 3× length and 2× diameter",
+   "answer": "A 0.750 Ω",
+   "marking_points": [
+    "B1: correct option A (R ∝ L/d² → 3/4)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "using diameter not area (gives 1.50 Ω)"
+   ],
+   "equations": [
+    "R = ρL/A"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "6",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 5,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.1 Series and parallel circuits",
+   "subtopic": "series lamps power ratio",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Select",
+   "context": "p.d. across lamp X in series with Y given powers 2.0 W and 6.0 W on 16 V",
+   "answer": "B 4.0 V",
+   "marking_points": [
+    "B1: correct option B (same current so V ∝ P)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "P = VI"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 5,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.2 Internal resistance",
+   "subtopic": "p.d. with internal resistance",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Select",
+   "context": "p.d. across 2.0 Ω resistor in series with 4.0 Ω on cell 1.4 V, r = 1.0 Ω",
+   "answer": "A 0.40 V",
+   "marking_points": [
+    "B1: correct option A (I = 1.4/7.0 = 0.20 A)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "ignoring internal resistance (gives 0.47 V)"
+   ],
+   "equations": [
+    "ε = I(R + r)"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "8",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 5,
+   "ms_page": 5,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2.1 Measurements and uncertainties",
+   "subtopic": "uncertainty in P = I²R",
+   "type": "mcq",
+   "secondary_types": [
+    "uncertainty-error"
+   ],
+   "command_word": "Select",
+   "context": "% uncertainty in power from I and R uncertainties",
+   "answer": "B 20%",
+   "marking_points": [
+    "B1: correct option B (2 × 5% + 10%)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "not doubling the current %"
+   ],
+   "equations": [
+    "%P = 2%I + %R"
+   ],
+   "skills": [
+    "uncertainty"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "9",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 5,
+   "ms_page": 5,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "hinge force direction",
+   "type": "mcq",
+   "secondary_types": [
+    "sketch-draw"
+   ],
+   "command_word": "Select",
+   "context": "direction of force on rod at hinge with cable to midpoint",
+   "answer": "C",
+   "marking_points": [
+    "B1: correct option C (three forces in equilibrium must be concurrent)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "diagram not visible in text"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 3
+  },
+  {
+   "q": "10",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 5,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.2 Linear motion",
+   "subtopic": "stopping distance from v-t graph",
+   "type": "mcq",
+   "secondary_types": [
+    "graph-area"
+   ],
+   "command_word": "Select",
+   "context": "stopping distance given thinking distance 10 m and v-t graph",
+   "answer": "B 30 m",
+   "marking_points": [
+    "B1: correct option B (braking area equals twice thinking area in graph)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "graph values not visible in text"
+   ],
+   "equations": [
+    "distance = area under v-t"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "11",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 5,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5.1 Newton's laws of motion",
+   "subtopic": "rate of change of momentum",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Select",
+   "context": "rate of change of javelin momentum with 100 N force for 0.30 s",
+   "answer": "C 100 kg m s^-2",
+   "marking_points": [
+    "B1: correct option C (rate of change of momentum equals force)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "multiplying by time (gives impulse 30)"
+   ],
+   "equations": [
+    "F = Δp/Δt"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "12",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 5,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.2 Mechanical properties of matter",
+   "subtopic": "tensile stress",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Select",
+   "context": "stress in 0.62 mm wire holding 3.0 kg",
+   "answer": "D 9.7 × 10^7 Pa",
+   "marking_points": [
+    "B1: correct option D (F = 29.4 N; A = π(0.31 mm)²)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "using diameter as radius",
+    "forgetting g"
+   ],
+   "equations": [
+    "σ = F/A"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "13",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 5,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.3 Resistance",
+   "subtopic": "LDR mechanism",
+   "type": "mcq",
+   "secondary_types": [
+    "explain"
+   ],
+   "command_word": "Select",
+   "context": "reason LDR resistance falls when illuminated",
+   "answer": "C number density of charge carriers increases",
+   "marking_points": [
+    "B1: correct option C (more free electrons released by light)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "I = Anev"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "14",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 5,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.1.1 Charge",
+   "subtopic": "electronvolt energy per electron",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Select",
+   "context": "p.d. given 20 electrons gain total 30 keV",
+   "answer": "C 1500 V",
+   "marking_points": [
+    "B1: correct option C (each electron gains 1.5 keV)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "W = QV"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "15",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 8,
+   "ms_page": 5,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5.1 Newton's laws of motion",
+   "subtopic": "impulse reversing direction",
+   "type": "mcq",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Select",
+   "context": "final momentum after 3.0 N opposing force for 1.5 s on 1.0 kg trolley at 2.0 m s^-1",
+   "answer": "B 2.5 kg m s^-1",
+   "marking_points": [
+    "B1: correct option B (2.0 − 4.5 = −2.5 (reversed))"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "adding instead of subtracting impulse"
+   ],
+   "equations": [
+    "Δp = FΔt"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "16",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 8,
+   "ms_page": 5,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.1.1 Charge",
+   "subtopic": "number of electrons from current",
+   "type": "mcq",
+   "secondary_types": [
+    "estimate"
+   ],
+   "command_word": "Select",
+   "context": "order of magnitude of electrons passing in 10 s at 10 mA",
+   "answer": "C 10^18",
+   "marking_points": [
+    "B1: correct option C (Q = 0.10 C; N = Q/e ≈ 6 × 10^17)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "Q = It",
+    "N = Q/e"
+   ],
+   "skills": [
+    "estimate"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "17",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 8,
+   "ms_page": 5,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.2 The photoelectric effect",
+   "subtopic": "range of photoelectron energies",
+   "type": "mcq",
+   "secondary_types": [
+    "explain"
+   ],
+   "command_word": "Select",
+   "context": "kinetic energy that photoelectrons cannot have with 5.0 eV photons and 3.0 eV work function",
+   "answer": "D 3.0 eV",
+   "marking_points": [
+    "B1: correct option D (KE ranges 0 to 2.0 eV)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "hf = φ + KEmax"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "18",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 9,
+   "ms_page": 5,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "coherence",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Select",
+   "context": "quantity that must be constant for coherent sources",
+   "answer": "D phase difference",
+   "marking_points": [
+    "B1: correct option D (coherence = constant phase difference)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "choosing frequency"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "19",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 9,
+   "ms_page": 5,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.4 Stationary waves",
+   "subtopic": "closed pipe stationary wave",
+   "type": "mcq",
+   "secondary_types": [
+    "graph-read"
+   ],
+   "command_word": "Select",
+   "context": "wavelength of sound in 60 cm tube closed at one end from pattern",
+   "answer": "D 80 cm",
+   "marking_points": [
+    "B1: correct option D (pattern shows three-quarters of a wavelength in 60 cm)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "diagram not visible in text"
+   ],
+   "equations": [
+    "L = 3λ/4"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "20",
+   "section": "A",
+   "marks": 1,
+   "qp_page": 9,
+   "ms_page": 5,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.1.2 S.I. units",
+   "subtopic": "base units of energy",
+   "type": "mcq",
+   "secondary_types": [
+    "define-state"
+   ],
+   "command_word": "Select",
+   "context": "SI base units of energy",
+   "answer": "D kg m² s^-2",
+   "marking_points": [
+    "B1: correct option D (J = N m = kg m s^-2 × m)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "W = Fx"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "21(a)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 10,
+   "ms_page": 6,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1.1 Planning",
+   "subtopic": "final velocity by timing",
+   "type": "practical-method",
+   "secondary_types": [],
+   "command_word": "Describe",
+   "context": "how ruler and stopwatch give final velocity of trolley released from rest",
+   "answer": "v = 2 × distance / time",
+   "marking_points": [
+    "B1: measure ramp distance with rule and time with stopwatch",
+    "B1: v = 2 × average velocity (v = 2s/t) since u = 0"
+   ],
+   "allow_reject_ignore": [
+    "reject s = ½vt without v as subject",
+    "allow v = 2x/t undefined",
+    "1 mark for measuring height and v = √(2gh) if no timing"
+   ],
+   "pitfalls": [
+    "using v = s/t (average not final)"
+   ],
+   "equations": [
+    "s = ½(u + v)t"
+   ],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "21(b)(i)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 10,
+   "ms_page": 6,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.2 Linear motion",
+   "subtopic": "suvat acceleration",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "acceleration between X and Y given speeds and 1.10 m separation",
+   "answer": "2.1 m s^-2",
+   "marking_points": [
+    "C1: 2.5² = 1.3² + 2 × 1.10 × a",
+    "A1: a = 2.1 m s^-2 (2.07)"
+   ],
+   "allow_reject_ignore": [
+    "other methods allowed"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "v² = u² + 2as"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "21(b)(ii)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 11,
+   "ms_page": 6,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.1 Dynamics",
+   "subtopic": "ramp angle from acceleration",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "ramp angle using a = g sinθ",
+   "answer": "12°",
+   "marking_points": [
+    "C1: a = g sinθ with values",
+    "A1: θ = 12°"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (b)(i)",
+    "tan^-1 is wrong physics",
+    "1 mark for 78°"
+   ],
+   "pitfalls": [
+    "using tan or cos"
+   ],
+   "equations": [
+    "a = g sinθ"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "22(a)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 12,
+   "ms_page": 7,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "resultant of spring tensions",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "magnitude and direction of resultant of spring forces at X",
+   "answer": "4.8 N upwards",
+   "marking_points": [
+    "B1: magnitude equal to W, 4.8 N",
+    "B1: direction upwards / opposite to weight"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "22(b)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 12,
+   "ms_page": 7,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "triangle of forces",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Sketch",
+   "context": "labelled triangle of forces for three forces at X",
+   "answer": "right-angled triangle, W longest side, arrows nose-to-tail",
+   "marking_points": [
+    "B1: triangle with forces labelled, right angle marked, W longest side",
+    "B1: arrows consistently clockwise or anticlockwise (all three needed)"
+   ],
+   "allow_reject_ignore": [
+    "orientation ignored"
+   ],
+   "pitfalls": [
+    "arrows not following round"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "22(c)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 13,
+   "ms_page": 7,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "resolving tensions",
+   "type": "show-that",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Show",
+   "context": "that each spring tension is 3.4 N",
+   "answer": "3.39 N",
+   "marking_points": [
+    "B1: 2T² = 4.8² or 2T sin45° = 4.8",
+    "B1: T = 3.39 N (≥3 s.f.)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "only quoting 3.4 N without more s.f."
+   ],
+   "equations": [
+    "2T cos45° = W"
+   ],
+   "skills": [
+    "sig-figs"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "22(d)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 13,
+   "ms_page": 7,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.1 Springs",
+   "subtopic": "elastic energy in spring",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "energy stored in each spring of force constant 24 N m^-1",
+   "answer": "0.24 J",
+   "marking_points": [
+    "C1: x = 3.4/24 ≈ 0.14 m (or E = F²/2k)",
+    "A1: E = 0.24 J"
+   ],
+   "allow_reject_ignore": [
+    "no ECF from (c)"
+   ],
+   "pitfalls": [
+    "using W instead of T"
+   ],
+   "equations": [
+    "F = kx",
+    "E = ½kx²"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "23(a)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 15,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.4 Density and pressure",
+   "subtopic": "upthrust on tethered tube",
+   "type": "explain",
+   "secondary_types": [
+    "graph-read"
+   ],
+   "command_word": "Explain",
+   "context": "explain shape of graph of string force vs time as container fills",
+   "answer": "F rises as upthrust grows, then constant once tube submerged",
+   "marking_points": [
+    "B1: forces are weight, upthrust and tension",
+    "B1: upthrust increases (before 60 s)",
+    "B1: one detail: upthrust = weight of water displaced which grows (then constant); linear rise from constant fill rate; constant once fully submerged; F = U − W"
+   ],
+   "allow_reject_ignore": [
+    "reject mass/volume of water displaced for upthrust",
+    "allow buoyancy force but not ‘buoyancy’"
+   ],
+   "pitfalls": [
+    "saying upthrust equals mass of water displaced"
+   ],
+   "equations": [
+    "F = U − W"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "23(b)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 15,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.1 Dynamics",
+   "subtopic": "acceleration of buoyant tube",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "initial upward acceleration of tube once string cut",
+   "answer": "42 m s^-2",
+   "marking_points": [
+    "C1: resultant force = 4.2 − 0.8 = 3.4 N",
+    "C1: mass = 0.8/9.81 ≈ 0.082 kg",
+    "A1: a ≈ 42 m s^-2"
+   ],
+   "allow_reject_ignore": [
+    "reject m = 0.08 kg (2 marks for 42.5/43)"
+   ],
+   "pitfalls": [
+    "using weight as mass"
+   ],
+   "equations": [
+    "F = ma",
+    "W = mg"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "23(c)",
+   "section": "B",
+   "marks": 1,
+   "qp_page": 15,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.2 Motion with non-uniform acceleration",
+   "subtopic": "drag on rising tube",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "why the tube’s upward acceleration decreases",
+   "answer": "drag increases with speed",
+   "marking_points": [
+    "B1: increasing drag/resistive force (or upthrust falls as tube leaves water)"
+   ],
+   "allow_reject_ignore": [
+    "reject drag and upthrust together unless qualified"
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "24(a)(i)",
+   "section": "B",
+   "marks": 1,
+   "qp_page": 16,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.5 Power",
+   "subtopic": "power",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "power in component at +10.0 V and 30 mA",
+   "answer": "0.30 W",
+   "marking_points": [
+    "B1: P = VI = 0.30 W"
+   ],
+   "allow_reject_ignore": [
+    "0.3 W allowed without SF penalty"
+   ],
+   "pitfalls": [
+    "mA conversion"
+   ],
+   "equations": [
+    "P = VI"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "24(a)(ii)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 16,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.3 Resistance",
+   "subtopic": "identify component from V-I data",
+   "type": "explain",
+   "secondary_types": [
+    "compare-suggest"
+   ],
+   "command_word": "Analyse",
+   "context": "identify a component from V-I table data",
+   "answer": "NTC thermistor",
+   "marking_points": [
+    "B1: component is a thermistor",
+    "B1: resistance decreases as V or I rises",
+    "B1: not a diode/LED as it conducts both ways, or warms/more charge carriers"
+   ],
+   "allow_reject_ignore": [
+    "calculations of R at 5 V and 10 V support; ignore POT"
+   ],
+   "pitfalls": [
+    "identifying as diode despite reverse current"
+   ],
+   "equations": [
+    "R = V/I"
+   ],
+   "skills": [
+    "data-analysis"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "24(b)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 17,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.4 Resistivity",
+   "subtopic": "resistivity and series current",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "current in series circuit with resistor of given resistivity and 68 Ω resistor",
+   "answer": "0.018 A",
+   "marking_points": [
+    "C1: R = ρL/A = 100 Ω",
+    "C1: total resistance 168 Ω",
+    "A1: I = 3.0/168 ≈ 0.018 A"
+   ],
+   "allow_reject_ignore": [
+    "squaring area is wrong physics",
+    "2 marks for 0.044 A from mm² POT",
+    "I = 3.0/68 alone is wrong physics"
+   ],
+   "pitfalls": [
+    "converting mm² to m² wrongly (1 mm² = 10^-6 m²)"
+   ],
+   "equations": [
+    "R = ρL/A",
+    "V = IR"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "25(a)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 18,
+   "ms_page": 10,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "frequency from oscilloscope",
+   "type": "practical-method",
+   "secondary_types": [
+    "describe"
+   ],
+   "command_word": "Describe",
+   "context": "how to find sound frequency from oscilloscope trace",
+   "answer": "period from squares × time-base; f = 1/T",
+   "marking_points": [
+    "B1: period found from number of divisions × time-base",
+    "B1: f = 1/T"
+   ],
+   "allow_reject_ignore": [
+    "any mention of wavelength loses first mark",
+    "reject bare ‘determine T’"
+   ],
+   "pitfalls": [
+    "confusing horizontal axis with wavelength"
+   ],
+   "equations": [
+    "f = 1/T"
+   ],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "25(b)(i)",
+   "section": "B",
+   "marks": 1,
+   "qp_page": 19,
+   "ms_page": 10,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "sketch antiphase wave",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Draw",
+   "context": "draw x2 vs t with amplitude 1.0 µm in antiphase with x1",
+   "answer": "sinusoid amplitude 1.0 µm, 180° out of phase",
+   "marking_points": [
+    "B1: correct curve with amplitude 1.0 µm and 180° phase difference"
+   ],
+   "allow_reject_ignore": [
+    "at least one period; ±0.2 µm",
+    "reject triangular profile"
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "25(b)(ii)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 19,
+   "ms_page": 10,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "intensity from superposition",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "why intensity with both speakers differs from L1 alone",
+   "answer": "resultant amplitude 2.0 µm; I ∝ A²",
+   "marking_points": [
+    "B1: resultant amplitude smaller (2.0 µm)",
+    "B1: intensity ∝ amplitude²"
+   ],
+   "allow_reject_ignore": [
+    "2 marks for showing intensity is 44% of original",
+    "reject displacement for amplitude"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "I ∝ A²"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "25(b)(iii)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 19,
+   "ms_page": 10,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "path difference and interference",
+   "type": "explain",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Explain",
+   "context": "type of interference at Q from distances and 34 cm wavelength",
+   "answer": "destructive: path difference 17 cm = λ/2",
+   "marking_points": [
+    "M1: path difference 17 cm = λ/2",
+    "A1: destructive"
+   ],
+   "allow_reject_ignore": [
+    "reject (n + ½) alone; reject calling 17 cm a phase difference"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "path difference = (n+½)λ"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "26(a)(i)",
+   "section": "B",
+   "marks": 1,
+   "qp_page": 20,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "microwave wavelength",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "wavelength of 11 GHz microwaves",
+   "answer": "0.027 m",
+   "marking_points": [
+    "B1: λ = c/f = 0.027 m"
+   ],
+   "allow_reject_ignore": [
+    "SF penalty possible for 0.03 m"
+   ],
+   "pitfalls": [
+    "GHz conversion"
+   ],
+   "equations": [
+    "c = fλ"
+   ],
+   "skills": [
+    "units",
+    "sig-figs"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "26(a)(ii)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 20,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "diffraction through slit",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "why narrow slit lets microwaves reach off-axis receiver",
+   "answer": "diffraction because gap comparable to wavelength",
+   "marking_points": [
+    "M1: diffraction/spreading at the slit",
+    "A1: wavelength similar to slit width"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "not linking width to wavelength"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "26(b)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 21,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "refraction speed frequency wavelength",
+   "type": "compare-suggest",
+   "secondary_types": [],
+   "command_word": "Compare",
+   "context": "speed, frequency, wavelength of light in air and water",
+   "answer": "speed lower, frequency same, wavelength shorter in water",
+   "marking_points": [
+    "B1: speed less in water",
+    "B1: frequency same",
+    "B1: wavelength smaller in water"
+   ],
+   "allow_reject_ignore": [
+    "reject bare symbols v or c"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "n = c/v",
+    "v = fλ"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "26(c)",
+   "section": "B",
+   "marks": 3,
+   "qp_page": 21,
+   "ms_page": 11,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "critical angle experiment",
+   "type": "practical-method",
+   "secondary_types": [
+    "sketch-draw"
+   ],
+   "command_word": "Describe",
+   "context": "method with ray diagram to find critical angle in semicircular block and refractive index",
+   "answer": "ray box/laser, find angle where refracted ray grazes surface, n = 1/sinC",
+   "marking_points": [
+    "B1: laser/ray box or protractor mentioned",
+    "B1: diagram with ray inside block, refracted ray along flat edge, critical angle marked to normal",
+    "B1: n = 1/sinC"
+   ],
+   "allow_reject_ignore": [
+    "reject ‘ray of light’ for ray box",
+    "reject bare Snell’s law"
+   ],
+   "pitfalls": [
+    "drawing ray entering through flat face"
+   ],
+   "equations": [
+    "n = 1/sinC"
+   ],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "27(a)",
+   "section": "B",
+   "marks": 1,
+   "qp_page": 22,
+   "ms_page": 12,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "radio vs X-rays",
+   "type": "compare-suggest",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "one difference between radio waves and X-rays",
+   "answer": "different wavelength/frequency",
+   "marking_points": [
+    "B1: different wavelength or frequency (or photon energy/ionisation)"
+   ],
+   "allow_reject_ignore": [
+    "wrong physics such as X-rays longer λ rejected",
+    "ignore uses"
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "27(b)(i)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 22,
+   "ms_page": 12,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "intensity of star",
+   "type": "show-that",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Show",
+   "context": "surface intensity of Procyon about 1.1 × 10^8 W m^-2",
+   "answer": "1.1 × 10^8 W m^-2",
+   "marking_points": [
+    "C1: surface area 4πr² ≈ 2.46 × 10^19 m²",
+    "C1: intensity = P/4πr² substituted"
+   ],
+   "allow_reject_ignore": [
+    "using πr² is wrong physics: no marks"
+   ],
+   "pitfalls": [
+    "using area of a circle"
+   ],
+   "equations": [
+    "I = P/4πr²"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "27(b)(ii)",
+   "section": "B",
+   "marks": 2,
+   "qp_page": 22,
+   "ms_page": 12,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.1 Photons",
+   "subtopic": "photon energy",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "energy of photon of wavelength 5.0 × 10^-7 m",
+   "answer": "4.0 × 10^-19 J",
+   "marking_points": [
+    "C1: E = hc/λ substituted",
+    "A1: 4.0 × 10^-19 J"
+   ],
+   "allow_reject_ignore": [
+    "4 × 10^-19 J allowed without SF penalty"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "E = hc/λ"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "27(b)(iii)",
+   "section": "B",
+   "marks": 1,
+   "qp_page": 23,
+   "ms_page": 12,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.1 Photons",
+   "subtopic": "photon emission rate",
+   "type": "estimate",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Estimate",
+   "context": "total photons per second from Procyon",
+   "answer": "6.8 × 10^45 s^-1",
+   "marking_points": [
+    "B1: N = P/E ≈ 6.8 × 10^45 s^-1"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (b)(ii)"
+   ],
+   "pitfalls": [
+    "using intensity instead of total power"
+   ],
+   "equations": [
+    "N = P/E"
+   ],
+   "skills": [
+    "estimate"
+   ],
+   "difficulty": 2
+  }
+ ]
+}

@@ -1,0 +1,990 @@
+{
+ "paper": 2,
+ "session": "June 2022",
+ "slug": "jun2022",
+ "total_marks": 70,
+ "general_conventions": [
+  "M1 = method mark; A marks dependent on it cannot be scored unless the M mark is earned. A1 = accuracy/answer mark, often awarded for a correct final answer which then implies earlier C marks.",
+  "C1 = compensatory (method) mark that can be awarded for correct working even if the final answer is wrong; a correct final answer normally earns all C marks.",
+  "B1 = independent mark, not dependent on other marks.",
+  "A0 on a show-that line means the given value earns no credit by itself; the mark is for the working shown.",
+  "ECF (error carried forward): later numerical parts can earn full credit if consistent with an earlier wrong answer; ECF is allowed after arithmetic (AE), transcription (TE) and power-of-ten (POT) errors but not after wrong physics/equation (XP).",
+  "POT: power-of-ten error, usually from SI prefix conversion; the mark where it happens is lost, then ECF applies.",
+  "TE: wrong copying of data from question, graph, booklet or earlier answer; lose that mark only, then ECF.",
+  "XP: using an incorrect equation counts as wrong physics even if it gives the right number.",
+  "SF: giving more significant figures than justified is not penalised; too few sig figs is handled within individual mark points and penalised only once in the paper.",
+  "CON: contradictory statements in one answer score no mark. BOD = benefit of the doubt.",
+  "Conventions: '/' separates alternative acceptable answers; Reject/Not = not creditworthy; Ignore = irrelevant; Allow = acceptable; words in brackets are not essential; underlined words must appear; AW = alternative wording; ORA = or reverse argument.",
+  "Level of Response (6-mark, asterisked) questions are marked holistically: decide the level from the science and the quality of reasoning, then the higher/lower mark within the level by communication. L1 = 1-2, L2 = 3-4, L3 = 5-6 marks; L1^/L2^/L3^ annotate the lower mark in each level.",
+  "LoR communication strands: L3 needs a well-developed line of reasoning, clear and logically structured, relevant and substantiated; L2 a line of reasoning with some structure, mostly relevant, supported by some evidence; L1 basic, unstructured information with limited evidence; 0 = nothing worthy of credit.",
+  "Alternative correct approaches and unexpected methods must be credited fairly.",
+  "MACB categorisation: B marks must be specifically seen; M marks must be seen and gate dependent A marks; C marks can be implied by later correct working (e.g. a correct substitution implies knowledge of the equation); A marks depend on an M mark or allow C marks to be scored.",
+  "Significant figures rule: if data are given to 2 s.f., answers to 2 or more s.f. are allowed; fewer than 2 s.f. is penalised once only in the whole paper unless additional guidance says otherwise.",
+  "For substitution into an equation any rearranged subject is allowed unless guidance says otherwise.",
+  "Crossed-out work is not marked if a clear alternative is given; contradictory responses score nothing even if one part is correct.",
+  "List questions: only the required number of responses are marked, left to right then line by line; extra responses hedging bets gain no credit.",
+  "LoR marking: read the whole answer, use a best-fit approach; the science content sets the level and the communication statement (in italics) decides the higher or lower mark within the level.",
+  "NR is used when nothing is written; 0 is given for written work not worthy of credit (including copying the question).",
+  "Levels of response questions on this paper are 2 and 8."
+ ],
+ "questions": [
+  {
+   "q": "1(a)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.2 Implementing",
+   "subtopic": "measuring a small diameter",
+   "type": "practical-method",
+   "secondary_types": [],
+   "command_word": "Describe",
+   "context": "How to measure the radius of a steel ball accurately.",
+   "answer": "Micrometer/calipers on diameter, repeat in different orientations, average, halve",
+   "marking_points": [
+    "B1: use a micrometer or vernier caliper to measure the diameter",
+    "B1: repeat readings in different directions/positions and average",
+    "B1: radius = mean diameter ÷ 2"
+   ],
+   "allow_reject_ignore": [
+    "Ignore measuring the radius directly"
+   ],
+   "pitfalls": [
+    "Suggesting a ruler",
+    "Forgetting to halve the diameter"
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "1(b)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.4 Density and pressure",
+   "subtopic": "density from mass and volume",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show oil density ≈ 840 kg m^-3 from cylinder mass readings.",
+   "answer": "839 ≈ 840 kg m^-3",
+   "marking_points": [
+    "C1: ρ = (169 - 96)/87 = 73/87 (ignore powers of ten)",
+    "M1: ρ = 0.073 kg / 87 × 10^-6 m³ with powers of ten shown for both",
+    "A0: 840 kg m^-3"
+   ],
+   "allow_reject_ignore": [
+    "Powers of ten must be seen for both mass and volume for M1"
+   ],
+   "pitfalls": [
+    "Not converting g and cm³ to SI",
+    "Not showing value to more s.f. (839)"
+   ],
+   "equations": [
+    "ρ = m/V"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "1(c)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.4 Density and pressure",
+   "subtopic": "upthrust (Archimedes)",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show upthrust on submerged ball is 1.8 × 10^-2 N.",
+   "answer": "0.0183 N",
+   "marking_points": [
+    "C1: volume of sphere = 4π(8.1 × 10^-3)³/3 = 2.226 × 10^-6 m³",
+    "M1: upthrust = 840 × 9.81 × V = 0.0183 N",
+    "A0: 0.018 N"
+   ],
+   "allow_reject_ignore": [
+    "Ignore POT in volume for C1"
+   ],
+   "pitfalls": [
+    "Using diameter not radius",
+    "Using steel density instead of oil"
+   ],
+   "equations": [
+    "V = 4πr³/3",
+    "upthrust = ρVg"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "1(d)(i)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 4,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.2 Motion with non-uniform acceleration",
+   "subtopic": "terminal velocity from s-t graph",
+   "type": "explain",
+   "secondary_types": [
+    "graph-gradient"
+   ],
+   "command_word": "Describe and explain",
+   "context": "How terminal velocity is found from displacement-time graph.",
+   "answer": "Gradient of the straight (linear) section where velocity constant",
+   "marking_points": [
+    "B1: terminal velocity is when velocity is constant (acceleration zero)",
+    "B1: velocity found from the gradient",
+    "B1: where the graph is a straight line / constant gradient (or evidence of gradient calculation of straight part)"
+   ],
+   "allow_reject_ignore": [
+    "Allow acceleration zero for velocity constant",
+    "Read-offs checked if calculation used"
+   ],
+   "pitfalls": [
+    "Using gradient of curved portion",
+    "Not saying gradient = velocity"
+   ],
+   "equations": [
+    "v = Δs/Δt"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "1(d)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 5,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.1 Kinematics",
+   "subtopic": "instantaneous velocity from tangent",
+   "type": "graph-gradient",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Velocity at t = 0.20 s from s-t graph.",
+   "answer": "1.2 m s^-1 (1.10-1.30)",
+   "marking_points": [
+    "M1: tangent drawn at 0.20 s spanning at least 0.2 s horizontally",
+    "A1: 1.2 m s^-1 (range 1.10-1.30)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Using s/t instead of a tangent",
+    "Tangent too short"
+   ],
+   "equations": [
+    "v = gradient of s-t"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "1(e)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 5,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.1 Dynamics",
+   "subtopic": "Stokes' law / drag at terminal velocity",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Find η for oil using drag = weight - upthrust at 1.8 m s^-1, with unit.",
+   "answer": "0.54 kg m^-1 s^-1 (Pa s)",
+   "marking_points": [
+    "C1: η = (0.017 × 9.81 - 0.018)/(6π × 8.1 × 10^-3 × 1.8)",
+    "A1: 0.54 (allow 0.55)",
+    "B1: unit kg m^-1 s^-1 or N s m^-2 or Pa s"
+   ],
+   "allow_reject_ignore": [
+    "POT-error answers (607, 0.607, 5.4 × 10^-4) score one mark"
+   ],
+   "pitfalls": [
+    "Forgetting to subtract upthrust",
+    "mm or g not converted"
+   ],
+   "equations": [
+    "F = 6πηrv",
+    "W = mg"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "2",
+   "section": "",
+   "marks": 6,
+   "qp_page": 6,
+   "ms_page": 11,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1 Planning",
+   "subtopic": "trolley acceleration experiment and linearised analysis",
+   "type": "level-of-response",
+   "secondary_types": [],
+   "command_word": "Describe",
+   "context": "Plan safe experiment testing 1/v² = M/(2dW - Q) + R and analyse for Q and R.",
+   "answer": "Vary M, constant d and W, light gate at P with card; plot 1/v² vs M; R = intercept, Q = 2dW - 1/gradient",
+   "marking_points": [
+    "L3 (5-6): clear diagram, procedure and measurements including use of one light gate, and analysis including determining Q and R",
+    "L2 (3-4): some procedure, measurements and analysis; OR limited procedure/measurements with detailed analysis; OR detailed procedure/measurements with limited analysis",
+    "L1 (1-2): limited procedure, measurements and analysis",
+    "Indicative (diagram/procedure): labelled diagram with light gate at P; card on trolley to break beam; repeat for each M; keep d constant (mark start); cushion/sand to stop trolley or load hitting things; fix masses to trolley; release mechanism",
+    "Indicative (measurements): ruler for card length; balance for M; method to find W; ruler for d",
+    "Indicative (analysis): v = card length / time; plot 1/v² against M; gradient = 1/(2dW - Q); R = y-intercept; Q = 2dW - 1/gradient"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "No safety measure for falling load",
+    "Plotting v against M instead of linearised graph",
+    "Not stating what is kept constant"
+   ],
+   "equations": [
+    "v = length/time",
+    "1/v² = M/(2dW - Q) + R"
+   ],
+   "skills": [
+    "practical",
+    "extended-writing",
+    "graph"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "3(a)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 8,
+   "ms_page": 12,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "conditions for equilibrium",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Two conditions for equilibrium.",
+   "answer": "Resultant force zero (in any direction) and resultant moment zero (about any point)",
+   "marking_points": [
+    "M1: net/resultant force = 0",
+    "M1: net/resultant moment = 0",
+    "A1: both, with 'in any direction' and 'about any point'"
+   ],
+   "allow_reject_ignore": [
+    "Allow total up = total down; clockwise = anticlockwise moments; torque for moment"
+   ],
+   "pitfalls": [
+    "Omitting 'any direction'/'any point' loses third mark"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "3(b)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 8,
+   "ms_page": 12,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "force balance",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show suspended mass ≈ 0.13 kg using vertical force balance.",
+   "answer": "0.134 kg",
+   "marking_points": [
+    "M1: weight of M = 3.9 - (2.1 + 0.49) = 1.31 N",
+    "M1: M = 1.31/9.81 = 0.134 kg",
+    "A0: 0.13 kg"
+   ],
+   "allow_reject_ignore": [
+    "Any rearrangement allowed"
+   ],
+   "pitfalls": [
+    "Not showing extra s.f."
+   ],
+   "equations": [
+    "ΣF = 0",
+    "W = mg"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "3(b)(ii)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 9,
+   "ms_page": 12,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "principle of moments",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Position of string from A using moments about A.",
+   "answer": "0.24 m",
+   "marking_points": [
+    "C1: any correct moment about A, e.g. 1.3 × 0.1, 2.1 × 0.3 or 0.49 × 0.38",
+    "C1: total clockwise moment = 0.946 N m",
+    "A1: d = 0.946/3.9 = 0.24 m"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (b)(i); allow 1.28 or 1.31 for 1.3"
+   ],
+   "pitfalls": [
+    "Using 0.220 instead of 0.380 for the 0.49 N load distance",
+    "Rod weight not at centre (0.300 m)"
+   ],
+   "equations": [
+    "moment = Fx",
+    "Σclockwise = Σanticlockwise"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "4(a)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 10,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3.2 Kinetic and potential energies",
+   "subtopic": "gravitational PE",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Change in GPE for 0.16 kg ball dropped 2.5 m.",
+   "answer": "3.9 J",
+   "marking_points": [
+    "A1: Ep = 0.16 × 9.81 × 2.5 = 3.9 J"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "Ep = mgh"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "4(a)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 10,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3.2 Kinetic and potential energies",
+   "subtopic": "energy conservation / suvat",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Speed when ball reaches ground.",
+   "answer": "7.0 m s^-1",
+   "marking_points": [
+    "C1: v² = 2 × 3.9/0.16 or v² = 2 × 9.81 × 2.5",
+    "A1: 7.0 m s^-1"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)(i)",
+    "Allow 1 s.f."
+   ],
+   "pitfalls": [],
+   "equations": [
+    "½mv² = mgh",
+    "v² = u² + 2as"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "4(b)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 11,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.3 Projectile motion",
+   "subtopic": "horizontal range",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Horizontal distance travelled in 0.71 s at 12 m s^-1.",
+   "answer": "8.5 m",
+   "marking_points": [
+    "A1: R = 12 × 0.71 = 8.5 m"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Applying acceleration horizontally"
+   ],
+   "equations": [
+    "s = vt"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "4(b)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 11,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3.2 Kinetic and potential energies",
+   "subtopic": "KE of projectile",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "KE of ball as it hits ground after horizontal launch.",
+   "answer": "15 J (15.4)",
+   "marking_points": [
+    "C1: initial KE = ½ × 0.16 × 12² = 11.5 J (or use resultant speed 13.9 m s^-1)",
+    "A1: Ek = 11.5 + 3.9 = 15 J"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)(i)",
+    "Allow 15.5 J; allow vertical speed 6.97 from v = u + at"
+   ],
+   "pitfalls": [
+    "Using only horizontal speed",
+    "Adding velocities rather than vectors"
+   ],
+   "equations": [
+    "Ek = ½mv²",
+    "energy conservation"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "4(b)(iii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 11,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.3 Projectile motion",
+   "subtopic": "impact angle",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Angle of ball's velocity to the ground on impact.",
+   "answer": "30°",
+   "marking_points": [
+    "A1: θ = tan^-1(7/12) = 30°"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)(ii)"
+   ],
+   "pitfalls": [
+    "Using tan^-1(12/7) (angle to vertical)"
+   ],
+   "equations": [
+    "tanθ = vy/vx"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(a)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 12,
+   "ms_page": 14,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "refractive index and speed",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Complete",
+   "context": "Speed of red light in glass and oil to 3 s.f.",
+   "answer": "1.97 × 10^8 and 2.05 × 10^8 m s^-1",
+   "marking_points": [
+    "B1: 1.97 × 10^8 (glass) and 2.05 × 10^8 (oil), in that order"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Not 3 s.f.",
+    "Swapping the order"
+   ],
+   "equations": [
+    "n = c/v"
+   ],
+   "skills": [
+    "sig-figs"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "5(b)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 12,
+   "ms_page": 14,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "critical angle",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show critical angle at glass-air boundary is below 45°.",
+   "answer": "41°",
+   "marking_points": [
+    "C1: sin C = 1/1.52 = 0.658",
+    "A1: C = 41°"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "sin C = 1/n"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "5(c)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 12,
+   "ms_page": 14,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "total internal reflection in a prism",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Complete",
+   "context": "Draw ray path through glass block in air.",
+   "answer": "TIR at both 45° faces; ray returns parallel to incident",
+   "marking_points": [
+    "M1: TIR at lower left face, ray turned 90° to travel horizontally",
+    "A1: TIR at lower right face, ray emerges vertically, parallel to incident ray"
+   ],
+   "allow_reject_ignore": [
+    "Judged by eye"
+   ],
+   "pitfalls": [
+    "Drawing refraction out of the face (45° > C so TIR)"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(d)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 13,
+   "ms_page": 14,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "critical angle between two media",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Critical angle at glass-oil boundary.",
+   "answer": "74°",
+   "marking_points": [
+    "C1: sin C = 1.46/1.52 = 0.961",
+    "A1: 74°"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Inverting ratio (sin > 1)"
+   ],
+   "equations": [
+    "sin C = n2/n1"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(d)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 13,
+   "ms_page": 14,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "refraction into lower index medium",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Complete",
+   "context": "Draw ray path when block is in oil.",
+   "answer": "Ray refracts into oil, bending away from the normal",
+   "marking_points": [
+    "B1: ray bends away from normal on leaving glass into oil"
+   ],
+   "allow_reject_ignore": [
+    "No ECF from (d)(i)"
+   ],
+   "pitfalls": [
+    "Still drawing TIR"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "6(a)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 14,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.3 Wave-particle duality",
+   "subtopic": "electron diffraction",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Why electrons through graphite give ring pattern.",
+   "answer": "Electrons behave as waves; wavelength similar to atomic spacing; random crystal orientation gives rings",
+   "marking_points": [
+    "B1 (any three): electrons show wave properties",
+    "B1: diffraction since de Broglie wavelength comparable to spacing/gap",
+    "B1: rings (not lines) because graphite is polycrystalline/irregularly arranged",
+    "B1: electron energy converted to light when hitting screen",
+    "B1: bright rings are maxima / dark rings minima"
+   ],
+   "allow_reject_ignore": [
+    "Do not allow 'electrons become/are waves'"
+   ],
+   "pitfalls": [
+    "Saying electrons turn into waves",
+    "Not linking wavelength to atomic spacing"
+   ],
+   "equations": [
+    "λ = h/p"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "6(b)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 14,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.3 Wave-particle duality",
+   "subtopic": "momentum of accelerated electron",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Momentum of electron accelerated through 1800 V.",
+   "answer": "2.3 × 10^-23 kg m s^-1",
+   "marking_points": [
+    "C1: p = √(2 × 9.11 × 10^-31 × 1.6 × 10^-19 × 1800) (or λ = 2.9 × 10^-11 m)",
+    "A1: 2.3 × 10^-23 kg m s^-1"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Forgetting square root"
+   ],
+   "equations": [
+    "p = √(2meV)",
+    "λ = h/p"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7(a)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 15,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.5 Power",
+   "subtopic": "current from power",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show maximum cooker current is below 13 A.",
+   "answer": "12.2 A",
+   "marking_points": [
+    "C1: I = (1100 + 1700)/230 (or separate currents 4.78 and 7.39 A)",
+    "A1: 12.2 A"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Only one ring considered"
+   ],
+   "equations": [
+    "P = VI"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "7(a)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 15,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.5 Power",
+   "subtopic": "cost of electricity (kWh)",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Cost of running cooker at max power for 30 min at 18p per kWh.",
+   "answer": "25p",
+   "marking_points": [
+    "A1: cost = 2.8 × 0.5 × 18 = 25 p"
+   ],
+   "allow_reject_ignore": [
+    "Allow 25.2 p"
+   ],
+   "pitfalls": [
+    "Using W and seconds"
+   ],
+   "equations": [
+    "energy (kWh) = P(kW) × t(h)"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "7(b)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 16,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.4 Resistivity",
+   "subtopic": "resistivity and wire diameter",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Diameter of heating wire from length, resistance and resistivity.",
+   "answer": "4.8 × 10^-4 m",
+   "marking_points": [
+    "C1: A = ρL/R = 4.8 × 10^-7 × 11.8/31 = 1.83 × 10^-7 m²",
+    "C1: d² = 4A/π = 2.33 × 10^-7",
+    "A1: d = 4.8 × 10^-4 m"
+   ],
+   "allow_reject_ignore": [
+    "1 mark for 5.82 × 10^-8 (r²); 2 marks for 2.4 × 10^-4 (r)"
+   ],
+   "pitfalls": [
+    "Giving radius not diameter",
+    "Forgetting square root"
+   ],
+   "equations": [
+    "R = ρL/A",
+    "A = πd²/4"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7(c)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 16,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.1 Circuit symbols",
+   "subtopic": "ammeter-voltmeter circuit",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Complete",
+   "context": "Draw circuit to measure resistance of ring with battery and meters.",
+   "answer": "Four cells, ammeter in series, voltmeter in parallel with ring",
+   "marking_points": [
+    "B1: correct symbols including four cells",
+    "B1: ammeter in series with battery and ring; voltmeter in parallel with ring (or battery)"
+   ],
+   "allow_reject_ignore": [
+    "Ignore extra components like rheostat; if variable resistor added, voltmeter must be across ring"
+   ],
+   "pitfalls": [
+    "Voltmeter in series"
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "7(c)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 17,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.3 Resistance",
+   "subtopic": "resistance from V and I",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Resistance from measured p.d. and current.",
+   "answer": "18 Ω",
+   "marking_points": [
+    "A1: R = 6.2/0.34 = 18 Ω"
+   ],
+   "allow_reject_ignore": [
+    "Allow 18.2"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "R = V/I"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "7(c)(iii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 17,
+   "ms_page": 16,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.4 Evaluation",
+   "subtopic": "combining percentage uncertainties",
+   "type": "uncertainty-error",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Percentage uncertainty in R from uncertainties in I and V.",
+   "answer": "9.1%",
+   "marking_points": [
+    "C1: 0.02/0.34 and 0.2/6.2 as percentages (or max/min method e.g. 6.4/0.32, 6.0/0.36)",
+    "A1: 5.9 + 3.2 = 9.1%"
+   ],
+   "allow_reject_ignore": [
+    "Allow 9%",
+    "Do not allow bald 10%"
+   ],
+   "pitfalls": [
+    "Multiplying or subtracting percentages instead of adding"
+   ],
+   "equations": [
+    "%R = %V + %I"
+   ],
+   "skills": [
+    "uncertainty"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "7(c)(iv)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 17,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.3 Resistance",
+   "subtopic": "temperature dependence of metal resistance",
+   "type": "compare-suggest",
+   "secondary_types": [],
+   "command_word": "Suggest",
+   "context": "Why measured resistance with battery is less than 31 Ω.",
+   "answer": "Lower current with battery so wire cooler; metal resistance lower at lower temperature",
+   "marking_points": [
+    "B1: current with battery much lower than on mains (ORA)",
+    "B1: so wire temperature/heating is lower, giving lower resistance (ORA)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Blaming meter uncertainty only"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7(c)(v)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 17,
+   "ms_page": 17,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.4 Evaluation",
+   "subtopic": "improving an electrical experiment",
+   "type": "practical-evaluate",
+   "secondary_types": [],
+   "command_word": "Suggest",
+   "context": "Two improvements to determine R experimentally.",
+   "answer": "Vary cells/use variable resistor and plot V-I graph; more sensitive meters",
+   "marking_points": [
+    "B1 (any two): repeat with different numbers of cells / variable resistor (or variable supply)",
+    "B1: use more sensitive meters / read to greater precision",
+    "B1: plot V against I graph (gradient = R)"
+   ],
+   "allow_reject_ignore": [
+    "Allow variable power supply; do not allow supply > 12 V",
+    "Do not allow 'more accurate' or 'digital' meters"
+   ],
+   "pitfalls": [
+    "Vague 'repeat readings' / 'more accurate meters'"
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "8",
+   "section": "",
+   "marks": 6,
+   "qp_page": 18,
+   "ms_page": 18,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "microwave interference with reflector",
+   "type": "level-of-response",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Explain maxima/minima from direct and reflected microwaves and find wavelength from y values.",
+   "answer": "Path difference via Pythagoras: 1.4, 2.8, 4.2, 5.6 cm; λ = 2.8 cm",
+   "marking_points": [
+    "L3 (5-6): clear explanation of maxima and minima and uses results to find path differences leading to the wavelength",
+    "L2 (3-4): clear explanation and some attempt to use results for λ; OR some explanation and uses results to determine path difference and λ",
+    "L1 (1-2): limited explanation OR some attempt to use the results to find path difference/λ",
+    "Indicative (explanation): direct and reflected waves meet at D and superpose; displacements add; minima not zero as reflected path longer; coherent - same source so constant phase difference; changing y changes path difference; path difference/phase difference conditions for max and min (including 180° phase change on reflection); a λ/2 change in path difference swaps max to min",
+    "Indicative (calculation): Pythagoras for reflected path 2√(50² + y²); path differences 1.4, 2.8, 4.2, 5.6 cm (step of λ/2 = 1.4 cm); λ = 2.8 cm"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Forgetting reflected path is two hypotenuses",
+    "Ignoring the 180° phase change on reflection",
+    "Using y directly as path difference"
+   ],
+   "equations": [
+    "path = 2√(50² + y²)",
+    "max/min condition with nλ, (n+½)λ"
+   ],
+   "skills": [
+    "extended-writing",
+    "data-analysis"
+   ],
+   "difficulty": 3
+  }
+ ]
+}

@@ -1,0 +1,1088 @@
+<title>H156 Paper Bench</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: an exam-room bench. Graph-paper ground, question paper on the left, examiner's red-pen mark scheme on the right,
+   question index as a strip of tabs between them. Insights is a long-form report on the same paper. */
+:root {
+  --paper: #EEF3F6;
+  --surface: #FFFFFF;
+  --surface-2: #F6F9FB;
+  --ink: #0F1F2D;
+  --ink-2: #4B5E6F;
+  --ink-3: #7A8C9C;
+  --rule: #D3DEE6;
+  --grid: rgba(38, 104, 150, 0.075);
+  --accent: #1F56C9;
+  --accent-soft: rgba(31, 86, 201, 0.10);
+  --pen: #C8322A;
+  --pen-soft: rgba(200, 50, 42, 0.09);
+  --shadow: 0 1px 2px rgba(15, 31, 45, .06), 0 8px 24px -12px rgba(15, 31, 45, .18);
+  --page-shadow: 0 1px 2px rgba(15,31,45,.10), 0 10px 30px -14px rgba(15,31,45,.35);
+  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 10px;
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0A131D; --surface: #101C29; --surface-2: #0D1823; --ink: #E4ECF3; --ink-2: #9AACBD; --ink-3: #6B7F92;
+    --rule: #20324A; --grid: rgba(110, 165, 220, 0.07); --accent: #79A6FF; --accent-soft: rgba(121,166,255,.13);
+    --pen: #FF7A6B; --pen-soft: rgba(255,122,107,.12);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -12px rgba(0,0,0,.6);
+    --page-shadow: 0 1px 2px rgba(0,0,0,.5), 0 14px 40px -16px rgba(0,0,0,.8);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0A131D; --surface: #101C29; --surface-2: #0D1823; --ink: #E4ECF3; --ink-2: #9AACBD; --ink-3: #6B7F92;
+  --rule: #20324A; --grid: rgba(110, 165, 220, 0.07); --accent: #79A6FF; --accent-soft: rgba(121,166,255,.13);
+  --pen: #FF7A6B; --pen-soft: rgba(255,122,107,.12);
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -12px rgba(0,0,0,.6);
+  --page-shadow: 0 1px 2px rgba(0,0,0,.5), 0 14px 40px -16px rgba(0,0,0,.8);
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--ink);
+  font: 14px/1.5 var(--f-body);
+  overflow: hidden;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+#root { height: 100%; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+
+/* ---------- app frame ---------- */
+.app { height: 100%; display: grid; grid-template-rows: auto auto minmax(0, 1fr); grid-template-columns: minmax(0, 1fr); min-height: 0; }
+.top {
+  position: relative; display: flex; align-items: center; gap: 20px;
+  padding-block: 10px; padding-left: var(--gutter-l); padding-right: var(--gutter-r);
+  background: var(--surface); border-bottom: 1px solid var(--rule); overflow: hidden;
+}
+.top canvas.wave { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; opacity: .55; }
+.brand { position: relative; display: flex; align-items: baseline; gap: 10px; white-space: nowrap; }
+.brand .code { font: 600 11px/1 var(--f-mono); letter-spacing: .08em; padding: 4px 6px; border: 1px solid var(--ink); border-radius: 4px; }
+.brand h1 { margin: 0; font: 800 20px/1 var(--f-display); letter-spacing: -.01em; }
+.brand h1 span { color: var(--ink-3); font-weight: 500; }
+.tabs { position: relative; display: flex; gap: 4px; padding: 3px; background: var(--surface-2); border: 1px solid var(--rule); border-radius: 999px; margin-left: auto; }
+.tabs button { border: 0; background: transparent; padding: 6px 14px; border-radius: 999px; cursor: pointer; font-weight: 500; color: var(--ink-2); }
+.tabs button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+
+/* ---------- session rail ---------- */
+.rail {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  padding-block: 10px; padding-left: var(--gutter-l); padding-right: var(--gutter-r);
+  border-bottom: 1px solid var(--rule); background: color-mix(in srgb, var(--surface) 70%, transparent);
+  backdrop-filter: blur(8px);
+}
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.seg button { border: 0; background: transparent; padding: 6px 12px; cursor: pointer; display: flex; flex-direction: column; align-items: flex-start; line-height: 1.15; }
+.seg button + button { border-left: 1px solid var(--rule); }
+.seg button b { font: 600 13px/1.2 var(--f-body); }
+.seg button small { font-size: 11px; color: var(--ink-3); }
+.seg button[aria-pressed="true"] { background: var(--accent-soft); }
+.seg button[aria-pressed="true"] b { color: var(--accent); }
+.sessions { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; min-width: 0; flex: 1; padding-block: 2px; }
+.sessions::-webkit-scrollbar { display: none; }
+.chip {
+  flex: none; border: 1px solid var(--rule); background: var(--surface); border-radius: 7px; padding: 5px 9px; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; line-height: 1.1; transition: border-color .2s, transform .2s;
+}
+.chip:hover { border-color: var(--ink-3); transform: translateY(-1px); }
+.chip .y { font: 600 13px/1.1 var(--f-mono); }
+.chip .m { font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.chip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); }
+.chip[aria-pressed="true"] .y, .chip[aria-pressed="true"] .m { color: var(--surface); }
+
+/* ---------- question strip ---------- */
+.bench { display: grid; grid-template-rows: auto 1fr; min-height: 0; }
+.qstrip {
+  display: flex; align-items: center; gap: 10px; padding-block: 8px;
+  padding-left: var(--gutter-l); padding-right: var(--gutter-r); border-bottom: 1px solid var(--rule); min-width: 0;
+}
+.qstrip .lbl { font: 600 10px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); flex: none; }
+.qlist { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: thin; min-width: 0; padding-bottom: 2px; }
+.qbtn {
+  flex: none; border: 1px solid transparent; background: transparent; border-radius: 6px; padding: 3px 7px; cursor: pointer;
+  font: 500 12px/1.2 var(--f-mono); color: var(--ink-2); display: inline-flex; gap: 5px; align-items: baseline;
+}
+.qbtn sup { font-size: 9px; color: var(--pen); }
+.qbtn:hover { border-color: var(--rule); background: var(--surface); }
+.qbtn.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.qbtn.lor { color: var(--pen); }
+.qstrip .empty { color: var(--ink-3); font-size: 12px; }
+
+/* ---------- panes ---------- */
+.panes { --split: 50%; display: grid; grid-template-columns: minmax(0, var(--split)) 10px minmax(0, 1fr); min-height: 0; padding-block: 10px; padding-left: var(--gutter-l); padding-right: var(--gutter-r); gap: 0; }
+.pane { display: grid; grid-template-rows: auto 1fr; min-height: 0; min-width: 0; background: var(--surface-2); border: 1px solid var(--rule); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow); }
+.pane-bar { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-bottom: 1px solid var(--rule); background: var(--surface); min-width: 0; }
+.pane-title { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.pane-title .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex: none; }
+.pane.ms .pane-title .dot { background: var(--pen); }
+.pane-title b { font: 700 14px/1.1 var(--f-display); white-space: nowrap; }
+.pane-title span { font-size: 12px; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tools { margin-left: auto; display: flex; align-items: center; gap: 4px; }
+.ib { border: 1px solid var(--rule); background: var(--surface); border-radius: 6px; height: 28px; min-width: 28px; padding: 0 8px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; color: var(--ink-2); white-space: nowrap; }
+.ib:hover { border-color: var(--ink-3); color: var(--ink); }
+.ib[aria-pressed="true"] { border-color: var(--pen); color: var(--pen); background: var(--pen-soft); }
+.pageno { font: 500 12px/1 var(--f-mono); color: var(--ink-2); padding: 0 6px; white-space: nowrap; }
+.scroller { position: relative; overflow: auto; min-height: 0; overscroll-behavior: contain; }
+.content { position: relative; display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 16px; min-width: min-content; }
+.page { position: relative; background: #fff; box-shadow: var(--page-shadow); border-radius: 2px; flex: none; }
+.page canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; border-radius: 2px; }
+.page .pn { position: absolute; left: -2px; top: 6px; transform: translateX(-100%); font: 500 10px/1 var(--f-mono); color: var(--ink-3); padding-right: 6px; }
+.page.flash::after { content: ""; position: absolute; inset: -4px; border: 2px solid var(--accent); border-radius: 4px; pointer-events: none; animation: flash 1.4s ease-out forwards; }
+.pane.ms .page.flash::after { border-color: var(--pen); }
+@keyframes flash { 0% { opacity: 1 } 100% { opacity: 0 } }
+.loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--ink-3); font: 500 12px var(--f-mono); pointer-events: none; }
+.cover {
+  position: absolute; inset: 0; z-index: 3; display: grid; place-items: center; text-align: center;
+  background: color-mix(in srgb, var(--surface-2) 55%, transparent); backdrop-filter: blur(14px) saturate(.6);
+}
+.cover-card { display: grid; gap: 10px; justify-items: center; max-width: 280px; padding: 20px; }
+.cover-card .stamp { font: 800 12px/1 var(--f-mono); letter-spacing: .2em; color: var(--pen); border: 2px solid var(--pen); padding: 8px 12px; border-radius: 4px; transform: rotate(-4deg); }
+.cover-card p { margin: 0; color: var(--ink-2); font-size: 13px; }
+.btn { border: 0; background: var(--ink); color: var(--surface); border-radius: 8px; padding: 8px 14px; cursor: pointer; font-weight: 600; }
+.btn.pen { background: var(--pen); color: #fff; }
+.divider { cursor: col-resize; display: grid; place-items: center; touch-action: none; }
+.divider i { width: 3px; height: 40px; border-radius: 3px; background: var(--rule); transition: background .2s, height .2s; }
+.divider:hover i, .divider.drag i { background: var(--accent); height: 64px; }
+.mob-switch { display: none; }
+.pane-wrap { position: relative; display: grid; min-height: 0; min-width: 0; }
+.qpop {
+  position: fixed; z-index: 50; max-width: 320px; pointer-events: none; background: var(--ink); color: var(--surface);
+  border-radius: 8px; padding: 8px 10px; font-size: 12px; line-height: 1.4; box-shadow: var(--shadow);
+}
+.qpop b { font-family: var(--f-mono); }
+.qpop .t { opacity: .7; font-family: var(--f-mono); font-size: 11px; }
+
+@media (max-width: 760px) {
+  .brand h1 span { display: none; }
+  .panes { grid-template-columns: minmax(0, 1fr); }
+  .divider { display: none; }
+  .pane-wrap.hide-mob { display: none; }
+  .mob-switch { display: inline-flex; }
+  .rail { gap: 10px; }
+  .seg button small { display: none; }
+}
+@media (max-width: 560px) {
+  .brand h1 { display: none; }
+  .top { gap: 10px; }
+  .tabs button { padding: 6px 10px; font-size: 13px; }
+}
+
+/* ---------- question bench ---------- */
+.qb { display: grid; grid-template-columns: 228px minmax(0, 1fr); min-height: 0; }
+.qnav { border-right: 1px solid var(--rule); overflow: auto; padding-block: 14px 28px; padding-left: var(--gutter-l); padding-right: 12px; display: grid; align-content: start; gap: 16px; background: color-mix(in srgb, var(--surface) 55%, transparent); }
+.qnav .grp { display: grid; gap: 3px; }
+.qnav .grp > span { font: 600 10px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); padding: 0 6px 6px; }
+.qnav .mcq { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3px; }
+.qn { border: 1px solid transparent; background: none; border-radius: 6px; padding: 6px 8px; display: flex; justify-content: space-between; align-items: baseline; gap: 6px; cursor: pointer; font: 500 13px/1.2 var(--f-mono); color: var(--ink-2); text-align: left; flex: none; }
+.qnav .mcq .qn { justify-content: center; padding: 6px 0; }
+.qn small { color: var(--ink-3); font-size: 11px; }
+.qn i { font-style: normal; color: var(--pen); font-size: 10px; }
+.qn:hover { background: var(--surface); border-color: var(--rule); }
+.qn.on { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.qn.on small, .qn.on i { color: color-mix(in srgb, var(--surface) 75%, transparent); }
+.qmain { overflow: auto; min-height: 0; }
+.qcard { max-width: 1340px; margin: 0 auto; padding-block: 22px 96px; padding-left: 24px; padding-right: var(--gutter-r); display: grid; gap: 20px; }
+.qhead { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px 20px; }
+.qhead h2 { margin: 0; font: 800 clamp(30px, 4vw, 46px)/1 var(--f-display); letter-spacing: -.02em; }
+.qhead h2 small { display: block; margin-bottom: 8px; font: 600 11px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.qhead .meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { font: 500 11px/1 var(--f-mono); padding: 5px 8px; border-radius: 999px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink-2); white-space: nowrap; }
+.pill.mk { border-color: var(--pen); color: var(--pen); }
+.pill.ty { border-color: var(--accent); color: var(--accent); }
+.qhead .nav { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.colhead, .qrowx { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: 22px; }
+.colhead { font: 600 10px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); border-bottom: 1px solid var(--rule); padding-bottom: 8px; }
+.colhead span:last-child { color: var(--pen); }
+.qrowx { align-items: start; padding-top: 4px; scroll-margin-top: 16px; }
+.side { display: grid; gap: 10px; min-width: 0; align-content: start; }
+.ptag { display: flex; align-items: center; gap: 8px; font: 600 12px/1 var(--f-mono); color: var(--ink-3); }
+.ptag b { color: var(--accent); font-size: 13px; }
+.side.ms .ptag b { color: var(--pen); }
+.crop { position: relative; width: 100%; background: #fff; border-radius: 6px; box-shadow: var(--page-shadow); overflow: hidden; }
+.crop canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.side.ms .crop { box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--pen) 35%, transparent), var(--page-shadow); }
+.crop-err { position: absolute; inset: 0; display: grid; place-items: center; color: #6b7f92; font: 500 12px var(--f-mono); }
+.reveal { display: grid; place-items: center; gap: 6px; min-height: 110px; width: 100%; border: 1.5px dashed var(--pen); border-radius: 8px; background: var(--pen-soft); color: var(--pen); cursor: pointer; font-weight: 600; padding: 16px; }
+.reveal small { font-weight: 400; color: var(--ink-2); font-size: 12px; }
+.note { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; display: grid; gap: 8px; font-size: 13px; min-width: 0; }
+.note header { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.note header b { font: 600 12px/1 var(--f-mono); margin-right: 2px; }
+.note .ans { font: 500 13px/1.4 var(--f-mono); overflow-wrap: anywhere; }
+.note details summary { cursor: pointer; color: var(--accent); font-weight: 600; font-size: 12px; }
+.note details[open] summary { margin-bottom: 8px; }
+.note .blk + .blk { margin-top: 8px; }
+.shared { font-size: 12px; color: var(--ink-3); padding: 6px 0; }
+.mcq-ans { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 4px 16px; background: var(--surface); border: 1.5px solid color-mix(in srgb, var(--pen) 45%, transparent); border-radius: 10px; padding: 14px 18px; }
+.mcq-ans span { grid-column: 1 / -1; font: 600 10px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--pen); }
+.mcq-ans b { font: 800 56px/1 var(--f-display); color: var(--pen); }
+.mcq-ans p { margin: 0; color: var(--ink-2); font-size: 13px; min-width: 0; }
+.qfoot { display: flex; justify-content: space-between; gap: 10px; border-top: 1px solid var(--rule); padding-top: 18px; }
+.qempty { padding: 40px 0; color: var(--ink-2); }
+@media (max-width: 900px) {
+  .qb { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); }
+  .qnav { border-right: 0; border-bottom: 1px solid var(--rule); display: flex; overflow-x: auto; padding-block: 8px; padding-right: var(--gutter-r); gap: 12px; }
+  .qnav .grp, .qnav .mcq { display: flex; gap: 3px; }
+  .qnav .grp > span { display: none; }
+  .qcard { padding-left: var(--gutter-l); }
+  .colhead { display: none; }
+  .qrowx { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+}
+
+/* ---------- insights ---------- */
+.ins { overflow: auto; min-height: 0; }
+.ins-inner { max-width: 1180px; margin: 0 auto; padding-block: 0 80px; padding-left: var(--gutter-l); padding-right: var(--gutter-r); display: grid; gap: 56px; }
+.hero { position: relative; padding-block: 48px 8px; display: grid; gap: 18px; }
+.hero canvas.wave { position: absolute; inset: 0 -200px 0 auto; width: min(640px, 70%); height: 100%; opacity: .7; pointer-events: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 40%); mask-image: linear-gradient(90deg, transparent, #000 40%); }
+.eyebrow { font: 600 11px/1 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+.hero h2 { position: relative; margin: 0; font: 800 clamp(34px, 5.6vw, 64px)/0.98 var(--f-display); letter-spacing: -.025em; max-width: 14ch; text-wrap: balance; }
+.hero h2 em { font-style: normal; color: var(--pen); }
+.hero p { position: relative; margin: 0; max-width: 62ch; color: var(--ink-2); font-size: 16px; }
+.stats { position: relative; display: flex; flex-wrap: wrap; gap: 28px; padding-top: 8px; }
+.stat b { display: block; font: 700 28px/1 var(--f-display); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12px; color: var(--ink-3); }
+section h3 { margin: 0 0 4px; font: 800 26px/1.1 var(--f-display); letter-spacing: -.015em; text-wrap: balance; }
+section > .sub { margin: 0 0 20px; color: var(--ink-2); max-width: 70ch; }
+.types { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+.tcard { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); padding: 18px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.tcard header { display: flex; align-items: baseline; gap: 10px; }
+.tcard h4 { margin: 0; font: 700 18px/1.15 var(--f-display); flex: 1; min-width: 0; }
+.tcard .n { font: 600 12px/1 var(--f-mono); color: var(--ink-3); white-space: nowrap; }
+.meter { height: 6px; border-radius: 3px; background: var(--surface-2); border: 1px solid var(--rule); overflow: hidden; }
+.meter i { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+.tmeta { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--ink-2); }
+.tmeta b { font-family: var(--f-mono); font-weight: 600; color: var(--ink); }
+.tcard p { margin: 0; color: var(--ink-2); font-size: 13px; }
+.blk { display: grid; gap: 6px; }
+.blk .h { font: 600 10px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.blk.pen .h { color: var(--pen); }
+.blk ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 13px; }
+.cw { display: flex; flex-wrap: wrap; gap: 4px; }
+.cw span { font: 500 11px/1 var(--f-mono); padding: 4px 6px; border-radius: 4px; background: var(--surface-2); border: 1px solid var(--rule); color: var(--ink-2); }
+.link { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; font-weight: 600; font-size: 13px; text-align: left; justify-self: start; }
+.link:hover { text-decoration: underline; }
+
+.heat-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); padding: 14px; }
+table.heat { border-collapse: separate; border-spacing: 2px; font-size: 12px; }
+table.heat th { font: 500 11px/1.2 var(--f-mono); color: var(--ink-3); font-weight: 500; padding: 4px 6px; white-space: nowrap; }
+table.heat th.row { text-align: left; color: var(--ink-2); font-family: var(--f-body); font-size: 12px; max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+table.heat td { width: 38px; height: 26px; border-radius: 4px; text-align: center; font: 500 11px/1 var(--f-mono); color: var(--ink); cursor: default; }
+table.heat td.tot { background: none; color: var(--ink-2); font-weight: 600; }
+.legend { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 11px; color: var(--ink-3); }
+.legend .ramp { display: flex; gap: 2px; }
+.legend .ramp i { width: 22px; height: 10px; border-radius: 2px; }
+
+.bars { display: grid; gap: 6px; }
+.bar { display: grid; grid-template-columns: minmax(120px, 220px) 1fr 70px; gap: 10px; align-items: center; font-size: 13px; }
+.bar .track { height: 14px; position: relative; }
+.bar .track i { position: absolute; inset: 0 auto 0 0; background: var(--accent); border-radius: 0 4px 4px 0; }
+.bar .v { font: 500 12px/1 var(--f-mono); color: var(--ink-2); text-align: right; }
+.cols2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); padding: 18px; min-width: 0; }
+.panel h4 { margin: 0 0 12px; font: 700 16px/1.2 var(--f-display); }
+dl.codes { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; font-size: 13px; }
+dl.codes dt { font: 600 12px/1.5 var(--f-mono); color: var(--pen); }
+dl.codes dd { margin: 0; color: var(--ink-2); }
+.patterns { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+
+.explorer .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.explorer select, .explorer input { font: inherit; font-size: 13px; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); min-width: 0; }
+.explorer input { flex: 1 1 220px; }
+.qrows { display: grid; gap: 6px; }
+.qrow { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; min-width: 0; }
+.qrow > button { width: 100%; border: 0; background: none; text-align: left; cursor: pointer; padding: 10px 12px; display: grid; grid-template-columns: 150px 1fr auto; gap: 12px; align-items: baseline; }
+.qrow .ref { font: 600 12px/1.3 var(--f-mono); }
+.qrow .ref small { display: block; color: var(--ink-3); font-weight: 400; }
+.qrow .ctx { font-size: 13px; min-width: 0; }
+.qrow .ctx small { display: block; color: var(--ink-3); font-size: 12px; }
+.qrow .mk { font: 600 12px/1 var(--f-mono); color: var(--pen); white-space: nowrap; }
+.qdetail { padding: 0 12px 14px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.qdetail .ans { font: 500 13px/1.4 var(--f-mono); }
+.more { margin-top: 10px; }
+@media (max-width: 640px) {
+  .qrow > button { grid-template-columns: 1fr auto; }
+  .qrow .ctx { grid-column: 1 / -1; }
+  .bar { grid-template-columns: 110px 1fr 56px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+/* Lenis */
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+</style>
+
+<div id="root"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+(() => {
+const { useState, useEffect, useRef, useMemo, useCallback } = React;
+const html = htm.bind(React.createElement);
+pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+gsap.ticker.lagSmoothing(0);
+
+const SESSIONS = [
+  { slug: "specimen", y: "SAM", m: "Specimen", label: "Specimen" },
+  { slug: "jun2016", y: "2016", m: "June", label: "June 2016" },
+  { slug: "jun2017", y: "2017", m: "June", label: "June 2017" },
+  { slug: "jun2018", y: "2018", m: "June", label: "June 2018" },
+  { slug: "jun2019", y: "2019", m: "June", label: "June 2019" },
+  { slug: "nov2020", y: "2020", m: "Nov", label: "November 2020" },
+  { slug: "nov2021", y: "2021", m: "Nov", label: "November 2021" },
+  { slug: "jun2022", y: "2022", m: "June", label: "June 2022" },
+  { slug: "jun2023", y: "2023", m: "June", label: "June 2023" },
+  { slug: "jun2024", y: "2024", m: "June", label: "June 2024" },
+  { slug: "jun2025", y: "2025", m: "June", label: "June 2025" },
+];
+const SLABEL = Object.fromEntries(SESSIONS.map(s => [s.slug, s.label]));
+const PAPERS = { 1: { name: "Paper 1", sub: "Breadth in physics" }, 2: { name: "Paper 2", sub: "Depth in physics" } };
+const TYPE_LABEL = {
+  "mcq": "Multiple choice", "define-state": "Define / state", "describe": "Describe", "explain": "Explain",
+  "calculation-single-step": "Single-step calculation", "calculation-multi-step": "Multi-step calculation",
+  "show-that": "Show that", "derivation": "Derive / prove", "graph-plot": "Plot a graph", "graph-read": "Read a graph",
+  "graph-gradient": "Graph gradient", "graph-area": "Area under a graph", "sketch-draw": "Sketch / draw",
+  "uncertainty-error": "Uncertainties & errors", "practical-method": "Practical method", "practical-evaluate": "Evaluate a practical",
+  "estimate": "Estimate", "compare-suggest": "Compare / suggest", "level-of-response": "Six-mark extended response", "other": "Other",
+};
+const tl = t => TYPE_LABEL[t] || t;
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("h156:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("h156:" + k, JSON.stringify(v)); } catch {} },
+};
+const qKey = q => {
+  // sort key for "12(b)(ii)" like labels
+  const m = String(q).match(/^(\d+)(.*)$/); if (!m) return [999, q];
+  return [parseInt(m[1], 10), m[2]];
+};
+const cmpQ = (a, b) => { const x = qKey(a.q), y = qKey(b.q); return x[0] - y[0] || String(x[1]).localeCompare(String(y[1])); };
+
+/* ---------- interference field (two coherent point sources) ---------- */
+function startWave(canvas, opts = {}) {
+  const gl = canvas.getContext("webgl", { premultipliedAlpha: true, alpha: true, antialias: false });
+  if (!gl) return () => {};
+  const vs = "attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}";
+  const fs = `precision mediump float;uniform vec2 r;uniform float t;uniform vec3 c;uniform float k;
+  void main(){vec2 uv=gl_FragCoord.xy/r.y;vec2 a=vec2(r.x/r.y*0.78,0.5+0.16);vec2 b=vec2(r.x/r.y*0.78,0.5-0.16);
+  float d1=distance(uv,a),d2=distance(uv,b);float w=sin(d1*k-t)+sin(d2*k-t);float i=pow(abs(w)*0.5,2.2);
+  float fade=smoothstep(1.6,0.0,min(d1,d2));gl_FragColor=vec4(c*i*fade*0.55,i*fade*0.55);}`;
+  const sh = (type, src) => { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); return s; };
+  const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(pr); gl.useProgram(pr);
+  const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,1,-1,-1,1,1,1]), gl.STATIC_DRAW);
+  const loc = gl.getAttribLocation(pr, "p"); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+  const ur = gl.getUniformLocation(pr, "r"), ut = gl.getUniformLocation(pr, "t"), uc = gl.getUniformLocation(pr, "c"), uk = gl.getUniformLocation(pr, "k");
+  const colour = () => {
+    const v = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim();
+    const m = v.match(/^#([0-9a-f]{6})$/i); if (!m) return [0.2, 0.4, 0.9];
+    const n = parseInt(m[1], 16); return [(n >> 16 & 255) / 255, (n >> 8 & 255) / 255, (n & 255) / 255];
+  };
+  let raf = 0, alive = true, t0 = performance.now();
+  const frame = (now) => {
+    if (!alive) return;
+    const dpr = Math.min(devicePixelRatio || 1, 1.5);
+    const w = canvas.clientWidth * dpr | 0, h = canvas.clientHeight * dpr | 0;
+    if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; }
+    gl.viewport(0, 0, w, h);
+    gl.uniform2f(ur, w, h); gl.uniform1f(ut, REDUCED ? 0 : (now - t0) / 1000 * (opts.speed || 1.4));
+    gl.uniform3fv(uc, colour()); gl.uniform1f(uk, opts.k || 60);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    if (!REDUCED) raf = requestAnimationFrame(frame);
+  };
+  raf = requestAnimationFrame(frame);
+  const mq = matchMedia("(prefers-color-scheme: dark)"); const re = () => REDUCED && requestAnimationFrame(frame);
+  mq.addEventListener?.("change", re);
+  return () => { alive = false; cancelAnimationFrame(raf); mq.removeEventListener?.("change", re); };
+}
+function Wave({ k, speed }) {
+  const ref = useRef(null);
+  useEffect(() => startWave(ref.current, { k, speed }), []);
+  return html`<canvas class="wave" ref=${ref} aria-hidden="true"></canvas>`;
+}
+
+/* ---------- PDF pane engine ---------- */
+class PdfPane {
+  constructor(scroller, content, onState) {
+    this.scroller = scroller; this.content = content; this.onState = onState;
+    this.zoom = 1; this.pages = []; this.token = 0; this.doc = null; this.visible = new Set();
+    this.lenis = REDUCED ? null : new Lenis({ wrapper: scroller, content, lerp: 0.14, smoothWheel: true, wheelMultiplier: 0.9 });
+    if (this.lenis) { this._tick = (t) => this.lenis.raf(t * 1000); gsap.ticker.add(this._tick); }
+    this.io = new IntersectionObserver(es => {
+      for (const e of es) { const p = e.target._p; if (e.isIntersecting) { this.visible.add(p); this.render(p); } else this.visible.delete(p); }
+    }, { root: scroller, rootMargin: "900px 0px" });
+    this.ro = new ResizeObserver(() => { clearTimeout(this._rt); this._rt = setTimeout(() => this.layout(), 120); });
+    this.ro.observe(scroller);
+    this._onScroll = () => this.trackPage();
+    scroller.addEventListener("scroll", this._onScroll, { passive: true });
+  }
+  async load(url) {
+    const t = ++this.token;
+    this.io.disconnect(); this.visible.clear();
+    for (const p of this.pages) p.task?.cancel?.();
+    this.pages = []; this.content.replaceChildren();
+    if (this.doc) { this.doc.destroy(); this.doc = null; }
+    this.onState({ loading: true, page: 0, pages: 0 });
+    try {
+      const doc = await pdfjsLib.getDocument({ url }).promise;
+      if (t !== this.token) { doc.destroy(); return; }
+      this.doc = doc;
+      const n = doc.numPages;
+      const first = await doc.getPage(1); const vp = first.getViewport({ scale: 1 });
+      for (let i = 1; i <= n; i++) {
+        const div = document.createElement("div"); div.className = "page";
+        const pn = document.createElement("span"); pn.className = "pn"; pn.textContent = i; div.appendChild(pn);
+        const p = { i, div, w: vp.width, h: vp.height, page: i === 1 ? first : null, rw: 0 };
+        div._p = p; this.pages.push(p); this.content.appendChild(div);
+      }
+      this.layout(true);
+      this.scroller.scrollTop = 0; this.lenis?.scrollTo(0, { immediate: true });
+      for (const p of this.pages) this.io.observe(p.div);
+      this.onState({ loading: false, page: 1, pages: n });
+      if (!REDUCED) gsap.from(this.pages.slice(0, 3).map(p => p.div), { y: 18, opacity: 0.2, duration: 0.6, stagger: 0.07, ease: "power3.out", clearProps: "opacity,transform" });
+    } catch (e) {
+      if (t !== this.token) return;
+      this.onState({ loading: false, error: "Couldn't open this PDF. Reload the page to try again.", page: 0, pages: 0 });
+    }
+  }
+  cssWidth() { const avail = Math.max(240, this.scroller.clientWidth - 32 - 4); return Math.round(Math.min(avail, 1100) * this.zoom); }
+  layout(skipRender) {
+    if (!this.pages.length) return;
+    const w = this.cssWidth();
+    for (const p of this.pages) { p.div.style.width = w + "px"; p.div.style.height = Math.round(w * p.h / p.w) + "px"; }
+    this.lenis?.resize();
+    if (!skipRender) for (const p of this.visible) this.render(p);
+  }
+  setZoom(z) {
+    const sc = this.scroller, ratio = sc.scrollTop / Math.max(1, sc.scrollHeight);
+    this.zoom = Math.max(0.5, Math.min(2.6, z)); this.layout();
+    sc.scrollTop = ratio * sc.scrollHeight; this.lenis?.scrollTo(sc.scrollTop, { immediate: true });
+    return this.zoom;
+  }
+  async render(p) {
+    const t = this.token, w = this.cssWidth();
+    if (p.rw === w || p.busy === w) return;
+    p.busy = w;
+    try {
+      if (!p.page) p.page = await this.doc.getPage(p.i);
+      if (t !== this.token) return;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+      const vp = p.page.getViewport({ scale: (w / p.w) * dpr });
+      const c = document.createElement("canvas"); c.width = Math.floor(vp.width); c.height = Math.floor(vp.height);
+      p.task?.cancel?.();
+      p.task = p.page.render({ canvasContext: c.getContext("2d", { alpha: false }), viewport: vp });
+      await p.task.promise;
+      if (t !== this.token) return;
+      p.div.querySelector("canvas")?.remove(); p.div.appendChild(c); p.rw = w;
+    } catch (e) { /* cancelled render */ } finally { if (p.busy === w) p.busy = 0; }
+  }
+  trackPage() {
+    if (!this.pages.length) return;
+    const mid = this.scroller.scrollTop + this.scroller.clientHeight * 0.33;
+    let cur = 1; for (const p of this.pages) { if (p.div.offsetTop <= mid) cur = p.i; else break; }
+    if (cur !== this._cur) { this._cur = cur; this.onState({ page: cur }); }
+  }
+  go(n, flash = true) {
+    const p = this.pages[Math.max(1, Math.min(this.pages.length, n)) - 1]; if (!p) return;
+    const y = p.div.offsetTop - 12;
+    if (this.lenis) this.lenis.scrollTo(y, { duration: 1.05, easing: t => 1 - Math.pow(1 - t, 4) }); else this.scroller.scrollTop = y;
+    if (flash) { p.div.classList.remove("flash"); void p.div.offsetWidth; p.div.classList.add("flash"); }
+  }
+  destroy() {
+    this.token++; this.io.disconnect(); this.ro.disconnect(); this.scroller.removeEventListener("scroll", this._onScroll);
+    if (this._tick) gsap.ticker.remove(this._tick); this.lenis?.destroy(); this.doc?.destroy();
+  }
+}
+
+function Pane({ kind, title, subtitle, url, jump, extra, cover, apiRef }) {
+  const sRef = useRef(null), cRef = useRef(null), eng = useRef(null);
+  const [st, setSt] = useState({ loading: true, page: 0, pages: 0 });
+  const [zoom, setZoom] = useState(1);
+  useEffect(() => {
+    eng.current = new PdfPane(sRef.current, cRef.current, s => setSt(o => ({ ...o, ...s })));
+    if (apiRef) apiRef.current = eng.current;
+    return () => eng.current.destroy();
+  }, []);
+  const jumpRef = useRef(jump); jumpRef.current = jump;
+  const loadedUrl = useRef(null);
+  useEffect(() => { if (!url) return; loadedUrl.current = null; eng.current.load(url).then(() => { loadedUrl.current = url; const j = jumpRef.current; if (j?.page) requestAnimationFrame(() => eng.current.go(j.page)); }); }, [url]);
+  useEffect(() => { if (jump && jump.page && loadedUrl.current === url) eng.current.go(jump.page); }, [jump?.nonce]);
+  const z = d => setZoom(eng.current.setZoom(d === 0 ? 1 : zoom + d));
+  return html`
+    <div class=${"pane " + kind}>
+      <div class="pane-bar">
+        <div class="pane-title"><i class="dot"></i><b>${title}</b><span>${subtitle}</span></div>
+        <div class="tools">
+          ${extra}
+          <span class="pageno" aria-live="polite">${st.pages ? `${st.page} / ${st.pages}` : "– / –"}</span>
+          <button class="ib" onClick=${() => z(-0.15)} aria-label="Zoom out" title="Zoom out">−</button>
+          <button class="ib mono" onClick=${() => z(0)} aria-label="Fit to width" title="Fit to width">${Math.round(zoom * 100)}%</button>
+          <button class="ib" onClick=${() => z(0.15)} aria-label="Zoom in" title="Zoom in">+</button>
+        </div>
+      </div>
+      <div class="pane-wrap">
+        <div class="scroller" ref=${sRef} tabIndex="0" aria-label=${title + " pages"}>
+          <div class="content" ref=${cRef}></div>
+        </div>
+        ${st.loading && html`<div class="loading">Loading pages…</div>`}
+        ${st.error && html`<div class="loading">${st.error}</div>`}
+        ${cover}
+      </div>
+    </div>`;
+}
+
+/* ---------- Bench (side by side viewer) ---------- */
+function Bench({ data, sel, setSel }) {
+  const { paper, slug } = sel;
+  const [right, setRight] = useState("ms");
+  const [hidden, setHidden] = useState(() => store.get("hide", false));
+  const [revealed, setRevealed] = useState(false);
+  const [jumpL, setJumpL] = useState(null), [jumpR, setJumpR] = useState(null);
+  const [active, setActive] = useState(null);
+  const [mob, setMob] = useState("qp");
+  const [pop, setPop] = useState(null);
+  const panesRef = useRef(null);
+  useEffect(() => { setRevealed(false); setActive(null); }, [paper, slug]);
+  useEffect(() => { store.set("hide", hidden); }, [hidden]);
+  useEffect(() => { if (sel.q) jumpTo(sel.q); }, [sel.nonce]);
+  useEffect(() => { const s = store.get("split", 50); panesRef.current?.style.setProperty("--split", s + "%"); }, []);
+
+  const qs = useMemo(() => (data.byPaper[`${paper}:${slug}`] || []).slice().sort(cmpQ), [data, paper, slug]);
+  const jumpTo = (q) => {
+    if (!q) return;
+    setActive(q.q);
+    if (q.qp_page) setJumpL({ page: q.qp_page, nonce: Math.random() });
+    if (q.ms_page) { setRight("ms"); setJumpR({ page: q.ms_page, nonce: Math.random() }); }
+  };
+  const qpUrl = `pdf/p${paper}-${slug}-qp.pdf`;
+  const msUrl = right === "ms" ? `pdf/p${paper}-${slug}-ms.pdf` : "pdf/booklet.pdf";
+  const sess = SLABEL[slug];
+
+  const onDown = (e) => {
+    const box = panesRef.current.getBoundingClientRect(); const el = e.currentTarget; el.classList.add("drag"); el.setPointerCapture(e.pointerId);
+    const mv = (ev) => { const pct = Math.max(22, Math.min(78, (ev.clientX - box.left) / box.width * 100)); panesRef.current.style.setProperty("--split", pct + "%"); store.set("split", Math.round(pct)); };
+    const up = () => { el.classList.remove("drag"); el.removeEventListener("pointermove", mv); el.removeEventListener("pointerup", up); };
+    el.addEventListener("pointermove", mv); el.addEventListener("pointerup", up);
+  };
+  const onKey = (e) => {
+    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+    const cur = parseFloat(getComputedStyle(panesRef.current).getPropertyValue("--split")) || 50;
+    const pct = Math.max(22, Math.min(78, cur + (e.key === "ArrowLeft" ? -3 : 3)));
+    panesRef.current.style.setProperty("--split", pct + "%"); store.set("split", pct);
+  };
+
+  const coverOn = hidden && !revealed && right === "ms";
+  const coverEl = coverOn && html`
+    <div class="cover"><div class="cover-card">
+      <div class="stamp">EXAMINER ONLY</div>
+      <p>The mark scheme is covered so you can attempt the paper first.</p>
+      <button class="btn pen" onClick=${() => { setRevealed(true); }}>Reveal mark scheme</button>
+    </div></div>`;
+  const msExtra = html`
+    <button class="ib" aria-pressed=${right === "booklet"} onClick=${() => setRight(r => r === "ms" ? "booklet" : "ms")} title="Swap the right pane to the data, formulae and relationships booklet">Formulae</button>
+    <button class="ib" aria-pressed=${hidden} onClick=${() => { setHidden(h => !h); setRevealed(false); }} title="Cover the mark scheme until you choose to reveal it">Practice mode</button>`;
+
+  return html`
+    <div class="bench">
+      <div class="qstrip">
+        <span class="lbl">Jump to</span>
+        <div class="seg mob-switch">
+          <button aria-pressed=${mob === "qp"} onClick=${() => setMob("qp")}><b>Paper</b></button>
+          <button aria-pressed=${mob === "ms"} onClick=${() => setMob("ms")}><b>Mark scheme</b></button>
+        </div>
+        <div class="qlist">
+          ${qs.length ? qs.map(q => html`
+            <button key=${q.q} class=${"qbtn" + (active === q.q ? " on" : "") + (q.type === "level-of-response" ? " lor" : "")}
+              onClick=${() => jumpTo(q)}
+              onMouseEnter=${e => { const r = e.currentTarget.getBoundingClientRect(); setPop({ q, x: Math.min(r.left, innerWidth - 330), y: r.bottom + 8 }); }}
+              onMouseLeave=${() => setPop(null)} onFocus=${e => { const r = e.currentTarget.getBoundingClientRect(); setPop({ q, x: Math.min(r.left, innerWidth - 330), y: r.bottom + 8 }); }} onBlur=${() => setPop(null)}>
+              ${q.q}<sup>${q.marks}</sup>
+            </button>`) : html`<span class="empty">The question index for this paper isn't loaded yet. Scroll the pages directly.</span>`}
+        </div>
+      </div>
+      <div class="panes" ref=${panesRef}>
+        <div class=${"pane-wrap" + (mob === "ms" ? " hide-mob" : "")}>
+          <${Pane} kind="qp" title="Question paper" subtitle=${`${PAPERS[paper].name} · ${sess}`} url=${qpUrl} jump=${jumpL} />
+        </div>
+        <div class="divider" role="separator" aria-orientation="vertical" aria-label="Resize panes" tabIndex="0" onPointerDown=${onDown} onKeyDown=${onKey}><i></i></div>
+        <div class=${"pane-wrap" + (mob === "qp" ? " hide-mob" : "")}>
+          <${Pane} kind="ms" title=${right === "ms" ? "Mark scheme" : "Formulae booklet"} subtitle=${right === "ms" ? `${PAPERS[paper].name} · ${sess}` : "Data, formulae and relationships"} url=${msUrl} jump=${right === "ms" ? jumpR : null} extra=${msExtra} cover=${coverEl} />
+        </div>
+      </div>
+      ${pop && html`<div class="qpop" style=${{ left: Math.max(8, pop.x) + "px", top: pop.y + "px" }}>
+        <div class="t">${pop.q.q} · ${pop.q.marks} mark${pop.q.marks == 1 ? "" : "s"} · ${tl(pop.q.type)}</div>
+        <div>${pop.q.context}</div></div>`}
+    </div>`;
+}
+
+/* ---------- Lenis for a scroll container ---------- */
+function useLenis(ref) {
+  const inst = useRef(null);
+  useEffect(() => {
+    if (REDUCED) return;
+    const l = new Lenis({ wrapper: ref.current, content: ref.current.firstElementChild, lerp: 0.12 });
+    inst.current = l;
+    const tick = t => l.raf(t * 1000); gsap.ticker.add(tick);
+    const ro = new ResizeObserver(() => l.resize()); ro.observe(ref.current.firstElementChild);
+    return () => { gsap.ticker.remove(tick); ro.disconnect(); l.destroy(); inst.current = null; };
+  }, []);
+  return inst;
+}
+
+/* ---------- PDF cache + cut-out regions ---------- */
+const docCache = new Map();
+function getDoc(url) {
+  if (!docCache.has(url)) {
+    const p = pdfjsLib.getDocument({ url }).promise;
+    docCache.set(url, p); p.catch(() => docCache.delete(url));
+    if (docCache.size > 8) { const [k, v] = docCache.entries().next().value; docCache.delete(k); v.then(d => d.destroy()).catch(() => {}); }
+  }
+  return docCache.get(url);
+}
+function Crop({ url, seg, box, full, side }) {
+  const ref = useRef(null);
+  const [vis, setVis] = useState(false), [err, setErr] = useState(false), [ratio, setRatio] = useState(null);
+  const [page, y0, y1] = seg;
+  const inset = side === "ms" ? 24 : 26;
+  const [pw, ph] = (box.sizes && box.sizes[page - 1]) || [box.w, box.h];
+  const x0 = full ? 0 : (seg.length > 4 ? seg[3] : inset), x1 = full ? pw : (seg.length > 4 ? seg[4] : pw - inset);
+  useEffect(() => {
+    const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { setVis(true); io.disconnect(); } }, { rootMargin: "700px 0px" });
+    io.observe(ref.current); return () => io.disconnect();
+  }, []);
+  useEffect(() => {
+    if (!vis) return;
+    let dead = false, task = null;
+    const draw = async () => {
+      try {
+        const doc = await getDoc(url); const pg = await doc.getPage(page); if (dead) return;
+        const el = ref.current; const cssW = el.clientWidth; if (!cssW) return;
+        const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+        let vp, cw, ch;
+        if (full) {
+          const v1 = pg.getViewport({ scale: 1 }); setRatio(v1.width / v1.height);
+          vp = pg.getViewport({ scale: cssW / v1.width * dpr }); cw = vp.width; ch = vp.height;
+        } else {
+          const s = cssW / (x1 - x0) * dpr;
+          vp = pg.getViewport({ scale: s, offsetX: -x0 * s, offsetY: -y0 * s }); cw = (x1 - x0) * s; ch = (y1 - y0) * s;
+        }
+        const c = document.createElement("canvas"); c.width = Math.ceil(cw); c.height = Math.ceil(ch);
+        task?.cancel?.();
+        task = pg.render({ canvasContext: c.getContext("2d", { alpha: false }), viewport: vp });
+        await task.promise; if (dead) return;
+        el.querySelector("canvas")?.remove(); el.appendChild(c); setErr(false);
+      } catch (e) { if (!dead && e?.name !== "RenderingCancelledException") setErr(true); }
+    };
+    draw();
+    let w = ref.current.clientWidth;
+    const ro = new ResizeObserver(() => { const nw = ref.current?.clientWidth; if (nw && Math.abs(nw - w) > 30) { w = nw; draw(); } });
+    ro.observe(ref.current);
+    return () => { dead = true; task?.cancel?.(); ro.disconnect(); };
+  }, [vis, url, page, y0, y1, x0, x1, full]);
+  const ar = full ? (ratio || pw / ph) : (x1 - x0) / (y1 - y0);
+  const maxW = full ? 900 : Math.round((x1 - x0) * 1.55);
+  return html`<div class="crop" ref=${ref} style=${{ aspectRatio: String(ar), maxWidth: maxW + "px" }} role="img" aria-label=${(side === "ms" ? "Mark scheme" : "Question paper") + " page " + page}>${err && html`<span class="crop-err">This part couldn't be drawn.</span>`}</div>`;
+}
+
+const qnum = l => parseInt(l, 10);
+function ancestor(label, labels) {
+  let l = label;
+  for (;;) { if (labels.includes(l)) return l; const m = l.match(/^(.*)\([a-z]+\)$/); if (!m) return null; l = m[1]; }
+}
+function buildQuestions(reg, parts) {
+  const qpU = (reg?.qp?.units || []).filter(u => u.segs.length);
+  const msU = (reg?.ms?.units || []).filter(u => u.segs.length);
+  const nums = [...new Set([...qpU.map(u => qnum(u.label)), ...parts.map(p => qnum(p.q))])].filter(n => !isNaN(n)).sort((a, b) => a - b);
+  const seenPages = new Set();
+  return nums.map(n => {
+    const mine = l => qnum(l) === n;
+    const rows = qpU.filter(u => mine(u.label)).map(u => ({ label: u.label, qp: u.segs, ms: [], parts: [] }));
+    const rowLabels = rows.map(r => r.label);
+    const qparts = parts.filter(p => mine(p.q));
+    for (const p of qparts) {
+      const base = p.q.replace(/\)\d+$/, ")");
+      const a = ancestor(base, rowLabels);
+      let row = rows.find(r => r.label === a);
+      if (!row) { row = { label: base, qp: [], ms: [], parts: [] }; rows.push(row); rowLabels.push(base); }
+      row.parts.push(p);
+    }
+    const mineMs = msU.filter(u => mine(u.label)); const msLabels = mineMs.map(u => u.label);
+    const used = new Set();
+    for (const u of mineMs) {
+      const a = ancestor(u.label, rowLabels);
+      const row = rows.find(r => r.label === a);
+      if (row) { row.ms.push(u); used.add(u.label); }
+    }
+    for (const row of rows) {
+      if (row.ms.length || !row.parts.length) continue;
+      // a parent mark-scheme row that covers several question parts
+      const a = ancestor(row.label, msLabels);
+      if (a) { const u = mineMs.find(x => x.label === a); if (!used.has(a)) { row.ms.push(u); used.add(a); } else row.shared = a; continue; }
+      // otherwise show the whole mark scheme page the analysis points to
+      const pg = row.parts.find(p => p.ms_page)?.ms_page;
+      if (pg) { if (seenPages.has(pg)) row.sharedPage = pg; else { row.msPage = pg; seenPages.add(pg); } }
+    }
+    const marks = qparts.reduce((s, p) => s + (+p.marks || 0), 0);
+    const lor = qparts.some(p => p.type === "level-of-response");
+    return { n, rows, marks, parts: qparts, lor, mcq: qparts.length > 0 && qparts.every(p => p.type === "mcq") };
+  });
+}
+
+function PartNote({ p, showAnswer }) {
+  const L = (arr) => arr && arr.length ? html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>` : null;
+  return html`<div class="note">
+    <header><b>${p.q}</b><span class="pill mk">${p.marks} mark${p.marks == 1 ? "" : "s"}</span><span class="pill ty">${tl(p.type)}</span>${p.command_word && html`<span class="pill">${p.command_word}</span>`}${p.withdrawn && html`<span class="pill mk">Withdrawn by OCR</span>`}</header>
+    ${showAnswer && p.answer && html`<div class="ans">${p.answer}</div>`}
+    ${showAnswer && html`<details>
+      <summary>Examiner notes</summary>
+      ${p.marking_points?.length ? html`<div class="blk"><span class="h">Marking points</span>${L(p.marking_points)}</div>` : null}
+      ${p.allow_reject_ignore?.length ? html`<div class="blk"><span class="h">Allow / reject / ignore</span>${L(p.allow_reject_ignore)}</div>` : null}
+      ${p.pitfalls?.length ? html`<div class="blk pen"><span class="h">Where marks are lost</span>${L(p.pitfalls)}</div>` : null}
+      ${p.equations?.length ? html`<div class="blk"><span class="h">Equations</span><span class="ans">${p.equations.join("  ·  ")}</span></div>` : null}
+    </details>`}
+    ${!showAnswer && html`<span class="shared">${p.topic || ""}${p.subtopic ? " · " + p.subtopic : ""}</span>`}
+  </div>`;
+}
+
+function QBench({ data, sel }) {
+  const { paper, slug } = sel; const key = `p${paper}-${slug}`;
+  const reg = data.regions[key];
+  const parts = data.byPaper[`${paper}:${slug}`] || [];
+  const qs = useMemo(() => buildQuestions(reg, parts), [reg, parts]);
+  const [cur, setCur] = useState(0);
+  const [practice, setPractice] = useState(() => store.get("practice", true));
+  const [shown, setShown] = useState({});
+  const mainRef = useRef(null); const lenis = useLenis(mainRef);
+  const qpUrl = `pdf/p${paper}-${slug}-qp.pdf`, msUrl = `pdf/p${paper}-${slug}-ms.pdf`;
+  useEffect(() => { store.set("practice", practice); }, [practice]);
+  useEffect(() => { setCur(0); setShown({}); }, [paper, slug]);
+  useEffect(() => {
+    if (!sel.q) return;
+    const i = qs.findIndex(x => x.n === qnum(sel.q.q)); if (i < 0) return;
+    setCur(i);
+    setTimeout(() => {
+      const el = mainRef.current?.querySelector(`[data-row="${CSS.escape(ancestor(sel.q.q.replace(/\)\d+$/, ")"), qs[i].rows.map(r => r.label)) || "")}"]`);
+      if (el) lenis.current ? lenis.current.scrollTo(el, { offset: -12 }) : el.scrollIntoView();
+    }, 350);
+  }, [sel.nonce, qs.length]);
+  const q = qs[Math.min(cur, qs.length - 1)];
+  const goQ = useCallback((i) => {
+    if (i < 0 || i >= qs.length) return;
+    setCur(i);
+    if (lenis.current) lenis.current.scrollTo(0, { immediate: true }); else if (mainRef.current) mainRef.current.scrollTop = 0;
+  }, [qs.length]);
+  useEffect(() => {
+    if (REDUCED || !mainRef.current) return;
+    gsap.fromTo(mainRef.current.querySelectorAll(".qhead, .qrowx"), { y: 14, opacity: 0.25 }, { y: 0, opacity: 1, duration: 0.5, stagger: 0.05, ease: "power3.out", clearProps: "opacity,transform" });
+  }, [cur, key]);
+  useEffect(() => {
+    const k = (e) => {
+      if (e.target.closest("input, select, textarea")) return;
+      if (e.key === "ArrowRight" || e.key === "j") goQ(cur + 1);
+      else if (e.key === "ArrowLeft" || e.key === "k") goQ(cur - 1);
+      else if (e.key === "r" && q) setShown(s => ({ ...s, ...Object.fromEntries(q.rows.map(r => [key + r.label, true])) }));
+    };
+    addEventListener("keydown", k); return () => removeEventListener("keydown", k);
+  }, [cur, q, goQ, key]);
+
+  const secA = qs.filter(x => x.mcq), secB = qs.filter(x => !x.mcq);
+  const navBtn = (x) => { const i = qs.indexOf(x); return html`<button key=${x.n} class=${"qn" + (i === cur ? " on" : "")} onClick=${() => goQ(i)} aria-current=${i === cur ? "true" : null} title=${`Question ${x.n} · ${x.marks} marks`}>
+    <span>${x.mcq ? x.n : "Q" + x.n}${x.lor ? html`<i> ★</i>` : null}</span>${x.mcq ? null : html`<small>${x.marks}m</small>`}</button>`; };
+
+  if (!reg) return html`<div class="qempty" style=${{ padding: "40px var(--gutter-r) 40px var(--gutter-l)" }}>The question index for this paper is missing. Switch to Whole paper to read it page by page.</div>`;
+  const revealAll = () => setShown(s => ({ ...s, ...Object.fromEntries(q.rows.map(r => [key + r.label, true])) }));
+  const topics = q ? [...new Set(q.parts.map(p => p.topic).filter(Boolean))] : [];
+  const types = q ? [...new Set(q.parts.map(p => p.type).filter(t => t && t !== "mcq" && t !== "level-of-response"))] : [];
+
+  return html`<div class="qb">
+    <nav class="qnav" aria-label="Questions">
+      ${secA.length ? html`<div class="grp"><span>Section A · multiple choice</span><div class="mcq">${secA.map(navBtn)}</div></div>` : null}
+      <div class="grp"><span>${secA.length ? "Section B" : "Questions"}</span>${secB.map(navBtn)}</div>
+    </nav>
+    <div class="qmain" ref=${mainRef}><div class="qcard">
+      ${q ? html`
+        <div class="qhead">
+          <h2><small>${PAPERS[paper].name} · ${SLABEL[slug]}${q.mcq ? " · Section A" : ""}</small>Question ${q.n}</h2>
+          <div class="meta">
+            <span class="pill mk">${q.marks} mark${q.marks === 1 ? "" : "s"}</span>
+            ${q.lor && html`<span class="pill mk">★ Six-mark extended response</span>`}
+            ${topics.slice(0, 3).map(t => html`<span class="pill" key=${t}>${t}</span>`)}
+            ${types.slice(0, 3).map(t => html`<span class="pill ty" key=${t}>${tl(t)}</span>`)}
+          </div>
+          <div class="nav">
+            <button class="ib" aria-pressed=${practice} onClick=${() => setPractice(v => !v)} title="Hide each mark scheme until you reveal it">Practice mode</button>
+            ${practice && html`<button class="ib" onClick=${revealAll} title="Reveal every mark scheme for this question (R)">Reveal all</button>`}
+            <button class="ib" onClick=${() => goQ(cur - 1)} disabled=${cur === 0} aria-label="Previous question">←</button>
+            <button class="ib" onClick=${() => goQ(cur + 1)} disabled=${cur >= qs.length - 1} aria-label="Next question">→</button>
+          </div>
+        </div>
+        <div class="colhead"><span>Question</span><span>Mark scheme</span></div>
+        ${q.rows.map(r => {
+          const open = !practice || shown[key + r.label];
+          const hasMs = r.ms.length || r.msPage || r.shared || r.sharedPage;
+          return html`<div class="qrowx" key=${key + r.label} data-row=${r.label}>
+            <div class="side qp">
+              ${r.label !== String(q.n) || q.rows.length === 1 ? html`<div class="ptag"><b>${r.label}</b></div>` : null}
+              ${r.qp.map((s, i) => html`<${Crop} key=${i} url=${qpUrl} seg=${s} box=${reg.qp} side="qp" />`)}
+            </div>
+            <div class="side ms">
+              ${!hasMs && !r.parts.length ? null : !open ? html`<button class="reveal" onClick=${() => setShown(s => ({ ...s, [key + r.label]: true }))}>
+                  Reveal mark scheme for ${r.label}<small>${r.parts.reduce((s, p) => s + (+p.marks || 0), 0)} marks · have a go first</small></button>` : html`
+                ${q.mcq && r.parts[0]?.answer ? html`<div class="mcq-ans"><span>Answer</span><b>${(r.parts[0].answer.match(/^[A-D]\b/) || [r.parts[0].answer])[0]}</b><p>${r.parts[0].marking_points?.join(" ") || ""}</p></div>` : null}
+                ${r.ms.filter(u => !(q.mcq && u.segs.every(s => s[2] - s[1] < 34))).map((u, i) => html`<div class="side" key=${u.label + i}>${r.ms.length > 1 || u.label !== r.label ? html`<div class="ptag"><b>${u.label}</b></div>` : null}${u.segs.map((s, j) => html`<${Crop} key=${j} url=${msUrl} seg=${s} box=${reg.ms} side="ms" />`)}</div>`)}
+                ${r.msPage && html`<div class="ptag"><b>Mark scheme page ${r.msPage}</b></div><${Crop} url=${msUrl} seg=${[r.msPage, 0, 0]} box=${reg.ms} full=${true} side="ms" />`}
+                ${r.shared && html`<div class="shared">Marked together with ${r.shared}, shown above.</div>`}
+                ${r.sharedPage && html`<div class="shared">On mark scheme page ${r.sharedPage}, shown above.</div>`}`}
+              ${r.parts.map(p => html`<${PartNote} key=${p.q} p=${p} showAnswer=${open} />`)}
+            </div>
+          </div>`;
+        })}
+        <div class="qfoot">
+          <button class="ib" onClick=${() => goQ(cur - 1)} disabled=${cur === 0}>← ${cur > 0 ? "Question " + qs[cur - 1].n : ""}</button>
+          <button class="ib" onClick=${() => goQ(cur + 1)} disabled=${cur >= qs.length - 1}>${cur < qs.length - 1 ? "Question " + qs[cur + 1].n : ""} →</button>
+        </div>` : html`<div class="qempty">No questions found for this paper.</div>`}
+    </div></div>
+  </div>`;
+}
+
+/* ---------- Insights ---------- */
+function Insights({ data, open }) {
+  const ref = useRef(null); useLenis(ref);
+  const { all, ins } = data;
+  const [fPaper, setFPaper] = useState("all"), [fType, setFType] = useState("all"), [fMod, setFMod] = useState("all"), [qtxt, setQtxt] = useState("");
+  const [openRow, setOpenRow] = useState(null), [limit, setLimit] = useState(40), [heatPaper, setHeatPaper] = useState("all");
+  const exRef = useRef(null);
+  useEffect(() => {
+    if (REDUCED) return;
+    gsap.from(ref.current.querySelectorAll(".hero > *"), { y: 22, opacity: 0.15, duration: 0.8, stagger: 0.08, ease: "power3.out", clearProps: "opacity,transform" });
+    gsap.from(ref.current.querySelectorAll(".tcard"), { y: 26, opacity: 0.2, duration: 0.7, stagger: 0.04, ease: "power2.out", delay: 0.2, clearProps: "opacity,transform" });
+  }, []);
+
+  const totalMarks = all.reduce((s, q) => s + (+q.marks || 0), 0);
+  const papersN = new Set(all.map(q => q.paper + q.slug)).size;
+  const typeStats = useMemo(() => {
+    const m = {};
+    for (const q of all) {
+      const t = q.type || "other"; const o = m[t] ||= { type: t, n: 0, marks: 0, cw: {}, diff: 0 };
+      o.n++; o.marks += +q.marks || 0; o.diff += +q.difficulty || 0;
+      const c = (q.command_word || "").trim(); if (c) o.cw[c] = (o.cw[c] || 0) + 1;
+    }
+    return Object.values(m).sort((a, b) => b.marks - a.marks);
+  }, [all]);
+  const maxTypeMarks = Math.max(1, ...typeStats.map(t => t.marks));
+  const insByType = Object.fromEntries((ins.types || []).map(t => [t.type, t]));
+
+  const modules = useMemo(() => [...new Set(all.map(q => q.topic_module).filter(Boolean))].sort(), [all]);
+  const heat = useMemo(() => {
+    const rows = {}; const src = heatPaper === "all" ? all : all.filter(q => String(q.paper) === heatPaper);
+    for (const q of src) {
+      const t = (q.topic || "Unassigned").trim(); const r = rows[t] ||= { topic: t, cells: {}, tot: 0 };
+      r.cells[q.slug] = (r.cells[q.slug] || 0) + (+q.marks || 0); r.tot += +q.marks || 0;
+    }
+    const list = Object.values(rows).sort((a, b) => a.topic.localeCompare(b.topic, undefined, { numeric: true }));
+    const max = Math.max(1, ...list.flatMap(r => Object.values(r.cells)));
+    return { list, max };
+  }, [all, heatPaper]);
+  const shade = (v, max) => {
+    if (!v) return { background: "var(--surface-2)", color: "var(--ink-3)" };
+    const step = Math.min(5, Math.ceil(v / max * 5)); const pct = [0, 14, 28, 46, 66, 88][step];
+    return { background: `color-mix(in srgb, var(--accent) ${pct}%, var(--surface))`, color: step >= 4 ? "var(--surface)" : "var(--ink)" };
+  };
+  const cwStats = useMemo(() => {
+    const m = {}; for (const q of all) { const c = (q.command_word || "").trim(); if (!c || q.type === "mcq") continue; const o = m[c] ||= { c, n: 0, marks: 0 }; o.n++; o.marks += +q.marks || 0; }
+    return Object.values(m).sort((a, b) => b.marks - a.marks).slice(0, 14);
+  }, [all]);
+  const maxCw = Math.max(1, ...cwStats.map(c => c.marks));
+
+  const filtered = useMemo(() => {
+    const s = qtxt.trim().toLowerCase();
+    return all.filter(q => (fPaper === "all" || String(q.paper) === fPaper) && (fType === "all" || q.type === fType || (q.secondary_types || []).includes(fType)) && (fMod === "all" || q.topic_module === fMod)
+      && (!s || [q.context, q.topic, q.subtopic, q.answer, ...(q.equations || []), ...(q.marking_points || [])].join(" ").toLowerCase().includes(s)));
+  }, [all, fPaper, fType, fMod, qtxt]);
+  const showType = (t) => { setFType(t); setLimit(40); setOpenRow(null); requestAnimationFrame(() => exRef.current?.scrollIntoView({ behavior: REDUCED ? "auto" : "smooth" })); };
+
+  const L = (arr) => arr && arr.length ? html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>` : null;
+  const refBtn = (r) => html`<button class="link" onClick=${() => open(r.paper, r.slug, all.find(q => q.paper == r.paper && q.slug === r.slug && q.q === r.q))}>P${r.paper} ${SLABEL[r.slug] || r.slug} · Q${r.q}</button>`;
+
+  if (!all.length) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><span class="eyebrow">Insights</span><h2>Analysis is still being compiled</h2><p>The question-by-question analysis hasn't been added to this page yet. The paper viewer works in the meantime.</p></div></div></div>`;
+
+  return html`
+  <div class="ins" ref=${ref}><div class="ins-inner">
+    <div class="hero">
+      <${Wave} k=${70} speed=${1.1} />
+      <span class="eyebrow">OCR A · H156 · ${papersN} papers read line by line</span>
+      <h2>What the mark scheme <em>actually</em> pays for</h2>
+      <p>${ins.headline || "Every question part from both AS papers, tagged by type, topic and command word, with the creditworthy points, the allow/reject rules and the usual ways marks are lost."}</p>
+      <div class="stats">
+        <div class="stat"><b>${all.length}</b><span>question parts</span></div>
+        <div class="stat"><b>${totalMarks}</b><span>marks analysed</span></div>
+        <div class="stat"><b>${typeStats.length}</b><span>question types</span></div>
+        <div class="stat"><b>${heat.list.length}</b><span>spec topics hit</span></div>
+      </div>
+    </div>
+
+    <section>
+      <h3>Question types, by marks on offer</h3>
+      <p class="sub">The bar shows each type's share of all marks across every paper. Each card says what examiners credit and where candidates drop marks.</p>
+      <div class="types">
+        ${typeStats.map(t => { const x = insByType[t.type] || {}; const cws = Object.entries(t.cw).sort((a, b) => b[1] - a[1]).slice(0, 5);
+          return html`<article class="tcard" key=${t.type}>
+            <header><h4>${x.label || tl(t.type)}</h4><span class="n">${t.n} parts</span></header>
+            <div class="meter" title=${`${t.marks} marks`}><i style=${{ width: (t.marks / maxTypeMarks * 100) + "%" }}></i></div>
+            <div class="tmeta"><span><b>${(t.marks / totalMarks * 100).toFixed(1)}%</b> of marks</span><span><b>${(t.marks / t.n).toFixed(1)}</b> avg marks</span><span><b>${(t.diff / t.n).toFixed(1)}</b>/3 difficulty</span></div>
+            ${x.summary && html`<p>${x.summary}</p>`}
+            ${x.what_ms_wants?.length ? html`<div class="blk"><span class="h">What the mark scheme wants</span>${L(x.what_ms_wants)}</div>` : null}
+            ${x.how_to_score?.length ? html`<div class="blk"><span class="h">How to score full marks</span>${L(x.how_to_score)}</div>` : null}
+            ${x.pitfalls?.length ? html`<div class="blk pen"><span class="h">Where marks are lost</span>${L(x.pitfalls)}</div>` : null}
+            ${cws.length ? html`<div class="cw">${cws.map(([c, n]) => html`<span key=${c}>${c} ×${n}</span>`)}</div>` : null}
+            <button class="link" onClick=${() => showType(t.type)}>See all ${t.n} ${(x.label || tl(t.type)).toLowerCase()} parts →</button>
+          </article>`; })}
+      </div>
+    </section>
+
+    ${(ins.patterns || []).length ? html`<section>
+      <h3>Questions that keep coming back</h3>
+      <p class="sub">Set-ups OCR reuses across sessions, with what the mark scheme expects each time.</p>
+      <div class="patterns">${ins.patterns.map((p, i) => html`<div class="panel" key=${i}>
+        <h4>${p.title}</h4>
+        <div class="blk"><span class="h">${p.topic || "Pattern"}</span><p style=${{ margin: 0, fontSize: "13px", color: "var(--ink-2)" }}>${p.detail}</p></div>
+        ${p.ms_expects?.length ? html`<div class="blk" style=${{ marginTop: "10px" }}><span class="h">Mark scheme expects</span>${L(p.ms_expects)}</div>` : null}
+        ${p.refs?.length ? html`<div style=${{ display: "grid", gap: "4px", marginTop: "10px" }}>${p.refs.slice(0, 6).map((r, j) => html`<span key=${j}>${refBtn(r)}</span>`)}</div>` : null}
+      </div>`)}</div>
+    </section>` : null}
+
+    <section>
+      <h3>Where the marks sit in the specification</h3>
+      <p class="sub">Marks per spec topic in each session. Darker cells carry more marks.</p>
+      <div class="seg" style=${{ marginBottom: "12px" }}>
+        ${["all", "1", "2"].map(v => html`<button key=${v} aria-pressed=${heatPaper === v} onClick=${() => setHeatPaper(v)}><b>${v === "all" ? "Both papers" : "Paper " + v}</b></button>`)}
+      </div>
+      <div class="heat-wrap"><table class="heat">
+        <thead><tr><th></th>${SESSIONS.map(s => html`<th key=${s.slug}>${s.m === "Specimen" ? "SAM" : (s.m === "Nov" ? "N" : "J") + s.y.slice(2)}</th>`)}<th>Total</th></tr></thead>
+        <tbody>${heat.list.map(r => html`<tr key=${r.topic}><th class="row" title=${r.topic}>${r.topic}</th>
+          ${SESSIONS.map(s => { const v = r.cells[s.slug] || 0; return html`<td key=${s.slug} style=${shade(v, heat.max)} title=${`${r.topic} · ${s.label}: ${v} mark${v === 1 ? "" : "s"}`}>${v || ""}</td>`; })}
+          <td class="tot">${r.tot}</td></tr>`)}</tbody>
+      </table>
+      <div class="legend"><span>Fewer marks</span><span class="ramp">${[14, 28, 46, 66, 88].map(p => html`<i key=${p} style=${{ background: `color-mix(in srgb, var(--accent) ${p}%, var(--surface))` }}></i>`)}</span><span>More marks</span></div>
+      </div>
+    </section>
+
+    <section class="cols2">
+      <div class="panel">
+        <h4>Command words, by marks</h4>
+        <div class="bars">${cwStats.map(c => html`<div class="bar" key=${c.c} title=${`${c.c}: ${c.marks} marks over ${c.n} parts`}>
+          <span>${c.c}</span><span class="track"><i style=${{ width: (c.marks / maxCw * 100) + "%" }}></i></span><span class="v">${c.marks} m</span></div>`)}</div>
+        ${(ins.command_words || []).length ? html`<dl class="codes" style=${{ marginTop: "16px" }}>${ins.command_words.map(c => html`<${React.Fragment} key=${c.word}><dt style=${{ color: "var(--accent)" }}>${c.word}</dt><dd>${c.ms_expects}</dd></${React.Fragment}>`)}</dl>` : null}
+      </div>
+      <div class="panel">
+        <h4>Reading the mark scheme</h4>
+        ${(ins.conventions || []).length ? html`<dl class="codes">${ins.conventions.map(c => html`<${React.Fragment} key=${c.code}><dt>${c.code}</dt><dd>${c.meaning}</dd></${React.Fragment}>`)}</dl>` : html`<p class="sub">Conventions will appear here.</p>`}
+      </div>
+    </section>
+
+    ${(ins.golden_rules || []).length ? html`<section>
+      <h3>Rules that apply to every paper</h3>
+      <div class="panel">${L(ins.golden_rules)}</div>
+    </section>` : null}
+
+    <section class="explorer" ref=${exRef}>
+      <h3>Every question part</h3>
+      <p class="sub">${filtered.length} of ${all.length} parts. Open one to see the marking points, then jump straight to it in the viewer.</p>
+      <div class="filters">
+        <input id="q-search" type="search" placeholder="Search topics, equations, answers…" value=${qtxt} onInput=${e => { setQtxt(e.target.value); setLimit(40); }} aria-label="Search questions" />
+        <select id="q-paper" value=${fPaper} onChange=${e => setFPaper(e.target.value)} aria-label="Paper"><option value="all">Both papers</option><option value="1">Paper 1</option><option value="2">Paper 2</option></select>
+        <select id="q-type" value=${fType} onChange=${e => setFType(e.target.value)} aria-label="Question type"><option value="all">All types</option>${typeStats.map(t => html`<option key=${t.type} value=${t.type}>${(insByType[t.type] || {}).label || tl(t.type)}</option>`)}</select>
+        <select id="q-mod" value=${fMod} onChange=${e => setFMod(e.target.value)} aria-label="Module"><option value="all">All modules</option>${modules.map(m => html`<option key=${m} value=${m}>${m}</option>`)}</select>
+      </div>
+      <div class="qrows">
+        ${filtered.slice(0, limit).map(q => { const id = q.paper + q.slug + q.q; const on = openRow === id; return html`
+          <div class="qrow" key=${id}>
+            <button onClick=${() => setOpenRow(on ? null : id)} aria-expanded=${on}>
+              <span class="ref">P${q.paper} · Q${q.q}<small>${SLABEL[q.slug]}</small></span>
+              <span class="ctx">${q.context}<small>${tl(q.type)} · ${q.topic || ""}${q.command_word ? " · " + q.command_word : ""}</small></span>
+              <span class="mk">${q.marks} m</span>
+            </button>
+            ${on && html`<div class="qdetail">
+              <div class="blk"><span class="h">Answer</span><span class="ans">${q.answer || "—"}</span>
+                ${q.equations?.length ? html`<span class="h" style=${{ marginTop: "8px" }}>Equations</span><span class="ans">${q.equations.join("  ·  ")}</span>` : null}
+                <button class="link" style=${{ marginTop: "8px" }} onClick=${() => open(q.paper, q.slug, q)}>Open in the viewer →</button></div>
+              <div class="blk"><span class="h">Marking points</span>${L(q.marking_points)}</div>
+              ${q.allow_reject_ignore?.length ? html`<div class="blk"><span class="h">Allow / reject / ignore</span>${L(q.allow_reject_ignore)}</div>` : null}
+              ${q.pitfalls?.length ? html`<div class="blk pen"><span class="h">Pitfalls</span>${L(q.pitfalls)}</div>` : null}
+            </div>`}
+          </div>`; })}
+      </div>
+      ${filtered.length > limit && html`<button class="btn more" onClick=${() => setLimit(l => l + 80)}>Show ${Math.min(80, filtered.length - limit)} more</button>`}
+    </section>
+  </div></div>`;
+}
+
+/* ---------- App ---------- */
+function App() {
+  const [data, setData] = useState({ all: [], byPaper: {}, ins: {}, regions: {}, ready: false });
+  const init = store.get("sel", { paper: 1, slug: "jun2024" });
+  const [sel, setSel] = useState({ paper: init.paper || 1, slug: SLABEL[init.slug] ? init.slug : "jun2024", q: null, nonce: 0 });
+  const fromHash = () => ({ "#insights": "insights", "#paper": "paper" })[location.hash] || "questions";
+  const [view, setView] = useState(fromHash);
+  useEffect(() => { store.set("sel", { paper: sel.paper, slug: sel.slug }); }, [sel.paper, sel.slug]);
+  useEffect(() => {
+    const h = () => setView(fromHash());
+    addEventListener("hashchange", h); return () => removeEventListener("hashchange", h);
+  }, []);
+  const go = v => { setView(v); try { history.replaceState(null, "", "#" + v); } catch {} };
+  useEffect(() => {
+    Promise.all([
+      fetch("data/questions.json").then(r => r.ok ? r.json() : []).catch(() => []),
+      fetch("data/insights.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
+      fetch("data/regions.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
+    ]).then(([all, ins, regions]) => {
+      const byPaper = {}; for (const q of all) (byPaper[`${q.paper}:${q.slug}`] ||= []).push(q);
+      setData({ all, byPaper, ins, regions, ready: true });
+    });
+  }, []);
+  const open = (paper, slug, q) => { setSel(s => ({ paper: +paper, slug, q: q || null, nonce: s.nonce + 1 })); go("questions"); };
+
+  return html`
+    <div class="app">
+      <header class="top">
+        <${Wave} k=${46} speed=${1.6} />
+        <div class="brand"><span class="code">H156</span><h1>Paper Bench <span>OCR A · AS Physics</span></h1></div>
+        <nav class="tabs" aria-label="View">
+          <button aria-pressed=${view === "questions"} onClick=${() => go("questions")}>Questions</button>
+          <button aria-pressed=${view === "paper"} onClick=${() => go("paper")}>Whole paper</button>
+          <button aria-pressed=${view === "insights"} onClick=${() => go("insights")}>Insights</button>
+        </nav>
+      </header>
+      ${view !== "insights" ? html`
+        <div class="rail">
+          <div class="seg" role="group" aria-label="Paper">
+            ${[1, 2].map(p => html`<button key=${p} aria-pressed=${sel.paper === p} onClick=${() => setSel(s => ({ ...s, paper: p, q: null }))}><b>${PAPERS[p].name}</b><small>${PAPERS[p].sub}</small></button>`)}
+          </div>
+          <div class="sessions" role="group" aria-label="Exam session">
+            ${SESSIONS.map(s => html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label}><span class="y">${s.y}</span><span class="m">${s.m}</span></button>`)}
+          </div>
+        </div>
+        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div><${Insights} data=${data} open=${open} /></div>`}
+    </div>`;
+}
+ReactDOM.createRoot(document.getElementById("root")).render(html`<${App} />`);
+})();
+</script>

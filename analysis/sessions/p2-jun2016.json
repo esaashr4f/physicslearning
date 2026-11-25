@@ -1,0 +1,1164 @@
+{
+ "paper": 2,
+ "session": "June 2016",
+ "slug": "jun2016",
+ "total_marks": 70,
+ "general_conventions": [
+  "B marks are independent marks awarded only when the specific point is seen in the answer.",
+  "M marks are method marks; if an M mark is not scored, the A marks that depend on it cannot be scored.",
+  "C marks are compensatory method marks: they can be awarded even if the equation/step is not written, provided later correct working shows it was known.",
+  "A marks are accuracy/answer marks that depend on an M mark or allow C marks to be scored; A0 in a 'show that' means the given value earns no mark itself.",
+  "ECF (error carried forward): a wrong earlier answer used correctly later is not penalised again.",
+  "AW = alternative wording accepted; ORA = or reverse argument; '/' separates alternative acceptable answers; words in brackets are not essential; underlined words must be present.",
+  "'reject'/'not' = answers not worthy of credit; 'ignore' = irrelevant statements that neither gain nor lose credit; 'allow' = acceptable answers.",
+  "Annotations used include BOD (benefit of doubt), CON (contradiction), ECF, L1/L2/L3 (levels), TE (transcription error), POT (power-of-ten error), SF (significant figure error), WP (wrong physics or equation).",
+  "Significant figures: if data are given to 2 s.f., answers to 2 or more s.f. are allowed; an answer to fewer than 2 s.f. is penalised once only in the whole paper unless guidance says otherwise.",
+  "Level of Response (6-mark, asterisked) questions: examiner first decides the level (L1 1-2, L2 3-4, L3 5-6) from the science content against the descriptor, then the mark within the level from the quality of communication/line of reasoning; indicative points are guidance, not a checklist; 0 for no response worthy of credit.",
+  "Alternative correct answers and unexpected approaches must be credited fairly."
+ ],
+ "questions": [
+  {
+   "q": "1(a)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 2,
+   "ms_page": 6,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "longitudinal vs transverse waves",
+   "type": "describe",
+   "secondary_types": [],
+   "command_word": "Describe",
+   "context": "Distinguish longitudinal and transverse waves.",
+   "answer": "Transverse: oscillations perpendicular to direction of energy travel; longitudinal: oscillations parallel to it.",
+   "marking_points": [
+    "B1: transverse - oscillations at right angles to direction of travel/energy transfer",
+    "B1: longitudinal - oscillations parallel to direction of travel/energy transfer"
+   ],
+   "allow_reject_ignore": [
+    "Allow 1 mark for a single statement that one type oscillates at right angles and the other parallel",
+    "Not 'move' in place of vibrate/oscillate",
+    "Allow 1 mark for 'transverse waves can be polarised' (ORA)"
+   ],
+   "pitfalls": [
+    "Saying particles 'move' along the wave rather than oscillate",
+    "Omitting the reference direction (direction of travel/energy transfer)"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "1(b)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 6,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "oscilloscope amplitude",
+   "type": "graph-read",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Read amplitude of an oscilloscope trace using the y-sensitivity setting.",
+   "answer": "40 mV",
+   "marking_points": [
+    "B1: 40 (mV)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Using peak-to-peak height instead of amplitude",
+    "Miscounting divisions"
+   ],
+   "equations": [
+    "amplitude = divisions × y-sensitivity"
+   ],
+   "skills": [
+    "data-analysis",
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "1(b)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 3,
+   "ms_page": 6,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "oscilloscope period and frequency",
+   "type": "calculation-multi-step",
+   "secondary_types": [
+    "graph-read"
+   ],
+   "command_word": "Determine",
+   "context": "Find the signal frequency from the trace using the time-base.",
+   "answer": "f ≈ 670 Hz (667 Hz)",
+   "marking_points": [
+    "C1: period T = 3 div × 0.5 ms = 1.5 ms",
+    "A1: f = 670 Hz"
+   ],
+   "allow_reject_ignore": [
+    "0.67 or 0.667 (kHz POT slip) scores 1 mark only"
+   ],
+   "pitfalls": [
+    "Forgetting to convert ms to s",
+    "Counting divisions for half a cycle"
+   ],
+   "equations": [
+    "f = 1/T"
+   ],
+   "skills": [
+    "data-analysis",
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "1(b)(iii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 6,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "wave equation",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Find wavelength of sound given its speed and the frequency found earlier.",
+   "answer": "λ ≈ 0.49 m",
+   "marking_points": [
+    "B1: λ = 330/670 ≈ 0.49 m"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (b)(ii)",
+    "If 667 Hz used λ = 0.495 m so allow 0.50 or 0.5 m"
+   ],
+   "pitfalls": [
+    "Using wrong frequency without ECF working shown"
+   ],
+   "equations": [
+    "v = fλ"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "1(c)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 3,
+   "ms_page": 6,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "intensity and amplitude",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Describe and explain",
+   "context": "Effect on trace when intensity falls to a quarter, oscilloscope settings unchanged.",
+   "answer": "Trace height smaller; I ∝ A², so amplitude halves (2 div / 20 mV).",
+   "marking_points": [
+    "B1: amplitude/height of trace is smaller",
+    "B1: intensity ∝ amplitude² so amplitude halves (2 div or 20 mV)"
+   ],
+   "allow_reject_ignore": [
+    "The second point also scores the first"
+   ],
+   "pitfalls": [
+    "Claiming amplitude becomes a quarter",
+    "Saying frequency/wavelength changes"
+   ],
+   "equations": [
+    "I ∝ A²"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "2(a)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 7,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "principle of superposition",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "State the principle of superposition.",
+   "answer": "Where waves meet, resultant displacement equals the sum of individual displacements.",
+   "marking_points": [
+    "B1: resultant displacement = sum of the individual displacements (where waves meet)"
+   ],
+   "allow_reject_ignore": [
+    "Allow net/total for resultant",
+    "Not 'amplitude' instead of displacement"
+   ],
+   "pitfalls": [
+    "Using 'amplitude' instead of 'displacement'"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "2(a)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 7,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "coherence",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Meaning of coherent.",
+   "answer": "Constant phase difference.",
+   "marking_points": [
+    "B1: constant/fixed phase difference (relationship)"
+   ],
+   "allow_reject_ignore": [
+    "Ignore 'same frequency/wavelength'",
+    "Not 'same phase difference' or 'zero phase difference'"
+   ],
+   "pitfalls": [
+    "Writing 'same phase difference' or 'in phase' instead of constant phase difference"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "2(b)1",
+   "section": "",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 7,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "path difference at maxima",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Path difference at the first maximum from the central maximum (microwaves, two slits).",
+   "answer": "λ",
+   "marking_points": [
+    "B1: λ"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Giving 2λ by counting A as first maximum"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "2(b)2",
+   "section": "",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 7,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "path difference at minima",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Path difference at the second minimum point.",
+   "answer": "1.5λ (3λ/2)",
+   "marking_points": [
+    "B1: 3λ/2 or 1.5λ"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Giving λ/2 (that is the first minimum)"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "2(c)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 5,
+   "ms_page": 7,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "double-slit fringe spacing",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "State and explain",
+   "context": "Effect on maxima separation of increasing slit separation.",
+   "answer": "Separation of maxima decreases since x = λD/a with λ and D constant.",
+   "marking_points": [
+    "M1: λ = ax/D quoted with D and λ constant (or x ∝ 1/a)",
+    "A1: separation decreases"
+   ],
+   "allow_reject_ignore": [
+    "Allow other correct reasoning e.g. via path difference and angles"
+   ],
+   "pitfalls": [
+    "Stating effect without the equation-based reasoning (A mark depends on M)"
+   ],
+   "equations": [
+    "λ = ax/D"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "3(a)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.3 Projectile motion",
+   "subtopic": "projectile time to max height",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show time to reach max height ≈ 0.6 s from initial vertical velocity.",
+   "answer": "t = 6.3/9.81 = 0.64 s",
+   "marking_points": [
+    "M1: t = 6.3/9.81 (or equivalent e.g. 2×2.0/6.3)",
+    "A0: 0.64 s"
+   ],
+   "allow_reject_ignore": [
+    "Allow other correct methods",
+    "Not g = 10 m s^-2",
+    "t must be the unknown"
+   ],
+   "pitfalls": [
+    "Using g = 10",
+    "Not showing substitution in a show-that"
+   ],
+   "equations": [
+    "v = u + at",
+    "s = (u+v)t/2"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "3(a)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.3 Projectile motion",
+   "subtopic": "horizontal velocity component",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show horizontal velocity component ≈ 30 m s^-1 from distance and time.",
+   "answer": "vH = 18/0.64 ≈ 28 (≈30) m s^-1",
+   "marking_points": [
+    "M1: vH = 18/0.64 or 18/0.6",
+    "A0"
+   ],
+   "allow_reject_ignore": [
+    "v must be the unknown"
+   ],
+   "pitfalls": [
+    "Applying acceleration to horizontal motion"
+   ],
+   "equations": [
+    "v = s/t"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "3(a)(iii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 7,
+   "ms_page": 8,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.3.1 Scalars and vectors",
+   "subtopic": "resultant of velocity components",
+   "type": "calculation-multi-step",
+   "secondary_types": [
+    "calculation-single-step"
+   ],
+   "command_word": "Calculate",
+   "context": "Magnitude of initial velocity from its components.",
+   "answer": "v ≈ 31 m s^-1 (29 if 28 used)",
+   "marking_points": [
+    "C1: v = √(6.3² + 30²)",
+    "A1: 31 m s^-1"
+   ],
+   "allow_reject_ignore": [
+    "Allow trig methods; using 28 gives 29 m s^-1",
+    "940 (not square-rooted) scores 1 mark"
+   ],
+   "pitfalls": [
+    "Adding components arithmetically",
+    "Forgetting the square root"
+   ],
+   "equations": [
+    "v² = vx² + vy²"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "3(b)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3.2 Kinetic and potential energies",
+   "subtopic": "kinetic energy",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Initial KE of a 0.160 kg ball.",
+   "answer": "Ek ≈ 75 J",
+   "marking_points": [
+    "B1: Ek = ½ × 0.16 × 30.7² ≈ 75 J"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)(iii)"
+   ],
+   "pitfalls": [
+    "Using only a velocity component"
+   ],
+   "equations": [
+    "Ek = ½mv²"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "3(b)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3.2 Kinetic and potential energies",
+   "subtopic": "gravitational potential energy",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "GPE gain from ground to maximum height.",
+   "answer": "3.1 J",
+   "marking_points": [
+    "B1: mgh = 0.16 × 9.81 × 2.0 = 3.1 J"
+   ],
+   "allow_reject_ignore": [
+    "Allow ½ × 0.16 × 6.3² = 3.2 J"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "Ep = mgh"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "3(b)(iii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 7,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3.1 Work and conservation of energy",
+   "subtopic": "energy conservation",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "KE at maximum height.",
+   "answer": "≈72 J",
+   "marking_points": [
+    "B1: (b)(i) − (b)(ii) = 75 − 3.1 = 72 J (or ½ × 0.16 × 30²)"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (b)(i) and (b)(ii)",
+    "63 J if 28 m s^-1 used"
+   ],
+   "pitfalls": [
+    "Assuming KE is zero at the top of the trajectory"
+   ],
+   "equations": [
+    "Ek(top) = Ek(initial) − Ep"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "3(c)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 7,
+   "ms_page": 8,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.3 Projectile motion",
+   "subtopic": "projectile with air resistance",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Sketch",
+   "context": "Sketch the likely path with air resistance and same launch velocity.",
+   "answer": "Path always below original; peak reached before the goal (asymmetric, steeper descent).",
+   "marking_points": [
+    "M1: path lies below the original path throughout",
+    "A1: maximum height reached before the front of the goal"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Drawing a path that goes higher or crosses the original",
+    "Peak at same horizontal position"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "4(a)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 8,
+   "ms_page": 9,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.1.2 S.I. units",
+   "subtopic": "base units of the volt",
+   "type": "derivation",
+   "secondary_types": [
+    "show-that"
+   ],
+   "command_word": "Show",
+   "context": "Use W = VQ to express the volt in SI base units.",
+   "answer": "V = J/C = kg m² s^-2 /(A s) = kg m² A^-1 s^-3",
+   "marking_points": [
+    "C1: C = A s",
+    "C1: J = N m = kg m s^-2 × m",
+    "M1: clear substitution V = kg m² s^-2 / (A s)",
+    "A0: kg m² A^-1 s^-3"
+   ],
+   "allow_reject_ignore": [
+    "Allow alternative methods"
+   ],
+   "pitfalls": [
+    "Not showing each step clearly (show-that)",
+    "Treating coulomb as a base unit"
+   ],
+   "equations": [
+    "W = VQ",
+    "Q = It",
+    "W = Fx",
+    "F = ma"
+   ],
+   "skills": [
+    "units",
+    "derivation"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "4(b)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 9,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.3 Potential dividers",
+   "subtopic": "potential divider with LDR",
+   "type": "show-that",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Show",
+   "context": "Show LDR resistance is 6800 Ω given pd across it and fixed resistor value.",
+   "answer": "pd across 1.2 kΩ = 0.9 V; R = 1200 × 5.1/0.9 = 6800 Ω",
+   "marking_points": [
+    "C1: pd across 1.2 kΩ = 0.9 V",
+    "C1: R/1200 = 5.1/0.9 (or find current then R = 5.1/I)",
+    "A0: 6800 Ω",
+    "Alt: 5.1 = R/(R+1.2) × 6.0 → C1 C1"
+   ],
+   "allow_reject_ignore": [
+    "Allow 6.8 kΩ",
+    "Allow verification R=6.8 → 6.8/(6.8+1.2) × 6.0 = 5.1 for both marks"
+   ],
+   "pitfalls": [
+    "Mixing kΩ and Ω",
+    "Not showing working for a show-that"
+   ],
+   "equations": [
+    "Vout = R2/(R1+R2) × Vin",
+    "V1/V2 = R1/R2"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "4(b)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 9,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.3 Resistance",
+   "subtopic": "current in series circuit",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Current delivered by the battery.",
+   "answer": "7.5 × 10^-4 A",
+   "marking_points": [
+    "B1: I = 6/8000 = 0.9/1200 = 7.5 × 10^-4 A"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Using only one resistor with 6 V"
+   ],
+   "equations": [
+    "V = IR"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "4(c)",
+   "section": "",
+   "marks": 4,
+   "qp_page": 9,
+   "ms_page": 9,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.3 Potential dividers",
+   "subtopic": "LDR in potential divider",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Describe and explain",
+   "context": "Effect on ammeter and voltmeter readings when LDR is in sunlight, without potential divider equation.",
+   "answer": "LDR resistance falls so current rises; pd across fixed resistor rises, so voltmeter (LDR) reading falls.",
+   "marking_points": [
+    "M1: LDR (total) resistance decreases",
+    "A1: current/ammeter reading increases",
+    "B1: larger current gives larger pd across fixed 1.2 kΩ resistor",
+    "B1: voltmeter reading decreases (fixed emf)"
+   ],
+   "allow_reject_ignore": [
+    "Allow LDR has a smaller share of pd / resistor greater share"
+   ],
+   "pitfalls": [
+    "Using the potential divider equation (forbidden)",
+    "Not linking current increase to resistor pd"
+   ],
+   "equations": [
+    "V = IR",
+    "E = V1 + V2"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(a)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 11,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.4 Density and pressure",
+   "subtopic": "density",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show volume of a 100 g sample from its density.",
+   "answer": "V = 0.1/5300 = 1.89 × 10^-5 m³",
+   "marking_points": [
+    "M1: substitution V = 0.1/5300",
+    "A0"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Using 100 (g) instead of 0.1 kg"
+   ],
+   "equations": [
+    "ρ = m/V"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "5(b)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 11,
+   "ms_page": 10,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1.1 Planning",
+   "subtopic": "practical: electrical contact",
+   "type": "compare-suggest",
+   "secondary_types": [
+    "practical-method"
+   ],
+   "command_word": "Suggest",
+   "context": "Why large metal plates are used at the ends of the putty.",
+   "answer": "So the whole cross-sectional area of the putty ends contacts the plates.",
+   "marking_points": [
+    "B1: ensures whole cross-section/end of putty is in contact with plate"
+   ],
+   "allow_reject_ignore": [
+    "Not 'good electrical contact', 'reduces contact resistance' or 'surface area'"
+   ],
+   "pitfalls": [
+    "Vague 'good contact' answers"
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "5(b)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 11,
+   "ms_page": 10,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1.2 Implementing",
+   "subtopic": "measuring diameter",
+   "type": "practical-method",
+   "secondary_types": [],
+   "command_word": "Describe",
+   "context": "How to check the putty cylinder diameter is constant.",
+   "answer": "Use calipers/micrometer and repeat at several points along the length.",
+   "marking_points": [
+    "B1: use (vernier) calipers/micrometer",
+    "B1: repeat measurements along the length"
+   ],
+   "allow_reject_ignore": [
+    "Allow ruler"
+   ],
+   "pitfalls": [
+    "Measuring only once"
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "5(c)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 12,
+   "ms_page": 10,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2.2 Graphs",
+   "subtopic": "processing data",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Complete",
+   "context": "Missing L² value in table.",
+   "answer": "6.6 (× 10^-3 m²)",
+   "marking_points": [
+    "B1: 6.6"
+   ],
+   "allow_reject_ignore": [
+    "Allow 6.56",
+    "Ignore 10^-3 factor"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "L² = L × L"
+   ],
+   "skills": [
+    "data-analysis"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "5(c)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 12,
+   "ms_page": 10,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2.1 Measurements and uncertainties",
+   "subtopic": "percentage uncertainty in a square",
+   "type": "uncertainty-error",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Percentage uncertainty in L² for L = 0.049 m measured to nearest mm.",
+   "answer": "≈4.1 %",
+   "marking_points": [
+    "B1: 2 × (0.001/0.049) × 100 = 4.1 %"
+   ],
+   "allow_reject_ignore": [
+    "Ignore s.f.",
+    "Allow 4 %"
+   ],
+   "pitfalls": [
+    "Not doubling the % uncertainty for a squared quantity",
+    "Using 0.5 mm instead of the stated 1 mm"
+   ],
+   "equations": [
+    "%U(L²) = 2 × %U(L)"
+   ],
+   "skills": [
+    "uncertainty"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "5(d)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 12,
+   "ms_page": 10,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2.2 Graphs",
+   "subtopic": "plotting and best-fit line",
+   "type": "graph-plot",
+   "secondary_types": [],
+   "command_word": "Plot",
+   "context": "Plot missing point and draw straight best-fit line on R vs L² graph.",
+   "answer": "Point plotted accurately; straight best-fit line with balanced scatter.",
+   "marking_points": [
+    "B1: point plotted within half a small square",
+    "B1: straight line of best fit"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (c)(i)",
+    "Penalise blobs ≥ half small square",
+    "Not a line joining top and bottom points"
+   ],
+   "pitfalls": [
+    "Large plotting blobs",
+    "Forcing line through first/last points"
+   ],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "5(d)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 12,
+   "ms_page": 10,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.2.2 Graphs",
+   "subtopic": "gradient",
+   "type": "graph-gradient",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Gradient of R vs L² best-fit line.",
+   "answer": "≈5700 Ω m^-2 (5550–5850)",
+   "marking_points": [
+    "M1: Δy/Δx from the line",
+    "A1: 5700 ± 150"
+   ],
+   "allow_reject_ignore": [
+    "Not a single R/L² value from a data point",
+    "Ignore POT for M1; ignore units"
+   ],
+   "pitfalls": [
+    "Using a single data point",
+    "Small triangle"
+   ],
+   "equations": [
+    "gradient = Δy/Δx"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "5(e)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 13,
+   "ms_page": 10,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.4 Resistivity",
+   "subtopic": "resistivity from gradient",
+   "type": "calculation-multi-step",
+   "secondary_types": [
+    "graph-gradient"
+   ],
+   "command_word": "Determine",
+   "context": "Find resistivity using gradient = ρ/V and given volume; include unit.",
+   "answer": "ρ ≈ 0.11 Ω m",
+   "marking_points": [
+    "C1: ρ = gradient × V = 5700 × 1.9 × 10^-5",
+    "A1: 0.108 (2 or 3 s.f.)",
+    "B1: unit Ω m"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (d)(ii)",
+    "Not using table data points instead of gradient"
+   ],
+   "pitfalls": [
+    "Forgetting the 10^-3 factor on the L² axis",
+    "Wrong unit (Ω m^-1, Ω)"
+   ],
+   "equations": [
+    "R = ρL²/V",
+    "R = ρL/A"
+   ],
+   "skills": [
+    "graph",
+    "units",
+    "data-analysis"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "6(a)",
+   "section": "",
+   "marks": 6,
+   "qp_page": 14,
+   "ms_page": 11,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.2 Mechanical properties of matter",
+   "subtopic": "breaking stress experiment",
+   "type": "level-of-response",
+   "secondary_types": [],
+   "command_word": "Describe",
+   "context": "Describe a safe experiment (with diagram) to find a wire's breaking stress and how to analyse data.",
+   "answer": "Clamp wire, add masses incrementally until break, measure diameter with micrometer, stress = F/A.",
+   "marking_points": [
+    "L3 (5-6): clear procedure, measurements and analysis; well-developed, logically structured reasoning",
+    "L2 (3-4): some procedure, some measurements and some analysis; some structure",
+    "L1 (1-2): limited procedure and limited measurements or limited analysis; unstructured",
+    "0: nothing creditworthy",
+    "Procedure: labelled diagram; increase load in increments until break; method of fixing wire and attaching load; safety screen/goggles; secure stand (G-clamp)",
+    "Measurements: load/mass; diameter with micrometer, averaged at several places; repeat experiment",
+    "Analysis: F = mg; A = πd²/4; breaking stress = maximum force / cross-sectional area"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Omitting safety measures",
+    "Using radius/diameter confusion in area",
+    "No analysis stated (caps at lower level)"
+   ],
+   "equations": [
+    "σ = F/A",
+    "A = πd²/4",
+    "W = mg"
+   ],
+   "skills": [
+    "practical",
+    "extended-writing"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "6(b)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 15,
+   "ms_page": 11,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.2 Mechanical properties of matter",
+   "subtopic": "stress-strain for brittle and polymeric",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Sketch",
+   "context": "Sketch loading/unloading stress-strain graphs for glass and rubber.",
+   "answer": "Glass: straight line through origin (same for unloading); rubber: hysteresis loop starting and ending at origin.",
+   "marking_points": [
+    "B1: glass - straight line from origin",
+    "B1: rubber - correct loading and unloading curves (loop) starting and ending at origin"
+   ],
+   "allow_reject_ignore": [
+    "Ignore arrows for glass",
+    "Allow arrows or labels for rubber curves"
+   ],
+   "pitfalls": [
+    "Showing plastic region for glass",
+    "Rubber loop not returning to origin"
+   ],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "7(a)",
+   "section": "",
+   "marks": 6,
+   "qp_page": 16,
+   "ms_page": 12,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.2 The photoelectric effect",
+   "subtopic": "photoelectric effect with gold-leaf electroscope",
+   "type": "level-of-response",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Explain electroscope observations with light and UV as evidence for photoelectric effect and photons.",
+   "answer": "UV photons exceed work function, emit electrons so leaf falls; intensity only changes rate; visible photons below threshold regardless of intensity.",
+   "marking_points": [
+    "L3 (5-6): clear explanation of observations AND clear evidence of particulate nature; well-developed, logical reasoning",
+    "L2 (3-4): clear explanation OR clear evidence, or limited explanation and limited evidence; some structure",
+    "L1 (1-2): limited explanation or limited evidence; unstructured",
+    "0: nothing creditworthy",
+    "Observations: leaf falls as electrons (negative charge) emitted; intensity depends on distance; more photons per second when closer; higher UV photon rate → faster fall; UV discharge is immediate; light has no effect regardless of intensity; slow fall with light is natural leakage",
+    "Particle evidence: wave theory predicts light would eventually discharge; photon = packet of energy E = hf; one-to-one photon-electron interaction; UV photon energy > work function (f > threshold); light photon energy < work function; photon energy independent of intensity; energy conserved; Einstein's equation"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Saying brighter light gives electrons more energy",
+    "Not explaining the role of distance/intensity",
+    "Ignoring slow natural discharge"
+   ],
+   "equations": [
+    "E = hf",
+    "hf = φ + KEmax"
+   ],
+   "skills": [
+    "extended-writing",
+    "data-analysis"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "7(b)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 17,
+   "ms_page": 13,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.2 The photoelectric effect",
+   "subtopic": "Einstein photoelectric equation",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Max KE in joules of photoelectrons given frequency and work function in eV.",
+   "answer": "≈1.2 × 10^-19 J (1.24)",
+   "marking_points": [
+    "C1: φ = 3.2 × 1.6 × 10^-19 J or photon energy = 6.63 × 10^-34 × 9.6 × 10^14",
+    "C1: KEmax = hf − 5.12 × 10^-19",
+    "A1: 1.2 × 10^-19 J"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Not converting eV to J",
+    "Adding instead of subtracting work function"
+   ],
+   "equations": [
+    "E = hf",
+    "hf = φ + KEmax",
+    "1 eV = 1.6 × 10^-19 J"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "8(a)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 18,
+   "ms_page": 14,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.3 Wave-particle duality",
+   "subtopic": "electron accelerated through pd",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show speed of electrons accelerated from rest through 300 V.",
+   "answer": "v = √(2eV/m) = 1.03 × 10^7 m s^-1",
+   "marking_points": [
+    "C1: KE = 1.6 × 10^-19 × 300",
+    "C1: eV = ½mv²",
+    "C1: v = √(2 × 1.6 × 10^-19 × 300 / 9.11 × 10^-31)",
+    "A0: 1.03 × 10^7"
+   ],
+   "allow_reject_ignore": [
+    "1.05 × 10^14 (not square-rooted) scores 2"
+   ],
+   "pitfalls": [
+    "Forgetting square root",
+    "Giving only 1.0 × 10^7 without more s.f. in a show-that"
+   ],
+   "equations": [
+    "eV = ½mv²"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "8(b)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 18,
+   "ms_page": 14,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.3 Wave-particle duality",
+   "subtopic": "de Broglie wavelength",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "de Broglie wavelength of the electrons.",
+   "answer": "≈7.3 × 10^-11 m (7.1 if 1.03 × 10^7 used)",
+   "marking_points": [
+    "C1: λ = 6.63 × 10^-34/(9.11 × 10^-31 × 1.0 × 10^7)",
+    "A1: 7.3 × 10^-11 m"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)",
+    "Allow 7.1 × 10^-11 m"
+   ],
+   "pitfalls": [
+    "Using electron charge instead of mass"
+   ],
+   "equations": [
+    "λ = h/mv"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "8(c)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 19,
+   "ms_page": 14,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.3 Wave-particle duality",
+   "subtopic": "electron diffraction pattern",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "How the diffraction rings change when accelerating pd increases.",
+   "answer": "Electrons gain momentum so de Broglie wavelength falls; rings become smaller (less diffraction).",
+   "marking_points": [
+    "B1: momentum/KE/speed increases or wavelength decreases",
+    "B1: ring radius decreases / pattern smaller (or rings brighter)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Saying rings get larger",
+    "Not linking to wavelength"
+   ],
+   "equations": [
+    "λ = h/p"
+   ],
+   "skills": [],
+   "difficulty": 2
+  }
+ ]
+}

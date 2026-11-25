@@ -1,0 +1,1083 @@
+{
+ "paper": 2,
+ "session": "June 2024",
+ "slug": "jun2024",
+ "total_marks": 70,
+ "general_conventions": [
+  "M1 = method mark; A marks dependent on it cannot be scored unless the M mark is earned. A1 = accuracy/answer mark, often awarded for a correct final answer which then implies earlier C marks.",
+  "C1 = compensatory (method) mark that can be awarded for correct working even if the final answer is wrong; a correct final answer normally earns all C marks.",
+  "B1 = independent mark, not dependent on other marks.",
+  "A0 on a show-that line means the given value earns no credit by itself; the mark is for the working shown.",
+  "ECF (error carried forward): later numerical parts can earn full credit if consistent with an earlier wrong answer; ECF is allowed after arithmetic (AE), transcription (TE) and power-of-ten (POT) errors but not after wrong physics/equation (XP).",
+  "POT: power-of-ten error, usually from SI prefix conversion; the mark where it happens is lost, then ECF applies.",
+  "TE: wrong copying of data from question, graph, booklet or earlier answer; lose that mark only, then ECF.",
+  "XP: using an incorrect equation counts as wrong physics even if it gives the right number.",
+  "SF: giving more significant figures than justified is not penalised; too few sig figs is handled within individual mark points and penalised only once in the paper.",
+  "CON: contradictory statements in one answer score no mark. BOD = benefit of the doubt.",
+  "Conventions: '/' separates alternative acceptable answers; Reject/Not = not creditworthy; Ignore = irrelevant; Allow = acceptable; words in brackets are not essential; underlined words must appear; AW = alternative wording; ORA = or reverse argument.",
+  "Level of Response (6-mark, asterisked) questions are marked holistically: decide the level from the science and the quality of reasoning, then the higher/lower mark within the level by communication. L1 = 1-2, L2 = 3-4, L3 = 5-6 marks; L1^/L2^/L3^ annotate the lower mark in each level.",
+  "LoR communication strands: L3 needs a well-developed line of reasoning, clear and logically structured, relevant and substantiated; L2 a line of reasoning with some structure, mostly relevant, supported by some evidence; L1 basic, unstructured information with limited evidence; 0 = nothing worthy of credit.",
+  "Alternative correct approaches and unexpected methods must be credited fairly.",
+  "MACB categorisation: B marks must be specifically seen; M marks must be seen and gate dependent A marks; C marks can be implied by later correct working (e.g. a correct substitution implies knowledge of the equation); A marks depend on an M mark or allow C marks to be scored.",
+  "Significant figures rule: if data are given to 2 s.f., answers to 2 or more s.f. are allowed; fewer than 2 s.f. is penalised once only in the whole paper unless additional guidance says otherwise.",
+  "For substitution into an equation any rearranged subject is allowed unless guidance says otherwise.",
+  "Crossed-out work is not marked if a clear alternative is given; contradictory responses score nothing even if one part is correct.",
+  "List questions: only the required number of responses are marked, left to right then line by line; extra responses hedging bets gain no credit.",
+  "LoR marking: read the whole answer, use a best-fit approach; the science content sets the level and the communication statement (in italics) decides the higher or lower mark within the level.",
+  "NR is used when nothing is written; 0 is given for written work not worthy of credit (including copying the question).",
+  "Levels of response questions on this paper are 3 and 8."
+ ],
+ "questions": [
+  {
+   "q": "1(a)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 2,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.1 Kinematics",
+   "subtopic": "speed in circular orbit",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Average speed of moon asteroid orbiting at 1.19 km with given period.",
+   "answer": "0.17 m s^-1 (0.174)",
+   "marking_points": [
+    "C1: v = 2π × 1.19 × 10^3 / 4.29 × 10^4",
+    "A1: 0.17 m s^-1"
+   ],
+   "allow_reject_ignore": [
+    "One mark for 1.7 to any power of ten"
+   ],
+   "pitfalls": [
+    "Forgetting km → m",
+    "Using r instead of 2πr"
+   ],
+   "equations": [
+    "v = 2πr/T"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "1(b)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 2,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.1 Kinematics",
+   "subtopic": "velocity as a vector",
+   "type": "compare-suggest",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Similarity and difference of velocity at P and about half an orbit later.",
+   "answer": "Same speed (magnitude); different (roughly opposite) direction",
+   "marking_points": [
+    "B1: similarity - same magnitude/speed (0.17 m s^-1)",
+    "B1: difference - direction different (approximately opposite)"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)",
+    "Do not allow 'same velocity'; allow 'negative'"
+   ],
+   "pitfalls": [
+    "Saying velocity is the same"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "1(c)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.1 Physical quantities and units",
+   "subtopic": "ratio of periods / time conversion",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show new period / old period ≈ 0.958 after 30 min reduction.",
+   "answer": "4.11 × 10^4 / 4.29 × 10^4 = 0.958",
+   "marking_points": [
+    "M1: e.g. (11 × 60 + 25)/(11 × 60 + 55) = 685/715 or (4.29 × 10^4 - 1800)/4.29 × 10^4",
+    "A0: 0.958"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Subtracting 30 s instead of 1800 s"
+   ],
+   "equations": [],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "1(c)(ii)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M2 Foundations of physics",
+   "topic": "2.3 Nature of quantities",
+   "subtopic": "proportionality r³ ∝ T²",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "New orbital radius from r³ ∝ T², in km to 3 s.f.",
+   "answer": "1.16 km",
+   "marking_points": [
+    "C1: rN³ = 0.958² × 1.19³ (or rN = 1.19 × ∛(0.958²))",
+    "C1: rN = 1.156 to any power of ten (min 3 s.f.)",
+    "A1: 1.16 km to 3 s.f."
+   ],
+   "allow_reject_ignore": [
+    "Any rearrangement; ECF from (c)(i)",
+    "Answer must be in km"
+   ],
+   "pitfalls": [
+    "Using ratio not squared/cube-rooted properly",
+    "Wrong units or s.f."
+   ],
+   "equations": [
+    "r³ ∝ T²"
+   ],
+   "skills": [
+    "sig-figs"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "2(a)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5.1 Newton's laws of motion",
+   "subtopic": "Newton's second law",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Newton's second law in terms of momentum.",
+   "answer": "Net force proportional to (equals) rate of change of momentum",
+   "marking_points": [
+    "B1: net force is (proportional to) rate of change of momentum"
+   ],
+   "allow_reject_ignore": [
+    "Allow F = Δp/Δt with symbols defined",
+    "F = ma alone is a special case and not credited"
+   ],
+   "pitfalls": [
+    "Quoting F = ma only"
+   ],
+   "equations": [
+    "F = Δp/Δt"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "2(b)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 4,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5.1 Newton's laws of motion",
+   "subtopic": "impulse",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Impulse on puck given mass and final speed, with unit.",
+   "answer": "3.2 N s",
+   "marking_points": [
+    "B1: 0.16 × 20 = 3.2",
+    "B1: unit N s or kg m s^-1"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Unit N or N s^-1"
+   ],
+   "equations": [
+    "impulse = Δp = mΔv"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "2(b)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 4,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5.1 Newton's laws of motion",
+   "subtopic": "average force from impulse",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Average force of stick on puck over 0.033 s contact.",
+   "answer": "97 N",
+   "marking_points": [
+    "B1: F = 3.2/0.033 = 97 N"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (b)(i)"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "F = Δp/Δt"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "2(c)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 5,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5.2 Collisions",
+   "subtopic": "perfectly elastic collision",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Meaning of perfectly elastic collision.",
+   "answer": "Kinetic energy is conserved",
+   "marking_points": [
+    "B1: total kinetic energy conserved (KE before = KE after)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Saying energy conserved (all collisions conserve total energy)"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "2(c)(ii)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 5,
+   "ms_page": 10,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5.2 Collisions",
+   "subtopic": "conservation of momentum",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Find added mass on puck B from velocities after elastic collision.",
+   "answer": "0.48 kg",
+   "marking_points": [
+    "C1: 0.16 × 20 = (m + 0.16) × 8 + 0.16 × (-12)",
+    "C1: (m + 0.16) × 8 = 5.12, so m + 0.16 = 0.64",
+    "A1: m = 0.48 kg",
+    "Alternative via KE conservation: ½ × 0.16 × 20² = ½(m + 0.16)8² + ½ × 0.16 × 12²; 32(m + 0.16) = 20.48; m = 0.48 kg"
+   ],
+   "allow_reject_ignore": [
+    "0.64 kg (total mass of B) gains two marks",
+    "ECF from (b)(i)"
+   ],
+   "pitfalls": [
+    "Ignoring sign of -12 m s^-1",
+    "Forgetting to subtract puck mass"
+   ],
+   "equations": [
+    "Σp before = Σp after"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "3",
+   "section": "",
+   "marks": 6,
+   "qp_page": 6,
+   "ms_page": 11,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.3 Analysis",
+   "subtopic": "g from free-fall with t vs √h graph",
+   "type": "level-of-response",
+   "secondary_types": [
+    "graph-gradient",
+    "uncertainty-error"
+   ],
+   "command_word": "Describe",
+   "context": "Describe measuring h and t; use t vs √h graph to find g with % uncertainty.",
+   "answer": "Gradient ≈ 0.44-0.47 s m^-1/2 = √(2/g), g ≈ 9.5 m s^-2; % uncertainty in g = 2 × % in gradient",
+   "marking_points": [
+    "L3 (5-6): clear method to measure h and t and graph analysed to give g and its percentage uncertainty",
+    "L2 (3-4): some method and attempted analysis for g and uncertainty; OR clear method with limited analysis; OR limited method with full analysis",
+    "L1 (1-2): limited method for h or t OR limited analysis for g",
+    "Indicative (method): metre rule/tape (not ruler) clamped vertically; set square/fiducial marker; timer linked to electromagnet and trapdoor; switching off magnet starts timer, ball hitting trapdoor stops it; allow for ball diameter in h; resolution mm and ms (light gates/video ignored)",
+    "Indicative (analysis): gradient = √(2/g) so g = 2/gradient²; method for gradient; gradient 0.44-0.47; g ≈ 9.5 m s^-2 with correct power of ten and unit; worst acceptable line and its gradient; absolute and % uncertainty in gradient; % uncertainty in g = 2 × % uncertainty in gradient or from worst g values"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Forgetting ms → s in gradient",
+    "Not doubling % uncertainty when squaring",
+    "Using a 30 cm ruler"
+   ],
+   "equations": [
+    "t = √(2/g)·√h + k",
+    "g = 2/gradient²"
+   ],
+   "skills": [
+    "practical",
+    "extended-writing",
+    "graph",
+    "uncertainty"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "4(a)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 10,
+   "ms_page": 13,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.2 Implementing",
+   "subtopic": "accurate thickness measurement",
+   "type": "practical-method",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "How to measure prism thickness accurately.",
+   "answer": "Calipers/micrometer; repeat at several positions; average",
+   "marking_points": [
+    "B1: use calipers (allow micrometer)",
+    "B1: repeat at different positions and take mean"
+   ],
+   "allow_reject_ignore": [
+    "Not ruler"
+   ],
+   "pitfalls": [
+    "Suggesting a ruler"
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "4(a)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 10,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.4 Density and pressure",
+   "subtopic": "density of a prism",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Density of wooden triangular prism.",
+   "answer": "630 kg m^-3",
+   "marking_points": [
+    "C1: volume = ½ × 0.600 × 0.750 × 2.83 × 10^-2 = 6.37 × 10^-3 m³",
+    "A1: ρ = 630 kg m^-3"
+   ],
+   "allow_reject_ignore": [
+    "One mark for 6.3/6.25 (POT) or 310/313 (wrong volume, no ½)"
+   ],
+   "pitfalls": [
+    "Forgetting ½ for triangle",
+    "cm not converted"
+   ],
+   "equations": [
+    "ρ = m/V",
+    "triangle area = ½bh"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "4(b)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 10,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "centre of gravity",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Meaning of centre of gravity.",
+   "answer": "Point where entire weight appears to act",
+   "marking_points": [
+    "B1: point where the weight of the object appears to act"
+   ],
+   "allow_reject_ignore": [
+    "Allow gravitational force for weight; not 'gravity' or 'mass'"
+   ],
+   "pitfalls": [
+    "Using 'mass' instead of weight"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "4(b)(ii)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 11,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "centre of gravity of a triangle by medians",
+   "type": "show-that",
+   "secondary_types": [
+    "sketch-draw"
+   ],
+   "command_word": "Show",
+   "context": "Construct medians on scale drawing to locate C ≈ 0.25 m from PQ.",
+   "answer": "Medians intersect ~5 cm from PQ on drawing = 0.25 m",
+   "marking_points": [
+    "C1: one straight line from midpoint of a side to opposite vertex",
+    "M1: at least two such lines with C labelled 4.8-5.2 cm from centre of PQ",
+    "A1: measured distance × 0.05 = 0.24-0.26 m"
+   ],
+   "allow_reject_ignore": [
+    "Not 0.25 × 0.05"
+   ],
+   "pitfalls": [
+    "Drawing angle bisectors or altitudes not to midpoints",
+    "Misusing scale"
+   ],
+   "equations": [],
+   "skills": [
+    "estimate"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "4(c)(i)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 12,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "conditions for equilibrium",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Two conditions for equilibrium of the prism.",
+   "answer": "Resultant force zero; resultant moment about any point zero",
+   "marking_points": [
+    "B1: resultant force = 0 (in any direction)",
+    "M1: resultant moment = 0",
+    "A1: about any point"
+   ],
+   "allow_reject_ignore": [
+    "Allow up = down forces, clockwise = anticlockwise moments, torque"
+   ],
+   "pitfalls": [
+    "Omitting 'about any point'"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "4(c)(ii)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 12,
+   "ms_page": 14,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.3 Equilibrium",
+   "subtopic": "moments to find holding force",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Force at R to hold prism in equilibrium on support along PQ.",
+   "answer": "13 N",
+   "marking_points": [
+    "C1: weight = 3.98 × 9.81 = 39 N",
+    "C1: 3.98 × 9.81 × 0.25 = F × 0.75",
+    "A1: F = 13 N"
+   ],
+   "allow_reject_ignore": [
+    "Allow g = 10 (40 N)",
+    "Two marks for 1.3 (g omitted)"
+   ],
+   "pitfalls": [
+    "Using mass instead of weight",
+    "Wrong perpendicular distances"
+   ],
+   "equations": [
+    "moment = Fd",
+    "Σclockwise = Σanticlockwise"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(a)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 14,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "frequency from speed and wavelength",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Frequency in THz of yellow light in air.",
+   "answer": "510 THz",
+   "marking_points": [
+    "B1: f = 3.00 × 10^8/588 × 10^-9 = 510 THz"
+   ],
+   "allow_reject_ignore": [
+    "Allow correct answer in answer space"
+   ],
+   "pitfalls": [
+    "nm and THz power-of-ten errors"
+   ],
+   "equations": [
+    "v = fλ"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "5(a)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 14,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "refractive index: speed, wavelength, frequency",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Complete",
+   "context": "Speed, wavelength and frequency of the light in glass.",
+   "answer": "1.97 × 10^8 m s^-1, 387 nm, 510 THz",
+   "marking_points": [
+    "B1: one correct value",
+    "B1: all correct (1.97 × 10^8, 387, 510) in the table"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)(i); allow 386 or 2 s.f. (2.0 × 10^8, 390)",
+    "Ignore units in table"
+   ],
+   "pitfalls": [
+    "Changing frequency in glass"
+   ],
+   "equations": [
+    "n = c/v",
+    "λ = v/f"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(b)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 15,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "angles measured from normal",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Draw",
+   "context": "Draw and label angles of incidence and refraction at P.",
+   "answer": "Normal at P; i and r between rays and normal",
+   "marking_points": [
+    "B1: normal at 90° at P; i labelled from normal to incident ray, r from normal to refracted ray"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Measuring angles from the surface"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "5(b)(ii)",
+   "section": "",
+   "marks": 4,
+   "qp_page": 15,
+   "ms_page": 15,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.2 Implementing",
+   "subtopic": "ray box refraction method",
+   "type": "practical-method",
+   "secondary_types": [],
+   "command_word": "Describe",
+   "context": "How to produce the ray diagram experimentally with a ray box.",
+   "answer": "Narrow beam, dim room, outline block, mark rays with crosses, mark Q, join, protractor",
+   "marking_points": [
+    "B1 (any four): single slit / yellow filter",
+    "B1: dim/darkened room",
+    "B1: draw around block",
+    "B1: protractor for normal/angles",
+    "B1: mark incident ray with crosses/pins far apart",
+    "B1: mark point Q",
+    "B1: remove block and join P to Q"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Not marking the ray inside the block"
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "5(b)(iii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 15,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "Snell's law",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show refraction angle ≈ 30° for 49.9° incidence.",
+   "answer": "sin r = 0.503, r ≈ 30°",
+   "marking_points": [
+    "M1: sin r = sin 49.9°/1.52 (= 0.503)",
+    "A0"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "n1 sin θ1 = n2 sin θ2"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "5(b)(iv)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 15,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "total internal reflection condition",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show TIR occurs at Q.",
+   "answer": "i = 60° > C = 41°",
+   "marking_points": [
+    "M1: angle of incidence at Q = 90 - 30 = 60°",
+    "M1: C = sin^-1(1/1.52) = 41°",
+    "A1: i > C so TIR"
+   ],
+   "allow_reject_ignore": [
+    "Allow 59.8°; ECF from (b)(iii)",
+    "Do not allow 49.9 > 41"
+   ],
+   "pitfalls": [
+    "Using 49.9° as incidence at Q"
+   ],
+   "equations": [
+    "sin C = 1/n"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(b)(v)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 15,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.2 Electromagnetic waves",
+   "subtopic": "ray after TIR",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Draw",
+   "context": "Draw path from Q back out to air.",
+   "answer": "Reflected symmetrically at Q, then refracts out bending away from normal",
+   "marking_points": [
+    "B1: mirror image path at Q to boundary and ray bends away from normal on exit"
+   ],
+   "allow_reject_ignore": [
+    "Ignore other lines"
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "6(a)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 17,
+   "ms_page": 17,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "frequency from oscilloscope trace",
+   "type": "graph-read",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Frequency of fundamental from trace with 1 ms cm^-1 timebase.",
+   "answer": "250 Hz",
+   "marking_points": [
+    "C1: period = 4 ms",
+    "A1: 250 Hz"
+   ],
+   "allow_reject_ignore": [
+    "One mark for 0.25 to any power of ten"
+   ],
+   "pitfalls": [
+    "Counting half a cycle"
+   ],
+   "equations": [
+    "f = 1/T"
+   ],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "6(b)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 17,
+   "ms_page": 17,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.4 Stationary waves",
+   "subtopic": "fundamental in closed tube",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Draw",
+   "context": "Draw fundamental stationary wave pattern in closed tube with N and A.",
+   "answer": "Node at closed end, antinode at open end (quarter wavelength)",
+   "marking_points": [
+    "B1: one node at closed end and one antinode at open end",
+    "B1: N and A correctly labelled"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Drawing a half wavelength"
+   ],
+   "equations": [
+    "L = λ/4"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "6(c)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 17,
+   "ms_page": 17,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.4 Stationary waves",
+   "subtopic": "harmonics of closed pipe",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Frequency of next harmonic in closed tube.",
+   "answer": "750 Hz",
+   "marking_points": [
+    "B1: 3 × 250 = 750 Hz"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a), not from (b)"
+   ],
+   "pitfalls": [
+    "Giving 500 Hz (closed tubes have odd harmonics only)"
+   ],
+   "equations": [
+    "f_n = n f0, n odd"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7(a)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 18,
+   "ms_page": 18,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.2 Internal resistance",
+   "subtopic": "open-circuit p.d. equals e.m.f.",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Suggest",
+   "context": "Why voltmeter reading with switch open gives e.m.f.",
+   "answer": "Current zero so no lost volts across r",
+   "marking_points": [
+    "B1: current is zero so terminal p.d. equals e.m.f. (no p.d. across r)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "V = E - Ir"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "7(a)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 18,
+   "ms_page": 18,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.2 Internal resistance",
+   "subtopic": "internal resistance",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show internal resistance ≈ 3.9 Ω.",
+   "answer": "0.07/0.018 = 3.89 Ω",
+   "marking_points": [
+    "M1: r = (4.57 - 4.50)/0.018 = 3.89",
+    "A0: 3.9 Ω"
+   ],
+   "allow_reject_ignore": [
+    "Allow equivalent equations"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "E = V + Ir"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "7(a)(iii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 18,
+   "ms_page": 18,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.1 Series and parallel circuits",
+   "subtopic": "series-parallel combination",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show total resistance between P and Q is 250 Ω.",
+   "answer": "150 + 100 = 250 Ω",
+   "marking_points": [
+    "M1: parallel pair = 150 Ω and parallel trio = 100 Ω, sum 250 Ω (or 4.5/0.018 = 250 Ω)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "1/R = 1/R1 + 1/R2 + ...",
+    "R = V/I"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7(b)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 19,
+   "ms_page": 18,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.5 Power",
+   "subtopic": "energy dissipated in internal resistance",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Energy dissipated in r in 300 s.",
+   "answer": "0.38 J",
+   "marking_points": [
+    "A1: 0.018² × 3.9 × 300 = 0.38 J (or 0.018 × 0.07 × 300)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Using full e.m.f. instead of lost volts"
+   ],
+   "equations": [
+    "W = I²rt",
+    "W = VIt"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7(b)(ii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 19,
+   "ms_page": 18,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.1.1 Charge",
+   "subtopic": "number of electrons",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Number of electrons passing through r in 300 s.",
+   "answer": "3.4 × 10^19",
+   "marking_points": [
+    "C1: Q = 0.018 × 300 = 5.4 C",
+    "A1: N = 5.4/1.60 × 10^-19 = 3.4 × 10^19"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (b)(i); using 24 J/4.5 gives 3.3 × 10^19 allowed"
+   ],
+   "pitfalls": [
+    "Dividing by e wrong way"
+   ],
+   "equations": [
+    "Q = It",
+    "N = Q/e"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7(b)(iii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 19,
+   "ms_page": 18,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.1.2 Mean drift velocity",
+   "subtopic": "drift velocity ratio in identical wires",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Ratio of drift speeds in resistor X (in pair) and Y (in trio).",
+   "answer": "1.5",
+   "marking_points": [
+    "C1: I_X = 0.009 A and I_Y = 0.006 A (I/2 and I/3)",
+    "A1: ratio = 1.5"
+   ],
+   "allow_reject_ignore": [
+    "Allow 3/2 or 3:2"
+   ],
+   "pitfalls": [
+    "Assuming same current in all resistors"
+   ],
+   "equations": [
+    "I = nAve"
+   ],
+   "skills": [],
+   "difficulty": 3
+  },
+  {
+   "q": "7(c)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 19,
+   "ms_page": 18,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.1 Series and parallel circuits",
+   "subtopic": "effect of removing parallel resistor",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Change in ammeter reading when Y removed.",
+   "answer": "Decreases",
+   "marking_points": [
+    "B1: decreases"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "7(c)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 19,
+   "ms_page": 18,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.2 Internal resistance",
+   "subtopic": "terminal p.d. change",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Change in voltmeter reading when Y removed.",
+   "answer": "Increases",
+   "marking_points": [
+    "B1: increases"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Forgetting lost volts fall when current falls"
+   ],
+   "equations": [
+    "V = E - Ir"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "8",
+   "section": "",
+   "marks": 6,
+   "qp_page": 20,
+   "ms_page": 19,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.3 Wave-particle duality",
+   "subtopic": "electron diffraction and de Broglie wavelength comparison",
+   "type": "level-of-response",
+   "secondary_types": [
+    "estimate"
+   ],
+   "command_word": "Describe",
+   "context": "Describe safe electron diffraction experiment, how it shows wave nature, and compare λ for electrons vs a car at 110 km/h.",
+   "answer": "Rings from diffraction by graphite atom spacing, λ_e ≈ 10^-10 m; car λ ≈ 10^-38 m, so λ_e >> λ_car",
+   "marking_points": [
+    "L3 (5-6): clear description of experiment and observations and detailed comparison of de Broglie wavelengths",
+    "L2 (3-4): some description and some comparison; OR limited description with detailed comparison; OR clear description with limited comparison",
+    "L1 (1-2): limited description of experiment and observations OR attempt at the car's de Broglie wavelength",
+    "Indicative (experiment): electrons accelerated by high p.d. in vacuum; fired at graphite target; rings observed (diagram of apparatus/rings); diffraction by atomic spacing so λ ≈ spacing; higher p.d. gives smaller rings; many layers/orientations so diffraction in all directions gives rings; safety: avoid touching high-voltage terminals, insulated leads",
+    "Indicative (comparison): λ_electron ≈ 10^-10 m; λ = h/p; car mass estimate 500-3000 kg; speed 30.5-30.6 m s^-1; λ_car ≈ 7 × 10^-39 to 4 × 10^-38 m; λ_electron >> λ_car"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Not converting km/h to m/s",
+    "No safety point",
+    "Saying electrons become waves"
+   ],
+   "equations": [
+    "λ = h/(mv)"
+   ],
+   "skills": [
+    "extended-writing",
+    "estimate",
+    "practical"
+   ],
+   "difficulty": 3
+  }
+ ]
+}

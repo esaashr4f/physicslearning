@@ -1,0 +1,1097 @@
+{
+ "paper": 2,
+ "session": "June 2023",
+ "slug": "jun2023",
+ "total_marks": 70,
+ "general_conventions": [
+  "M1 = method mark; A marks dependent on it cannot be scored unless the M mark is earned. A1 = accuracy/answer mark, often awarded for a correct final answer which then implies earlier C marks.",
+  "C1 = compensatory (method) mark that can be awarded for correct working even if the final answer is wrong; a correct final answer normally earns all C marks.",
+  "B1 = independent mark, not dependent on other marks.",
+  "A0 on a show-that line means the given value earns no credit by itself; the mark is for the working shown.",
+  "ECF (error carried forward): later numerical parts can earn full credit if consistent with an earlier wrong answer; ECF is allowed after arithmetic (AE), transcription (TE) and power-of-ten (POT) errors but not after wrong physics/equation (XP).",
+  "POT: power-of-ten error, usually from SI prefix conversion; the mark where it happens is lost, then ECF applies.",
+  "TE: wrong copying of data from question, graph, booklet or earlier answer; lose that mark only, then ECF.",
+  "XP: using an incorrect equation counts as wrong physics even if it gives the right number.",
+  "SF: giving more significant figures than justified is not penalised; too few sig figs is handled within individual mark points and penalised only once in the paper.",
+  "CON: contradictory statements in one answer score no mark. BOD = benefit of the doubt.",
+  "Conventions: '/' separates alternative acceptable answers; Reject/Not = not creditworthy; Ignore = irrelevant; Allow = acceptable; words in brackets are not essential; underlined words must appear; AW = alternative wording; ORA = or reverse argument.",
+  "Level of Response (6-mark, asterisked) questions are marked holistically: decide the level from the science and the quality of reasoning, then the higher/lower mark within the level by communication. L1 = 1-2, L2 = 3-4, L3 = 5-6 marks; L1^/L2^/L3^ annotate the lower mark in each level.",
+  "LoR communication strands: L3 needs a well-developed line of reasoning, clear and logically structured, relevant and substantiated; L2 a line of reasoning with some structure, mostly relevant, supported by some evidence; L1 basic, unstructured information with limited evidence; 0 = nothing worthy of credit.",
+  "Alternative correct approaches and unexpected methods must be credited fairly.",
+  "MACB categorisation: B marks must be specifically seen; M marks must be seen and gate dependent A marks; C marks can be implied by later correct working (e.g. a correct substitution implies knowledge of the equation); A marks depend on an M mark or allow C marks to be scored.",
+  "Significant figures rule: if data are given to 2 s.f., answers to 2 or more s.f. are allowed; fewer than 2 s.f. is penalised once only in the whole paper unless additional guidance says otherwise.",
+  "For substitution into an equation any rearranged subject is allowed unless guidance says otherwise.",
+  "Crossed-out work is not marked if a clear alternative is given; contradictory responses score nothing even if one part is correct.",
+  "List questions: only the required number of responses are marked, left to right then line by line; extra responses hedging bets gain no credit.",
+  "LoR marking: read the whole answer, use a best-fit approach; the science content sets the level and the communication statement (in italics) decides the higher or lower mark within the level.",
+  "NR is used when nothing is written; 0 is given for written work not worthy of credit (including copying the question).",
+  "Levels of response questions on this paper are 2 and 7."
+ ],
+ "questions": [
+  {
+   "q": "1(a)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.1 Kinematics",
+   "subtopic": "acceleration from v-t gradient",
+   "type": "graph-gradient",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Deceleration of car during braking from velocity-time graph.",
+   "answer": "6.7 m s^-2 (magnitude)",
+   "marking_points": [
+    "A1: a = 18/2.7 = 6.7 m s^-2"
+   ],
+   "allow_reject_ignore": [
+    "Ignore sign"
+   ],
+   "pitfalls": [
+    "Including the 0.7 s thinking time in the braking time"
+   ],
+   "equations": [
+    "a = Δv/Δt"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "1(a)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 2,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.2.1 Dynamics",
+   "subtopic": "Newton's second law",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Average braking force on 1200 kg car.",
+   "answer": "8000 N",
+   "marking_points": [
+    "B1: F = 1200 × 6.7 = 8000 N"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)(i); ignore minus sign"
+   ],
+   "pitfalls": [],
+   "equations": [
+    "F = ma"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "1(a)(iii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.2 Linear motion",
+   "subtopic": "stopping distance from area under v-t",
+   "type": "graph-area",
+   "secondary_types": [
+    "calculation-multi-step"
+   ],
+   "command_word": "Calculate",
+   "context": "Total stopping distance including thinking and braking phases.",
+   "answer": "37 m",
+   "marking_points": [
+    "C1: d = 18 × 0.7 + ½ × 18 × 2.7 (or trapezium (3.4 + 0.7) × ½ × 18, or suvat)",
+    "A1: 37 m"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)(i)",
+    "One mark for braking distance only (24 m)"
+   ],
+   "pitfalls": [
+    "Omitting thinking distance"
+   ],
+   "equations": [
+    "distance = area under v-t",
+    "s = ut + ½at²"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "1(a)(iv)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3.1 Work and conservation of energy",
+   "subtopic": "work done by brakes",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Work done by brakes to stop the car.",
+   "answer": "190 000 J (allow 194 000/200 000)",
+   "marking_points": [
+    "C1: W = 8000 × 24.3 (braking distance) or ½ × 1200 × 18²",
+    "A1: 1.9 × 10^5 J"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)(i)-(iii)",
+    "One mark for 8000 × 37 = 296 000 J"
+   ],
+   "pitfalls": [
+    "Using total stopping distance instead of braking distance"
+   ],
+   "equations": [
+    "W = Fd",
+    "Ek = ½mv²"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "1(b)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.2 Linear motion",
+   "subtopic": "thinking and braking at half speed",
+   "type": "sketch-draw",
+   "secondary_types": [],
+   "command_word": "Draw",
+   "context": "Sketch v-t graph for same test at half initial speed, same braking force.",
+   "answer": "Flat at 9 m s^-1 to 0.7 s, then straight line to zero at ~2.05 s",
+   "marking_points": [
+    "C1: horizontal line starting at 9 m s^-1",
+    "A1: horizontal to (0.7, 9) then straight line to axis between 2.0 and 2.1 s (same gradient)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Changing thinking time",
+    "Changing gradient of braking line"
+   ],
+   "equations": [
+    "t = v/a"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "1(c)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.2 Linear motion",
+   "subtopic": "reaction time effect",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Effect on graph of a tired driver.",
+   "answer": "Horizontal (thinking) section longer; braking slope unchanged",
+   "marking_points": [
+    "B1: horizontal section longer, sloping section unchanged"
+   ],
+   "allow_reject_ignore": [
+    "Ignore a tired driver applying different braking force; ignore talk of thinking distance alone"
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "1(c)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 3,
+   "ms_page": 9,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.2 Linear motion",
+   "subtopic": "braking deceleration and surface",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Effect on graph of a more resistive track surface.",
+   "answer": "Sloping section steeper; horizontal unchanged",
+   "marking_points": [
+    "B1: sloping section steeper (greater magnitude of gradient), horizontal unchanged"
+   ],
+   "allow_reject_ignore": [
+    "Allow greater magnitude of gradient; ignore 'gradient is lower'"
+   ],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "2",
+   "section": "",
+   "marks": 6,
+   "qp_page": 4,
+   "ms_page": 10,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.1 Planning",
+   "subtopic": "terminal velocity of falling balls (Stokes)",
+   "type": "level-of-response",
+   "secondary_types": [],
+   "command_word": "Describe",
+   "context": "Plan safe experiment testing v = (ρ-σ)gd²/18K and analyse to find K.",
+   "answer": "Time ball between marks after terminal velocity reached; vary d; plot v vs d²; straight line through origin; K = (ρ-σ)g/(18 × gradient)",
+   "marking_points": [
+    "L3 (5-6): clear method including diagram and clear explanation of analysis to determine K",
+    "L2 (3-4): some method and some analysis; OR clear method with diagram but limited analysis; OR limited description but explains analysis for K",
+    "L1 (1-2): limited description OR limited analysis",
+    "Indicative (method): diagram of liquid in tall container; marks on side; stopwatch time between marks, repeat and average; repeat for different d; micrometer/calipers for d in different directions; methods to find densities of balls and liquid; ensure terminal velocity reached before first mark; method to remove balls (e.g. magnet); container supported/in a tray",
+    "Indicative (analysis): v = distance/time; density = mass/volume, V = 4πr³/3; plot v against d²; straight line through origin if relationship holds; K = (ρ - σ)g/(18 × gradient)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Timing from the surface (ball not at terminal velocity)",
+    "No safety consideration (spills, glass cylinder)",
+    "Plotting v against d instead of d²"
+   ],
+   "equations": [
+    "v = (ρ-σ)gd²/18K",
+    "v = distance/time"
+   ],
+   "skills": [
+    "practical",
+    "extended-writing",
+    "graph"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "3(a)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 6,
+   "ms_page": 12,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.3 Projectile motion",
+   "subtopic": "resolving velocity",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show vertical component of launch velocity is about 2.33 m s^-1.",
+   "answer": "22.3 cos 84° = 2.33 m s^-1",
+   "marking_points": [
+    "M1: 22.3 cos 84° (or 22.3 sin 6°)",
+    "A0: 2.33"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Using sin 84° (angle is to vertical)"
+   ],
+   "equations": [
+    "uv = u cosθ (angle from vertical)"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "3(b)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 6,
+   "ms_page": 12,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.1.3 Projectile motion",
+   "subtopic": "vertical suvat",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show vertical velocity at ground ≈ 7.25 m s^-1.",
+   "answer": "√52.5 = 7.247 m s^-1",
+   "marking_points": [
+    "M1: vv² = 2.33² + 2 × 9.81 × 2.4",
+    "M1: vv = √52.517 = 7.247",
+    "A0: 7.25"
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)"
+   ],
+   "pitfalls": [
+    "Taking upward launch velocity as negative incorrectly (u² is positive anyway)",
+    "Not showing extra s.f."
+   ],
+   "equations": [
+    "v² = u² + 2as"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "3(c)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 6,
+   "ms_page": 12,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.3.2 Kinetic and potential energies",
+   "subtopic": "KE at impact",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Kinetic energy of ball on reaching ground.",
+   "answer": "57.2 J",
+   "marking_points": [
+    "C1: horizontal component 22.3 sin 84 = 22.2 m s^-1",
+    "C1: resultant v = √(22.2² + 7.25²) = 23.35 m s^-1",
+    "A1: Ek = ½ × 0.210 × 23.35² = 57.2 J",
+    "Alternative: C1 ΔEp = 0.210 × 9.81 × 2.40 = 4.94 J; C1 initial Ek = ½ × 0.21 × 22.3² = 52.2 J; A1 57.1 J"
+   ],
+   "allow_reject_ignore": [
+    "Allow v² = 545; allow 57.2 J for energy method"
+   ],
+   "pitfalls": [
+    "Using only vertical component"
+   ],
+   "equations": [
+    "Ek = ½mv²",
+    "Ep = mgh"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "3(d)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 7,
+   "ms_page": 12,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.5.1 Newton's laws of motion",
+   "subtopic": "momentum as a vector",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Why ball's momentum changes between hand and ground.",
+   "answer": "Velocity changes (speed/direction) due to gravity; p = mv is a vector",
+   "marking_points": [
+    "M1: momentum = mass × velocity, A1: velocity increases so momentum increases",
+    "OR M1: force = rate of change of momentum, A1: gravity acts so momentum changes",
+    "OR M1: momentum is a vector, A1: direction change means momentum changes"
+   ],
+   "allow_reject_ignore": [
+    "Allow 'changes' for 'increases'"
+   ],
+   "pitfalls": [
+    "Saying mass changes"
+   ],
+   "equations": [
+    "p = mv",
+    "F = Δp/Δt"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "4(a)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 8,
+   "ms_page": 13,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.2 Implementing",
+   "subtopic": "choice of measuring instrument",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Instrument used to measure lengths to ±0.1 mm.",
+   "answer": "Vernier callipers",
+   "marking_points": [
+    "B1: callipers"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Saying ruler or micrometer"
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "4(a)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 8,
+   "ms_page": 13,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.4 Evaluation",
+   "subtopic": "uncertainty in a difference",
+   "type": "uncertainty-error",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Extension with absolute uncertainty from two length readings.",
+   "answer": "32.7 ± 0.2 mm",
+   "marking_points": [
+    "B1: 32.7 ± 0.2 mm"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Giving ±0.1 (uncertainties add when subtracting)"
+   ],
+   "equations": [
+    "Δx = ΔL + ΔL0"
+   ],
+   "skills": [
+    "uncertainty"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "4(a)(iii)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 9,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.1 Springs",
+   "subtopic": "springs in series",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Mass of object hung from two springs in series, 2 s.f.",
+   "answer": "0.060 kg",
+   "marking_points": [
+    "C1: weight = 18 × 0.0327 (series combined k = 18 N m^-1) or 36 × 0.01635 (one spring)",
+    "A1: M = 0.060 kg to 2 s.f."
+   ],
+   "allow_reject_ignore": [
+    "ECF from (a)(ii)",
+    "One mark for 0.06 (1 s.f.) or 60 (POT)"
+   ],
+   "pitfalls": [
+    "Treating springs as parallel (2k)",
+    "Not giving 2 s.f."
+   ],
+   "equations": [
+    "F = kx",
+    "1/k_series = 1/k1 + 1/k2",
+    "W = mg"
+   ],
+   "skills": [
+    "sig-figs"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "4(a)(iv)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 9,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.1 Springs",
+   "subtopic": "elastic energy in springs",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Total elastic energy stored in both springs.",
+   "answer": "9.6 × 10^-3 J",
+   "marking_points": [
+    "C1: W = ½ × 18 × 0.0327² (equivalently 2 × ½ × 36 × 0.01635²)",
+    "A1: 9.6 × 10^-3 J"
+   ],
+   "allow_reject_ignore": [
+    "ECF for POT and/or k from earlier parts (e.g. 9.6 × 10^3 J with x in mm; 19.2 × 10^-3 J using k = 36 N m^-1)"
+   ],
+   "pitfalls": [
+    "Using k = 36 N m^-1 with the total extension"
+   ],
+   "equations": [
+    "E = ½kx²"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "4(b)(i)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 10,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.2 Mechanical properties of matter",
+   "subtopic": "Young modulus from F-x gradient",
+   "type": "calculation-multi-step",
+   "secondary_types": [
+    "graph-gradient"
+   ],
+   "command_word": "Determine",
+   "context": "Cross-sectional area of wire from gradient 1.6 N mm^-1 and Young modulus.",
+   "answer": "5.9 × 10^-8 m²",
+   "marking_points": [
+    "C1: gradient = AE/L (from F = AEx/L)",
+    "C1: A = 1600 × 4.4/120 × 10^9",
+    "A1: 5.9 × 10^-8 m²"
+   ],
+   "allow_reject_ignore": [
+    "Allow F and x read from linear section into A = FL/Ex",
+    "5.9 × 10^n scores two marks"
+   ],
+   "pitfalls": [
+    "Not converting N mm^-1 to N m^-1",
+    "GPa conversion"
+   ],
+   "equations": [
+    "E = FL/(Ax)"
+   ],
+   "skills": [
+    "graph",
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "4(b)(ii)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 11,
+   "ms_page": 13,
+   "topic_module": "M3 Forces and motion",
+   "topic": "3.4.1 Springs",
+   "subtopic": "work done from area under non-linear F-x",
+   "type": "graph-area",
+   "secondary_types": [
+    "estimate"
+   ],
+   "command_word": "Determine",
+   "context": "Estimate work done stretching wire to 3.5 N using graph.",
+   "answer": "4.0-4.4 × 10^-3 J",
+   "marking_points": [
+    "C1: area under force-extension graph = energy",
+    "M1: evidence of area determined (counting squares, value per square, or shapes in non-linear part)",
+    "A1: 4.0 × 10^-3 to 4.4 × 10^-3 J"
+   ],
+   "allow_reject_ignore": [
+    "Ignore s.f."
+   ],
+   "pitfalls": [
+    "Using ½Fx for whole curve",
+    "mm not converted"
+   ],
+   "equations": [
+    "W = area under F-x"
+   ],
+   "skills": [
+    "graph",
+    "estimate"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "5(a)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 12,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "transverse waves",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "State and explain",
+   "context": "Whether ripple tank waves are transverse or longitudinal.",
+   "answer": "Transverse: oscillations perpendicular to travel direction",
+   "marking_points": [
+    "B1: transverse because oscillations are perpendicular to direction of travel/energy transfer"
+   ],
+   "allow_reject_ignore": [
+    "Allow oscillations vertical, travel horizontal"
+   ],
+   "pitfalls": [
+    "Answer without reason"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "5(a)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 12,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "polarisation",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "State and explain",
+   "context": "Whether water waves are plane polarised.",
+   "answer": "Yes: oscillations only in one plane (vertical)",
+   "marking_points": [
+    "B1: plane polarised as oscillations are in one plane only (vertical)"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(b)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 12,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.1 Wave motion",
+   "subtopic": "wave equation",
+   "type": "calculation-single-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Frequency of dippers from wave speed and wavelength.",
+   "answer": "2.5 Hz",
+   "marking_points": [
+    "B1: f = 8.0/3.2 = 2.5 Hz"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "v = fλ"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "5(c)(i)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 13,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "interference condition",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "Explain",
+   "context": "Whether constructive or destructive interference at P.",
+   "answer": "Path difference 8.0 cm = 2.5λ so destructive",
+   "marking_points": [
+    "C1: path difference = 8.0 cm",
+    "M1: = 2.5λ",
+    "A1: destructive interference"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Stating answer without path difference in wavelengths"
+   ],
+   "equations": [
+    "destructive: path difference = (n + ½)λ"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "5(c)(ii)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 13,
+   "ms_page": 15,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.3 Superposition",
+   "subtopic": "phase difference from path difference",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Calculate",
+   "context": "Phase difference at Q between waves from two dippers.",
+   "answer": "π/2 rad (or 9π/2)",
+   "marking_points": [
+    "C1: path difference = 7.2 cm",
+    "C1: = 2.25λ",
+    "A1: π/2 rad"
+   ],
+   "allow_reject_ignore": [
+    "Allow 1.6 rad, 9π/2 or 14 rad"
+   ],
+   "pitfalls": [
+    "Giving degrees"
+   ],
+   "equations": [
+    "φ = 2π × (path difference)/λ"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "6(a)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 15,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.2.3 Resistance",
+   "subtopic": "I-V characteristic",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Name of component with given I-V curve.",
+   "answer": "Filament lamp",
+   "marking_points": [
+    "B1: (filament) lamp"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "6(b)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 15,
+   "ms_page": 16,
+   "topic_module": "M1 Development of practical skills",
+   "topic": "1.2 Implementing",
+   "subtopic": "resolution and range of meters",
+   "type": "other",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Which voltmeter (range/resolution) gave reading 5.72 V.",
+   "answer": "E (0-20 V, ±0.01 V)",
+   "marking_points": [
+    "B1: E"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Picking a 0-2 V range meter",
+    "Choosing higher resolution than the reading shows"
+   ],
+   "equations": [],
+   "skills": [
+    "practical"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "6(c)(i)",
+   "section": "",
+   "marks": 2,
+   "qp_page": 15,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.1 Series and parallel circuits",
+   "subtopic": "current split in parallel",
+   "type": "show-that",
+   "secondary_types": [
+    "graph-read"
+   ],
+   "command_word": "Show",
+   "context": "Show resistor R in parallel with lamp is 120 Ω using readings and I-V graph.",
+   "answer": "4.8/0.040 = 120 Ω",
+   "marking_points": [
+    "C1: current in Z at 4.8 V = 180 mA (from graph)",
+    "M1: R = 4.8/(0.220 - 0.180) = 4.8/0.040",
+    "A0: 120 Ω"
+   ],
+   "allow_reject_ignore": [
+    "Allow parallel-network resistance (21.8 Ω) with lamp (26.7 Ω) in parallel formula giving 119 Ω"
+   ],
+   "pitfalls": [
+    "Not reading lamp current from graph"
+   ],
+   "equations": [
+    "R = V/I",
+    "I_total = I1 + I2"
+   ],
+   "skills": [
+    "graph"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "6(c)(ii)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 15,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.2 Internal resistance",
+   "subtopic": "e.m.f. and internal resistance",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Find E and r from open and closed switch readings.",
+   "answer": "E = 5.72 V, r = 4.2 Ω",
+   "marking_points": [
+    "B1: E = 5.72 V (open-circuit reading)",
+    "C1: r = (5.72 - 4.80)/0.220",
+    "A1: r = 4.2 Ω"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Not recognising open-switch reading is e.m.f."
+   ],
+   "equations": [
+    "E = V + Ir"
+   ],
+   "skills": [],
+   "difficulty": 2
+  },
+  {
+   "q": "6(d)",
+   "section": "",
+   "marks": 4,
+   "qp_page": 16,
+   "ms_page": 16,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.3.2 Internal resistance",
+   "subtopic": "effect of lower load resistance",
+   "type": "explain",
+   "secondary_types": [],
+   "command_word": "State and explain",
+   "context": "Change in ammeter and voltmeter readings when R decreased.",
+   "answer": "Current increases; lost volts Ir increase so terminal p.d. falls",
+   "marking_points": [
+    "B1: ammeter reading increases",
+    "B1: since total circuit resistance decreases",
+    "M1: larger current means larger lost volts Ir (more of e.m.f. across r)",
+    "A1: so voltmeter reading decreases"
+   ],
+   "allow_reject_ignore": [
+    "Ignore 'R decreases' (repeats question)"
+   ],
+   "pitfalls": [
+    "Saying voltmeter unchanged",
+    "Not mentioning internal resistance"
+   ],
+   "equations": [
+    "V = E - Ir"
+   ],
+   "skills": [],
+   "difficulty": 3
+  },
+  {
+   "q": "7",
+   "section": "",
+   "marks": 6,
+   "qp_page": 17,
+   "ms_page": 17,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.4.4 Stationary waves",
+   "subtopic": "resonance tube speed of sound with uncertainty",
+   "type": "level-of-response",
+   "secondary_types": [
+    "graph-gradient",
+    "uncertainty-error"
+   ],
+   "command_word": "Explain",
+   "context": "Describe finding fundamental f and use 1/f vs d graph to get v with percentage uncertainty.",
+   "answer": "Gradient ≈ -0.012 Hz^-1 m^-1 = -4/v so v ≈ 330-344 m s^-1; worst line gives % uncertainty",
+   "marking_points": [
+    "L3 (5-6): clear method for f and graph analysed to give v and the percentage uncertainty in v",
+    "L2 (3-4): some method and some analysis for v or uncertainty; OR limited method with v and attempt at uncertainty; OR clear method with limited graph analysis",
+    "L1 (1-2): limited method for f OR limited analysis for v",
+    "Indicative (method): increase frequency from low until max loudness/amplitude; fundamental is the lowest resonance; measure period on oscilloscope (timebase × divisions); f = 1/T; or read signal generator",
+    "Indicative (analysis): gradient = -4/v; gradient ≈ -0.012 Hz^-1 m^-1; v ≈ 330-344 m s^-1 with correct power of ten and unit; worst acceptable line; its gradient; absolute and percentage uncertainty in gradient; % uncertainty in v equals % uncertainty in gradient"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Ignoring the 10^-3 and cm units in gradient",
+    "Forgetting minus sign / factor 4",
+    "No worst-fit line for uncertainty"
+   ],
+   "equations": [
+    "1/f = -4d/v + c",
+    "f = 1/T"
+   ],
+   "skills": [
+    "practical",
+    "extended-writing",
+    "graph",
+    "uncertainty"
+   ],
+   "difficulty": 3
+  },
+  {
+   "q": "8(a)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 20,
+   "ms_page": 19,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.2 The photoelectric effect",
+   "subtopic": "photon absorption",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Why photoelectrons are emitted.",
+   "answer": "Electrons absorb photon energy, which exceeds work function",
+   "marking_points": [
+    "B1 (any one): photon energy absorbed by electrons / photon energy greater than work function"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Wave-based explanation"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "8(a)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 20,
+   "ms_page": 19,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.2 The photoelectric effect",
+   "subtopic": "threshold frequency",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Meaning of threshold frequency.",
+   "answer": "Minimum frequency of radiation to release an electron",
+   "marking_points": [
+    "B1: minimum frequency of incident radiation needed to emit a photoelectron"
+   ],
+   "allow_reject_ignore": [
+    "Allow minimum frequency to overcome the work function"
+   ],
+   "pitfalls": [
+    "Omitting 'minimum'"
+   ],
+   "equations": [
+    "φ = hf0"
+   ],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "8(b)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 20,
+   "ms_page": 19,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.1 Photons",
+   "subtopic": "electronvolt conversion",
+   "type": "show-that",
+   "secondary_types": [],
+   "command_word": "Show",
+   "context": "Show 1.9 eV ≈ 3.0 × 10^-19 J.",
+   "answer": "3.04 × 10^-19 J",
+   "marking_points": [
+    "M1: 1.9 × 1.60 × 10^-19 = 3.04 × 10^-19",
+    "A0"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [
+    "1 eV = 1.60 × 10^-19 J"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 1
+  },
+  {
+   "q": "8(b)(ii)",
+   "section": "",
+   "marks": 3,
+   "qp_page": 20,
+   "ms_page": 19,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.2 The photoelectric effect",
+   "subtopic": "Einstein equation to find wavelength",
+   "type": "calculation-multi-step",
+   "secondary_types": [],
+   "command_word": "Determine",
+   "context": "Wavelength of incident radiation from threshold frequency and KEmax.",
+   "answer": "2.1 × 10^-7 m",
+   "marking_points": [
+    "C1: f = 990 THz + 3.0 × 10^-19/6.63 × 10^-34 = 1450 THz (or photon energy = 6.56 × 10^-19 + 3.0 × 10^-19 = 9.56 × 10^-19 J)",
+    "C1: λ = 3.0 × 10^8/1450 × 10^12 (or hc/E)",
+    "A1: 2.1 × 10^-7 m"
+   ],
+   "allow_reject_ignore": [
+    "2.1 × 10^n scores two marks",
+    "6.6 × 10^-7 (omits work function) or 3.0 × 10^-7 (omits KE) score zero"
+   ],
+   "pitfalls": [
+    "Forgetting THz = 10^12 Hz",
+    "Omitting work function or KE"
+   ],
+   "equations": [
+    "hf = φ + KEmax",
+    "c = fλ"
+   ],
+   "skills": [
+    "units"
+   ],
+   "difficulty": 2
+  },
+  {
+   "q": "8(c)(i)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 21,
+   "ms_page": 19,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.2 The photoelectric effect",
+   "subtopic": "intensity and KEmax",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Effect of doubling intensity on KEmax.",
+   "answer": "No change",
+   "marking_points": [
+    "B1: no change"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  },
+  {
+   "q": "8(c)(ii)",
+   "section": "",
+   "marks": 1,
+   "qp_page": 21,
+   "ms_page": 19,
+   "topic_module": "M4 Electrons, waves and photons",
+   "topic": "4.5.2 The photoelectric effect",
+   "subtopic": "intensity and emission rate",
+   "type": "define-state",
+   "secondary_types": [],
+   "command_word": "State",
+   "context": "Effect of doubling intensity on rate of emission.",
+   "answer": "Doubles",
+   "marking_points": [
+    "B1: doubles"
+   ],
+   "allow_reject_ignore": [],
+   "pitfalls": [
+    "Saying 'increases' without factor may not suffice"
+   ],
+   "equations": [],
+   "skills": [],
+   "difficulty": 1
+  }
+ ]
+}
