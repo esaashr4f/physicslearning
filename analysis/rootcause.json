@@ -1,0 +1,1485 @@
+{
+ "parts": [
+  {
+   "paper": 1,
+   "slug": "jun2018",
+   "q": "3",
+   "marks": 1,
+   "causes": [
+    "vector-sign"
+   ],
+   "what_went_wrong": "Picked a direction from weight or drag alone instead of adding a small drag opposing motion to the large downward weight.",
+   "fix": "Draw both force arrows tip-to-tail; a small drag opposite to velocity only tilts the resultant slightly from vertical."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2018",
+   "q": "9",
+   "marks": 1,
+   "causes": [
+    "misconception",
+    "unfamiliar-context"
+   ],
+   "what_went_wrong": "Did not use the rule that three non-parallel forces in equilibrium must meet at one point, nor that the cable joins at the centre of gravity.",
+   "fix": "For three-force equilibrium, extend lines of action to a common point; note where the weight acts on a uniform rod."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2018",
+   "q": "10",
+   "marks": 1,
+   "causes": [
+    "wrong-equation",
+    "graph-skill"
+   ],
+   "what_went_wrong": "Took only the braking triangle under the v-t graph, giving braking distance rather than stopping distance.",
+   "fix": "Stopping distance = thinking + braking: take the whole area under the v-t graph, rectangle plus triangle."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2018",
+   "q": "11",
+   "marks": 1,
+   "causes": [
+    "misread-question"
+   ],
+   "what_went_wrong": "Did long calculations with the time instead of noticing the question asked for rate of change of momentum, which is just the force.",
+   "fix": "Recognise rate of change of momentum equals resultant force, and kg m s^-2 is the newton, before calculating anything."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2018",
+   "q": "21(a)",
+   "marks": 2,
+   "causes": [
+    "practical-knowledge",
+    "misread-question"
+   ],
+   "what_went_wrong": "Described light gates instead of the ruler and stopwatch given, and did not use v = 2s/t from rest.",
+   "fix": "Use only the apparatus named; from rest with uniform acceleration, final speed is twice the mean speed (s/t)."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2018",
+   "q": "25(a)",
+   "marks": 2,
+   "causes": [
+    "graph-skill",
+    "misconception"
+   ],
+   "what_went_wrong": "Treated the oscilloscope x-axis as distance and talked about wavelength rather than reading the period.",
+   "fix": "Oscilloscope x-axis is time: period = divisions per cycle × time-base, then f = 1/T."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2018",
+   "q": "25(b)(ii)",
+   "marks": 2,
+   "causes": [
+    "incomplete-explanation",
+    "multi-step-breakdown"
+   ],
+   "what_went_wrong": "Mentioned destructive interference but never used the resultant amplitude from (b)(i) or linked it to intensity.",
+   "fix": "Chain it: resultant amplitude (use previous part) → intensity ∝ amplitude² → state the intensity change."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2018",
+   "q": "25(b)(iii)",
+   "marks": 2,
+   "causes": [
+    "misread-question",
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Gave general interference talk without using the distances and wavelength; confused phase difference with path difference.",
+   "fix": "Calculate the path difference from the data, compare it to λ (here λ/2), then conclude destructive."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2018",
+   "q": "26(c)",
+   "marks": 3,
+   "causes": [
+    "practical-knowledge",
+    "misread-question"
+   ],
+   "what_went_wrong": "Gave the generic rectangular-block sin i/sin r practical, with the critical angle drawn in air or unclear.",
+   "fix": "For a semicircular block: aim ray at the centre, increase angle until refracted ray grazes the flat face; mark C inside glass to normal; n = 1/sin C."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2018",
+   "q": "27(b)(i)",
+   "marks": 2,
+   "causes": [
+    "wrong-equation"
+   ],
+   "what_went_wrong": "Used πr² or (4/3)πr³ instead of the sphere's surface area 4πr² when dividing power.",
+   "fix": "Intensity at a star's surface = power ÷ surface area of a sphere, 4πr²."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2019",
+   "q": "5",
+   "marks": 1,
+   "causes": [
+    "wrong-equation",
+    "multi-step-breakdown"
+   ],
+   "what_went_wrong": "Found torque, or the work by one force only, instead of total work by the couple over one revolution.",
+   "fix": "Work by a couple = torque × angle turned in radians (2π per revolution); include both forces."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2019",
+   "q": "9",
+   "marks": 1,
+   "causes": [
+    "misread-question",
+    "proportional-reasoning"
+   ],
+   "what_went_wrong": "Ignored constant volume, so only scaled length; missed that area falls by the same factor so R ∝ L².",
+   "fix": "When a wire is stretched at constant volume, A ∝ 1/L, so R scales with the square of the length factor."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2019",
+   "q": "13",
+   "marks": 1,
+   "causes": [
+    "proportional-reasoning"
+   ],
+   "what_went_wrong": "Did not combine P = Fv with drag ∝ v² to obtain power ∝ v³.",
+   "fix": "Substitute one proportionality into another: P = Fv and F ∝ v² give P ∝ v³."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2019",
+   "q": "21(a)",
+   "marks": 1,
+   "causes": [
+    "imprecise-wording",
+    "misconception"
+   ],
+   "what_went_wrong": "Wrote momentum for moment, or said no forces act or constant speed.",
+   "fix": "Learn both equilibrium conditions exactly: zero resultant force and zero resultant moment about any point."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2019",
+   "q": "21(b)(i)",
+   "marks": 1,
+   "causes": [
+    "misconception",
+    "vector-sign"
+   ],
+   "what_went_wrong": "Named the ball or table as feeling the partner of the ball's weight.",
+   "fix": "N3 pairs act on different bodies and are the same type: Earth pulls ball, ball pulls Earth."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2019",
+   "q": "21(b)(ii)",
+   "marks": 1,
+   "causes": [
+    "misconception"
+   ],
+   "what_went_wrong": "Treated weight and normal contact force on the ball as a Newton's third law pair.",
+   "fix": "Check N3 pairs: same type of force, acting on two different objects; W and N both act on the ball."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2019",
+   "q": "22(d)",
+   "marks": 2,
+   "causes": [
+    "vector-sign",
+    "unit-conversion"
+   ],
+   "what_went_wrong": "Subtracted speeds on rebound instead of adding, used the wrong time or the ball's weight.",
+   "fix": "On rebound, take a positive direction: Δv = v - (-u), so speeds add; convert ms to s."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2019",
+   "q": "24(a)",
+   "marks": 3,
+   "causes": [
+    "practical-knowledge"
+   ],
+   "what_went_wrong": "Omitted normals, measured angles from the block surface, or switched to a critical-angle method.",
+   "fix": "Draw normals, measure i and r from the normal with a protractor, use n = sin i/sin r and plot sin i vs sin r."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2019",
+   "q": "24(b)(ii)",
+   "marks": 2,
+   "causes": [
+    "misconception",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Claimed the factor of 2 came from sound travelling to the wall and back instead of λ = 2L.",
+   "fix": "Derive it: v = fλ with λ = 2L gives f = (v/2)(1/L); compare with y = mx explicitly."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2019",
+   "q": "24(b)(iv)",
+   "marks": 2,
+   "causes": [
+    "practical-knowledge",
+    "uncertainty-handling"
+   ],
+   "what_went_wrong": "Suggested repeats and averaging, which does not reduce the uncertainty in a small measured length.",
+   "fix": "To cut % uncertainty in a small length, make it bigger: lower frequency or measure across several node spacings."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "1",
+   "marks": 1,
+   "causes": [
+    "misconception"
+   ],
+   "what_went_wrong": "Did not recall the order of magnitude of ultraviolet wavelengths.",
+   "fix": "Memorise EM spectrum wavelength orders: UV about 10^-8 to 4×10^-7 m, visible 400–700 nm."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "6",
+   "marks": 1,
+   "causes": [
+    "proportional-reasoning",
+    "unfamiliar-context"
+   ],
+   "what_went_wrong": "Could not convert a 270° phase difference into a path difference of three-quarters of a wavelength.",
+   "fix": "Phase difference/360° = path difference/λ: 270° means 0.75λ = 3.0 cm here."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "11",
+   "marks": 1,
+   "causes": [
+    "misread-question",
+    "multi-step-breakdown"
+   ],
+   "what_went_wrong": "Stopped at the useful output power instead of dividing by efficiency to get input power.",
+   "fix": "Underline which power is asked for; input = useful output ÷ efficiency."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "13",
+   "marks": 1,
+   "causes": [
+    "proportional-reasoning"
+   ],
+   "what_went_wrong": "Just doubled the extension instead of scaling by L and 1/E together.",
+   "fix": "Write x = FL/(AE) and apply each factor: 1.5 × (1/3) = 0.5, so extension halves."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "15",
+   "marks": 1,
+   "causes": [
+    "wrong-equation",
+    "proportional-reasoning"
+   ],
+   "what_went_wrong": "Equated a weight to a moment instead of balancing two moments.",
+   "fix": "Balance moments: F × x = W × d, so with W, d fixed, x ∝ 1/F."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "21(b)(ii)",
+   "marks": 3,
+   "causes": [
+    "multi-step-breakdown",
+    "vector-sign"
+   ],
+   "what_went_wrong": "Found only the horizontal tension component or only ma, without combining them to get the resistance.",
+   "fix": "Resolve, then write resultant force = component − resistance = ma, and solve for the unknown."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "22(d)",
+   "marks": 1,
+   "causes": [
+    "unfamiliar-context",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Blamed losses to surroundings and missed that the clown also gains gravitational PE between A and B.",
+   "fix": "List every energy store that changes between the two points, including GPE if height changes."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "23(a)",
+   "marks": 2,
+   "causes": [
+    "graph-skill",
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Recited 'action and reaction' without using the gradients of the momentum–time graphs.",
+   "fix": "Link gradient of p-t to force; state the gradients are equal in size and opposite in sign."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "24(a)",
+   "marks": 1,
+   "causes": [
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Said the waves are not moving instead of naming fixed nodes and antinodes.",
+   "fix": "Identify a stationary wave by its features: nodes and antinodes at fixed positions."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "24(b)(i)",
+   "marks": 2,
+   "causes": [
+    "practical-knowledge"
+   ],
+   "what_went_wrong": "Gave no actual way to measure frequency and no accuracy improvement.",
+   "fix": "Name a concrete method (signal generator tuned to resonance, or microphone + oscilloscope f = 1/T) plus one matching refinement."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "24(b)(ii)3",
+   "marks": 2,
+   "causes": [
+    "uncertainty-handling",
+    "misread-question"
+   ],
+   "what_went_wrong": "Combined uncertainties but ignored the instruction to give the answer to 2 s.f.",
+   "fix": "Double the % for a squared term, add %, convert to absolute, then obey the stated s.f."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "25(b)(i)",
+   "marks": 2,
+   "causes": [
+    "unfamiliar-context",
+    "graph-skill"
+   ],
+   "what_went_wrong": "Drew a straight proportional line for a variable potential divider, or left it blank.",
+   "fix": "Reason about end values and how resistance ratio changes; non-linear dividers give curves, not straight lines."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "25(b)(ii)",
+   "marks": 2,
+   "causes": [
+    "misread-question",
+    "misconception"
+   ],
+   "what_went_wrong": "Did not see that removing BC puts wire and resistor in series; mixed up p.d. across wire and resistor.",
+   "fix": "Redraw the circuit after the change, identify series/parallel, then apply the potential divider rule."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "25(c)(i)",
+   "marks": 4,
+   "causes": [
+    "multi-step-breakdown",
+    "unit-conversion"
+   ],
+   "what_went_wrong": "Used a lamp's resistance for the wire, did not subtract lamp p.d.s, or left mm² unconverted.",
+   "fix": "Find the p.d. across the wire itself first; then R = V/I; convert mm² to m² (×10^-6) before ρ = RA/L."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "26(a)(ii)",
+   "marks": 1,
+   "causes": [
+    "unit-conversion"
+   ],
+   "what_went_wrong": "Forgot to convert the work function from eV to J before using λ = hc/φ.",
+   "fix": "Convert eV to J (×1.60×10^-19) before mixing with h and c; then convert m to nm."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "26(a)(iii)",
+   "marks": 3,
+   "causes": [
+    "misconception",
+    "multi-step-breakdown"
+   ],
+   "what_went_wrong": "Took the photon energy as the electron's KE and skipped finding momentum before λ = h/p.",
+   "fix": "KEmax = hf − φ; then convert to J, find p = √(2mE), then λ = h/p."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2022",
+   "q": "26(b)(ii)",
+   "marks": 3,
+   "causes": [
+    "graph-skill",
+    "misread-question"
+   ],
+   "what_went_wrong": "Used the textbook value of h instead of the measured gradient as instructed.",
+   "fix": "When told to use the gradient, use your measured value and find φ from the line's intercept."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "1",
+   "marks": 1,
+   "causes": [
+    "misconception",
+    "unit-conversion"
+   ],
+   "what_went_wrong": "Did not know that microwave wavelengths are on the scale of centimetres.",
+   "fix": "Memorise EM wavelength orders and convert to the units in the options (microwaves ~mm to cm)."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "5",
+   "marks": 1,
+   "causes": [
+    "multi-step-breakdown"
+   ],
+   "what_went_wrong": "Did not calculate the critical angle (≈42°) and compare it with 45° to see total internal reflection.",
+   "fix": "Always compute sin C = 1/n and compare with the angle of incidence before choosing the ray path."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "16",
+   "marks": 1,
+   "causes": [
+    "misconception"
+   ],
+   "what_went_wrong": "Believed equilibrium means at rest, or that two balanced forces on one object form an N3 pair.",
+   "fix": "Equilibrium means zero resultant force (could be moving at constant velocity); N3 pairs act on different objects."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "21(c)(iii)",
+   "marks": 2,
+   "causes": [
+    "uncertainty-handling"
+   ],
+   "what_went_wrong": "Gave only a qualitative comparison, or a raw difference, not compared with the % uncertainty.",
+   "fix": "Compute % difference from the accepted value and compare it with your % uncertainty; state consistent or not."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "22(b)(ii)",
+   "marks": 3,
+   "causes": [
+    "unfamiliar-context",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Blamed frequency, phase or noise instead of unequal incident and reflected amplitudes.",
+   "fix": "Nodes are zero only if the two waves have equal amplitude; explain why amplitudes differ and how that varies with position."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "22(b)(iv)",
+   "marks": 1,
+   "causes": [
+    "practical-knowledge",
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Said 'repeat' without saying average, or suggested non-specific changes.",
+   "fix": "Say 'repeat and calculate a mean', or better: measure across several node spacings to reduce % uncertainty."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "23(c)(i)",
+   "marks": 3,
+   "causes": [
+    "incomplete-explanation",
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Said more intensity gives more electrons without linking photon rate, one-to-one interaction and current.",
+   "fix": "Build the chain: intensity ∝ photons per second → one photon frees one electron → current = charge per second."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "23(c)(ii)",
+   "marks": 4,
+   "causes": [
+    "wrong-equation",
+    "unfamiliar-context"
+   ],
+   "what_went_wrong": "Used P = VI with the battery instead of photon energy × photons per second.",
+   "fix": "Power of a beam = energy per photon × photons per second; then intensity = power/area."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "25(a)",
+   "marks": 2,
+   "causes": [
+    "imprecise-wording",
+    "misread-question"
+   ],
+   "what_went_wrong": "Wrote vague 'human error' and 'more accurate' without using the 0.1 s intervals in the table.",
+   "fix": "Quote the data: compare the time intervals with reaction time (~0.2 s); mention replay frame by frame."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "25(b)",
+   "marks": 1,
+   "causes": [
+    "practical-knowledge"
+   ],
+   "what_went_wrong": "Suggested repeat-and-average instead of a precaution such as avoiding parallax.",
+   "fix": "Give a specific precaution: camera level with and perpendicular to the scale to avoid parallax."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "25(c)",
+   "marks": 2,
+   "causes": [
+    "incomplete-explanation",
+    "misread-question"
+   ],
+   "what_went_wrong": "Calculated distances or an overall average speed without showing the speed is constant.",
+   "fix": "To show terminal velocity, calculate speed for two later intervals and show they are equal."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2023",
+   "q": "25(d)",
+   "marks": 3,
+   "causes": [
+    "multi-step-breakdown",
+    "unit-conversion"
+   ],
+   "what_went_wrong": "Forgot the square root, did not double radius to diameter, or mishandled mm↔m, so chose the wrong soil.",
+   "fix": "Rearrange carefully, check what quantity is asked (diameter vs radius), and convert units before classifying."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "1",
+   "marks": 1,
+   "causes": [
+    "misconception"
+   ],
+   "what_went_wrong": "Did not know that the ampere is the only SI base unit among electrical units.",
+   "fix": "Learn the six SI base units: kg, m, s, A, K, mol; volt, ohm and coulomb are derived."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "13",
+   "marks": 1,
+   "causes": [
+    "misread-question",
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Used the 9 mm span of six fringes as the fringe spacing instead of 1.5 mm.",
+   "fix": "Fringe width is between adjacent bright fringes: divide the total span by the number of spacings."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "17",
+   "marks": 1,
+   "causes": [
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Chose a definition of e.m.f. as energy per volt rather than energy per unit charge.",
+   "fix": "Learn e.m.f. exactly: energy transferred into electrical form per unit charge (per coulomb)."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "18",
+   "marks": 1,
+   "causes": [
+    "multi-step-breakdown"
+   ],
+   "what_went_wrong": "Did not compute the critical angle to check whether total internal reflection happens at P.",
+   "fix": "Compute C from sin C = 1/n and compare with the angle of incidence at the boundary."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "21(b)",
+   "marks": 2,
+   "causes": [
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Mixed energy and p.d. ideas or discussed current only, without linking wasted energy to less power in the bulb.",
+   "fix": "Follow one chain: larger r → more lost volts/I²r heating inside → less p.d./power delivered to the bulb."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "22(c)",
+   "marks": 3,
+   "causes": [
+    "imprecise-wording",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Vague talk of centre of mass and 'stress' instead of perpendicular distance, moment and force.",
+   "fix": "Use the chain: perpendicular distance reduced → moment smaller → force on spine smaller."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "24(d)",
+   "marks": 2,
+   "causes": [
+    "practical-knowledge",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Named light gates without a timer/logger or did not link the improvement to reaction time.",
+   "fix": "State the full set-up (trap door + electronic timer, or video) and say which error it removes."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "24(e)",
+   "marks": 2,
+   "causes": [
+    "graph-skill",
+    "misconception"
+   ],
+   "what_went_wrong": "Drew straight lines or a rebound to full height, treating the bounce as elastic.",
+   "fix": "On s-t graphs, gradient is velocity: curves for acceleration; inelastic bounce means lower maximum height."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "25(a)",
+   "marks": 1,
+   "causes": [
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Definition lacked precise terms such as maximum kinetic energy of emitted photoelectrons.",
+   "fix": "Learn symbol meanings word for word, including 'maximum', 'kinetic energy' and 'photoelectrons'."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "25(c)",
+   "marks": 2,
+   "causes": [
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Only restated threshold frequency or that no electrons leave, without comparing photon energy with work function.",
+   "fix": "Explain: each photon's energy is less than the work function, so no electron gains enough energy to escape."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2024",
+   "q": "26(c)",
+   "marks": 2,
+   "causes": [
+    "uncertainty-handling",
+    "wrong-equation"
+   ],
+   "what_went_wrong": "Calculated measured/accepted × 100% instead of the difference divided by the accepted value.",
+   "fix": "% difference = |measured − accepted| ÷ accepted × 100%."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2025",
+   "q": "10",
+   "marks": 0,
+   "causes": [
+    "misconception"
+   ],
+   "what_went_wrong": "Many thought g does not affect upthrust (item later withdrawn, so no marks counted).",
+   "fix": "Upthrust = weight of fluid displaced = ρVg, so it depends on g."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2025",
+   "q": "17",
+   "marks": 1,
+   "causes": [
+    "graph-skill"
+   ],
+   "what_went_wrong": "Took only a triangle or multiplied peak values instead of estimating the full area under the F-t graph.",
+   "fix": "Impulse = whole area under force–time graph: count squares or split into shapes, and mind the ms scale."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2025",
+   "q": "22(a)(i)",
+   "marks": 1,
+   "causes": [
+    "imprecise-wording",
+    "practical-knowledge"
+   ],
+   "what_went_wrong": "Vague reasons such as 'dirt' without saying a residue would change the refractive index.",
+   "fix": "Link each precaution to the measured quantity: leftover liquid film changes the observed refractive index."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2025",
+   "q": "22(a)(ii)",
+   "marks": 1,
+   "causes": [
+    "practical-knowledge",
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Gave light intensity, which does not affect refractive index, instead of wavelength or temperature.",
+   "fix": "Pick control variables that actually affect the measured quantity: refractive index depends on wavelength and temperature."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2025",
+   "q": "24(c)",
+   "marks": 3,
+   "causes": [
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Did not state that tension stays the same or refer to the perpendicular distance changing.",
+   "fix": "For moments questions, state what is constant, what distance changes, and the effect on the other force."
+  },
+  {
+   "paper": 1,
+   "slug": "jun2025",
+   "q": "25(b)(ii)",
+   "marks": 2,
+   "causes": [
+    "unfamiliar-context",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Only said the pattern shifts, missing lower intensity because only a component of polarised waves is detected.",
+   "fix": "Apply polarisation: rotated transmitter means the receiver detects only a component, so same pattern but weaker."
+  },
+  {
+   "paper": 1,
+   "slug": "nov2020",
+   "q": "4",
+   "marks": 1,
+   "causes": [
+    "proportional-reasoning"
+   ],
+   "what_went_wrong": "Did not scale speed with the square root of the kinetic energy ratio (350/100).",
+   "fix": "KE ∝ v², so v scales by √(new KE/old KE); add energies in eV first."
+  },
+  {
+   "paper": 1,
+   "slug": "nov2020",
+   "q": "14",
+   "marks": 1,
+   "causes": [
+    "misconception",
+    "unfamiliar-context"
+   ],
+   "what_went_wrong": "Assumed zero velocity means zero acceleration at the lowest point of the dive.",
+   "fix": "At rest the drag is zero but upthrust still exceeds weight, so there is an upward resultant force and acceleration."
+  },
+  {
+   "paper": 1,
+   "slug": "nov2020",
+   "q": "26(c)",
+   "marks": 2,
+   "causes": [
+    "proportional-reasoning"
+   ],
+   "what_went_wrong": "Gave the amplitude ratio 2.4 instead of squaring it for intensity.",
+   "fix": "Intensity ∝ amplitude²: square the amplitude ratio."
+  },
+  {
+   "paper": 1,
+   "slug": "nov2020",
+   "q": "28(b)(ii)",
+   "marks": 2,
+   "causes": [
+    "wrong-equation"
+   ],
+   "what_went_wrong": "Divided power by the electron charge instead of the photon energy.",
+   "fix": "Photons per second = power ÷ energy of one photon (hc/λ or from the given value)."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2018",
+   "q": "5(a)",
+   "marks": 1,
+   "causes": [
+    "imprecise-wording",
+    "misconception"
+   ],
+   "what_went_wrong": "Wrote F = ma or 'force equals change of momentum', missing 'rate of'.",
+   "fix": "Learn N2 precisely: resultant force is proportional to the rate of change of momentum."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2018",
+   "q": "5(b)(ii)",
+   "marks": 3,
+   "causes": [
+    "graph-skill",
+    "vector-sign"
+   ],
+   "what_went_wrong": "Did not use the area under the F-t graph as change of momentum, so could not find the rebound speed.",
+   "fix": "Area under F-t = Δp; then final momentum = Δp − initial with signs, divide by mass."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2018",
+   "q": "6(c)(ii)",
+   "marks": 3,
+   "causes": [
+    "misread-question",
+    "unit-conversion"
+   ],
+   "what_went_wrong": "Ignored that the cable is 17 strands in parallel and made power-of-ten errors in area.",
+   "fix": "Note structural details (17 wires in parallel → total A or R scaled); convert mm diameter to m before squaring."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2018",
+   "q": "7(b)",
+   "marks": 2,
+   "causes": [
+    "misconception",
+    "misread-question"
+   ],
+   "what_went_wrong": "Thought the grille polarises microwaves and ignored the stated starting orientation.",
+   "fix": "State the source is already plane polarised; read the start position, then explain block (parallel) vs pass (perpendicular)."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2018",
+   "q": "8(a)(ii)",
+   "marks": 1,
+   "causes": [
+    "wrong-equation"
+   ],
+   "what_went_wrong": "Did not divide the wavelength in air by the refractive index.",
+   "fix": "In a medium, frequency is unchanged so λ_medium = λ_air / n."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2018",
+   "q": "9(b)(ii)",
+   "marks": 2,
+   "causes": [
+    "misconception",
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Thought intensity changes maximum electron speed, or answered vaguely.",
+   "fix": "Photon energy depends only on frequency; intensity changes photons per second, so KEmax is unchanged."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2019",
+   "q": "1(b)(ii)",
+   "marks": 2,
+   "causes": [
+    "vector-sign",
+    "graph-skill"
+   ],
+   "what_went_wrong": "Did not start the rebound line at −4.2 m/s or keep it parallel to the falling line.",
+   "fix": "After a bounce the velocity sign flips but acceleration is still g, so the line stays parallel."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2019",
+   "q": "1(c)",
+   "marks": 2,
+   "causes": [
+    "imprecise-wording",
+    "graph-skill"
+   ],
+   "what_went_wrong": "Discussed terminal velocity instead of describing a curve with decreasing gradient and lower final speed.",
+   "fix": "Describe the graph: gradient decreases with time (curve), lower final velocity reached later."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2019",
+   "q": "3(c)(ii)",
+   "marks": 2,
+   "causes": [
+    "wrong-equation"
+   ],
+   "what_went_wrong": "Tried the pressure equation instead of upthrust = ρVg.",
+   "fix": "Upthrust = weight of fluid displaced: rearrange ρ = U/(Vg)."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2019",
+   "q": "5(a)(iii)",
+   "marks": 2,
+   "causes": [
+    "proportional-reasoning",
+    "graph-skill"
+   ],
+   "what_went_wrong": "Could not turn a fraction of a wavelength read from the graph into a phase difference in radians.",
+   "fix": "Phase difference = (Δx/λ) × 2π radians; read Δx and λ from the same graph."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2019",
+   "q": "5(a)(iv)",
+   "marks": 2,
+   "causes": [
+    "proportional-reasoning"
+   ],
+   "what_went_wrong": "Used amplitude ratio for intensity, forgetting intensity ∝ amplitude².",
+   "fix": "Square each amplitude before taking the intensity ratio."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2022",
+   "q": "1(e)",
+   "marks": 3,
+   "causes": [
+    "unit-conversion",
+    "misread-question"
+   ],
+   "what_went_wrong": "Power-of-ten errors, did not find drag force as instructed, wrong unit for viscosity.",
+   "fix": "Follow the stated route (drag = weight − upthrust), keep SI powers of ten, and derive units from the formula."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2022",
+   "q": "5(c)",
+   "marks": 2,
+   "causes": [
+    "unfamiliar-context",
+    "practical-knowledge"
+   ],
+   "what_went_wrong": "Drew refraction at the first surface and missed total internal reflection at both 45° faces; rays unruled.",
+   "fix": "Check normal incidence passes straight through, then compare 45° with C; draw rays with a ruler."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2022",
+   "q": "5(d)(i)",
+   "marks": 2,
+   "causes": [
+    "wrong-equation",
+    "unfamiliar-context"
+   ],
+   "what_went_wrong": "Used 45° or 41° instead of the glass-to-oil critical angle formula with 90°.",
+   "fix": "For a boundary between two media, sin C = n2/n1 (refraction angle 90°)."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2022",
+   "q": "5(d)(ii)",
+   "marks": 1,
+   "causes": [
+    "unfamiliar-context",
+    "multi-step-breakdown"
+   ],
+   "what_went_wrong": "Did not draw the ray leaving into the oil bending slightly away from the normal.",
+   "fix": "Use the critical angle you just found: 45° < C so the ray refracts out, bending away from normal into lower n."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2022",
+   "q": "7(c)(iv)",
+   "marks": 2,
+   "causes": [
+    "unfamiliar-context",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Did not link the much smaller battery current to lower wire temperature and lower resistance.",
+   "fix": "Explain resistance changes via current → heating → temperature → resistance of metal."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2022",
+   "q": "7(c)(v)",
+   "marks": 2,
+   "causes": [
+    "practical-knowledge",
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Vague 'more accurate' or 'digital meters' suggestions with no specific method.",
+   "fix": "Suggest concrete improvements: vary current with a variable resistor, plot V against I, use meters of higher resolution."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2023",
+   "q": "3(c)",
+   "marks": 3,
+   "causes": [
+    "vector-sign",
+    "multi-step-breakdown"
+   ],
+   "what_went_wrong": "Used only the vertical velocity component for kinetic energy, ignoring the horizontal one.",
+   "fix": "KE uses the full speed: combine components with Pythagoras, or use energy conservation with initial KE + GPE lost."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2023",
+   "q": "4(a)(i)",
+   "marks": 1,
+   "causes": [
+    "practical-knowledge"
+   ],
+   "what_went_wrong": "Chose a ruler or micrometer instead of vernier callipers for ±0.1 mm over that length.",
+   "fix": "Match instrument to resolution and range: ruler 1 mm, callipers 0.1 mm (to ~15 cm), micrometer 0.01 mm (to ~25 mm)."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2023",
+   "q": "4(b)(i)",
+   "marks": 3,
+   "causes": [
+    "graph-skill",
+    "unit-conversion"
+   ],
+   "what_went_wrong": "Did not know what the gradient represented, used the non-linear region or mixed N/mm with GPa.",
+   "fix": "Write the equation as y = mx to identify gradient (AE/L); use the linear part and convert to SI."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2023",
+   "q": "5(a)(ii)",
+   "marks": 1,
+   "causes": [
+    "unfamiliar-context",
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Could not apply polarisation to water waves or justify it with oscillations in one plane.",
+   "fix": "Plane polarised means oscillations in one plane only; check the direction of oscillation in the new setting."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2023",
+   "q": "6(c)(ii)",
+   "marks": 3,
+   "causes": [
+    "misconception",
+    "unfamiliar-context"
+   ],
+   "what_went_wrong": "Did not realise the open-switch voltmeter reading equals the e.m.f.",
+   "fix": "With no current there are no lost volts: open-circuit p.d. = e.m.f.; then r = (E − V)/I."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2023",
+   "q": "8(b)(ii)",
+   "marks": 3,
+   "causes": [
+    "wrong-equation",
+    "multi-step-breakdown"
+   ],
+   "what_went_wrong": "Left out the work function or KE term, or brought in de Broglie momentum.",
+   "fix": "Photon energy = φ + KEmax (φ = hf0); then λ = hc/E. De Broglie is for the electron, not the photon."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2024",
+   "q": "1(c)(ii)",
+   "marks": 3,
+   "causes": [
+    "proportional-reasoning",
+    "unit-conversion"
+   ],
+   "what_went_wrong": "Did not round to 3 s.f. or made power-of-ten errors when scaling r³ ∝ T².",
+   "fix": "Use ratios: r2 = r1 × (T2/T1)^(2/3); keep units consistent and give the s.f. asked."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2024",
+   "q": "4(b)(i)",
+   "marks": 1,
+   "causes": [
+    "imprecise-wording"
+   ],
+   "what_went_wrong": "Referred to mass or 'gravity' instead of the point where the weight appears to act.",
+   "fix": "Define centre of gravity precisely: the point where the entire weight of the object appears to act."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2024",
+   "q": "4(b)(ii)",
+   "marks": 3,
+   "causes": [
+    "misread-question",
+    "graph-skill"
+   ],
+   "what_went_wrong": "Marked C without showing the median construction, or did not convert using the scale.",
+   "fix": "Show construction lines (two medians from midpoints to vertices), measure, then apply the scale factor."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2024",
+   "q": "5(b)(ii)",
+   "marks": 4,
+   "causes": [
+    "practical-knowledge"
+   ],
+   "what_went_wrong": "Gave no detail on outlining the block, marking rays with crosses or joining points.",
+   "fix": "Describe ray tracing step by step: narrow beam, dim room, draw around block, mark rays with crosses, join, use protractor."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2024",
+   "q": "5(b)(v)",
+   "marks": 1,
+   "causes": [
+    "unfamiliar-context"
+   ],
+   "what_went_wrong": "Did not see the path from Q is the mirror image of the incoming path.",
+   "fix": "Use symmetry: reflection at Q reverses the geometry; ray exiting into air bends away from the normal."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2024",
+   "q": "6(c)",
+   "marks": 1,
+   "causes": [
+    "misconception"
+   ],
+   "what_went_wrong": "Gave 500 Hz or a lower frequency, not knowing closed tubes have only odd harmonics.",
+   "fix": "Closed (one end) tubes: only odd harmonics f0, 3f0, 5f0."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2024",
+   "q": "7(a)(i)",
+   "marks": 1,
+   "causes": [
+    "imprecise-wording",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Said 'switch open' rather than stating the current is zero so no p.d. across r.",
+   "fix": "Translate the circuit state into physics: switch open → current zero → no lost volts → reading = e.m.f."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2024",
+   "q": "7(c)(i)",
+   "marks": 1,
+   "causes": [
+    "misconception"
+   ],
+   "what_went_wrong": "Did not see that removing a parallel branch raises total resistance and lowers current.",
+   "fix": "Removing a parallel resistor increases total resistance, so the supply current decreases."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2024",
+   "q": "7(c)(ii)",
+   "marks": 1,
+   "causes": [
+    "misconception",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Said voltmeter reading stays the same, ignoring internal resistance.",
+   "fix": "Lower current means fewer lost volts (Ir), so terminal p.d. rises."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2025",
+   "q": "2(a)(ii)",
+   "marks": 2,
+   "causes": [
+    "uncertainty-handling",
+    "proportional-reasoning"
+   ],
+   "what_went_wrong": "Did not use half the range for absolute uncertainty, or did not triple the % for d³.",
+   "fix": "Absolute uncertainty = half the range; a cubed quantity triples its % uncertainty; add the % terms."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2025",
+   "q": "3(a)(i)",
+   "marks": 1,
+   "causes": [
+    "misconception",
+    "vector-sign"
+   ],
+   "what_went_wrong": "No arrow or arrow the wrong way for conventional current from the carriers shown.",
+   "fix": "Conventional current is the direction positive charge flows: opposite to electron flow."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2025",
+   "q": "3(b)(iii)",
+   "marks": 2,
+   "causes": [
+    "unfamiliar-context",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Did not realise the large fixed resistor takes nearly all the p.d., so the reading barely changes.",
+   "fix": "In potential dividers, compare resistances: if one dominates, the other's p.d. hardly varies; quantify the reading."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2025",
+   "q": "5(b)(iii)",
+   "marks": 2,
+   "causes": [
+    "multi-step-breakdown",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Omitted the friction force, using only the force to raise the trolley.",
+   "fix": "List every force the pusher must overcome (component of weight + friction), sum them, then P = Fv."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2025",
+   "q": "6(b)(ii)",
+   "marks": 2,
+   "causes": [
+    "vector-sign"
+   ],
+   "what_went_wrong": "Gave 0.036 N s by subtracting magnitudes, ignoring that L rebounds.",
+   "fix": "Choose a positive direction; Δp = p_final − p_initial with signs, so a rebound adds magnitudes."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2025",
+   "q": "6(b)(iii)",
+   "marks": 1,
+   "causes": [
+    "multi-step-breakdown",
+    "misconception"
+   ],
+   "what_went_wrong": "Did not use impulse = change in momentum of R to find its velocity.",
+   "fix": "Impulse on R equals its change in momentum; from rest, v = impulse ÷ mass."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2025",
+   "q": "7(b)(ii)",
+   "marks": 2,
+   "causes": [
+    "practical-knowledge",
+    "misread-question"
+   ],
+   "what_went_wrong": "Just rearranged the Young's equation instead of describing measuring across n fringes with callipers.",
+   "fix": "Answer 'how measured' with instrument + technique: callipers across many fringes, divide by number of spacings."
+  },
+  {
+   "paper": 2,
+   "slug": "jun2025",
+   "q": "7(c)(i)",
+   "marks": 1,
+   "causes": [
+    "multi-step-breakdown"
+   ],
+   "what_went_wrong": "Found the speed in glass but stopped there instead of the wavelength.",
+   "fix": "Check the final answer is the quantity asked; λ_glass = λ_air/n directly."
+  },
+  {
+   "paper": 2,
+   "slug": "nov2020",
+   "q": "5(d)",
+   "marks": 3,
+   "causes": [
+    "graph-skill",
+    "misread-question"
+   ],
+   "what_went_wrong": "Included the thinking time in the deceleration time instead of only the braking interval.",
+   "fix": "Read the graph section where braking happens; a = Δv/Δt over that interval only, then F = ma."
+  },
+  {
+   "paper": 2,
+   "slug": "nov2020",
+   "q": "5(e)",
+   "marks": 3,
+   "causes": [
+    "proportional-reasoning",
+    "incomplete-explanation"
+   ],
+   "what_went_wrong": "Described effects qualitatively without quantifying thinking and braking times and distances.",
+   "fix": "Quantify: thinking distance ∝ v, braking time ∝ v, braking distance ∝ v²; give numbers."
+  },
+  {
+   "paper": 2,
+   "slug": "nov2020",
+   "q": "6(c)",
+   "marks": 2,
+   "causes": [
+    "wrong-equation",
+    "unfamiliar-context"
+   ],
+   "what_went_wrong": "Used the wrong forces and distances in the moments about the edge X.",
+   "fix": "Take moments about the pivot edge with perpendicular distances: F × height = W × half-width."
+  },
+  {
+   "paper": 2,
+   "slug": "nov2020",
+   "q": "7(b)",
+   "marks": 2,
+   "causes": [
+    "unit-conversion"
+   ],
+   "what_went_wrong": "Used 150 W instead of 0.150 kW, or seconds instead of hours, for a kWh cost.",
+   "fix": "For kWh: power in kW × time in hours × price per kWh."
+  }
+ ],
+ "summary": [
+  {
+   "cause": "misconception",
+   "parts": 24,
+   "marks": 33,
+   "pattern": "Wrong core models recur: Newton's third law pairs (weight vs normal force, equilibrium = at rest), intensity changing photoelectron energy, photon energy taken as electron KE, and gaps in recall such as SI base units, EM wavelengths and closed-tube harmonics.",
+   "top_fixes": [
+    "Test any N3 pair claim: same force type, two different bodies.",
+    "Photon energy depends only on f; intensity sets photons per second.",
+    "Keep a one-page recall list: SI base units, EM spectrum orders of magnitude, closed-pipe odd harmonics.",
+    "Equilibrium means zero resultant force and moment, not necessarily at rest."
+   ]
+  },
+  {
+   "cause": "imprecise-wording",
+   "parts": 20,
+   "marks": 30,
+   "pattern": "Physics broadly right but key terms missing or swapped: momentum for moment, 'switch open' for zero current, 'stress' for force, mass for weight, F = ma for rate of change of momentum, 'waves not moving' for nodes.",
+   "top_fixes": [
+    "Learn definitions word for word (N2, e.m.f., centre of gravity, KEmax).",
+    "Replace everyday words with the technical quantity the mark scheme wants.",
+    "Translate circuit or situation states into physics quantities (current zero, perpendicular distance)."
+   ]
+  },
+  {
+   "cause": "misread-question",
+   "parts": 18,
+   "marks": 38,
+   "pattern": "Candidates skipped a decisive condition or data item: constant volume, 17 parallel strands, the named apparatus, 'use the gradient', 2 s.f., the start orientation, or answered a nearby question (useful vs input power).",
+   "top_fixes": [
+    "Underline every given condition and the exact quantity asked before writing.",
+    "Use the data, graph or previous part the question points to.",
+    "Use only the apparatus named and the method instructed.",
+    "Re-read the question against your final answer and its s.f."
+   ]
+  },
+  {
+   "cause": "incomplete-explanation",
+   "parts": 18,
+   "marks": 38,
+   "pattern": "Explanations stopped one link short: intensity → photons per second → current, larger r → lost volts → less bulb power, perpendicular distance → moment → force; or a constant quantity was left unstated.",
+   "top_fixes": [
+    "Write explanations as an arrow chain, one marking point per link.",
+    "Count the marks and give at least that many distinct points.",
+    "State what stays constant as well as what changes.",
+    "Finish with an explicit conclusion tied to the question."
+   ]
+  },
+  {
+   "cause": "unfamiliar-context",
+   "parts": 17,
+   "marks": 31,
+   "pattern": "Standard physics (TIR, potential dividers, polarisation, energy stores, moments about an edge) failed to transfer to new set-ups like oil-immersed prisms, clown launchers, seabirds and soil particles.",
+   "top_fixes": [
+    "Strip the context: name the underlying topic before calculating.",
+    "Redraw the set-up as a standard diagram (circuit, force or ray diagram).",
+    "List every force or energy store present, not just the obvious one."
+   ]
+  },
+  {
+   "cause": "multi-step-breakdown",
+   "parts": 15,
+   "marks": 30,
+   "pattern": "Long chains broke: stopping at useful power, speed in glass, torque or one component; skipping a check of the critical angle; not finding momentum before de Broglie.",
+   "top_fixes": [
+    "Plan the chain from the asked quantity backwards before starting.",
+    "After each step ask whether this is the final quantity.",
+    "For ray questions always compute the critical angle first.",
+    "Keep full-precision intermediates and label each."
+   ]
+  },
+  {
+   "cause": "practical-knowledge",
+   "parts": 15,
+   "marks": 29,
+   "pattern": "Methods were generic or unworkable: wrong block type, no normals, light gates with no timer, ruler where callipers were needed, 'repeat' without mean, vague 'more accurate' meters.",
+   "top_fixes": [
+    "Name the instrument and its resolution, matched to the precision needed.",
+    "Describe how each reading is physically taken (what is marked, measured, timed).",
+    "Pair each improvement with the error it reduces.",
+    "To cut % uncertainty, make the measured quantity larger (several spacings, many oscillations)."
+   ]
+  },
+  {
+   "cause": "graph-skill",
+   "parts": 14,
+   "marks": 31,
+   "pattern": "Graph technique was weak: partial areas under v-t and F-t graphs, oscilloscope x-axis read as distance, gradient meaning not identified, wrong interval read, sketches without curvature.",
+   "top_fixes": [
+    "Identify what gradient and area represent before using a graph.",
+    "Use the whole relevant area and the correct interval.",
+    "Read axis units and time-base or scale factors.",
+    "Sketch curves where acceleration is present and keep parallel lines for equal acceleration."
+   ]
+  },
+  {
+   "cause": "wrong-equation",
+   "parts": 12,
+   "marks": 23,
+   "pattern": "Plausible but wrong equations were chosen: πr² for sphere area, P = VI for photon power, dividing by e not photon energy, pressure equation for upthrust, braking vs stopping distance.",
+   "top_fixes": [
+    "Before substituting, say what physical quantity the equation gives.",
+    "Check the situation matches the equation's conditions.",
+    "Know the key distinctions: braking vs stopping, change vs rate of change, photon vs electron."
+   ]
+  },
+  {
+   "cause": "proportional-reasoning",
+   "parts": 12,
+   "marks": 20,
+   "pattern": "Linked scalings were missed: R ∝ L² at constant volume, I ∝ A², v ∝ √KE, P ∝ v³, combined L and E factors, braking distance ∝ v².",
+   "top_fixes": [
+    "Write the governing equation and apply each factor separately.",
+    "Square amplitude ratios for intensity; root energy ratios for speed.",
+    "Check whether other variables change too (area when stretching)."
+   ]
+  },
+  {
+   "cause": "unit-conversion",
+   "parts": 10,
+   "marks": 25,
+   "pattern": "Prefix and unit slips: mm² to m², eV to J, ms to s, W to kW and s to h for kWh, mm and GPa in Young modulus work.",
+   "top_fixes": [
+    "Convert everything to SI on the first line of working.",
+    "mm² → m² is ×10^-6; eV → J is ×1.60×10^-19.",
+    "For cost use kW × hours.",
+    "Estimate the answer's size to catch power-of-ten errors."
+   ]
+  },
+  {
+   "cause": "vector-sign",
+   "parts": 9,
+   "marks": 18,
+   "pattern": "Direction was ignored: rebounds handled by subtracting speeds, rebound v-t lines starting at the wrong sign, KE from one velocity component, resultant of weight and drag guessed.",
+   "top_fixes": [
+    "Choose and mark a positive direction on every momentum or v-t problem.",
+    "A rebound makes Δv the sum of speeds.",
+    "Combine perpendicular components with Pythagoras before using speed in KE."
+   ]
+  },
+  {
+   "cause": "uncertainty-handling",
+   "parts": 5,
+   "marks": 10,
+   "pattern": "Uncertainty work was mechanical but incomplete: half-range not used, powers not multiplied, % difference divided by the wrong value, consistency judged qualitatively.",
+   "top_fixes": [
+    "Absolute uncertainty = half range; multiply % by the power.",
+    "% difference uses the accepted value as denominator.",
+    "Judge consistency by comparing % difference with % uncertainty, with numbers."
+   ]
+  }
+ ]
+}

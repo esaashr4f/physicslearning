@@ -968,12 +968,13 @@ function buildQuestions(reg, parts) {
   });
 }
 
+const RC_LABEL = { "misread-question": "Misread the question", "incomplete-explanation": "Incomplete explanation", "misconception": "Misconception", "imprecise-wording": "Imprecise wording", "vector-sign": "Vectors and signs", "proportional-reasoning": "Proportional reasoning", "unit-conversion": "Unit conversion", "wrong-equation": "Wrong equation or quantity", "graph-skill": "Graph skill", "practical-knowledge": "Practical knowledge", "uncertainty-handling": "Uncertainty", "unfamiliar-context": "Unfamiliar context", "multi-step-breakdown": "Lost the thread in a long chain" };
 function erFor(ex, p) {
   const rep = ex?.[`p${p.paper}-${p.slug}`]; if (!rep) return null;
   let l = p.q.replace(/\)\d+$/, ")");
   for (;;) { if (rep.parts?.[l]) return rep.parts[l]; const m = l.match(/^(.*)\([a-z]+\)$/); if (!m) return null; l = m[1]; }
 }
-function PartNote({ p, showAnswer, nm, er }) {
+function PartNote({ p, showAnswer, nm, er, rc }) {
   const L = (arr) => arr && arr.length ? html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>` : null;
   return html`<div class="note">
     <header><b>${p.q}</b><span class="pill mk">${p.marks} mark${p.marks == 1 ? "" : "s"}</span><span class="pill ty">${tl(p.type)}</span>${p.command_word && html`<span class="pill">${p.command_word}</span>`}${p.withdrawn && html`<span class="pill mk">Withdrawn by OCR</span>`}</header>
@@ -992,6 +993,7 @@ function PartNote({ p, showAnswer, nm, er }) {
       ${er.misconceptions?.length ? html`<div class="blk pen"><span class="h">Misconceptions</span>${L(er.misconceptions)}</div>` : null}
       ${er.mcq_distractor ? html`<div class="blk"><span class="h">Most popular wrong answer</span><p style=${{ margin: 0 }}>${er.mcq_distractor}</p></div>` : null}
       ${er.good_practice?.length ? html`<div class="blk"><span class="h">What strong answers did</span>${L(er.good_practice)}</div>` : null}
+      ${rc ? html`<div class="blk pen"><span class="h">Why marks were lost · ${rc.causes.map(c => RC_LABEL[c] || c).join(", ")}</span><p style=${{ margin: 0 }}>${rc.what_went_wrong}</p><span class="h" style=${{ color: "var(--accent)", marginTop: "6px" }}>Fix</span><p style=${{ margin: 0 }}>${rc.fix}</p></div>` : null}
     </details>`}
     ${!showAnswer && html`<span class="shared">${p.topic || ""}${p.subtopic ? " · " + p.subtopic : ""}</span>`}
   </div>`;
@@ -1086,7 +1088,7 @@ function QBench({ data, sel }) {
                 ${r.msPage && html`<div class="ptag"><b>Mark scheme page ${r.msPage}</b></div><${Crop} url=${msUrl} seg=${[r.msPage, 0, 0]} box=${reg.ms} full=${true} side="ms" />`}
                 ${r.shared && html`<div class="shared">Marked together with ${r.shared}, shown above.</div>`}
                 ${r.sharedPage && html`<div class="shared">On mark scheme page ${r.sharedPage}, shown above.</div>`}`}
-              ${r.parts.map(p => html`<${PartNote} key=${p.q} p=${p} showAnswer=${open} nm=${data.nmIndex?.[`${p.paper}:${p.slug}:${p.q}`]} er=${erFor(data.examiners, p)} />`)}
+              ${r.parts.map(p => html`<${PartNote} key=${p.q} p=${p} showAnswer=${open} nm=${data.nmIndex?.[`${p.paper}:${p.slug}:${p.q}`]} er=${erFor(data.examiners, p)} rc=${data.rcIndex?.[`${p.paper}:${p.slug}:${p.q}`]} />`)}
             </div>
           </div>`;
         })}
@@ -1307,6 +1309,7 @@ function Playbook({ data, open, openSpec }) {
   }, [nm, nmCat, nmTxt, nmPaper, nmSev]);
   const CAT = { "wording": "Wording", "definitions": "Definitions", "units-and-prefixes": "Units and prefixes", "rounding-and-sig-figs": "Rounding and sig figs", "calculation-method": "Calculation method", "graphs-and-reading": "Graphs and reading", "diagrams-and-sketches": "Diagrams and sketches", "vectors-and-direction": "Vectors and direction", "practical-and-uncertainty": "Practical and uncertainty", "multiple-choice": "Multiple choice", "six-mark-answers": "Six-mark answers", "explanations": "Explanations", "marking-rules": "Marking rules" };
   const findQ = (r) => all.find(q => q.paper == r.paper && q.slug === r.slug && q.q === r.q);
+  const rcd = data.rootcause; const [rcCause, setRcCause] = useState(null);
   const stale = useMemo(() => {
     const last = {}; const codes = data.spec?.outcomes || [];
     for (const q of all) for (const c of q.spec_points || []) last[c] = Math.max(last[c] ?? -1, idx(q.slug));
@@ -1320,7 +1323,7 @@ function Playbook({ data, open, openSpec }) {
   }, [all]);
   const letters = useMemo(() => { const m = { A: 0, B: 0, C: 0, D: 0 }; for (const q of all) if (q.type === "mcq") { const l = (q.answer || "").match(/^[A-D]/)?.[0]; if (l) m[l]++; } return m; }, [all]);
 
-  const SECTIONS = [["pb-strategy", "Strategy"], ["pb-bounds", "Grade boundaries"], ["pb-papers", "The two papers"], ["pb-diff", "Difficulty"], ["pb-content", "Content"], ["pb-near", "Near misses"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
+  const SECTIONS = [["pb-strategy", "Strategy"], ["pb-bounds", "Grade boundaries"], ["pb-papers", "The two papers"], ["pb-diff", "Difficulty"], ["pb-content", "Content"], ["pb-lost", "Why marks were lost"], ["pb-near", "Near misses"], ["pb-repeat", "Repeat questions"], ["pb-afl", "Examiners' advice"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
   const goto = (id) => { const el = ref.current?.querySelector("#" + id); if (!el) return; lenis.current ? lenis.current.scrollTo(el, { offset: -12 }) : el.scrollIntoView(); };
   const L = (arr) => html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>`;
   const lbl = (p) => p === "1" ? "M1 Practical" : p === "2" ? "M2 Foundations" : p === "3" ? "M3 Forces" : p === "4" ? "M4 Electrons, waves, photons" : p;
@@ -1422,6 +1425,20 @@ function Playbook({ data, open, openSpec }) {
           <div class="cards2" style=${{ marginTop: "14px" }}>${pb.content.map((r, i) => html`<div class="rule" key=${i}><h4>${r.title}</h4><p>${r.body}</p></div>`)}</div>
         </section>`}
 
+        ${rcd && html`<section id="pb-lost">
+          <h3>Why marks were lost on the worst-answered questions</h3>
+          <p class="sub">Every part OCR's examiners rated "poorly answered" (${rcd.parts.length} parts, ${rcd.parts.reduce((t, r) => t + (+r.marks || 0), 0)} marks), diagnosed from the reports. A part can have two causes. Click a cause to see its questions.</p>
+          <div class="panel" style=${{ overflowX: "auto" }}><table class="dtab">
+            <thead><tr><th>Root cause</th><th>Parts</th><th>Marks</th><th style=${{ textAlign: "left" }}>What it looks like</th></tr></thead>
+            <tbody>${rcd.summary.slice().sort((a, b) => b.marks - a.marks).map(r => html`<tr key=${r.cause}><td style=${{ textAlign: "left" }}><button class="link" onClick=${() => setRcCause(c => c === r.cause ? null : r.cause)}>${RC_LABEL[r.cause] || r.cause}</button></td><td>${r.parts}</td><td style=${{ fontWeight: 700 }}>${r.marks}</td><td style=${{ textAlign: "left", color: "var(--ink-2)" }}>${r.pattern}</td></tr>`)}</tbody>
+          </table></div>
+          ${rcCause && (() => { const sm = rcd.summary.find(x => x.cause === rcCause); const ps = rcd.parts.filter(r => r.causes.includes(rcCause)); return html`<div class="panel" style=${{ marginTop: "12px" }}>
+            <h4>${RC_LABEL[rcCause]}: ${ps.length} parts</h4>
+            ${sm?.top_fixes?.length ? html`<div class="blk"><span class="h">Habits that fix it</span>${L(sm.top_fixes)}</div>` : null}
+            <div class="prac" style=${{ marginTop: "12px" }}>${ps.map(r => html`<button key=${r.paper + r.slug + r.q} onClick=${() => open(r.paper, r.slug, findQ(r))} style=${{ gridTemplateColumns: "170px minmax(0,1fr) auto" }}>
+              <span class="ref">P${r.paper} ${SLABEL[r.slug]} Q${r.q}</span><span class="ctx">${r.what_went_wrong}<span class="why">Fix: ${r.fix}</span></span><span class="mk">${r.marks} m</span></button>`)}</div></div>`; })()}
+        </section>`}
+
         ${nm && html`<section id="pb-near">
           <h3>Near misses: losing marks while doing it right</h3>
           <p class="sub">Answers that look right but aren't credited, wording that is almost right, and rigid marking rules, taken from the allow / not / ignore notes in every mark scheme. ${nm.items.length} cases, most frequent first. The same warnings appear under each affected part in the Questions tab.</p>
@@ -1446,6 +1463,19 @@ function Playbook({ data, open, openSpec }) {
             ${(nm.general || []).length ? html`<div class="panel"><h4>Rules that catch people out</h4>${L(nm.general)}</div>` : null}
             ${(nm.leniencies || []).length ? html`<div class="panel"><h4>What you don't need to worry about</h4><p class="sub" style=${{ margin: "0 0 8px" }}>Things the mark schemes explicitly ignore or allow.</p><ul>${nm.leniencies.slice(0, 30).map((l, i) => html`<li key=${i}><b>${l.topic}:</b> ${l.detail}</li>`)}</ul></div>` : null}
           </div>
+        </section>`}
+
+        ${pb.repeats && html`<section id="pb-repeat">
+          <h3>Questions OCR keeps reusing</h3>
+          <p class="sub">The same calculation or explanation, in a new setting, across several sessions. If you can do one, practise the rest in a row.</p>
+          <div class="traps">${pb.repeats.map(r => html`<div class="rule" key=${r.title}><h4>${r.title}</h4><p>${r.how}</p><span class="st">${new Set(r.refs.map(x => x.slug)).size} sessions</span>
+            <div class="refs" style=${{ display: "flex", flexWrap: "wrap", gap: "4px 10px" }}>${r.refs.map((x, j) => html`<button key=${j} class="link" style=${{ font: "500 12px/1.4 var(--f-mono)" }} onClick=${() => open(x.paper, x.slug, findQ(x))}>P${x.paper} ${SLABEL[x.slug]} Q${x.q}</button>`)}</div></div>`)}</div>
+        </section>`}
+
+        ${pb.afl && html`<section id="pb-afl">
+          <h3>The examiners' own advice</h3>
+          <p class="sub">Paraphrased from the summaries and learning tips in OCR's examiners' reports, 2018–2025.</p>
+          <div class="cols2">${(pb.overviews || []).map(o => html`<div class="panel" key=${o.src}><h4>${o.src.startsWith("p1") ? "Paper 1" : "Paper 2"} · ${SLABEL[o.src.slice(3)]}</h4>${L(o.items)}${(pb.afl.filter(a => a.src === o.src)).length ? html`<div class="blk" style=${{ marginTop: "8px" }}><span class="h">Learning tips</span>${L(pb.afl.filter(a => a.src === o.src).map(a => a.tip))}</div>` : null}</div>`)}</div>
         </section>`}
 
         <section id="pb-mech">
@@ -1836,11 +1866,13 @@ function App() {
       fetch("data/nearmiss.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/examiners.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/techniques.json").then(r => r.ok ? r.json() : null).catch(() => null),
-    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques]) => {
+      fetch("data/rootcause.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause]) => {
+      const rcIndex = {}; for (const r of rootcause?.parts || []) rcIndex[`${r.paper}:${r.slug}:${r.q}`] = r;
       const nmIndex = {};
       for (const it of nearmiss?.items || []) for (const r of it.refs || []) (nmIndex[`${r.paper}:${r.slug}:${r.q}`] ||= []).push(it);
       const byPaper = {}; for (const q of all) (byPaper[`${q.paper}:${q.slug}`] ||= []).push(q);
-      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, ready: true });
+      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, ready: true });
     });
   }, []);
   const hardMarks = useMemo(() => { const m = {}; for (const q of data.all) if (!q.withdrawn && q.difficulty === 3) { const k = `${q.paper}:${q.slug}`; m[k] = (m[k] || 0) + (+q.marks || 0); } for (const q of data.all) { const k = `${q.paper}:${q.slug}`; if (!(k in m)) m[k] = 0; } return m; }, [data.all]);
