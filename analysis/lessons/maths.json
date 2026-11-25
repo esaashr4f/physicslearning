@@ -1,0 +1,713 @@
+{
+ "M1": {
+  "steps": [
+   "Before substituting, list every given value with its unit.",
+   "Circle any prefix and replace it with its power of ten: p 10⁻¹², n 10⁻⁹, μ 10⁻⁶, m 10⁻³, k 10³, M 10⁶, G 10⁹, T 10¹².",
+   "Write each value in base SI units in standard form, e.g. 0.84 mm = 0.84 × 10⁻³ m.",
+   "Substitute the converted values, not the originals.",
+   "Check the answer is physically sensible (no wavelength of light in metres of 500, no speed above 3 × 10⁸ m s⁻¹)."
+  ],
+  "example": {
+   "problem": "A spring extends by 0.84 mm when a force of 120 N is applied. Calculate the force constant of the spring in N m⁻¹.",
+   "solution": [
+    "x = 0.84 mm = 0.84 × 10⁻³ m",
+    "k = F/x = 120 / (0.84 × 10⁻³)",
+    "k = 1.43 × 10⁵ N m⁻¹"
+   ],
+   "answer": "1.4 × 10⁵ N m⁻¹"
+  },
+  "traps": [
+   "Leaving a length in mm, a mass in g, a wavelength in nm or a power in mW: the method is right but the power-of-ten slip costs the answer mark.",
+   "Mixing up similar prefixes such as nm and pm, or m (milli) and M (mega).",
+   "Writing the answer with a unit that does not match its power of ten, e.g. a force constant worked out in N per cm but labelled N m⁻¹."
+  ],
+  "spot": [
+   "Data given with a prefix (mA, nm, kV, μs, GPa) next to an equation that needs SI units.",
+   "A final answer asked for in a base unit such as m, Hz or Pa."
+  ]
+ },
+ "M2": {
+  "steps": [
+   "Spot squared or cubed units (mm², cm², cm³) in the data.",
+   "Write the length conversion first, e.g. 1 mm = 10⁻³ m.",
+   "Square it for areas or cube it for volumes: 1 mm² = (10⁻³)² m² = 10⁻⁶ m²; 1 cm³ = (10⁻²)³ m³ = 10⁻⁶ m³.",
+   "Multiply the number by that factor only; do not square the number itself.",
+   "Substitute the area or volume in m² or m³."
+  ],
+  "example": {
+   "problem": "A copper cable has cross-sectional area 0.75 mm² and length 3.0 m. The resistivity of copper is 1.7 × 10⁻⁸ Ω m. Calculate the resistance of the cable.",
+   "solution": [
+    "A = 0.75 mm² = 0.75 × 10⁻⁶ m²",
+    "R = ρL/A = (1.7 × 10⁻⁸ × 3.0) / (0.75 × 10⁻⁶)",
+    "R = 0.068 Ω"
+   ],
+   "answer": "0.068 Ω"
+  },
+  "traps": [
+   "Converting mm² to m² by multiplying by 10⁻³ instead of 10⁻⁶.",
+   "Squaring a value that is already an area, e.g. writing (1.2 × 10⁻⁶)² for 1.2 mm²; this is treated as wrong physics, not a slip.",
+   "Converting cm³ to m³ by 10⁻² or 10⁻³ when calculating density, giving a density a thousand times too big or small."
+  ],
+  "spot": [
+   "Cross-sectional area given in mm² (resistivity, stress, I = Anev).",
+   "Volume given in cm³ or a density needed in kg m⁻³."
+  ]
+ },
+ "M3": {
+  "steps": [
+   "Find every time in the question and note its unit.",
+   "Convert to seconds: minutes × 60, hours × 3600, ms × 10⁻³, μs × 10⁻⁶.",
+   "Keep hours only when the answer is wanted in kW h.",
+   "Substitute and check the size of the answer is reasonable for the situation."
+  ],
+  "example": {
+   "problem": "A 2.2 kW kettle is switched on for 3.5 minutes. Calculate the electrical energy it transfers.",
+   "solution": [
+    "t = 3.5 × 60 = 210 s",
+    "P = 2.2 kW = 2200 W",
+    "E = Pt = 2200 × 210 = 4.62 × 10⁵ J"
+   ],
+   "answer": "4.6 × 10⁵ J"
+  },
+  "traps": [
+   "Leaving minutes or hours unconverted in E = Pt or Q = It; this usually limits you to one mark.",
+   "Forgetting that a collision time in ms must be converted before F = Δp/Δt, giving a force 1000 times too small.",
+   "Reading a period of, say, 4.0 ms off an axis and writing f = 1/4.0 = 0.25 Hz instead of 250 Hz."
+  ],
+  "spot": [
+   "Times given in minutes, hours, ms or μs in a power, charge or force calculation.",
+   "A time axis labelled t / ms."
+  ]
+ },
+ "M4": {
+  "steps": [
+   "Decide which unit the equation needs: equations with h, c, m or v need joules.",
+   "eV to J: multiply by e = 1.60 × 10⁻¹⁹. J to eV: divide by 1.60 × 10⁻¹⁹.",
+   "Before adding or subtracting energies (hf − φ), put them all in the same unit.",
+   "kW h: power in kW × time in hours; 1 kW h = 3.6 × 10⁶ J.",
+   "State the unit on the answer so it is clear which one you used."
+  ],
+  "example": {
+   "problem": "Light of wavelength 410 nm falls on a metal with work function 2.3 eV. Calculate the maximum kinetic energy of the emitted electrons in joules.",
+   "solution": [
+    "E = hc/λ = (6.63 × 10⁻³⁴ × 3.00 × 10⁸) / (410 × 10⁻⁹) = 4.85 × 10⁻¹⁹ J",
+    "In eV: 4.85 × 10⁻¹⁹ / 1.60 × 10⁻¹⁹ = 3.03 eV",
+    "KEmax = 3.03 − 2.3 = 0.73 eV",
+    "KEmax = 0.73 × 1.60 × 10⁻¹⁹ = 1.2 × 10⁻¹⁹ J"
+   ],
+   "answer": "1.2 × 10⁻¹⁹ J"
+  },
+  "traps": [
+   "Putting an energy in eV straight into ½mv² or λ = hc/E as if it were joules; this is wrong physics, so later marks are lost.",
+   "Subtracting a work function in eV from a photon energy in J.",
+   "Using time in seconds or power in W in a kW h cost calculation."
+  ],
+  "spot": [
+   "Work function, photon energy or electron energy quoted in eV.",
+   "An energy bill, cost or 'kW h' in the question."
+  ]
+ },
+ "M5": {
+  "steps": [
+   "Write each number in standard form before you start (5.32 × 10⁻⁷, not 532 nm).",
+   "Use the calculator's ×10ˣ (EXP) key rather than typing × 10 ^.",
+   "Put brackets round the whole denominator, or divide by each factor separately.",
+   "Do a rough power-of-ten estimate in your head to check the calculator answer.",
+   "Copy the result with its power of ten and a sensible number of s.f."
+  ],
+  "example": {
+   "problem": "A 4.5 mW laser emits light of wavelength 532 nm. Calculate the number of photons emitted per second.",
+   "solution": [
+    "E = hc/λ = (6.63 × 10⁻³⁴ × 3.00 × 10⁸) / (5.32 × 10⁻⁷) = 3.74 × 10⁻¹⁹ J",
+    "N per second = P/E = 4.5 × 10⁻³ / 3.74 × 10⁻¹⁹",
+    "N = 1.20 × 10¹⁶ s⁻¹"
+   ],
+   "answer": "1.2 × 10¹⁶ photons per second"
+  },
+  "traps": [
+   "Dividing by a product without brackets, e.g. typing a ÷ 2 × 10⁻¹⁹, which multiplies by 10⁻¹⁹ instead of dividing.",
+   "Typing × 10 ^ −19 after already using EXP, so the answer is ten times out.",
+   "Dividing total power by total energy, or skipping the energy-per-photon step, in a photons-per-second question."
+  ],
+  "spot": [
+   "Constants such as h, e, mₑ or c in the working.",
+   "Answers expected to be extremely large or small (photon numbers, wavelengths, drift velocities)."
+  ]
+ },
+ "M6": {
+  "steps": [
+   "Look at the data: give the answer to the same number of s.f. as the least precise data (usually 2 or 3).",
+   "If the question states the number of s.f., give exactly that many.",
+   "Keep full calculator values for every intermediate step; round only the final answer.",
+   "In a show-that, give your answer to at least one more s.f. than the value printed.",
+   "Round correctly: look only at the next digit (4.946 → 4.9 to 2 s.f.)."
+  ],
+  "example": {
+   "problem": "A ball falls from rest through 1.25 m in 0.505 s. Calculate g to 3 s.f.",
+   "solution": [
+    "s = ½gt², so g = 2s/t²",
+    "t² = 0.505² = 0.255025 s² (keep all figures)",
+    "g = 2 × 1.25 / 0.255025 = 9.803 m s⁻²",
+    "Rounding t² to 0.26 first would give 9.62 m s⁻², which is wrong."
+   ],
+   "answer": "9.80 m s⁻²"
+  },
+  "traps": [
+   "Rounding an intermediate value (e.g. a mass to 0.08 kg) and carrying it forward, so the final answer is off.",
+   "Giving a 1 s.f. answer such as 0.7 s or 8 × 10³ when the data are to 2 or 3 s.f.",
+   "Giving extra figures 'to be safe' when the question demands a stated number of s.f.",
+   "Rounding wrongly, e.g. 4.946 to 5.0 at 2 s.f., or ending a show-that on exactly the printed value."
+  ],
+  "spot": [
+   "'Give your answer to 2 significant figures' in the question.",
+   "A show-that question, or a multi-step calculation."
+  ]
+ },
+ "M7": {
+  "steps": [
+   "Write the equation in symbols first.",
+   "Do the same operation to both sides to isolate the unknown (add/subtract first, then multiply/divide).",
+   "Write the rearranged equation with the unknown as the subject before substituting.",
+   "Substitute values with units and calculate."
+  ],
+  "example": {
+   "problem": "A car of mass 1200 kg has a driving force of 3000 N and total resistive force 900 N. Calculate its acceleration.",
+   "solution": [
+    "Resultant force F = 3000 − 900 = 2100 N",
+    "F = ma, so a = F/m",
+    "a = 2100 / 1200 = 1.75 m s⁻²"
+   ],
+   "answer": "1.75 m s⁻² (1.8 m s⁻² to 2 s.f.)"
+  },
+  "traps": [
+   "Using a force in newtons as if it were a mass (or the reverse), without dividing by g.",
+   "Using the driving force alone instead of the resultant force.",
+   "In a show-that, substituting the given answer back in rather than making the asked quantity the subject."
+  ],
+  "spot": [
+   "'Calculate X' where X appears once, to the first power, in a standard equation.",
+   "Equations such as V = IR, ρ = RA/L, F = ma, P = VI."
+  ]
+ },
+ "M8": {
+  "steps": [
+   "Rearrange so the squared term is alone on one side, e.g. t² = 2s/g.",
+   "Take the square root of both sides as the last algebra step.",
+   "If the unknown is in a denominator, multiply both sides by it first.",
+   "Substitute, calculate, and check you have actually taken the root."
+  ],
+  "example": {
+   "problem": "A stone is dropped from rest from a height of 1.8 m. Calculate how long it takes to reach the ground.",
+   "solution": [
+    "s = ½gt², so t = √(2s/g)",
+    "t = √(2 × 1.8 / 9.81) = √0.367",
+    "t = 0.606 s"
+   ],
+   "answer": "0.61 s"
+  },
+  "traps": [
+   "Stopping at v² or t² and writing that as the answer, which loses the final mark.",
+   "Taking the square root of only part of the expression, e.g. √(2Ek)/m.",
+   "Forgetting the ½ in ½mv² or ½gt², so the answer is out by √2."
+  ],
+  "spot": [
+   "The unknown is squared: v in ½mv², t in s = ½at², d in πd²/4.",
+   "The unknown sits in a denominator, e.g. A in R = ρL/A."
+  ]
+ },
+ "M9": {
+  "steps": [
+   "Write down each equation you need in symbols.",
+   "Decide which quantity you must eliminate and make it the subject of one equation.",
+   "Substitute that expression into the other equation and simplify.",
+   "Check the final expression contains only the given or target quantities.",
+   "Then substitute numbers (or, for a 'show that', show every algebraic step)."
+  ],
+  "example": {
+   "problem": "An electron is accelerated from rest through a p.d. of 500 V. Calculate its de Broglie wavelength.",
+   "solution": [
+    "eV = p²/2m, so p = √(2meV)",
+    "λ = h/p = h/√(2meV)",
+    "p = √(2 × 9.11 × 10⁻³¹ × 1.60 × 10⁻¹⁹ × 500) = 1.21 × 10⁻²³ kg m s⁻¹",
+    "λ = 6.63 × 10⁻³⁴ / 1.21 × 10⁻²³ = 5.49 × 10⁻¹¹ m"
+   ],
+   "answer": "5.5 × 10⁻¹¹ m"
+  },
+  "traps": [
+   "Writing 'energy = V' instead of eV when an electron is accelerated; leaving out e is wrong physics.",
+   "Quoting a combined result (such as P = Fv) from memory when the question asks you to derive it.",
+   "Losing a factor during substitution, such as the 4 in A = πd²/4."
+  ],
+  "spot": [
+   "'Show that' or 'derive' with a final expression to reach.",
+   "Two equations share a quantity that is not given (e.g. v in both ½mv² and λ = h/mv)."
+  ]
+ },
+ "M10": {
+  "steps": [
+   "Identify which quantity changes and which is held constant.",
+   "Write the relationship, e.g. x = F/k, and confirm the two quantities are directly proportional.",
+   "Find the scale factor: new value ÷ old value.",
+   "Multiply the other quantity by the same factor.",
+   "If two quantities change at once, apply both factors."
+  ],
+  "example": {
+   "problem": "A spring extends by 3.2 cm when supporting 4.0 N. Within the limit of proportionality, what is its extension when supporting 6.5 N?",
+   "solution": [
+    "x ∝ F at constant k",
+    "Scale factor = 6.5 / 4.0 = 1.625",
+    "x = 3.2 × 1.625 = 5.2 cm"
+   ],
+   "answer": "5.2 cm"
+  },
+  "traps": [
+   "Assuming proportionality outside the region where it holds (past the limit of proportionality, or for a filament lamp).",
+   "Forgetting that a second quantity in the equation also changed, e.g. both F and E change in x = FL/(AE).",
+   "Giving a ratio as '2:3' when a single number is asked for."
+  ],
+  "spot": [
+   "'What happens to X if Y is doubled/halved/tripled?'",
+   "Multiple-choice questions comparing two situations without numbers."
+  ]
+ },
+ "M11": {
+  "steps": [
+   "Write the equation and rearrange it with the target quantity as subject.",
+   "Note the power each changing variable is raised to (², ½, −1, −2).",
+   "Raise each scale factor to that power and multiply them together.",
+   "Look for linked variables: at constant volume, longer length means smaller area; area depends on d².",
+   "Apply the overall factor to the original value."
+  ],
+  "example": {
+   "problem": "A metal wire of resistance 2.5 Ω is drawn out to three times its original length, keeping its volume constant. Calculate its new resistance.",
+   "solution": [
+    "Constant volume: A × L constant, so A becomes A/3",
+    "R = ρL/A, so R scales by 3 × 3 = 9",
+    "R = 2.5 × 9 = 22.5 Ω"
+   ],
+   "answer": "23 Ω (22.5 Ω)"
+  },
+  "traps": [
+   "Using a diameter ratio instead of the area ratio (area ∝ d²).",
+   "Assuming intensity is proportional to amplitude, when it is proportional to amplitude².",
+   "Missing a linked change, e.g. stretching a wire also reduces its area.",
+   "Treating v as proportional to V when ½mv² = eV gives v ∝ √V."
+  ],
+  "spot": [
+   "Changes to diameter, amplitude, speed or p.d. where the equation contains a square or root.",
+   "Inverse relationships such as R = ρL/A, λ = h/mv or x = λD/a."
+  ]
+ },
+ "M12": {
+  "steps": [
+   "Efficiency = useful output ÷ total input × 100%; use powers or energies, not a mix.",
+   "Percentage difference = (experimental − accepted) ÷ accepted × 100%.",
+   "Percentage uncertainty = absolute uncertainty ÷ value × 100%.",
+   "Give a percentage when one is asked for, and a fraction only if that is asked.",
+   "To judge agreement, compare the percentage difference with the percentage uncertainty using the numbers."
+  ],
+  "example": {
+   "problem": "A motor lifts a 2.0 kg mass through 1.5 m in 4.0 s. The motor draws 1.5 A from a 12 V supply. Calculate its efficiency.",
+   "solution": [
+    "Useful power = mgh/t = 2.0 × 9.81 × 1.5 / 4.0 = 7.36 W",
+    "Input power = VI = 12 × 1.5 = 18 W",
+    "Efficiency = 7.36 / 18 × 100% = 40.9%"
+   ],
+   "answer": "41%"
+  },
+  "traps": [
+   "Giving 0.41 when the question asks for a percentage.",
+   "Dividing a difference by the experimental value instead of the accepted value, or quoting the ratio experimental/accepted.",
+   "Saying values agree because they are 'close' without comparing the percentage difference with the uncertainty."
+  ],
+  "spot": [
+   "The words efficiency, percentage difference, accepted value or uncertainty.",
+   "A request to judge whether a result is consistent with a data-book value."
+  ]
+ },
+ "M13": {
+  "steps": [
+   "Check the repeats for anomalies; exclude one only if you say clearly that it is anomalous.",
+   "Add the remaining readings and divide by how many there are.",
+   "Give the mean to the same precision as the readings.",
+   "If many cycles or spacings were timed or measured together, divide by that number.",
+   "Uncertainty of the mean can be taken as half the range."
+  ],
+  "example": {
+   "problem": "Three times for 10 oscillations of a pendulum are 14.2 s, 14.6 s and 14.4 s. Find the period and its absolute uncertainty.",
+   "solution": [
+    "Mean time = (14.2 + 14.6 + 14.4) / 3 = 14.4 s",
+    "Uncertainty = half range = (14.6 − 14.2)/2 = 0.2 s",
+    "T = 14.4 / 10 = 1.44 s, uncertainty 0.2/10 = 0.02 s"
+   ],
+   "answer": "T = 1.44 ± 0.02 s"
+  },
+  "traps": [
+   "Quietly dropping a reading without stating it is anomalous; only partial credit is given.",
+   "Using the total across 10 fringes or 10 oscillations as if it were one.",
+   "Quoting the instrument resolution or the full range as the uncertainty of a set of repeats.",
+   "Confusing average velocity with final velocity: from rest with uniform acceleration, final v = 2 × average v."
+  ],
+  "spot": [
+   "A table of repeat readings.",
+   "Several fringes, oscillations or spacings measured together."
+  ]
+ },
+ "M14": {
+  "steps": [
+   "Draw the force and mark the angle clearly on your diagram.",
+   "The component next to (adjacent to) the angle uses cos; the component opposite the angle uses sin.",
+   "Label each component as horizontal, vertical, along the slope, etc.",
+   "Use only the component in the direction you need (work done, resultant, equilibrium).",
+   "Check: each component must be smaller than the original force."
+  ],
+  "example": {
+   "problem": "A sledge is pulled 25 m along level ground by a rope at 35° above the horizontal with tension 60 N. Calculate the work done by the rope.",
+   "solution": [
+    "Horizontal component = 60 cos 35° = 49.1 N",
+    "W = F × s in the direction of motion = 49.1 × 25",
+    "W = 1.23 × 10³ J"
+   ],
+   "answer": "1.2 × 10³ J"
+  },
+  "traps": [
+   "Using sin where cos is needed (or the reverse), often because the angle is measured from a different line than assumed.",
+   "Writing both F cos θ and F sin θ without saying which is horizontal.",
+   "Using the full weight along a slope instead of mg sin θ.",
+   "Using the whole force in W = Fs or P = Fv when it acts at an angle to the motion."
+  ],
+  "spot": [
+   "A force at an angle to the motion or to a surface.",
+   "Objects on slopes, ropes or cables at angles, projectiles launched at an angle."
+  ]
+ },
+ "M15": {
+  "steps": [
+   "Draw the normal at the boundary and measure angles from it, not from the surface.",
+   "If an angle to the surface is given, subtract it from 90°.",
+   "Rearrange first (e.g. sin r = sin i / n), then use the inverse function.",
+   "Check the calculator is in degrees, and that the value inside sin⁻¹ is between −1 and 1.",
+   "Check the size makes sense: light bends towards the normal entering a denser medium."
+  ],
+  "example": {
+   "problem": "A ray of light in air strikes a water surface at 40° to the surface. The refractive index of water is 1.33. Calculate the angle of refraction.",
+   "solution": [
+    "Angle of incidence = 90° − 40° = 50°",
+    "sin r = sin 50° / 1.33 = 0.576",
+    "r = sin⁻¹(0.576) = 35.2°"
+   ],
+   "answer": "35°"
+  },
+  "traps": [
+   "Using an angle measured from the surface as the angle of incidence.",
+   "Inverting the ratio for light going from glass to air.",
+   "Using tan⁻¹ (or the complementary angle) when the relationship needs sin⁻¹ or cos⁻¹.",
+   "Not calculating the critical angle before deciding whether total internal reflection happens."
+  ],
+  "spot": [
+   "'Calculate the angle' with refraction, critical angle or slopes.",
+   "Components known and the direction of the resultant needed."
+  ]
+ },
+ "M16": {
+  "steps": [
+   "Check the two components are at right angles.",
+   "Magnitude = √(a² + b²).",
+   "Direction: θ = tan⁻¹(opposite/adjacent), stating what it is measured from.",
+   "Give both magnitude and direction for a vector answer.",
+   "If the forces are not at 90°, resolve each into perpendicular components first (or use a scale drawing)."
+  ],
+  "example": {
+   "problem": "A boat heads straight across a river at 3.0 m s⁻¹ relative to the water. The current flows at 1.2 m s⁻¹ downstream. Find the boat's resultant velocity.",
+   "solution": [
+    "v = √(3.0² + 1.2²) = √10.44 = 3.23 m s⁻¹",
+    "θ = tan⁻¹(1.2 / 3.0) = 21.8°"
+   ],
+   "answer": "3.2 m s⁻¹ at 22° downstream from the straight-across direction"
+  },
+  "traps": [
+   "Giving only the magnitude when the resultant (or balancing force) also needs a direction.",
+   "Using Pythagoras for vectors that are not perpendicular.",
+   "Forgetting that a balancing force is equal and opposite to the resultant.",
+   "Adding vector magnitudes as if they were scalars."
+  ],
+  "spot": [
+   "Two perpendicular forces or velocities to combine.",
+   "Horizontal and vertical velocity of a projectile to combine into a speed."
+  ]
+ },
+ "M17": {
+  "steps": [
+   "Convert the diameter to metres first.",
+   "Use A = πd²/4 (or halve to get r, then A = πr²).",
+   "Calculate the area in m² before using it in stress, resistivity or I = Anev.",
+   "Sanity check: a 1 mm wire has an area of under 10⁻⁶ m²."
+  ],
+  "example": {
+   "problem": "A steel wire of diameter 0.38 mm supports a tension of 45 N. Calculate the tensile stress in the wire.",
+   "solution": [
+    "r = 0.19 mm = 0.19 × 10⁻³ m",
+    "A = πr² = π × (0.19 × 10⁻³)² = 1.13 × 10⁻⁷ m²",
+    "σ = F/A = 45 / 1.13 × 10⁻⁷ = 3.97 × 10⁸ Pa"
+   ],
+   "answer": "4.0 × 10⁸ Pa"
+  },
+  "traps": [
+   "Putting the diameter into πr², giving an area four times too big and a stress four times too small.",
+   "Converting mm to m after squaring with 10⁻³ instead of 10⁻⁶.",
+   "Using πd² without the ÷ 4."
+  ],
+  "spot": [
+   "A wire, rod or pipe with its diameter given.",
+   "Stress, resistivity, pressure on a circular area, or I = Anev."
+  ]
+ },
+ "M18": {
+  "steps": [
+   "Pick the right formula: cuboid l × w × h; cylinder πr²L; sphere 4/3 πr³ (surface 4πr²).",
+   "Convert dimensions to metres before cubing or squaring.",
+   "Use the radius, not the diameter, in sphere and cylinder formulas.",
+   "For a triangular prism, include the ½ in the triangle area.",
+   "Use the volume with density (m = ρV) or the area with intensity (I = P/A) as needed."
+  ],
+  "example": {
+   "problem": "A steel ball bearing has radius 1.5 cm. The density of steel is 7800 kg m⁻³. Calculate its mass.",
+   "solution": [
+    "r = 1.5 × 10⁻² m",
+    "V = 4/3 π r³ = 4/3 × π × (0.015)³ = 1.41 × 10⁻⁵ m³",
+    "m = ρV = 7800 × 1.41 × 10⁻⁵ = 0.110 kg"
+   ],
+   "answer": "0.11 kg"
+  },
+  "traps": [
+   "Using πr² instead of 4πr² for the area over which a star or lamp radiates.",
+   "Using the diameter in 4/3 πr³, making the volume 8 times too big.",
+   "Missing the ½ for a triangular prism.",
+   "Adding a percentage uncertainty in a length only once when volume depends on its cube."
+  ],
+  "spot": [
+   "Density, mass of a sphere or cylinder, or number density n = N/V.",
+   "Intensity at a distance from a point source."
+  ]
+ },
+ "M19": {
+  "steps": [
+   "Write the physics equation and match it to y = mx + c.",
+   "Identify what is on each axis: the y-axis quantity is y, the x-axis quantity is x.",
+   "Gradient = everything multiplying x; intercept = the constant term.",
+   "Make the wanted quantity the subject, e.g. r = −gradient, ε = y-intercept.",
+   "If the x-axis does not start at zero, find c from c = y − mx using a point on the line."
+  ],
+  "example": {
+   "problem": "A cell's terminal p.d. V is plotted against current I. The best-fit line passes through (0.50 A, 5.4 V) and (2.0 A, 3.0 V). Find the e.m.f. and internal resistance.",
+   "solution": [
+    "V = −rI + ε matches y = mx + c",
+    "Gradient = (3.0 − 5.4) / (2.0 − 0.50) = −1.6 Ω, so r = 1.6 Ω",
+    "ε = V + rI = 5.4 + 1.6 × 0.50 = 6.2 V"
+   ],
+   "answer": "ε = 6.2 V, r = 1.6 Ω"
+  },
+  "traps": [
+   "Writing 'gradient = −r' and stopping, instead of stating r = −gradient with a value.",
+   "Missing a factor: from v² = 2as, the gradient of v² against s is 2a, not a.",
+   "Reading the intercept from an axis that does not start at zero."
+  ],
+  "spot": [
+   "'Plot a graph of y against x' followed by 'use the graph to find ...'.",
+   "An equation that can be rearranged to have a linear form."
+  ]
+ },
+ "M20": {
+  "steps": [
+   "Draw a large triangle covering at least half the straight line.",
+   "Read both points from the line (not from the data table), to half a small square.",
+   "Apply axis multipliers and prefixes (×10⁻³, mm, ms) to the readings.",
+   "Calculate Δy/Δx and show both values.",
+   "Give the gradient's unit: y-unit ÷ x-unit."
+  ],
+  "example": {
+   "problem": "A force–extension graph is a straight line from the origin to (12.0 mm, 4.8 N). Calculate the force constant of the spring.",
+   "solution": [
+    "Δx = 12.0 mm = 12.0 × 10⁻³ m, ΔF = 4.8 N",
+    "k = gradient = ΔF/Δx = 4.8 / 12.0 × 10⁻³",
+    "k = 400 N m⁻¹"
+   ],
+   "answer": "400 N m⁻¹"
+  },
+  "traps": [
+   "Calculating y/x from a single point or table entry when the question needs a gradient.",
+   "Using a small triangle, so reading errors dominate.",
+   "Ignoring the axis multiplier or prefix, giving an answer out by a power of ten.",
+   "Taking a gradient from the curved part of a graph when only the straight section is valid."
+  ],
+  "spot": [
+   "'Use the graph to determine' a rate, acceleration, resistance or constant.",
+   "A straight line drawn through plotted points."
+  ]
+ },
+ "M21": {
+  "steps": [
+   "Decide what the area represents: v–t gives displacement, F–t gives impulse, F–x gives work done.",
+   "Split the region into rectangles and triangles (or trapezia).",
+   "For a curve, find the value of one square (x-value × y-value) and count squares, including part squares.",
+   "Convert axis units (ms, mm, km h⁻¹) before multiplying.",
+   "Add the parts and give the unit."
+  ],
+  "example": {
+   "problem": "A ball of mass 0.060 kg at rest is struck by a bat. The force rises steadily from 0 to 360 N in 2.0 ms and then falls steadily to 0 at 5.0 ms. Calculate the speed of the ball afterwards.",
+   "solution": [
+    "Impulse = area of triangle = ½ × 5.0 × 10⁻³ × 360 = 0.90 N s",
+    "Δp = impulse, and the ball starts at rest",
+    "v = 0.90 / 0.060 = 15 m s⁻¹"
+   ],
+   "answer": "15 m s⁻¹"
+  },
+  "traps": [
+   "Using final velocity × time for a distance instead of the area of the shape.",
+   "Using ½Fx for the area under a curved force–extension graph.",
+   "Leaving a time axis in ms, making the impulse 1000 times too big.",
+   "Using only part of the region, e.g. only the braking triangle when the stopping distance is asked for."
+  ],
+  "spot": [
+   "Distance from a velocity–time graph.",
+   "Impulse from a force–time graph or work from a force–extension graph."
+  ]
+ },
+ "M22": {
+  "steps": [
+   "Mark the point at the exact time or value asked for.",
+   "Place a ruler so it touches the curve only at that point, with equal angles of curve either side.",
+   "Draw a long tangent (several large squares).",
+   "Take a large triangle on the tangent and calculate Δy/Δx, showing values.",
+   "Give the result with units; it is the instantaneous rate at that point."
+  ],
+  "example": {
+   "problem": "On a displacement–time graph for an accelerating trolley, a tangent drawn at t = 2.0 s passes through (0.5 s, 0 m) and (3.5 s, 9.0 m). Find the trolley's velocity at 2.0 s.",
+   "solution": [
+    "Gradient of tangent = Δs/Δt = (9.0 − 0) / (3.5 − 0.5)",
+    "v = 9.0 / 3.0 = 3.0 m s⁻¹"
+   ],
+   "answer": "3.0 m s⁻¹"
+  },
+  "traps": [
+   "Drawing the tangent at roughly the right time rather than exactly at it.",
+   "Drawing a short tangent, which makes the gradient imprecise.",
+   "Using s/t from the origin (an average) instead of the tangent's gradient.",
+   "Not showing the Δs and Δt values used."
+  ],
+  "spot": [
+   "A curved graph and the words 'at time t' or 'instantaneous'.",
+   "Velocity at a moment from a curved s–t graph, or acceleration from a curved v–t graph."
+  ]
+ },
+ "M23": {
+  "steps": [
+   "Find the value of one small square on each axis (or on the meter scale) before reading.",
+   "Read to half a small division and note any multiplier in the axis label.",
+   "For an oscilloscope: number of divisions × setting (time-base or V/div).",
+   "Measure over several cycles when possible and divide, to reduce uncertainty.",
+   "Read meters at eye level to avoid parallax."
+  ],
+  "example": {
+   "problem": "On an oscilloscope one complete wave spans 3.2 divisions with the time-base at 0.5 ms div⁻¹. The peak is 2.4 divisions above the centre with the Y-gain at 2 V div⁻¹. Find the frequency and peak voltage.",
+   "solution": [
+    "T = 3.2 × 0.5 ms = 1.6 ms = 1.6 × 10⁻³ s",
+    "f = 1/T = 1 / 1.6 × 10⁻³ = 625 Hz",
+    "Peak voltage = 2.4 × 2 = 4.8 V"
+   ],
+   "answer": "f ≈ 630 Hz (625 Hz); peak voltage 4.8 V"
+  },
+  "traps": [
+   "Misreading a value, e.g. 2.2 for 2.4, because the value of a small square was not checked.",
+   "Forgetting the ms in the time-base, giving f in the wrong power of ten.",
+   "Reading the time of a point on the graph when the question needs the duration of a section.",
+   "Measuring crest to trough (half a cycle) as a full period or wavelength."
+  ],
+  "spot": [
+   "Oscilloscope traces with time-base or Y-gain settings.",
+   "Values to be read from a given graph or meter."
+  ]
+ },
+ "M24": {
+  "steps": [
+   "Identify which quantities are not given and need assuming.",
+   "Choose sensible values: adult mass ≈ 70 kg, walking speed ≈ 1.5 m s⁻¹, car mass ≈ 1000 kg, height of a room ≈ 2.5 m.",
+   "State each assumption clearly in your working.",
+   "Calculate with round numbers and give the answer to 1–2 s.f. or as a power of ten.",
+   "Check the answer against everyday experience."
+  ],
+  "example": {
+   "problem": "Estimate the momentum of an adult walking along a corridor.",
+   "solution": [
+    "Assume mass ≈ 70 kg and walking speed ≈ 1.5 m s⁻¹",
+    "p = mv = 70 × 1.5 = 105 kg m s⁻¹"
+   ],
+   "answer": "About 100 kg m s⁻¹ (order of magnitude 10² kg m s⁻¹)"
+  },
+  "traps": [
+   "Using unrealistic values (a 5 kg person, a car at 100 m s⁻¹).",
+   "Not stating the assumed values, so the examiner cannot credit the method.",
+   "Forgetting to convert an assumed speed in km h⁻¹ to m s⁻¹.",
+   "Giving many s.f. for an estimate."
+  ],
+  "spot": [
+   "The words 'estimate', 'suggest a value' or 'order of magnitude'.",
+   "A calculation where a needed quantity (mass, speed, size) is not given."
+  ]
+ },
+ "M25": {
+  "steps": [
+   "Choose a positive direction and write it down (e.g. 'towards the wall is +').",
+   "Give every velocity, force and momentum a sign according to that choice.",
+   "Calculate changes as final − initial, keeping signs.",
+   "For a rebound, the speeds effectively add in Δv.",
+   "Interpret the sign of the answer as a direction and state it."
+  ],
+  "example": {
+   "problem": "A 0.15 kg ball hits a wall at 12 m s⁻¹ and rebounds at 8.0 m s⁻¹. The contact time is 0.040 s. Calculate the average force on the ball.",
+   "solution": [
+    "Take towards the wall as positive: u = +12 m s⁻¹, v = −8.0 m s⁻¹",
+    "Δp = m(v − u) = 0.15 × (−8.0 − 12) = −3.0 kg m s⁻¹",
+    "F = Δp/Δt = −3.0 / 0.040 = −75 N"
+   ],
+   "answer": "75 N, directed away from the wall"
+  },
+  "traps": [
+   "Subtracting speeds on a rebound (12 − 8.0) instead of adding them; this gets one mark at most.",
+   "Getting the sign of ma wrong in a lift problem (subtracting when the lift accelerates upwards).",
+   "Treating both objects' velocities as positive in a momentum calculation when one moves the other way."
+  ],
+  "spot": [
+   "Bounces, rebounds, collisions or recoil.",
+   "Velocities or forces in opposite directions along one line, or lifts accelerating up or down."
+  ]
+ },
+ "M26": {
+  "steps": [
+   "Remember one full cycle = 360° = 2π rad.",
+   "Phase difference = (distance between points / wavelength) × 360°, or (time separation / period) × 360°.",
+   "Degrees to radians: × π/180; radians to degrees: × 180/π.",
+   "Give the answer as an angle (degrees or rad), never in wavelengths.",
+   "Know key values: in phase 0, quarter cycle 90° = π/2, antiphase 180° = π rad."
+  ],
+  "example": {
+   "problem": "Two points on a progressive wave are 0.45 m apart along the direction of travel. The wavelength is 0.60 m. Calculate the phase difference between them in radians.",
+   "solution": [
+    "Fraction of a cycle = 0.45 / 0.60 = 0.75",
+    "Phase difference = 0.75 × 2π = 1.5π rad",
+    "= 4.71 rad (270°)"
+   ],
+   "answer": "3π/2 rad (4.7 rad)"
+  },
+  "traps": [
+   "Leaving the answer as a fraction of a wavelength (0.75λ) instead of an angle.",
+   "Confusing phase difference with path difference.",
+   "Mixing degrees and radians, or using a calculator in the wrong mode.",
+   "Thinking adjacent loops of a stationary wave are in phase; they are in antiphase (π rad)."
+  ],
+  "spot": [
+   "The words 'phase difference', 'in phase' or 'antiphase'.",
+   "Points on a wave separated by a given distance, or two traces shifted in time."
+  ]
+ }
+}

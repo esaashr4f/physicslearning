@@ -1,0 +1,1273 @@
+{
+ "K1": {
+  "steps": [
+   "Estimate the size of the quantity first (mm, cm or m; ms or s; mA or A).",
+   "Pick the instrument whose resolution is small compared with that size: micrometer 0.01 mm for wires and thin sheets, vernier callipers 0.1 mm (or 0.02 mm) for balls, rods and fringe widths, metre rule 1 mm for lengths of tens of cm or more.",
+   "Check the range too: a micrometer cannot measure 20 cm, and a meter must be able to read the value without going off-scale.",
+   "If the question gives data, match the resolution to the decimal places in the data (a reading of 5.72 V means a 0.01 V resolution meter).",
+   "Name the instrument precisely and, if asked, state its resolution with units."
+  ],
+  "example": {
+   "problem": "A student needs the diameter of a steel ball bearing (about 6 mm) and the length of a pendulum string (about 1.5 m). Choose an instrument for each and estimate the percentage uncertainty from its resolution.",
+   "solution": "Ball: micrometer, resolution 0.01 mm. 0.01 / 6.00 × 100 ≈ 0.17%.\nString: metre rule (or tape), resolution 1 mm. 1 / 1500 × 100 ≈ 0.07%.\nA ruler on the ball would give 1/6 ≈ 17%, far too large.",
+   "answer": "Micrometer (≈0.2%) for the ball; metre rule (≈0.07%) for the string."
+  },
+  "traps": [
+   "Choosing a ruler for a diameter or thickness of a few mm: refused every time.",
+   "Choosing a micrometer or callipers for a length of 10 cm or more just because it is 'more precise': the range is wrong and the data's resolution points to a ruler.",
+   "Picking the meter with the finest resolution without checking that its range covers the reading.",
+   "Writing a vague name such as 'vernier scale' or 'measuring device' instead of the actual instrument."
+  ],
+  "spot": [
+   "'Suggest a suitable instrument' or 'state the resolution'.",
+   "A table of raw data whose decimal places reveal the resolution.",
+   "A small length (wire, ball, fringe spacing) or a time well under a second."
+  ]
+ },
+ "K2": {
+  "steps": [
+   "Say what you measure and with what, then how you reduce uncertainty in that one reading.",
+   "Lengths of thin objects: measure the diameter (never the radius) at several places along it and in different orientations, then average.",
+   "Repeating events: time many cycles (e.g. 20 oscillations) from a fixed reference mark at the centre of the swing, then divide.",
+   "Small spacings (fringes, node spacing): measure across several and divide by the number of gaps.",
+   "Read scales at eye level and perpendicular to avoid parallax; for faint onsets (LED switching on) shield from room light.",
+   "For angles, draw the normal at 90° to the surface and measure from the normal with a protractor."
+  ],
+  "example": {
+   "problem": "A pendulum has a period of about 1.6 s. Describe how to measure the period accurately, and calculate it from three timings of 20 oscillations: 32.4 s, 32.0 s and 32.2 s.",
+   "solution": "Time 20 oscillations starting and stopping as the bob passes a fiducial mark at the lowest point.\nRepeat three times and average: (32.4 + 32.0 + 32.2)/3 = 32.2 s.\nPeriod = 32.2 / 20 = 1.61 s.",
+   "answer": "T = 1.61 s"
+  },
+  "traps": [
+   "Repeating a diameter reading at the same place: the mark needs different positions or orientations.",
+   "Measuring a radius directly: you cannot find the centre, so it is rejected.",
+   "Filling a method answer with calculations (e.g. Snell's law sums) instead of the technique: technique marks ignore them.",
+   "Timing just one oscillation or measuring across one fringe, which leaves a large percentage uncertainty."
+  ],
+  "spot": [
+   "'Describe how the student could measure … accurately'.",
+   "A short time, small length or faint effect that is hard to read directly.",
+   "A six-mark method question where one mark is for the measurement technique."
+  ]
+ },
+ "K3": {
+  "steps": [
+   "Name the independent variable (the one you change) and the dependent variable (the one you measure).",
+   "List control variables that would genuinely affect the dependent variable in this set-up.",
+   "For each control, say how it is kept constant (same wire, small current so temperature stays steady, same source wavelength, water bath at fixed temperature).",
+   "In a plan, state how each variable is measured and with which instrument."
+  ],
+  "example": {
+   "problem": "A student investigates how the resistance of an NTC thermistor depends on temperature, using a water bath. State the independent, dependent and two control variables, and how the controls are kept constant.",
+   "solution": "Independent: temperature of the water (thermometer).\nDependent: resistance, R = V/I from voltmeter and ammeter readings.\nControls: use a small current so the thermistor does not heat itself; stir the water and wait for the reading to settle so thermistor and water are at the same temperature.",
+   "answer": "IV temperature; DV resistance; controls: low current (no self-heating) and thermal equilibrium (stir, wait)."
+  },
+  "traps": [
+   "Listing 'everything else' as a control without saying how it is kept constant.",
+   "Naming a control that cannot change in the experiment, or one that has no effect.",
+   "Mixing up independent and dependent variables in a graph or plan."
+  ],
+  "spot": [
+   "'Plan an experiment' or 'state one variable that should be controlled'.",
+   "A six-mark practical question that asks how to make the investigation valid."
+  ]
+ },
+ "K4": {
+  "steps": [
+   "Take at least 5–6 values of the independent variable.",
+   "Spread them over as wide a range as the apparatus safely allows, roughly evenly spaced.",
+   "Repeat each reading (or measure at several positions) and take a mean; check repeats agree.",
+   "Plot a graph rather than relying on a single reading, so the gradient uses all the data.",
+   "Say this explicitly in a plan: 'at least six lengths from 0.20 m to 0.90 m, each repeated three times'."
+  ],
+  "example": {
+   "problem": "A student plans to measure the extension of a spring for loads up to 6.0 N. Suggest a suitable set of readings and how to process them.",
+   "solution": "Use loads 0, 1.0, 2.0 … 6.0 N (7 readings, evenly spread over the full range).\nRecord extension on loading and on unloading, and average the two for each load.\nPlot force against extension and use the gradient for k.",
+   "answer": "Seven loads in 1.0 N steps, each measured twice and averaged, then a graph."
+  },
+  "traps": [
+   "Describing one measurement at one value (e.g. one V and I at one temperature): the range marks are lost.",
+   "Suggesting 'repeat and average' as the way to improve the resolution of a single reading: schemes reject it for that purpose.",
+   "Clustering readings at one end of the range, which makes the gradient unreliable."
+  ],
+  "spot": [
+   "'Describe how the student should collect the data' in a planning question.",
+   "Data tables with few readings or a narrow range that you are asked to improve."
+  ]
+ },
+ "K5": {
+  "steps": [
+   "Identify the specific hazard in this set-up (snapping wire, falling masses, hot water, loud sound, high voltage, laser).",
+   "Give one precaution that directly matches that hazard.",
+   "Use concrete wording: 'wear goggles in case the wire snaps', 'put a sand tray under the masses and keep feet clear'.",
+   "Include the safety point inside six-mark plans; it is often part of the indicative content."
+  ],
+  "example": {
+   "problem": "A copper wire is loaded with masses until it breaks. State two hazards and a matching precaution for each.",
+   "solution": "Wire may snap and whip back: wear safety goggles (or use a screen).\nMasses fall when the wire breaks: put a cushion or sand tray underneath and keep feet away.",
+   "answer": "Goggles for the snapping wire; cushion/sand tray under the falling masses."
+  },
+  "traps": [
+   "Vague answers such as 'be careful' or 'wear safety equipment' score nothing.",
+   "Giving a precaution that does not match the hazard (e.g. gloves for a stretching wire).",
+   "Leaving safety out of a six-mark plan altogether."
+  ],
+  "spot": [
+   "'State one safety precaution'.",
+   "Set-ups with masses, stretched wires, loud speakers, high-voltage tubes or lasers."
+  ]
+ },
+ "K6": {
+  "steps": [
+   "Use standard symbols only: cell/battery, variable resistor, ammeter, voltmeter, LDR, thermistor, diode, LED, lamp.",
+   "Put the ammeter in series with the component under test.",
+   "Put the voltmeter in parallel across the component under test only, not across a variable resistor plus the component.",
+   "Include a way to vary the p.d. (variable resistor, potential divider or variable supply) when you need a set of readings.",
+   "For an LED or diode, make sure it is forward-biased (check the arrow direction)."
+  ],
+  "example": {
+   "problem": "Draw (describe) a circuit to measure the I–V characteristic of a filament lamp from 0 V upwards.",
+   "solution": "Supply connected across a potentiometer (potential divider) so the output can go down to 0 V.\nLamp and ammeter in series across the output of the potentiometer.\nVoltmeter connected directly across the lamp only.",
+   "answer": "Potentiometer supply; ammeter in series with lamp; voltmeter across lamp."
+  },
+  "traps": [
+   "Voltmeter across the wrong component (e.g. across the lamp and the variable resistor together): drops a six-marker to Level 1.",
+   "Home-made symbols, e.g. an LDR without the arrows or a cell drawn wrongly.",
+   "Diode/LED drawn reverse-biased so no current flows.",
+   "Ammeter drawn in parallel."
+  ],
+  "spot": [
+   "'Draw a circuit diagram' or 'complete the circuit'.",
+   "Any practical that measures V and I for a component."
+  ]
+ },
+ "K7": {
+  "steps": [
+   "Label each axis with quantity and unit (e.g. e / cm) and choose a simple scale that uses more than half the grid.",
+   "Plot each point as a small neat cross, accurate to within half a small square.",
+   "Draw one thin, ruled line with points balanced either side; for a curve, one smooth line.",
+   "Ignore an obvious anomaly when placing the line; do not force the line through the origin or through the end points.",
+   "If a missing point is to be plotted, work out the value first, then plot it carefully."
+  ],
+  "example": {
+   "problem": "On a graph the y-axis scale is 1 small square = 0.2 N. Where should a point of 3.1 N be plotted, and how close must it be?",
+   "solution": "3.1 N lies halfway between the 3.0 N and 3.2 N lines.\nHalf a small square is 0.1 N, so the cross must be within 3.0–3.2 N, ideally exactly midway.",
+   "answer": "Midway between 3.0 and 3.2 N; within ±0.1 N (half a small square)."
+  },
+  "traps": [
+   "Large blobs, thick or double lines, or a freehand line.",
+   "Joining the first and last points, or drawing through an anomalous point.",
+   "Using an awkward scale (e.g. 3 units per square) or one that uses less than half the paper.",
+   "Inconsistent decimal places in a completed table column."
+  ],
+  "spot": [
+   "'Plot the missing point' and 'draw a line of best fit'.",
+   "Graph paper with some data already plotted."
+  ]
+ },
+ "K8": {
+  "steps": [
+   "Use your best-fit line, not table data points.",
+   "Draw a triangle that covers more than half the line; choose corners at points easy to read.",
+   "Read both coordinates to half a small square, including any ×10ⁿ on the axis label.",
+   "Gradient = Δy / Δx; show both differences in your working.",
+   "For an intercept, read it only if the axis starts at zero; otherwise use y = mx + c with a point on the line."
+  ],
+  "example": {
+   "problem": "A stress–strain best-fit line passes through (strain 0.0010, stress 2.1 × 10⁸ Pa) and (0.0040, 8.4 × 10⁸ Pa). Find the gradient.",
+   "solution": "Δy = 8.4 × 10⁸ − 2.1 × 10⁸ = 6.3 × 10⁸ Pa.\nΔx = 0.0040 − 0.0010 = 0.0030.\nGradient = 6.3 × 10⁸ / 0.0030 = 2.1 × 10¹¹ Pa.",
+   "answer": "2.1 × 10¹¹ Pa (this is the Young modulus)"
+  },
+  "traps": [
+   "Using a small triangle or a single data point instead of the line.",
+   "Missing a power of ten written on the axis label (×10⁻³, ×10¹⁴).",
+   "Reading a y-intercept from a graph whose x-axis does not start at zero.",
+   "Using the curved part of a graph when the gradient should come from the straight section."
+  ],
+  "spot": [
+   "'Determine the gradient' or 'use the graph to find'.",
+   "A straight line on given axes whose gradient or intercept is a physical constant."
+  ]
+ },
+ "K9": {
+  "steps": [
+   "Write the equation linking the variables.",
+   "Rearrange so it looks like y = mx + c: the variable you change (or a function of it) goes on x, the measured one on y.",
+   "Put any powers or reciprocals into the plotted quantity (t², d², 1/λ, √T, 1/v²) so the line is straight.",
+   "State what the gradient (and intercept) equals in terms of constants.",
+   "Check: does the line pass through the origin? If c = 0 in the rearranged form, it should."
+  ],
+  "example": {
+   "problem": "For a string fixed at both ends, the fundamental frequency is f = (1/2L)√(T/μ), where T is tension. L is fixed. What should be plotted to get a straight line, and how is μ found?",
+   "solution": "Rewrite: f = [1/(2L√μ)] × √T, which is y = mx with y = f and x = √T.\nPlot f against √T: a straight line through the origin.\nGradient m = 1/(2L√μ), so μ = 1/(2Lm)².",
+   "answer": "Plot f against √T; μ = 1/(2L × gradient)²."
+  },
+  "traps": [
+   "Plotting the raw variables (v against r) when the relationship is squared, so the line curves and the analysis marks are lost.",
+   "Getting the gradient expression upside down when the axes are swapped.",
+   "Forgetting that an intercept appears when the equation has a constant term."
+  ],
+  "spot": [
+   "'Suggest what graph to plot' or 'explain how a graph could be used to find…'.",
+   "An equation with squares, roots or reciprocals linking two measured quantities."
+  ]
+ },
+ "K10": {
+  "steps": [
+   "Write the governing equation and match it term by term to y = mx + c.",
+   "State what the gradient equals (e.g. ρ/A, h/e, −r, 1/k) and what the intercept equals.",
+   "Rearrange to make the unknown the subject.",
+   "Substitute the gradient with its unit and convert other values to SI (mm² to m², eV to J).",
+   "Give the answer with the correct unit and sensible significant figures."
+  ],
+  "example": {
+   "problem": "A graph of resistance R against length L for a wire of diameter 0.30 mm has gradient 21 Ω m⁻¹. Find the resistivity.",
+   "solution": "R = ρL/A, so gradient = ρ/A and ρ = gradient × A.\nA = π(0.15 × 10⁻³)² = 7.07 × 10⁻⁸ m².\nρ = 21 × 7.07 × 10⁻⁸ = 1.5 × 10⁻⁶ Ω m.",
+   "answer": "ρ ≈ 1.5 × 10⁻⁶ Ω m"
+  },
+  "traps": [
+   "Writing 'gradient = −r' without making r the subject: some schemes refuse it.",
+   "Using the diameter instead of the radius in A = πr².",
+   "Forgetting a factor (gradient = 2a, not a; gradient = 2/g, not g).",
+   "Leaving the gradient in mixed units such as N mm⁻¹ or Ω cm⁻¹ without converting."
+  ],
+  "spot": [
+   "'Use the gradient to determine…'.",
+   "A straight-line graph where the unknown is buried in the gradient or intercept."
+  ]
+ },
+ "K11": {
+  "steps": [
+   "For a single reading, uncertainty = the instrument resolution (or as stated).",
+   "For repeated readings, uncertainty = half the range of the readings.",
+   "Percentage uncertainty = absolute uncertainty / mean value × 100.",
+   "For a difference of two readings (extension = new length − original), add the absolute uncertainties.",
+   "To reduce percentage uncertainty, make the measured quantity larger (longer length, many cycles) or use a finer instrument."
+  ],
+  "example": {
+   "problem": "Four readings of a wire's diameter are 0.52, 0.55, 0.53 and 0.54 mm. Find the mean, the absolute uncertainty and the percentage uncertainty.",
+   "solution": "Mean = (0.52 + 0.55 + 0.53 + 0.54)/4 = 0.535 mm.\nHalf range = (0.55 − 0.52)/2 = 0.015 mm.\n% uncertainty = 0.015 / 0.535 × 100 ≈ 2.8%.",
+   "answer": "d = 0.535 ± 0.015 mm (≈2.8%)"
+  },
+  "traps": [
+   "Quoting the full range, or the resolution, when the question gives repeats.",
+   "Forgetting to add both uncertainties when a length is a difference of two readings.",
+   "Dividing by the wrong value (not the mean) for the percentage."
+  ],
+  "spot": [
+   "'Estimate the absolute (or percentage) uncertainty'.",
+   "A table of repeated readings, or a reading with a stated ± value."
+  ]
+ },
+ "K12": {
+  "steps": [
+   "Write the formula for the final quantity in terms of the measured ones.",
+   "Convert each uncertainty into a percentage.",
+   "Multiply each percentage by the power its quantity is raised to (squared → ×2, cubed → ×3, square root → ×½).",
+   "Add the results: products and quotients add percentages; constants such as π add nothing.",
+   "Convert back to an absolute uncertainty if asked (percentage × value) and round sensibly."
+  ],
+  "example": {
+   "problem": "The density of a cylinder is ρ = 4m/(πd²L). m = 52.0 g ± 0.5%, d = 2.50 cm ± 1.2%, L = 4.00 cm ± 0.8%. Find ρ and its absolute uncertainty.",
+   "solution": "ρ = 4 × 0.0520 / (π × 0.0250² × 0.0400) = 2650 kg m⁻³.\n% uncertainty = 0.5 + 2 × 1.2 + 0.8 = 3.7%.\nAbsolute = 0.037 × 2650 ≈ 100 kg m⁻³.",
+   "answer": "ρ = 2650 ± 100 kg m⁻³ (3.7%)"
+  },
+  "traps": [
+   "Adding percentages straight without doubling for a squared quantity (or tripling for a cube): MCQ distractors are built on this.",
+   "Adding absolute uncertainties of quantities that are multiplied.",
+   "Forgetting to turn the final percentage back into an absolute value when asked."
+  ],
+  "spot": [
+   "'Calculate the percentage uncertainty in …' for a derived quantity.",
+   "Several measured values each with a ± or % uncertainty feeding one formula."
+  ]
+ },
+ "K13": {
+  "steps": [
+   "Draw error bars if not drawn, then the best-fit line.",
+   "Draw the worst acceptable line: the steepest or shallowest straight line that passes through all the error bars.",
+   "Find its gradient with a large triangle, just like the best line.",
+   "Percentage uncertainty = |best gradient − worst gradient| / best gradient × 100.",
+   "Carry it to the final quantity, applying any power in the relationship (if g = 2/gradient², double it)."
+  ],
+  "example": {
+   "problem": "For an LED experiment, h = e × gradient. Best gradient = 4.05 × 10⁻¹⁵ V s; worst gradient = 4.31 × 10⁻¹⁵ V s. Find h and its uncertainty.",
+   "solution": "% uncertainty = (4.31 − 4.05)/4.05 × 100 ≈ 6.4%.\nh = 1.60 × 10⁻¹⁹ × 4.05 × 10⁻¹⁵ = 6.48 × 10⁻³⁴ J s.\nAbsolute = 0.064 × 6.48 × 10⁻³⁴ ≈ 0.4 × 10⁻³⁴ J s.",
+   "answer": "h = (6.5 ± 0.4) × 10⁻³⁴ J s (≈6%)"
+  },
+  "traps": [
+   "Drawing the worst line through the end points or missing one error bar.",
+   "Saying 'draw another line and compare' without the calculation.",
+   "Using the gradient's percentage for a quantity that depends on the gradient squared.",
+   "Leaving the uncertainty out of a six-mark analysis: caps the answer at Level 2."
+  ],
+  "spot": [
+   "Error bars on a graph; 'draw a worst acceptable line'.",
+   "'Determine the percentage uncertainty in the value of …' after a gradient question."
+  ]
+ },
+ "K14": {
+  "steps": [
+   "Find the uncertainty range: value ± absolute uncertainty.",
+   "Check whether the accepted value lies inside that range: if yes, consistent.",
+   "Or compare: percentage difference = |accepted − experimental| / accepted × 100, against the percentage uncertainty.",
+   "State a clear conclusion backed by the numbers; if a range fits two candidate values, say the identification is not certain."
+  ],
+  "example": {
+   "problem": "A student measures g = 9.52 ± 0.25 m s⁻². Is this consistent with 9.81 m s⁻²?",
+   "solution": "Range: 9.27 to 9.77 m s⁻²; 9.81 lies outside it.\n% difference = (9.81 − 9.52)/9.81 × 100 ≈ 3.0%, % uncertainty = 0.25/9.52 × 100 ≈ 2.6%.\n3.0% > 2.6%, so not consistent (a systematic error is likely).",
+   "answer": "Not consistent: 9.81 is outside 9.27–9.77 m s⁻²."
+  },
+  "traps": [
+   "Saying 'the values are close so it is accurate' with no numbers.",
+   "Dividing the difference by the experimental value or quoting the ratio instead of the percentage difference.",
+   "Missing that the uncertainty range overlaps more than one possible value."
+  ],
+  "spot": [
+   "'Is the value consistent with …' or 'comment on the validity'.",
+   "A measured value with uncertainty plus a known/accepted or data-book value."
+  ]
+ },
+ "K15": {
+  "steps": [
+   "Look for a reading that is far from the others (in repeats) or far from the trend line (on a graph).",
+   "Say clearly which value is anomalous and why.",
+   "Exclude it from the mean or ignore it when drawing the best-fit line.",
+   "Suggest repeating that measurement to check it."
+  ],
+  "example": {
+   "problem": "Three timings for a falling ball are 0.452 s, 0.448 s and 0.503 s. Find the best mean time.",
+   "solution": "0.503 s is far from the other two (which agree within 0.004 s), so identify it as anomalous.\nMean of the others = (0.452 + 0.448)/2 = 0.450 s.\nIdeally repeat the drop to replace the anomalous value.",
+   "answer": "0.450 s (0.503 s identified as anomalous)"
+  },
+  "traps": [
+   "Quietly leaving a value out without saying it is anomalous: only partial credit.",
+   "Forcing the best-fit line through an outlier.",
+   "Calling a reading anomalous just because it does not match a prediction, when it fits the trend."
+  ],
+  "spot": [
+   "A set of repeats with one value that stands out.",
+   "A plotted point clearly off the line, or 'identify the anomalous result'."
+  ]
+ },
+ "K16": {
+  "steps": [
+   "Random error: readings scatter both ways (reaction time, judging a moving value); reduce by repeating and averaging or plotting a graph.",
+   "Systematic error: every reading shifted the same way (zero error, contact resistance, parallax from one viewpoint); repeating does not remove it.",
+   "On a graph, a constant systematic error shifts the line (non-zero intercept) but leaves the gradient unchanged.",
+   "Trace the effect step by step to the final answer: e.g. diameter too big → area too big → stress too small → calculated E too small.",
+   "Remove parallax by reading at eye level, perpendicular to the scale."
+  ],
+  "example": {
+   "problem": "A micrometer reads +0.03 mm with the jaws closed. A wire's diameter reads 1.27 mm. What type of error is this, what is the true diameter, and how does using 1.27 mm affect a calculated Young modulus?",
+   "solution": "Zero error: a systematic error.\nTrue diameter = 1.27 − 0.03 = 1.24 mm.\nUsing 1.27 mm makes A too large (by about 5%), so stress = F/A is too small and the calculated E is too small.",
+   "answer": "Systematic (zero) error; d = 1.24 mm; E would come out too small."
+  },
+  "traps": [
+   "Writing 'human error' instead of naming reaction time or parallax.",
+   "Saying a constant offset changes the gradient.",
+   "Spotting the error but stating the wrong direction of its effect on the final quantity.",
+   "Suggesting 'repeat and average' to remove a systematic error."
+  ],
+  "spot": [
+   "A graph line that does not pass through the origin when theory says it should.",
+   "'Explain whether this is a random or systematic error' or 'how would this affect the value of …'."
+  ]
+ },
+ "K17": {
+  "steps": [
+   "Name the specific weakness in this method and which measurement it affects.",
+   "Say why it matters (e.g. reaction time ~0.2 s is large compared with a 0.3 s fall).",
+   "Give a specific improvement that tackles that weakness: light gates linked to a timer, video with a frame rate, larger height, measure across several nodes, shield from room light.",
+   "Explain how the improvement reduces the uncertainty (removes reaction time, makes the measured quantity bigger so the % uncertainty is smaller)."
+  ],
+  "example": {
+   "problem": "A ball is dropped 0.50 m and timed with a stopwatch. Explain the main limitation and suggest an improvement.",
+   "solution": "Fall time t = √(2 × 0.50 / 9.81) ≈ 0.32 s.\nReaction time (~0.2 s) is about 60% of this, so the timing is very uncertain.\nUse an electromagnet release that starts an electronic timer and a trapdoor (or light gate) that stops it; or drop from 2.0 m (t ≈ 0.64 s) to reduce the % uncertainty.",
+   "answer": "Reaction time is large vs 0.32 s; use electromagnet + trapdoor timer (or a bigger height)."
+  },
+  "traps": [
+   "Vague improvements: 'reduce human error', 'be more careful', 'repeat for more heights'.",
+   "Saying 'use light gates' without connecting them to a timer or data logger.",
+   "Recommending 'more accurate' or 'digital' meters instead of higher-resolution meters.",
+   "Giving an improvement that does not relate to the measurement asked about."
+  ],
+  "spot": [
+   "'Suggest one improvement' or 'discuss the limitations'.",
+   "A method using a stopwatch, a ruler on a small length, or a measurement across one spacing."
+  ]
+ },
+ "K18": {
+  "steps": [
+   "Learn each required practical as: apparatus (with a labelled diagram), what you vary, what you measure and with what, and how the result is processed.",
+   "Know the key control steps: check terminal velocity before timing, start from low frequency to find the fundamental, shield the LED, use a small current to avoid heating.",
+   "Know the graph for each: R against L (gradient ρ/A), V against I for a cell (gradient −r), F against x (gradient k), V against 1/λ for LEDs (gradient hc/e), s against t² for g, n from sin i against sin r.",
+   "In a six-marker cover method, measurements and analysis, including uncertainty, in a clear order."
+  ],
+  "example": {
+   "problem": "Outline how to determine the resistivity of a metal wire.",
+   "solution": "Measure the diameter with a micrometer at several places and average; A = πd²/4.\nConnect the wire with a crocodile clip; measure V and I for at least six lengths from 0.2 m to 0.9 m (metre rule); R = V/I. Keep current small so the wire stays cool.\nPlot R against L; gradient = ρ/A, so ρ = gradient × A.",
+   "answer": "ρ = gradient of R–L graph × cross-sectional area."
+  },
+  "traps": [
+   "Giving a method with no analysis, or analysis with no method: capped at Level 2.",
+   "Describing a different experiment (e.g. a light double slit when electron diffraction was asked).",
+   "No labelled diagram where the level descriptors expect one.",
+   "Using n = c/v in a lab refractive-index method instead of measuring angles."
+  ],
+  "spot": [
+   "A six-mark 'describe how to determine …' question.",
+   "Named quantities from the spec practicals: resistivity, internal resistance, Young modulus, g, h from LEDs, speed of sound, refractive index."
+  ]
+ },
+ "K19": {
+  "steps": [
+   "Avoid stopwatches for times under about 2 s: reaction time (~0.2 s) dominates.",
+   "Light gate: speed = length of interrupt card / time to pass the gate; two gates or a double card give acceleration. Always connect to a timer or data logger.",
+   "Electromagnet and trapdoor: switching off the magnet starts the timer, the ball hitting the trapdoor stops it.",
+   "Video: film with a scale beside the motion; time each frame from the frame rate.",
+   "Oscilloscope: period = number of divisions for one cycle × time-base setting; f = 1/T. Measure several cycles for a smaller uncertainty."
+  ],
+  "example": {
+   "problem": "On an oscilloscope, 3 complete cycles span 7.5 divisions with the time-base at 2.0 ms per division. Find the frequency.",
+   "solution": "Time for 3 cycles = 7.5 × 2.0 ms = 15 ms.\nT = 15 / 3 = 5.0 ms = 5.0 × 10⁻³ s.\nf = 1/T = 200 Hz.",
+   "answer": "f = 200 Hz"
+  },
+  "traps": [
+   "Writing f = 1/T without saying how T is read from the screen.",
+   "Mentioning wavelength when reading an oscilloscope trace: it is a time axis.",
+   "Light gates with no timer or data logger mentioned.",
+   "Using two light gates to get an average speed when the speed at one point is needed."
+  ],
+  "spot": [
+   "Short times (ms), fast objects, or an oscilloscope trace with a time-base.",
+   "'Suggest how the speed/time could be measured more precisely'."
+  ]
+ },
+ "E1": {
+  "steps": [
+   "Find the equation in the data booklet that links the given quantities to the unknown.",
+   "Convert every value to SI first (nm, mA, kV, mm², eV).",
+   "Write the equation, substitute, then rearrange (or rearrange first if easier).",
+   "Evaluate and give the answer with unit and 2–3 significant figures, matching the data."
+  ],
+  "example": {
+   "problem": "Find the energy of a photon of red light of wavelength 650 nm, in J and eV.",
+   "solution": "E = hc/λ = (6.63 × 10⁻³⁴ × 3.00 × 10⁸) / (650 × 10⁻⁹).\nE = 3.06 × 10⁻¹⁹ J.\nIn eV: 3.06 × 10⁻¹⁹ / 1.60 × 10⁻¹⁹ = 1.91 eV.",
+   "answer": "3.06 × 10⁻¹⁹ J ≈ 1.9 eV"
+  },
+  "traps": [
+   "Prefix slips (nm, µA, mm²): a power-of-ten error loses the answer mark.",
+   "Using diameter for radius in an area.",
+   "Angles measured from the surface instead of the normal in n sin θ.",
+   "Treating eV as J."
+  ],
+  "spot": [
+   "All the needed values are given and one booklet equation links them.",
+   "'Calculate' with 1–2 marks."
+  ]
+ },
+ "E2": {
+  "steps": [
+   "Learn the equations not in the booklet: Ek = ½mv², W = mg, R = V/I, Q = It, ΔEp = mgh, ρ = m/V, p = F/A, moment = Fx, v = s/t, efficiency, V = IR, eV = ½mv² and the area/volume formulae.",
+   "Write the equation in symbols before substituting so the method mark is visible.",
+   "Convert g to kg and other prefixes before using them.",
+   "Use g = 9.81 m s⁻² unless told otherwise."
+  ],
+  "example": {
+   "problem": "A 450 g football is kicked at 18 m s⁻¹. Find its kinetic energy.",
+   "solution": "m = 0.450 kg.\nEk = ½mv² = 0.5 × 0.450 × 18².\nEk = 72.9 J.",
+   "answer": "Ek ≈ 73 J"
+  },
+  "traps": [
+   "Using mass in grams.",
+   "Using weight where mass is needed (or mass where weight is needed) in moments and F = ma.",
+   "Using g = 10 m s⁻², which can change a 2 s.f. answer.",
+   "Using s = ½vt for an average speed instead of v = s/t."
+  ],
+  "spot": [
+   "The needed relation is basic and not in the data booklet.",
+   "Mass and speed, or V and I, given with nothing else."
+  ]
+ },
+ "E3": {
+  "steps": [
+   "List the quantities you know and the one you want.",
+   "Check which equations apply to this part of the circuit or this stage of the motion.",
+   "Pick the one where every quantity refers to the same thing (same component, same time interval).",
+   "In circuits use the p.d. across and current through the component in question, not the supply values; include internal resistance.",
+   "In motion pick the suvat equation that leaves out the quantity you do not know."
+  ],
+  "example": {
+   "problem": "A 4.0 Ω and an 8.0 Ω resistor are in series with a 12 V supply of negligible internal resistance. Find the power in the 4.0 Ω resistor.",
+   "solution": "Total R = 12 Ω, so I = 12/12 = 1.0 A.\nP = I²R = 1.0² × 4.0 = 4.0 W.\n(V²/R with V = 12 V would wrongly give 36 W: 12 V is not across the 4.0 Ω resistor.)",
+   "answer": "P = 4.0 W"
+  },
+  "traps": [
+   "Using the supply p.d. in V²/R for one component of a series circuit.",
+   "Ignoring internal resistance when finding the current.",
+   "Using g in a suvat equation when the acceleration is different (lift, ramp).",
+   "Treating a filament lamp as having fixed resistance: read each lamp's value at its own p.d."
+  ],
+  "spot": [
+   "Several equations seem to fit; only one uses quantities for the same object.",
+   "Circuit problems with more than one component, or multi-stage motion."
+  ]
+ },
+ "E4": {
+  "steps": [
+   "Work backwards: what equation gives the answer, and which of its inputs is missing?",
+   "Find that missing input with a second (or third) equation.",
+   "Keep intermediate values to at least 3 significant figures; do not round until the end.",
+   "Label each step so later marks can be given even if one number is wrong (error carried forward)."
+  ],
+  "example": {
+   "problem": "A wire 2.0 m long, diameter 0.40 mm, resistivity 1.1 × 10⁻⁶ Ω m, is connected across a 3.0 V supply of negligible internal resistance. Find the power dissipated.",
+   "solution": "A = π(0.20 × 10⁻³)² = 1.26 × 10⁻⁷ m².\nR = ρL/A = 1.1 × 10⁻⁶ × 2.0 / 1.26 × 10⁻⁷ = 17.5 Ω.\nP = V²/R = 9.0 / 17.5 = 0.51 W.",
+   "answer": "P ≈ 0.51 W"
+  },
+  "traps": [
+   "Rounding early so the final answer drifts out of the allowed range.",
+   "Skipping the photon energy step when finding photons per second (N = P/E needs E = hc/λ first).",
+   "Squaring an area again or using diameter as radius in the first step.",
+   "Not showing intermediate values, so no error-carried-forward credit."
+  ],
+  "spot": [
+   "3–4 mark calculations where no single equation contains both the data and the unknown.",
+   "Data in one topic (dimensions, photon energy) feeding a result in another (power, number per second)."
+  ]
+ },
+ "E5": {
+  "steps": [
+   "Read the given formula carefully and identify every symbol and its unit.",
+   "Substitute exactly as given; do not swap it for a formula you remember.",
+   "Rearrange if needed, watching powers and roots.",
+   "Check the unit of the answer comes out sensibly; if asked for a constant's unit, find it from the formula."
+  ],
+  "example": {
+   "problem": "The power a wind turbine can extract is given as P = ½ρAv³, where ρ = 1.2 kg m⁻³ is the air density and A is the area swept by the blades. Find P for blades of radius 20 m in an 8.0 m s⁻¹ wind.",
+   "solution": "A = π × 20² = 1257 m².\nP = 0.5 × 1.2 × 1257 × 8.0³.\nP = 3.9 × 10⁵ W.",
+   "answer": "P ≈ 390 kW"
+  },
+  "traps": [
+   "Forgetting to cube (or square) the speed.",
+   "Rearranging wrongly when the unknown is under a root or raised to a power.",
+   "Mixing units, e.g. a mass in g inside a given drag formula."
+  ],
+  "spot": [
+   "A formula is printed in the question stem, often with an unfamiliar constant.",
+   "'The relationship is given by …' or 'use the equation …'."
+  ]
+ },
+ "E6": {
+  "steps": [
+   "Write down the starting equations in symbols.",
+   "Substitute one into another, step by step, showing each line of algebra.",
+   "Keep the quantity you are asked for as the subject; do not work backwards from the given result.",
+   "In a 'show that' with numbers, show every substitution with powers of ten and give the answer to one more significant figure than the value shown."
+  ],
+  "example": {
+   "problem": "Show that the number of photons emitted per second by a source of power P and wavelength λ is N = Pλ/(hc). Use it for a 2.0 mW, 532 nm laser.",
+   "solution": "Energy of one photon E = hc/λ.\nPower = energy per second = N × E, so N = P/E = P/(hc/λ) = Pλ/(hc).\nN = 2.0 × 10⁻³ × 532 × 10⁻⁹ / (6.63 × 10⁻³⁴ × 3.00 × 10⁸) = 5.3 × 10¹⁵ s⁻¹.",
+   "answer": "N = Pλ/(hc) ≈ 5.3 × 10¹⁵ photons per second"
+  },
+  "traps": [
+   "Working backwards from the given expression or value: scores nothing.",
+   "Doing the proof in base units when the question wants equations combined.",
+   "Skipping steps so the examiner cannot see where the expression came from.",
+   "Writing the final line only: the final value of a 'show that' earns no mark by itself."
+  ],
+  "spot": [
+   "'Show that …' or 'derive an expression for …'.",
+   "An expression to reach that combines two standard equations."
+  ]
+ },
+ "E7": {
+  "steps": [
+   "Before using an equation, ask what it assumes.",
+   "suvat: only for constant acceleration (no changing drag, no changing force).",
+   "Projectiles: horizontal velocity constant only if air resistance is negligible; vertical and horizontal motions are treated separately.",
+   "Circuits: same current only in series; same p.d. only in parallel; V = ε for the terminals only when no current flows.",
+   "TIR only when going into a lower refractive index and the angle of incidence exceeds the critical angle; Ohm's law only at constant temperature."
+  ],
+  "example": {
+   "problem": "A skydiver falls 200 m before her speed becomes steady. A student uses v² = 2gs to get her speed at 200 m. Comment.",
+   "solution": "v² = 2 × 9.81 × 200 gives v ≈ 63 m s⁻¹.\nBut drag grows with speed, so the resultant force and acceleration fall: acceleration is not constant and suvat does not apply.\nThe real speed is less than 63 m s⁻¹.",
+   "answer": "Invalid: acceleration not constant; 63 m s⁻¹ is an overestimate."
+  },
+  "traps": [
+   "Using suvat for motion with drag or a varying force.",
+   "Claiming TIR when light goes from a lower to a higher refractive index.",
+   "Assuming the terminal p.d. equals the e.m.f. while current flows.",
+   "Applying R = constant to a filament lamp whose temperature changes."
+  ],
+  "spot": [
+   "'State an assumption' or 'explain why the equation cannot be used'.",
+   "Air resistance, changing forces, or light travelling into a denser medium."
+  ]
+ },
+ "D1": {
+  "steps": [
+   "Learn each definition as a word equation with quantities, not units: 'energy transferred per unit charge', not 'joules per coulomb'.",
+   "Keep the key qualifiers that carry the mark: minimum, maximum, per unit, in a vacuum, surface, free.",
+   "Define any symbol you use, or avoid symbols.",
+   "Practise writing each from memory and checking it word for word against a trusted version."
+  ],
+  "list": [
+   "e.m.f. (energy transferred to electrical per unit charge)",
+   "potential difference (electrical energy transferred to other forms per unit charge)",
+   "power (energy transferred per unit time)",
+   "intensity (power per unit cross-sectional area)",
+   "resistivity",
+   "refractive index",
+   "critical angle",
+   "threshold frequency",
+   "work function",
+   "maximum kinetic energy of photoelectrons",
+   "ultimate tensile strength",
+   "number density of charge carriers",
+   "phase difference",
+   "interference",
+   "vector quantity",
+   "electronvolt",
+   "moment and torque of a couple",
+   "stress, strain, Young modulus, spring constant",
+   "momentum and impulse",
+   "displacement, velocity, acceleration"
+  ],
+  "example": {
+   "problem": "Define the refractive index of a material and the work function of a metal.",
+   "solution": "Refractive index = speed of light in a vacuum ÷ speed of light in the material.\nWork function = minimum energy needed to remove an electron from the surface of the metal.",
+   "answer": "n = c (vacuum) / v (material); φ = minimum energy to free a surface electron."
+  },
+  "traps": [
+   "Using units in place of quantities (e.g. 'volts per amp').",
+   "Leaving out 'minimum' (threshold frequency, work function) or 'maximum' (KEmax).",
+   "Speed of light 'in air' instead of in a vacuum.",
+   "Defining number density as 'electrons per unit volume' instead of free charge carriers per unit volume."
+  ],
+  "spot": [
+   "'Define …' or 'state what is meant by …' for a named quantity.",
+   "A 1-mark part at the start of a structured question."
+  ]
+ },
+ "D2": {
+  "steps": [
+   "Learn each law as one complete sentence including its condition.",
+   "Add the condition every time: 'provided no external force acts', 'for a body in equilibrium', 'at constant temperature', 'within the limit of proportionality'.",
+   "Use the precise noun: rate of change of momentum, weight of fluid displaced, displacements (not amplitudes).",
+   "When asked to apply the law, say how this situation meets (or breaks) it, e.g. whether a graph is a straight line through the origin."
+  ],
+  "list": [
+   "Newton's first law",
+   "Newton's second law (rate of change of momentum)",
+   "Newton's third law and what makes a third-law pair",
+   "principle of conservation of momentum",
+   "principle of moments",
+   "conditions for equilibrium",
+   "Kirchhoff's first law (conservation of charge)",
+   "Kirchhoff's second law (conservation of energy)",
+   "Archimedes' principle",
+   "Hooke's law",
+   "Ohm's law",
+   "principle of superposition",
+   "principle of conservation of energy"
+  ],
+  "example": {
+   "problem": "State Newton's second law and the principle of conservation of momentum.",
+   "solution": "Newton's second law: the resultant force on a body is proportional to (equal to) its rate of change of momentum.\nConservation of momentum: for a system of interacting bodies, total momentum stays constant provided no external force acts.",
+   "answer": "F ∝ rate of change of momentum; total momentum constant if no external force."
+  },
+  "traps": [
+   "Quoting F = ma as Newton's second law, or 'change in momentum over time' without 'rate'.",
+   "Missing the 'no external force' condition for momentum.",
+   "Archimedes: upthrust = mass or volume of fluid displaced, instead of weight; equilibrium as 'forces and moments balance' without 'in any direction' and 'about any point'.",
+   "Newton's third law pairs: writing 'action = reaction' instead of describing equal, opposite forces of the same type on different bodies."
+  ],
+  "spot": [
+   "'State …' followed by a named law or principle.",
+   "'Explain using Newton's third law …' or 'Kirchhoff's first law is a consequence of …'."
+  ]
+ },
+ "D3": {
+  "steps": [
+   "Learn a crisp one-line meaning for each term, built round its key idea (coherent → constant phase difference).",
+   "Link the term to the context in the question: 'the drops are equally spaced in time, so …'.",
+   "For pairs of terms (elastic/inelastic, brittle/ductile, transverse/longitudinal) learn them as contrasts.",
+   "Use the exact physics words: oscillation, superposition, displacement, perpendicular, plane."
+  ],
+  "list": [
+   "coherent",
+   "plane polarised",
+   "transverse and longitudinal",
+   "progressive and stationary wave",
+   "perfectly elastic and inelastic collision",
+   "couple",
+   "terminal velocity",
+   "centre of gravity",
+   "accuracy and precision",
+   "impulse",
+   "quantised charge",
+   "hf as the energy of one photon",
+   "elastic, plastic, ductile, brittle",
+   "extension and compression",
+   "displacement versus distance",
+   "peer review and validation"
+  ],
+  "example": {
+   "problem": "Explain what is meant by 'coherent' sources and by a 'perfectly elastic' collision.",
+   "solution": "Coherent: the waves have a constant phase difference.\nPerfectly elastic collision: total kinetic energy is conserved (momentum is always conserved).",
+   "answer": "Coherent = constant phase difference; perfectly elastic = KE conserved."
+  },
+  "traps": [
+   "Coherent as 'in phase' or 'same frequency': neither scores.",
+   "Plane polarised as 'oscillations in one direction': needs perpendicular to propagation and in one plane.",
+   "Centre of gravity as where 'the mass' or 'gravity' acts, instead of where the weight acts.",
+   "Longitudinal waves described as varying amplitude instead of particles oscillating parallel to energy transfer."
+  ],
+  "spot": [
+   "'Explain what is meant by …' with a term in quotes.",
+   "'Explain why the collision is inelastic' or 'what does coherent mean here'."
+  ]
+ },
+ "D4": {
+  "steps": [
+   "Memorise the SI base units: kg, m, s, A, K, mol. Everything else is derived.",
+   "Build derived units from defining equations: N = kg m s⁻² (F = ma), J = N m, W = J s⁻¹, C = A s, V = J C⁻¹, Ω = V A⁻¹, Pa = N m⁻².",
+   "To find base units, write the defining equation, replace each quantity by its base units and simplify powers.",
+   "For a constant in a given formula, rearrange to make it the subject first, then substitute units.",
+   "Strain and refractive index have no unit; give units with the correct power of ten (N cm⁻¹ or N m⁻¹)."
+  ],
+  "list": [
+   "SI base units: kg, m, s, A, K, mol",
+   "N = kg m s⁻²",
+   "J = N m = kg m² s⁻²",
+   "W = J s⁻¹ = kg m² s⁻³",
+   "C = A s",
+   "V = J C⁻¹ = kg m² s⁻³ A⁻¹",
+   "Ω = V A⁻¹",
+   "Pa = N m⁻²",
+   "resistivity Ω m",
+   "spring constant N m⁻¹",
+   "momentum kg m s⁻¹ = N s",
+   "moment/torque N m",
+   "intensity W m⁻² = kg s⁻³",
+   "electronvolt and kW h as energy units",
+   "strain: no unit"
+  ],
+  "example": {
+   "problem": "Express the ohm in SI base units.",
+   "solution": "Ω = V/A, and V = J/C = (kg m² s⁻²)/(A s) = kg m² s⁻³ A⁻¹.\nΩ = kg m² s⁻³ A⁻¹ ÷ A.\nΩ = kg m² s⁻³ A⁻².",
+   "answer": "kg m² s⁻³ A⁻²"
+  },
+  "traps": [
+   "Calling the coulomb or volt a base unit.",
+   "Writing only the final line in a base-unit proof: the marks are for the steps.",
+   "Leaving off a unit when the question gives a separate mark for it.",
+   "Mismatching unit and power of ten (0.55 N m⁻¹ when the value was in N cm⁻¹)."
+  ],
+  "spot": [
+   "'State the unit', 'express in base units', 'show the equation is homogeneous'.",
+   "An unfamiliar constant (k, η) whose unit is asked."
+  ]
+ },
+ "D5": {
+  "steps": [
+   "Learn what the gradient and area of each standard graph mean.",
+   "State the link in words before using it ('acceleration = gradient of v–t graph'); this is often a separate mark.",
+   "For resistance from an I–V graph use R = V/I at a point, never 1/gradient.",
+   "For a curved graph, draw a tangent at the stated point for the gradient; count squares for an area.",
+   "Read intercepts with meaning: V–I of a cell (y-intercept e.m.f., gradient −r); KEmax–f (x-intercept threshold frequency)."
+  ],
+  "list": [
+   "gradient of s–t = velocity",
+   "gradient of v–t = acceleration",
+   "area under v–t = displacement (thinking + braking distance)",
+   "gradient of p–t = force",
+   "area under F–t = impulse = change of momentum",
+   "area under F–x = work done / elastic energy",
+   "gradient of F–x = spring constant (or 1/k if axes swapped)",
+   "gradient of stress–strain = Young modulus; peak = UTS",
+   "I–V: R = V/I at a point; straight through origin = ohmic",
+   "V–I for a cell: intercept ε, gradient −r",
+   "KEmax–f: gradient h, x-intercept f₀, y-intercept −φ",
+   "R–L: gradient ρ/A",
+   "V–1/λ for LEDs: gradient hc/e"
+  ],
+  "example": {
+   "problem": "A V–I graph for a cell is a straight line with y-intercept 1.50 V passing through (0.60 A, 1.20 V). Find the e.m.f. and internal resistance.",
+   "solution": "V = ε − Ir, so the y-intercept is ε = 1.50 V.\nGradient = (1.20 − 1.50)/0.60 = −0.50 Ω = −r.\nr = 0.50 Ω.",
+   "answer": "ε = 1.50 V, r = 0.50 Ω"
+  },
+  "traps": [
+   "Calling area under F–t 'work' instead of impulse.",
+   "Using ½Fx for the area under a curved force–extension graph.",
+   "Describing velocity from an s–t graph without stating that velocity = gradient.",
+   "R = 1/gradient on an I–V graph, or 'R constant because the line is straight' when it misses the origin."
+  ],
+  "spot": [
+   "'What does the gradient/area represent?' or 'use the graph to find the distance/impulse'.",
+   "Standard axes: s–t, v–t, F–t, p–t, F–x, stress–strain, I–V, V–I, KEmax–f."
+  ]
+ },
+ "D6": {
+  "steps": [
+   "Learn the rule that decides each category (vector: has direction; transverse: oscillation perpendicular to energy transfer).",
+   "Learn a few clear examples on each side.",
+   "When asked to classify, give the category and the reason using the rule.",
+   "Say what follows from the classification (vectors add by triangle or resolving; scalars add arithmetically)."
+  ],
+  "list": [
+   "scalar or vector",
+   "transverse or longitudinal",
+   "elastic or plastic deformation",
+   "elastic or inelastic collision",
+   "ductile, brittle or polymeric material",
+   "conductor, semiconductor or insulator (by number density: ~10²⁸ m⁻³ for metals)",
+   "ohmic or non-ohmic",
+   "SI base or derived unit",
+   "random or systematic error",
+   "progressive or stationary wave"
+  ],
+  "example": {
+   "problem": "Classify as scalar or vector: speed, displacement, kinetic energy, momentum, weight, time.",
+   "solution": "Vectors have magnitude and direction: displacement, momentum, weight.\nScalars have magnitude only: speed, kinetic energy, time.",
+   "answer": "Vectors: displacement, momentum, weight. Scalars: speed, kinetic energy, time."
+  },
+  "traps": [
+   "Giving speed as an example of a vector.",
+   "Stating the definition of a vector but no example when one is asked.",
+   "Calling a straight-line I–V component a 'metallic conductor' instead of a resistor.",
+   "Calling a material brittle because it is strong: brittle means it breaks with no plastic deformation."
+  ],
+  "spot": [
+   "'Which of these is a …', 'state whether …'.",
+   "Two-column MCQs: vector/scalar, transverse/longitudinal."
+  ]
+ },
+ "F1": {
+  "steps": [
+   "Learn each component's graph or rule and the reason behind it in one line.",
+   "For circuits, run the chain: condition changes → resistance changes → current changes → p.d. shares change.",
+   "For materials, learn the shape of the stress–strain or force–extension graph and the words for it.",
+   "When explaining, give each link as a separate statement; each is often a separate mark."
+  ],
+  "list": [
+   "LDR: resistance falls as light intensity rises (more charge carriers freed)",
+   "NTC thermistor: resistance falls non-linearly as temperature rises",
+   "filament lamp: I–V curve flattens; resistance rises as it heats",
+   "resistor at constant temperature: straight I–V through origin (ohmic)",
+   "diode/LED: almost no current in reverse or below threshold p.d. (~0.6 V diode, ~2–3 V LED), then resistance falls sharply",
+   "metal wire: resistance rises when hotter, falls when cooler",
+   "metals n ~10²⁸ m⁻³; semiconductors far smaller n; insulators tiny n",
+   "charge carriers: free electrons in metals, ions in electrolytes",
+   "ductile (copper): large plastic region before breaking",
+   "brittle (glass): straight line to fracture, no plastic region",
+   "polymeric (rubber): hysteresis loop, energy dissipated as heat; polythene: large plastic stretch",
+   "elastic: returns to original length; plastic: permanent deformation",
+   "sagging beam: compressed on top, stretched underneath"
+  ],
+  "example": {
+   "problem": "An NTC thermistor and a 2.0 kΩ resistor are in series across 6.0 V (no internal resistance). The thermistor's resistance falls from 4.0 kΩ when cold to 1.0 kΩ when hot. Find the p.d. across the fixed resistor in each case.",
+   "solution": "Cold: V = 6.0 × 2.0/(2.0 + 4.0) = 2.0 V.\nHot: V = 6.0 × 2.0/(2.0 + 1.0) = 4.0 V.\nWarming lowers the thermistor's resistance, so it takes a smaller share of the p.d. and the fixed resistor a larger share.",
+   "answer": "2.0 V cold, 4.0 V hot"
+  },
+  "traps": [
+   "Saying 'the temperature of the circuit rises' instead of the thermistor warming.",
+   "Calling a filament lamp 'non-ohmic' without explaining that temperature, and hence resistance, rises with current.",
+   "Skipping the current or p.d.-share step in a potential-divider chain.",
+   "Drawing a brittle material with a curved section, or a rubber loop that does not return to the origin."
+  ],
+  "spot": [
+   "LDR, thermistor, filament lamp, diode or LED in a circuit or graph.",
+   "Stress–strain or force–extension graphs for named materials."
+  ]
+ },
+ "F2": {
+  "steps": [
+   "Learn each key experiment as: set-up, what is observed, what it shows.",
+   "Photoelectric effect: no emission below threshold frequency however bright; emission instant above it; KEmax depends on frequency, not intensity; rate depends on intensity.",
+   "Electron diffraction: rings on a screen after electrons pass through graphite; shows electrons behave as waves; λ must be similar to atomic spacing.",
+   "Explain each observation with the model (photons, de Broglie) rather than just repeating it."
+  ],
+  "list": [
+   "photoelectric effect: threshold frequency",
+   "photoelectric effect: instant emission",
+   "photoelectric effect: KEmax set by frequency, not intensity",
+   "photoelectric effect: emission rate ∝ intensity (photon rate)",
+   "photoelectrons have a range of KE from 0 to KEmax",
+   "zinc plate and electroscope: leaf falls only with UV",
+   "electron diffraction rings through graphite (wave nature of electrons)",
+   "rings get smaller/closer when accelerating p.d. increases",
+   "double-slit fringes: diffraction plus interference",
+   "blocking one slit leaves single-slit diffraction only",
+   "charge on objects comes in multiples of e",
+   "polariser rotated: intensity varies (transverse waves)",
+   "stationary waves: fixed nodes and antinodes (microwaves, sound, strings)"
+  ],
+  "example": {
+   "problem": "A negatively charged zinc plate is on a gold-leaf electroscope. Bright red light is shone on it, then dim ultraviolet. Describe and explain what is seen. (Work function of zinc ≈ 4.3 eV; red photons ≈ 1.9 eV; UV photons ≈ 5 eV.)",
+   "solution": "Red: photon energy 1.9 eV < 4.3 eV, so no electrons escape however bright; the leaf stays up.\nUV: each photon has more than 4.3 eV, so each can free one electron at once.\nThe plate loses electrons (becomes less negative) and the leaf falls, even with dim light.",
+   "answer": "Red: nothing happens. UV: leaf falls straight away."
+  },
+  "traps": [
+   "Saying emission happens from the leaf, or that the plate gains positive charge from the light.",
+   "Saying brighter light gives faster electrons.",
+   "Describing a light double-slit experiment when electron diffraction was asked.",
+   "Writing 'does not increase' for KEmax with intensity, which leaves a decrease possible; say 'stays the same'."
+  ],
+  "spot": [
+   "Gold-leaf electroscope, zinc plate, UV lamp; graphite target and fluorescent screen.",
+   "'Describe what is observed' or 'what evidence shows …'."
+  ]
+ },
+ "F3": {
+  "steps": [
+   "Learn the EM spectrum in order with a typical wavelength for each region (microwaves ~cm, visible 400–700 nm, UV ~10–400 nm).",
+   "Learn the shared properties: all EM waves are transverse and travel at 3.0 × 10⁸ m s⁻¹ in a vacuum.",
+   "Learn the refraction rules: frequency stays the same, speed and wavelength fall in a higher-index material; ray bends towards the normal going in.",
+   "Learn when effects happen: diffraction is significant when the gap ≈ wavelength; only transverse waves polarise; TIR only going into a lower index.",
+   "Intensity ∝ amplitude²."
+  ],
+  "list": [
+   "order: radio, microwave, infrared, visible, ultraviolet, X-ray, gamma",
+   "radio: > ~0.1 m",
+   "microwaves: ~1 mm to ~10 cm (typically a few cm)",
+   "infrared: ~700 nm to 1 mm",
+   "visible: ~400 nm (violet) to ~700 nm (red)",
+   "ultraviolet: ~10 nm to 400 nm",
+   "X-rays: ~10⁻¹³ to 10⁻⁸ m; gamma: shortest",
+   "all EM waves: transverse, 3.0 × 10⁸ m s⁻¹ in vacuum",
+   "sound: longitudinal, needs a medium, cannot be polarised, ~340 m s⁻¹ in air",
+   "refraction: f unchanged; v and λ smaller in higher n",
+   "diffraction significant when gap ≈ λ",
+   "polarisation: only transverse waves; crossed filters/grille block",
+   "TIR only into lower n and when i > C",
+   "intensity ∝ amplitude²"
+  ],
+  "example": {
+   "problem": "Light of wavelength 590 nm in air enters glass of refractive index 1.50. Find its frequency, speed and wavelength in the glass.",
+   "solution": "f = c/λ = 3.00 × 10⁸ / 590 × 10⁻⁹ = 5.08 × 10¹⁴ Hz (unchanged in glass).\nv = c/n = 3.00 × 10⁸ / 1.50 = 2.00 × 10⁸ m s⁻¹.\nλ = v/f = 590/1.50 = 393 nm.",
+   "answer": "f = 5.1 × 10¹⁴ Hz, v = 2.0 × 10⁸ m s⁻¹, λ ≈ 390 nm"
+  },
+  "traps": [
+   "Saying the frequency changes on refraction.",
+   "Mixing up UV and visible wavelengths (UV is shorter than 400 nm).",
+   "Saying sound can be polarised, or EM waves are longitudinal.",
+   "Writing just 'c' for the speed of EM waves without 'the same speed' or the value."
+  ],
+  "spot": [
+   "A named region of the EM spectrum or a wavelength to place.",
+   "Light entering water or glass; polarising filters; gaps comparable to wavelength."
+  ]
+ },
+ "F4": {
+  "steps": [
+   "Learn the boundary rules: fixed end of a string and closed end of a pipe are nodes; open pipe ends are antinodes.",
+   "Learn the spacings: node to node (or antinode to antinode) = λ/2; node to adjacent antinode = λ/4.",
+   "Learn the allowed patterns: string L = nλ/2 (all harmonics); open pipe L = nλ/2 (all harmonics); closed pipe L = λ/4, 3λ/4 … (odd harmonics only).",
+   "Learn phase rules: all points between two nodes are in phase; adjacent loops are in antiphase (π rad).",
+   "Successive resonance lengths in a tube differ by λ/2."
+  ],
+  "list": [
+   "node: zero amplitude; antinode: maximum amplitude",
+   "node–node = λ/2; node–antinode = λ/4",
+   "string fixed both ends: L = λ/2, λ, 3λ/2 …",
+   "closed pipe: node at closed end, antinode at open end; L = λ/4, 3λ/4 …; odd harmonics only",
+   "open pipe: antinodes both ends; all harmonics",
+   "successive resonance lengths differ by λ/2",
+   "points in one loop in phase; adjacent loops antiphase",
+   "stationary wave: no net energy transfer, amplitude varies with position; progressive: transfers energy, same amplitude everywhere",
+   "microwave oven: hot spots at antinodes",
+   "double-slit: bright where path difference nλ, dark at (n + ½)λ"
+  ],
+  "example": {
+   "problem": "A pipe closed at one end is 0.45 m long. Speed of sound = 340 m s⁻¹. Find the fundamental frequency and the next frequency at which it resonates.",
+   "solution": "Fundamental: node at closed end, antinode at open end, so L = λ/4 and λ = 1.80 m.\nf = v/λ = 340/1.80 = 189 Hz.\nOnly odd harmonics: next is 3 × 189 = 567 Hz.",
+   "answer": "189 Hz and 567 Hz"
+  },
+  "traps": [
+   "Taking one loop as a whole wavelength (it is λ/2).",
+   "Giving a closed pipe even harmonics (e.g. 2f).",
+   "Putting an antinode at the closed end, or forgetting to label N and A.",
+   "Using max-to-max as λ/4 instead of λ/2 in a microwave stationary wave."
+  ],
+  "spot": [
+   "Strings, pipes, resonance tubes, microwaves reflected off a plate.",
+   "'Sketch the stationary wave', 'state the next harmonic', 'phase difference between points'."
+  ]
+ },
+ "F5": {
+  "steps": [
+   "Learn the definitions: thinking distance (during reaction time, constant speed), braking distance (while braking), stopping distance = sum.",
+   "Learn what affects each: thinking — speed, tiredness, alcohol, drugs, distraction; braking — speed, road surface, tyres, brakes, mass, slope.",
+   "Learn the scaling: thinking distance ∝ v; braking distance ∝ v² (for the same braking force).",
+   "Learn the motion facts: horizontal velocity of a projectile is constant without drag; drag rises with speed until it equals weight (terminal velocity).",
+   "Learn floating: upthrust = weight; denser liquid → less volume displaced."
+  ],
+  "list": [
+   "thinking, braking and stopping distance and their factors",
+   "braking distance ∝ v²; thinking distance ∝ v",
+   "v–t graph: flat section = reaction time, sloping section = braking",
+   "drag increases with speed; terminal velocity when drag = weight",
+   "drag factors: speed, cross-sectional area, shape, fluid density",
+   "at release drag is zero so acceleration = g",
+   "projectile: constant horizontal velocity, vertical acceleration g",
+   "air resistance: lower, shorter path that peaks earlier",
+   "floating: upthrust = weight; denser sea water → floats higher",
+   "slope: weight component adds to or reduces braking",
+   "low-power LEDs save energy and reduce CO₂"
+  ],
+  "example": {
+   "problem": "A car at 20 m s⁻¹ has a driver reaction time of 0.70 s and brakes at 6.5 m s⁻². Find the stopping distance. Then find it at 10 m s⁻¹.",
+   "solution": "Thinking = 20 × 0.70 = 14 m; braking = v²/2a = 400/13 = 30.8 m; total ≈ 45 m.\nAt 10 m s⁻¹: thinking = 7.0 m (halves), braking = 100/13 = 7.7 m (quarters).\nTotal ≈ 15 m.",
+   "answer": "≈ 45 m at 20 m s⁻¹; ≈ 15 m at 10 m s⁻¹"
+  },
+  "traps": [
+   "Defining stopping distance as the braking distance only.",
+   "Halving the braking distance when the speed halves (it quarters).",
+   "Saying a tired driver brakes less hard: tiredness changes only the thinking part (the flat section of v–t).",
+   "Saying a projectile's horizontal speed falls without any horizontal force."
+  ],
+  "spot": [
+   "Car stopping, reaction time, road conditions.",
+   "Falling objects with drag, projectiles, floating in fresh vs sea water."
+  ]
+ },
+ "F6": {
+  "steps": [
+   "Learn the circuit symbols by drawing them: cell, battery, lamp, fixed and variable resistor, potentiometer, LDR, thermistor, diode, LED, ammeter, voltmeter, switch, fuse.",
+   "Conventional current flows from + to − round the external circuit; electrons drift the other way.",
+   "A positively charged object has lost electrons; a negative one has gained them; N = Q/e.",
+   "Pick a positive direction and keep signs for vectors (velocity, momentum, displacement) consistent.",
+   "Angles in optics are measured from the normal, drawn at 90° to the surface."
+  ],
+  "list": [
+   "symbols: cell, battery, lamp, resistor, variable resistor, potentiometer, LDR, thermistor, diode, LED, ammeter, voltmeter, switch, fuse",
+   "conventional current + to −; electrons − to +",
+   "positive ions drift with conventional current, negative ions against it",
+   "positive charge = electrons lost; N = Q/e",
+   "e.m.f. direction from cell symbol (long line = +)",
+   "sign convention for velocity/momentum on rebound",
+   "angles of incidence/refraction measured from the normal",
+   "Kirchhoff arrows: currents in = currents out"
+  ],
+  "example": {
+   "problem": "Electrons drift through a wire from end A to end B. A metal sphere ends up with charge +4.8 × 10⁻¹⁸ C. Give the conventional current direction and the change in electrons on the sphere.",
+   "solution": "Conventional current is opposite to electron flow: from B to A.\nPositive charge means electrons were lost.\nN = Q/e = 4.8 × 10⁻¹⁸ / 1.60 × 10⁻¹⁹ = 30 electrons lost.",
+   "answer": "Current B → A; 30 electrons lost"
+  },
+  "traps": [
+   "Inventing symbols, especially for the LDR or thermistor.",
+   "Saying a positive object has gained positive charge or protons.",
+   "Drawing current in the direction of electron flow.",
+   "Measuring angles from the surface instead of the normal."
+  ],
+  "spot": [
+   "'Draw the circuit symbol', 'state the direction of the current'.",
+   "Charged objects, ion movement in electrolytes, rebounds where signs matter."
+  ]
+ },
+ "F7": {
+  "steps": [
+   "Learn a short list of everyday values and constants that are not given.",
+   "When estimating, state your assumed value with its unit (e.g. 'adult mass ≈ 70 kg').",
+   "Convert everyday units (km h⁻¹, g, minutes) to SI before calculating.",
+   "Round to one or two significant figures and give an order of magnitude if asked."
+  ],
+  "list": [
+   "g = 9.81 m s⁻²",
+   "reaction time ≈ 0.2 s (simple lab), ≈ 0.5–1 s for a driver",
+   "adult mass ≈ 50–100 kg (weight ≈ 700 N)",
+   "car mass ≈ 1000 kg",
+   "speed of sound in air ≈ 340 m s⁻¹",
+   "speed of light 3.0 × 10⁸ m s⁻¹",
+   "refractive index of glass ≈ 1.5, water ≈ 1.33",
+   "visible light 400–700 nm",
+   "metal carrier density ≈ 10²⁸ m⁻³",
+   "walking ≈ 1.5 m s⁻¹, sprinting ≈ 10 m s⁻¹, motorway ≈ 30 m s⁻¹",
+   "atomic spacing ≈ 10⁻¹⁰ m"
+  ],
+  "example": {
+   "problem": "Estimate the momentum of a sprinter running at top speed.",
+   "solution": "Assume mass ≈ 70 kg and top speed ≈ 10 m s⁻¹.\np = mv = 70 × 10 = 700 kg m s⁻¹.\nOrder of magnitude ≈ 10³ kg m s⁻¹.",
+   "answer": "≈ 700 kg m s⁻¹ (order 10³)"
+  },
+  "traps": [
+   "Not stating the assumed values, so the method cannot be followed.",
+   "Using an unrealistic value (adult mass 10 kg, car mass 10⁴ kg).",
+   "Leaving speeds in km h⁻¹.",
+   "Using g = 10 when 9.81 is expected."
+  ],
+  "spot": [
+   "'Estimate …' or 'suggest a value for …'.",
+   "A calculation that needs a quantity not given in the question or data sheet."
+  ]
+ },
+ "P1": {
+  "steps": [
+   "Name the conserved quantity and the system (include everything that interacts).",
+   "Choose a positive direction; give velocities opposite to it a minus sign.",
+   "Write 'total before = total after' (momentum, energy, or charge/current at a junction).",
+   "Solve for the unknown, then check the sign gives a sensible direction.",
+   "If asked whether a collision is elastic, compare total KE before and after."
+  ],
+  "example": {
+   "problem": "A 0.80 kg trolley at 1.5 m s⁻¹ hits a stationary 0.40 kg trolley and they stick together. Find their common speed and the kinetic energy lost.",
+   "solution": "Momentum before = 0.80 × 1.5 = 1.2 kg m s⁻¹ = (0.80 + 0.40) v, so v = 1.0 m s⁻¹.\nKE before = ½ × 0.80 × 1.5² = 0.90 J; KE after = ½ × 1.20 × 1.0² = 0.60 J.\nKE lost = 0.30 J (inelastic).",
+   "answer": "1.0 m s⁻¹; 0.30 J lost"
+  },
+  "traps": [
+   "Ignoring the sign of a rebounding velocity, so momenta that should subtract are added.",
+   "Assuming KE is conserved in an inelastic collision.",
+   "Leaving the Earth out when the system includes a falling object.",
+   "Forgetting part of the energy (e.g. GPE gained while a spring pushes an object upwards)."
+  ],
+  "spot": [
+   "Collisions, explosions, recoil, objects joining; 'total momentum'.",
+   "Energy transfers between KE, GPE, elastic energy and work against friction; currents at a junction."
+  ]
+ },
+ "P2": {
+  "steps": [
+   "Identify the principle that controls the effect (photon model, V = ε − Ir, conservation of momentum, superposition).",
+   "Write a chain of linked statements: change → first consequence → next consequence → result.",
+   "Name each quantity and say which way it changes ('increases', 'stays the same').",
+   "Add a number or proportionality if the question gives data (e.g. 'doubles').",
+   "Avoid restating the question; every line should add a step."
+  ],
+  "example": {
+   "problem": "Explain why the terminal p.d. of a battery falls when more lamps are connected in parallel across it.",
+   "solution": "More parallel lamps → total external resistance falls.\nSo the current from the battery increases.\nLost volts Ir inside the battery increase, so terminal p.d. V = ε − Ir falls.",
+   "answer": "Lower external R → larger I → larger Ir → smaller V."
+  },
+  "traps": [
+   "Skipping the current step: the later mark depends on it.",
+   "Vague words such as 'balanced' or 'equilibrium' instead of 'resultant force is zero'.",
+   "Saying 'does not increase' when the answer is 'stays the same'.",
+   "Giving a qualitative answer when the question supplies numbers to compare."
+  ],
+  "spot": [
+   "'Explain why …', 'explain what happens to …', 'suggest why …' with no calculation.",
+   "A change made to a circuit, a collision, a wave set-up or a light source."
+  ]
+ },
+ "P3": {
+  "steps": [
+   "Ask what is conserved or what is in equilibrium in the new situation.",
+   "Strip the context to its physics: a rocket or recoiling cannon → momentum; a curved slide → energy; a stretched cable bridge → equilibrium.",
+   "Check whether suvat applies; if acceleration is not constant, use energy or momentum instead.",
+   "Then apply the principle as you would in a familiar problem."
+  ],
+  "example": {
+   "problem": "A child slides from rest down a smooth curved slide whose top is 1.8 m above the bottom. Find her speed at the bottom.",
+   "solution": "The slope changes, so acceleration is not constant: suvat cannot be used directly.\nEnergy is conserved (smooth slide): mgh = ½mv², so v = √(2gh).\nv = √(2 × 9.81 × 1.8) = 5.9 m s⁻¹.",
+   "answer": "≈ 5.9 m s⁻¹"
+  },
+  "traps": [
+   "Trying suvat on a curved path or a varying force.",
+   "Missing that the system must include all interacting bodies (e.g. Earth).",
+   "Not noticing that 17 parallel strands of wire multiply the cross-sectional area."
+  ],
+  "spot": [
+   "An unfamiliar device or real-world scene (rockets, sports, medical, everyday objects).",
+   "Data that do not fit a standard equation without first choosing a principle."
+  ]
+ },
+ "P4": {
+  "steps": [
+   "Draw a free-body diagram for one object: every force with a correct name (weight, normal contact, tension, friction, drag, upthrust).",
+   "Weight acts vertically down; tension along the string; normal contact perpendicular to the surface; friction and drag oppose motion.",
+   "Resolve forces along and perpendicular to the motion.",
+   "Resultant force = ma along the motion; zero resultant means constant velocity (or rest).",
+   "Third-law pairs act on different bodies and are the same type of force; balanced forces act on the same body."
+  ],
+  "example": {
+   "problem": "A 12 kg box is pulled along a floor by a rope at 30° above the horizontal with a tension of 80 N. Friction is 40 N. Find the acceleration.",
+   "solution": "Horizontal component of tension = 80 cos 30° = 69.3 N.\nResultant = 69.3 − 40 = 29.3 N.\na = F/m = 29.3 / 12 = 2.4 m s⁻².",
+   "answer": "a ≈ 2.4 m s⁻²"
+  },
+  "traps": [
+   "Naming weight and normal contact force as a third-law pair.",
+   "Labelling a force 'gravity' instead of weight.",
+   "Using sin instead of cos (or tan⁻¹) when resolving.",
+   "Getting the sign of ma wrong in a lift or rope question (T = m(g + a) when accelerating upwards)."
+  ],
+  "spot": [
+   "'Draw the forces on …', 'find the resultant force', 'explain the motion'.",
+   "Lifts, ropes at angles, falling objects with drag, floating or submerged objects."
+  ]
+ },
+ "P5": {
+  "steps": [
+   "Draw the object with all forces; put the weight of a uniform object at its centre.",
+   "Choose a pivot at an unknown force to remove it from the moment equation.",
+   "Use perpendicular distances from the pivot: moment = F × perpendicular distance (use F sin θ or a component if needed).",
+   "Sum of clockwise moments = sum of anticlockwise moments about that point.",
+   "Then resolve vertically (and horizontally) to find the remaining force; three non-parallel forces in equilibrium meet at a point and form a closed triangle."
+  ],
+  "example": {
+   "problem": "A uniform 4.0 m plank of weight 300 N rests on supports at each end. A 500 N person stands 1.0 m from the left end. Find the force from each support.",
+   "solution": "Moments about the left support: R_right × 4.0 = 300 × 2.0 + 500 × 1.0 = 1100 N m.\nR_right = 275 N.\nVertically: R_left = 800 − 275 = 525 N.",
+   "answer": "Left 525 N, right 275 N"
+  },
+  "traps": [
+   "Using mass instead of weight in moments (missing g).",
+   "Using a distance that is not perpendicular to the force, or subtracting distances wrongly.",
+   "Taking moments about different points on each side.",
+   "Arrows in a triangle of forces that do not go round in one direction."
+  ],
+  "spot": [
+   "Beams, planks, levers, hinged rods, signs on cables.",
+   "'Take moments about …', 'find the force at the support', 'draw a triangle of forces'."
+  ]
+ },
+ "P6": {
+  "steps": [
+   "Work out the path difference: distance from one source − distance from the other.",
+   "Divide by λ: whole number of wavelengths → constructive (maximum); odd number of half wavelengths → destructive (minimum), for sources in phase.",
+   "Convert path difference to phase difference if asked: phase = (path difference / λ) × 2π rad.",
+   "For stationary waves, say incident and reflected waves superpose: nodes where they are in antiphase, antinodes where in phase.",
+   "If amplitudes differ, minima are not zero."
+  ],
+  "example": {
+   "problem": "Two loudspeakers driven in phase emit sound of wavelength 0.40 m. A point is 3.20 m from one and 3.80 m from the other. Is it a maximum or a minimum? Give the phase difference.",
+   "solution": "Path difference = 3.80 − 3.20 = 0.60 m.\n0.60 / 0.40 = 1.5λ: an odd number of half wavelengths.\nWaves arrive in antiphase (phase difference π rad), so destructive interference: a minimum.",
+   "answer": "Minimum (quiet); phase difference π rad"
+  },
+  "traps": [
+   "Mixing path difference (a length) and phase difference (an angle), e.g. writing π for path.",
+   "Quoting the general rule without showing this point's path difference.",
+   "Saying 'amplitude' instead of 'displacement' in the principle of superposition.",
+   "Claiming minima are exactly zero when one wave has travelled further and is weaker."
+  ],
+  "spot": [
+   "Two sources, a reflector, a double slit or a point at given distances from sources.",
+   "'Explain why there is a loud/quiet region', 'state the phase difference'."
+  ]
+ },
+ "P7": {
+  "steps": [
+   "Use the photon model: light arrives as photons of energy E = hf = hc/λ.",
+   "One photon gives all its energy to one electron: emission only if hf ≥ φ; KEmax = hf − φ.",
+   "Intensity sets the number of photons per second, so it changes the emission rate (current), not KEmax.",
+   "For particles as waves use λ = h/p = h/mv; diffraction is significant when λ ≈ the gap or atomic spacing.",
+   "Convert eV ↔ J (× or ÷ 1.60 × 10⁻¹⁹) so units match before comparing."
+  ],
+  "example": {
+   "problem": "Light of wavelength 450 nm falls on a metal of work function 2.3 eV. Find KEmax of the photoelectrons. What changes if the intensity is doubled?",
+   "solution": "E = hc/λ = 6.63 × 10⁻³⁴ × 3.00 × 10⁸ / 450 × 10⁻⁹ = 4.42 × 10⁻¹⁹ J = 2.76 eV.\nKEmax = 2.76 − 2.3 = 0.46 eV ≈ 7.4 × 10⁻²⁰ J.\nDoubling intensity doubles the photon rate: twice as many electrons per second, same KEmax.",
+   "answer": "KEmax ≈ 0.46 eV (7.4 × 10⁻²⁰ J); doubling intensity doubles the emission rate only."
+  },
+  "traps": [
+   "Writing hf = φ + KEmax without saying hf is the energy of one photon.",
+   "Explaining the threshold with intensity, or saying more intense light gives faster electrons.",
+   "Comparing a photon energy in J with a work function in eV.",
+   "For electron diffraction, not saying the de Broglie wavelength is comparable to the atomic spacing."
+  ],
+  "spot": [
+   "Photoelectric effect, LEDs, photon rates, wavelengths and work functions.",
+   "Electron diffraction, de Broglie wavelength, 'evidence for the particle/wave nature'."
+  ]
+ }
+}
