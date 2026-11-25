@@ -1,0 +1,1964 @@
+{
+ "gaps": [
+  {
+   "id": "g1",
+   "name": "Ticker timer",
+   "source": "spec guidance 3.1.2(a)(ii)",
+   "group": "Practical",
+   "what": "A ticker timer marks tape at a fixed rate (often 50 dots per second, so 0.02 s apart). Dot spacing gives speed; changing spacing shows acceleration.",
+   "check": "A tape has dots 4.0 cm apart from a 50 Hz ticker timer. What is the speed?",
+   "answer": "Time between dots is 0.02 s, so speed = 0.040 / 0.02 = 2.0 m/s.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g2",
+   "name": "Air-track gliders",
+   "source": "spec guidance 3.1.2(a)(ii)",
+   "group": "Practical",
+   "what": "Gliders float on a cushion of air so friction is almost removed; used to test momentum conservation and Newton's second law with light gates.",
+   "check": "Why is an air-track used rather than a bench for a collision experiment?",
+   "answer": "It makes friction negligible, so there is no external horizontal force and momentum is conserved.",
+   "seen": 2,
+   "seen_where": [
+    "P2 jun2025 Q6",
+    "P2 nov2021 Q3"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g3",
+   "name": "Collision practical with trolleys",
+   "source": "spec 3.1.2(a)(ii)",
+   "group": "Practical",
+   "what": "Measure velocities of trolleys before and after a collision (light gates, card length over time, or video), then compare total momentum before and after.",
+   "check": "Describe how to test conservation of momentum with two trolleys.",
+   "answer": "Measure masses; time cards through light gates before and after impact to get velocities; compare sum of mv before and after.",
+   "seen": 10,
+   "seen_where": [
+    "P1 jun2016 Q10",
+    "P1 jun2016 Q21",
+    "P1 jun2017 Q21",
+    "P1 jun2018 Q15"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g4",
+   "name": "g by electromagnet and trapdoor",
+   "source": "spec 3.1.2(b)(ii)",
+   "group": "Practical",
+   "what": "Electromagnet release starts the timer; ball hitting the trapdoor stops it. Vary height h, plot h against t squared: gradient = g/2. Residual magnetism delays release (systematic error).",
+   "check": "In the trapdoor method, what is the gradient of a graph of h against t squared?",
+   "answer": "g/2 (from s = ½gt² with u = 0), so g = 2 × gradient.",
+   "seen": 3,
+   "seen_where": [
+    "P2 jun2018 Q3",
+    "P2 jun2024 Q2",
+    "P2 jun2024 Q3"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g5",
+   "name": "Speed from a light gate",
+   "source": "spec 3.1.2(b)(ii)",
+   "group": "Practical",
+   "what": "A light gate times how long a card (or object) of known length blocks the beam; speed = card length ÷ blocked time. Two gates or a double card give acceleration.",
+   "check": "A 5.0 cm card blocks a light gate for 0.025 s. What is its speed?",
+   "answer": "v = 0.050 / 0.025 = 2.0 m/s.",
+   "seen": 11,
+   "seen_where": [
+    "P1 specimen Q22",
+    "P2 jun2017 Q2",
+    "P2 jun2018 Q3",
+    "P2 jun2022 Q1"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g6",
+   "name": "Terminal velocity practical details",
+   "source": "spec guidance 3.2.2(d)(ii)",
+   "group": "Practical",
+   "what": "Ball-bearing in viscous liquid (rubber bands as markers) or paper cones in air. Terminal velocity reached when equal distances take equal times; place first marker well below the surface.",
+   "check": "How can you show a ball-bearing falling in oil has reached terminal velocity?",
+   "answer": "Time it over successive equal distances between markers; equal times mean constant (terminal) velocity.",
+   "seen": 1,
+   "seen_where": [
+    "P2 jun2023 Q2"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g7",
+   "name": "Finding centre of gravity experimentally",
+   "source": "spec 3.2.3(d)",
+   "group": "Practical",
+   "what": "Hang a flat (lamina) object from a point with a plumb line, mark the vertical; repeat from another point. The centre of gravity is where the lines cross.",
+   "check": "How do you find the centre of gravity of an irregular card?",
+   "answer": "Suspend it from two different points; draw the plumb-line vertical each time; the intersection is the centre of gravity.",
+   "seen": 3,
+   "seen_where": [
+    "P1 nov2021 Q26",
+    "P2 jun2024 Q4",
+    "P1 jun2018 Q9"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g8",
+   "name": "Rubber bands and polythene strips",
+   "source": "spec guidance 3.4.1(d)(ii)",
+   "group": "Materials",
+   "what": "Rubber does not obey Hooke's law and its unloading curve lies below loading (energy dissipated as heat). Polythene strips deform plastically and thin (neck) before breaking.",
+   "check": "Why does a stretched rubber band warm up after repeated loading and unloading?",
+   "answer": "The unloading curve lies below the loading curve; the area between them is energy transferred to thermal energy.",
+   "seen": 4,
+   "seen_where": [
+    "P1 jun2016 Q26",
+    "P2 jun2016 Q6",
+    "P2 nov2021 Q2",
+    "P2 jun2019 Q2"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g9",
+   "name": "Young modulus method details",
+   "source": "spec 3.4.2(d)(ii)",
+   "group": "Practical",
+   "what": "Use a long thin wire so extension is measurable; measure diameter with a micrometer at several points; read extension with a marker against a fixed scale; wear goggles in case the wire snaps.",
+   "check": "Why is the wire in a Young modulus experiment long and thin?",
+   "answer": "Long gives larger extension for the same strain; thin gives larger stress for a given load, so extension is easier to measure.",
+   "seen": 4,
+   "seen_where": [
+    "P2 jun2016 Q6",
+    "P2 jun2018 Q6",
+    "P2 jun2024 Q2",
+    "P2 specimen Q4"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g10",
+   "name": "Ripple tank demonstrations",
+   "source": "spec 4.4.1(f)(ii)",
+   "group": "Practical",
+   "what": "A ripple tank with a lamp above shows wavefronts on a screen; a stroboscope freezes them. Shows reflection off barriers, refraction over shallow regions, diffraction through gaps, interference from two dippers.",
+   "check": "How is refraction shown in a ripple tank?",
+   "answer": "Place a glass plate to make a shallow region; waves slow there, wavelength shortens and wavefronts change direction.",
+   "seen": 4,
+   "seen_where": [
+    "P1 jun2017 Q25",
+    "P1 jun2017 Q26",
+    "P1 jun2023 Q17",
+    "P2 jun2023 Q5"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g11",
+   "name": "Microwave kit",
+   "source": "spec guidance 4.4.2(c)",
+   "group": "Practical",
+   "what": "Microwave transmitters emit plane-polarised waves (wavelength about 3 cm); a metal grille blocks them when its rods are parallel to the electric field; the receiver measures intensity.",
+   "check": "A grille is rotated 90 degrees between transmitter and receiver. What happens to the signal?",
+   "answer": "It changes between maximum and minimum (near zero) as the rods change from perpendicular to parallel to the oscillations.",
+   "seen": 5,
+   "seen_where": [
+    "P1 jun2018 Q26",
+    "P1 jun2025 Q25",
+    "P2 jun2016 Q2",
+    "P2 jun2018 Q7"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g12",
+   "name": "Polarising filters for light",
+   "source": "spec guidance 4.4.2(c)",
+   "group": "Practical",
+   "what": "Light passing through one Polaroid becomes plane polarised; a second filter rotated through 90 degrees (crossed) blocks it. Reflected light is partially polarised.",
+   "check": "Two polarising filters are crossed. What intensity passes, and what if one is rotated a further 90 degrees?",
+   "answer": "Crossed: almost none. Rotated another 90 degrees (parallel again): maximum transmission.",
+   "seen": 5,
+   "seen_where": [
+    "P1 jun2016 Q3",
+    "P1 jun2022 Q12",
+    "P1 jun2023 Q13",
+    "P1 jun2024 Q4"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g13",
+   "name": "Two-loudspeaker interference",
+   "source": "spec 4.4.3(e)",
+   "group": "Practical",
+   "what": "Two loudspeakers driven by one signal generator are coherent; walking parallel to them you hear loud and quiet regions (constructive and destructive interference).",
+   "check": "Why must both loudspeakers be connected to the same signal generator?",
+   "answer": "So they have the same frequency and a constant phase difference, i.e. they are coherent.",
+   "seen": 12,
+   "seen_where": [
+    "P1 jun2018 Q25",
+    "P1 jun2019 Q24",
+    "P1 jun2022 Q24",
+    "P1 jun2023 Q22"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g14",
+   "name": "Resonance tube for speed of sound",
+   "source": "spec 4.4.4(e)(ii)",
+   "group": "Practical",
+   "what": "A tube in water is raised until the note from a tuning fork resonates loudly; first resonance length is about a quarter wavelength (plus end correction). The difference between successive resonances is λ/2.",
+   "check": "First and second resonance lengths are 0.18 m and 0.54 m at 480 Hz. Find v.",
+   "answer": "Difference 0.36 m = λ/2, so λ = 0.72 m and v = 480 × 0.72 ≈ 350 m/s.",
+   "seen": 2,
+   "seen_where": [
+    "P2 jun2023 Q6",
+    "P2 jun2024 Q6"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g15",
+   "name": "Stationary waves on a string apparatus",
+   "source": "spec 4.4.4(a)",
+   "group": "Practical",
+   "what": "A vibration generator (driven by a signal generator) vibrates a string passing over a pulley with hanging masses; adjusting frequency gives stationary-wave patterns with nodes at the fixed ends.",
+   "check": "On a 1.2 m string fixed at both ends, three loops form at 60 Hz. What is the wave speed?",
+   "answer": "Three loops = 3λ/2 = 1.2 m so λ = 0.80 m; v = 60 × 0.80 = 48 m/s.",
+   "seen": 3,
+   "seen_where": [
+    "P1 jun2016 Q26",
+    "P1 jun2022 Q24",
+    "P1 nov2021 Q13"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g16",
+   "name": "Microwaves and a reflector",
+   "source": "spec 4.4.4(a)",
+   "group": "Practical",
+   "what": "Microwaves reflected from a metal plate superpose with the incident waves to form a stationary wave; moving a probe receiver finds nodes λ/2 apart.",
+   "check": "A probe moves 7.5 cm between the 1st and 6th nodes. What is the wavelength?",
+   "answer": "That is 5 node spacings: 5 × λ/2 = 7.5 cm, so λ = 3.0 cm.",
+   "seen": 2,
+   "seen_where": [
+    "P2 jun2018 Q7",
+    "P2 jun2022 Q8"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g17",
+   "name": "Ray box and semicircular block",
+   "source": "spec 4.4.2(d)(ii)",
+   "group": "Practical",
+   "what": "A ray aimed at the centre of a semicircular block's flat face travels along a radius, so it crosses the curved face undeviated; only the flat face refracts. Increase the angle to find C.",
+   "check": "Why is a semicircular block useful for finding the critical angle?",
+   "answer": "A ray along a radius hits the curved surface at 90°, so it isn't bent there; only the flat face matters.",
+   "seen": 9,
+   "seen_where": [
+    "P1 jun2018 Q26",
+    "P1 jun2019 Q24",
+    "P1 jun2024 Q18",
+    "P1 jun2025 Q22"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g18",
+   "name": "Planck constant from LEDs: method",
+   "source": "spec 4.5.1(e)",
+   "group": "Practical",
+   "what": "Raise p.d. until each LED just starts to glow (view through a tube to cut stray light); plot threshold V against 1/λ, gradient hc/e. No semiconductor theory needed.",
+   "check": "A graph of LED threshold p.d. V against 1/λ has gradient G. Write h in terms of G.",
+   "answer": "eV = hc/λ, so V = (hc/e)(1/λ); h = Ge/c.",
+   "seen": 3,
+   "seen_where": [
+    "P1 jun2024 Q26",
+    "P2 nov2021 Q7",
+    "P2 specimen Q7"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g19",
+   "name": "Gold-leaf electroscope and zinc plate",
+   "source": "spec 4.5.2(a)(ii)",
+   "group": "Quantum",
+   "what": "Negatively charged zinc on an electroscope: UV makes the leaf fall as photoelectrons leave; bright visible light does nothing; a positively charged plate does not discharge; glass between them stops UV.",
+   "check": "A negatively charged electroscope with a zinc plate is lit by intense red light. What happens and why?",
+   "answer": "Nothing: red photons each have less energy than the work function, regardless of intensity.",
+   "seen": 3,
+   "seen_where": [
+    "P1 jun2022 Q17",
+    "P1 jun2024 Q25",
+    "P2 jun2016 Q7"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g20",
+   "name": "Why graphite diffracts electrons",
+   "source": "spec 4.5.3(b)",
+   "group": "Quantum",
+   "what": "Diffraction is significant only when λ is similar to the gap; electron de Broglie wavelengths (around 10^-10 m) match the spacing between carbon atoms, so graphite acts as a grating.",
+   "check": "Why are electrons accelerated through a few kV used rather than slow electrons?",
+   "answer": "Their de Broglie wavelength becomes about the atomic spacing (~10^-10 m), so diffraction is observable.",
+   "seen": 10,
+   "seen_where": [
+    "P1 jun2016 Q4",
+    "P1 jun2023 Q3",
+    "P1 nov2020 Q24",
+    "P1 nov2021 Q19"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g21",
+   "name": "Diffraction grating (AS limits)",
+   "source": "spec guidance 4.4.3(g)(ii)",
+   "group": "Waves",
+   "what": "A grating can also be used to measure light wavelength (sharper, brighter maxima), but the d sin θ = nλ equation is only examined at A level.",
+   "check": "At AS, which equation do you use for fringes from two slits?",
+   "answer": "λ = ax/D (valid when a is much smaller than D); grating equations are A level only.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "low"
+  },
+  {
+   "id": "g22",
+   "name": "Data-loggers and ICT",
+   "source": "spec HSW",
+   "group": "Practical",
+   "what": "Data-loggers record many readings quickly at short intervals, avoid human reaction time, and feed spreadsheets for graphs and calculations (for example impulse from an F–t graph).",
+   "check": "Give two advantages of a data-logger with a motion sensor over a stopwatch.",
+   "answer": "Much higher sampling rate; no reaction-time error; data stored and graphed automatically.",
+   "seen": 7,
+   "seen_where": [
+    "P1 specimen Q22",
+    "P2 jun2018 Q3",
+    "P2 jun2024 Q2",
+    "P2 nov2021 Q3"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g23",
+   "name": "Table headings and axis labels",
+   "source": "spec 2.1.2(f)",
+   "group": "Practical",
+   "what": "Column headings and axis labels are written as quantity / unit (e.g. t / s, v / m s^-1); raw data in a column use the same number of decimal places.",
+   "check": "Write a correct table heading for length measured in millimetres.",
+   "answer": "length / mm (or L / mm), with values only (no units) in the column.",
+   "seen": 3,
+   "seen_where": [
+    "P1 nov2021 Q17",
+    "P2 jun2017 Q2",
+    "P2 jun2024 Q5"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g24",
+   "name": "Choosing graph scales",
+   "source": "spec 1.1.3(d)(i)",
+   "group": "Practical",
+   "what": "Scales should spread points over more than half the grid in each direction and use easy steps (1, 2, 5); the origin need not be included unless needed.",
+   "check": "Why is a scale going up in 3s a poor choice?",
+   "answer": "It makes plotting and reading values awkward and error-prone; use 1, 2 or 5 steps.",
+   "seen": 3,
+   "seen_where": [
+    "P2 jun2017 Q2",
+    "P1 jun2018 Q11",
+    "P2 jun2019 Q1"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g25",
+   "name": "Testing for direct proportionality",
+   "source": "spec 1.1.3(a)",
+   "group": "Practical",
+   "what": "Direct proportion needs a straight line through the origin (or a constant ratio y/x in data). A straight line with an intercept is linear but not proportional.",
+   "check": "A line on a graph is straight but has a y-intercept of 2. Is y proportional to x?",
+   "answer": "No: proportionality requires the line to pass through the origin.",
+   "seen": 18,
+   "seen_where": [
+    "P1 jun2016 Q22",
+    "P1 jun2019 Q13",
+    "P1 jun2022 Q15",
+    "P1 jun2023 Q8"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g26",
+   "name": "Sums and differences: add absolute uncertainties",
+   "source": "spec maths M1.5",
+   "group": "Practical",
+   "what": "When adding or subtracting measurements (e.g. a length from two scale readings), add the absolute uncertainties, not the percentages.",
+   "check": "Length = 45.0 cm − 12.0 cm, each ±0.1 cm. What is the uncertainty?",
+   "answer": "Add absolute values: ±0.2 cm, so length = 33.0 ± 0.2 cm.",
+   "seen": 14,
+   "seen_where": [
+    "P1 jun2016 Q26",
+    "P1 jun2022 Q24",
+    "P1 nov2020 Q22",
+    "P1 nov2021 Q22"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g27",
+   "name": "Interpolation and extrapolation",
+   "source": "spec 1.1.3(d)",
+   "group": "Practical",
+   "what": "Reading between data points (interpolation) is reliable; extending a line beyond measured data (extrapolation) assumes the trend continues and is less reliable.",
+   "check": "Why might extrapolating a resistance–temperature graph to 200 °C be unreliable?",
+   "answer": "The relationship may not continue beyond the measured range.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "low"
+  },
+  {
+   "id": "g28",
+   "name": "Repeatability and reproducibility",
+   "source": "spec HSW",
+   "group": "How science works",
+   "what": "Repeatable: same person, method and kit give similar results. Reproducible: different people or methods get similar results. Both give confidence before acceptance.",
+   "check": "What is the difference between repeatable and reproducible results?",
+   "answer": "Repeatable: same experimenter and method agree. Reproducible: other experimenters or methods agree.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g29",
+   "name": "Correlation and valid conclusions",
+   "source": "spec HSW",
+   "group": "How science works",
+   "what": "A conclusion must be supported by the data and only within the measured range; a correlation alone does not prove one variable causes the other.",
+   "check": "Data show resistance rises with temperature for a wire. What may you validly conclude?",
+   "answer": "Over the measured range, resistance increases with temperature; state the trend shown, not beyond.",
+   "seen": 1,
+   "seen_where": [
+    "P1 jun2023 Q23"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g30",
+   "name": "Checking homogeneity of equations",
+   "source": "spec 2.1.2(d)",
+   "group": "Units and data",
+   "what": "An equation is homogeneous if both sides reduce to the same SI base units; this checks it could be correct (but numbers like ½ can't be checked).",
+   "check": "Show that v² = u² + 2as is homogeneous.",
+   "answer": "Each term has units m² s^-2: (m/s)², and m s^-2 × m.",
+   "seen": 9,
+   "seen_where": [
+    "P1 jun2017 Q26",
+    "P1 jun2018 Q20",
+    "P1 jun2019 Q17",
+    "P1 nov2020 Q17"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g31",
+   "name": "Units of less obvious quantities",
+   "source": "spec 2.1.2(c)",
+   "group": "Units and data",
+   "what": "Resistivity Ω m; force constant N m^-1; Young modulus and stress Pa; strain no unit; intensity W m^-2; Planck constant J s; number density m^-3; refractive index no unit.",
+   "check": "Give the units of resistivity, strain and the Planck constant.",
+   "answer": "Ω m; no unit (a ratio); J s.",
+   "seen": 45,
+   "seen_where": [
+    "P1 jun2016 Q23",
+    "P1 jun2016 Q25",
+    "P1 jun2017 Q16",
+    "P1 jun2017 Q24"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g32",
+   "name": "N s equals kg m s^-1",
+   "source": "spec guidance 2.1.2(b)",
+   "group": "Units and data",
+   "what": "Impulse in N s and momentum in kg m s^-1 are the same unit, since 1 N = 1 kg m s^-2.",
+   "check": "Show that N s is equivalent to kg m s^-1.",
+   "answer": "N = kg m s^-2, so N s = kg m s^-2 × s = kg m s^-1.",
+   "seen": 18,
+   "seen_where": [
+    "P1 jun2017 Q19",
+    "P1 jun2017 Q23",
+    "P1 jun2018 Q15",
+    "P1 jun2018 Q4"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g33",
+   "name": "Derived units into base units",
+   "source": "spec 2.1.2(b)",
+   "group": "Units and data",
+   "what": "Express J, W, Pa, C, V and Ω in base units by working through defining equations, e.g. V = W/A = kg m² s^-3 A^-1.",
+   "check": "Express the volt in SI base units.",
+   "answer": "V = J/C = (kg m² s^-2)/(A s) = kg m² s^-3 A^-1.",
+   "seen": 11,
+   "seen_where": [
+    "P1 jun2017 Q20",
+    "P1 jun2017 Q26",
+    "P1 jun2018 Q20",
+    "P1 jun2019 Q17"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g34",
+   "name": "Data sheet contents",
+   "source": "spec 5c data sheet",
+   "group": "Units and data",
+   "what": "The booklet gives g, e, c, h, particle masses, the eV conversion, area and volume formulae, sine and cosine rules; it omits W = mg, F = ma, Ek, Ep and R = V/I.",
+   "check": "Which of these must you recall: P = Fv, Ek = ½mv², R = ρL/A?",
+   "answer": "Ek = ½mv² (the other two are on the data sheet).",
+   "seen": 2,
+   "seen_where": [
+    "P2 jun2018 Q6",
+    "P2 jun2018 Q9"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g35",
+   "name": "Sine and cosine rules for vectors",
+   "source": "spec 2.3.1(c)",
+   "group": "Maths",
+   "what": "For non-right-angled vector triangles use the cosine rule for the resultant's size and the sine rule for an angle (both given on the data sheet), or a scale drawing.",
+   "check": "Forces of 5 N and 8 N act with 60 degrees between them. Find the resultant.",
+   "answer": "Triangle angle is 120°: R² = 25 + 64 − 80cos120° = 129, R ≈ 11.4 N.",
+   "seen": 2,
+   "seen_where": [
+    "P1 jun2019 Q21",
+    "P1 jun2019 Q13"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g36",
+   "name": "Scale drawing of vectors",
+   "source": "spec guidance 2.3.1(c)",
+   "group": "Maths",
+   "what": "Draw vectors head to tail to a stated scale with a protractor; the closing side gives the resultant, measured in length and angle. Use a large scale.",
+   "check": "Why should you use a large scale in a vector scale drawing?",
+   "answer": "It reduces the percentage uncertainty in measured lengths and angles.",
+   "seen": 2,
+   "seen_where": [
+    "P1 specimen Q21",
+    "P2 jun2024 Q4"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g37",
+   "name": "Vector subtraction and change in velocity",
+   "source": "spec 2.3.1(b)",
+   "group": "Forces and motion",
+   "what": "To subtract a vector, add its reverse. Change in velocity = final − initial, so a reversal of direction gives a change larger than either speed.",
+   "check": "A ball hits a wall at 6 m/s and rebounds at 4 m/s. What is the change in velocity?",
+   "answer": "10 m/s directed away from the wall (taking that as positive, 4 − (−6)).",
+   "seen": 7,
+   "seen_where": [
+    "P1 jun2018 Q2",
+    "P2 jun2023 Q4",
+    "P1 jun2025 Q15",
+    "P1 jun2025 Q21"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g38",
+   "name": "Examples of scalars and vectors",
+   "source": "spec guidance 2.3.1(a)",
+   "group": "Units and data",
+   "what": "Be ready to give examples: scalars include mass, time, energy, power, charge, density, speed; vectors include force, weight, momentum, impulse, displacement, velocity, acceleration.",
+   "check": "Is each a scalar or vector: work done, momentum, current, weight?",
+   "answer": "Work: scalar; momentum: vector; current: scalar at AS; weight: vector.",
+   "seen": 1,
+   "seen_where": [
+    "P1 jun2016 Q21"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g39",
+   "name": "Small-angle approximation",
+   "source": "spec maths M4.6",
+   "group": "Maths",
+   "what": "For small angles in radians, sin θ ≈ tan θ ≈ θ and cos θ ≈ 1; this is why fringe spacing gives λ = ax/D.",
+   "check": "Why is λ = ax/D only valid when a is much smaller than D?",
+   "answer": "The derivation uses sin θ ≈ tan θ for small angles, true only when fringe angles are small.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g40",
+   "name": "Algebra symbols",
+   "source": "spec maths M2.1",
+   "group": "Maths",
+   "what": "Know =, <, <<, >>, >, ∝, ≈ and Δ: e.g. ≪ means much less than, ∝ proportional to, Δ a change in.",
+   "check": "What does F ∝ Δp/Δt tell you?",
+   "answer": "Force is proportional to the rate of change of momentum.",
+   "seen": 8,
+   "seen_where": [
+    "P1 jun2019 Q13",
+    "P2 jun2016 Q1",
+    "P2 jun2016 Q2",
+    "P2 jun2024 Q1"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g41",
+   "name": "Solving quadratics",
+   "source": "spec maths M2.4",
+   "group": "Maths",
+   "what": "Equations like s = ut + ½at² can need the quadratic formula to find t; pick the physically sensible root.",
+   "check": "A stone is thrown up at 10 m/s from a 15 m cliff. How long until it hits the sea?",
+   "answer": "−15 = 10t − 4.905t²: t ≈ 3.2 s (reject the negative root).",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g42",
+   "name": "Sketching standard relationships",
+   "source": "spec maths M3.12",
+   "group": "Maths",
+   "what": "Sketch y = kx, y = kx², y = k/x, y = k/x², y = sin x and y = cos x, including where they cross axes and asymptotes.",
+   "check": "Sketch elastic potential energy against extension for a spring obeying Hooke's law.",
+   "answer": "A parabola from the origin, curving upward (E = ½kx²).",
+   "seen": 15,
+   "seen_where": [
+    "P1 jun2016 Q24",
+    "P1 jun2017 Q23",
+    "P1 jun2018 Q22",
+    "P1 jun2024 Q24"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g43",
+   "name": "Spreadsheet and iterative modelling",
+   "source": "spec maths M3.9",
+   "group": "Maths",
+   "what": "Rates of change can be modelled in small time steps (e.g. new v = old v + aΔt, with a recalculated each step for drag) without calculus.",
+   "check": "In a step-by-step model of a falling object with drag, why does acceleration change each step?",
+   "answer": "Drag depends on speed; speed changes each step, so resultant force and acceleration are recalculated.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "low"
+  },
+  {
+   "id": "g44",
+   "name": "Simple probability and electron waves",
+   "source": "spec maths M1.3",
+   "group": "Quantum",
+   "what": "In electron diffraction, bright rings are where electrons are most likely to arrive; wave intensity relates to the probability of finding an electron there.",
+   "check": "What do bright rings on an electron diffraction screen represent?",
+   "answer": "Places where many electrons arrive, i.e. high probability of detection (constructive interference of electron waves).",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "low"
+  },
+  {
+   "id": "g45",
+   "name": "Simultaneous equations",
+   "source": "GCSE maths",
+   "group": "Maths",
+   "what": "Two unknowns from two equations, e.g. E and r from two sets of (V, I) values using E = V + Ir.",
+   "check": "A cell gives 1.40 V at 0.20 A and 1.20 V at 0.60 A. Find r and E.",
+   "answer": "Subtract: 0.20 = 0.40r, r = 0.50 Ω; E = 1.40 + 0.20 × 0.50 = 1.50 V.",
+   "seen": 1,
+   "seen_where": [
+    "P1 nov2021 Q24"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g46",
+   "name": "Testing ratios in data",
+   "source": "GCSE maths",
+   "group": "Maths",
+   "what": "Without a graph, check proportionality by showing y/x is constant across readings (or xy constant for inverse proportion), allowing for uncertainty.",
+   "check": "x = 2, 4, 6 gives y = 5.0, 10.1, 14.9. Are they proportional?",
+   "answer": "y/x ≈ 2.50, 2.53, 2.48: roughly constant, so yes within uncertainty.",
+   "seen": 5,
+   "seen_where": [
+    "P1 jun2017 Q21",
+    "P2 jun2025 Q1",
+    "P1 nov2020 Q3",
+    "P2 jun2018 Q1"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g47",
+   "name": "Average vs instantaneous speed",
+   "source": "spec 3.1.1(a)",
+   "group": "Forces and motion",
+   "what": "Average speed = total distance ÷ total time; instantaneous speed is the gradient of the tangent at one moment. They differ whenever speed changes.",
+   "check": "How do you find instantaneous velocity at 3 s from a curved s–t graph?",
+   "answer": "Draw a tangent at t = 3 s and calculate its gradient.",
+   "seen": 6,
+   "seen_where": [
+    "P1 jun2018 Q21",
+    "P2 jun2016 Q7",
+    "P2 jun2024 Q1",
+    "P1 jun2023 Q25"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g48",
+   "name": "Acceleration–time graphs",
+   "source": "spec 3.1.1(b)",
+   "group": "Forces and motion",
+   "what": "The area under an acceleration–time graph is the change in velocity; a horizontal line means constant acceleration.",
+   "check": "An a–t graph shows 3 m s^-2 for 4 s. What is the velocity change?",
+   "answer": "Area = 3 × 4 = 12 m/s.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g49",
+   "name": "Graphs for a bouncing ball",
+   "source": "spec 3.1.1(b)",
+   "group": "Forces and motion",
+   "what": "On a v–t graph for a dropped bouncing ball, velocity changes sign at each bounce; gradient stays g between bounces; areas above and below the axis give displacements in opposite directions.",
+   "check": "What is the gradient of the v–t graph for a bouncing ball while it is in the air?",
+   "answer": "Constant, equal to g (about 9.81 m s^-2) downward, both rising and falling.",
+   "seen": 8,
+   "seen_where": [
+    "P1 jun2016 Q14",
+    "P1 jun2016 Q24",
+    "P1 jun2019 Q22",
+    "P1 jun2024 Q24"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g50",
+   "name": "Projectile at the highest point",
+   "source": "spec 3.1.3(b)",
+   "group": "Forces and motion",
+   "what": "For a projectile launched at an angle, vertical velocity is zero at the top but horizontal velocity is unchanged, so the speed there is the horizontal component, not zero.",
+   "check": "A ball is kicked at 20 m/s at 30 degrees. What is its speed at the top?",
+   "answer": "20 cos 30° ≈ 17 m/s (only horizontal velocity remains).",
+   "seen": 7,
+   "seen_where": [
+    "P1 jun2016 Q14",
+    "P1 jun2016 Q18",
+    "P1 jun2024 Q24",
+    "P1 jun2025 Q16"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g51",
+   "name": "Air resistance on a projectile",
+   "source": "spec 3.2.2(c)",
+   "group": "Forces and motion",
+   "what": "With air resistance, a projectile reaches a lower height and shorter range, and its path is no longer symmetrical (steeper descent).",
+   "check": "How does air resistance change the shape of a projectile's path?",
+   "answer": "Lower maximum height, shorter range, and a steeper, asymmetric descent.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g52",
+   "name": "Weight components on a slope",
+   "source": "spec 3.2.1(f)",
+   "group": "Forces and motion",
+   "what": "On an incline at angle θ, weight resolves into mg sin θ down the slope and mg cos θ into the slope (balanced by normal contact force).",
+   "check": "A 2.0 kg block rests on a frictionless 30 degree slope. What is its acceleration?",
+   "answer": "a = g sin 30° ≈ 4.9 m s^-2 down the slope.",
+   "seen": 10,
+   "seen_where": [
+    "P1 jun2016 Q21",
+    "P1 jun2016 Q7",
+    "P1 jun2017 Q13",
+    "P1 jun2017 Q17"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g53",
+   "name": "Lifts and apparent weight",
+   "source": "spec 3.2.1(f)",
+   "group": "Forces and motion",
+   "what": "In a lift, the normal force (scale reading) = m(g + a) when accelerating upward and m(g − a) when accelerating downward; it equals mg at constant velocity.",
+   "check": "A 60 kg person is in a lift accelerating upward at 2 m s^-2. What does a scale read?",
+   "answer": "N = 60 × (9.81 + 2) ≈ 710 N.",
+   "seen": 5,
+   "seen_where": [
+    "P1 jun2016 Q2",
+    "P1 jun2022 Q11",
+    "P1 jun2025 Q21",
+    "P2 jun2018 Q1"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g54",
+   "name": "Connected bodies and pulleys",
+   "source": "spec 3.2.1(e)",
+   "group": "Forces and motion",
+   "what": "For objects joined by a string, treat the system as one mass for acceleration, then use one body's free-body diagram to find tension.",
+   "check": "A 2 kg trolley on a frictionless table is pulled by a 1 kg hanging mass. Find the acceleration.",
+   "answer": "a = 1 × 9.81 / 3 ≈ 3.3 m s^-2.",
+   "seen": 2,
+   "seen_where": [
+    "P2 jun2022 Q1",
+    "P2 jun2022 Q2"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g55",
+   "name": "Drag proportional to v squared",
+   "source": "spec 3.2.2(b)",
+   "group": "Forces and motion",
+   "what": "At everyday speeds in air, drag is roughly proportional to speed squared, so doubling speed quadruples drag (and greatly increases power needed: P = Dv).",
+   "check": "If drag ∝ v², how does the power needed against drag change when speed doubles?",
+   "answer": "Drag × 4 and speed × 2, so power × 8.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g56",
+   "name": "Parachute and skydiver motion",
+   "source": "spec 3.2.2(c)",
+   "group": "Forces and motion",
+   "what": "Opening a parachute raises drag above weight so the diver decelerates until a new, lower terminal velocity is reached; acceleration is upward during that phase.",
+   "check": "Sketch and explain v–t after a parachute opens.",
+   "answer": "Velocity falls steeply then levels off at a lower terminal velocity as drag decreases back to equal weight.",
+   "seen": 2,
+   "seen_where": [
+    "P1 nov2020 Q22",
+    "P1 specimen Q22"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g57",
+   "name": "Toppling and stability",
+   "source": "spec 3.2.3(d)",
+   "group": "Forces and motion",
+   "what": "An object topples when the line of action of its weight passes outside its base; a low centre of gravity and wide base increase stability.",
+   "check": "Why does a tall cupboard topple more easily than a low, wide one?",
+   "answer": "Its weight's line of action moves outside its base at a smaller tilt angle.",
+   "seen": 1,
+   "seen_where": [
+    "P2 nov2020 Q6"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g58",
+   "name": "Weight of a uniform object acts at its centre",
+   "source": "spec 3.2.3(d)",
+   "group": "Forces and motion",
+   "what": "For a uniform beam or rod the weight acts at its midpoint; use this distance in moments calculations.",
+   "check": "A uniform 3 m plank of weight 200 N is pivoted at one end. What is the moment of its weight?",
+   "answer": "200 × 1.5 = 300 N m.",
+   "seen": 5,
+   "seen_where": [
+    "P1 jun2018 Q9",
+    "P1 jun2022 Q20",
+    "P1 nov2020 Q10",
+    "P1 nov2020 Q15"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g59",
+   "name": "Closed triangle of forces",
+   "source": "spec 3.2.3(f)",
+   "group": "Forces and motion",
+   "what": "Three coplanar forces in equilibrium form a closed triangle when drawn head to tail; use it (or resolving) to find an unknown force.",
+   "check": "A picture hangs from two strings. How can a triangle of forces find the tensions?",
+   "answer": "Draw weight and the two tension directions head to tail to close a triangle; side lengths give the tensions.",
+   "seen": 6,
+   "seen_where": [
+    "P1 jun2016 Q7",
+    "P1 jun2018 Q22",
+    "P2 nov2020 Q6",
+    "P2 specimen Q1"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g60",
+   "name": "Atmospheric pressure and pressure at depth",
+   "source": "spec 3.2.4(b)(c)",
+   "group": "Forces and motion",
+   "what": "Air pressure at sea level is about 100 kPa. hρg gives the extra pressure from a fluid column, independent of container shape; total pressure = atmospheric + hρg.",
+   "check": "What is the total pressure 10 m under water?",
+   "answer": "1.0 × 10^5 + 10 × 1000 × 9.81 ≈ 2.0 × 10^5 Pa.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g61",
+   "name": "Upthrust from a pressure difference",
+   "source": "spec 3.2.4(c)",
+   "group": "Forces and motion",
+   "what": "Pressure is greater on the bottom of an immersed object than the top, so there is a net upward force; this upthrust equals the weight of fluid displaced.",
+   "check": "Explain why a submerged block experiences upthrust.",
+   "answer": "Pressure increases with depth, so the upward force on the lower face exceeds the downward force on the top face.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g62",
+   "name": "Floating objects",
+   "source": "spec 3.2.4(c)",
+   "group": "Forces and motion",
+   "what": "A floating object displaces its own weight of fluid; fraction submerged = object density ÷ fluid density.",
+   "check": "A wooden block of density 600 kg m^-3 floats in water. What fraction is submerged?",
+   "answer": "600 / 1000 = 0.60 (60%).",
+   "seen": 4,
+   "seen_where": [
+    "P1 jun2025 Q10",
+    "P1 specimen Q3",
+    "P2 jun2025 Q1",
+    "P2 nov2021 Q4"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g63",
+   "name": "Derive Ek = ½mv²",
+   "source": "spec guidance 3.3.2(a)",
+   "group": "Momentum and energy",
+   "what": "From rest, a constant force F over distance s does work Fs = mas, and v² = 2as, so Fs = ½mv².",
+   "check": "Derive the kinetic energy formula from work done and suvat.",
+   "answer": "W = Fs = (ma)s; v² = 2as so as = v²/2; W = ½mv².",
+   "seen": 3,
+   "seen_where": [
+    "P2 jun2018 Q9",
+    "P2 jun2025 Q5",
+    "P2 jun2023 Q4"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g64",
+   "name": "Derive Ep = mgh",
+   "source": "spec guidance 3.3.2(b)",
+   "group": "Momentum and energy",
+   "what": "Lifting at constant speed needs force equal to weight mg; work done over height h is mgh, stored as gravitational potential energy.",
+   "check": "Derive the gravitational potential energy equation.",
+   "answer": "Force = weight = mg; work = force × distance = mgh, which becomes GPE.",
+   "seen": 3,
+   "seen_where": [
+    "P2 jun2018 Q9",
+    "P2 jun2025 Q5",
+    "P2 jun2023 Q4"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g65",
+   "name": "Derive P = Fv",
+   "source": "spec guidance 3.3.3(b)",
+   "group": "Momentum and energy",
+   "what": "Power = work/time = Fx/t, and x/t = v at constant speed, so P = Fv.",
+   "check": "Show that power equals force times velocity.",
+   "answer": "P = W/t = Fx/t = F(x/t) = Fv.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g66",
+   "name": "Work against resistive forces",
+   "source": "spec 3.3.1(e)",
+   "group": "Momentum and energy",
+   "what": "Work done against friction or drag is transferred to thermal energy of the surroundings; it explains why final KE is less than lost GPE.",
+   "check": "A cyclist freewheels downhill, losing 4000 J of GPE but gaining 3000 J KE. Where did the rest go?",
+   "answer": "1000 J did work against friction and air resistance, heating the surroundings.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g67",
+   "name": "Braking distance proportional to v squared",
+   "source": "spec 3.1.2(c)",
+   "group": "Forces and motion",
+   "what": "With a constant braking force, F × braking distance = ½mv², so braking distance ∝ v²; thinking distance ∝ v (fixed reaction time).",
+   "check": "A car's speed doubles. What happens to thinking and braking distances?",
+   "answer": "Thinking distance doubles; braking distance quadruples.",
+   "seen": 5,
+   "seen_where": [
+    "P1 jun2016 Q22",
+    "P1 nov2020 Q13",
+    "P2 jun2017 Q1",
+    "P1 jun2018 Q10"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g68",
+   "name": "Speed checks and cameras",
+   "source": "spec HSW",
+   "group": "How science works",
+   "what": "Average-speed cameras time a car between two points a known distance apart; spot cameras use two images a known time apart and road markings.",
+   "check": "How do average-speed cameras calculate speed?",
+   "answer": "Distance between cameras divided by the time between the two recorded number-plate images.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "low"
+  },
+  {
+   "id": "g69",
+   "name": "Elastic limit vs limit of proportionality",
+   "source": "spec 3.4.2(f)",
+   "group": "Materials",
+   "what": "Limit of proportionality: end of the straight part. Elastic limit: beyond it the material does not return to its original length. They are close but not the same point.",
+   "check": "A wire is loaded just past its elastic limit then unloaded. What do you observe?",
+   "answer": "It is permanently extended (plastic deformation); it doesn't return to its original length.",
+   "seen": 1,
+   "seen_where": [
+    "P2 jun2017 Q2"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g70",
+   "name": "½Fx needs Hooke's law",
+   "source": "spec 3.4.2(a)(b)",
+   "group": "Materials",
+   "what": "E = ½Fx and ½kx² only apply to the linear (Hooke's law) region; beyond it, find the area under the curve by counting squares.",
+   "check": "When can you not use E = ½kx² for a stretched band?",
+   "answer": "When force is not proportional to extension (beyond the limit of proportionality or for rubber).",
+   "seen": 6,
+   "seen_where": [
+    "P1 jun2019 Q21",
+    "P1 nov2020 Q23",
+    "P1 nov2020 Q9",
+    "P1 nov2021 Q7"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g71",
+   "name": "Young modulus is a material property",
+   "source": "spec 3.4.2(d)",
+   "group": "Materials",
+   "what": "Young modulus depends only on the material, not its dimensions; the force constant k depends on length and area (k = EA/L).",
+   "check": "Two wires of the same steel, one twice as long. Compare their Young modulus and force constant.",
+   "answer": "Same Young modulus; the longer wire has half the force constant.",
+   "seen": 6,
+   "seen_where": [
+    "P1 jun2016 Q17",
+    "P1 jun2022 Q16",
+    "P1 nov2020 Q8",
+    "P2 jun2016 Q7"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g72",
+   "name": "Examples of material types",
+   "source": "spec 3.4.2(e)",
+   "group": "Materials",
+   "what": "Ductile: copper, steel (drawn into wires, large plastic region). Brittle: glass, cast iron, ceramics (fracture with little plastic deformation). Polymeric: rubber, polythene.",
+   "check": "Give one example each of ductile, brittle and polymeric materials.",
+   "answer": "Copper; glass; rubber.",
+   "seen": 4,
+   "seen_where": [
+    "P1 jun2024 Q16",
+    "P1 nov2020 Q19",
+    "P2 jun2016 Q6",
+    "P2 jun2019 Q2"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g73",
+   "name": "Car safety features",
+   "source": "spec HSW",
+   "group": "Momentum and energy",
+   "what": "Crumple zones, airbags and seat belts increase the time over which momentum changes, reducing the force; mandatory seat belts show science informing law.",
+   "check": "Use F = Δp/Δt to explain how an airbag reduces injury.",
+   "answer": "Same change in momentum over a longer time gives a smaller average force on the person.",
+   "seen": 2,
+   "seen_where": [
+    "P2 jun2018 Q2",
+    "P2 jun2022 Q2"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g74",
+   "name": "Rebound momentum change",
+   "source": "spec 3.5.1(c)",
+   "group": "Momentum and energy",
+   "what": "When an object reverses direction, Δp = m(v + u) using speeds, because the signs differ; the force on a wall is larger than for an object that stops.",
+   "check": "A 0.20 kg ball hits a wall at 5 m/s and rebounds at 3 m/s. Find Δp.",
+   "answer": "0.20 × (3 + 5) = 1.6 kg m/s away from the wall.",
+   "seen": 7,
+   "seen_where": [
+    "P1 jun2019 Q22",
+    "P1 jun2023 Q24",
+    "P1 jun2025 Q14",
+    "P2 jun2025 Q6"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g75",
+   "name": "Force from a stream of mass",
+   "source": "spec 3.5.1(c)",
+   "group": "Momentum and energy",
+   "what": "For a jet of water, air or sand, force = (mass per second) × change in velocity; mass per second = ρ × A × v.",
+   "check": "Water hits a wall at 4 m/s at 2 kg per second and stops. What force acts?",
+   "answer": "F = 2 × 4 = 8 N.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g76",
+   "name": "Relative speed in elastic collisions",
+   "source": "spec 3.5.2(c)",
+   "group": "Momentum and energy",
+   "what": "Kinetic energy is conserved only in perfectly elastic collisions; then the speed of approach equals the speed of separation. Total energy is always conserved.",
+   "check": "How can you show a collision is inelastic from data?",
+   "answer": "Calculate total kinetic energy before and after; if it has decreased, the collision is inelastic.",
+   "seen": 2,
+   "seen_where": [
+    "P2 jun2018 Q5",
+    "P2 nov2021 Q3"
+   ],
+   "priority": "low"
+  },
+  {
+   "id": "g77",
+   "name": "Charges of electron and proton",
+   "source": "spec guidance 4.1.1(c)",
+   "group": "Electricity",
+   "what": "An electron has charge −e and a proton +e (e = 1.60 × 10^-19 C); an ion's charge is a whole-number multiple of e.",
+   "check": "What is the charge on an ion that has lost two electrons?",
+   "answer": "+2e = +3.2 × 10^-19 C.",
+   "seen": 3,
+   "seen_where": [
+    "P1 jun2022 Q17",
+    "P1 nov2020 Q7",
+    "P1 nov2021 Q14"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g78",
+   "name": "Conductors, semiconductors, insulators by n",
+   "source": "spec 4.1.2(c)",
+   "group": "Electricity",
+   "what": "Metals have very large n (about 10^28–10^29 m^-3), semiconductors much smaller and rising with temperature, insulators very small; for the same current, smaller n means larger drift velocity.",
+   "check": "Why is the drift velocity higher in a semiconductor than a metal for the same current and area?",
+   "answer": "I = Anev: semiconductors have far smaller n, so v must be larger.",
+   "seen": 5,
+   "seen_where": [
+    "P1 jun2024 Q25",
+    "P1 nov2021 Q9",
+    "P1 specimen Q20",
+    "P2 jun2019 Q4"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g79",
+   "name": "Drift speed is slow",
+   "source": "spec 4.1.2(a)",
+   "group": "Electricity",
+   "what": "Drift velocities in metals are typically under a millimetre per second, yet a lamp lights instantly because electrons all along the circuit start moving together.",
+   "check": "If drift speed is so slow, why does a lamp light almost instantly?",
+   "answer": "Free electrons are throughout the wire; the electric field reaches them all almost at once, so they all start drifting.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g80",
+   "name": "Drift velocity in thinner wire",
+   "source": "spec 4.1.2(b)",
+   "group": "Electricity",
+   "what": "In series sections of the same metal, current is the same, so drift velocity is inversely proportional to cross-sectional area (v ∝ 1/A, so v ∝ 1/d²).",
+   "check": "Wire B has half the diameter of wire A in series. Compare drift velocities.",
+   "answer": "Area is a quarter, so drift velocity in B is 4 times that in A.",
+   "seen": 3,
+   "seen_where": [
+    "P1 jun2016 Q17",
+    "P1 nov2021 Q10",
+    "P2 specimen Q4"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g81",
+   "name": "Number density from atomic data",
+   "source": "spec 4.1.2(b)",
+   "group": "Electricity",
+   "what": "If each atom gives one free electron, n = (density × Avogadro constant) ÷ molar mass, using N_A from the data sheet.",
+   "check": "Copper has density 8900 kg m^-3 and molar mass 0.0635 kg/mol. Estimate n.",
+   "answer": "n = 8900 × 6.02 × 10^23 / 0.0635 ≈ 8.4 × 10^28 m^-3.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "low"
+  },
+  {
+   "id": "g82",
+   "name": "Thermistor I–V characteristic",
+   "source": "spec 4.2.3(c)(i)",
+   "group": "Electricity",
+   "what": "For an NTC thermistor the I–V graph curves upward (away from the V axis): as current heats it, resistance falls, so current rises faster than p.d.",
+   "check": "Sketch and explain the I–V graph for an NTC thermistor.",
+   "answer": "Curve gets steeper with p.d.; heating lowers resistance as more charge carriers are released.",
+   "seen": 10,
+   "seen_where": [
+    "P1 jun2017 Q24",
+    "P1 jun2018 Q24",
+    "P1 jun2022 Q14",
+    "P1 jun2024 Q23"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g83",
+   "name": "Diode and LED threshold p.d.",
+   "source": "spec 4.2.3(c)(i)",
+   "group": "Electricity",
+   "what": "A diode conducts only above a threshold p.d. in forward bias (about 0.6 V for silicon; around 1.5–3 V for LEDs, depending on colour); in reverse bias its resistance is very high.",
+   "check": "Why is a diode's resistance very large below about 0.6 V?",
+   "answer": "Almost no current flows until the threshold p.d. is reached, so R = V/I is very large.",
+   "seen": 2,
+   "seen_where": [
+    "P1 jun2016 Q27",
+    "P1 nov2021 Q23"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g84",
+   "name": "Why a filament lamp's resistance rises",
+   "source": "spec 4.2.3(c)(i)",
+   "group": "Electricity",
+   "what": "Higher current heats the filament; metal ions vibrate more, so electrons collide more often, reducing drift and raising resistance.",
+   "check": "Explain in terms of particles why lamp resistance increases with current.",
+   "answer": "Higher temperature makes lattice ions vibrate more, so electrons collide more frequently, increasing resistance.",
+   "seen": 10,
+   "seen_where": [
+    "P1 jun2017 Q26",
+    "P1 jun2022 Q24",
+    "P1 nov2020 Q18",
+    "P1 specimen Q14"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g85",
+   "name": "Resistivity change: metals vs semiconductors",
+   "source": "spec 4.2.4(b)",
+   "group": "Electricity",
+   "what": "Metals: n stays constant; resistivity rises slightly with temperature from more ion vibrations. Semiconductors (thermistors, LDRs): heat or light frees many more carriers, so resistance falls.",
+   "check": "Why does an LDR's resistance fall when light intensity rises?",
+   "answer": "More charge carriers are freed, so number density n increases and resistance decreases.",
+   "seen": 13,
+   "seen_where": [
+    "P1 jun2017 Q24",
+    "P1 jun2022 Q25",
+    "P1 jun2023 Q20",
+    "P1 jun2023 Q23"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g86",
+   "name": "Potentiometer as a potential divider",
+   "source": "spec guidance 4.3.3(a)",
+   "group": "Electricity",
+   "what": "A potentiometer (a resistor with a sliding contact connected as a divider) can provide any output p.d. from zero to the supply p.d., unlike a series variable resistor.",
+   "check": "Why use a potentiometer rather than a variable resistor in series to vary a lamp's p.d. down to zero?",
+   "answer": "A potentiometer output can go to 0 V; a series resistor can only reduce the p.d., never to zero.",
+   "seen": 10,
+   "seen_where": [
+    "P1 jun2016 Q25",
+    "P1 jun2019 Q10",
+    "P1 jun2023 Q18",
+    "P1 nov2021 Q23"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g87",
+   "name": "Designing a sensing circuit",
+   "source": "spec 4.3.3(b)(c)(ii)",
+   "group": "Electricity",
+   "what": "In a divider, the output across a component rises when its share of resistance rises; place the LDR or thermistor so V out rises (or falls) as required.",
+   "check": "A thermistor is in series with a fixed resistor. Across which should V out be taken so it rises with temperature?",
+   "answer": "Across the fixed resistor: the thermistor's resistance falls, so the fixed resistor's share of p.d. rises.",
+   "seen": 1,
+   "seen_where": [
+    "P2 nov2021 Q6"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g88",
+   "name": "Ideal meters and voltmeter loading",
+   "source": "spec 4.3.1(e)",
+   "group": "Electricity",
+   "what": "An ideal ammeter has zero resistance and an ideal voltmeter infinite resistance; a real voltmeter in parallel with a large resistor lowers the combined resistance and changes readings.",
+   "check": "Why must a voltmeter have very high resistance?",
+   "answer": "So it draws negligible current and does not change the p.d. it measures.",
+   "seen": 3,
+   "seen_where": [
+    "P1 jun2016 Q27",
+    "P1 jun2017 Q24",
+    "P1 jun2019 Q10"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g89",
+   "name": "E.m.f.s in series and opposition",
+   "source": "spec 4.3.1(f)",
+   "group": "Electricity",
+   "what": "Cells in series aiding add their e.m.f.s and internal resistances; cells facing opposite ways subtract. Identical cells in parallel keep the same e.m.f. with lower internal resistance.",
+   "check": "Two 1.5 V cells are connected in series but one is reversed. What is the net e.m.f.?",
+   "answer": "Zero: the e.m.f.s cancel.",
+   "seen": 2,
+   "seen_where": [
+    "P1 jun2016 Q25",
+    "P1 jun2024 Q21"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g90",
+   "name": "Choosing internal resistance for a use",
+   "source": "spec HSW",
+   "group": "Electricity",
+   "what": "A car battery needs very low internal resistance to deliver a huge starting current; high-voltage supplies have high internal resistance to limit current for safety. Energy wasted in r is I²r.",
+   "check": "Why do EHT supplies have a large internal resistance?",
+   "answer": "It limits the current if shorted or touched, making them safer.",
+   "seen": 1,
+   "seen_where": [
+    "P1 jun2024 Q21"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g91",
+   "name": "Short-circuit current",
+   "source": "spec 4.3.2(c)(i)",
+   "group": "Electricity",
+   "what": "With zero external resistance, the maximum current is E/r and all energy is dissipated inside the source, which can overheat.",
+   "check": "A 9.0 V battery with r = 2.0 Ω is short-circuited. What current flows?",
+   "answer": "I = 9.0 / 2.0 = 4.5 A.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "low"
+  },
+  {
+   "id": "g92",
+   "name": "Maximum power to a load",
+   "source": "spec 4.3.2(c)(i)",
+   "group": "Electricity",
+   "what": "Power delivered to an external resistor is greatest when its resistance equals the source's internal resistance; beyond AS core but sometimes set as data analysis.",
+   "check": "For a cell with r = 1.5 Ω, which load resistance receives most power?",
+   "answer": "1.5 Ω (equal to the internal resistance).",
+   "seen": 1,
+   "seen_where": [
+    "P2 jun2022 Q7"
+   ],
+   "priority": "low"
+  },
+  {
+   "id": "g93",
+   "name": "Cost of electrical energy",
+   "source": "spec 4.2.5(c)",
+   "group": "Electricity",
+   "what": "Cost = energy in kW h × price per kW h; energy (kW h) = power (kW) × time (h). Link with efficiency to compare devices.",
+   "check": "A 2.5 kW heater runs 3 hours at 30p per kW h. Cost?",
+   "answer": "2.5 × 3 = 7.5 kW h; cost = 7.5 × 30 = 225p (£2.25).",
+   "seen": 6,
+   "seen_where": [
+    "P1 jun2019 Q7",
+    "P1 specimen Q26",
+    "P2 jun2017 Q2",
+    "P2 jun2017 Q4"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g94",
+   "name": "Energy-saving lamps",
+   "source": "spec HSW",
+   "group": "Electricity",
+   "what": "LED lamps give the same light output for far less power than filament lamps, saving energy and money and reducing emissions from power stations.",
+   "check": "A 60 W filament bulb is replaced by a 10 W LED. Energy saved in 1000 h?",
+   "answer": "50 W × 1000 h = 50 kW h.",
+   "seen": 2,
+   "seen_where": [
+    "P1 jun2019 Q7",
+    "P1 specimen Q26"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g95",
+   "name": "Reading displacement–distance and displacement–time graphs",
+   "source": "spec 4.4.1(e)",
+   "group": "Waves",
+   "what": "A displacement–distance graph is a snapshot (wavelength from repeat length); a displacement–time graph is one point over time (period from repeat). Longitudinal waves are shown the same way, with compressions and rarefactions.",
+   "check": "From which wave graph can you read the period directly?",
+   "answer": "A displacement–time graph for one point on the wave.",
+   "seen": 10,
+   "seen_where": [
+    "P1 jun2017 Q22",
+    "P1 jun2019 Q3",
+    "P1 jun2022 Q22",
+    "P1 jun2023 Q22"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g96",
+   "name": "Frequency unchanged on refraction",
+   "source": "spec 4.4.1(f)(i)",
+   "group": "Waves",
+   "what": "When a wave enters a new medium its speed and wavelength change but its frequency stays the same (set by the source); slowing down bends it toward the normal.",
+   "check": "Light enters glass (n = 1.5) from air. What happens to its speed, frequency and wavelength?",
+   "answer": "Speed and wavelength fall by a factor 1.5; frequency stays the same.",
+   "seen": 5,
+   "seen_where": [
+    "P1 jun2018 Q25",
+    "P1 jun2018 Q26",
+    "P1 jun2022 Q19",
+    "P2 jun2024 Q5"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g97",
+   "name": "When diffraction is significant",
+   "source": "spec guidance 4.4.1(f)(i)",
+   "group": "Waves",
+   "what": "Diffraction is most noticeable when the gap or obstacle is about the same size as the wavelength, e.g. sound spreading through doorways, long radio waves bending round hills.",
+   "check": "Why can you hear but not see someone around a doorway?",
+   "answer": "Sound wavelengths (~1 m) are similar to the doorway width; light's (~500 nm) are far smaller, so light hardly diffracts.",
+   "seen": 9,
+   "seen_where": [
+    "P1 jun2016 Q4",
+    "P1 jun2018 Q26",
+    "P1 nov2021 Q25",
+    "P1 specimen Q26"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g98",
+   "name": "Intensity from a point source",
+   "source": "spec 4.4.1(g)",
+   "group": "Waves",
+   "what": "Power spreads over a sphere of area 4πr² (data sheet), so I = P/(4πr²): doubling distance quarters the intensity.",
+   "check": "A 0.60 W source radiates equally. What is the intensity 2.0 m away?",
+   "answer": "I = 0.60 / (4π × 2.0²) ≈ 0.012 W m^-2.",
+   "seen": 6,
+   "seen_where": [
+    "P1 jun2018 Q27",
+    "P1 nov2021 Q22",
+    "P2 jun2017 Q2",
+    "P2 jun2017 Q3"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g99",
+   "name": "Nature of EM waves",
+   "source": "spec 4.4.2(a)",
+   "group": "Waves",
+   "what": "EM waves are transverse oscillations of electric and magnetic fields at right angles; they need no medium, travel at c in a vacuum, and can all be polarised, reflected, refracted and diffracted.",
+   "check": "State two properties shared by all electromagnetic waves.",
+   "answer": "Transverse; travel at 3.00 × 10^8 m/s in a vacuum (also: can be polarised, need no medium).",
+   "seen": 1,
+   "seen_where": [
+    "P2 nov2020 Q1"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g100",
+   "name": "Polarisation applications",
+   "source": "spec HSW",
+   "group": "Waves",
+   "what": "Polaroid sunglasses cut glare because reflected light is partly polarised; TV/radio aerials must align with the transmitted polarisation; LCD screens use polarisers.",
+   "check": "Why do Polaroid sunglasses reduce glare from water?",
+   "answer": "Light reflected off water is partly plane polarised; the filter is aligned to absorb that orientation.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g101",
+   "name": "Refractive index of air and n ≥ 1",
+   "source": "spec 4.4.2(d)",
+   "group": "Waves",
+   "what": "Refractive index of air is taken as 1.00 (vacuum exactly 1); every material has n of 1 or more because light is never faster than c.",
+   "check": "Why can't a material have refractive index 0.8?",
+   "answer": "It would mean light travels faster than c in it (v = c/n), which is impossible.",
+   "seen": 1,
+   "seen_where": [
+    "P2 jun2022 Q5"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g102",
+   "name": "Optical fibres",
+   "source": "spec 4.4.2(e)",
+   "group": "Waves",
+   "what": "Optical fibres keep light in by total internal reflection; cladding of lower refractive index protects the core and prevents signal leakage. Used in endoscopes and communications.",
+   "check": "Why must the cladding have a lower refractive index than the core?",
+   "answer": "TIR only occurs going from higher to lower refractive index, so light stays in the core.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g103",
+   "name": "Adding waves graphically",
+   "source": "spec 4.4.3(b)",
+   "group": "Waves",
+   "what": "To show superposition, add the displacements of two waves point by point at each position or time to sketch the resultant.",
+   "check": "Two waves meet with displacements +3 mm and −1 mm at a point. What is the resultant?",
+   "answer": "+2 mm.",
+   "seen": 5,
+   "seen_where": [
+    "P1 nov2020 Q26",
+    "P2 jun2016 Q2",
+    "P2 specimen Q6",
+    "P2 jun2018 Q7"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g104",
+   "name": "Producing coherent sources",
+   "source": "spec 4.4.3(c)(e)(f)",
+   "group": "Waves",
+   "what": "Two separate lamps are not coherent; use a laser (or one source through two slits). Two loudspeakers or microwave slits fed from one source are coherent.",
+   "check": "Why can't two separate light bulbs produce a visible interference pattern?",
+   "answer": "Their phase relationship changes randomly, so they are not coherent and fringes don't stay still.",
+   "seen": 2,
+   "seen_where": [
+    "P2 jun2025 Q7",
+    "P1 jun2022 Q25"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g105",
+   "name": "Young's experiment as evidence",
+   "source": "spec guidance 4.4.3(f)",
+   "group": "How science works",
+   "what": "Young's double-slit fringes gave classical evidence that light is a wave, supporting Huygens over Newton's particle (corpuscular) idea; later the photoelectric effect revived a particle model.",
+   "check": "What did Young's double-slit experiment show about light?",
+   "answer": "Light interferes, so it behaves as a wave.",
+   "seen": 5,
+   "seen_where": [
+    "P1 jun2022 Q4",
+    "P1 jun2024 Q12",
+    "P1 jun2024 Q13",
+    "P2 jun2024 Q8"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g106",
+   "name": "Changing a double-slit pattern",
+   "source": "spec 4.4.3(g)(i)",
+   "group": "Waves",
+   "what": "Fringe spacing x = λD/a: wider for longer λ (red), larger D, or narrower slit separation. White light gives a white central fringe with coloured fringes either side.",
+   "check": "What pattern is seen with white light through a double slit?",
+   "answer": "Central white fringe, then coloured fringes (blue nearest centre, red outermost) fading out.",
+   "seen": 6,
+   "seen_where": [
+    "P1 jun2016 Q27",
+    "P1 jun2023 Q12",
+    "P1 jun2024 Q26",
+    "P2 jun2016 Q7"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g107",
+   "name": "Stationary vs progressive waves compared",
+   "source": "spec 4.4.4(c)",
+   "group": "Waves",
+   "what": "Stationary: no net energy transfer, amplitude varies with position (zero at nodes), points between adjacent nodes in phase. Progressive: energy transferred, same amplitude everywhere, phase varies continuously.",
+   "check": "Give two differences between stationary and progressive waves.",
+   "answer": "Stationary waves don't transfer energy; amplitude varies with position (nodes and antinodes) unlike progressive waves.",
+   "seen": 2,
+   "seen_where": [
+    "P1 nov2020 Q6",
+    "P2 jun2017 Q6"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g108",
+   "name": "Phase in a stationary wave",
+   "source": "spec 4.4.4(b)(c)",
+   "group": "Waves",
+   "what": "All points between two adjacent nodes move in phase; points in neighbouring loops are in antiphase (180 degrees).",
+   "check": "What is the phase difference between points on either side of a node?",
+   "answer": "180 degrees (π rad).",
+   "seen": 8,
+   "seen_where": [
+    "P1 jun2016 Q26",
+    "P1 jun2017 Q25",
+    "P1 jun2019 Q11",
+    "P1 jun2022 Q6"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g109",
+   "name": "Why the wave model fails",
+   "source": "spec guidance 4.5.2(a)(i)",
+   "group": "Quantum",
+   "what": "Wave theory predicts any frequency would eject electrons given enough intensity or time; observed threshold frequency and instant emission need photons. Light shows wave (interference) and particle (photoelectric) behaviour.",
+   "check": "Why does the photoelectric effect support the photon model?",
+   "answer": "Emission depends on frequency not intensity and is instant: each electron absorbs one photon's energy hf.",
+   "seen": 1,
+   "seen_where": [
+    "P2 jun2016 Q7"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g110",
+   "name": "KEmax against frequency graph",
+   "source": "spec 4.5.2(c)(d)",
+   "group": "Quantum",
+   "what": "Plotting KEmax against f gives a straight line: gradient = h, f-intercept = threshold frequency, extrapolated y-intercept = −φ. Every metal gives a parallel line.",
+   "check": "What is the gradient of KEmax against frequency, and why do different metals give parallel lines?",
+   "answer": "Gradient h (the same constant for all metals); only the work function, and so the intercept, differs.",
+   "seen": 5,
+   "seen_where": [
+    "P1 jun2024 Q26",
+    "P1 nov2020 Q28",
+    "P2 jun2017 Q2",
+    "P2 jun2025 Q7"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g111",
+   "name": "Momentum from kinetic energy",
+   "source": "spec 4.5.3(c)",
+   "group": "Quantum",
+   "what": "p = √(2mE_k), from E_k = p²/2m; for an electron accelerated through V, λ = h/√(2meV).",
+   "check": "Find λ for an electron accelerated through 150 V.",
+   "answer": "p = √(2 × 9.11e-31 × 1.60e-19 × 150) ≈ 6.6e-24; λ ≈ 1.0 × 10^-10 m.",
+   "seen": 4,
+   "seen_where": [
+    "P2 jun2022 Q6",
+    "P2 jun2023 Q3",
+    "P2 nov2020 Q5",
+    "P2 nov2020 Q8"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g112",
+   "name": "de Broglie wavelength of other objects",
+   "source": "spec 4.5.3(c)",
+   "group": "Quantum",
+   "what": "All particles (protons, neutrons, atoms) have λ = h/p; at the same speed heavier particles have shorter λ; everyday objects have wavelengths far too small to diffract.",
+   "check": "Why does a moving cricket ball not show diffraction?",
+   "answer": "Its momentum is huge, so λ = h/p is ~10^-34 m, far smaller than any gap.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g113",
+   "name": "Typical photon energies",
+   "source": "spec 4.5.1(c)(d)",
+   "group": "Units and data",
+   "what": "Visible photons carry roughly 1.6–3.1 eV (red to violet); metal work functions are a few eV, so many metals need UV.",
+   "check": "Is a 500 nm photon able to free electrons from zinc (φ = 4.3 eV)?",
+   "answer": "E = hc/λ ≈ 2.5 eV < 4.3 eV, so no.",
+   "seen": 10,
+   "seen_where": [
+    "P1 jun2018 Q17",
+    "P1 jun2025 Q6",
+    "P1 nov2021 Q16",
+    "P2 jun2016 Q7"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g114",
+   "name": "History of quantum ideas",
+   "source": "spec HSW",
+   "group": "How science works",
+   "what": "Scientific knowledge changes: classical wave theory of light was revised by Planck's quanta and Einstein's photon explanation of the photoelectric effect, accepted after experimental confirmation and peer review.",
+   "check": "Why was Einstein's photon idea eventually accepted?",
+   "answer": "It explained observations the wave model could not, and experiments (e.g. Millikan's) confirmed its predictions.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "low"
+  },
+  {
+   "id": "g115",
+   "name": "Benefits, risks and decisions",
+   "source": "spec HSW",
+   "group": "How science works",
+   "what": "Be able to weigh benefits against risks of an application (e.g. airbags, power stations, laser use) and explain how evidence informs society's decisions such as laws and consumer choice.",
+   "check": "Give one benefit and one risk of airbags.",
+   "answer": "Benefit: reduces force on occupants in a crash. Risk: can injure children or if deployed unexpectedly.",
+   "seen": 1,
+   "seen_where": [
+    "P1 nov2020 Q4"
+   ],
+   "priority": "low"
+  },
+  {
+   "id": "g116",
+   "name": "Energy stores and pathways",
+   "source": "GCSE physics",
+   "group": "Momentum and energy",
+   "what": "Stores: kinetic, gravitational, elastic, thermal, chemical, nuclear, electrostatic, magnetic. Transfers happen mechanically (forces), electrically, by heating or by radiation.",
+   "check": "Describe the energy changes as a battery-powered motor lifts a load.",
+   "answer": "Chemical store → electrical work → gravitational store of load, with some thermal energy dissipated.",
+   "seen": 3,
+   "seen_where": [
+    "P1 jun2022 Q22",
+    "P1 jun2024 Q17",
+    "P1 jun2025 Q23"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g117",
+   "name": "Particle model and density",
+   "source": "GCSE physics",
+   "group": "Materials",
+   "what": "Solids and liquids have closely packed particles so similar, high densities; gases are far less dense and compressible. Measure irregular object volume by displacement (eureka can).",
+   "check": "How do you find the density of an irregular stone?",
+   "answer": "Measure mass on a balance; find volume from water displaced in a measuring cylinder or eureka can; ρ = m/V.",
+   "seen": 3,
+   "seen_where": [
+    "P2 jun2019 Q6",
+    "P2 jun2022 Q1",
+    "P2 jun2022 Q6"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g118",
+   "name": "Density of water and air",
+   "source": "GCSE physics",
+   "group": "Units and data",
+   "what": "Water's density is about 1000 kg m^-3 (1 g cm^-3) and air's about 1.2 kg m^-3; these are often needed for upthrust and pressure but not always given.",
+   "check": "What is the mass of 1 litre of water?",
+   "answer": "1 litre = 10^-3 m³; mass = 1000 × 10^-3 = 1.0 kg.",
+   "seen": 4,
+   "seen_where": [
+    "P1 jun2016 Q23",
+    "P1 jun2023 Q25",
+    "P2 jun2017 Q3",
+    "P2 nov2021 Q4"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g119",
+   "name": "Atomic structure and free electrons",
+   "source": "GCSE physics",
+   "group": "Electricity",
+   "what": "Atoms have a nucleus of protons and neutrons with electrons around it; ions form by losing or gaining electrons. In metals some electrons are free (delocalised) and carry current.",
+   "check": "Why are metals good electrical conductors?",
+   "answer": "They contain many free (delocalised) electrons that can drift through the lattice.",
+   "seen": 4,
+   "seen_where": [
+    "P1 jun2016 Q25",
+    "P1 jun2017 Q24",
+    "P2 jun2019 Q4",
+    "P2 specimen Q4"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g120",
+   "name": "Charging by friction and electron transfer",
+   "source": "GCSE physics",
+   "group": "Electricity",
+   "what": "Objects become charged when electrons are transferred: gaining electrons makes them negative, losing electrons makes them positive. Protons do not move.",
+   "check": "A polythene rod becomes negatively charged when rubbed. What has happened?",
+   "answer": "Electrons have transferred onto the rod from the cloth.",
+   "seen": 1,
+   "seen_where": [
+    "P1 jun2019 Q13"
+   ],
+   "priority": "low"
+  },
+  {
+   "id": "g121",
+   "name": "Mains supply facts",
+   "source": "GCSE physics",
+   "group": "Units and data",
+   "what": "UK mains is about 230 V a.c. at 50 Hz; household appliances are rated in W or kW.",
+   "check": "What is the current in a 2.3 kW kettle on UK mains?",
+   "answer": "I = P/V = 2300 / 230 = 10 A.",
+   "seen": 3,
+   "seen_where": [
+    "P1 nov2020 Q24",
+    "P2 jun2017 Q4",
+    "P2 jun2022 Q7"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g122",
+   "name": "Sound basics",
+   "source": "GCSE physics",
+   "group": "Waves",
+   "what": "Sound is longitudinal, needs a medium, travels about 340 m/s in air (faster in solids); human hearing about 20 Hz–20 kHz; ultrasound is above that.",
+   "check": "Can sound travel through a vacuum? Why?",
+   "answer": "No: it is a mechanical (longitudinal) wave needing particles to vibrate.",
+   "seen": 10,
+   "seen_where": [
+    "P1 jun2019 Q24",
+    "P1 jun2023 Q22",
+    "P1 jun2024 Q14",
+    "P1 nov2020 Q18"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g123",
+   "name": "Echoes and sonar",
+   "source": "GCSE physics",
+   "group": "Waves",
+   "what": "For an echo, the wave travels there and back, so distance = speed × time ÷ 2.",
+   "check": "An echo returns 0.40 s after a clap at a cliff. How far is the cliff?",
+   "answer": "340 × 0.40 / 2 = 68 m.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g124",
+   "name": "Visible spectrum order",
+   "source": "GCSE physics",
+   "group": "Waves",
+   "what": "Visible light runs from red (about 700 nm, lowest frequency and photon energy) to violet (about 400 nm, highest).",
+   "check": "Which LED colour emits photons of greatest energy: red, green or blue?",
+   "answer": "Blue, since it has the shortest wavelength.",
+   "seen": 11,
+   "seen_where": [
+    "P1 jun2016 Q27",
+    "P1 jun2016 Q5",
+    "P1 jun2023 Q12",
+    "P1 jun2024 Q26"
+   ],
+   "priority": "high"
+  },
+  {
+   "id": "g125",
+   "name": "Uses and hazards of EM waves",
+   "source": "GCSE physics",
+   "group": "Waves",
+   "what": "Radio: communication; microwaves: cooking, satellites; IR: heating, remote controls; visible: fibres, sight; UV: sterilising, causes skin damage; X-ray and gamma: imaging and treatment, ionising and harmful.",
+   "check": "Which regions of the EM spectrum are ionising?",
+   "answer": "High-frequency UV, X-rays and gamma rays.",
+   "seen": 1,
+   "seen_where": [
+    "P1 jun2018 Q27"
+   ],
+   "priority": "medium"
+  },
+  {
+   "id": "g126",
+   "name": "All objects fall with the same g",
+   "source": "GCSE physics",
+   "group": "Forces and motion",
+   "what": "Mass (kg) is the amount of matter; weight (N) is the gravitational force mg. Without drag, every object falls with the same acceleration g ≈ 9.81 m s^-2, whatever its mass.",
+   "check": "Do a heavy and a light ball dropped together (no air resistance) land together?",
+   "answer": "Yes: both accelerate at g regardless of mass.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "medium"
+  },
+  {
+   "id": "g127",
+   "name": "Specific heat capacity",
+   "source": "GCSE physics",
+   "group": "Momentum and energy",
+   "what": "Energy to heat a mass m through Δθ is mcΔθ; AS questions on kettles or efficiency sometimes give c and expect this.",
+   "check": "How much energy heats 0.50 kg of water by 20 K (c = 4200 J kg^-1 K^-1)?",
+   "answer": "0.50 × 4200 × 20 = 42 000 J.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "low"
+  },
+  {
+   "id": "g128",
+   "name": "Kelvin and Celsius",
+   "source": "GCSE physics",
+   "group": "Units and data",
+   "what": "Temperature in kelvin = temperature in °C + 273; the kelvin is the SI base unit, and a change of 1 K equals a change of 1 °C.",
+   "check": "Convert 27 °C to kelvin.",
+   "answer": "300 K.",
+   "seen": 1,
+   "seen_where": [
+    "P1 jun2017 Q20"
+   ],
+   "priority": "low"
+  },
+  {
+   "id": "g129",
+   "name": "Gears, levers and pivots",
+   "source": "GCSE physics",
+   "group": "Forces and motion",
+   "what": "Levers multiply force: a small force far from the pivot balances a large force near it; spanners, wheelbarrows and seesaws apply the principle of moments.",
+   "check": "Why is a nut easier to undo with a longer spanner?",
+   "answer": "The same force at a larger perpendicular distance gives a bigger moment.",
+   "seen": 0,
+   "seen_where": [],
+   "priority": "low"
+  }
+ ]
+}
