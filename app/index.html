@@ -1320,7 +1320,7 @@ function Playbook({ data, open, openSpec }) {
   }, [all]);
   const letters = useMemo(() => { const m = { A: 0, B: 0, C: 0, D: 0 }; for (const q of all) if (q.type === "mcq") { const l = (q.answer || "").match(/^[A-D]/)?.[0]; if (l) m[l]++; } return m; }, [all]);
 
-  const SECTIONS = [["pb-papers", "The two papers"], ["pb-diff", "Difficulty"], ["pb-content", "Content"], ["pb-near", "Near misses"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
+  const SECTIONS = [["pb-strategy", "Strategy"], ["pb-bounds", "Grade boundaries"], ["pb-papers", "The two papers"], ["pb-diff", "Difficulty"], ["pb-content", "Content"], ["pb-near", "Near misses"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
   const goto = (id) => { const el = ref.current?.querySelector("#" + id); if (!el) return; lenis.current ? lenis.current.scrollTo(el, { offset: -12 }) : el.scrollIntoView(); };
   const L = (arr) => html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>`;
   const lbl = (p) => p === "1" ? "M1 Practical" : p === "2" ? "M2 Foundations" : p === "3" ? "M3 Forces" : p === "4" ? "M4 Electrons, waves, photons" : p;
@@ -1336,6 +1336,22 @@ function Playbook({ data, open, openSpec }) {
     <div class="pb">
       <nav class="pb-toc" aria-label="Playbook sections"><span>On this page</span>${SECTIONS.map(([id, t]) => html`<button key=${id} onClick=${() => goto(id)}>${t}</button>`)}</nav>
       <div class="pb-body">
+
+        ${pb.strategy && html`<section id="pb-strategy">
+          <h3>The approach for maximum marks</h3>
+          <p class="sub">${pb.strategy.summary}</p>
+          <div class="cards2">${pb.strategy.phases.map((ph, i) => html`<div class="rule" key=${i}><span class="st">${ph.when}</span><h4>${ph.name}</h4><ul>${ph.items.map((x, j) => html`<li key=${j}>${x}</li>`)}</ul></div>`)}</div>
+        </section>`}
+
+        ${pb.boundaries && html`<section id="pb-bounds">
+          <h3>Grade boundaries</h3>
+          <p class="sub">Raw marks needed for each grade, from OCR's published boundaries. The AS grade comes from your total out of 140, so a weaker paper can be balanced by a stronger one. OCR does not publish June 2016 in this form.</p>
+          <div class="panel" style=${{ overflowX: "auto" }}><table class="dtab">
+            <thead><tr><th>Series</th><th>P1 A</th><th>P2 A</th><th>A /140</th><th>B</th><th>C</th><th>D</th><th>E</th><th>A as %</th></tr></thead>
+            <tbody>${Object.entries(pb.boundaries).map(([k, [p1, p2, o]]) => html`<tr key=${k}><td>${SLABEL[k] || "June 2026"}</td><td>${p1[0]}</td><td>${p2[0]}</td><td style=${{ fontWeight: 700 }}>${o[0]}</td><td>${o[1]}</td><td>${o[2]}</td><td>${o[3]}</td><td>${o[4]}</td><td>${Math.round(o[0] / 140 * 100)}%</td></tr>`)}</tbody>
+          </table></div>
+          <p class="sub" style=${{ marginTop: "12px" }}>An A has needed 89–106 marks (64–76%). The 2022 boundaries were set lower as grading returned to normal after the pandemic. June 2026 had the highest A boundary yet (106), with Paper 2 needing 55/70, which suggests a more accessible Paper 2. Across sessions, papers our ratings mark as harder did tend to have lower A boundaries (correlation −0.4), with June 2018 Paper 2 the main exception.</p>
+        </section>`}
 
         <section id="pb-papers">
           <h3>The two papers reward different things</h3>
