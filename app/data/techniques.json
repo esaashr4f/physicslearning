@@ -591,5 +591,169 @@
   "Planning (41%), uncertainty (40%), explanations and judging data (36% each) come next.",
   "Show-that (8%), rearranging (18%), reading graphs (19%) and linearising (20%) are the best handled: when you know the move, candidates usually manage it.",
   "Best-answered topics: resistance, wave–particle duality, density and pressure, photons, collisions and kinematics graphs."
- ]
+ ],
+ "anatomy": {
+  "layers": [
+   [
+    "Setting",
+    "The story the physics is wrapped in: a lift, a guitar, a solar cell. Often unfamiliar on purpose.",
+    "Strip it away and ask: what AS topic is this really?"
+   ],
+   [
+    "Content",
+    "The spec point being tested (e.g. 4.3.3 potential dividers).",
+    "The physics you must already know: equations, definitions, explanation chains, practical methods."
+   ],
+   [
+    "Data and conditions",
+    "Numbers, units, graphs, and words like 'from rest', 'constant volume', 'same frequency'.",
+    "Every condition is there for a reason; 'misread the question' is a top cause of lost marks."
+   ],
+   [
+    "Structure",
+    "Command word + mark allocation + answer line (with unit or s.f.).",
+    "Tells you what kind of marking points exist and how many."
+   ],
+   [
+    "Mark scheme",
+    "A list of marking points, each a code: B1, C1, M1 or A1.",
+    "Your answer scores by hitting those points visibly."
+   ]
+  ],
+  "codes": [
+   [
+    "B1",
+    "An independent point: a correct fact, statement, link in an explanation or feature of a sketch.",
+    "43% of all written marks"
+   ],
+   [
+    "C1",
+    "A correct substitution or intermediate step in a calculation, earned even if the final answer is wrong.",
+    "26%"
+   ],
+   [
+    "A1",
+    "The correct final answer (with unit or s.f. where the scheme requires).",
+    "23%"
+   ],
+   [
+    "M1",
+    "A method mark, often in show-that or derivations; later A marks depend on it.",
+    "8%"
+   ]
+  ],
+  "type_patterns": [
+   [
+    "Single-step calculation",
+    "C1 A1 (69 of 113 parts)",
+    "Write the equation with numbers substituted: that's half the marks."
+   ],
+   [
+    "Multi-step calculation",
+    "C1 C1 A1 (51 of 91)",
+    "Two of three marks are for working, so show each step."
+   ],
+   [
+    "Explain",
+    "B1 B1 or B1 B1 B1 (56 of 98)",
+    "Each mark is one linked physics statement."
+   ],
+   [
+    "Define / state",
+    "B1 (49 of 57)",
+    "One precise statement with its key qualifier."
+   ],
+   [
+    "Show that",
+    "Mostly M marks",
+    "Method only; the printed value is usually worth nothing."
+   ],
+   [
+    "Practical method / suggest",
+    "All B marks",
+    "Each mark is one specific, workable point."
+   ],
+   [
+    "Six-mark answer",
+    "Level 1–3",
+    "The whole answer is judged; every strand must be present for Level 3."
+   ]
+  ],
+  "decode": [
+   "Read the command word and the marks first: they tell you the kind and number of marking points.",
+   "Strip the setting: name the AS topic and the spec idea underneath.",
+   "Pull out the prior knowledge it needs: which equation, definition, chain or method.",
+   "Underline the data and every condition in the stem; plan which you'll use.",
+   "Choose the moves (chain, ratio, linearise, explain…) and plan the route.",
+   "Write one visible marking point per mark: equation, substitution, answer; or one linked statement per mark.",
+   "Finish to the answer line's demands: unit, significant figures, direction, a conclusion that matches your number."
+  ],
+  "example": {
+   "question": "A phone charger cable is 1.2 m long. Its two copper wires each have diameter 0.50 mm (resistivity 1.7 × 10⁻⁸ Ω m). The phone draws 2.0 A. Calculate the power wasted in the cable. [3]",
+   "dissection": [
+    [
+     "Setting",
+     "Charging a phone: unfamiliar, but irrelevant to the physics."
+    ],
+    [
+     "Content",
+     "4.2.4 resistivity and 4.2.5 power."
+    ],
+    [
+     "Prior knowledge",
+     "R = ρL/A, A = πd²/4, P = I²R; current flows out and back, so the total wire length is 2 × 1.2 m."
+    ],
+    [
+     "Condition to spot",
+     "'Two wires': the current goes through both, so L = 2.4 m."
+    ],
+    [
+     "Structure",
+     "Calculate, 3 marks → expect C1 C1 A1."
+    ],
+    [
+     "Marking points",
+     "C1: A = π(0.50 × 10⁻³)²/4 = 1.96 × 10⁻⁷ m² and R = 1.7 × 10⁻⁸ × 2.4 / 1.96 × 10⁻⁷ = 0.208 Ω. C1: P = I²R = 2.0² × 0.208. A1: 0.83 W."
+    ]
+   ]
+  },
+  "priorities": [
+   {
+    "rank": 1,
+    "what": "Equations: what each means, when it applies, and its units",
+    "why": "Calculations are 42% of all marks, and many multiple-choice questions are calculations too.",
+    "how": "Use the equation bank; for each equation, know the conditions (constant acceleration, series circuit, small angles) and one example of use."
+   },
+   {
+    "rank": 2,
+    "what": "Working habits for calculations",
+    "why": "C1 substitution marks are 26% of written marks, and in half of calculation parts the final answer is worth a third of the marks or less.",
+    "how": "Equation → substitution in SI → answer with unit and 2–3 s.f., every time, even when you're sure."
+   },
+   {
+    "rank": 3,
+    "what": "The core explanation chains",
+    "why": "Explanations are 18% of marks and most six-markers are explanations or plans; they are the most common move in hard parts.",
+    "how": "Learn about a dozen chains as linked steps: photoelectric effect, stationary wave formation, coherence and interference, potential divider sensors, internal resistance and lost volts, terminal velocity, Newton's second and third laws with momentum, elastic vs inelastic collisions, refraction and total internal reflection, filament lamp I–V, polarisation."
+   },
+   {
+    "rank": 4,
+    "what": "The practical toolkit",
+    "why": "Practical skills (Module 1) carry more marks than any single physics sub-section, inside ordinary questions as well as six-markers.",
+    "how": "For each required practical: apparatus, instruments and resolution, method, what to plot and what the gradient gives, main sources of uncertainty."
+   },
+   {
+    "rank": 5,
+    "what": "Definitions with their qualifiers",
+    "why": "Only 4% of marks directly, but 54 multiple-choice questions are recall and one missing word costs the whole mark.",
+    "how": "Learn the most-asked definitions word for word (see the Playbook list)."
+   },
+   {
+    "rank": 6,
+    "what": "Maths moves",
+    "why": "Ratio, vectors, rearranging and unit conversions sit under almost every calculation; ratio reasoning is the worst-answered move.",
+    "how": "Practise each move in the Techniques tab until you can do it without thinking."
+   }
+  ]
+ }
 }

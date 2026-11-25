@@ -1594,7 +1594,7 @@ function Techniques({ data, open }) {
   const ref = useRef(null); const lenis = useLenis(ref);
   const T = data.techniques; const all = useMemo(() => data.all.filter(q => !q.withdrawn), [data.all]);
   const st = useMoveStats(all, data.examiners);
-  const [cur, setCur] = useState(() => store.get("tech", "overview"));
+  const [cur, setCur] = useState(() => store.get("tech", "anatomy"));
   const [onlyUnscaf, setOnlyUnscaf] = useState(false), [limit, setLimit] = useState(25);
   useEffect(() => { store.set("tech", cur); setLimit(25); if (lenis.current) lenis.current.scrollTo(0, { immediate: true }); else if (ref.current) ref.current.scrollTop = 0; }, [cur]);
   if (!T) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Techniques not loaded</h2></div></div></div>`;
@@ -1634,6 +1634,23 @@ function Techniques({ data, open }) {
       </div>
     </div>`;
   })();
+  const A = T.anatomy;
+  const anatomyView = A && html`<div class="lesson">
+    <span class="eyebrow">Start here</span>
+    <h3>How a question turns knowledge into marks</h3>
+    <p class="lead">Every question combines a setting, a piece of spec content, some data and conditions, and a structure (command word, marks, answer line). The mark scheme then awards marks for specific visible points. Knowing how these fit together tells you what to write.</p>
+    <div class="panel"><h4>The five layers of a question</h4><div style=${{ overflowX: "auto" }}><table class="forms"><thead><tr><th>Layer</th><th>What it is</th><th>What you do with it</th></tr></thead>
+      <tbody>${A.layers.map((r, i) => html`<tr key=${i}><td style=${{ fontFamily: "var(--f-display)", fontWeight: 700 }}>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`)}</tbody></table></div></div>
+    <div class="cols2">
+      <div class="panel"><h4>What each mark code rewards</h4><dl class="codes">${A.codes.map(c => html`<${React.Fragment} key=${c[0]}><dt>${c[0]}</dt><dd>${c[1]} <span class="shared">· ${c[2]}</span></dd></${React.Fragment}>`)}</dl></div>
+      <div class="panel"><h4>Typical mark pattern by question type</h4><div style=${{ overflowX: "auto" }}><table class="forms"><tbody>${A.type_patterns.map((r, i) => html`<tr key=${i}><td style=${{ fontFamily: "var(--f-body)", whiteSpace: "normal" }}>${r[0]}</td><td style=${{ fontFamily: "var(--f-mono)" }}>${r[1]}</td><td>${r[2]}</td></tr>`)}</tbody></table></div></div>
+    </div>
+    <div class="panel"><h4>Decoding any question</h4><ol class="steps">${A.decode.map((x, i) => html`<li key=${i}>${x}</li>`)}</ol></div>
+    <div class="worked"><span class="eyebrow">Dissection (original example)</span><div class="prob">${A.example.question}</div>
+      <div style=${{ overflowX: "auto" }}><table class="forms"><tbody>${A.example.dissection.map((r, i) => html`<tr key=${i}><td style=${{ fontFamily: "var(--f-display)", fontWeight: 700 }}>${r[0]}</td><td>${r[1]}</td></tr>`)}</tbody></table></div></div>
+    <div class="panel"><h4>What you need to know, in priority order</h4>
+      <div class="nms">${A.priorities.map(pr => html`<div class="nm" key=${pr.rank} style=${{ gap: "6px" }}><header><span class="pill mk">${pr.rank}</span><b>${pr.what}</b></header><p style=${{ margin: 0, fontSize: "13px", color: "var(--ink-2)" }}>${pr.why}</p><p style=${{ margin: 0, fontSize: "13px" }}><b style=${{ font: "600 11px/1 var(--f-mono)", color: "var(--accent)" }}>HOW </b>${pr.how}</p></div>`)}</div></div>
+  </div>`;
   const overview = html`<div class="lesson">
     <span class="eyebrow">Techniques · ${st.tagged} of ${all.length} parts tagged by reading each question and mark scheme</span>
     <h3>The moves behind every question</h3>
@@ -1662,10 +1679,11 @@ function Techniques({ data, open }) {
   return html`<div class="ins" ref=${ref}><div class="ins-inner" style=${{ paddingTop: "28px" }}>
     <div class="tq-layout">
       <nav class="tq-nav" aria-label="Techniques">
+        ${A && html`<button class=${cur === "anatomy" ? "on" : ""} onClick=${() => setCur("anatomy")}><span>How a question is built</span></button>`}
         <button class=${cur === "overview" ? "on" : ""} onClick=${() => setCur("overview")}><span>Overview</span></button>
         ${lessons.map(l => html`<button key=${l.id} class=${cur === l.id ? "on" : ""} onClick=${() => setCur(l.id)}><span>${l.title.split(":")[0]}</span><small>${st.by[l.id]?.parts.length || 0}</small></button>`)}
       </nav>
-      ${cur === "overview" || !L ? overview : lessonView}
+      ${cur === "anatomy" && A ? anatomyView : cur === "overview" || !L ? overview : lessonView}
     </div>
   </div></div>`;
 }
