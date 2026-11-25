@@ -1137,9 +1137,21 @@ function Playbook({ data, open, openSpec }) {
   }), [all]);
   const maxT = Math.max(...trend.map(t => t.pct), 1);
   const mcqN = all.filter(q => q.type === "mcq").length;
+  const idx = (slug) => SESSIONS.findIndex(s => s.slug === slug);
+  const stale = useMemo(() => {
+    const last = {}; const codes = data.spec?.outcomes || [];
+    for (const q of all) for (const c of q.spec_points || []) last[c] = Math.max(last[c] ?? -1, idx(q.slug));
+    const cut = idx("nov2020");
+    return codes.filter(o => !codes.some(k => k.code.startsWith(o.code + "(")) && last[o.code] != null && last[o.code] <= cut)
+      .map(o => ({ c: o.code, t: o.text, last: SESSIONS[last[o.code]].label }));
+  }, [all, data.spec]);
+  const defs = useMemo(() => {
+    const m = {}; for (const q of all) if (q.type === "define-state") { const c = q.spec_points?.[0]; if (c) m[c] = (m[c] || 0) + 1; }
+    return Object.entries(m).filter(([, n]) => n >= 2).sort((a, b) => b[1] - a[1]).slice(0, 12);
+  }, [all]);
   const letters = useMemo(() => { const m = { A: 0, B: 0, C: 0, D: 0 }; for (const q of all) if (q.type === "mcq") { const l = (q.answer || "").match(/^[A-D]/)?.[0]; if (l) m[l]++; } return m; }, [all]);
 
-  const SECTIONS = [["pb-papers", "The two papers"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-trend", "Trends"]];
+  const SECTIONS = [["pb-papers", "The two papers"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
   const goto = (id) => { const el = ref.current?.querySelector("#" + id); if (!el) return; lenis.current ? lenis.current.scrollTo(el, { offset: -12 }) : el.scrollIntoView(); };
   const L = (arr) => html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>`;
   const lbl = (p) => p === "1" ? "M1 Practical" : p === "2" ? "M2 Foundations" : p === "3" ? "M3 Forces" : p === "4" ? "M4 Electrons, waves, photons" : p;
@@ -1235,6 +1247,19 @@ function Playbook({ data, open, openSpec }) {
           <p class="sub">${mcqN} multiple-choice questions analysed. Correct answers: A ${letters.A}, B ${letters.B}, C ${letters.C}, D ${letters.D}.</p>
           <div class="panel">${L(pb.mcq)}</div>
         </section>
+
+        ${pb.more && html`<section id="pb-more">
+          <h3>More patterns across the papers</h3>
+          <div class="cards2">${pb.more.map((r, i) => html`<div class="rule" key=${i}><h4>${r.title}</h4><p>${r.body}</p></div>`)}</div>
+          <div class="cols2" style=${{ marginTop: "14px" }}>
+            <div class="panel"><h4>Most-asked definitions</h4>
+              <p class="sub" style=${{ margin: "0 0 10px" }}>Learning outcomes asked as "define" or "state" in at least two parts. Learn the exact wording with its qualifiers.</p>
+              <div class="never-list">${defs.map(([c, n]) => html`<button key=${c} onClick=${() => openSpec(c)}><span class="c" style=${{ color: "var(--accent)" }}>${c}</span><span class="t">${specText[c] || ""} <span class="shared">· ${n} parts</span></span></button>`)}</div></div>
+            <div class="panel"><h4>Not examined since November 2020 (${stale.length})</h4>
+              <p class="sub" style=${{ margin: "0 0 10px" }}>Examined before but absent from the last four sessions. OCR doesn't rotate topics on a fixed cycle, so treat this as a gap to cover, not a prediction.</p>
+              <div class="never-list">${stale.map(o => html`<button key=${o.c} onClick=${() => openSpec(o.c)}><span class="c">${o.c}</span><span class="t">${o.t} <span class="shared">· last ${o.last}</span></span></button>`)}</div></div>
+          </div>
+        </section>`}
 
         <section id="pb-trend">
           <h3>Practical and uncertainty marks by session</h3>
