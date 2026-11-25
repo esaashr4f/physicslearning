@@ -8,119 +8,786 @@
   "M": "Maths skill"
  },
  "items": [
-  {"id":"P-energy","kind":"P","name":"Conservation of energy","text":"Energy is transferred between stores, never created or destroyed; work done equals energy transferred."},
-  {"id":"P-momentum","kind":"P","name":"Conservation of momentum","text":"Total momentum of a closed system is constant in any collision or explosion."},
-  {"id":"P-charge","kind":"P","name":"Conservation of charge (Kirchhoff's first law)","text":"Current into a junction equals current out."},
-  {"id":"P-kirchhoff2","kind":"P","name":"Kirchhoff's second law","text":"Around any closed loop, the sum of e.m.f.s equals the sum of p.d.s (energy conservation in circuits)."},
-  {"id":"P-newton2","kind":"P","name":"Newton's second law","text":"Resultant force equals rate of change of momentum (F = ma for constant mass)."},
-  {"id":"P-newton1","kind":"P","name":"Newton's first law and equilibrium","text":"Zero resultant force means constant velocity; equilibrium needs zero resultant force and zero resultant moment."},
-  {"id":"P-newton3","kind":"P","name":"Newton's third law","text":"Interaction pairs are equal and opposite, act on different objects and are the same type of force."},
-  {"id":"P-moments","kind":"P","name":"Principle of moments","text":"In equilibrium, clockwise moments equal anticlockwise moments about any point."},
-  {"id":"P-vectors","kind":"P","name":"Vectors and independence of perpendicular motions","text":"Vectors add head to tail; perpendicular components act independently (projectiles)."},
-  {"id":"P-superposition","kind":"P","name":"Principle of superposition","text":"Where waves meet, the resultant displacement is the sum of the individual displacements."},
-  {"id":"P-photon","kind":"P","name":"Photon model","text":"Light is emitted and absorbed in quanta of energy hf; one photon interacts with one electron."},
-  {"id":"P-duality","kind":"P","name":"Wave–particle duality","text":"Particles such as electrons show wave behaviour with λ = h/p."},
-  {"id":"P-resistance","kind":"P","name":"Resistance as V/I","text":"Resistance is the ratio of p.d. to current; components share p.d. in series and current in parallel."},
-  {"id":"P-waves","kind":"P","name":"Wave model","text":"A progressive wave transfers energy; one wavelength passes in one period, so v = fλ."},
-
-  {"id":"E-speed","kind":"E","name":"speed = distance / time","sheet":false,"from":[]},
-  {"id":"E-suvat","kind":"E","name":"Equations of motion (suvat)","sheet":true,"from":["P-vectors"]},
-  {"id":"E-F=ma","kind":"E","name":"F = ma","sheet":false,"recall":true,"from":["P-newton2"]},
-  {"id":"E-W=mg","kind":"E","name":"W = mg","sheet":false,"recall":true,"from":["P-newton2"]},
-  {"id":"E-F=dp/dt","kind":"E","name":"F = Δp/Δt and impulse = FΔt","sheet":true,"from":["P-newton2"]},
-  {"id":"E-p=mv","kind":"E","name":"p = mv","sheet":true,"from":[]},
-  {"id":"E-moment","kind":"E","name":"moment = Fx; torque = Fd","sheet":true,"from":["P-moments"]},
-  {"id":"E-density","kind":"E","name":"ρ = m/V","sheet":true,"from":[]},
-  {"id":"E-pressure","kind":"E","name":"p = F/A and p = hρg","sheet":true,"from":[]},
-  {"id":"E-upthrust","kind":"E","name":"Upthrust = weight of fluid displaced","sheet":false,"from":["E-pressure"]},
-  {"id":"E-work","kind":"E","name":"W = Fx cos θ","sheet":true,"from":["P-energy"]},
-  {"id":"E-Ek","kind":"E","name":"Ek = ½mv²","sheet":false,"recall":true,"from":["P-energy"]},
-  {"id":"E-Ep","kind":"E","name":"Ep = mgh","sheet":false,"recall":true,"from":["P-energy","E-work"]},
-  {"id":"E-power","kind":"E","name":"P = W/t and P = Fv","sheet":true,"from":["P-energy"]},
-  {"id":"E-efficiency","kind":"E","name":"efficiency = useful output / total input","sheet":true,"from":["P-energy"]},
-  {"id":"E-hooke","kind":"E","name":"F = kx","sheet":true,"from":[]},
-  {"id":"E-elastic","kind":"E","name":"E = ½Fx = ½kx² (area under F–x)","sheet":true,"from":["P-energy","E-hooke"]},
-  {"id":"E-stress-strain","kind":"E","name":"σ = F/A, ε = x/L, E = σ/ε","sheet":true,"from":[]},
-  {"id":"E-Q=It","kind":"E","name":"ΔQ = IΔt","sheet":true,"from":[]},
-  {"id":"E-Anev","kind":"E","name":"I = Anev","sheet":true,"from":["E-Q=It"]},
-  {"id":"E-W=VQ","kind":"E","name":"W = VQ, W = εQ, W = VIt","sheet":true,"from":["P-energy"]},
-  {"id":"E-eV","kind":"E","name":"eV = ½mv² for accelerated charges","sheet":false,"from":["E-W=VQ","E-Ek","P-energy"]},
-  {"id":"E-R=V/I","kind":"E","name":"R = V/I","sheet":false,"recall":true,"from":["P-resistance"]},
-  {"id":"E-resistivity","kind":"E","name":"R = ρL/A","sheet":true,"from":[]},
-  {"id":"E-elec-power","kind":"E","name":"P = VI = I²R = V²/R","sheet":true,"from":["E-W=VQ","E-R=V/I"]},
-  {"id":"E-kWh","kind":"E","name":"kW h as energy; 1 kW h = 3.6 MJ","sheet":false,"from":["E-power"]},
-  {"id":"E-series-parallel","kind":"E","name":"Series and parallel resistance","sheet":true,"from":["P-charge","P-kirchhoff2"]},
-  {"id":"E-emf","kind":"E","name":"ε = I(R + r) = V + Ir","sheet":true,"from":["P-kirchhoff2"]},
-  {"id":"E-divider","kind":"E","name":"Potential divider equations","sheet":true,"from":["P-kirchhoff2","P-resistance"]},
-  {"id":"E-v=fλ","kind":"E","name":"v = fλ and f = 1/T","sheet":true,"from":["P-waves"]},
-  {"id":"E-intensity","kind":"E","name":"I = P/A and intensity ∝ amplitude²","sheet":"partly","from":["P-energy"]},
-  {"id":"E-phase","kind":"E","name":"Phase difference = (Δx/λ) × 360° or 2π","sheet":false,"from":["P-waves"]},
-  {"id":"E-pathdiff","kind":"E","name":"Path difference nλ constructive, (n + ½)λ destructive","sheet":false,"from":["P-superposition"]},
-  {"id":"E-young","kind":"E","name":"λ = ax/D","sheet":true,"from":["P-superposition"]},
-  {"id":"E-nodes","kind":"E","name":"Node-to-node spacing = λ/2; tube and string harmonics","sheet":false,"from":["P-superposition"]},
-  {"id":"E-refraction","kind":"E","name":"n = c/v, n sin θ = constant, sin C = 1/n","sheet":true,"from":[]},
-  {"id":"E-photon","kind":"E","name":"E = hf = hc/λ","sheet":true,"from":["P-photon"]},
-  {"id":"E-photoelectric","kind":"E","name":"hf = φ + KEmax","sheet":true,"from":["P-photon","P-energy"]},
-  {"id":"E-photon-rate","kind":"E","name":"Photons per second = power / energy per photon","sheet":false,"from":["E-photon","E-power"]},
-  {"id":"E-debroglie","kind":"E","name":"λ = h/p","sheet":true,"from":["P-duality"]},
-  {"id":"E-eV-joule","kind":"E","name":"1 eV = 1.60 × 10⁻¹⁹ J","sheet":true,"from":["E-W=VQ"]},
-
-  {"id":"D-kinematics","kind":"D","name":"Displacement, velocity, acceleration (vector) vs distance, speed (scalar)"},
-  {"id":"D-graph-meaning","kind":"D","name":"Gradient and area meanings of s–t, v–t, F–t and F–x graphs"},
-  {"id":"D-forces","kind":"D","name":"Weight, tension, normal contact force, friction, upthrust, drag"},
-  {"id":"D-terminal","kind":"D","name":"Terminal velocity"},
-  {"id":"D-centre-gravity","kind":"D","name":"Centre of mass and centre of gravity"},
-  {"id":"D-couple","kind":"D","name":"Couple and torque"},
-  {"id":"D-materials","kind":"D","name":"Elastic/plastic deformation, limit of proportionality, UTS, ductile/brittle/polymeric"},
-  {"id":"D-collisions","kind":"D","name":"Perfectly elastic vs inelastic collisions"},
-  {"id":"D-impulse","kind":"D","name":"Impulse"},
-  {"id":"D-current","kind":"D","name":"Current, charge carriers, conventional current, drift velocity, number density"},
-  {"id":"D-emf-pd","kind":"D","name":"E.m.f. vs p.d.; volt; ohm"},
-  {"id":"D-resistivity","kind":"D","name":"Resistivity"},
-  {"id":"D-internal","kind":"D","name":"Internal resistance, terminal p.d., lost volts"},
-  {"id":"D-wave-terms","kind":"D","name":"Displacement, amplitude, wavelength, period, frequency, phase difference, wave speed"},
-  {"id":"D-transverse","kind":"D","name":"Transverse vs longitudinal waves"},
-  {"id":"D-polarisation","kind":"D","name":"Plane polarisation"},
-  {"id":"D-coherence","kind":"D","name":"Coherence (constant phase difference), path difference, interference"},
-  {"id":"D-diffraction","kind":"D","name":"Diffraction"},
-  {"id":"D-stationary","kind":"D","name":"Stationary wave, node, antinode, fundamental and harmonics"},
-  {"id":"D-refraction","kind":"D","name":"Refractive index, critical angle, total internal reflection"},
-  {"id":"D-photon","kind":"D","name":"Photon"},
-  {"id":"D-workfunction","kind":"D","name":"Work function and threshold frequency (minimum energy / frequency)"},
-  {"id":"D-electronvolt","kind":"D","name":"The electronvolt"},
-  {"id":"D-si","kind":"D","name":"SI base quantities and units; derived units"},
-  {"id":"D-errors","kind":"D","name":"Accuracy, precision, systematic/random error, zero error, uncertainty"},
-
-  {"id":"F-em-spectrum","kind":"F","name":"Order and wavelength ranges of the EM spectrum; all EM waves travel at c in a vacuum"},
-  {"id":"F-ldr-thermistor","kind":"F","name":"LDR resistance falls with light; NTC thermistor resistance falls with temperature"},
-  {"id":"F-iv-curves","kind":"F","name":"I–V characteristics: ohmic resistor, filament lamp, diode and LED"},
-  {"id":"F-carriers","kind":"F","name":"Charge carriers: electrons in metals, ions in electrolytes"},
-  {"id":"F-circuit-symbols","kind":"F","name":"Circuit symbols and meter placement (ammeter in series, voltmeter in parallel)"},
-  {"id":"F-stationary-patterns","kind":"F","name":"Closed end = node, open end = antinode; patterns in strings and tubes"},
-  {"id":"F-drag-factors","kind":"F","name":"Drag increases with speed, area and fluid density; depends on shape"},
-  {"id":"F-material-graphs","kind":"F","name":"Shapes of force–extension and stress–strain graphs for different materials"},
-  {"id":"F-polarisation-waves","kind":"F","name":"Only transverse waves can be polarised; sound cannot"},
-  {"id":"F-photoelectric-obs","kind":"F","name":"Photoelectric observations: threshold frequency, instant emission, intensity affects rate not KEmax"},
-  {"id":"F-electron-diffraction","kind":"F","name":"Electron diffraction through graphite shows wave nature; rings closer at higher speed"},
-  {"id":"F-stopping","kind":"F","name":"Thinking and braking distance factors; stopping distance = thinking + braking"},
-  {"id":"F-prefixes","kind":"F","name":"Prefixes from pico to tera"},
-
-  {"id":"K-instruments","kind":"K","name":"Choosing instruments and their resolution (micrometer, calipers, rule, light gates, data logger, oscilloscope)"},
-  {"id":"K-method","kind":"K","name":"Workable method: variables, range, repeats and means, control variables"},
-  {"id":"K-safety","kind":"K","name":"Specific risks and precautions"},
-  {"id":"K-graph","kind":"K","name":"Plotting, best-fit lines, gradient triangles, tangents, intercepts, areas"},
-  {"id":"K-linearise","kind":"K","name":"Choosing what to plot for a straight line; meaning of gradient and intercept"},
-  {"id":"K-uncertainty","kind":"K","name":"Absolute and percentage uncertainty, combining, worst line, consistency"},
-  {"id":"K-evaluate","kind":"K","name":"Evaluating results: anomalies, limitations, improvements"},
-  {"id":"K-pag","kind":"K","name":"The standard practicals (g, terminal velocity, Young modulus, resistivity, internal resistance, I–V, speed of sound, Planck constant from LEDs, double slit, refraction)"},
-
-  {"id":"M-rearrange","kind":"M","name":"Rearranging equations, including squares and roots"},
-  {"id":"M-units","kind":"M","name":"Unit and prefix conversions; standard form"},
-  {"id":"M-sigfigs","kind":"M","name":"Significant figures"},
-  {"id":"M-ratio","kind":"M","name":"Ratio and proportion, including squares and inverse relationships"},
-  {"id":"M-trig","kind":"M","name":"Resolving with sin, cos, tan; angles; Pythagoras"},
-  {"id":"M-geometry","kind":"M","name":"Areas and volumes (circle from diameter, cylinder, sphere)"},
-  {"id":"M-straight-line","kind":"M","name":"y = mx + c"},
-  {"id":"M-estimate","kind":"M","name":"Estimation with sensible values"}
+  {
+   "id": "P-energy",
+   "kind": "P",
+   "name": "Conservation of energy",
+   "text": "Energy is transferred between stores, never created or destroyed; work done equals energy transferred."
+  },
+  {
+   "id": "P-momentum",
+   "kind": "P",
+   "name": "Conservation of momentum",
+   "text": "Total momentum of a closed system is constant in any collision or explosion."
+  },
+  {
+   "id": "P-charge",
+   "kind": "P",
+   "name": "Conservation of charge (Kirchhoff's first law)",
+   "text": "Current into a junction equals current out."
+  },
+  {
+   "id": "P-kirchhoff2",
+   "kind": "P",
+   "name": "Kirchhoff's second law",
+   "text": "Around any closed loop, the sum of e.m.f.s equals the sum of p.d.s (energy conservation in circuits)."
+  },
+  {
+   "id": "P-newton2",
+   "kind": "P",
+   "name": "Newton's second law",
+   "text": "Resultant force equals rate of change of momentum (F = ma for constant mass)."
+  },
+  {
+   "id": "P-newton1",
+   "kind": "P",
+   "name": "Newton's first law and equilibrium",
+   "text": "Zero resultant force means constant velocity; equilibrium needs zero resultant force and zero resultant moment."
+  },
+  {
+   "id": "P-newton3",
+   "kind": "P",
+   "name": "Newton's third law",
+   "text": "Interaction pairs are equal and opposite, act on different objects and are the same type of force."
+  },
+  {
+   "id": "P-moments",
+   "kind": "P",
+   "name": "Principle of moments",
+   "text": "In equilibrium, clockwise moments equal anticlockwise moments about any point."
+  },
+  {
+   "id": "P-vectors",
+   "kind": "P",
+   "name": "Vectors and independence of perpendicular motions",
+   "text": "Vectors add head to tail; perpendicular components act independently (projectiles)."
+  },
+  {
+   "id": "P-superposition",
+   "kind": "P",
+   "name": "Principle of superposition",
+   "text": "Where waves meet, the resultant displacement is the sum of the individual displacements."
+  },
+  {
+   "id": "P-photon",
+   "kind": "P",
+   "name": "Photon model",
+   "text": "Light is emitted and absorbed in quanta of energy hf; one photon interacts with one electron."
+  },
+  {
+   "id": "P-duality",
+   "kind": "P",
+   "name": "Wave–particle duality",
+   "text": "Particles such as electrons show wave behaviour with λ = h/p."
+  },
+  {
+   "id": "P-resistance",
+   "kind": "P",
+   "name": "Resistance as V/I",
+   "text": "Resistance is the ratio of p.d. to current; components share p.d. in series and current in parallel."
+  },
+  {
+   "id": "P-waves",
+   "kind": "P",
+   "name": "Wave model",
+   "text": "A progressive wave transfers energy; one wavelength passes in one period, so v = fλ."
+  },
+  {
+   "id": "E-speed",
+   "kind": "E",
+   "name": "speed = distance / time",
+   "sheet": false,
+   "from": []
+  },
+  {
+   "id": "E-suvat",
+   "kind": "E",
+   "name": "Equations of motion (suvat)",
+   "sheet": true,
+   "from": [
+    "P-vectors"
+   ]
+  },
+  {
+   "id": "E-F=ma",
+   "kind": "E",
+   "name": "F = ma",
+   "sheet": false,
+   "recall": true,
+   "from": [
+    "P-newton2"
+   ]
+  },
+  {
+   "id": "E-W=mg",
+   "kind": "E",
+   "name": "W = mg",
+   "sheet": false,
+   "recall": true,
+   "from": [
+    "P-newton2"
+   ]
+  },
+  {
+   "id": "E-F=dp/dt",
+   "kind": "E",
+   "name": "F = Δp/Δt and impulse = FΔt",
+   "sheet": true,
+   "from": [
+    "P-newton2"
+   ]
+  },
+  {
+   "id": "E-p=mv",
+   "kind": "E",
+   "name": "p = mv",
+   "sheet": true,
+   "from": []
+  },
+  {
+   "id": "E-moment",
+   "kind": "E",
+   "name": "moment = Fx; torque = Fd",
+   "sheet": true,
+   "from": [
+    "P-moments"
+   ]
+  },
+  {
+   "id": "E-density",
+   "kind": "E",
+   "name": "ρ = m/V",
+   "sheet": true,
+   "from": []
+  },
+  {
+   "id": "E-pressure",
+   "kind": "E",
+   "name": "p = F/A and p = hρg",
+   "sheet": true,
+   "from": []
+  },
+  {
+   "id": "E-upthrust",
+   "kind": "E",
+   "name": "Upthrust = weight of fluid displaced",
+   "sheet": false,
+   "from": [
+    "E-pressure"
+   ]
+  },
+  {
+   "id": "E-work",
+   "kind": "E",
+   "name": "W = Fx cos θ",
+   "sheet": true,
+   "from": [
+    "P-energy"
+   ]
+  },
+  {
+   "id": "E-Ek",
+   "kind": "E",
+   "name": "Ek = ½mv²",
+   "sheet": false,
+   "recall": true,
+   "from": [
+    "P-energy"
+   ]
+  },
+  {
+   "id": "E-Ep",
+   "kind": "E",
+   "name": "Ep = mgh",
+   "sheet": false,
+   "recall": true,
+   "from": [
+    "P-energy",
+    "E-work"
+   ]
+  },
+  {
+   "id": "E-power",
+   "kind": "E",
+   "name": "P = W/t and P = Fv",
+   "sheet": true,
+   "from": [
+    "P-energy"
+   ]
+  },
+  {
+   "id": "E-efficiency",
+   "kind": "E",
+   "name": "efficiency = useful output / total input",
+   "sheet": true,
+   "from": [
+    "P-energy"
+   ]
+  },
+  {
+   "id": "E-hooke",
+   "kind": "E",
+   "name": "F = kx",
+   "sheet": true,
+   "from": []
+  },
+  {
+   "id": "E-elastic",
+   "kind": "E",
+   "name": "E = ½Fx = ½kx² (area under F–x)",
+   "sheet": true,
+   "from": [
+    "P-energy",
+    "E-hooke"
+   ]
+  },
+  {
+   "id": "E-stress-strain",
+   "kind": "E",
+   "name": "σ = F/A, ε = x/L, E = σ/ε",
+   "sheet": true,
+   "from": []
+  },
+  {
+   "id": "E-Q=It",
+   "kind": "E",
+   "name": "ΔQ = IΔt",
+   "sheet": true,
+   "from": []
+  },
+  {
+   "id": "E-Anev",
+   "kind": "E",
+   "name": "I = Anev",
+   "sheet": true,
+   "from": [
+    "E-Q=It"
+   ]
+  },
+  {
+   "id": "E-W=VQ",
+   "kind": "E",
+   "name": "W = VQ, W = εQ, W = VIt",
+   "sheet": true,
+   "from": [
+    "P-energy"
+   ]
+  },
+  {
+   "id": "E-eV",
+   "kind": "E",
+   "name": "eV = ½mv² for accelerated charges",
+   "sheet": false,
+   "from": [
+    "E-W=VQ",
+    "E-Ek",
+    "P-energy"
+   ]
+  },
+  {
+   "id": "E-R=V/I",
+   "kind": "E",
+   "name": "R = V/I",
+   "sheet": false,
+   "recall": true,
+   "from": [
+    "P-resistance"
+   ]
+  },
+  {
+   "id": "E-resistivity",
+   "kind": "E",
+   "name": "R = ρL/A",
+   "sheet": true,
+   "from": []
+  },
+  {
+   "id": "E-elec-power",
+   "kind": "E",
+   "name": "P = VI = I²R = V²/R",
+   "sheet": true,
+   "from": [
+    "E-W=VQ",
+    "E-R=V/I"
+   ]
+  },
+  {
+   "id": "E-kWh",
+   "kind": "E",
+   "name": "kW h as energy; 1 kW h = 3.6 MJ",
+   "sheet": false,
+   "from": [
+    "E-power"
+   ]
+  },
+  {
+   "id": "E-series-parallel",
+   "kind": "E",
+   "name": "Series and parallel resistance",
+   "sheet": true,
+   "from": [
+    "P-charge",
+    "P-kirchhoff2"
+   ]
+  },
+  {
+   "id": "E-emf",
+   "kind": "E",
+   "name": "ε = I(R + r) = V + Ir",
+   "sheet": true,
+   "from": [
+    "P-kirchhoff2"
+   ]
+  },
+  {
+   "id": "E-divider",
+   "kind": "E",
+   "name": "Potential divider equations",
+   "sheet": true,
+   "from": [
+    "P-kirchhoff2",
+    "P-resistance"
+   ]
+  },
+  {
+   "id": "E-v=fλ",
+   "kind": "E",
+   "name": "v = fλ and f = 1/T",
+   "sheet": true,
+   "from": [
+    "P-waves"
+   ]
+  },
+  {
+   "id": "E-intensity",
+   "kind": "E",
+   "name": "I = P/A and intensity ∝ amplitude²",
+   "sheet": "partly",
+   "from": [
+    "P-energy"
+   ]
+  },
+  {
+   "id": "E-phase",
+   "kind": "E",
+   "name": "Phase difference = (Δx/λ) × 360° or 2π",
+   "sheet": false,
+   "from": [
+    "P-waves"
+   ]
+  },
+  {
+   "id": "E-pathdiff",
+   "kind": "E",
+   "name": "Path difference nλ constructive, (n + ½)λ destructive",
+   "sheet": false,
+   "from": [
+    "P-superposition"
+   ]
+  },
+  {
+   "id": "E-young",
+   "kind": "E",
+   "name": "λ = ax/D",
+   "sheet": true,
+   "from": [
+    "P-superposition"
+   ]
+  },
+  {
+   "id": "E-nodes",
+   "kind": "E",
+   "name": "Node-to-node spacing = λ/2; tube and string harmonics",
+   "sheet": false,
+   "from": [
+    "P-superposition"
+   ]
+  },
+  {
+   "id": "E-refraction",
+   "kind": "E",
+   "name": "n = c/v, n sin θ = constant, sin C = 1/n",
+   "sheet": true,
+   "from": []
+  },
+  {
+   "id": "E-photon",
+   "kind": "E",
+   "name": "E = hf = hc/λ",
+   "sheet": true,
+   "from": [
+    "P-photon"
+   ]
+  },
+  {
+   "id": "E-photoelectric",
+   "kind": "E",
+   "name": "hf = φ + KEmax",
+   "sheet": true,
+   "from": [
+    "P-photon",
+    "P-energy"
+   ]
+  },
+  {
+   "id": "E-photon-rate",
+   "kind": "E",
+   "name": "Photons per second = power / energy per photon",
+   "sheet": false,
+   "from": [
+    "E-photon",
+    "E-power"
+   ]
+  },
+  {
+   "id": "E-debroglie",
+   "kind": "E",
+   "name": "λ = h/p",
+   "sheet": true,
+   "from": [
+    "P-duality"
+   ]
+  },
+  {
+   "id": "E-eV-joule",
+   "kind": "E",
+   "name": "1 eV = 1.60 × 10⁻¹⁹ J",
+   "sheet": true,
+   "from": [
+    "E-W=VQ"
+   ]
+  },
+  {
+   "id": "D-kinematics",
+   "kind": "D",
+   "name": "Displacement, velocity, acceleration (vector) vs distance, speed (scalar)"
+  },
+  {
+   "id": "D-graph-meaning",
+   "kind": "D",
+   "name": "Gradient and area meanings of s–t, v–t, F–t and F–x graphs"
+  },
+  {
+   "id": "D-forces",
+   "kind": "D",
+   "name": "Weight, tension, normal contact force, friction, upthrust, drag"
+  },
+  {
+   "id": "D-terminal",
+   "kind": "D",
+   "name": "Terminal velocity"
+  },
+  {
+   "id": "D-centre-gravity",
+   "kind": "D",
+   "name": "Centre of mass and centre of gravity"
+  },
+  {
+   "id": "D-couple",
+   "kind": "D",
+   "name": "Couple and torque"
+  },
+  {
+   "id": "D-materials",
+   "kind": "D",
+   "name": "Elastic/plastic deformation, limit of proportionality, UTS, ductile/brittle/polymeric"
+  },
+  {
+   "id": "D-collisions",
+   "kind": "D",
+   "name": "Perfectly elastic vs inelastic collisions"
+  },
+  {
+   "id": "D-impulse",
+   "kind": "D",
+   "name": "Impulse"
+  },
+  {
+   "id": "D-current",
+   "kind": "D",
+   "name": "Current, charge carriers, conventional current, drift velocity, number density"
+  },
+  {
+   "id": "D-emf-pd",
+   "kind": "D",
+   "name": "E.m.f. vs p.d.; volt; ohm"
+  },
+  {
+   "id": "D-resistivity",
+   "kind": "D",
+   "name": "Resistivity"
+  },
+  {
+   "id": "D-internal",
+   "kind": "D",
+   "name": "Internal resistance, terminal p.d., lost volts"
+  },
+  {
+   "id": "D-wave-terms",
+   "kind": "D",
+   "name": "Displacement, amplitude, wavelength, period, frequency, phase difference, wave speed"
+  },
+  {
+   "id": "D-transverse",
+   "kind": "D",
+   "name": "Transverse vs longitudinal waves"
+  },
+  {
+   "id": "D-polarisation",
+   "kind": "D",
+   "name": "Plane polarisation"
+  },
+  {
+   "id": "D-coherence",
+   "kind": "D",
+   "name": "Coherence (constant phase difference), path difference, interference"
+  },
+  {
+   "id": "D-diffraction",
+   "kind": "D",
+   "name": "Diffraction"
+  },
+  {
+   "id": "D-stationary",
+   "kind": "D",
+   "name": "Stationary wave, node, antinode, fundamental and harmonics"
+  },
+  {
+   "id": "D-refraction",
+   "kind": "D",
+   "name": "Refractive index, critical angle, total internal reflection"
+  },
+  {
+   "id": "D-photon",
+   "kind": "D",
+   "name": "Photon"
+  },
+  {
+   "id": "D-workfunction",
+   "kind": "D",
+   "name": "Work function and threshold frequency (minimum energy / frequency)"
+  },
+  {
+   "id": "D-electronvolt",
+   "kind": "D",
+   "name": "The electronvolt"
+  },
+  {
+   "id": "D-si",
+   "kind": "D",
+   "name": "SI base quantities and units; derived units"
+  },
+  {
+   "id": "D-errors",
+   "kind": "D",
+   "name": "Accuracy, precision, systematic/random error, zero error, uncertainty"
+  },
+  {
+   "id": "F-em-spectrum",
+   "kind": "F",
+   "name": "Order and wavelength ranges of the EM spectrum; all EM waves travel at c in a vacuum"
+  },
+  {
+   "id": "F-ldr-thermistor",
+   "kind": "F",
+   "name": "LDR resistance falls with light; NTC thermistor resistance falls with temperature"
+  },
+  {
+   "id": "F-iv-curves",
+   "kind": "F",
+   "name": "I–V characteristics: ohmic resistor, filament lamp, diode and LED"
+  },
+  {
+   "id": "F-carriers",
+   "kind": "F",
+   "name": "Charge carriers: electrons in metals, ions in electrolytes"
+  },
+  {
+   "id": "F-circuit-symbols",
+   "kind": "F",
+   "name": "Circuit symbols and meter placement (ammeter in series, voltmeter in parallel)"
+  },
+  {
+   "id": "F-stationary-patterns",
+   "kind": "F",
+   "name": "Closed end = node, open end = antinode; patterns in strings and tubes"
+  },
+  {
+   "id": "F-drag-factors",
+   "kind": "F",
+   "name": "Drag increases with speed, area and fluid density; depends on shape"
+  },
+  {
+   "id": "F-material-graphs",
+   "kind": "F",
+   "name": "Shapes of force–extension and stress–strain graphs for different materials"
+  },
+  {
+   "id": "F-polarisation-waves",
+   "kind": "F",
+   "name": "Only transverse waves can be polarised; sound cannot"
+  },
+  {
+   "id": "F-photoelectric-obs",
+   "kind": "F",
+   "name": "Photoelectric observations: threshold frequency, instant emission, intensity affects rate not KEmax"
+  },
+  {
+   "id": "F-electron-diffraction",
+   "kind": "F",
+   "name": "Electron diffraction through graphite shows wave nature; rings closer at higher speed"
+  },
+  {
+   "id": "F-stopping",
+   "kind": "F",
+   "name": "Thinking and braking distance factors; stopping distance = thinking + braking"
+  },
+  {
+   "id": "F-prefixes",
+   "kind": "F",
+   "name": "Prefixes from pico to tera"
+  },
+  {
+   "id": "K-instruments",
+   "kind": "K",
+   "name": "Choosing instruments and their resolution (micrometer, calipers, rule, light gates, data logger, oscilloscope)"
+  },
+  {
+   "id": "K-method",
+   "kind": "K",
+   "name": "Workable method: variables, range, repeats and means, control variables"
+  },
+  {
+   "id": "K-safety",
+   "kind": "K",
+   "name": "Specific risks and precautions"
+  },
+  {
+   "id": "K-graph",
+   "kind": "K",
+   "name": "Plotting, best-fit lines, gradient triangles, tangents, intercepts, areas"
+  },
+  {
+   "id": "K-linearise",
+   "kind": "K",
+   "name": "Choosing what to plot for a straight line; meaning of gradient and intercept"
+  },
+  {
+   "id": "K-uncertainty",
+   "kind": "K",
+   "name": "Absolute and percentage uncertainty, combining, worst line, consistency"
+  },
+  {
+   "id": "K-evaluate",
+   "kind": "K",
+   "name": "Evaluating results: anomalies, limitations, improvements"
+  },
+  {
+   "id": "K-pag",
+   "kind": "K",
+   "name": "The standard practicals (g, terminal velocity, Young modulus, resistivity, internal resistance, I–V, speed of sound, Planck constant from LEDs, double slit, refraction)"
+  },
+  {
+   "id": "M-rearrange",
+   "kind": "M",
+   "name": "Rearranging equations, including squares and roots"
+  },
+  {
+   "id": "M-units",
+   "kind": "M",
+   "name": "Unit and prefix conversions; standard form"
+  },
+  {
+   "id": "M-sigfigs",
+   "kind": "M",
+   "name": "Significant figures"
+  },
+  {
+   "id": "M-ratio",
+   "kind": "M",
+   "name": "Ratio and proportion, including squares and inverse relationships"
+  },
+  {
+   "id": "M-trig",
+   "kind": "M",
+   "name": "Resolving with sin, cos, tan; angles; Pythagoras"
+  },
+  {
+   "id": "M-geometry",
+   "kind": "M",
+   "name": "Areas and volumes (circle from diameter, cylinder, sphere)"
+  },
+  {
+   "id": "M-straight-line",
+   "kind": "M",
+   "name": "y = mx + c"
+  },
+  {
+   "id": "M-estimate",
+   "kind": "M",
+   "name": "Estimation with sensible values"
+  }
+ ],
+ "extras": [
+  {
+   "name": "Ohm's law",
+   "class": "In the spec (4.2.3(b)); missing from the main list",
+   "parts": 2
+  },
+  {
+   "name": "Net charge is quantised",
+   "class": "In the spec (4.1.1(d)); missing from the main list",
+   "parts": 1
+  },
+  {
+   "name": "Law of reflection",
+   "class": "In the spec (4.4.1(f)(i), reflection of all waves); missing from the main list",
+   "parts": 3
+  },
+  {
+   "name": "Tension and compression in a bending beam",
+   "class": "In the spec (3.4.1(a)); missing from the main list",
+   "parts": 1
+  },
+  {
+   "name": "Peer review and validating results",
+   "class": "In the spec's guidance (1.1.4(a), How Science Works)",
+   "parts": 1
+  },
+  {
+   "name": "Springs in series and parallel",
+   "class": "Not named in the spec; worked out from Hooke's law",
+   "parts": 2
+  },
+  {
+   "name": "Three forces in equilibrium meet at a point",
+   "class": "Not named in the spec; follows from moments",
+   "parts": 1
+  },
+  {
+   "name": "Potentiometer balance method",
+   "class": "Not named in the spec; follows from potential dividers",
+   "parts": 1
+  },
+  {
+   "name": "Water waves slow down in shallower water",
+   "class": "GCSE knowledge used as context",
+   "parts": 1
+  },
+  {
+   "name": "Refractive index depends on wavelength",
+   "class": "Beyond the AS spec; supplied by the question's context",
+   "parts": 1
+  },
+  {
+   "name": "Intensity varies as cos² through a polariser",
+   "class": "Beyond the AS spec; read from the question's data",
+   "parts": 1
+  },
+  {
+   "name": "Environmental impact of generating electricity",
+   "class": "Specimen only; general knowledge",
+   "parts": 1
+  }
  ]
 }

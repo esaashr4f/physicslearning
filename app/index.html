@@ -1365,7 +1365,7 @@ function Playbook({ data, open, openSpec }) {
   }, [all]);
   const letters = useMemo(() => { const m = { A: 0, B: 0, C: 0, D: 0 }; for (const q of all) if (q.type === "mcq") { const l = (q.answer || "").match(/^[A-D]/)?.[0]; if (l) m[l]++; } return m; }, [all]);
 
-  const SECTIONS = [["pb-strategy", "Strategy"], ["pb-bounds", "Grade boundaries"], ["pb-papers", "The two papers"], ["pb-diff", "Difficulty"], ["pb-content", "Content"], ["pb-lost", "Why marks were lost"], ["pb-near", "Near misses"], ["pb-repeat", "Repeat questions"], ["pb-afl", "Examiners' advice"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
+  const SECTIONS = [["pb-strategy", "Strategy"], ["pb-stable", "Exam to exam"], ["pb-bounds", "Grade boundaries"], ["pb-papers", "The two papers"], ["pb-diff", "Difficulty"], ["pb-content", "Content"], ["pb-lost", "Why marks were lost"], ["pb-near", "Near misses"], ["pb-repeat", "Repeat questions"], ["pb-afl", "Examiners' advice"], ["pb-mech", "How marks are awarded"], ["pb-cmd", "Command words"], ["pb-prac", "Practical skills"], ["pb-lor", "Six-mark questions"], ["pb-must", "Must-know outcomes"], ["pb-traps", "Topic traps"], ["pb-units", "Unit conversions"], ["pb-eq", "Equation bank"], ["pb-mcq", "Multiple choice"], ["pb-more", "More patterns"], ["pb-trend", "Trends"]];
   const goto = (id) => { const el = ref.current?.querySelector("#" + id); if (!el) return; lenis.current ? lenis.current.scrollTo(el, { offset: -12 }) : el.scrollIntoView(); };
   const L = (arr) => html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>`;
   const lbl = (p) => p === "1" ? "M1 Practical" : p === "2" ? "M2 Foundations" : p === "3" ? "M3 Forces" : p === "4" ? "M4 Electrons, waves, photons" : p;
@@ -1387,6 +1387,59 @@ function Playbook({ data, open, openSpec }) {
           <p class="sub">${pb.strategy.summary}</p>
           <div class="cards2">${pb.strategy.phases.map((ph, i) => html`<div class="rule" key=${i}><span class="st">${ph.when}</span><h4>${ph.name}</h4><ul>${ph.items.map((x, j) => html`<li key=${j}>${x}</li>`)}</ul></div>`)}</div>
         </section>`}
+
+        ${pb.stability && (() => { const S2 = pb.stability; const ms = (arr) => { const n = arr.length, m = arr.reduce((a, b) => a + b, 0) / n; const sd = Math.sqrt(arr.reduce((a, b) => a + (b - m) ** 2, 0) / n); return [m, sd, Math.min(...arr), Math.max(...arr)]; };
+          const row = (label, arr) => { const [m, sd, lo, hi] = ms(arr); return html`<tr key=${label}><td>${label}</td><td>${m.toFixed(0)}%</td><td>±${sd.toFixed(0)}</td><td>${lo.toFixed(0)}–${hi.toFixed(0)}%</td></tr>`; };
+          const sub = Object.entries(S2.subsec_presence); const all11 = sub.filter(([, n]) => n === 11).map(([k]) => k).sort((a, b) => a.localeCompare(b, undefined, { numeric: true })); const ten = sub.filter(([, n]) => n === 10).map(([k]) => k).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+          const oc = Object.values(S2.outcome_presence); const hist = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1].map(n => [n, oc.filter(v => v === n).length]); const hmax = Math.max(...hist.map(h => h[1]));
+          const MOD = { "1": "M1 Practical", "2": "M2 Foundations", "3": "M3 Forces and motion", "4": "M4 Electrons, waves, photons" };
+          return html`<section id="pb-stable">
+          <h3>Exam to exam: what's predictable and what isn't</h3>
+          <p class="sub">Measured across all 11 sessions. The shape of each paper is very stable; the exact questions are not.</p>
+          <div class="ev" style=${{ marginBottom: "14px" }}>
+            <div><b>${all11.length} / ${sub.length}</b><span>spec sub-sections examined in every session (${ten.length} more in 10 of 11)</span></div>
+            <div><b>${oc.filter(v => v === 11).length}</b><span>individual learning outcomes examined every session</span></div>
+            <div><b>${S2.novelty.slice(-5).reduce((t, r) => t + r[2], 0)}</b><span>never-seen outcomes across the last 5 sessions combined</span></div>
+            <div><b>95% vs 74%</b><span>chance a sub-section appears if it appeared last time vs if it didn't: no rotation</span></div>
+          </div>
+          <div class="cols2">${[1, 2].map(pp => { const st2 = S2["p" + pp]; const key = (rows, k) => rows.map(r => r[k] || 0);
+            return html`<div class="panel" key=${pp}><h4>${PAPERS[pp].name}: share of marks, session to session</h4>
+              <table class="dtab"><thead><tr><th style=${{ textAlign: "left" }}>Feature</th><th>Mean</th><th>Spread</th><th>Range</th></tr></thead><tbody>
+                ${["4", "3", "1", "2"].map(k => row(MOD[k], key(st2.module, k)))}
+                ${pp === 1 ? row("Multiple choice", key(st2.type, "mcq")) : row("Six-mark answers", key(st2.type, "level-of-response"))}
+                ${row("Calculations", st2.type.map(r => (r["calculation-single-step"] || 0) + (r["calculation-multi-step"] || 0) + (r["show-that"] || 0)))}
+                ${row("Explain questions", key(st2.type, "explain"))}
+                ${row("Knowledge: equations", key(st2.kind, "E"))}${row("Knowledge: definitions + facts", st2.kind.map(r => (r.D || 0) + (r.F || 0)))}
+              </tbody></table></div>`; })}</div>
+          <div class="cols2" style=${{ marginTop: "14px" }}>
+            <div class="panel"><h4>New outcomes per session are drying up</h4><p class="sub" style=${{ margin: "0 0 8px" }}>Learning outcomes examined for the first time ever, by session.</p>
+              <div class="trend" style=${{ height: "120px" }}>${S2.novelty.map(([sl, n, nw]) => html`<div key=${sl} style=${{ height: Math.max(2, nw / 104 * 100) + "%" }} title=${`${SLABEL[sl]}: ${nw} new of ${n} outcomes`}><span>${nw}</span></div>`)}</div>
+              <div class="trend-x">${S2.novelty.map(([sl]) => { const se = SESSIONS.find(x => x.slug === sl); return html`<span key=${sl}>${se.y === "SAM" ? "SAM" : (se.m === "Nov" ? "N" : "J") + se.y.slice(2)}</span>`; })}</div>
+              <p class="sub" style=${{ margin: "10px 0 0" }}>Since 2019 a session adds 0–6 outcomes never asked before. New papers mostly bring new settings and new combinations of familiar outcomes, not new content.</p></div>
+            <div class="panel"><h4>How often each learning outcome turns up</h4><p class="sub" style=${{ margin: "0 0 8px" }}>Number of outcomes examined in exactly N of the 11 sessions.</p>
+              <div class="rep">${hist.map(([n, c]) => html`<div class="row" key=${n} style=${{ gridTemplateColumns: "70px minmax(0,1fr) 40px" }}><b>${n} / 11</b><span style=${{ height: "8px", background: "var(--surface-2)", borderRadius: "4px", overflow: "hidden" }}><i style=${{ display: "block", height: "100%", width: (c / hmax * 100) + "%", background: "var(--accent)" }}></i></span><span>${c}</span></div>`)}</div>
+              <p class="sub" style=${{ margin: "10px 0 0" }}>Each session samples about 90 of the 185 outcomes. Sub-sections come up every year; which outcomes inside them come up varies.</p></div>
+          </div>
+          <div class="panel" style=${{ marginTop: "14px" }}><h4>The style of question shifts more than the content</h4><p class="sub" style=${{ margin: "0 0 8px" }}>Share of each session's marks needing the move. Judging from data and using a given formula were rare before 2020 and are now regular.</p>
+            <div style=${{ overflowX: "auto" }}><table class="dtab"><thead><tr><th style=${{ textAlign: "left" }}>Move</th>${S2.order.map(sl => { const se = SESSIONS.find(x => x.slug === sl); return html`<th key=${sl}>${se.y === "SAM" ? "SAM" : (se.m === "Nov" ? "N" : "J") + se.y.slice(2)}</th>`; })}</tr></thead>
+            <tbody>${Object.entries(S2.moves).map(([m, v]) => html`<tr key=${m}><td style=${{ textAlign: "left" }}>${MOVE_LABEL[m]}</td>${v.map((x, i) => html`<td key=${i} style=${{ background: `color-mix(in srgb, var(--accent) ${Math.min(80, x * 4)}%, var(--surface))`, color: x >= 15 ? "var(--surface)" : "var(--ink)" }}>${Math.round(x)}</td>`)}</tr>`)}</tbody></table></div></div>
+          <div class="cols2" style=${{ marginTop: "14px" }}>
+            <div class="panel"><h4>Effectively guaranteed every session</h4><ul>
+              <li>Paper 1: 20 multiple-choice marks; Paper 2: two six-mark questions (12 marks). Fixed every time.</li>
+              <li>About half the marks from Module 4 and about 40% from Module 3, within ±6%.</li>
+              <li>About a third of marks rest on equations, about 7% on memorised facts.</li>
+              <li>These ${all11.length} sub-sections, every session: ${all11.map(k => `${k} ${data.spec?.sections?.[k] || ""}`).join("; ")}.</li>
+              <li>In 10 of 11 sessions: ${ten.map(k => `${k} ${data.spec?.sections?.[k] || ""}`).join("; ")}.</li>
+            </ul></div>
+            <div class="panel"><h4>What the past papers can't tell you</h4><ul>
+              <li>Which outcomes within a sub-section come up: most outcomes appear in only 3–8 of 11 sessions.</li>
+              <li>The setting: contexts are new almost every time; the physics underneath is familiar.</li>
+              <li>The mix of moves: judging data, ratio reasoning and given formulae swing from 0% to 12% of a session.</li>
+              <li>Outcomes never or rarely asked (4 never, 13 once): they are examinable and could appear.</li>
+              <li>A session doesn't avoid last year's topics, so there's no safe "skip" based on the previous paper.</li>
+            </ul></div>
+          </div>
+        </section>`; })()}
 
         ${pb.boundaries && html`<section id="pb-bounds">
           <h3>Grade boundaries</h3>
@@ -1640,6 +1693,8 @@ function KnowledgeMap({ data, open }) {
     </div>
     <div class="panel"><h4>Where the marks come from, by kind of knowledge</h4><div class="rep">${kinds.map(k => html`<div class="row" key=${k} style=${{ gridTemplateColumns: "190px minmax(0,1fr) 50px" }}><span>${KIND_PLURAL[k]}</span><span style=${{ height: "8px", background: "var(--surface-2)", borderRadius: "4px", overflow: "hidden" }}><i style=${{ display: "block", height: "100%", width: Math.round((st.byKind[k] || 0) / st.tot * 100 * 2.5) + "%", background: (k === "D" || k === "F") ? "var(--pen)" : "var(--accent)" }}></i></span><span>${Math.round((st.byKind[k] || 0) / st.tot * 100)}%</span></div>`)}</div>
       <p class="sub" style=${{ margin: "10px 0 0" }}>Marks are shared equally between the items a part needs. Red kinds have to be memorised; blue kinds can be worked out or are given in the booklet.</p></div>
+    ${Kn.extras && html`<div class="panel"><h4>The 12 one-off extras</h4><p class="sub" style=${{ margin: "0 0 10px" }}>Knowledge that ${Kn.extras.reduce((t, e) => t + e.parts, 0)} parts needed but the main list didn't include. Five are in the spec and were simply missing from the list; the rest are worked out from principles, GCSE knowledge, or supplied by the question.</p>
+      <div style=${{ overflowX: "auto" }}><table class="forms"><tbody>${Kn.extras.map(e => html`<tr key=${e.name}><td style=${{ fontFamily: "var(--f-body)", whiteSpace: "normal", fontWeight: 600 }}>${e.name}</td><td>${e.class}</td><td style=${{ fontFamily: "var(--f-mono)" }}>${e.parts} part${e.parts === 1 ? "" : "s"}</td></tr>`)}</tbody></table></div></div>`}
     ${kinds.map(k => { const items = Kn.items.filter(i => i.kind === k).sort((a, b) => (st.m[b.id]?.marks || 0) - (st.m[a.id]?.marks || 0));
       return html`<div class="km-kind" key=${k}><h4>${KIND_PLURAL[k]} <small>${Kn.kinds[k]}</small></h4>
         ${items.map(it => { const o = st.m[it.id] || { marks: 0, parts: [] }; const on = openId === it.id;
