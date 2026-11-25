@@ -1235,6 +1235,12 @@ function SpecView({ data, open, query }) {
       </div>
     </div>
 
+    ${spec.divergence && html`<section>
+      <h3>How the exams diverge from the spec</h3>
+      <p class="sub">The specification says what can be examined; 22 papers show what is examined and how. Where they differ, follow the papers.</p>
+      <div class="nms">${spec.divergence.map((d, i) => html`<div class="nm" key=${i} style=${{ gap: "6px" }}><header><span class="pill">${i + 1}</span><b>${d.title}</b></header><p style=${{ margin: 0, fontSize: "13.5px", color: "var(--ink-2)" }}>${d.body}</p><p style=${{ margin: 0, fontSize: "13.5px" }}><b style=${{ font: "600 11px/1 var(--f-mono)", color: "var(--accent)" }}>WHAT TO DO </b>${d.act}</p></div>`)}</div>
+    </section>`}
+
     <section class="spec-sum">
       <div class="panel">
         <h4>Coverage by module</h4>
