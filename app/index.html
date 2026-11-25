@@ -1709,7 +1709,15 @@ function SkillsBreakdown({ data, open }) {
             <button onClick=${() => setOpenId(on ? null : it.id)} aria-expanded=${on}>
               <span class="id">${it.id}</span><span class="nm3">${it.name}<small>${it.what}</small></span>
               <span class="bar"><i style=${{ width: (o.parts.length / maxN * 100) + "%" }}></i></span><span class="v">${o.parts.length} · ${o.marks} m</span></button>
-            ${on && html`<div class="sk-body"><p class="shared" style=${{ margin: 0 }}>Example: ${it.example}</p>
+            ${on && html`<div class="sk-body">${(() => { const Ls = data.skillLessons?.[it.id]; if (!Ls) return html`<p class="shared" style=${{ margin: 0 }}>Example: ${it.example}</p>`;
+              return html`<div class="lesson" style=${{ gap: "12px", margin: "4px 0 12px" }}>
+                ${Ls.spot?.length ? html`<div class="blk"><span class="h">How to spot it</span><ul>${Ls.spot.map((x, j) => html`<li key=${j}>${x}</li>`)}</ul></div>` : null}
+                ${Ls.list?.length ? html`<div class="blk"><span class="h">What the papers have asked</span><ul>${Ls.list.map((x, j) => html`<li key=${j}>${x}</li>`)}</ul></div>` : null}
+                <div class="blk"><span class="h">Method</span><ol class="steps">${Ls.steps.map((x, j) => html`<li key=${j}>${x}</li>`)}</ol></div>
+                ${Ls.example && html`<div class="worked"><span class="eyebrow">Worked example (original)</span><div class="prob">${Ls.example.problem}</div><ol>${Ls.example.solution.map((x, j) => html`<li key=${j}>${x}</li>`)}</ol><div class="ans">Answer: ${Ls.example.answer}</div></div>`}
+                ${Ls.traps?.length ? html`<div class="blk pen"><span class="h">Traps</span><ul>${Ls.traps.map((x, j) => html`<li key=${j}>${x}</li>`)}</ul></div>` : null}
+                <span class="h" style=${{ font: "600 10px/1 var(--f-mono)", letterSpacing: ".12em", textTransform: "uppercase", color: "var(--ink-3)" }}>Practise on real questions</span>
+              </div>`; })()}
               ${o.parts.slice().sort((a, b) => SESSIONS.findIndex(s => s.slug === b.slug) - SESSIONS.findIndex(s => s.slug === a.slug)).slice(0, 40).map(q => html`<button class="oc-q" key=${q.paper + q.slug + q.q} onClick=${() => open(q.paper, q.slug, q)} style=${{ gridTemplateColumns: "170px minmax(0,1fr) auto" }}><span class="ref">P${q.paper} ${SLABEL[q.slug]} Q${q.q}</span><span class="ctx">${q.subdetail || q.context}</span><span class="mk">${q.marks} m</span></button>`)}
               ${o.parts.length > 40 ? html`<span class="shared">+${o.parts.length - 40} more</span>` : null}</div>`}
           </div>`; })}
@@ -2185,13 +2193,14 @@ function App() {
       fetch("data/knowledge.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/subskills.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/gaps.json").then(r => r.ok ? r.json() : null).catch(() => null),
-    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge, subskills, gaps]) => {
+      fetch("data/skill-lessons.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge, subskills, gaps, skillLessons]) => {
       KNOW = Object.fromEntries((knowledge?.items || []).map(i => [i.id, i]));
       const rcIndex = {}; for (const r of rootcause?.parts || []) rcIndex[`${r.paper}:${r.slug}:${r.q}`] = r;
       const nmIndex = {};
       for (const it of nearmiss?.items || []) for (const r of it.refs || []) (nmIndex[`${r.paper}:${r.slug}:${r.q}`] ||= []).push(it);
       const byPaper = {}; for (const q of all) (byPaper[`${q.paper}:${q.slug}`] ||= []).push(q);
-      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, definitions, knowledge, subskills, gaps, ready: true });
+      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, definitions, knowledge, subskills, gaps, skillLessons, ready: true });
     });
   }, []);
   const hardMarks = useMemo(() => { const m = {}; for (const q of data.all) if (!q.withdrawn && q.difficulty === 3) { const k = `${q.paper}:${q.slug}`; m[k] = (m[k] || 0) + (+q.marks || 0); } for (const q of data.all) { const k = `${q.paper}:${q.slug}`; if (!(k in m)) m[k] = 0; } return m; }, [data.all]);

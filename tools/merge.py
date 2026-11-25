@@ -67,3 +67,12 @@ if stg:
     with open(out+'/questions.json','w') as fh:
         fh.write('[\n'+',\n'.join(json.dumps(x,ensure_ascii=False) for x in qs)+'\n]\n')
     print('subtag files',len(stg))
+
+# ---- skill lessons ----
+les={}
+for f in ('maths','other'):
+    pth=S+'/lessons/'+f+'.json'
+    if os.path.exists(pth): les.update(json.load(open(pth)))
+if les:
+    json.dump(les,open(out+'/skill-lessons.json','w'),ensure_ascii=False,separators=(',',':'))
+    print('skill lessons',len(les))
