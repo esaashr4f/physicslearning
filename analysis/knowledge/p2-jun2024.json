@@ -1,0 +1,362 @@
+{
+ "1(a)": {
+  "needs": [
+   "E-speed",
+   "M-geometry",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Orbital speed = circumference 2πr ÷ period, with km to m.",
+  "derivable": true
+ },
+ "1(b)": {
+  "needs": [
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Velocity is a vector: same speed but different direction half an orbit later.",
+  "derivable": true
+ },
+ "1(c)(i)": {
+  "needs": [
+   "M-units",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Convert hours and minutes consistently and form the ratio.",
+  "derivable": true
+ },
+ "1(c)(ii)": {
+  "needs": [
+   "M-ratio",
+   "M-rearrange",
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "With r³ ∝ T², new r = old r × (T ratio)^(2/3).",
+  "derivable": true
+ },
+ "2(a)": {
+  "needs": [
+   "P-newton2"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Statement: net force is proportional to rate of change of momentum.",
+  "derivable": false
+ },
+ "2(b)(i)": {
+  "needs": [
+   "E-F=dp/dt",
+   "E-p=mv",
+   "D-si"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Impulse = change in momentum; unit N s.",
+  "derivable": true
+ },
+ "2(b)(ii)": {
+  "needs": [
+   "E-F=dp/dt"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Average force = impulse ÷ contact time.",
+  "derivable": true
+ },
+ "2(c)(i)": {
+  "needs": [
+   "D-collisions"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Perfectly elastic: total kinetic energy is conserved.",
+  "derivable": false
+ },
+ "2(c)(ii)": {
+  "needs": [
+   "P-momentum",
+   "E-p=mv",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Total momentum conserved; take rebound velocity as negative; solve for the unknown mass.",
+  "derivable": true
+ },
+ "3": {
+  "needs": [
+   "K-pag",
+   "K-instruments",
+   "K-method",
+   "K-linearise",
+   "K-uncertainty",
+   "E-suvat"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Electronic timing of free fall over measured heights; t against √h gradient √(2/g); % uncertainty in g twice that of gradient.",
+  "derivable": true
+ },
+ "4(a)(i)": {
+  "needs": [
+   "K-instruments",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Calipers or micrometer; repeat at several positions and average.",
+  "derivable": true
+ },
+ "4(a)(ii)": {
+  "needs": [
+   "E-density",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Prism volume = triangle area ½bh × thickness; density = m/V.",
+  "derivable": true
+ },
+ "4(b)(i)": {
+  "needs": [
+   "D-centre-gravity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Centre of gravity is the point where the whole weight appears to act.",
+  "derivable": false
+ },
+ "4(b)(ii)": {
+  "needs": [
+   "D-centre-gravity",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A triangle's centre of gravity is where the medians (vertex to opposite midpoint) meet; scale the drawing.",
+  "derivable": false
+ },
+ "4(c)(i)": {
+  "needs": [
+   "P-newton1",
+   "P-moments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Equilibrium: zero resultant force and zero resultant moment about any point.",
+  "derivable": false
+ },
+ "4(c)(ii)": {
+  "needs": [
+   "P-moments",
+   "E-moment",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Weight acts at centre of gravity; balance its moment about the support with the applied force's moment.",
+  "derivable": true
+ },
+ "5(a)(i)": {
+  "needs": [
+   "E-v=fλ",
+   "F-prefixes"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "f = c/λ, with nm and THz prefixes.",
+  "derivable": true
+ },
+ "5(a)(ii)": {
+  "needs": [
+   "E-refraction",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "v = c/n; frequency unchanged; λ = v/f.",
+  "derivable": true
+ },
+ "5(b)(i)": {
+  "needs": [
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Angles of incidence and refraction are measured from the normal.",
+  "derivable": false
+ },
+ "5(b)(ii)": {
+  "needs": [
+   "K-pag",
+   "K-method",
+   "K-instruments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Narrow ray in dim room; outline block; mark ray with crosses far apart; join points; protractor from normal.",
+  "derivable": true
+ },
+ "5(b)(iii)": {
+  "needs": [
+   "E-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Snell's law sin r = sin i / n.",
+  "derivable": true
+ },
+ "5(b)(iv)": {
+  "needs": [
+   "E-refraction",
+   "M-geometry",
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Geometry gives incidence at Q; sin C = 1/n; incidence above C gives total internal reflection.",
+  "derivable": true
+ },
+ "5(b)(v)": {
+  "needs": [
+   "D-refraction",
+   "E-refraction"
+  ],
+  "given": [],
+  "new": [
+   "Law of reflection"
+  ],
+  "assumed": "Reflect with equal angles at Q, then bend away from the normal leaving glass.",
+  "derivable": true
+ },
+ "6(a)": {
+  "needs": [
+   "K-instruments",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Period from divisions × time-base; f = 1/T.",
+  "derivable": true
+ },
+ "6(b)": {
+  "needs": [
+   "F-stationary-patterns",
+   "D-stationary"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Closed end is a node, open end an antinode; fundamental is a quarter wavelength.",
+  "derivable": false
+ },
+ "6(c)": {
+  "needs": [
+   "F-stationary-patterns",
+   "E-nodes"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A closed tube has only odd harmonics; next is 3 × fundamental.",
+  "derivable": false
+ },
+ "7(a)(i)": {
+  "needs": [
+   "E-emf",
+   "D-internal"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "With no current there is no p.d. across internal resistance, so V = E.",
+  "derivable": true
+ },
+ "7(a)(ii)": {
+  "needs": [
+   "E-emf"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "r = (E − V)/I.",
+  "derivable": true
+ },
+ "7(a)(iii)": {
+  "needs": [
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "n identical parallel resistors give R/n; series sections add.",
+  "derivable": true
+ },
+ "7(b)(i)": {
+  "needs": [
+   "E-elec-power",
+   "E-W=VQ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy = I²rt (or lost volts × I × t).",
+  "derivable": true
+ },
+ "7(b)(ii)": {
+  "needs": [
+   "E-Q=It",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Q = It; electrons = Q/e.",
+  "derivable": true
+ },
+ "7(b)(iii)": {
+  "needs": [
+   "E-Anev",
+   "P-charge",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Current splits equally in identical branches; drift speed ∝ current for identical wires.",
+  "derivable": true
+ },
+ "7(c)(i)": {
+  "needs": [
+   "E-series-parallel",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Removing a parallel resistor increases total resistance, reducing current.",
+  "derivable": true
+ },
+ "7(c)(ii)": {
+  "needs": [
+   "E-emf",
+   "D-internal"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Smaller current means fewer lost volts, so terminal p.d. rises.",
+  "derivable": true
+ },
+ "8": {
+  "needs": [
+   "F-electron-diffraction",
+   "E-debroglie",
+   "K-safety",
+   "E-p=mv",
+   "M-units",
+   "M-estimate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Electron diffraction tube with graphite showing rings; high-voltage safety; λ = h/mv for electrons and a car (estimate mass, convert km/h).",
+  "derivable": false
+ }
+}

@@ -1,0 +1,444 @@
+{
+ "1": {
+  "needs": [
+   "E-upthrust"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Archimedes: upthrust equals the weight of fluid displaced.",
+  "derivable": false
+ },
+ "2": {
+  "needs": [
+   "D-emf-pd",
+   "F-ldr-thermistor"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Cells, generators and solar cells supply e.m.f.; an LDR only dissipates energy.",
+  "derivable": false
+ },
+ "3": {
+  "needs": [
+   "F-photoelectric-obs",
+   "P-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Emission is instant above threshold frequency; intensity changes number of electrons not their KEmax.",
+  "derivable": false
+ },
+ "4": {
+  "needs": [
+   "D-terminal",
+   "E-W=mg",
+   "M-units",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At terminal velocity drag equals weight; mass in kg; solve for v.",
+  "derivable": false
+ },
+ "5": {
+  "needs": [
+   "P-energy",
+   "E-Ek",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work against the body removes kinetic energy; speed is proportional to √KE.",
+  "derivable": true
+ },
+ "6": {
+  "needs": [
+   "E-elec-power",
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "On a fixed supply P = V²/R, so the largest total resistance dissipates least power.",
+  "derivable": true
+ },
+ "7": {
+  "needs": [
+   "E-elastic"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy stored under Hooke's law = ½ × force × extension.",
+  "derivable": true
+ },
+ "8": {
+  "needs": [
+   "D-si",
+   "E-stress-strain"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Strain is unitless, so Young modulus and stress share units of Pa.",
+  "derivable": true
+ },
+ "9": {
+  "needs": [
+   "D-current",
+   "F-carriers"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Metals have very high carrier number density (~10²⁸ m⁻³); insulators very low.",
+  "derivable": false
+ },
+ "10": {
+  "needs": [
+   "E-resistivity",
+   "F-circuit-symbols",
+   "E-divider"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Longer, thinner wire has larger resistance, changing current and how p.d. is shared.",
+  "derivable": false
+ },
+ "11": {
+  "needs": [
+   "P-superposition",
+   "D-coherence"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Double-slit fringes come from diffraction plus interference of the two coherent waves.",
+  "derivable": false
+ },
+ "12": {
+  "needs": [
+   "E-resistivity",
+   "M-geometry",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "ρ = RA/L with A = πd²/4, converting lengths to m.",
+  "derivable": true
+ },
+ "13": {
+  "needs": [
+   "F-stationary-patterns",
+   "E-nodes",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Count loops in the pattern to find the harmonic number; fundamental = f/n.",
+  "derivable": false
+ },
+ "14": {
+  "needs": [
+   "E-debroglie",
+   "E-Ek",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "p = √(2mE), so doubling KE divides λ by √2.",
+  "derivable": true
+ },
+ "15": {
+  "needs": [
+   "E-phase",
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Phase difference = fraction of a period between points × 360°.",
+  "derivable": false
+ },
+ "16": {
+  "needs": [
+   "E-eV-joule",
+   "E-photon",
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Convert eV to J, find λ = hc/E, then match to the visible range 400–700 nm.",
+  "derivable": false
+ },
+ "17": {
+  "needs": [
+   "F-prefixes",
+   "M-sigfigs",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Table headings use quantity / unit; 10⁶ factor in the heading; round to 2 s.f.",
+  "derivable": false
+ },
+ "18": {
+  "needs": [
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Horizontal velocity component u cos θ is constant, so range = u cos θ × t.",
+  "derivable": true
+ },
+ "19": {
+  "needs": [
+   "F-electron-diffraction",
+   "P-duality"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Electron diffraction shows electrons behave as waves.",
+  "derivable": false
+ },
+ "20": {
+  "needs": [
+   "D-impulse",
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Impulse is the area under a force–time graph.",
+  "derivable": false
+ },
+ "21(a)": {
+  "needs": [
+   "D-kinematics",
+   "E-speed"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Drops leave at equal time intervals, so growing spacing means increasing speed.",
+  "derivable": false
+ },
+ "21(b)": {
+  "needs": [
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "An object stays at rest unless a resultant force acts on it.",
+  "derivable": true
+ },
+ "21(c)(i)": {
+  "needs": [
+   "K-graph",
+   "D-graph-meaning",
+   "E-suvat"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Velocity is the gradient of a tangent to the s–t graph, or use suvat from rest.",
+  "derivable": false
+ },
+ "21(c)(ii)": {
+  "needs": [
+   "E-F=dp/dt",
+   "E-p=mv"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rate of change of momentum = Δ(mv)/Δt, unit N or kg m s⁻².",
+  "derivable": true
+ },
+ "22(a)": {
+  "needs": [
+   "K-instruments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A ruler with mm divisions resolves to about ±1–2 mm.",
+  "derivable": false
+ },
+ "22(b)": {
+  "needs": [
+   "K-uncertainty",
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage uncertainties add; a squared quantity doubles; convert back to absolute.",
+  "derivable": true
+ },
+ "23(a)": {
+  "needs": [
+   "K-pag",
+   "F-circuit-symbols",
+   "F-iv-curves",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Voltmeter across LED, ammeter in series, vary p.d. until it just lights; darken surroundings.",
+  "derivable": false
+ },
+ "23(b)(i)": {
+  "needs": [
+   "E-Q=It",
+   "D-current"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Electrons per second = current ÷ electron charge.",
+  "derivable": false
+ },
+ "23(b)(ii)": {
+  "needs": [
+   "E-Anev",
+   "M-geometry",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Area from diameter (halve, mm to m); solve I = Anev for v.",
+  "derivable": true
+ },
+ "23(c)(i)": {
+  "needs": [
+   "F-ldr-thermistor",
+   "E-divider",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Current heats the NTC thermistor, lowering resistance so its share of p.d. falls.",
+  "derivable": false
+ },
+ "23(c)(ii)": {
+  "needs": [
+   "E-divider",
+   "E-R=V/I",
+   "K-graph",
+   "P-kirchhoff2"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series p.d.s add to the supply; same current through both; R = V/I.",
+  "derivable": true
+ },
+ "24(a)": {
+  "needs": [
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "All EM waves travel at c in a vacuum.",
+  "derivable": false
+ },
+ "24(b)": {
+  "needs": [
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "f = c/λ.",
+  "derivable": true
+ },
+ "24(c)": {
+  "needs": [
+   "E-photon",
+   "M-ratio",
+   "M-estimate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photon energy ∝ 1/λ; number of visible photons = ratio of energies.",
+  "derivable": true
+ },
+ "25(a)(i)": {
+  "needs": [
+   "F-polarisation-waves",
+   "D-transverse"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Sound is longitudinal; only transverse waves can be polarised.",
+  "derivable": false
+ },
+ "25(a)(ii)": {
+  "needs": [
+   "D-diffraction",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Use a speaker, gap and microphone; sound spreads beyond the gap when its width is comparable to wavelength.",
+  "derivable": false
+ },
+ "25(b)(i)": {
+  "needs": [
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Refractive index = speed of light in vacuum ÷ speed in the material.",
+  "derivable": false
+ },
+ "25(b)(ii)1": {
+  "needs": [
+   "E-refraction",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Frequency unchanged; higher n means lower speed so shorter wavelength.",
+  "derivable": true
+ },
+ "25(b)(ii)2": {
+  "needs": [
+   "E-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Snell's law n₁ sin θ₁ = n₂ sin θ₂.",
+  "derivable": true
+ },
+ "25(b)(ii)3": {
+  "needs": [
+   "D-refraction",
+   "E-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "TIR only occurs going into a medium of lower refractive index.",
+  "derivable": false
+ },
+ "26(a)": {
+  "needs": [
+   "P-moments",
+   "E-density",
+   "E-W=mg",
+   "D-centre-gravity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Moments balance about the pivot; rod weight = ρALg acting at its centre.",
+  "derivable": false
+ },
+ "26(b)(i)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Draw a straight best-fit line; large triangle for gradient.",
+  "derivable": true
+ },
+ "26(b)(ii)": {
+  "needs": [
+   "K-linearise",
+   "M-rearrange",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Equate gradient to the expression's coefficient and solve for density.",
+  "derivable": true
+ }
+}

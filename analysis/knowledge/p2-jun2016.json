@@ -1,0 +1,377 @@
+{
+ "1(a)": {
+  "needs": [
+   "D-transverse"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Transverse oscillations are perpendicular to energy travel; longitudinal ones are parallel to it.",
+  "derivable": false
+ },
+ "1(b)(i)": {
+  "needs": [
+   "K-instruments",
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Amplitude on an oscilloscope = vertical divisions from centre to peak × y-sensitivity.",
+  "derivable": true
+ },
+ "1(b)(ii)": {
+  "needs": [
+   "K-instruments",
+   "E-v=fλ",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Period = horizontal divisions per cycle × time-base; f = 1/T.",
+  "derivable": true
+ },
+ "1(b)(iii)": {
+  "needs": [
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Wavelength = wave speed ÷ frequency.",
+  "derivable": true
+ },
+ "1(c)": {
+  "needs": [
+   "E-intensity",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Intensity is proportional to amplitude squared, so a quarter intensity means half the amplitude.",
+  "derivable": true
+ },
+ "2(a)(i)": {
+  "needs": [
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Statement: where waves meet, resultant displacement equals the sum of the individual displacements.",
+  "derivable": false
+ },
+ "2(a)(ii)": {
+  "needs": [
+   "D-coherence"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Coherent sources have a constant phase difference.",
+  "derivable": false
+ },
+ "2(b)1": {
+  "needs": [
+   "E-pathdiff",
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Maxima occur where path difference is a whole number of wavelengths; the first one beside the centre is λ.",
+  "derivable": true
+ },
+ "2(b)2": {
+  "needs": [
+   "E-pathdiff",
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Minima occur at path differences of odd half-wavelengths; the second minimum is 1.5λ.",
+  "derivable": true
+ },
+ "2(c)": {
+  "needs": [
+   "E-young",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Fringe spacing x = λD/a, so larger slit separation gives closer maxima.",
+  "derivable": true
+ },
+ "3(a)(i)": {
+  "needs": [
+   "E-suvat",
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At maximum height vertical velocity is zero; use v = u + at with a = −g.",
+  "derivable": true
+ },
+ "3(a)(ii)": {
+  "needs": [
+   "P-vectors",
+   "E-speed"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Horizontal velocity is constant, so it equals horizontal distance ÷ time.",
+  "derivable": true
+ },
+ "3(a)(iii)": {
+  "needs": [
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Combine perpendicular components with Pythagoras to get the launch speed.",
+  "derivable": true
+ },
+ "3(b)(i)": {
+  "needs": [
+   "E-Ek"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Kinetic energy = ½mv².",
+  "derivable": true
+ },
+ "3(b)(ii)": {
+  "needs": [
+   "E-Ep"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gain in gravitational potential energy = mgh.",
+  "derivable": true
+ },
+ "3(b)(iii)": {
+  "needs": [
+   "P-energy",
+   "E-Ek"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Without air resistance KE at the top = initial KE − GPE gained (only the horizontal velocity remains).",
+  "derivable": true
+ },
+ "3(c)": {
+  "needs": [
+   "F-drag-factors",
+   "D-forces",
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Drag opposes motion, reducing both velocity components, so the path is lower and the peak occurs earlier.",
+  "derivable": true
+ },
+ "4(a)": {
+  "needs": [
+   "D-si",
+   "E-W=VQ",
+   "E-Q=It",
+   "E-work",
+   "E-F=ma",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "SI base units kg, m, s, A; build joule from force × distance and coulomb from current × time.",
+  "derivable": false
+ },
+ "4(b)(i)": {
+  "needs": [
+   "E-divider",
+   "P-kirchhoff2",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series p.d.s add to the e.m.f.; in a divider p.d.s are in the ratio of the resistances.",
+  "derivable": true
+ },
+ "4(b)(ii)": {
+  "needs": [
+   "E-R=V/I",
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series current = e.m.f. ÷ total resistance (or p.d. ÷ resistance for one component).",
+  "derivable": true
+ },
+ "4(c)": {
+  "needs": [
+   "F-ldr-thermistor",
+   "P-resistance",
+   "P-kirchhoff2",
+   "E-R=V/I"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "LDR resistance falls in bright light; current rises; fixed resistor takes more p.d., leaving less across the LDR.",
+  "derivable": false
+ },
+ "5(a)": {
+  "needs": [
+   "E-density",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Volume = mass ÷ density, with grams converted to kilograms.",
+  "derivable": true
+ },
+ "5(b)(i)": {
+  "needs": [
+   "K-method",
+   "E-resistivity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "The whole cross-section must touch the contacts so the full area A conducts.",
+  "derivable": true
+ },
+ "5(b)(ii)": {
+  "needs": [
+   "K-instruments",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Use calipers or a micrometer and repeat readings at several points along the length.",
+  "derivable": true
+ },
+ "5(c)(i)": {
+  "needs": [
+   "M-units",
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Square the length value, keeping the table's units and significant figures.",
+  "derivable": true
+ },
+ "5(c)(ii)": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage uncertainty doubles when a quantity is squared.",
+  "derivable": true
+ },
+ "5(d)(i)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Plot points accurately and draw a straight best-fit line with balanced scatter.",
+  "derivable": true
+ },
+ "5(d)(ii)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient from a large triangle on the best-fit line.",
+  "derivable": true
+ },
+ "5(e)": {
+  "needs": [
+   "E-resistivity",
+   "K-linearise",
+   "M-rearrange",
+   "D-si"
+  ],
+  "given": [
+   "K-linearise"
+  ],
+  "new": [],
+  "assumed": "Rearrange the given gradient relation to get resistivity; give units of resistivity as Ω m.",
+  "derivable": true
+ },
+ "6(a)": {
+  "needs": [
+   "K-pag",
+   "K-method",
+   "K-safety",
+   "K-instruments",
+   "E-stress-strain",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Load a clamped wire with masses until breaking; measure diameter with a micrometer; stress = force/area; eye protection and safe loading.",
+  "derivable": true
+ },
+ "6(b)": {
+  "needs": [
+   "F-material-graphs",
+   "D-materials"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Glass is brittle: straight line to fracture; rubber is polymeric: loading and unloading curves form a hysteresis loop.",
+  "derivable": false
+ },
+ "7(a)": {
+  "needs": [
+   "F-photoelectric-obs",
+   "P-photon",
+   "D-workfunction",
+   "E-photon",
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "UV photons exceed work function, emitting electrons; visible photons never do whatever intensity; intensity changes photon rate only.",
+  "derivable": false
+ },
+ "7(b)": {
+  "needs": [
+   "E-photoelectric",
+   "E-photon",
+   "E-eV-joule"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Convert work function eV to J; KEmax = hf − φ.",
+  "derivable": true
+ },
+ "8(a)": {
+  "needs": [
+   "E-eV",
+   "E-W=VQ",
+   "E-Ek",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work done eV on the electron becomes ½mv²; rearrange for v using data sheet values.",
+  "derivable": true
+ },
+ "8(b)": {
+  "needs": [
+   "E-debroglie",
+   "E-p=mv"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "de Broglie wavelength λ = h/(mv).",
+  "derivable": true
+ },
+ "8(c)": {
+  "needs": [
+   "E-debroglie",
+   "P-duality",
+   "D-diffraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Higher p.d. gives more momentum, shorter wavelength, so less diffraction and smaller rings.",
+  "derivable": true
+ }
+}

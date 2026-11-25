@@ -1,0 +1,397 @@
+{
+ "1": {
+  "needs": [
+   "D-si"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "The ampere is an SI base unit; volt, ohm and coulomb are derived.",
+  "derivable": false
+ },
+ "2": {
+  "needs": [
+   "E-pathdiff"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Constructive interference needs a path difference of a whole number of wavelengths.",
+  "derivable": true
+ },
+ "3": {
+  "needs": [
+   "E-resistivity",
+   "D-current"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "R ∝ L at fixed area; number density depends only on the material.",
+  "derivable": false
+ },
+ "4": {
+  "needs": [
+   "D-polarisation"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Polarised light through a filter at 90° is blocked; at 180° it passes fully again.",
+  "derivable": false
+ },
+ "5": {
+  "needs": [
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Add series resistances; combine parallel branches by reciprocals.",
+  "derivable": true
+ },
+ "6": {
+  "needs": [
+   "D-stationary",
+   "E-phase"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Points in adjacent loops of a stationary wave oscillate in antiphase (π).",
+  "derivable": false
+ },
+ "7": {
+  "needs": [
+   "F-photoelectric-obs",
+   "P-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Higher intensity means more photons per second, so more electrons per second, same KEmax.",
+  "derivable": false
+ },
+ "8": {
+  "needs": [
+   "D-diffraction",
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Significant diffraction needs wavelength comparable to gap; microwaves are centimetre-scale.",
+  "derivable": false
+ },
+ "9": {
+  "needs": [
+   "P-newton3"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Third-law pairs are equal, opposite, same type, and act on different bodies.",
+  "derivable": false
+ },
+ "10": {
+  "needs": [
+   "P-momentum",
+   "D-collisions"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "In any collision with no external force total momentum is conserved; kinetic energy only if elastic.",
+  "derivable": false
+ },
+ "11": {
+  "needs": [
+   "P-charge"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Currents into a junction must sum to currents out.",
+  "derivable": true
+ },
+ "12": {
+  "needs": [
+   "D-diffraction",
+   "D-coherence",
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Double slits show diffraction, interference and wave nature; refraction is not involved.",
+  "derivable": false
+ },
+ "13": {
+  "needs": [
+   "E-young",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "x is one fringe spacing: total width ÷ number of spacings; λ = ax/D with mm converted.",
+  "derivable": true
+ },
+ "14": {
+  "needs": [
+   "E-nodes",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Node spacing is λ/2; f = v/λ.",
+  "derivable": false
+ },
+ "15": {
+  "needs": [
+   "E-elastic",
+   "P-energy"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "E = ½kx²; compressing a spring increases its stored energy.",
+  "derivable": true
+ },
+ "16": {
+  "needs": [
+   "F-material-graphs",
+   "D-materials"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Brittle materials show a straight-line stress–strain graph ending abruptly with no plastic region.",
+  "derivable": false
+ },
+ "17": {
+  "needs": [
+   "D-emf-pd"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "E.m.f. is energy transferred to electrical form per unit charge passing through the source.",
+  "derivable": false
+ },
+ "18": {
+  "needs": [
+   "E-refraction",
+   "D-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Find critical angle from sin C = 1/n, compare with incidence angle to normal.",
+  "derivable": false
+ },
+ "19": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "For a product, percentage uncertainties add.",
+  "derivable": true
+ },
+ "20": {
+  "needs": [
+   "E-upthrust",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Upthrust = weight of water displaced = mass displaced × g.",
+  "derivable": false
+ },
+ "21(a)": {
+  "needs": [
+   "E-emf",
+   "E-elec-power",
+   "E-series-parallel",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series cells add e.m.f. and internal resistance; terminal p.d. V = 3ε − 3Ir; P = IV.",
+  "derivable": true
+ },
+ "21(b)": {
+  "needs": [
+   "D-internal",
+   "E-elec-power"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Larger r wastes more power (I²r) inside the battery, leaving less for the bulb.",
+  "derivable": false
+ },
+ "22(a)": {
+  "needs": [
+   "E-work",
+   "E-power",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Only the component along the motion does work: W = Fx cos θ; P = W/t.",
+  "derivable": true
+ },
+ "22(b)": {
+  "needs": [
+   "E-moment",
+   "E-W=mg",
+   "D-si"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Moment = weight × perpendicular distance, unit N m.",
+  "derivable": false
+ },
+ "22(c)": {
+  "needs": [
+   "P-moments",
+   "E-moment"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Smaller perpendicular distance means smaller moment, so spine muscles need less force to balance it.",
+  "derivable": true
+ },
+ "23(a)": {
+  "needs": [
+   "K-pag",
+   "F-circuit-symbols",
+   "E-R=V/I",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Ammeter in series, voltmeter across thermistor; record temperature, V and I at intervals; R = V/I.",
+  "derivable": false
+ },
+ "23(b)": {
+  "needs": [
+   "E-divider",
+   "F-iv-curves",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Read thermistor resistance and LED switch-on p.d. from graphs; divider output must exceed switch-on p.d.",
+  "derivable": false
+ },
+ "24(a)": {
+  "needs": [
+   "D-terminal",
+   "F-drag-factors",
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Drag increases with speed until it balances weight; zero resultant gives zero acceleration.",
+  "derivable": false
+ },
+ "24(b)": {
+  "needs": [
+   "E-suvat",
+   "P-energy"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "v² = u² + 2as from rest with a = g (or mgh = ½mv²).",
+  "derivable": true
+ },
+ "24(c)": {
+  "needs": [
+   "E-suvat",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Average repeated times, then use s = ½gt² rearranged for g.",
+  "derivable": true
+ },
+ "24(d)": {
+  "needs": [
+   "K-evaluate",
+   "K-instruments",
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Electronic timing removes reaction time; larger drop height reduces percentage uncertainty in time.",
+  "derivable": true
+ },
+ "24(e)": {
+  "needs": [
+   "D-graph-meaning",
+   "E-suvat"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Height–time graph has gradient equal to velocity: steepens falling, flattens rising; rebound lower due to energy loss.",
+  "derivable": false
+ },
+ "25(a)": {
+  "needs": [
+   "E-photoelectric"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "KEmax is the maximum kinetic energy of the emitted photoelectrons.",
+  "derivable": false
+ },
+ "25(b)": {
+  "needs": [
+   "P-photon",
+   "E-photoelectric",
+   "P-charge"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photons each free one electron from the plate; losing negative charge makes the leaf fall.",
+  "derivable": true
+ },
+ "25(c)": {
+  "needs": [
+   "D-workfunction",
+   "E-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Below threshold one photon's energy is less than the work function, so no electron escapes.",
+  "derivable": false
+ },
+ "26(a)": {
+  "needs": [
+   "K-pag",
+   "D-errors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Shielding ambient light makes it easier to see when the LED just starts to glow.",
+  "derivable": false
+ },
+ "26(b)": {
+  "needs": [
+   "K-graph",
+   "E-photon",
+   "E-W=VQ",
+   "K-linearise"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "eV = hf, so gradient of V against f is h/e; multiply gradient by e.",
+  "derivable": true
+ },
+ "26(c)": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage difference = size of (accepted − measured) ÷ accepted × 100.",
+  "derivable": true
+ },
+ "26(d)": {
+  "needs": [
+   "E-photon",
+   "E-photon-rate",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photon energy hf; photons per second = power ÷ photon energy; compare.",
+  "derivable": true
+ }
+}

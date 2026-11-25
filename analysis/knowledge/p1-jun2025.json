@@ -1,0 +1,416 @@
+{
+ "1": {
+  "needs": [
+   "E-Anev",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rearrange I = Anev for v.",
+  "derivable": true
+ },
+ "2": {
+  "needs": [
+   "D-couple",
+   "E-moment",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Torque of a couple = one force × perpendicular separation; resolve using the angle.",
+  "derivable": false
+ },
+ "3": {
+  "needs": [
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Reduce the network step by step using series and parallel rules.",
+  "derivable": true
+ },
+ "4": {
+  "needs": [
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Ultraviolet lies roughly 10⁻⁸ to 4 × 10⁻⁷ m.",
+  "derivable": false
+ },
+ "5": {
+  "needs": [
+   "F-stationary-patterns",
+   "E-nodes",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Open pipe has antinodes at both ends; count half-wavelengths in the pipe; f = v/λ.",
+  "derivable": false
+ },
+ "6": {
+  "needs": [
+   "E-photoelectric",
+   "E-photon",
+   "E-eV-joule"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "KEmax = hf − φ with φ converted from eV to J.",
+  "derivable": true
+ },
+ "7": {
+  "needs": [
+   "E-debroglie",
+   "E-p=mv"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "λ = h/(mv) with v = 0.05c and electron mass.",
+  "derivable": true
+ },
+ "8": {
+  "needs": [
+   "D-materials",
+   "F-material-graphs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "UTS is the maximum stress on a stress–strain curve.",
+  "derivable": false
+ },
+ "9": {
+  "needs": [
+   "F-prefixes"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Giga means 10⁹.",
+  "derivable": false
+ },
+ "10": {
+  "needs": [
+   "E-upthrust"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Question withdrawn; normally upthrust on a floating object equals its weight and the weight of fluid displaced.",
+  "derivable": false
+ },
+ "11": {
+  "needs": [
+   "E-suvat"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Fall distance is the height difference; from rest v² = 2gs.",
+  "derivable": true
+ },
+ "12": {
+  "needs": [
+   "F-photoelectric-obs",
+   "P-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Above threshold, intensity (photon rate) sets the emission rate.",
+  "derivable": false
+ },
+ "13": {
+  "needs": [
+   "P-newton1",
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Third force balances the resultant of the two perpendicular forces: Pythagoras and tan for angle.",
+  "derivable": true
+ },
+ "14": {
+  "needs": [
+   "D-collisions",
+   "P-momentum",
+   "P-energy"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Elastic: momentum and kinetic energy both conserved, so identical particles simply reverse.",
+  "derivable": false
+ },
+ "15": {
+  "needs": [
+   "K-uncertainty",
+   "E-density"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Volume = side³ so its percentage uncertainty triples; add mass uncertainty.",
+  "derivable": true
+ },
+ "16": {
+  "needs": [
+   "D-graph-meaning",
+   "E-F=dp/dt"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rate of change of momentum ∝ gradient of v–t graph; steepest section during impact.",
+  "derivable": false
+ },
+ "17": {
+  "needs": [
+   "D-graph-meaning",
+   "D-impulse",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Impulse is the area under a force–time graph; convert ms to s.",
+  "derivable": false
+ },
+ "18": {
+  "needs": [
+   "E-emf",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "I = ε/(R + r); answer in mA.",
+  "derivable": true
+ },
+ "19": {
+  "needs": [
+   "E-elec-power",
+   "D-si"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Power is energy transferred per unit time; definitions use quantities not units.",
+  "derivable": false
+ },
+ "20": {
+  "needs": [
+   "E-intensity",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Intensity ∝ amplitude², so doubling amplitude quadruples intensity.",
+  "derivable": true
+ },
+ "21(a)": {
+  "needs": [
+   "P-newton3",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Third-law pairs are the same type of force acting on different bodies.",
+  "derivable": false
+ },
+ "21(b)(i)": {
+  "needs": [
+   "P-newton2",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Mass = weight/g; reaction − weight = ma.",
+  "derivable": true
+ },
+ "21(b)(ii)": {
+  "needs": [
+   "E-suvat",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "From rest s = ½at², solve for t.",
+  "derivable": true
+ },
+ "21(c)": {
+  "needs": [
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Constant velocity means zero resultant force so reaction equals weight.",
+  "derivable": true
+ },
+ "22(a)(i)": {
+  "needs": [
+   "K-evaluate",
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A leftover liquid film would change the effective refractive index being matched.",
+  "derivable": false
+ },
+ "22(a)(ii)": {
+  "needs": [
+   "K-method",
+   "E-refraction"
+  ],
+  "given": [],
+  "new": [
+   "refractive index depends on wavelength"
+  ],
+  "assumed": "Refractive index depends on wavelength (and temperature), so those must be controlled.",
+  "derivable": false
+ },
+ "22(b)": {
+  "needs": [
+   "K-uncertainty",
+   "K-evaluate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Convert percentage to absolute uncertainty, find range, check against the type boundaries.",
+  "derivable": true
+ },
+ "22(c)(i)": {
+  "needs": [
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Critical angle is the angle of incidence giving a refraction angle of 90°.",
+  "derivable": false
+ },
+ "22(c)(ii)": {
+  "needs": [
+   "K-pag",
+   "K-instruments",
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Ray aimed at centre of flat edge through curved side; adjust until it grazes; mark normal; protractor.",
+  "derivable": false
+ },
+ "22(c)(iii)": {
+  "needs": [
+   "E-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "n = 1/sin C.",
+  "derivable": true
+ },
+ "23(a)": {
+  "needs": [
+   "E-elec-power",
+   "E-efficiency"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Input power = VI; efficiency = useful output ÷ input × 100%.",
+  "derivable": true
+ },
+ "23(b)": {
+  "needs": [
+   "E-power",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy = power × time with minutes and kJ converted; compare.",
+  "derivable": true
+ },
+ "23(c)(i)": {
+  "needs": [
+   "D-stationary",
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Waves reflect from metal walls; incident and reflected waves superpose.",
+  "derivable": false
+ },
+ "23(c)(ii)": {
+  "needs": [
+   "D-stationary",
+   "E-intensity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Antinodes have maximum amplitude and energy transfer; nodes have minimum.",
+  "derivable": false
+ },
+ "24(a)": {
+  "needs": [
+   "P-moments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "For equilibrium, sum of clockwise moments equals sum of anticlockwise moments about the same point.",
+  "derivable": false
+ },
+ "24(b)(i)": {
+  "needs": [
+   "P-moments",
+   "E-hooke",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Balance moments about the pivot to find tension; k = F/x with mm converted.",
+  "derivable": true
+ },
+ "24(b)(ii)": {
+  "needs": [
+   "E-elastic",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "E = ½kx².",
+  "derivable": true
+ },
+ "24(c)": {
+  "needs": [
+   "P-moments",
+   "E-hooke"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Same extension means same spring force; larger arm for it needs a larger balancing moment from F.",
+  "derivable": true
+ },
+ "25(a)": {
+  "needs": [
+   "D-polarisation",
+   "D-transverse"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Plane polarised: oscillations perpendicular to energy transfer and confined to one plane.",
+  "derivable": false
+ },
+ "25(b)(i)": {
+  "needs": [
+   "D-polarisation",
+   "F-polarisation-waves"
+  ],
+  "given": [],
+  "new": [
+   "cos² variation of intensity with polariser angle"
+  ],
+  "assumed": "Transmission is maximum when aligned, near zero when crossed, repeating every 180°, with a cos²-type shape.",
+  "derivable": false
+ },
+ "25(b)(ii)": {
+  "needs": [
+   "D-polarisation",
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A rotated transmitter's wave has only a component aligned with the receiver, giving lower intensity.",
+  "derivable": false
+ }
+}

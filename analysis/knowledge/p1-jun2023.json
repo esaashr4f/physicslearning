@@ -1,0 +1,416 @@
+{
+ "1": {
+  "needs": [
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Microwaves have wavelengths from about 1 mm to tens of cm; a few cm is typical.",
+  "derivable": false
+ },
+ "2": {
+  "needs": [
+   "P-newton1",
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Three forces in equilibrium form a closed triangle when drawn tip-to-tail.",
+  "derivable": true
+ },
+ "3": {
+  "needs": [
+   "D-diffraction",
+   "F-electron-diffraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Significant diffraction needs the de Broglie wavelength comparable to the atomic spacing.",
+  "derivable": false
+ },
+ "4": {
+  "needs": [
+   "E-resistivity",
+   "K-linearise"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "R = ρL/A, so the gradient of R against L is ρ/A.",
+  "derivable": true
+ },
+ "5": {
+  "needs": [
+   "E-refraction",
+   "D-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "sin C = 1/n gives C ≈ 42°; incidence above C gives total internal reflection.",
+  "derivable": false
+ },
+ "6": {
+  "needs": [
+   "E-power",
+   "M-trig",
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Power = force component along motion × velocity: Fv cos θ.",
+  "derivable": true
+ },
+ "7": {
+  "needs": [
+   "E-emf",
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series cells add e.m.f. and internal resistance; ε = I(R + r_total).",
+  "derivable": true
+ },
+ "8": {
+  "needs": [
+   "F-photoelectric-obs",
+   "P-photon",
+   "E-photoelectric"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "KEmax depends on frequency not intensity; emission is instant; one photon frees one electron.",
+  "derivable": false
+ },
+ "9": {
+  "needs": [
+   "P-charge",
+   "E-Anev",
+   "F-carriers"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series wires carry the same current; same copper means same carrier density.",
+  "derivable": false
+ },
+ "10": {
+  "needs": [
+   "E-resistivity",
+   "D-resistivity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resistance depends on dimensions; resistivity is a material property, unchanged by length.",
+  "derivable": false
+ },
+ "11": {
+  "needs": [
+   "E-pressure",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Pressure = force/area with area πd²/4.",
+  "derivable": true
+ },
+ "12": {
+  "needs": [
+   "E-photon",
+   "E-W=VQ",
+   "K-pag"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "eV₀ ≈ hc/λ: green has shorter wavelength than red so higher threshold p.d.",
+  "derivable": false
+ },
+ "13": {
+  "needs": [
+   "D-polarisation"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Unpolarised light has all planes equally, so a single rotating filter passes constant intensity.",
+  "derivable": false
+ },
+ "14": {
+  "needs": [
+   "D-graph-meaning",
+   "E-suvat"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Free fall from rest: v increases linearly with t, gradient g.",
+  "derivable": false
+ },
+ "15": {
+  "needs": [
+   "P-newton1",
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resolve vertically: two tension components T cos θ balance the weight.",
+  "derivable": true
+ },
+ "16": {
+  "needs": [
+   "P-newton1",
+   "P-newton3"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Equilibrium means forces on one body balance; third-law pairs act on different bodies.",
+  "derivable": false
+ },
+ "17": {
+  "needs": [
+   "P-waves",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [
+   "water waves slow in shallower water"
+  ],
+  "assumed": "Frequency is fixed by the source; waves slow in shallow water.",
+  "derivable": false
+ },
+ "18": {
+  "needs": [
+   "F-iv-curves",
+   "F-circuit-symbols",
+   "E-divider"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Filament resistance rises with temperature, taking a bigger share of p.d.",
+  "derivable": false
+ },
+ "19": {
+  "needs": [
+   "P-charge"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Total current into a junction equals total current out.",
+  "derivable": true
+ },
+ "20": {
+  "needs": [
+   "D-current",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Positive charge gain means electrons lost; number = Q/e.",
+  "derivable": false
+ },
+ "21(a)": {
+  "needs": [
+   "E-hooke",
+   "K-graph",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "k = gradient of force–extension graph, with mm converted to m.",
+  "derivable": true
+ },
+ "21(b)": {
+  "needs": [
+   "K-instruments",
+   "K-method",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Micrometer measures diameter at several places; average; A = πd²/4.",
+  "derivable": true
+ },
+ "21(c)(i)": {
+  "needs": [
+   "E-stress-strain",
+   "E-hooke",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "E = (F/A)/(x/L) and F = kx combine to give kL/A.",
+  "derivable": true
+ },
+ "21(c)(ii)": {
+  "needs": [
+   "E-stress-strain",
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Substitute values; percentage uncertainties add for products and quotients.",
+  "derivable": true
+ },
+ "21(c)(iii)": {
+  "needs": [
+   "K-uncertainty",
+   "K-evaluate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A value is consistent if its difference from the accepted value is within the uncertainty.",
+  "derivable": true
+ },
+ "22(a)": {
+  "needs": [
+   "D-transverse",
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "In longitudinal waves particles oscillate parallel to energy transfer, forming compressions and rarefactions.",
+  "derivable": false
+ },
+ "22(b)(i)": {
+  "needs": [
+   "D-stationary",
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Incident and reflected waves superpose; in phase gives antinodes, antiphase gives nodes.",
+  "derivable": false
+ },
+ "22(b)(ii)": {
+  "needs": [
+   "P-superposition",
+   "E-intensity",
+   "P-energy"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Amplitude falls with distance and at reflection, so unequal waves can't fully cancel; closer to reflector they match better.",
+  "derivable": true
+ },
+ "22(b)(iii)": {
+  "needs": [
+   "E-nodes",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Adjacent nodes are λ/2 apart; v = fλ.",
+  "derivable": false
+ },
+ "22(b)(iv)": {
+  "needs": [
+   "K-uncertainty",
+   "K-evaluate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Measuring across several node spacings reduces percentage uncertainty.",
+  "derivable": true
+ },
+ "23(a)": {
+  "needs": [
+   "E-W=VQ",
+   "D-electronvolt"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work = charge × p.d., using e = 1.60 × 10⁻¹⁹ C.",
+  "derivable": false
+ },
+ "23(b)": {
+  "needs": [
+   "P-photon",
+   "E-photon",
+   "D-workfunction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "One photon gives energy hf to one electron; emission only if hf ≥ work function.",
+  "derivable": false
+ },
+ "23(c)(i)": {
+  "needs": [
+   "P-photon",
+   "E-photon-rate",
+   "E-Q=It"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Intensity sets photon arrival rate; one photon frees one electron; current = charge per second.",
+  "derivable": true
+ },
+ "23(c)(ii)": {
+  "needs": [
+   "E-photon",
+   "E-photon-rate",
+   "E-intensity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photon energy hf × emission rate gives power; intensity = power/area.",
+  "derivable": true
+ },
+ "24(a)": {
+  "needs": [
+   "E-F=dp/dt",
+   "D-kinematics",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rebound reverses velocity so Δp uses a sign change; F = Δp/Δt with ms converted.",
+  "derivable": false
+ },
+ "24(b)": {
+  "needs": [
+   "P-vectors",
+   "E-speed"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Horizontal velocity is constant, so horizontal distance = speed × time of flight.",
+  "derivable": true
+ },
+ "25(a)": {
+  "needs": [
+   "K-instruments",
+   "D-errors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Human reaction time (~0.2 s) is comparable to the intervals; video gives finer timing.",
+  "derivable": false
+ },
+ "25(b)": {
+  "needs": [
+   "D-errors",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Avoid parallax by viewing the scale at eye level / perpendicular.",
+  "derivable": false
+ },
+ "25(c)": {
+  "needs": [
+   "E-speed",
+   "D-terminal"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Constant distance per equal time interval means constant (terminal) speed.",
+  "derivable": false
+ },
+ "25(d)": {
+  "needs": [
+   "M-rearrange",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rearrange the given formula for radius, then double for diameter.",
+  "derivable": true
+ }
+}

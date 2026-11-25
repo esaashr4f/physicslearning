@@ -1,0 +1,334 @@
+{
+ "1(a)": {
+  "needs": [
+   "D-coherence"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Coherent waves have a constant phase difference.",
+  "derivable": false
+ },
+ "1(b)(i)": {
+  "needs": [
+   "E-pathdiff"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Path difference is the difference between the two distances from the sources.",
+  "derivable": true
+ },
+ "1(b)(ii)": {
+  "needs": [
+   "E-phase",
+   "E-pathdiff"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At a minimum the waves arrive in antiphase: π radians.",
+  "derivable": true
+ },
+ "1(b)(iii)": {
+  "needs": [
+   "E-pathdiff"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "First minimum has path difference λ/2.",
+  "derivable": true
+ },
+ "1(c)(i)": {
+  "needs": [
+   "K-instruments",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Period = divisions per cycle × time-base; frequency = 1/period.",
+  "derivable": true
+ },
+ "1(c)(ii)": {
+  "needs": [
+   "E-v=fλ",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "v = fλ with kHz converted to Hz.",
+  "derivable": true
+ },
+ "2(a)(i)": {
+  "needs": [
+   "D-graph-meaning",
+   "E-elastic"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Area under a force–extension graph is work done, stored as elastic energy.",
+  "derivable": true
+ },
+ "2(a)(ii)": {
+  "needs": [
+   "D-graph-meaning",
+   "K-graph",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Estimate area under a curve by counting squares × energy per square.",
+  "derivable": true
+ },
+ "2(a)(iii)": {
+  "needs": [
+   "F-material-graphs",
+   "P-energy"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rubber shows hysteresis; the difference between loading and unloading work is dissipated as heat.",
+  "derivable": true
+ },
+ "2(b)(i)": {
+  "needs": [
+   "E-stress-strain"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Stress = force/area.",
+  "derivable": true
+ },
+ "2(b)(ii)": {
+  "needs": [
+   "E-stress-strain",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Strain = stress/Young modulus, with GPa converted; strain has no unit.",
+  "derivable": true
+ },
+ "2(b)(iii)": {
+  "needs": [
+   "E-stress-strain"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Extension = strain × original length.",
+  "derivable": true
+ },
+ "2(b)(iv)": {
+  "needs": [
+   "E-elastic"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Elastic energy = ½Fx.",
+  "derivable": true
+ },
+ "2(c)": {
+  "needs": [
+   "E-stress-strain",
+   "M-geometry",
+   "M-ratio",
+   "E-elastic"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Doubling diameter quadruples area, quartering extension and hence energy ½Fx at the same load.",
+  "derivable": true
+ },
+ "3(a)": {
+  "needs": [
+   "P-momentum",
+   "D-collisions",
+   "E-p=mv",
+   "E-Ek"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Momentum conserved in all collisions; elastic means KE conserved, inelastic means KE lost; calculate both before and after.",
+  "derivable": false
+ },
+ "3(b)": {
+  "needs": [
+   "D-graph-meaning",
+   "E-F=dp/dt",
+   "E-p=mv",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Impulse = area under the F–t triangle = change in momentum; v = impulse/m from rest.",
+  "derivable": true
+ },
+ "4(a)(i)": {
+  "needs": [
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Circle area = πd²/4.",
+  "derivable": true
+ },
+ "4(a)(ii)": {
+  "needs": [
+   "E-density",
+   "E-W=mg",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Volume = area × height; mass = ρV; weight = mg.",
+  "derivable": true
+ },
+ "4(b)": {
+  "needs": [
+   "E-upthrust",
+   "P-newton1",
+   "E-density"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A floating body displaces its own weight of water; depth = displaced volume ÷ cross-sectional area.",
+  "derivable": true
+ },
+ "4(c)": {
+  "needs": [
+   "E-upthrust",
+   "M-ratio",
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Same weight of less dense liquid must be displaced, so a larger volume and greater depth (depth ∝ 1/ρ).",
+  "derivable": true
+ },
+ "5(a)": {
+  "needs": [
+   "P-kirchhoff2",
+   "E-emf",
+   "D-internal"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Kirchhoff's second law: e.m.f. = p.d. across load + p.d. across internal resistance (Ir).",
+  "derivable": true
+ },
+ "5(b)": {
+  "needs": [
+   "M-straight-line",
+   "E-emf",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Compare V = −rI + E with y = mx + c: intercept is E, gradient is −r.",
+  "derivable": true
+ },
+ "5(c)(i)": {
+  "needs": [
+   "E-R=V/I",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Read V at the current from the graph; R = V/I with mA in A.",
+  "derivable": true
+ },
+ "5(c)(ii)": {
+  "needs": [
+   "E-elec-power",
+   "E-power"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "P = VI; energy = Pt with minutes in seconds.",
+  "derivable": true
+ },
+ "5(c)(iii)": {
+  "needs": [
+   "E-Q=It",
+   "D-si"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Q = It; unit coulomb.",
+  "derivable": true
+ },
+ "6": {
+  "needs": [
+   "F-ldr-thermistor",
+   "E-divider",
+   "F-circuit-symbols",
+   "M-estimate",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "LDR resistance falls in light; potential divider output across fixed resistor; choose values with the divider equation; variable resistor adjusts threshold.",
+  "derivable": false
+ },
+ "7(a)(i)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient from a large triangle, with powers of ten handled.",
+  "derivable": true
+ },
+ "7(a)(ii)": {
+  "needs": [
+   "K-linearise",
+   "M-units",
+   "M-sigfigs"
+  ],
+  "given": [
+   "K-linearise"
+  ],
+  "new": [],
+  "assumed": "Rearrange the given gradient = hc/e for h, using data-sheet constants.",
+  "derivable": true
+ },
+ "7(a)(iii)": {
+  "needs": [
+   "K-uncertainty",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Worst line is steepest or shallowest through all error bars.",
+  "derivable": true
+ },
+ "7(a)(iv)": {
+  "needs": [
+   "K-uncertainty",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage uncertainty = difference between best and worst gradients ÷ best × 100.",
+  "derivable": true
+ },
+ "7(b)(i)": {
+  "needs": [
+   "E-photoelectric",
+   "E-photon",
+   "E-eV-joule",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photon energy hc/λ (nm to m); φ eV to J; KEmax = E − φ.",
+  "derivable": true
+ },
+ "7(b)(ii)": {
+  "needs": [
+   "F-photoelectric-obs",
+   "P-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photon energy depends only on wavelength; intensity changes number of photons, so KEmax is unchanged.",
+  "derivable": true
+ }
+}

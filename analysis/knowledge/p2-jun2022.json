@@ -1,0 +1,329 @@
+{
+ "1(a)": {
+  "needs": [
+   "K-instruments",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Micrometer or calipers on the diameter; repeat in different orientations, average, then halve for radius.",
+  "derivable": true
+ },
+ "1(b)": {
+  "needs": [
+   "E-density",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Liquid mass = full − empty reading; density = m/V with g to kg and cm³ to m³.",
+  "derivable": true
+ },
+ "1(c)": {
+  "needs": [
+   "E-upthrust",
+   "M-geometry",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Sphere volume 4/3πr³; upthrust = weight of oil displaced = ρVg.",
+  "derivable": true
+ },
+ "1(d)(i)": {
+  "needs": [
+   "D-terminal",
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Terminal velocity is constant velocity (zero acceleration), found from gradient of the straight part of an s–t graph.",
+  "derivable": false
+ },
+ "1(d)(ii)": {
+  "needs": [
+   "K-graph",
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Instantaneous velocity is the gradient of a tangent to the s–t curve.",
+  "derivable": true
+ },
+ "1(e)": {
+  "needs": [
+   "D-terminal",
+   "P-newton1",
+   "E-W=mg",
+   "E-upthrust",
+   "M-rearrange",
+   "D-si"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At terminal velocity drag = weight − upthrust; rearrange the given drag formula; derive the unit of η.",
+  "derivable": true
+ },
+ "2": {
+  "needs": [
+   "K-method",
+   "K-linearise",
+   "K-instruments",
+   "K-safety",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Vary M with others controlled; light gate and card give v; plot 1/v² against M; intercept and gradient give R and Q.",
+  "derivable": true
+ },
+ "3(a)": {
+  "needs": [
+   "P-newton1",
+   "P-moments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Equilibrium: zero resultant force in any direction and zero resultant moment about any point.",
+  "derivable": false
+ },
+ "3(b)(i)": {
+  "needs": [
+   "P-newton1",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Upward forces equal total downward weights; mass = weight/g.",
+  "derivable": true
+ },
+ "3(b)(ii)": {
+  "needs": [
+   "P-moments",
+   "E-moment"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Sum clockwise moments about A equals anticlockwise moment; solve for the distance.",
+  "derivable": true
+ },
+ "4(a)(i)": {
+  "needs": [
+   "E-Ep"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "GPE change = mgh.",
+  "derivable": true
+ },
+ "4(a)(ii)": {
+  "needs": [
+   "P-energy",
+   "E-Ek",
+   "E-suvat"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "GPE lost becomes KE (or v² = 2gh).",
+  "derivable": true
+ },
+ "4(b)(i)": {
+  "needs": [
+   "P-vectors",
+   "E-speed"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Horizontal velocity is constant, so range = horizontal speed × time.",
+  "derivable": true
+ },
+ "4(b)(ii)": {
+  "needs": [
+   "P-energy",
+   "E-Ek",
+   "E-Ep"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Final KE = initial KE + GPE lost (or use resultant of components).",
+  "derivable": true
+ },
+ "4(b)(iii)": {
+  "needs": [
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Impact angle tan θ = vertical ÷ horizontal velocity components.",
+  "derivable": true
+ },
+ "5(a)": {
+  "needs": [
+   "E-refraction",
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "v = c/n.",
+  "derivable": true
+ },
+ "5(b)": {
+  "needs": [
+   "E-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "sin C = 1/n.",
+  "derivable": true
+ },
+ "5(c)": {
+  "needs": [
+   "D-refraction",
+   "E-refraction",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Incidence 45° exceeds the critical angle, so total internal reflection at each sloping face turns the ray back.",
+  "derivable": true
+ },
+ "5(d)(i)": {
+  "needs": [
+   "E-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At a boundary between two media sin C = n₂/n₁.",
+  "derivable": true
+ },
+ "5(d)(ii)": {
+  "needs": [
+   "E-refraction",
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Incidence below the new critical angle, so the ray refracts into the lower-index oil, bending away from normal.",
+  "derivable": true
+ },
+ "6(a)": {
+  "needs": [
+   "F-electron-diffraction",
+   "P-duality",
+   "D-diffraction",
+   "E-debroglie"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Electrons act as waves with λ comparable to atomic spacing; graphite crystal orientations make diffraction rings.",
+  "derivable": false
+ },
+ "6(b)": {
+  "needs": [
+   "E-eV",
+   "E-Ek",
+   "E-p=mv",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "KE = eV; p = √(2m·KE).",
+  "derivable": true
+ },
+ "7(a)(i)": {
+  "needs": [
+   "E-elec-power",
+   "P-charge"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Parallel heating elements' powers add; I = P/V.",
+  "derivable": true
+ },
+ "7(a)(ii)": {
+  "needs": [
+   "E-kWh",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy in kW h = kW × hours; multiply by price.",
+  "derivable": true
+ },
+ "7(b)": {
+  "needs": [
+   "E-resistivity",
+   "M-geometry",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A = ρL/R, then d = √(4A/π).",
+  "derivable": true
+ },
+ "7(c)(i)": {
+  "needs": [
+   "F-circuit-symbols"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Cell and meter symbols; ammeter in series, voltmeter in parallel with the component.",
+  "derivable": false
+ },
+ "7(c)(ii)": {
+  "needs": [
+   "E-R=V/I"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "R = V/I.",
+  "derivable": true
+ },
+ "7(c)(iii)": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage uncertainties of V and I add for R = V/I.",
+  "derivable": true
+ },
+ "7(c)(iv)": {
+  "needs": [
+   "F-iv-curves"
+  ],
+  "given": [],
+  "new": [
+   "Ohm's law and temperature effect on metal resistance"
+  ],
+  "assumed": "Smaller current heats wire less; metal resistance rises with temperature, so a cooler wire has lower resistance.",
+  "derivable": false
+ },
+ "7(c)(v)": {
+  "needs": [
+   "K-evaluate",
+   "K-instruments",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Take several readings by varying p.d. and plot V against I; use higher-resolution meters.",
+  "derivable": true
+ },
+ "8": {
+  "needs": [
+   "P-superposition",
+   "E-pathdiff",
+   "M-trig",
+   "D-coherence",
+   "E-phase"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Direct and reflected waves superpose; maxima at nλ, minima at (n + ½)λ path difference; Pythagoras gives paths; λ from successive differences.",
+  "derivable": true
+ }
+}

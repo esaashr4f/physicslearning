@@ -226,6 +226,7 @@ button { font: inherit; color: inherit; }
 .note header b { font: 600 12px/1 var(--f-mono); margin-right: 2px; }
 .note .ans { font: 500 13px/1.4 var(--f-mono); overflow-wrap: anywhere; }
 .note details summary { cursor: pointer; color: var(--accent); font-weight: 600; font-size: 12px; }
+.note details.kn { display: grid; gap: 6px; }
 .note details[open] summary { margin-bottom: 8px; }
 .note .blk + .blk { margin-top: 8px; }
 .shared { font-size: 12px; color: var(--ink-3); padding: 6px 0; }
@@ -462,6 +463,44 @@ button { font: inherit; color: inherit; }
   .prac button { grid-template-columns: 44px minmax(0, 1fr) auto; }
   .prac button .ctx { grid-column: 1 / -1; }
 }
+
+/* definitions drill */
+.dd-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.dd-tools select { font: inherit; font-size: 13px; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); }
+.dd-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 22px; display: grid; gap: 14px; box-shadow: var(--shadow); }
+.dd-card h4 { margin: 0; font: 800 28px/1.1 var(--f-display); letter-spacing: -.01em; }
+.dd-card textarea { width: 100%; min-height: 90px; font: 15px/1.5 var(--f-body); padding: 12px; border-radius: 10px; border: 1px solid var(--rule); background: var(--surface-2); color: var(--ink); resize: vertical; box-sizing: border-box; }
+.dd-model { font-size: 16px; line-height: 1.55; padding: 14px 16px; border-radius: 10px; background: var(--accent-soft); }
+.dd-model mark { background: none; color: var(--accent); font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.dd-checks { display: flex; flex-wrap: wrap; gap: 6px; }
+.dd-checks span { font: 600 12px/1 var(--f-mono); padding: 6px 8px; border-radius: 6px; border: 1px solid var(--rule); }
+.dd-checks .ok { color: #2e7d4f; border-color: #2e7d4f; }
+.dd-checks .no { color: var(--pen); border-color: var(--pen); background: var(--pen-soft); }
+.dd-ref { display: grid; gap: 6px; }
+.dd-ref .crop { max-width: 100% !important; }
+.dd-progress { height: 6px; border-radius: 3px; background: var(--surface-2); border: 1px solid var(--rule); overflow: hidden; flex: 1 1 160px; }
+.dd-progress i { display: block; height: 100%; background: #2e7d4f; }
+
+/* knowledge map */
+.km-kind { display: grid; gap: 6px; margin-bottom: 22px; }
+.km-kind > h4 { margin: 0 0 4px; font: 700 18px/1.2 var(--f-display); display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.km-kind > h4 small { font: 500 12px/1 var(--f-mono); color: var(--ink-3); }
+.km-row { border: 1px solid var(--rule); background: var(--surface); border-radius: 8px; }
+.km-row > div.hd { display: grid; grid-template-columns: 22px minmax(0, 1fr) 140px 64px; gap: 10px; align-items: center; padding: 8px 10px; }
+.km-row button.nm2 { border: 0; background: none; text-align: left; cursor: pointer; padding: 0; font-size: 13.5px; color: var(--ink); }
+.km-row button.nm2 small { display: block; color: var(--ink-3); font-size: 12px; }
+.km-row .bar { height: 8px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
+.km-row .bar i { display: block; height: 100%; background: var(--accent); }
+.km-row .v { font: 600 12px/1 var(--f-mono); text-align: right; color: var(--ink-2); }
+.km-row.done button.nm2 { color: var(--ink-3); text-decoration: line-through; }
+.badge2 { display: inline-block; font: 600 10px/1 var(--f-mono); padding: 3px 5px; border-radius: 4px; margin-left: 6px; vertical-align: 1px; border: 1px solid var(--rule); color: var(--ink-2); }
+.badge2.sheet { color: var(--accent); border-color: var(--accent); }
+.badge2.recall { color: var(--pen); border-color: var(--pen); }
+.km-qs { padding: 0 10px 10px 42px; display: grid; gap: 4px; }
+.need-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.need-chips span { font: 500 11px/1.3 var(--f-mono); padding: 3px 6px; border-radius: 4px; background: var(--surface-2); border: 1px solid var(--rule); color: var(--ink-2); }
+.need-chips span.D, .need-chips span.F { border-color: var(--pen); color: var(--pen); }
+@media (max-width: 760px) { .km-row > div.hd { grid-template-columns: 22px minmax(0, 1fr) 56px; } .km-row .bar { display: none; } .km-qs { padding-left: 10px; } }
 /* ---------- insights ---------- */
 .ins { overflow: auto; min-height: 0; }
 .ins-inner { max-width: 1180px; margin: 0 auto; padding-block: 0 80px; padding-left: var(--gutter-l); padding-right: var(--gutter-r); display: grid; gap: 56px; }
@@ -974,6 +1013,8 @@ function erFor(ex, p) {
   let l = p.q.replace(/\)\d+$/, ")");
   for (;;) { if (rep.parts?.[l]) return rep.parts[l]; const m = l.match(/^(.*)\([a-z]+\)$/); if (!m) return null; l = m[1]; }
 }
+let KNOW = {}; const KIND_NAME = { P: "Principle", E: "Equation", D: "Definition", F: "Fact to remember", K: "Practical know-how", M: "Maths skill" };
+const KIND_PLURAL = { P: "Principles", E: "Equations", D: "Definitions", F: "Facts to remember", K: "Practical know-how", M: "Maths skills" };
 function PartNote({ p, showAnswer, nm, er, rc }) {
   const L = (arr) => arr && arr.length ? html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>` : null;
   return html`<div class="note">
@@ -986,6 +1027,7 @@ function PartNote({ p, showAnswer, nm, er, rc }) {
       ${p.pitfalls?.length ? html`<div class="blk pen"><span class="h">Where marks are lost</span>${L(p.pitfalls)}</div>` : null}
       ${p.equations?.length ? html`<div class="blk"><span class="h">Equations</span><span class="ans">${p.equations.join("  ·  ")}</span></div>` : null}
     </details>`}
+    ${p.assumed ? html`<details class="kn"><summary>What you need to know</summary><p style=${{ margin: "0 0 6px", fontSize: "13px" }}>${p.assumed}</p>${p.needs?.length ? html`<div class="need-chips">${p.needs.map(i => { const it = KNOW[i]; return html`<span key=${i} class=${it?.kind || ""} title=${it ? KIND_NAME[it.kind] : ""}>${it ? it.name : i}</span>`; })}</div>` : null}${p.reasonable === false ? html`<span class="shared">Needs something memorised (definition or fact), shown in red.</span>` : html`<span class="shared">Can be reasoned from principles, the booklet and your skills.</span>`}</details>` : null}
     ${showAnswer && nm && nm.length ? nm.slice(0, 3).map((it, i) => html`<div class="warn" key=${i}><b>Watch out · ${it.topic}</b><span>${it.looks_right} → ${it.what_scores}</span></div>`) : null}
     ${showAnswer && er && html`<details class="er">
       <summary>Examiners' report${er.performance ? html` · <span class=${"perf " + er.performance.split(" ")[0]}>${er.performance}</span>` : null}</summary>
@@ -1569,6 +1611,119 @@ function Playbook({ data, open, openSpec }) {
   </div></div>`;
 }
 
+/* ---------- Knowledge map ---------- */
+function KnowledgeMap({ data, open }) {
+  const Kn = data.knowledge; const all = useMemo(() => data.all.filter(q => !q.withdrawn && q.needs), [data.all]);
+  const [openId, setOpenId] = useState(null), [ticks, setTicks] = useState(() => store.get("know", {}));
+  useEffect(() => { store.set("know", ticks); }, [ticks]);
+  const st = useMemo(() => {
+    const m = {}; for (const q of all) for (const i of q.needs) { const o = m[i] ||= { marks: 0, parts: [] }; o.marks += (+q.marks || 0) / q.needs.length; o.parts.push(q); }
+    const tot = all.reduce((t, q) => t + (+q.marks || 0), 0); const vals = Object.values(m).map(o => o.marks).sort((a, b) => b - a);
+    const cover = (f) => { let c = 0; for (let n = 0; n < vals.length; n++) { c += vals[n]; if (c >= f * tot) return n + 1; } return vals.length; };
+    const reas = all.filter(q => q.reasonable).reduce((t, q) => t + (+q.marks || 0), 0);
+    const byKind = {}; for (const [i, o] of Object.entries(m)) { const k = KNOW[i]?.kind || "?"; byKind[k] = (byKind[k] || 0) + o.marks; }
+    return { m, tot, c50: cover(.5), c80: cover(.8), reas: Math.round(reas / tot * 100), byKind };
+  }, [all]);
+  if (!Kn) return null;
+  const maxM = Math.max(...Object.values(st.m).map(o => o.marks));
+  const ticked = Kn.items.filter(i => ticks[i.id]).length;
+  const kinds = ["P", "E", "K", "M", "D", "F"];
+  return html`<div class="lesson">
+    <span class="eyebrow">Knowledge map · ${Kn.items.length} items · every part tagged</span>
+    <h3>Everything the papers assume you know</h3>
+    <p class="lead">Each of the ${all.length} question parts was tagged with the prior knowledge it needs. It is a short, finite list: a handful of principles, equations that are mostly printed in the booklet, practical and maths skills, and a smaller set of definitions and facts you have to memorise.</p>
+    <div class="ev">
+      <div><b>${st.c50} / ${st.c80}</b><span>items carry 50% / 80% of all marks</span></div>
+      <div><b>${st.reas}%</b><span>of marks can be reasoned from principles, the booklet and skills</span></div>
+      <div><b>${Math.round(((st.byKind.D || 0) + (st.byKind.F || 0)) / st.tot * 100)}%</b><span>of marks rest on memorised definitions and facts</span></div>
+      <div><b>${ticked}/${Kn.items.length}</b><span>items you've ticked as secure</span></div>
+    </div>
+    <div class="panel"><h4>Where the marks come from, by kind of knowledge</h4><div class="rep">${kinds.map(k => html`<div class="row" key=${k} style=${{ gridTemplateColumns: "190px minmax(0,1fr) 50px" }}><span>${KIND_PLURAL[k]}</span><span style=${{ height: "8px", background: "var(--surface-2)", borderRadius: "4px", overflow: "hidden" }}><i style=${{ display: "block", height: "100%", width: Math.round((st.byKind[k] || 0) / st.tot * 100 * 2.5) + "%", background: (k === "D" || k === "F") ? "var(--pen)" : "var(--accent)" }}></i></span><span>${Math.round((st.byKind[k] || 0) / st.tot * 100)}%</span></div>`)}</div>
+      <p class="sub" style=${{ margin: "10px 0 0" }}>Marks are shared equally between the items a part needs. Red kinds have to be memorised; blue kinds can be worked out or are given in the booklet.</p></div>
+    ${kinds.map(k => { const items = Kn.items.filter(i => i.kind === k).sort((a, b) => (st.m[b.id]?.marks || 0) - (st.m[a.id]?.marks || 0));
+      return html`<div class="km-kind" key=${k}><h4>${KIND_PLURAL[k]} <small>${Kn.kinds[k]}</small></h4>
+        ${items.map(it => { const o = st.m[it.id] || { marks: 0, parts: [] }; const on = openId === it.id;
+          return html`<div class=${"km-row" + (ticks[it.id] ? " done" : "")} key=${it.id}>
+            <div class="hd">
+              <input type="checkbox" id=${"km-" + it.id} checked=${!!ticks[it.id]} onChange=${e => setTicks(t => ({ ...t, [it.id]: e.target.checked }))} aria-label=${"Secure: " + it.name} />
+              <button class="nm2" onClick=${() => setOpenId(on ? null : it.id)} aria-expanded=${on}>${it.name}${it.sheet === true ? html`<span class="badge2 sheet">in booklet</span>` : it.recall ? html`<span class="badge2 recall">must recall</span>` : it.kind === "E" ? html`<span class="badge2">derive or learn</span>` : null}
+                ${it.text || (it.from?.length ? "" : "") ? html`<small>${it.text || ""}</small>` : null}
+                ${it.from?.length ? html`<small>Follows from: ${it.from.map(f => KNOW[f]?.name || f).join(", ")}</small>` : null}</button>
+              <span class="bar"><i style=${{ width: (o.marks / maxM * 100) + "%" }}></i></span>
+              <span class="v">${Math.round(o.marks)} m · ${o.parts.length}</span>
+            </div>
+            ${on && html`<div class="km-qs">${o.parts.slice().sort((a, b) => SESSIONS.findIndex(s => s.slug === b.slug) - SESSIONS.findIndex(s => s.slug === a.slug)).slice(0, 40).map(q => html`<button class="oc-q" key=${q.paper + q.slug + q.q} onClick=${() => open(q.paper, q.slug, q)} style=${{ gridTemplateColumns: "170px minmax(0,1fr) auto" }}><span class="ref">P${q.paper} ${SLABEL[q.slug]} Q${q.q}</span><span class="ctx">${q.assumed || q.context}</span><span class="mk">${q.marks} m</span></button>`)}${o.parts.length > 40 ? html`<span class="shared">+${o.parts.length - 40} more</span>` : null}</div>`}
+          </div>`; })}
+      </div>`; })}
+  </div>`;
+}
+
+/* ---------- Definitions drill ---------- */
+function msUnitFor(reg, label) {
+  const units = (reg?.ms?.units || []).filter(u => u.segs.length); const labels = units.map(u => u.label);
+  const a = ancestor(label.replace(/\)\d+$/, ")"), labels); return a ? units.find(u => u.label === a) : null;
+}
+function DefDrill({ data, open }) {
+  const D = data.definitions; const all = data.all;
+  const [topic, setTopic] = useState("all"), [mode, setMode] = useState("all");
+  const [known, setKnown] = useState(() => store.get("defs", {}));
+  const [order, setOrder] = useState(null), [i, setI] = useState(0), [txt, setTxt] = useState(""), [shown, setShown] = useState(false);
+  useEffect(() => { store.set("defs", known); }, [known]);
+  const items = useMemo(() => (D?.items || []).filter(d => (topic === "all" || d.topic === topic) && (mode === "all" || !known[d.id])), [D, topic, mode, known]);
+  const seq = order ? order.filter(id => items.some(d => d.id === id)) : items.map(d => d.id);
+  const cur = items.find(d => d.id === seq[Math.min(i, seq.length - 1)]);
+  useEffect(() => { setTxt(""); setShown(false); }, [cur?.id]);
+  if (!D) return null;
+  const topics = [...new Set(D.items.map(d => d.topic))];
+  const refsFor = (d) => all.filter(q => !q.withdrawn && (q.type === "define-state" || (q.moves || []).includes("definition")) && (q.spec_points || []).some(c => d.spec.includes(c))).sort((a, b) => SESSIONS.findIndex(s => s.slug === b.slug) - SESSIONS.findIndex(s => s.slug === a.slug));
+  const low = txt.toLowerCase();
+  const highlight = (d) => {
+    let parts = [d.model];
+    for (const grp of d.keys) {
+      const alt = grp.find(k => d.model.toLowerCase().includes(k.toLowerCase())); if (!alt) continue;
+      const out = [];
+      for (const p of parts) { if (typeof p !== "string") { out.push(p); continue; } const j = p.toLowerCase().indexOf(alt.toLowerCase()); if (j < 0) { out.push(p); continue; } out.push(p.slice(0, j), html`<mark key=${alt}>${p.slice(j, j + alt.length)}</mark>`, p.slice(j + alt.length)); }
+      parts = out;
+    }
+    return parts;
+  };
+  const next = (d) => { setI(x => (x + 1) % Math.max(1, seq.length)); };
+  const doneN = D.items.filter(d => known[d.id]).length;
+  return html`<div class="lesson">
+    <span class="eyebrow">Drill · ${D.items.length} definitions</span>
+    <h3>Definitions drill</h3>
+    <p class="lead">Write the definition, then reveal the model answer with its key words highlighted, check which key words you used, and see exactly how past mark schemes worded it. ${D.note}</p>
+    <div class="dd-tools">
+      <select id="dd-topic" value=${topic} onChange=${e => { setTopic(e.target.value); setI(0); }} aria-label="Topic"><option value="all">All topics</option>${topics.map(t => html`<option key=${t} value=${t}>${t}</option>`)}</select>
+      <div class="seg"><button aria-pressed=${mode === "all"} onClick=${() => { setMode("all"); setI(0); }}><b>All</b></button><button aria-pressed=${mode === "review"} onClick=${() => { setMode("review"); setI(0); }}><b>Still to learn</b></button></div>
+      <button class="ib" onClick=${() => { setOrder(items.map(d => d.id).sort(() => Math.random() - .5)); setI(0); }}>Shuffle</button>
+      <span class="dd-progress" title=${`${doneN} of ${D.items.length} known`}><i style=${{ width: (doneN / D.items.length * 100) + "%" }}></i></span><span class="shared">${doneN}/${D.items.length} known</span>
+    </div>
+    ${!cur ? html`<div class="panel"><h4>Nothing left in this set</h4><p class="sub" style=${{ margin: 0 }}>Every definition here is marked as known. Switch to "All" to revise them again.</p></div>` : html`
+    <div class="dd-card">
+      <span class="eyebrow">${cur.topic} · ${cur.spec.join(", ")} · ${Math.min(i, seq.length - 1) + 1} of ${seq.length}</span>
+      <h4>${cur.term}</h4>
+      <textarea id=${"dd-" + cur.id} placeholder="Write the definition as you would in the exam…" value=${txt} onInput=${e => setTxt(e.target.value)} aria-label=${"Your definition of " + cur.term}></textarea>
+      ${!shown ? html`<div style=${{ display: "flex", gap: "8px" }}><button class="btn" onClick=${() => setShown(true)}>Reveal and check</button><button class="ib" onClick=${() => next()}>Skip</button></div>` : html`
+        <div class="blk"><span class="h">Model answer · key words underlined</span><div class="dd-model">${highlight(cur)}</div></div>
+        <div class="blk"><span class="h">${txt.trim() ? "Key words in your answer" : "Key words the mark needs"}</span><div class="dd-checks">${cur.keys.map((g, j) => { const hit = g.some(k => low.includes(k.toLowerCase())); return html`<span key=${j} class=${txt.trim() ? (hit ? "ok" : "no") : ""}>${txt.trim() ? (hit ? "✓ " : "✗ ") : ""}${g[0]}${g.length > 1 ? ` (or ${g.slice(1).join(", ")})` : ""}</span>`; })}</div></div>
+        ${cur.refused.length ? html`<div class="blk pen"><span class="h">Refused by the mark schemes</span><ul>${cur.refused.map((r, j) => html`<li key=${j} style=${{ fontWeight: txt.trim() && low.includes(r.t) ? 700 : 400 }}>${txt.trim() && low.includes(r.t) ? "You wrote this: " : ""}"${r.t}" — ${r.why}</li>`)}</ul></div>` : null}
+        ${(() => { const refs = refsFor(cur); if (!refs.length) return html`<p class="shared">Not asked directly as a definition in the 22 papers, but used in other questions.</p>`;
+          return html`<div class="blk"><span class="h">As the mark schemes word it (${refs.length} past question${refs.length === 1 ? "" : "s"})</span>
+            ${refs.slice(0, 2).map(q => { const reg = data.regions[`p${q.paper}-${q.slug}`]; const u = msUnitFor(reg, q.q); return html`<div class="dd-ref" key=${q.paper + q.slug + q.q}>
+              <button class="link" onClick=${() => open(q.paper, q.slug, q)}>P${q.paper} ${SLABEL[q.slug]} Q${q.q} · ${q.marks} mark${q.marks == 1 ? "" : "s"} →</button>
+              ${u ? u.segs.map((sg, j) => html`<${Crop} key=${j} url=${`pdf/p${q.paper}-${q.slug}-ms.pdf`} seg=${sg} box=${reg.ms} side="ms" />`) : html`<span class="shared">Mark scheme row not located; open the question to see it.</span>`}
+            </div>`; })}
+            ${refs.length > 2 ? html`<div style=${{ display: "flex", flexWrap: "wrap", gap: "4px 10px" }}><span class="shared">Also asked:</span>${refs.slice(2).map(q => html`<button key=${q.paper + q.slug + q.q} class="link" style=${{ font: "500 12px/1.4 var(--f-mono)" }} onClick=${() => open(q.paper, q.slug, q)}>P${q.paper} ${SLABEL[q.slug]} Q${q.q}</button>`)}</div>` : null}
+          </div>`; })()}
+        <div style=${{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+          <button class="btn" style=${{ background: "#2e7d4f" }} onClick=${() => { setKnown(k => ({ ...k, [cur.id]: true })); next(); }}>I knew it</button>
+          <button class="btn pen" onClick=${() => { setKnown(k => { const n = { ...k }; delete n[cur.id]; return n; }); next(); }}>Review again</button>
+        </div>`}
+    </div>`}
+  </div>`;
+}
+
 /* ---------- Techniques ---------- */
 const MOVE_LABEL = { chain: "Chaining equations", rearrange: "Rearranging", linearise: "Linearising", "graph-read": "Reading graphs", "graph-draw": "Plotting and sketching", "explain-chain": "Cause → effect explanations", ratio: "Ratio and scaling", vectors: "Vectors and directions", plan: "Planning experiments", uncertainty: "Uncertainty", evaluate: "Judging and deciding", "given-formula": "Unfamiliar formulae", energy: "Energy chains", "show-that": "Show that", definition: "Definitions", units: "Base units", estimate: "Estimates", "recall-fact": "Factual recall" };
 function useMoveStats(all, examiners) {
@@ -1680,10 +1835,12 @@ function Techniques({ data, open }) {
     <div class="tq-layout">
       <nav class="tq-nav" aria-label="Techniques">
         ${A && html`<button class=${cur === "anatomy" ? "on" : ""} onClick=${() => setCur("anatomy")}><span>How a question is built</span></button>`}
+        ${data.knowledge && html`<button class=${cur === "know" ? "on" : ""} onClick=${() => setCur("know")}><span>Knowledge map</span><small>${data.knowledge.items.length}</small></button>`}
+        ${data.definitions && html`<button class=${cur === "defs" ? "on" : ""} onClick=${() => setCur("defs")}><span>Definitions drill</span><small>${data.definitions.items.length}</small></button>`}
         <button class=${cur === "overview" ? "on" : ""} onClick=${() => setCur("overview")}><span>Overview</span></button>
         ${lessons.map(l => html`<button key=${l.id} class=${cur === l.id ? "on" : ""} onClick=${() => setCur(l.id)}><span>${l.title.split(":")[0]}</span><small>${st.by[l.id]?.parts.length || 0}</small></button>`)}
       </nav>
-      ${cur === "anatomy" && A ? anatomyView : cur === "overview" || !L ? overview : lessonView}
+      ${cur === "know" && data.knowledge ? html`<${KnowledgeMap} data=${data} open=${open} />` : cur === "defs" && data.definitions ? html`<${DefDrill} data=${data} open=${open} />` : cur === "anatomy" && A ? anatomyView : cur === "overview" || !L ? overview : lessonView}
     </div>
   </div></div>`;
 }
@@ -1885,12 +2042,15 @@ function App() {
       fetch("data/examiners.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/techniques.json").then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/rootcause.json").then(r => r.ok ? r.json() : null).catch(() => null),
-    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause]) => {
+      fetch("data/definitions.json").then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch("data/knowledge.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge]) => {
+      KNOW = Object.fromEntries((knowledge?.items || []).map(i => [i.id, i]));
       const rcIndex = {}; for (const r of rootcause?.parts || []) rcIndex[`${r.paper}:${r.slug}:${r.q}`] = r;
       const nmIndex = {};
       for (const it of nearmiss?.items || []) for (const r of it.refs || []) (nmIndex[`${r.paper}:${r.slug}:${r.q}`] ||= []).push(it);
       const byPaper = {}; for (const q of all) (byPaper[`${q.paper}:${q.slug}`] ||= []).push(q);
-      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, ready: true });
+      setData({ all, byPaper, ins, regions, spec, playbook, nearmiss, nmIndex, examiners, techniques, rootcause, rcIndex, definitions, knowledge, ready: true });
     });
   }, []);
   const hardMarks = useMemo(() => { const m = {}; for (const q of data.all) if (!q.withdrawn && q.difficulty === 3) { const k = `${q.paper}:${q.slug}`; m[k] = (m[k] || 0) + (+q.marks || 0); } for (const q of data.all) { const k = `${q.paper}:${q.slug}`; if (!(k in m)) m[k] = 0; } return m; }, [data.all]);

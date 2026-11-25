@@ -1,0 +1,481 @@
+{
+ "1": {
+  "needs": [
+   "K-uncertainty",
+   "E-density",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage uncertainties add when multiplying; a cubed quantity triples its percentage uncertainty; density uses volume of a sphere.",
+  "derivable": true
+ },
+ "2": {
+  "needs": [
+   "P-newton2",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resultant force equals ma; tension minus weight gives the upward resultant, so T = m(g + a).",
+  "derivable": true
+ },
+ "3": {
+  "needs": [
+   "E-upthrust",
+   "P-newton1",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A floating object is in equilibrium; upthrust equals the weight (not mass) of fluid displaced.",
+  "derivable": false
+ },
+ "4": {
+  "needs": [
+   "E-hooke",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "F = kx using the change in length as the compression, converted from cm to m.",
+  "derivable": true
+ },
+ "5": {
+  "needs": [
+   "P-newton2",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Accelerating downward means the downward force exceeds the total upward forces (upthrust plus drag).",
+  "derivable": false
+ },
+ "6": {
+  "needs": [
+   "E-pressure",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Pressure is force over area, so greatest pressure comes from the face with the smallest area.",
+  "derivable": true
+ },
+ "7": {
+  "needs": [
+   "D-terminal",
+   "F-drag-factors",
+   "P-newton2"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At release drag is zero, so both balls start with acceleration g regardless of mass.",
+  "derivable": false
+ },
+ "8": {
+  "needs": [
+   "E-efficiency",
+   "E-power",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Useful power = efficiency × input; lifting at steady speed needs power = mgv.",
+  "derivable": true
+ },
+ "9": {
+  "needs": [
+   "E-suvat",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "For uniform acceleration from rest, distances in successive equal time intervals go 1:3:5:7.",
+  "derivable": true
+ },
+ "10": {
+  "needs": [
+   "D-errors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A zero offset gives a systematic error; every reading also carries random error.",
+  "derivable": false
+ },
+ "11": {
+  "needs": [
+   "D-photon",
+   "E-photon",
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photons are uncharged energy quanta with E = hc/λ; light travels slower in glass.",
+  "derivable": false
+ },
+ "12": {
+  "needs": [
+   "D-wave-terms",
+   "E-phase"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Antiphase means 180° phase difference: half a period along a displacement–time graph.",
+  "derivable": false
+ },
+ "13": {
+  "needs": [
+   "E-refraction",
+   "D-refraction",
+   "P-waves"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Bending away from the normal means the wave speeds up; wavelength changes with speed; critical angle condition.",
+  "derivable": false
+ },
+ "14": {
+  "needs": [
+   "D-current",
+   "F-carriers"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Electrons carry negative charge so they drift towards the positive terminal, opposite to conventional current.",
+  "derivable": false
+ },
+ "15": {
+  "needs": [
+   "E-elec-power",
+   "E-W=VQ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Power rating means energy per second; energy = power × time.",
+  "derivable": true
+ },
+ "16": {
+  "needs": [
+   "E-emf",
+   "E-elec-power",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Use ε = I(R + r) to find R, then P = I²R; mA to A conversion.",
+  "derivable": true
+ },
+ "17": {
+  "needs": [
+   "E-v=fλ",
+   "D-graph-meaning",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Read period from a displacement–time graph; f = 1/T and λ = v/f.",
+  "derivable": false
+ },
+ "18": {
+  "needs": [
+   "E-emf",
+   "D-internal"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Terminal p.d. V = ε − Ir; it rises with larger ε or external R, falls with larger r.",
+  "derivable": false
+ },
+ "19": {
+  "needs": [
+   "D-transverse",
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "For a transverse wave, shift the waveform forward slightly to see whether a point moves up or down.",
+  "derivable": true
+ },
+ "20": {
+  "needs": [
+   "P-resistance",
+   "F-iv-curves"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resistance at a point is V/I (not the gradient); diode current rises steeply above threshold.",
+  "derivable": false
+ },
+ "21(a)": {
+  "needs": [
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A vector has magnitude and direction; velocity, force or displacement are examples.",
+  "derivable": false
+ },
+ "21(b)(i)": {
+  "needs": [
+   "E-speed",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Speed = distance/time; circumference of a circle is 2πr.",
+  "derivable": true
+ },
+ "21(b)(ii)": {
+  "needs": [
+   "D-kinematics",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Displacement is straight-line distance from the start; maximum is the diameter halfway round, zero after one lap.",
+  "derivable": false
+ },
+ "21(c)": {
+  "needs": [
+   "P-vectors",
+   "M-trig",
+   "E-F=ma",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Add two forces at an angle by resolving or cosine rule; then a = F/m with mass in kg.",
+  "derivable": true
+ },
+ "22(a)": {
+  "needs": [
+   "D-graph-meaning",
+   "D-terminal"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Acceleration is the gradient of a v–t graph; gradient decreasing means acceleration decreasing.",
+  "derivable": false
+ },
+ "22(b)": {
+  "needs": [
+   "K-instruments",
+   "K-method",
+   "E-Ek",
+   "E-speed"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Use light gate and timer for speed, balance for mass, then Ek = ½mv².",
+  "derivable": true
+ },
+ "22(c)(i)": {
+  "needs": [
+   "P-energy",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Friction does work, so some lost Ep becomes thermal energy instead of Ek.",
+  "derivable": false
+ },
+ "22(c)(ii)": {
+  "needs": [
+   "P-energy",
+   "E-work",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work against friction = Ep lost − Ek gained; force = work/distance with distance in m.",
+  "derivable": true
+ },
+ "23(a)": {
+  "needs": [
+   "E-stress-strain",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Strain = extension/original length, so extension = strain × length.",
+  "derivable": true
+ },
+ "23(b)(i)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Plot a point accurately and draw a straight line of best fit.",
+  "derivable": true
+ },
+ "23(b)(ii)": {
+  "needs": [
+   "E-stress-strain",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Young modulus is the gradient of the linear stress–strain graph; use a large gradient triangle.",
+  "derivable": true
+ },
+ "23(c)": {
+  "needs": [
+   "E-stress-strain",
+   "M-geometry",
+   "D-errors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Overestimated diameter overestimates area, underestimating stress and gradient, so true E is larger.",
+  "derivable": false
+ },
+ "24(a)": {
+  "needs": [
+   "E-series-parallel",
+   "M-ratio",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series resistances add; reciprocals add in parallel; current is inversely proportional to total resistance.",
+  "derivable": true
+ },
+ "24(b)": {
+  "needs": [
+   "F-iv-curves",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Filament resistance rises with current because temperature rises; lamps are non-ohmic.",
+  "derivable": false
+ },
+ "24(c)(i)": {
+  "needs": [
+   "E-R=V/I",
+   "E-resistivity",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "R = V/I from meter readings, then ρ = RA/L.",
+  "derivable": true
+ },
+ "24(c)(ii)": {
+  "needs": [
+   "K-evaluate",
+   "K-pag",
+   "E-resistivity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Contact resistance, heating or clip-length issues raise measured resistance, giving a larger resistivity.",
+  "derivable": true
+ },
+ "25(a)": {
+  "needs": [
+   "D-coherence"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Coherent waves keep a constant phase difference (and same frequency).",
+  "derivable": false
+ },
+ "25(b)": {
+  "needs": [
+   "P-superposition",
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Antiphase waves give destructive interference; unequal amplitudes leave a non-zero resultant.",
+  "derivable": false
+ },
+ "25(c)(i)": {
+  "needs": [
+   "P-superposition",
+   "E-pathdiff",
+   "D-coherence"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Bright fringes where path difference is nλ (constructive), dark where (n + ½)λ (destructive).",
+  "derivable": false
+ },
+ "25(c)(ii)": {
+  "needs": [
+   "E-young",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Fringe separation x = λD/a, so longer wavelength gives wider spacing.",
+  "derivable": true
+ },
+ "25(c)(iii)": {
+  "needs": [
+   "D-diffraction",
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Two-source interference needs both slits; one slit gives only a single-slit diffraction pattern.",
+  "derivable": false
+ },
+ "26(a)(i)": {
+  "needs": [
+   "P-energy"
+  ],
+  "given": [],
+  "new": [
+   "environmental impact of electricity generation"
+  ],
+  "assumed": "Lower power use means less electricity generated, so fewer carbon dioxide emissions.",
+  "derivable": false
+ },
+ "26(a)(ii)": {
+  "needs": [
+   "E-photon",
+   "P-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photon energy depends only on frequency (E = hf); intensity changes the number of photons.",
+  "derivable": true
+ },
+ "26(b)(i)": {
+  "needs": [
+   "F-electron-diffraction",
+   "P-duality",
+   "E-debroglie"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Diffraction is wave behaviour; electron de Broglie wavelength is similar to graphite atomic spacing.",
+  "derivable": false
+ },
+ "26(b)(ii)": {
+  "needs": [
+   "E-eV",
+   "E-debroglie",
+   "E-p=mv",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Kinetic energy gained is eV = ½mv²; then λ = h/(mv) with electron mass and charge.",
+  "derivable": true
+ },
+ "26(b)(iii)": {
+  "needs": [
+   "K-evaluate"
+  ],
+  "given": [],
+  "new": [
+   "peer review and validation of ideas"
+  ],
+  "assumed": "Scientific ideas are validated by peer review and independent replication.",
+  "derivable": false
+ }
+}

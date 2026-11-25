@@ -1,0 +1,450 @@
+{
+ "1": {
+  "needs": [
+   "F-em-spectrum",
+   "D-transverse"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "All EM waves are transverse, travel at c in a vacuum and can be polarised.",
+  "derivable": false
+ },
+ "2": {
+  "needs": [
+   "E-refraction",
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Light bends towards the normal entering glass and away from it on leaving.",
+  "derivable": false
+ },
+ "3": {
+  "needs": [
+   "D-graph-meaning",
+   "E-elastic"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work done stretching is the area under the force–extension graph.",
+  "derivable": false
+ },
+ "4": {
+  "needs": [
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resultant of two forces lies between their difference (opposite) and their sum (same direction).",
+  "derivable": true
+ },
+ "5": {
+  "needs": [
+   "P-vectors",
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "With no horizontal force, horizontal velocity of a projectile stays constant.",
+  "derivable": true
+ },
+ "6": {
+  "needs": [
+   "D-impulse",
+   "E-F=dp/dt",
+   "E-p=mv"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Impulse equals change of momentum, so impulse divided by mass gives final speed from rest.",
+  "derivable": false
+ },
+ "7": {
+  "needs": [
+   "D-couple"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A couple is a pair of equal, opposite, parallel forces not acting along the same line.",
+  "derivable": false
+ },
+ "8": {
+  "needs": [
+   "E-series-parallel",
+   "K-uncertainty",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Scaling both resistances by the same fraction scales the parallel total by that fraction too.",
+  "derivable": true
+ },
+ "9": {
+  "needs": [
+   "F-ldr-thermistor",
+   "E-divider",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Less light raises LDR resistance, so circuit current and the fixed resistor's p.d. both fall.",
+  "derivable": false
+ },
+ "10": {
+  "needs": [
+   "E-photon",
+   "E-W=VQ",
+   "K-pag",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At striking voltage the electron energy eV equals photon energy hc/λ.",
+  "derivable": true
+ },
+ "11": {
+  "needs": [
+   "P-newton2",
+   "E-W=mg",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Find mass from weight/g; tension = weight + ma.",
+  "derivable": true
+ },
+ "12": {
+  "needs": [
+   "E-elec-power",
+   "P-charge"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Total power is the sum of lamp powers; I = P/V.",
+  "derivable": true
+ },
+ "13": {
+  "needs": [
+   "P-energy",
+   "E-work"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy lost to resistance = Ep − Ek; force = energy lost ÷ distance along the slope.",
+  "derivable": true
+ },
+ "14": {
+  "needs": [
+   "E-debroglie",
+   "E-eV",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Kinetic energy eV = p²/2m so p ∝ √V and λ = h/p ∝ 1/√V.",
+  "derivable": true
+ },
+ "15": {
+  "needs": [
+   "E-upthrust",
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Stationary means equilibrium; upthrust plus any support balances weight; here upthrust equals weight.",
+  "derivable": true
+ },
+ "16": {
+  "needs": [
+   "E-intensity",
+   "E-W=VQ",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Power = intensity × area (mm² to m²); energy = power × time.",
+  "derivable": true
+ },
+ "17": {
+  "needs": [
+   "E-work",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A force perpendicular to the displacement does no work.",
+  "derivable": false
+ },
+ "18": {
+  "needs": [
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Combine series resistors by adding and parallel ones by reciprocals, step by step.",
+  "derivable": true
+ },
+ "19": {
+  "needs": [
+   "M-estimate",
+   "E-p=mv"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A car's mass is about 1000 kg, so momentum ≈ 10⁴ kg m s⁻¹.",
+  "derivable": false
+ },
+ "20": {
+  "needs": [
+   "D-si"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "SI base units include kg, m, s, A, K, mol; the coulomb is derived (A s).",
+  "derivable": false
+ },
+ "21(a)": {
+  "needs": [
+   "E-Ek",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Ek = ½mv² with mass converted from g to kg.",
+  "derivable": true
+ },
+ "21(b)": {
+  "needs": [
+   "D-graph-meaning",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Velocity is the gradient of a displacement–time graph; flat line means stationary.",
+  "derivable": false
+ },
+ "21(c)": {
+  "needs": [
+   "E-suvat",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Read stopping distance or time from the graph, then apply suvat with final velocity zero.",
+  "derivable": true
+ },
+ "22(a)": {
+  "needs": [
+   "P-moments",
+   "D-centre-gravity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Weight of a uniform platform acts at its midpoint; take moments about the wall pivot.",
+  "derivable": false
+ },
+ "22(b)": {
+  "needs": [
+   "E-stress-strain",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Strain = stress/E, then compression = strain × original length.",
+  "derivable": true
+ },
+ "23(a)": {
+  "needs": [
+   "P-momentum",
+   "P-newton3"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Momentum is conserved only for the whole system; the Earth gains equal and opposite momentum.",
+  "derivable": true
+ },
+ "23(b)(i)": {
+  "needs": [
+   "E-F=dp/dt",
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Force equals gradient of the momentum–time graph: change of momentum over time.",
+  "derivable": false
+ },
+ "23(b)(ii)": {
+  "needs": [
+   "P-momentum",
+   "P-newton3"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Total momentum stays constant, so Y gains exactly what X loses over the same interval.",
+  "derivable": true
+ },
+ "24(a)(i)": {
+  "needs": [
+   "E-R=V/I",
+   "E-Anev",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Find current from V/R, then v = I/(Ane).",
+  "derivable": true
+ },
+ "24(a)(ii)": {
+  "needs": [
+   "F-ldr-thermistor",
+   "P-resistance",
+   "D-internal"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Hot NTC thermistor has lower resistance so current rises; ideal supply keeps terminal p.d. constant.",
+  "derivable": false
+ },
+ "24(b)(i)": {
+  "needs": [
+   "E-emf",
+   "E-R=V/I",
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Contact at midpoint gives half the wire's resistance; current = V/R; then ε = V + Ir.",
+  "derivable": true
+ },
+ "24(b)(ii)": {
+  "needs": [
+   "E-emf",
+   "D-internal",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "More external resistance means less current, smaller lost volts Ir, so terminal p.d. rises.",
+  "derivable": false
+ },
+ "25(a)(i)": {
+  "needs": [
+   "D-wave-terms",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Wavelength is the distance between adjacent crests on a displacement–distance graph.",
+  "derivable": false
+ },
+ "25(a)(ii)": {
+  "needs": [
+   "E-intensity",
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy spreads over a larger area so amplitude falls; intensity ∝ amplitude².",
+  "derivable": false
+ },
+ "25(b)(i)": {
+  "needs": [
+   "D-coherence",
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Interference is the superposition of coherent waves.",
+  "derivable": false
+ },
+ "25(b)(ii)": {
+  "needs": [
+   "E-pathdiff",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Path difference of a half-integer number of wavelengths gives destructive interference.",
+  "derivable": true
+ },
+ "26(a)": {
+  "needs": [
+   "D-si",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Express newtons as kg m s⁻²; simplify base units to m s⁻¹.",
+  "derivable": false
+ },
+ "26(b)": {
+  "needs": [
+   "K-instruments",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Measure mass on a balance and length with a ruler; μ = m/L; improve resolution and repeat.",
+  "derivable": true
+ },
+ "26(c)": {
+  "needs": [
+   "E-v=fλ",
+   "E-nodes",
+   "F-stationary-patterns"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Speed fixed by tension; λ ∝ 1/f; loops are half wavelengths, so L = nλ/2.",
+  "derivable": false
+ },
+ "27(a)": {
+  "needs": [
+   "D-workfunction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Threshold frequency is the minimum frequency of radiation that releases electrons from the surface.",
+  "derivable": false
+ },
+ "27(b)(i)": {
+  "needs": [
+   "E-photoelectric"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At the threshold frequency the electrons have zero kinetic energy.",
+  "derivable": true
+ },
+ "27(b)(ii)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Plot points accurately and draw a ruled line of best fit.",
+  "derivable": true
+ },
+ "27(b)(iii)": {
+  "needs": [
+   "K-graph",
+   "E-eV-joule",
+   "E-photoelectric",
+   "M-straight-line"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient of φ against f0 is h; convert eV to joules first.",
+  "derivable": true
+ },
+ "27(b)(iv)": {
+  "needs": [
+   "K-uncertainty",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Draw a worst acceptable line; percentage uncertainty = difference in gradient ÷ best gradient × 100.",
+  "derivable": true
+ }
+}

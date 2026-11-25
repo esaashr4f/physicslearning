@@ -1,0 +1,446 @@
+{
+ "1": {
+  "needs": [
+   "D-si",
+   "E-power"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "The watt is a joule per second: a unit defined from other units, not from quantities.",
+  "derivable": false
+ },
+ "2": {
+  "needs": [
+   "E-work",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work against weight uses only the vertical displacement moved.",
+  "derivable": false
+ },
+ "3": {
+  "needs": [
+   "F-polarisation-waves",
+   "D-polarisation"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Only transverse waves can be polarised, so rotating a polariser shows light is transverse.",
+  "derivable": false
+ },
+ "4": {
+  "needs": [
+   "F-electron-diffraction",
+   "D-diffraction",
+   "E-debroglie"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Diffraction occurs when wavelength is comparable to the gap; electrons have a de Broglie wavelength near atomic spacing.",
+  "derivable": false
+ },
+ "5": {
+  "needs": [
+   "F-em-spectrum",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Infrared spans roughly 700 nm to 1 mm, so 50 µm is infrared.",
+  "derivable": false
+ },
+ "6": {
+  "needs": [
+   "P-newton2",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "a = F/m with constant mass, so acceleration has the same shape as the force graph.",
+  "derivable": true
+ },
+ "7": {
+  "needs": [
+   "P-newton1",
+   "P-vectors",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "For equilibrium, force vectors join tip-to-tail into a closed triangle.",
+  "derivable": false
+ },
+ "8": {
+  "needs": [
+   "E-elastic",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Same load gives same force; elastic energy ½Fx is proportional to extension.",
+  "derivable": true
+ },
+ "9": {
+  "needs": [
+   "E-divider",
+   "P-charge",
+   "E-elec-power",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Divider current splits; find the p.d. across the load section, then P = VI.",
+  "derivable": true
+ },
+ "10": {
+  "needs": [
+   "P-momentum",
+   "D-collisions",
+   "P-newton3"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Internal forces cancel in pairs, so with no external force total momentum is conserved.",
+  "derivable": false
+ },
+ "11": {
+  "needs": [
+   "P-kirchhoff2",
+   "P-charge",
+   "D-emf-pd"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Opposing e.m.f.s subtract; the larger drives the current; series current is the same everywhere.",
+  "derivable": false
+ },
+ "12": {
+  "needs": [
+   "P-charge"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Sum of currents into a junction equals sum out, using arrow directions.",
+  "derivable": true
+ },
+ "13": {
+  "needs": [
+   "K-uncertainty",
+   "E-R=V/I",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "For a quotient, percentage uncertainties add.",
+  "derivable": true
+ },
+ "14": {
+  "needs": [
+   "D-graph-meaning",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Maximum height after a bounce is where velocity is zero on the v–t graph.",
+  "derivable": false
+ },
+ "15": {
+  "needs": [
+   "E-eV",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy gained eV equals ½mv², so speed is proportional to the square root of voltage.",
+  "derivable": true
+ },
+ "16": {
+  "needs": [
+   "E-photoelectric",
+   "E-Ek",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "KEmax = photon energy − work function; then v = √(2KE/m) with electron mass.",
+  "derivable": true
+ },
+ "17": {
+  "needs": [
+   "E-stress-strain",
+   "E-elastic",
+   "M-ratio",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Extension is inversely proportional to area; area scales with diameter squared; energy = ½Fx.",
+  "derivable": true
+ },
+ "18": {
+  "needs": [
+   "P-vectors",
+   "E-Ek",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At the top only the horizontal velocity component remains, so KE = K cos²30°.",
+  "derivable": true
+ },
+ "19": {
+  "needs": [
+   "E-elec-power",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Parallel components share the same p.d., so P = V²/R is inversely proportional to R.",
+  "derivable": true
+ },
+ "20": {
+  "needs": [
+   "E-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Angles are measured from the normal; n of glass about 1.5; apply n sin θ on both sides.",
+  "derivable": false
+ },
+ "21(a)": {
+  "needs": [
+   "D-kinematics",
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Mass is scalar and adds arithmetically; velocity is a vector so direction must be included.",
+  "derivable": false
+ },
+ "21(b)(i)": {
+  "needs": [
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Weight acts vertically down; tension acts along the string away from the object.",
+  "derivable": false
+ },
+ "21(b)(ii)": {
+  "needs": [
+   "E-suvat",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "From rest s = ½at², rearranged for t.",
+  "derivable": true
+ },
+ "22(a)": {
+  "needs": [
+   "D-errors",
+   "K-linearise",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A systematic error shifts all points equally so the gradient is unchanged.",
+  "derivable": false
+ },
+ "22(b)": {
+  "needs": [
+   "E-suvat",
+   "K-linearise",
+   "K-graph",
+   "E-F=ma"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "From v² = u² + 2as, gradient of u² against x equals 2a; then F = ma.",
+  "derivable": true
+ },
+ "23(a)": {
+  "needs": [
+   "E-pressure",
+   "K-instruments",
+   "E-W=mg",
+   "M-geometry",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Pressure = weight/area; measure mass and diameter with suitable instruments; finer resolution improves precision.",
+  "derivable": true
+ },
+ "23(b)(i)": {
+  "needs": [
+   "E-upthrust"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Archimedes: upthrust equals the weight of fluid displaced.",
+  "derivable": false
+ },
+ "23(b)(ii)": {
+  "needs": [
+   "E-upthrust",
+   "E-density",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Upthrust is the drop in apparent weight; displaced volume = upthrust/(ρ_water g); density = m/V.",
+  "derivable": false
+ },
+ "24(a)": {
+  "needs": [
+   "P-newton2"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Newton's second law in momentum form: resultant force proportional to rate of change of momentum.",
+  "derivable": false
+ },
+ "24(b)(i)": {
+  "needs": [
+   "P-momentum",
+   "P-energy",
+   "D-collisions"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Momentum and total energy are always conserved even when kinetic energy is not.",
+  "derivable": false
+ },
+ "24(b)(ii)": {
+  "needs": [
+   "P-newton3"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Interaction forces are equal in size and opposite in direction at every instant.",
+  "derivable": true
+ },
+ "24(c)": {
+  "needs": [
+   "P-momentum",
+   "E-p=mv",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Momentum is conserved; take a sign convention so rebounding velocity is negative.",
+  "derivable": false
+ },
+ "25(a)(i)": {
+  "needs": [
+   "D-emf-pd"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Both are energy per unit charge in volts; e.m.f. converts to electrical energy, p.d. from it.",
+  "derivable": false
+ },
+ "25(a)(ii)": {
+  "needs": [
+   "E-Anev",
+   "D-current",
+   "M-geometry",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Number density n = number/volume; then I = Anev solved for v.",
+  "derivable": false
+ },
+ "25(b)": {
+  "needs": [
+   "K-pag",
+   "E-emf",
+   "K-linearise",
+   "F-circuit-symbols",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Vary external resistance, record V and I, plot V against I: gradient = −r, intercept = ε.",
+  "derivable": false
+ },
+ "26(a)(i)": {
+  "needs": [
+   "E-phase",
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Points half a wavelength apart oscillate in antiphase, moving in opposite directions.",
+  "derivable": false
+ },
+ "26(a)(ii)": {
+  "needs": [
+   "E-nodes",
+   "E-v=fλ",
+   "K-uncertainty",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A loop is half a wavelength; v = fλ; percentage uncertainty carries through multiplication.",
+  "derivable": false
+ },
+ "26(b)(i)": {
+  "needs": [
+   "D-stationary",
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Waves reflected at fixed ends superpose with incident waves to form a stationary wave.",
+  "derivable": false
+ },
+ "26(b)(ii)": {
+  "needs": [
+   "E-nodes",
+   "F-stationary-patterns"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "One loop between fixed ends is half a wavelength, so λ = 2L.",
+  "derivable": false
+ },
+ "27(a)": {
+  "needs": [
+   "P-resistance",
+   "F-iv-curves",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resistance = V/I at each point; negligible current means very high resistance; resistance falls as current rises.",
+  "derivable": false
+ },
+ "27(b)": {
+  "needs": [
+   "F-iv-curves",
+   "F-circuit-symbols",
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "An LED conducts only forward-biased above about its threshold voltage; cells in series add e.m.f.",
+  "derivable": false
+ },
+ "27(c)": {
+  "needs": [
+   "E-photon",
+   "E-photon-rate",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photon energy hc/λ; photons per second = power/photon energy, with mW and nm conversions.",
+  "derivable": true
+ }
+}

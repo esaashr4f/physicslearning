@@ -1,0 +1,325 @@
+{
+ "1(a)": {
+  "needs": [
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Acceleration is the gradient of a v–t graph; negative when slowing.",
+  "derivable": true
+ },
+ "1(b)": {
+  "needs": [
+   "D-graph-meaning",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Distance = area under v–t graph (trapezium or rectangle plus triangle).",
+  "derivable": true
+ },
+ "1(c)": {
+  "needs": [
+   "F-drag-factors",
+   "P-newton2",
+   "K-evaluate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Real deceleration varies and builds gradually; resistive forces depend on speed, so the graph would curve.",
+  "derivable": true
+ },
+ "2(a)(i)": {
+  "needs": [
+   "M-geometry",
+   "E-density",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Mean diameter; sphere volume 4/3πr³; mass = density × volume.",
+  "derivable": true
+ },
+ "2(a)(ii)": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Half-range uncertainty in d; tripled for volume; add density's percentage uncertainty.",
+  "derivable": true
+ },
+ "2(b)(i)": {
+  "needs": [
+   "E-upthrust",
+   "P-newton1",
+   "E-density"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A floating object displaces its own mass of water; submerged depth = displaced volume ÷ area; subtract from height.",
+  "derivable": true
+ },
+ "2(b)(ii)": {
+  "needs": [
+   "E-upthrust",
+   "E-density"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Sea water is denser, so less volume is displaced for the same weight and the cylinder floats higher.",
+  "derivable": true
+ },
+ "3(a)(i)": {
+  "needs": [
+   "D-current"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Conventional current is in the direction positive charge would move, opposite to negative carriers.",
+  "derivable": false
+ },
+ "3(a)(ii)": {
+  "needs": [
+   "F-carriers",
+   "D-current",
+   "E-speed"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Ions in electrolyte move towards the oppositely charged terminal; greater distance in the same time means faster.",
+  "derivable": true
+ },
+ "3(b)(i)": {
+  "needs": [
+   "E-divider"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "V_out = R/(R + R_other) × V_in.",
+  "derivable": true
+ },
+ "3(b)(ii)": {
+  "needs": [
+   "E-divider",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "p.d.s in series are in the ratio of resistances.",
+  "derivable": true
+ },
+ "3(b)(iii)": {
+  "needs": [
+   "E-divider",
+   "P-resistance",
+   "F-ldr-thermistor"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "With a fixed resistor much larger than the sensor, nearly all p.d. is across it, so output hardly changes.",
+  "derivable": true
+ },
+ "4(a)": {
+  "needs": [
+   "D-emf-pd"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Both are energy per unit charge; e.m.f. converts other energy to electrical, p.d. electrical to other forms.",
+  "derivable": false
+ },
+ "4(b)": {
+  "needs": [
+   "E-divider",
+   "K-method",
+   "F-circuit-symbols",
+   "E-resistivity",
+   "K-safety"
+  ],
+  "given": [],
+  "new": [
+   "Potentiometer balance (null) method"
+  ],
+  "assumed": "Uniform wire potentiometer: p.d. ∝ length; find balance lengths with zero galvanometer current; e.m.f. ratio = length ratio.",
+  "derivable": false
+ },
+ "5(a)(i)": {
+  "needs": [
+   "D-forces",
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Name forces on the trolley: weight, normal contact, push, friction; balanced pairs at constant velocity.",
+  "derivable": false
+ },
+ "5(a)(ii)": {
+  "needs": [
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Constant velocity means zero resultant force, so push equals friction.",
+  "derivable": true
+ },
+ "5(b)(i)": {
+  "needs": [
+   "E-power",
+   "E-work",
+   "E-speed"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Power = work/time, work = force × distance, distance/time = velocity.",
+  "derivable": true
+ },
+ "5(b)(ii)": {
+  "needs": [
+   "E-Ep",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Height gained = distance along slope × sin θ; work = mgh.",
+  "derivable": true
+ },
+ "5(b)(iii)": {
+  "needs": [
+   "E-power",
+   "E-work"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Total force = weight component plus friction; P = Fv.",
+  "derivable": true
+ },
+ "6(a)": {
+  "needs": [
+   "P-momentum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Total momentum before equals total after, provided no external force acts.",
+  "derivable": false
+ },
+ "6(b)(i)": {
+  "needs": [
+   "E-p=mv",
+   "E-speed",
+   "K-instruments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Speed = card length ÷ light-gate time; p = mv.",
+  "derivable": true
+ },
+ "6(b)(ii)": {
+  "needs": [
+   "E-F=dp/dt",
+   "E-p=mv",
+   "P-momentum",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Impulse on R equals momentum lost by L, with rebound taken as negative.",
+  "derivable": true
+ },
+ "6(b)(iii)": {
+  "needs": [
+   "E-p=mv"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "v = Δp/m from rest.",
+  "derivable": true
+ },
+ "6(c)": {
+  "needs": [
+   "P-momentum",
+   "D-collisions",
+   "E-Ek"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Momentum conservation gives common speed; compare KE before and after; KE loss means inelastic.",
+  "derivable": false
+ },
+ "7(a)": {
+  "needs": [
+   "E-photon",
+   "E-photon-rate",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photon energy hc/λ; photons per second = power ÷ photon energy.",
+  "derivable": true
+ },
+ "7(b)(i)": {
+  "needs": [
+   "D-coherence"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Coherent means constant phase difference.",
+  "derivable": false
+ },
+ "7(b)(ii)": {
+  "needs": [
+   "K-instruments",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Measure across many fringes with calipers and divide by the number of spacings.",
+  "derivable": true
+ },
+ "7(b)(iii)": {
+  "needs": [
+   "E-young",
+   "M-sigfigs",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rearrange λ = ax/D for a; give 3 s.f.",
+  "derivable": true
+ },
+ "7(c)(i)": {
+  "needs": [
+   "E-refraction",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Wavelength in glass = wavelength in air ÷ n.",
+  "derivable": true
+ },
+ "7(c)(ii)": {
+  "needs": [
+   "E-refraction",
+   "M-geometry",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Equilateral prism geometry gives r = 30° when ray is parallel to base; sin i = n sin r.",
+  "derivable": true
+ },
+ "8": {
+  "needs": [
+   "K-pag",
+   "K-method",
+   "K-linearise",
+   "K-uncertainty",
+   "E-photon",
+   "K-instruments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Find striking p.d. reliably (shield, repeat); plot V against f; h = e × gradient; K from intercept; worst line for uncertainty.",
+  "derivable": true
+ }
+}

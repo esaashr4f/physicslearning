@@ -1,0 +1,462 @@
+{
+ "1": {
+  "needs": [
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Velocity is the gradient of a displacement–time graph; steepest part means greatest velocity.",
+  "derivable": false
+ },
+ "2": {
+  "needs": [
+   "D-si",
+   "D-emf-pd"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A definition in words must use quantities (energy, charge), not units like seconds or amperes.",
+  "derivable": false
+ },
+ "3": {
+  "needs": [
+   "D-forces",
+   "P-vectors",
+   "F-drag-factors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Weight acts down; drag opposes velocity and is small; their resultant is nearly vertically down.",
+  "derivable": false
+ },
+ "4": {
+  "needs": [
+   "P-momentum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "In a collision the momentum lost by one body is gained by the other.",
+  "derivable": true
+ },
+ "5": {
+  "needs": [
+   "E-resistivity",
+   "M-ratio",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "R ∝ L/A and area ∝ diameter², so tripling length and doubling diameter multiplies R by 3/4.",
+  "derivable": true
+ },
+ "6": {
+  "needs": [
+   "E-elec-power",
+   "P-charge",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series lamps share the same current, so p.d. is proportional to power.",
+  "derivable": true
+ },
+ "7": {
+  "needs": [
+   "E-emf",
+   "E-series-parallel",
+   "E-R=V/I"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Total resistance includes internal resistance; I = ε/(R + r); then V = IR for one resistor.",
+  "derivable": true
+ },
+ "8": {
+  "needs": [
+   "K-uncertainty",
+   "E-elec-power"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage uncertainties add; a squared quantity doubles its percentage uncertainty.",
+  "derivable": true
+ },
+ "9": {
+  "needs": [
+   "P-newton1",
+   "P-moments"
+  ],
+  "given": [],
+  "new": [
+   "three forces in equilibrium are concurrent"
+  ],
+  "assumed": "Three non-parallel forces in equilibrium must pass through one point.",
+  "derivable": false
+ },
+ "10": {
+  "needs": [
+   "D-graph-meaning",
+   "F-stopping"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Distance is area under the v–t graph; stopping distance = thinking + braking distance.",
+  "derivable": false
+ },
+ "11": {
+  "needs": [
+   "P-newton2",
+   "E-F=dp/dt"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resultant force equals rate of change of momentum, in units kg m s⁻².",
+  "derivable": true
+ },
+ "12": {
+  "needs": [
+   "E-stress-strain",
+   "E-W=mg",
+   "M-geometry",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Stress = weight/area; area from πr² using radius half the diameter, mm to m.",
+  "derivable": true
+ },
+ "13": {
+  "needs": [
+   "F-ldr-thermistor",
+   "E-Anev"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Light frees more charge carriers, increasing number density and so lowering resistance.",
+  "derivable": false
+ },
+ "14": {
+  "needs": [
+   "D-electronvolt",
+   "E-W=VQ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "An electron accelerated through V volts gains V eV, so energy per electron gives the p.d.",
+  "derivable": false
+ },
+ "15": {
+  "needs": [
+   "D-impulse",
+   "E-F=dp/dt",
+   "E-p=mv",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Impulse FΔt changes momentum; opposing force can reverse the direction of momentum.",
+  "derivable": false
+ },
+ "16": {
+  "needs": [
+   "E-Q=It",
+   "F-prefixes",
+   "M-estimate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Q = It; number of electrons = Q/e; order of magnitude.",
+  "derivable": false
+ },
+ "17": {
+  "needs": [
+   "E-photoelectric",
+   "F-photoelectric-obs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "hf = φ + KEmax gives the maximum; actual photoelectron energies range from zero up to KEmax.",
+  "derivable": false
+ },
+ "18": {
+  "needs": [
+   "D-coherence"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Coherent sources have a constant phase difference.",
+  "derivable": false
+ },
+ "19": {
+  "needs": [
+   "F-stationary-patterns",
+   "E-nodes"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Closed end node, open end antinode; read the fraction of a wavelength shown in the tube.",
+  "derivable": false
+ },
+ "20": {
+  "needs": [
+   "D-si",
+   "E-work"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Express joules in base units via J = N m and N = kg m s⁻².",
+  "derivable": false
+ },
+ "21(a)": {
+  "needs": [
+   "E-suvat",
+   "K-instruments",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "From rest with uniform acceleration, final velocity = 2 × distance/time.",
+  "derivable": true
+ },
+ "21(b)(i)": {
+  "needs": [
+   "E-suvat",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "v² = u² + 2as rearranged for a.",
+  "derivable": true
+ },
+ "21(b)(ii)": {
+  "needs": [
+   "M-trig",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rearrange the given relation for sin θ and use inverse sine.",
+  "derivable": true
+ },
+ "22(a)": {
+  "needs": [
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "In equilibrium the spring tensions' resultant balances the weight: equal size, upward.",
+  "derivable": true
+ },
+ "22(b)": {
+  "needs": [
+   "P-vectors",
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Forces in equilibrium form a closed triangle with arrows following round in one direction.",
+  "derivable": true
+ },
+ "22(c)": {
+  "needs": [
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resolve vertically: two equal tensions at 45° sum to the weight; or Pythagoras.",
+  "derivable": true
+ },
+ "22(d)": {
+  "needs": [
+   "E-hooke",
+   "E-elastic",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Extension = F/k, then elastic energy = ½kx² or ½Fx.",
+  "derivable": true
+ },
+ "23(a)": {
+  "needs": [
+   "E-upthrust",
+   "D-forces",
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Upthrust equals weight of displaced water, growing as more is submerged, constant once fully submerged.",
+  "derivable": false
+ },
+ "23(b)": {
+  "needs": [
+   "P-newton2",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resultant = upthrust − weight; mass from weight/g; a = F/m.",
+  "derivable": true
+ },
+ "23(c)": {
+  "needs": [
+   "F-drag-factors",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Drag increases with speed, reducing the resultant force and acceleration.",
+  "derivable": false
+ },
+ "24(a)(i)": {
+  "needs": [
+   "E-elec-power",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "P = VI with mA converted to A.",
+  "derivable": true
+ },
+ "24(a)(ii)": {
+  "needs": [
+   "F-iv-curves",
+   "F-ldr-thermistor",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "R = V/I from data; resistance falling with current in both directions indicates a thermistor.",
+  "derivable": false
+ },
+ "24(b)": {
+  "needs": [
+   "E-resistivity",
+   "E-series-parallel",
+   "E-R=V/I"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "R = ρL/A; series resistances add; I = V/R_total.",
+  "derivable": true
+ },
+ "25(a)": {
+  "needs": [
+   "K-instruments",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Period = number of divisions × time-base setting; f = 1/T.",
+  "derivable": true
+ },
+ "25(b)(i)": {
+  "needs": [
+   "E-phase",
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Antiphase means shifted by half a period, i.e. inverted relative to the original.",
+  "derivable": false
+ },
+ "25(b)(ii)": {
+  "needs": [
+   "P-superposition",
+   "E-intensity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Displacements add with sign; intensity is proportional to amplitude squared.",
+  "derivable": true
+ },
+ "25(b)(iii)": {
+  "needs": [
+   "E-pathdiff"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Path difference equal to half a wavelength gives destructive interference.",
+  "derivable": true
+ },
+ "26(a)(i)": {
+  "needs": [
+   "E-v=fλ",
+   "F-em-spectrum",
+   "F-prefixes"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Microwaves travel at c; λ = c/f with GHz conversion.",
+  "derivable": false
+ },
+ "26(a)(ii)": {
+  "needs": [
+   "D-diffraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Diffraction is greatest when the gap is similar to the wavelength.",
+  "derivable": false
+ },
+ "26(b)": {
+  "needs": [
+   "E-refraction",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Frequency is unchanged on refraction; slower speed in water means shorter wavelength.",
+  "derivable": true
+ },
+ "26(c)": {
+  "needs": [
+   "K-pag",
+   "E-refraction",
+   "D-refraction",
+   "K-instruments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Increase angle in the block until the refracted ray grazes the surface; that angle is C; n = 1/sin C.",
+  "derivable": false
+ },
+ "27(a)": {
+  "needs": [
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Radio and X-rays differ in wavelength and frequency (and photon energy).",
+  "derivable": false
+ },
+ "27(b)(i)": {
+  "needs": [
+   "E-intensity",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Intensity = power/area; surface area of a sphere is 4πr².",
+  "derivable": true
+ },
+ "27(b)(ii)": {
+  "needs": [
+   "E-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "E = hc/λ.",
+  "derivable": true
+ },
+ "27(b)(iii)": {
+  "needs": [
+   "E-photon-rate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photons per second = total power ÷ energy per photon.",
+  "derivable": true
+ }
+}

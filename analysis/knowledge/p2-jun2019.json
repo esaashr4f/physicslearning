@@ -1,0 +1,326 @@
+{
+ "1(a)(i)": {
+  "needs": [
+   "D-graph-meaning",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Acceleration is the gradient of a v–t graph, found with a large triangle.",
+  "derivable": true
+ },
+ "1(a)(ii)": {
+  "needs": [
+   "E-Ek",
+   "K-graph",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Read impact speed from the graph; KE = ½mv² with grams converted to kilograms.",
+  "derivable": true
+ },
+ "1(b)(i)": {
+  "needs": [
+   "E-Ek",
+   "M-rearrange",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Take 80% of the KE, then rearrange ½mv² for v.",
+  "derivable": true
+ },
+ "1(b)(ii)": {
+  "needs": [
+   "D-graph-meaning",
+   "E-suvat",
+   "K-graph",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rebound velocity has opposite sign; deceleration is still g, so the line is parallel and reaches zero at t = v/g later.",
+  "derivable": true
+ },
+ "1(b)(iii)": {
+  "needs": [
+   "D-graph-meaning",
+   "E-suvat"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Height is the area under the rising v–t line, or v²/2g.",
+  "derivable": true
+ },
+ "1(c)": {
+  "needs": [
+   "F-drag-factors",
+   "P-newton2",
+   "D-graph-meaning",
+   "D-terminal"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Drag grows with speed so resultant force and acceleration fall; gradient decreases, lower impact speed, later landing.",
+  "derivable": true
+ },
+ "2(a)": {
+  "needs": [
+   "D-materials",
+   "F-material-graphs",
+   "E-stress-strain"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Meanings of elastic, plastic, ductile, brittle, Young modulus and UTS, and how each appears on a stress–strain graph.",
+  "derivable": false
+ },
+ "2(b)": {
+  "needs": [
+   "M-estimate",
+   "E-stress-strain",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Estimate an adult's weight; share between three legs; area = force ÷ maximum stress.",
+  "derivable": true
+ },
+ "3(a)(i)": {
+  "needs": [
+   "K-instruments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Vernier calipers or a micrometer suit a diameter of about 2.5 cm.",
+  "derivable": true
+ },
+ "3(a)(ii)": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Mean of readings; absolute uncertainty is half the range.",
+  "derivable": true
+ },
+ "3(a)(iii)": {
+  "needs": [
+   "M-geometry",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Sphere volume 4/3πr³ with radius half the diameter in metres.",
+  "derivable": true
+ },
+ "3(a)(iv)": {
+  "needs": [
+   "E-density",
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Density = mass/volume, quoted to the precision of the least precise data.",
+  "derivable": true
+ },
+ "3(a)(v)": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Add percentage uncertainties; the diameter's is tripled because volume depends on d³.",
+  "derivable": true
+ },
+ "3(b)": {
+  "needs": [
+   "E-hooke",
+   "E-W=mg",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Extension = loaded − unloaded length; force = weight mg; k = F/x.",
+  "derivable": true
+ },
+ "3(c)(i)": {
+  "needs": [
+   "E-hooke",
+   "E-upthrust",
+   "P-newton1",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Spring tension from kx; in equilibrium upthrust = weight − spring tension.",
+  "derivable": true
+ },
+ "3(c)(ii)": {
+  "needs": [
+   "E-upthrust",
+   "E-density"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Upthrust = ρVg for the displaced liquid; rearrange for ρ.",
+  "derivable": true
+ },
+ "4(a)(i)": {
+  "needs": [
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Parallel identical resistors give R/n; series combinations add.",
+  "derivable": true
+ },
+ "4(a)(ii)": {
+  "needs": [
+   "E-divider",
+   "P-resistance",
+   "E-R=V/I"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series sections share p.d. in the ratio of their resistances (or I × R).",
+  "derivable": true
+ },
+ "4(a)(iii)": {
+  "needs": [
+   "E-Q=It",
+   "E-R=V/I",
+   "D-si"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Current through one resistor = V/R; charge = It; unit coulomb.",
+  "derivable": true
+ },
+ "4(a)(iv)": {
+  "needs": [
+   "E-W=VQ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy dissipated = VQ (or VIt).",
+  "derivable": true
+ },
+ "4(b)": {
+  "needs": [
+   "E-Anev",
+   "P-charge",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Current splits equally in identical parallel branches; with n, A, e equal, drift velocity ∝ current.",
+  "derivable": true
+ },
+ "4(c)": {
+  "needs": [
+   "D-current",
+   "F-carriers",
+   "E-Anev"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Number density is free charge carriers per unit volume; metals ≫ semiconductors ≫ insulators; more carriers means better conduction.",
+  "derivable": false
+ },
+ "5(a)(i)": {
+  "needs": [
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Amplitude is maximum displacement from equilibrium.",
+  "derivable": false
+ },
+ "5(a)(ii)": {
+  "needs": [
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Wavelength is the distance between adjacent points in phase.",
+  "derivable": false
+ },
+ "5(a)(iii)": {
+  "needs": [
+   "E-phase",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Phase difference = (separation/λ) × 2π radians.",
+  "derivable": true
+ },
+ "5(a)(iv)": {
+  "needs": [
+   "E-intensity",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Intensity ∝ amplitude², so square the amplitude ratio.",
+  "derivable": true
+ },
+ "5(b)": {
+  "needs": [
+   "K-method",
+   "E-young",
+   "E-v=fλ",
+   "K-linearise",
+   "K-instruments",
+   "K-safety"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Two speakers on one signal generator; microphone locates maxima; vary f; x ∝ 1/f; v from gradient using λ = ax/D; protect hearing.",
+  "derivable": true
+ },
+ "6(a)(i)": {
+  "needs": [
+   "D-workfunction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Threshold frequency is the minimum frequency of radiation that releases electrons from a surface.",
+  "derivable": false
+ },
+ "6(a)(ii)": {
+  "needs": [
+   "K-graph",
+   "E-photoelectric"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Threshold frequency is the f-axis intercept of KEmax against f.",
+  "derivable": true
+ },
+ "6(a)(iii)": {
+  "needs": [
+   "E-photoelectric",
+   "D-workfunction",
+   "E-eV-joule"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "φ = h × threshold frequency, then divide by 1.6 × 10⁻¹⁹ for eV.",
+  "derivable": true
+ },
+ "6(b)": {
+  "needs": [
+   "F-electron-diffraction",
+   "P-duality",
+   "E-debroglie",
+   "D-diffraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Electrons diffract through graphite giving rings; needs λ = h/p comparable to atomic spacing; speed changes ring size.",
+  "derivable": false
+ }
+}

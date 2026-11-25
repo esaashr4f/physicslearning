@@ -1,0 +1,468 @@
+{
+ "1": {
+  "needs": [
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Ultraviolet wavelengths lie roughly between 10 nm and 400 nm.",
+  "derivable": false
+ },
+ "2": {
+  "needs": [
+   "P-charge",
+   "P-kirchhoff2"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Kirchhoff's laws are stated in terms of current, e.m.f. and p.d., not charge.",
+  "derivable": false
+ },
+ "3": {
+  "needs": [
+   "E-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Snell's law uses angles from the normal: subtract boundary angles from 90°.",
+  "derivable": true
+ },
+ "4": {
+  "needs": [
+   "E-young",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Fringe spacing x = λD/a: large λ and small a give widest fringes.",
+  "derivable": true
+ },
+ "5": {
+  "needs": [
+   "E-Ek",
+   "E-power",
+   "P-energy"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Braking power = loss of kinetic energy ÷ time.",
+  "derivable": true
+ },
+ "6": {
+  "needs": [
+   "E-phase",
+   "E-pathdiff"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "270° phase difference means path difference of ¾λ (or that plus whole wavelengths).",
+  "derivable": true
+ },
+ "7": {
+  "needs": [
+   "E-series-parallel",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "1/R_total = 1/R₁ + 1/R₂, solved for the unknown.",
+  "derivable": true
+ },
+ "8": {
+  "needs": [
+   "E-emf",
+   "E-R=V/I"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Current from V/R; lost volts = ε − V; r = lost volts ÷ I.",
+  "derivable": true
+ },
+ "9": {
+  "needs": [
+   "E-moment",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Moment = force × perpendicular distance from the pivot to the line of action.",
+  "derivable": true
+ },
+ "10": {
+  "needs": [
+   "E-Q=It",
+   "F-prefixes"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Charge = number of electrons × e; I = Q/t with µs converted.",
+  "derivable": false
+ },
+ "11": {
+  "needs": [
+   "E-efficiency",
+   "E-power",
+   "E-work"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Useful power = Fh/t; input power = useful power ÷ efficiency.",
+  "derivable": true
+ },
+ "12": {
+  "needs": [
+   "D-polarisation"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rotating a polarising filter in polarised light changes transmitted intensity, not frequency or speed.",
+  "derivable": false
+ },
+ "13": {
+  "needs": [
+   "E-stress-strain",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Extension = FL/(AE): scales with L, inversely with E.",
+  "derivable": true
+ },
+ "14": {
+  "needs": [
+   "F-ldr-thermistor"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "NTC thermistor resistance decreases (non-linearly) as temperature rises.",
+  "derivable": false
+ },
+ "15": {
+  "needs": [
+   "P-moments",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Fixed moment means F × x is constant, so x is inversely proportional to F.",
+  "derivable": true
+ },
+ "16": {
+  "needs": [
+   "F-iv-curves",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Straight line through origin is ohmic; filament-lamp curve shows rising resistance.",
+  "derivable": false
+ },
+ "17": {
+  "needs": [
+   "E-photoelectric",
+   "F-photoelectric-obs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "UV photons release electrons from the zinc surface (photoelectric effect).",
+  "derivable": false
+ },
+ "18": {
+  "needs": [
+   "E-W=VQ",
+   "E-Q=It"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy = charge × p.d., charge = N × e.",
+  "derivable": true
+ },
+ "19": {
+  "needs": [
+   "D-stationary",
+   "D-transverse",
+   "F-polarisation-waves"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Any wave can form stationary waves; sound is longitudinal and needs a medium, EM doesn't.",
+  "derivable": false
+ },
+ "20": {
+  "needs": [
+   "E-intensity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Intensity = power ÷ cross-sectional area.",
+  "derivable": true
+ },
+ "21(a)": {
+  "needs": [
+   "D-graph-meaning",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Distance is the area under a v–t graph: split into trapezium and rectangle.",
+  "derivable": false
+ },
+ "21(b)(i)": {
+  "needs": [
+   "D-graph-meaning",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Acceleration is the gradient of the v–t graph.",
+  "derivable": false
+ },
+ "21(b)(ii)": {
+  "needs": [
+   "P-vectors",
+   "M-trig",
+   "P-newton2"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Horizontal component T cos θ minus resistance equals ma.",
+  "derivable": true
+ },
+ "22(a)": {
+  "needs": [
+   "K-method",
+   "E-hooke",
+   "K-linearise"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Add known loads, measure compression each time, plot force vs compression; gradient = k.",
+  "derivable": true
+ },
+ "22(b)": {
+  "needs": [
+   "P-energy"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rising and slowing: kinetic energy becomes gravitational potential energy.",
+  "derivable": true
+ },
+ "22(c)": {
+  "needs": [
+   "E-elastic",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "E = ½kx² with compression in metres.",
+  "derivable": true
+ },
+ "22(d)": {
+  "needs": [
+   "P-energy",
+   "E-Ep"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Some elastic energy also becomes gravitational potential energy as it rises.",
+  "derivable": true
+ },
+ "23(a)": {
+  "needs": [
+   "P-newton3",
+   "E-F=dp/dt",
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Force = gradient of p–t graph; third law needs equal and opposite forces.",
+  "derivable": false
+ },
+ "23(b)": {
+  "needs": [
+   "P-momentum",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Read momenta from graphs with sign; totals before and after must be equal.",
+  "derivable": true
+ },
+ "23(c)": {
+  "needs": [
+   "P-momentum",
+   "D-collisions",
+   "E-p=mv"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Objects stick, so total momentum ÷ total mass gives common velocity.",
+  "derivable": false
+ },
+ "23(d)": {
+  "needs": [
+   "E-suvat",
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Vertical motion is independent: from rest s = ½gt².",
+  "derivable": true
+ },
+ "24(a)": {
+  "needs": [
+   "D-stationary"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Stationary waves show fixed nodes and antinodes.",
+  "derivable": false
+ },
+ "24(b)(i)": {
+  "needs": [
+   "K-instruments",
+   "K-pag"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Use a signal generator display, or microphone and oscilloscope with f = 1/T; reduce noise or time many cycles.",
+  "derivable": true
+ },
+ "24(b)(ii)1": {
+  "needs": [
+   "E-nodes",
+   "F-stationary-patterns"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Fundamental between fixed ends is half a wavelength, so λ = 2L.",
+  "derivable": false
+ },
+ "24(b)(ii)2": {
+  "needs": [
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "v = fλ.",
+  "derivable": true
+ },
+ "24(b)(ii)3": {
+  "needs": [
+   "K-uncertainty",
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage uncertainties add, doubling for a squared term; convert to absolute.",
+  "derivable": true
+ },
+ "25(a)": {
+  "needs": [
+   "D-emf-pd",
+   "D-si"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Both e.m.f. and p.d. are measured in volts (energy per unit charge).",
+  "derivable": false
+ },
+ "25(b)(i)": {
+  "needs": [
+   "E-divider",
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Parallel combination of wire and resistor changes; p.d. shared by resistance ratio in a divider.",
+  "derivable": true
+ },
+ "25(b)(ii)": {
+  "needs": [
+   "E-divider",
+   "E-series-parallel",
+   "P-kirchhoff2"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "In series, p.d. shares in proportion to resistance; larger total resistance means smaller current.",
+  "derivable": true
+ },
+ "25(c)(i)": {
+  "needs": [
+   "P-kirchhoff2",
+   "E-R=V/I",
+   "E-resistivity",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "P.d. across wires = supply − lamp p.d.; R = V/I; ρ = RA/L with mm² converted.",
+  "derivable": true
+ },
+ "25(c)(ii)": {
+  "needs": [
+   "E-Anev",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rearrange I = Anev for v.",
+  "derivable": true
+ },
+ "26(a)(i)": {
+  "needs": [
+   "E-photoelectric",
+   "D-workfunction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Emission needs photon energy at least equal to the work function.",
+  "derivable": false
+ },
+ "26(a)(ii)": {
+  "needs": [
+   "E-photon",
+   "D-workfunction",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Threshold wavelength λ = hc/φ; wavelength inversely proportional to energy.",
+  "derivable": false
+ },
+ "26(a)(iii)": {
+  "needs": [
+   "E-photoelectric",
+   "E-eV-joule",
+   "E-Ek",
+   "E-debroglie"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "KEmax = photon energy − φ; convert to J, find v or p, then λ = h/p.",
+  "derivable": true
+ },
+ "26(b)(i)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Draw a straight best-fit line through the plotted points.",
+  "derivable": true
+ },
+ "26(b)(ii)": {
+  "needs": [
+   "E-photoelectric",
+   "K-graph",
+   "M-straight-line"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "KEmax = hf − φ: gradient is h, intercept is −φ.",
+  "derivable": true
+ }
+}

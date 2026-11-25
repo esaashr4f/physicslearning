@@ -42,3 +42,17 @@ if mv:
     with open(out+'/questions.json','w') as fh:
         fh.write('[\n'+',\n'.join(json.dumps(x,ensure_ascii=False) for x in qs)+'\n]\n')
 print('nearmiss',len(nm['items']),'examiner reports',len(ex),'moves files',len(mv))
+
+# ---- assumed knowledge ----
+km={os.path.basename(f)[:-5]:json.load(open(f)) for f in glob.glob(S+'/knowmap/p*.json')}
+if km:
+    K=json.load(open(out+'/knowledge.json')); kind={i['id']:i['kind'] for i in K['items']}
+    qs=json.load(open(out+'/questions.json'))
+    for q in qs:
+        m=km.get(f"p{q['paper']}-{q['slug']}",{}).get(q['q'])
+        if m:
+            q['needs']=m.get('needs',[]); q['assumed']=m.get('assumed',''); q['kgiven']=m.get('given',[]); q['knew']=m.get('new',[])
+            q['reasonable']=not any(kind.get(i) in ('D','F') for i in q['needs'])
+    with open(out+'/questions.json','w') as fh:
+        fh.write('[\n'+',\n'.join(json.dumps(x,ensure_ascii=False) for x in qs)+'\n]\n')
+    print('knowledge maps',len(km))

@@ -1,0 +1,432 @@
+{
+ "1": {
+  "needs": [
+   "D-si",
+   "D-materials",
+   "E-hooke"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Charge is in coulombs; strain has no unit; force constant is N m⁻¹; power is W.",
+  "derivable": false
+ },
+ "2": {
+  "needs": [
+   "D-errors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Accuracy is closeness to the true value; g = 9.81 m s⁻².",
+  "derivable": false
+ },
+ "3": {
+  "needs": [
+   "D-materials",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [
+   "compression and tension in a bending beam"
+  ],
+  "assumed": "A sagging beam is compressed on its upper surface, most at mid-span.",
+  "derivable": false
+ },
+ "4": {
+  "needs": [
+   "D-graph-meaning",
+   "D-impulse"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Area under a force–time graph is impulse (change of momentum), not work.",
+  "derivable": false
+ },
+ "5": {
+  "needs": [
+   "D-couple",
+   "E-moment",
+   "E-work",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Torque of a couple = force × separation; work in one turn = torque × 2π.",
+  "derivable": false
+ },
+ "6": {
+  "needs": [
+   "F-ldr-thermistor",
+   "F-circuit-symbols"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "An LDR in series with an ammeter gives current that varies with light.",
+  "derivable": false
+ },
+ "7": {
+  "needs": [
+   "E-kWh",
+   "E-W=VQ",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy saved in kW h = power difference (kW) × hours; multiply by cost per unit.",
+  "derivable": true
+ },
+ "8": {
+  "needs": [
+   "E-work",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "W = Fx cos θ, so cos θ = W/(Fx).",
+  "derivable": true
+ },
+ "9": {
+  "needs": [
+   "E-resistivity",
+   "M-ratio",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Constant volume: stretching by 1.5 reduces area by 1.5, so R ∝ L².",
+  "derivable": true
+ },
+ "10": {
+  "needs": [
+   "E-divider",
+   "F-circuit-symbols"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Output p.d. across the variable resistor is its share of total resistance times supply.",
+  "derivable": false
+ },
+ "11": {
+  "needs": [
+   "E-pathdiff"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "In-phase sources: constructive interference where path difference is a whole number of wavelengths.",
+  "derivable": true
+ },
+ "12": {
+  "needs": [
+   "E-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "sin C = 1/n, so the largest refractive index gives the smallest critical angle.",
+  "derivable": true
+ },
+ "13": {
+  "needs": [
+   "E-power",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Power = drag force × speed; with drag ∝ v², power ∝ v³.",
+  "derivable": true
+ },
+ "14": {
+  "needs": [
+   "E-W=VQ",
+   "F-prefixes",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy = VIt with kV, µA and hours converted to SI.",
+  "derivable": false
+ },
+ "15": {
+  "needs": [
+   "D-current",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [
+   "quantisation of charge"
+  ],
+  "assumed": "Charge is quantised in whole multiples of e = 1.60 × 10⁻¹⁹ C.",
+  "derivable": false
+ },
+ "16": {
+  "needs": [
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Add vectors tip-to-tail; the resultant runs from the start of the first to the end of the last.",
+  "derivable": true
+ },
+ "17": {
+  "needs": [
+   "D-si",
+   "E-intensity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Intensity = power/area, so divide power's base units by m².",
+  "derivable": false
+ },
+ "18": {
+  "needs": [
+   "E-suvat",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Free fall from rest s = ½gt²; the fall distance is from the ball's bottom to the ground.",
+  "derivable": true
+ },
+ "19": {
+  "needs": [
+   "F-polarisation-waves",
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Only transverse waves polarise; microwaves are EM with centimetre wavelengths.",
+  "derivable": false
+ },
+ "20": {
+  "needs": [
+   "F-stationary-patterns"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Closed end is a node, open end an antinode.",
+  "derivable": false
+ },
+ "21(a)": {
+  "needs": [
+   "P-moments",
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Equilibrium also needs zero resultant moment about any point.",
+  "derivable": false
+ },
+ "21(b)(i)": {
+  "needs": [
+   "P-newton3"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Weight is the Earth's gravitational pull; its partner is the ball's pull on the Earth.",
+  "derivable": true
+ },
+ "21(b)(ii)": {
+  "needs": [
+   "P-newton3",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Third-law pairs act on different objects and are the same type of force.",
+  "derivable": false
+ },
+ "21(c)(i)": {
+  "needs": [
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resolve each tension vertically with the correct trig function and add.",
+  "derivable": true
+ },
+ "21(c)(ii)": {
+  "needs": [
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Equilibrium: vertical force equals weight; m = W/g.",
+  "derivable": true
+ },
+ "21(c)(iii)": {
+  "needs": [
+   "E-stress-strain",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Extension = FL/(AE); if F and E scale equally, extension is unchanged.",
+  "derivable": true
+ },
+ "22(a)": {
+  "needs": [
+   "D-graph-meaning",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Velocity is the gradient of the s–t graph; sign change shows reversal at the bounce.",
+  "derivable": false
+ },
+ "22(b)": {
+  "needs": [
+   "E-suvat",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Read drop height or time from the graph; free fall from rest with a = g.",
+  "derivable": true
+ },
+ "22(c)": {
+  "needs": [
+   "K-graph",
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Draw a tangent at the point; velocity equals its gradient.",
+  "derivable": false
+ },
+ "22(d)": {
+  "needs": [
+   "E-F=dp/dt",
+   "D-kinematics",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Velocity reverses so change in velocity is the sum of speeds; F = mΔv/Δt with g and ms converted.",
+  "derivable": false
+ },
+ "23(a)(i)": {
+  "needs": [
+   "E-series-parallel",
+   "E-emf",
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resistance per length × length; combine parallel then add internal resistance; I = ε/R_total; sensible significant figures.",
+  "derivable": true
+ },
+ "23(a)(ii)": {
+  "needs": [
+   "E-elec-power",
+   "E-emf"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Power wasted in r is I²r; total power is εI; take the ratio.",
+  "derivable": true
+ },
+ "23(b)": {
+  "needs": [
+   "F-iv-curves",
+   "P-kirchhoff2",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series lamps share the supply p.d.; parallel lamps each get full p.d.; read currents from the I–V graph.",
+  "derivable": false
+ },
+ "24(a)": {
+  "needs": [
+   "K-pag",
+   "E-refraction",
+   "K-instruments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Measure incidence and refraction angles from the normal; n = sin i/sin r; repeat or plot for accuracy.",
+  "derivable": true
+ },
+ "24(b)(i)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Draw a straight best-fit line and find gradient with a large triangle.",
+  "derivable": true
+ },
+ "24(b)(ii)": {
+  "needs": [
+   "E-v=fλ",
+   "E-nodes",
+   "M-straight-line"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Adjacent nodes are λ/2 apart so v = 2fL; compare with y = mx.",
+  "derivable": false
+ },
+ "24(b)(iii)": {
+  "needs": [
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Speed equals twice the gradient.",
+  "derivable": true
+ },
+ "24(b)(iv)": {
+  "needs": [
+   "K-uncertainty",
+   "K-evaluate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Larger measured lengths reduce percentage uncertainty: lower frequency or measure several node spacings.",
+  "derivable": true
+ },
+ "25(a)": {
+  "needs": [
+   "F-electron-diffraction",
+   "P-duality"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Electron diffraction is evidence of wave behaviour.",
+  "derivable": false
+ },
+ "25(b)(i)": {
+  "needs": [
+   "E-eV-joule",
+   "E-Ek",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Convert eV to J, then ½mv² = KE with electron mass.",
+  "derivable": true
+ },
+ "25(b)(ii)": {
+  "needs": [
+   "E-debroglie",
+   "E-p=mv"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "λ = h/(mv).",
+  "derivable": true
+ },
+ "25(c)": {
+  "needs": [
+   "P-photon",
+   "E-photoelectric",
+   "D-workfunction",
+   "F-photoelectric-obs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "One photon frees one electron; hf = φ + KEmax; φ is the minimum energy to escape; need hf ≥ φ.",
+  "derivable": false
+ }
+}

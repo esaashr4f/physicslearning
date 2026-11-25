@@ -1,0 +1,320 @@
+{
+ "1(a)": {
+  "needs": [
+   "F-stopping"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Stopping distance = thinking distance + braking distance.",
+  "derivable": false
+ },
+ "1(b)(i)": {
+  "needs": [
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Convert km to m and hours to seconds.",
+  "derivable": true
+ },
+ "1(b)(ii)1": {
+  "needs": [
+   "E-Ek"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Kinetic energy = ½mv².",
+  "derivable": true
+ },
+ "1(b)(ii)2": {
+  "needs": [
+   "E-suvat",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Use v² = u² + 2as with final velocity zero.",
+  "derivable": true
+ },
+ "1(b)(ii)3": {
+  "needs": [
+   "E-F=ma",
+   "E-work"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "F = ma, or braking force = KE ÷ braking distance.",
+  "derivable": true
+ },
+ "1(b)(iii)": {
+  "needs": [
+   "P-vectors",
+   "P-newton2",
+   "M-trig",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "On an incline a weight component acts down the slope, adding to the braking force, giving greater deceleration.",
+  "derivable": true
+ },
+ "2(a)": {
+  "needs": [
+   "E-hooke",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Extension = stretched length − original length.",
+  "derivable": true
+ },
+ "2(b)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Label axes with units, use a sensible scale, plot accurately, draw a ruled best-fit line.",
+  "derivable": true
+ },
+ "2(c)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient from a large triangle on the line.",
+  "derivable": true
+ },
+ "2(d)": {
+  "needs": [
+   "E-hooke",
+   "K-linearise",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "For extension against force, the gradient is 1/k; give unit N m⁻¹ or N cm⁻¹.",
+  "derivable": true
+ },
+ "2(e)": {
+  "needs": [
+   "E-hooke",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Hooke's law: extension proportional to force, shown by a straight line through the origin.",
+  "derivable": true
+ },
+ "2(f)": {
+  "needs": [
+   "E-hooke",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [
+   "Springs in series and parallel"
+  ],
+  "assumed": "Identical springs in series share the same tension, so extensions add; n springs have stiffness k/n.",
+  "derivable": true
+ },
+ "3(a)(i)": {
+  "needs": [
+   "K-instruments",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Use a micrometer or vernier calipers; repeat in different orientations and average.",
+  "derivable": true
+ },
+ "3(a)(ii)": {
+  "needs": [
+   "E-density",
+   "M-geometry",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Sphere volume 4/3πr³ (radius = half diameter); mass = density × volume.",
+  "derivable": true
+ },
+ "3(a)(iii)": {
+  "needs": [
+   "E-upthrust",
+   "E-W=mg",
+   "P-newton1",
+   "D-forces"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Upthrust = weight of water displaced; holding force = upthrust − weight for equilibrium.",
+  "derivable": true
+ },
+ "3(b)": {
+  "needs": [
+   "K-pag",
+   "K-method",
+   "K-instruments",
+   "D-terminal",
+   "K-linearise",
+   "K-safety"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Time spheres between marks after terminal velocity is reached; check constant speed; plot v against r²; gradient is K.",
+  "derivable": true
+ },
+ "4(a)(i)": {
+  "needs": [
+   "E-elec-power",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "P = V²/R, so R = V²/P.",
+  "derivable": true
+ },
+ "4(a)(ii)": {
+  "needs": [
+   "E-resistivity",
+   "M-geometry",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Cross-sectional area πr²; rearrange R = ρL/A for length.",
+  "derivable": true
+ },
+ "4(a)(iii)": {
+  "needs": [
+   "F-iv-curves",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [
+   "Ohm's law and temperature effect on metal resistance"
+  ],
+  "assumed": "Ohm's law needs constant temperature; a hot metal element's resistance changes, so it is not ohmic.",
+  "derivable": false
+ },
+ "4(b)": {
+  "needs": [
+   "E-kWh",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy in kW h = power in kW × time in hours; multiply by price per unit.",
+  "derivable": true
+ },
+ "4(c)(i)": {
+  "needs": [
+   "E-divider",
+   "E-series-parallel"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series resistances add; p.d. across one is its fraction of total resistance × supply.",
+  "derivable": true
+ },
+ "4(c)(ii)": {
+  "needs": [
+   "F-ldr-thermistor",
+   "P-resistance",
+   "E-divider"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "NTC thermistor resistance falls as temperature rises; the fixed resistor then takes a bigger share of the p.d.",
+  "derivable": false
+ },
+ "5(a)": {
+  "needs": [
+   "D-wave-terms",
+   "D-coherence"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Phase difference is the angle between corresponding points on waves; coherence means constant phase difference.",
+  "derivable": false
+ },
+ "5(b)(i)": {
+  "needs": [
+   "E-pathdiff",
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Bright: path difference nλ (constructive); dark: path difference (n + ½)λ (destructive).",
+  "derivable": true
+ },
+ "5(b)(ii)1": {
+  "needs": [
+   "E-young",
+   "M-rearrange",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Fringe spacing = pattern width ÷ number of spacings; λ = ax/D with mm converted to m.",
+  "derivable": true
+ },
+ "5(b)(ii)2": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage uncertainties add for products and quotients.",
+  "derivable": true
+ },
+ "5(c)(i)": {
+  "needs": [
+   "E-photon",
+   "E-photon-rate",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photon energy hc/λ; photons per second = power ÷ photon energy.",
+  "derivable": true
+ },
+ "5(c)(ii)": {
+  "needs": [
+   "E-photon",
+   "E-eV-joule",
+   "D-workfunction",
+   "P-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Compare photon energy with work function in the same units; emission only if photon energy exceeds it.",
+  "derivable": true
+ },
+ "6(a)": {
+  "needs": [
+   "D-stationary",
+   "P-waves"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Progressive waves transfer energy with equal amplitudes; stationary waves have no net energy transfer and nodes and antinodes.",
+  "derivable": false
+ },
+ "6(b)": {
+  "needs": [
+   "F-stationary-patterns",
+   "E-nodes",
+   "D-stationary",
+   "E-v=fλ",
+   "K-pag",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Closed end node, open end antinode; closed tube λ/4 and odd harmonics; open tube λ/2 and all harmonics; v = fλ from resonance lengths.",
+  "derivable": false
+ }
+}

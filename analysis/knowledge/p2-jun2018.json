@@ -1,0 +1,325 @@
+{
+ "1(a)": {
+  "needs": [
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient of a v–t graph is acceleration; negative gradient means deceleration; straight line means constant.",
+  "derivable": true
+ },
+ "1(b)": {
+  "needs": [
+   "D-graph-meaning",
+   "E-suvat",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Displacement is the area under a v–t graph (triangle area ½ × base × height).",
+  "derivable": true
+ },
+ "2": {
+  "needs": [
+   "K-method",
+   "E-efficiency",
+   "E-W=VQ",
+   "E-Ep",
+   "K-instruments",
+   "K-safety"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Motor lifts known mass a measured height; electrical input VIt, useful output mgh; efficiency ratio; safety with falling masses.",
+  "derivable": true
+ },
+ "3(a)": {
+  "needs": [
+   "K-instruments",
+   "K-pag",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Metre rule for height; electronic timing started by electromagnet release or light gate and stopped by trapdoor or second gate.",
+  "derivable": true
+ },
+ "3(b)": {
+  "needs": [
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Square the time, matching the table's significant figures.",
+  "derivable": true
+ },
+ "3(c)(i)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Plot the point accurately and draw a straight best-fit line.",
+  "derivable": true
+ },
+ "3(c)(ii)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient from a large triangle on the best-fit line.",
+  "derivable": true
+ },
+ "3(d)(i)": {
+  "needs": [
+   "E-suvat",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Use s = ut + ½at² with u = 0 and a = g, then rearrange for t².",
+  "derivable": true
+ },
+ "3(d)(ii)": {
+  "needs": [
+   "K-linearise",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient of t² against h equals 2/g, so g = 2/gradient.",
+  "derivable": true
+ },
+ "4(a)": {
+  "needs": [
+   "P-moments",
+   "E-moment",
+   "E-W=mg",
+   "M-trig",
+   "D-centre-gravity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Weight of a uniform plank acts at its centre; moment uses perpendicular component T sin θ of the cable tension.",
+  "derivable": true
+ },
+ "4(b)": {
+  "needs": [
+   "E-stress-strain",
+   "M-rearrange",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Combine stress F/A and strain x/L in E = stress/strain; rearrange for extension.",
+  "derivable": true
+ },
+ "5(a)": {
+  "needs": [
+   "P-newton2"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Statement: resultant force is proportional to (equals) rate of change of momentum.",
+  "derivable": false
+ },
+ "5(b)(i)": {
+  "needs": [
+   "E-p=mv"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Momentum = mass × velocity.",
+  "derivable": true
+ },
+ "5(b)(ii)": {
+  "needs": [
+   "D-graph-meaning",
+   "E-F=dp/dt",
+   "E-p=mv",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Impulse is area under F–t graph and equals Δp; momentum reverses sign on rebound.",
+  "derivable": true
+ },
+ "5(b)(iii)": {
+  "needs": [
+   "D-collisions",
+   "E-Ek"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "In an elastic collision kinetic energy is conserved; lower rebound speed means KE was lost.",
+  "derivable": false
+ },
+ "6(a)": {
+  "needs": [
+   "F-iv-curves"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Filament lamp has a curved I–V graph; an ohmic resistor gives a straight line through the origin.",
+  "derivable": false
+ },
+ "6(b)": {
+  "needs": [
+   "E-emf",
+   "P-charge",
+   "K-graph",
+   "D-internal"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Parallel currents add; lost volts = e.m.f. − terminal p.d.; r = lost volts ÷ current.",
+  "derivable": true
+ },
+ "6(c)(i)": {
+  "needs": [
+   "K-instruments",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Use a micrometer; repeat at different places and orientations and average.",
+  "derivable": true
+ },
+ "6(c)(ii)": {
+  "needs": [
+   "E-resistivity",
+   "M-geometry",
+   "P-resistance",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Area of one strand πd²/4; parallel strands give total area of all strands; ρ = RA/L.",
+  "derivable": true
+ },
+ "6(c)(iii)": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Add percentage uncertainties, doubling the diameter's because area depends on d².",
+  "derivable": true
+ },
+ "7(a)": {
+  "needs": [
+   "P-superposition",
+   "D-stationary",
+   "E-nodes",
+   "E-v=fλ",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Incident and reflected waves superpose to form a stationary wave; maximum-to-minimum spacing is λ/4; f = c/λ.",
+  "derivable": true
+ },
+ "7(b)": {
+  "needs": [
+   "D-polarisation",
+   "F-polarisation-waves",
+   "D-transverse"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Microwaves are transverse and plane polarised; the grille blocks them when rods align with the oscillations, passes them at 90°.",
+  "derivable": false
+ },
+ "8(a)(i)": {
+  "needs": [
+   "E-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Refractive index n = c/v; rearrange for speed or index.",
+  "derivable": true
+ },
+ "8(a)(ii)": {
+  "needs": [
+   "E-refraction",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Frequency is unchanged, so wavelength in a medium = wavelength in air ÷ n.",
+  "derivable": true
+ },
+ "8(b)(i)": {
+  "needs": [
+   "E-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Snell's law n₁ sin θ₁ = n₂ sin θ₂ with air n = 1.",
+  "derivable": true
+ },
+ "8(b)(ii)": {
+  "needs": [
+   "E-refraction",
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Entering higher index bends towards the normal; lower index bends away; with n sin θ constant the final angle is below 37°.",
+  "derivable": true
+ },
+ "9(a)(i)": {
+  "needs": [
+   "D-photon",
+   "E-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "hf is the energy of one photon.",
+  "derivable": false
+ },
+ "9(a)(ii)": {
+  "needs": [
+   "D-workfunction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work function is the minimum energy needed to remove an electron from the metal surface.",
+  "derivable": false
+ },
+ "9(b)(i)": {
+  "needs": [
+   "E-photoelectric",
+   "E-eV-joule",
+   "E-Ek",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Convert φ to joules; KEmax = hf − φ; v = √(2KE/m).",
+  "derivable": true
+ },
+ "9(b)(ii)": {
+  "needs": [
+   "F-photoelectric-obs",
+   "P-photon",
+   "E-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photon energy depends only on frequency; intensity changes photon number, so maximum speed is unchanged.",
+  "derivable": true
+ },
+ "9(c)": {
+  "needs": [
+   "E-debroglie",
+   "E-p=mv"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "de Broglie wavelength λ = h/(mv).",
+  "derivable": true
+ }
+}

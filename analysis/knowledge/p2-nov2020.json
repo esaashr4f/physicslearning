@@ -1,0 +1,340 @@
+{
+ "1(a)(i)": {
+  "needs": [
+   "D-transverse"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Longitudinal waves oscillate parallel to the direction of energy transfer.",
+  "derivable": false
+ },
+ "1(a)(ii)": {
+  "needs": [
+   "K-instruments",
+   "E-v=fλ",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Period = 1/f; divisions = period ÷ time-base and amplitude ÷ y-gain.",
+  "derivable": true
+ },
+ "1(b)(i)": {
+  "needs": [
+   "F-em-spectrum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Typical wavelengths: microwaves about mm to cm; X-rays around 10⁻¹⁰ m.",
+  "derivable": false
+ },
+ "1(b)(ii)": {
+  "needs": [
+   "F-em-spectrum",
+   "F-polarisation-waves",
+   "P-waves"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "EM waves travel at c in a vacuum, can be polarised, reflect, refract, diffract and interfere.",
+  "derivable": false
+ },
+ "2(a)(i)": {
+  "needs": [
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "f = v/λ.",
+  "derivable": true
+ },
+ "2(a)(ii)": {
+  "needs": [
+   "E-refraction",
+   "E-v=fλ",
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "v = c/n; frequency unchanged so λ = v/f (or λ/n).",
+  "derivable": true
+ },
+ "2(b)(i)1": {
+  "needs": [
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [
+   "Law of reflection"
+  ],
+  "assumed": "Angle of reflection equals angle of incidence.",
+  "derivable": false
+ },
+ "2(b)(i)2": {
+  "needs": [
+   "E-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Snell's law from glass to air: sin q = n sin 30°.",
+  "derivable": true
+ },
+ "2(b)(ii)": {
+  "needs": [
+   "E-refraction",
+   "D-refraction",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [
+   "Law of reflection"
+  ],
+  "assumed": "Reflection angle always equals incidence; refraction angle reaches 90° at critical angle sin C = 1/n; beyond it total internal reflection.",
+  "derivable": true
+ },
+ "2(c)": {
+  "needs": [
+   "E-refraction",
+   "D-refraction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Ray to centre crosses curved face undeviated; lower refractive index for red means it bends less on leaving.",
+  "derivable": true
+ },
+ "3(a)(i)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient from a large triangle using points read accurately on the line.",
+  "derivable": true
+ },
+ "3(a)(ii)": {
+  "needs": [
+   "K-linearise",
+   "M-rearrange",
+   "M-sigfigs",
+   "D-si"
+  ],
+  "given": [
+   "K-linearise"
+  ],
+  "new": [],
+  "assumed": "Rearrange gradient = g/k for k; give appropriate s.f. and unit N m⁻¹.",
+  "derivable": true
+ },
+ "3(b)(i)": {
+  "needs": [
+   "K-uncertainty",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Worst acceptable line is the steepest or shallowest through all error bars.",
+  "derivable": true
+ },
+ "3(b)(ii)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient of the worst line from a large triangle.",
+  "derivable": true
+ },
+ "3(b)(iii)": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage uncertainty = |best − worst| ÷ best × 100.",
+  "derivable": true
+ },
+ "4": {
+  "needs": [
+   "K-method",
+   "K-linearise",
+   "K-instruments",
+   "K-safety",
+   "P-vectors",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Vary speed with ramp height, measure with light gates; mark landing; plot R against v; Q from gradient squared × g.",
+  "derivable": true
+ },
+ "5(a)": {
+  "needs": [
+   "D-graph-meaning",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Velocity is the gradient of a displacement–time graph.",
+  "derivable": true
+ },
+ "5(b)": {
+  "needs": [
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A decreasing gradient on an s–t graph means decreasing velocity.",
+  "derivable": true
+ },
+ "5(c)": {
+  "needs": [
+   "K-graph",
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Draw a tangent at the point; its gradient is the instantaneous velocity.",
+  "derivable": true
+ },
+ "5(d)": {
+  "needs": [
+   "E-F=ma",
+   "D-graph-meaning",
+   "E-suvat"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Deceleration = change in velocity ÷ time; F = ma.",
+  "derivable": true
+ },
+ "5(e)": {
+  "needs": [
+   "F-stopping",
+   "E-suvat",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Reaction time fixed so thinking distance ∝ speed; same deceleration so braking time ∝ v and distance ∝ v².",
+  "derivable": true
+ },
+ "6(a)": {
+  "needs": [
+   "E-density",
+   "E-W=mg",
+   "M-geometry",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Mass = weight/g; cylinder volume πr²h in metres; density = m/V.",
+  "derivable": true
+ },
+ "6(b)(i)": {
+  "needs": [
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Measure the scale-drawing line and convert using the scale.",
+  "derivable": true
+ },
+ "6(b)(ii)": {
+  "needs": [
+   "P-newton1",
+   "P-vectors",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Three forces in equilibrium form a closed head-to-tail triangle drawn to scale.",
+  "derivable": true
+ },
+ "6(b)(iii)": {
+  "needs": [
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Measure the angle on the triangle of forces with a protractor.",
+  "derivable": true
+ },
+ "6(c)": {
+  "needs": [
+   "P-moments",
+   "E-moment",
+   "D-centre-gravity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At toppling, moment of push about the edge equals moment of weight acting through the centre.",
+  "derivable": true
+ },
+ "7(a)(i)": {
+  "needs": [
+   "E-elec-power",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "P = I²R, so R = P/I².",
+  "derivable": true
+ },
+ "7(a)(ii)": {
+  "needs": [
+   "E-Q=It",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Q = It with hours in seconds; number = Q/e.",
+  "derivable": true
+ },
+ "7(a)(iii)": {
+  "needs": [
+   "E-Anev",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rearrange I = nAve for v.",
+  "derivable": true
+ },
+ "7(b)": {
+  "needs": [
+   "E-kWh",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy in kW h = kW × hours; multiply by price per unit.",
+  "derivable": true
+ },
+ "7(c)": {
+  "needs": [
+   "D-current",
+   "D-resistivity",
+   "F-carriers"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Semiconductors have far fewer free charge carriers per unit volume than metals, so higher resistivity.",
+  "derivable": false
+ },
+ "8": {
+  "needs": [
+   "F-electron-diffraction",
+   "E-debroglie",
+   "E-eV",
+   "P-duality",
+   "D-diffraction",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rings arise from graphite diffraction; higher p.d. raises momentum, shortening λ, so rings shrink; λ ∝ 1/√V from eV = p²/2m.",
+  "derivable": false
+ }
+}

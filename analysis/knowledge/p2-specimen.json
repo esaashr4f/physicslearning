@@ -1,0 +1,333 @@
+{
+ "1(a)": {
+  "needs": [
+   "P-moments",
+   "E-moment",
+   "D-centre-gravity"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Take moments about the wall contact to remove its unknown force; a uniform rod's weight acts at its midpoint, half the wire's distance.",
+  "derivable": true
+ },
+ "1(b)": {
+  "needs": [
+   "M-trig",
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "The vertical component of a tension at angle θ to the horizontal is T sin θ; rearrange to find T.",
+  "derivable": true
+ },
+ "1(c)(i)": {
+  "needs": [
+   "P-newton1",
+   "P-vectors",
+   "P-moments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Three non-parallel forces in equilibrium must have lines of action meeting at one point.",
+  "derivable": true
+ },
+ "1(c)(ii)": {
+  "needs": [
+   "P-newton1",
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "For equilibrium three forces must pass through a common point and form a closed vector triangle.",
+  "derivable": true
+ },
+ "2(a)": {
+  "needs": [
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At the top the vertical velocity is zero; horizontal velocity v cos θ is unchanged throughout the flight.",
+  "derivable": true
+ },
+ "2(b)(i)": {
+  "needs": [
+   "E-suvat",
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resolve the launch velocity vertically (v sin θ), then apply suvat with acceleration −g to the vertical motion.",
+  "derivable": true
+ },
+ "2(b)(ii)": {
+  "needs": [
+   "P-vectors",
+   "E-speed"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Horizontal velocity is constant; flight time is twice the time to the apex; distance = speed × time.",
+  "derivable": true
+ },
+ "2(c)": {
+  "needs": [
+   "E-suvat",
+   "P-vectors",
+   "M-trig",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Time of flight from vertical suvat with zero net displacement; range = constant horizontal component × that time.",
+  "derivable": true
+ },
+ "2(d)": {
+  "needs": [
+   "P-vectors",
+   "P-energy",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Symmetric paths land at launch speed and mirrored angle; velocity is a vector so compare directions and horizontal components.",
+  "derivable": true
+ },
+ "3(a)(i)": {
+  "needs": [
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Read peak force and contact duration from the axes of a force–time graph.",
+  "derivable": true
+ },
+ "3(a)(ii)": {
+  "needs": [
+   "D-graph-meaning",
+   "D-impulse",
+   "K-graph"
+  ],
+  "given": [
+   "E-F=dp/dt"
+  ],
+  "new": [],
+  "assumed": "Impulse is the area under a force–time graph, estimated by counting squares or using a mean force.",
+  "derivable": true
+ },
+ "3(b)(i)": {
+  "needs": [
+   "E-F=ma",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Maximum acceleration comes from maximum force: a = F/m.",
+  "derivable": true
+ },
+ "3(b)(ii)": {
+  "needs": [
+   "E-F=dp/dt",
+   "E-p=mv"
+  ],
+  "given": [
+   "D-impulse"
+  ],
+  "new": [],
+  "assumed": "Impulse equals change in momentum; ball starts from rest so v = impulse/m.",
+  "derivable": true
+ },
+ "3(c)": {
+  "needs": [
+   "E-F=dp/dt",
+   "E-p=mv",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Momentum is a vector, so a rebound change uses the sum of speeds; mean force = Δp/Δt.",
+  "derivable": true
+ },
+ "4(a)": {
+  "needs": [
+   "F-carriers"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Charge is carried by free electrons in metals and by ions in electrolytes.",
+  "derivable": false
+ },
+ "4(b)(i)": {
+  "needs": [
+   "E-Q=It"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Current is charge per unit time, I = Q/t.",
+  "derivable": true
+ },
+ "4(b)(ii)": {
+  "needs": [
+   "E-Q=It",
+   "D-current",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Each electron carries charge e (data sheet), so electrons per second = I/e.",
+  "derivable": true
+ },
+ "4(b)(iii)": {
+  "needs": [
+   "E-Anev",
+   "M-rearrange",
+   "M-units"
+  ],
+  "given": [
+   "D-current"
+  ],
+  "new": [],
+  "assumed": "Use I = nAve, rearranged for v, with the electron rate as I/e.",
+  "derivable": true
+ },
+ "4(c)(i)": {
+  "needs": [
+   "P-charge"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Charge is conserved, so the current is the same everywhere in a series circuit (Kirchhoff's first law).",
+  "derivable": true
+ },
+ "4(c)(ii)": {
+  "needs": [
+   "E-Anev",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "For the same I, n and e, drift velocity is inversely proportional to area, so halving A doubles v.",
+  "derivable": true
+ },
+ "5(a)": {
+  "needs": [
+   "P-resistance",
+   "E-series-parallel",
+   "P-kirchhoff2",
+   "P-charge",
+   "E-R=V/I"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series p.d.s add to the supply; currents split at the parallel junction; V = IR for each resistor.",
+  "derivable": true
+ },
+ "5(b)": {
+  "needs": [
+   "F-ldr-thermistor",
+   "E-divider",
+   "F-circuit-symbols",
+   "P-resistance",
+   "K-method"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "LDR resistance falls as light increases; potential divider sharing; correct symbols and meter placement; fixed resistor choice controls sensitivity.",
+  "derivable": false
+ },
+ "6(a)": {
+  "needs": [
+   "E-nodes",
+   "F-stationary-patterns",
+   "E-v=fλ",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Successive resonance lengths differ by half a wavelength; then v = fλ.",
+  "derivable": true
+ },
+ "6(b)": {
+  "needs": [
+   "K-uncertainty",
+   "E-v=fλ",
+   "K-evaluate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Higher frequency means shorter wavelength and lengths, so the same ruler resolution gives a larger percentage uncertainty.",
+  "derivable": true
+ },
+ "6(c)": {
+  "needs": [
+   "D-stationary",
+   "P-superposition",
+   "F-stationary-patterns",
+   "E-nodes",
+   "D-transverse"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Reflection and superposition form stationary waves; open ends are antinodes; nodes have no motion; sound oscillations are longitudinal along the pipe.",
+  "derivable": false
+ },
+ "7(a)": {
+  "needs": [
+   "K-pag",
+   "E-photon",
+   "E-W=VQ",
+   "K-method",
+   "K-linearise",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "LED threshold p.d. gives eV = hc/λ; method to find striking voltage reliably; plot V against 1/λ, gradient hc/e.",
+  "derivable": true
+ },
+ "7(b)(i)": {
+  "needs": [
+   "F-photoelectric-obs",
+   "P-photon",
+   "P-waves"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Wave theory predicts energy depending on intensity and no threshold; observed threshold frequency and frequency-dependent KE need photons.",
+  "derivable": false
+ },
+ "7(b)(ii)1": {
+  "needs": [
+   "E-photoelectric",
+   "K-graph",
+   "M-straight-line"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "In hf = φ + KEmax, a KEmax against f graph has gradient h.",
+  "derivable": true
+ },
+ "7(b)(ii)2": {
+  "needs": [
+   "E-photoelectric",
+   "K-graph",
+   "D-workfunction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Threshold frequency is the f-axis intercept where KEmax is zero.",
+  "derivable": true
+ },
+ "7(b)(ii)3": {
+  "needs": [
+   "E-photoelectric",
+   "D-workfunction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work function φ = h × threshold frequency.",
+  "derivable": true
+ }
+}

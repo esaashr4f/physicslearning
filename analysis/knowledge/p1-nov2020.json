@@ -1,0 +1,458 @@
+{
+ "1": {
+  "needs": [
+   "P-charge"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Current is the rate of flow of charge, and Kirchhoff's first law expresses conservation of charge.",
+  "derivable": false
+ },
+ "2": {
+  "needs": [
+   "P-newton1",
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Third force for equilibrium equals the resultant of the other two (Pythagoras) but opposite in direction.",
+  "derivable": true
+ },
+ "3": {
+  "needs": [
+   "D-terminal",
+   "F-drag-factors",
+   "P-newton2"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Acceleration starts at g, decreases as drag grows with speed, reaching zero at terminal velocity.",
+  "derivable": false
+ },
+ "4": {
+  "needs": [
+   "E-Ek",
+   "E-eV",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Energy gained in eV adds to kinetic energy; speed scales with √(KE).",
+  "derivable": true
+ },
+ "5": {
+  "needs": [
+   "K-instruments",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Period = 1/f; time-base = period ÷ number of divisions it spans.",
+  "derivable": true
+ },
+ "6": {
+  "needs": [
+   "D-stationary",
+   "D-wave-terms"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Stationary-wave amplitude varies from zero at nodes to maximum at antinodes; progressive wave amplitude is uniform.",
+  "derivable": false
+ },
+ "7": {
+  "needs": [
+   "E-debroglie",
+   "E-Ek",
+   "E-p=mv",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "p = √(2m·KE) from Ek = p²/2m; λ = h/p with proton mass.",
+  "derivable": true
+ },
+ "8": {
+  "needs": [
+   "E-Anev",
+   "P-charge",
+   "E-series-parallel",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Same wire material and area: drift velocity ∝ current; branch currents split inversely with resistance.",
+  "derivable": true
+ },
+ "9": {
+  "needs": [
+   "E-hooke",
+   "E-W=mg",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Extra weight divided by extra extension (in m) gives k.",
+  "derivable": true
+ },
+ "10": {
+  "needs": [
+   "E-moment",
+   "D-centre-gravity",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Weight acts at the centre; its moment uses the perpendicular distance, falling as cos θ to zero at vertical.",
+  "derivable": false
+ },
+ "11": {
+  "needs": [
+   "E-upthrust",
+   "P-newton1"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A floating object is in equilibrium, so upthrust equals its weight.",
+  "derivable": true
+ },
+ "12": {
+  "needs": [
+   "D-impulse",
+   "E-F=dp/dt"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Change in momentum = force × time.",
+  "derivable": false
+ },
+ "13": {
+  "needs": [
+   "F-stopping",
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Reaction time is the constant-speed section; braking distance is the area under the decelerating part.",
+  "derivable": false
+ },
+ "14": {
+  "needs": [
+   "P-newton2",
+   "E-upthrust",
+   "F-drag-factors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "At rest drag is zero; buoyancy exceeds weight so resultant and acceleration are upward.",
+  "derivable": false
+ },
+ "15": {
+  "needs": [
+   "P-moments",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Clockwise moments equal anticlockwise moments about the hinge; solve for the cable distance.",
+  "derivable": true
+ },
+ "16": {
+  "needs": [
+   "D-si"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Electric charge is measured in coulombs.",
+  "derivable": false
+ },
+ "17": {
+  "needs": [
+   "D-si",
+   "E-work",
+   "E-moment"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work (Fx) and moment (Fd) are both force × distance, N m.",
+  "derivable": false
+ },
+ "18": {
+  "needs": [
+   "F-stationary-patterns",
+   "E-nodes",
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Fundamental in a closed tube: length is a quarter wavelength; f = v/λ.",
+  "derivable": false
+ },
+ "19": {
+  "needs": [
+   "F-material-graphs",
+   "D-materials"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A stress–strain line returning along the loading line shows elastic behaviour.",
+  "derivable": false
+ },
+ "20": {
+  "needs": [
+   "F-carriers",
+   "D-current"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Ions carry current in electrolytes; conventional current flows from + to −.",
+  "derivable": false
+ },
+ "21(a)": {
+  "needs": [
+   "D-collisions",
+   "P-momentum"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "In perfectly elastic collisions both momentum and kinetic energy are conserved.",
+  "derivable": false
+ },
+ "21(b)": {
+  "needs": [
+   "P-momentum",
+   "P-newton3"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Total momentum starts at zero, so the person gains equal and opposite momentum, moving slower as heavier.",
+  "derivable": true
+ },
+ "22(a)": {
+  "needs": [
+   "D-si",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Rearrange k = F/v² and use N = kg m s⁻².",
+  "derivable": false
+ },
+ "22(b)": {
+  "needs": [
+   "K-uncertainty",
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Percentage uncertainties add; a squared term doubles; convert to absolute and give 2 s.f.",
+  "derivable": true
+ },
+ "23(a)(i)": {
+  "needs": [
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resultant joins tail of the first vector to head of the second in a tip-to-tail diagram.",
+  "derivable": true
+ },
+ "23(a)(ii)": {
+  "needs": [
+   "P-vectors",
+   "M-trig"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Use the cosine rule or measure a scale drawing.",
+  "derivable": true
+ },
+ "23(b)(i)": {
+  "needs": [
+   "E-stress-strain",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Stress = F/A, strain = stress/E, extension = strain × length.",
+  "derivable": true
+ },
+ "23(b)(ii)": {
+  "needs": [
+   "P-newton2",
+   "D-graph-meaning",
+   "E-W=mg"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient of v–t gives acceleration; upward acceleration needs tension above weight, deceleration below.",
+  "derivable": false
+ },
+ "24(a)(i)": {
+  "needs": [
+   "D-errors",
+   "K-evaluate"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A non-zero intercept indicates a systematic error such as lead or contact resistance or a zero error.",
+  "derivable": false
+ },
+ "24(a)(ii)": {
+  "needs": [
+   "E-resistivity",
+   "K-instruments",
+   "K-linearise",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Gradient of R against L is ρ/A; measure diameter with a micrometer; A = πd²/4.",
+  "derivable": true
+ },
+ "24(b)(i)": {
+  "needs": [
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Convert kW to W and divide total power by power per mat.",
+  "derivable": true
+ },
+ "24(b)(ii)": {
+  "needs": [
+   "E-resistivity",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "ρ = RA/L.",
+  "derivable": true
+ },
+ "25(a)": {
+  "needs": [
+   "D-internal",
+   "E-emf"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Internal resistance adds to total resistance, reducing current; some e.m.f. is lost as lost volts.",
+  "derivable": false
+ },
+ "25(b)": {
+  "needs": [
+   "F-iv-curves",
+   "P-charge",
+   "P-kirchhoff2",
+   "K-graph",
+   "E-R=V/I"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Series lamp carries total current; parallel lamps share it equally at the same p.d.; read values from the graph.",
+  "derivable": false
+ },
+ "26(a)": {
+  "needs": [
+   "D-coherence"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Coherent waves have a constant phase difference.",
+  "derivable": false
+ },
+ "26(b)": {
+  "needs": [
+   "E-v=fλ",
+   "K-graph",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Read period from graph; f = 1/T with ms converted.",
+  "derivable": true
+ },
+ "26(c)": {
+  "needs": [
+   "E-intensity",
+   "M-ratio"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Intensity ∝ amplitude²; ratio of intensities is the squared amplitude ratio.",
+  "derivable": true
+ },
+ "26(d)": {
+  "needs": [
+   "P-superposition",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Resultant displacement is the sum of individual displacements at that instant.",
+  "derivable": true
+ },
+ "27(a)": {
+  "needs": [
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Superposition: resultant displacement equals the vector sum of individual displacements.",
+  "derivable": false
+ },
+ "27(b)": {
+  "needs": [
+   "P-superposition",
+   "E-pathdiff"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Maxima from constructive interference (path difference nλ), minima from destructive ((n + ½)λ).",
+  "derivable": true
+ },
+ "27(c)": {
+  "needs": [
+   "E-young",
+   "E-speed",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Fringe spacing = speed × time between maxima; λ = ax/D.",
+  "derivable": true
+ },
+ "28(a)": {
+  "needs": [
+   "P-photon",
+   "E-photoelectric",
+   "E-photon",
+   "D-workfunction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "One photon releases one electron; KEmax = hc/λ − φ; zero at threshold wavelength.",
+  "derivable": false
+ },
+ "28(b)(i)": {
+  "needs": [
+   "E-photon",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "E = hc/λ with nm converted to m.",
+  "derivable": true
+ },
+ "28(b)(ii)": {
+  "needs": [
+   "E-photon-rate",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Photons per second = power (mW to W) ÷ photon energy.",
+  "derivable": true
+ }
+}

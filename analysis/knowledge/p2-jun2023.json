@@ -1,0 +1,363 @@
+{
+ "1(a)(i)": {
+  "needs": [
+   "D-graph-meaning"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Acceleration is the gradient of a v–t graph.",
+  "derivable": true
+ },
+ "1(a)(ii)": {
+  "needs": [
+   "E-F=ma"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "F = ma.",
+  "derivable": true
+ },
+ "1(a)(iii)": {
+  "needs": [
+   "D-graph-meaning",
+   "F-stopping",
+   "M-geometry"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Stopping distance = total area under v–t graph: thinking rectangle plus braking triangle.",
+  "derivable": true
+ },
+ "1(a)(iv)": {
+  "needs": [
+   "E-work",
+   "E-Ek",
+   "P-energy"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work done by brakes = force × braking distance = initial KE.",
+  "derivable": true
+ },
+ "1(b)": {
+  "needs": [
+   "F-stopping",
+   "D-graph-meaning",
+   "E-suvat"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Same reaction time; same deceleration (gradient), so braking time halves.",
+  "derivable": true
+ },
+ "1(c)(i)": {
+  "needs": [
+   "F-stopping"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Tiredness lengthens reaction time, extending the constant-speed section only.",
+  "derivable": false
+ },
+ "1(c)(ii)": {
+  "needs": [
+   "F-stopping",
+   "P-newton2"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "More friction gives a larger braking force and steeper negative gradient; thinking section unchanged.",
+  "derivable": true
+ },
+ "2": {
+  "needs": [
+   "K-method",
+   "K-linearise",
+   "D-terminal",
+   "K-instruments",
+   "K-safety",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Time balls between marks once terminal; vary diameter; plot v against d²; straight line through origin; K from gradient.",
+  "derivable": true
+ },
+ "3(a)": {
+  "needs": [
+   "M-trig",
+   "P-vectors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Component of velocity along a direction uses cos of the angle from that direction.",
+  "derivable": true
+ },
+ "3(b)": {
+  "needs": [
+   "E-suvat"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "v² = u² + 2as for the vertical motion with a = g.",
+  "derivable": true
+ },
+ "3(c)": {
+  "needs": [
+   "P-vectors",
+   "M-trig",
+   "E-Ek",
+   "P-energy",
+   "E-Ep"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Combine horizontal and vertical components for speed, then ½mv² (or initial KE + mgh).",
+  "derivable": true
+ },
+ "3(d)": {
+  "needs": [
+   "E-p=mv",
+   "E-F=dp/dt",
+   "D-kinematics"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Momentum is a vector; gravity's force changes velocity, so momentum changes.",
+  "derivable": true
+ },
+ "4(a)(i)": {
+  "needs": [
+   "K-instruments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Calipers read to 0.1 mm.",
+  "derivable": true
+ },
+ "4(a)(ii)": {
+  "needs": [
+   "K-uncertainty"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Absolute uncertainties add when subtracting two readings.",
+  "derivable": true
+ },
+ "4(a)(iii)": {
+  "needs": [
+   "E-hooke",
+   "E-W=mg",
+   "M-sigfigs"
+  ],
+  "given": [],
+  "new": [
+   "Springs in series and parallel"
+  ],
+  "assumed": "Two identical springs in series halve the stiffness; weight = kx; mass = W/g.",
+  "derivable": true
+ },
+ "4(a)(iv)": {
+  "needs": [
+   "E-elastic"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Elastic energy = ½kx² (summed for both springs).",
+  "derivable": true
+ },
+ "4(b)(i)": {
+  "needs": [
+   "E-stress-strain",
+   "K-linearise",
+   "M-units",
+   "M-rearrange"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "From E = FL/(Ax), F–x gradient = EA/L; rearrange for A with N mm⁻¹ to N m⁻¹.",
+  "derivable": true
+ },
+ "4(b)(ii)": {
+  "needs": [
+   "D-graph-meaning",
+   "K-graph",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Work done = area under force–extension graph, estimated by counting squares.",
+  "derivable": true
+ },
+ "5(a)(i)": {
+  "needs": [
+   "D-transverse"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Water waves are transverse: oscillations perpendicular to direction of travel.",
+  "derivable": false
+ },
+ "5(a)(ii)": {
+  "needs": [
+   "D-polarisation"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Plane polarised means oscillations in one plane only.",
+  "derivable": false
+ },
+ "5(b)": {
+  "needs": [
+   "E-v=fλ"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "f = v/λ.",
+  "derivable": true
+ },
+ "5(c)(i)": {
+  "needs": [
+   "E-pathdiff",
+   "P-superposition"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Path difference in wavelengths: half-integer gives destructive interference.",
+  "derivable": true
+ },
+ "5(c)(ii)": {
+  "needs": [
+   "E-phase",
+   "E-pathdiff"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Phase difference = 2π × path difference/λ, reduced by whole cycles.",
+  "derivable": true
+ },
+ "6(a)": {
+  "needs": [
+   "F-iv-curves"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A filament lamp's I–V graph curves as resistance rises with current.",
+  "derivable": false
+ },
+ "6(b)": {
+  "needs": [
+   "K-instruments",
+   "D-errors"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "A reading's decimal places reveal the meter's resolution and range.",
+  "derivable": true
+ },
+ "6(c)(i)": {
+  "needs": [
+   "P-charge",
+   "E-R=V/I",
+   "K-graph"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Parallel currents add; read lamp current from its I–V graph; R = V/I.",
+  "derivable": true
+ },
+ "6(c)(ii)": {
+  "needs": [
+   "E-emf",
+   "D-internal"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Open-circuit p.d. equals e.m.f.; r = (E − V)/I.",
+  "derivable": true
+ },
+ "6(d)": {
+  "needs": [
+   "E-emf",
+   "D-internal",
+   "P-resistance"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Lower total resistance raises current, increasing lost volts Ir, so terminal p.d. falls.",
+  "derivable": true
+ },
+ "7": {
+  "needs": [
+   "K-pag",
+   "K-method",
+   "F-stationary-patterns",
+   "K-linearise",
+   "K-uncertainty",
+   "K-instruments"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Find fundamental by adjusting frequency for loudest sound; relate 1/f to tube length; v from gradient; worst line for percentage uncertainty.",
+  "derivable": true
+ },
+ "8(a)(i)": {
+  "needs": [
+   "P-photon",
+   "D-workfunction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Each electron absorbs one photon; emission occurs if photon energy exceeds work function.",
+  "derivable": true
+ },
+ "8(a)(ii)": {
+  "needs": [
+   "D-workfunction"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Threshold frequency is the minimum frequency of radiation that releases electrons.",
+  "derivable": false
+ },
+ "8(b)(i)": {
+  "needs": [
+   "E-eV-joule"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Multiply eV by 1.60 × 10⁻¹⁹ to get joules.",
+  "derivable": true
+ },
+ "8(b)(ii)": {
+  "needs": [
+   "E-photoelectric",
+   "E-v=fλ",
+   "M-units"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "hf = hf₀ + KEmax for photon frequency; λ = c/f with THz conversions.",
+  "derivable": true
+ },
+ "8(c)(i)": {
+  "needs": [
+   "F-photoelectric-obs",
+   "P-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Intensity does not change photon energy, so KEmax is unchanged.",
+  "derivable": true
+ },
+ "8(c)(ii)": {
+  "needs": [
+   "F-photoelectric-obs",
+   "P-photon"
+  ],
+  "given": [],
+  "new": [],
+  "assumed": "Doubling intensity doubles photon rate and so doubles electron emission rate.",
+  "derivable": true
+ }
+}
