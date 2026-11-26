@@ -927,6 +927,107 @@ pre.model {
   .ev div:nth-child(n+3) { border-top: 1px solid var(--rule); }
   .panel.t-work, .worked { padding-left: 44px; background-image: linear-gradient(90deg, transparent 29px, var(--margin-red) 29px, var(--margin-red) 30px, transparent 30px); }
 }
+
+/* ================= Warmth, sections and phone ================= */
+:root {
+  --c-learn: #1F56C9; --c-practise: #A86A0C; --c-ref: #2B7A70; --group: var(--accent);
+  --grain-o: .035; --lamp: rgba(255, 246, 225, 0);
+  --bar-bg: rgba(255, 255, 255, .78);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #171513; --surface: #221F1C; --surface-2: #1C1A17; --side-bg: #12100E;
+  --ink: #EFE9E0; --ink-2: #B5AEA3; --ink-3: #867F74; --rule: #36312C; --grid: rgba(255, 236, 210, .035);
+  --line: rgba(255, 240, 220, .075); --hover: rgba(255, 240, 220, .06);
+  --accent: #96B6F2; --accent-soft: rgba(150, 182, 242, .13); --pen: #F2927F; --pen-soft: rgba(242, 146, 127, .12); --ok: #8DCB9B;
+  --pen-wash: #2C211D; --ok-wash: #1E2720; --ruled: rgba(150, 182, 242, .11); --margin-red: rgba(242, 146, 127, .38);
+  --c-learn: #96B6F2; --c-practise: #E5B566; --c-ref: #7EC0B5;
+  --grain-o: .06; --lamp: rgba(255, 210, 150, .075); --bar-bg: rgba(30, 27, 24, .8);
+  --sheet-shadow: 0 0 0 1px var(--line), 0 1px 2px rgba(0,0,0,.35), 0 10px 24px -14px rgba(0,0,0,.7);
+} }
+:root[data-theme="dark"] {
+  --paper: #171513; --surface: #221F1C; --surface-2: #1C1A17; --side-bg: #12100E;
+  --ink: #EFE9E0; --ink-2: #B5AEA3; --ink-3: #867F74; --rule: #36312C; --grid: rgba(255, 236, 210, .035);
+  --line: rgba(255, 240, 220, .075); --hover: rgba(255, 240, 220, .06);
+  --accent: #96B6F2; --accent-soft: rgba(150, 182, 242, .13); --pen: #F2927F; --pen-soft: rgba(242, 146, 127, .12); --ok: #8DCB9B;
+  --pen-wash: #2C211D; --ok-wash: #1E2720; --ruled: rgba(150, 182, 242, .11); --margin-red: rgba(242, 146, 127, .38);
+  --c-learn: #96B6F2; --c-practise: #E5B566; --c-ref: #7EC0B5;
+  --grain-o: .06; --lamp: rgba(255, 210, 150, .075); --bar-bg: rgba(30, 27, 24, .8);
+  --sheet-shadow: 0 0 0 1px var(--line), 0 1px 2px rgba(0,0,0,.35), 0 10px 24px -14px rgba(0,0,0,.7);
+}
+/* light from above the desk, grain like paper */
+.mainwrap { background: radial-gradient(110% 60% at 55% -12%, var(--lamp), transparent 62%); }
+.shell { position: relative; }
+.shell::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 30; opacity: var(--grain-o);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .45 0 0 0 0 .4 0 0 0 1.4 -.3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+/* each part of the app has its own ink */
+.shell[data-group="learn"] { --group: var(--c-learn); }
+.shell[data-group="practise"] { --group: var(--c-practise); }
+.shell[data-group="reference"] { --group: var(--c-ref); }
+.navgroup:nth-child(2) { --g: var(--c-learn); } .navgroup:nth-child(3) { --g: var(--c-practise); } .navgroup:nth-child(4) { --g: var(--c-ref); }
+.navgroup h2 { display: flex; align-items: center; gap: 7px; }
+.navgroup h2::before { content: ""; width: 6px; height: 6px; border-radius: 2px; background: var(--g, var(--accent)); }
+.navitem[aria-current="page"] .ico { color: var(--g, var(--accent)); }
+.crumb > span:first-child { color: var(--group); font-weight: 500; }
+.page-head h1, .lesson > h3, .hero > h2 { text-wrap: balance; }
+
+/* section lists (phone hub, also reachable on desktop) */
+.hub-list { list-style: none; margin: 0; padding: 0; background: var(--surface); border-radius: 12px; box-shadow: var(--sheet-shadow); overflow: hidden; }
+.hub-list li + li a { box-shadow: inset 58px 0 0 var(--surface), inset 0 1px 0 var(--line); }
+.hub-list a { display: flex; align-items: center; gap: 14px; min-height: 62px; padding: 10px 16px; text-decoration: none; color: var(--ink); -webkit-touch-callout: none; transition: background-color .15s var(--ease-out); }
+.hub-list a:active { background: var(--hover); transition-duration: 0s; }
+.hub-ico { flex: none; width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; background: var(--group); color: var(--surface); }
+.hub-txt { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.hub-txt b { font-weight: 600; font-size: 16px; }
+.hub-txt small { font-size: 13px; color: var(--ink-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hub-n { font: 500 14px/1 var(--f-body); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.chev { flex: none; color: var(--ink-3); opacity: .6; }
+.ins-inner.hub { max-width: 720px; }
+
+.tabbar, .backbtn, .pal-cancel { display: none; }
+
+@media (max-width: 900px) {
+  .shell { grid-template-rows: minmax(0, 1fr) auto; }
+  .menu-btn, .searchbtn { display: none !important; }
+  .topbar { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); min-height: 46px; padding-block: 4px; background: var(--bar-bg); backdrop-filter: blur(18px) saturate(1.5); -webkit-backdrop-filter: blur(18px) saturate(1.5); border-bottom-color: var(--line); }
+  .crumb { grid-column: 2; justify-content: center; font-size: 16px; max-width: 62vw; }
+  .crumb > span { display: none; }
+  .crumb b { font-weight: 600; }
+  .backbtn { grid-column: 1; justify-self: start; display: flex; align-items: center; gap: 6px; min-height: 44px; min-width: 44px; margin-left: -6px; padding: 0 6px; border: 0; background: none; color: var(--group); font: 400 16px/1 var(--f-body); cursor: pointer; }
+  .backbtn span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 24vw; }
+  .backbtn:active { opacity: .45; }
+  .tabbar { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); background: var(--bar-bg); backdrop-filter: blur(18px) saturate(1.5); -webkit-backdrop-filter: blur(18px) saturate(1.5); border-top: 1px solid var(--line); padding: 4px max(4px, env(safe-area-inset-right, 0px)) 2px max(4px, env(safe-area-inset-left, 0px)); position: relative; z-index: 31; }
+  .tab { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 50px; border: 0; background: none; color: var(--ink-3); font: 500 10.5px/1.1 var(--f-body); cursor: pointer; -webkit-touch-callout: none; transition: color .15s var(--ease-out); }
+  .tab .ico { stroke-width: 1.6; }
+  .tab[aria-current="page"] { color: var(--group); }
+  .tab[aria-current="page"] .ico { stroke-width: 2.1; }
+  .tab:active { opacity: .55; transition-duration: 0s; }
+  .ins-inner.pg { padding-top: 18px; }
+  .ins-inner.hub .page-head h1 { font-size: 32px; letter-spacing: -.02em; }
+  input, select, textarea { font-size: 16px !important; }
+  .palette { width: 100%; height: 100%; max-height: 100%; margin: 0; }
+  .palette::backdrop { background: var(--paper); }
+  .pal-in { height: 100%; max-height: none; border-radius: 0; box-shadow: none; grid-template-rows: auto minmax(0, 1fr); padding-top: env(safe-area-inset-top, 0px); }
+  .palette[open] .pal-in { animation: pal-up .22s var(--ease-out); }
+  .pal-field kbd, .pal-foot { display: none; }
+  .pal-field { padding: 10px max(16px, env(safe-area-inset-right, 0px)) 10px max(16px, env(safe-area-inset-left, 0px)); }
+  .pal-field input { background: var(--surface-2); border-radius: 10px; padding: 8px 10px; }
+  .pal-cancel { display: block; border: 0; background: none; color: var(--accent); font: 400 16px/1 var(--f-body); padding: 10px 2px; cursor: pointer; }
+  .pal-row { min-height: 48px; align-items: center; flex-wrap: wrap; row-gap: 2px; }
+  .pal-label { max-width: 100%; }
+  .pal-sub { flex-basis: 100%; }
+  .qmain { touch-action: pan-y pinch-zoom; }
+}
+@keyframes pal-up { from { opacity: 0; transform: translateY(12px); } }
+@media (hover: none) {
+  .navitem:hover, .secbar:hover, .iconbtn:hover { background: transparent; }
+  .chip:hover { border-color: var(--rule); }
+  .qbtn:hover { border-color: transparent; background: transparent; }
+  .tasks a:hover { color: inherit; border-bottom-color: transparent; }
+  .tq-nav button:not(.on):hover { background: var(--surface); }
+  .searchbtn:hover, .side-search:hover, .btn.ghost:hover { border-color: var(--rule); }
+}
+@media (prefers-reduced-motion: reduce) { .palette[open] .pal-in { animation: none; } }
 </style>
 
 <div id="root"></div>
@@ -1393,6 +1494,7 @@ function QBench({ data, sel }) {
     }, 350);
   }, [sel.nonce, qs.length]);
   const q = qs[Math.min(cur, qs.length - 1)];
+  const swipe = useRef(null);
   const goQ = useCallback((i) => {
     if (i < 0 || i >= qs.length) return;
     setCur(i);
@@ -1422,7 +1524,8 @@ function QBench({ data, sel }) {
       ${secA.length ? html`<div class="grp"><span>Section A · multiple choice</span><div class="mcq">${secA.map(navBtn)}</div></div>` : null}
       <div class="grp"><span>${secA.length ? "Section B" : "Questions"}</span>${secB.map(navBtn)}</div>
     </nav>
-    <div class="qmain" ref=${mainRef}><div class="qcard">
+    <div class="qmain" ref=${mainRef} onTouchStart=${e => { const t = e.touches[0]; let el = e.target, sc = false; while (el && el !== mainRef.current) { if (el.scrollWidth > el.clientWidth + 2 && getComputedStyle(el).overflowX !== "visible") { sc = true; break; } el = el.parentElement; } swipe.current = sc || e.touches.length > 1 ? null : { x: t.clientX, y: t.clientY, t: Date.now() }; }}
+      onTouchEnd=${e => { const s0 = swipe.current; swipe.current = null; if (!s0) return; const t = e.changedTouches[0], dx = t.clientX - s0.x, dy = t.clientY - s0.y; if (Math.abs(dx) > 70 && Math.abs(dx) > 2 * Math.abs(dy) && Date.now() - s0.t < 700) { const d = dx < 0 ? 1 : -1; const nx = cur + d; if (nx < 0 || nx >= qs.length) return; goQ(nx); if (!REDUCED) requestAnimationFrame(() => mainRef.current?.querySelector(".qcard")?.animate([{ transform: `translateX(${d * 28}px)`, opacity: 0.4 }, { transform: "none", opacity: 1 }], { duration: 220, easing: "cubic-bezier(.23,1,.32,1)" })); } }}><div class="qcard">
       ${q ? html`
         <div class="qhead">
           <h2><small>${PAPERS[paper].name} · ${SLABEL[slug]}${q.mcq ? " · Section A" : ""}</small>Question ${q.n}</h2>
@@ -3175,7 +3278,10 @@ const NAV = [
   { group: "Practise", items: [["questions", "Past questions"], ["mock", "Mock exam"], ["practice", "Practice set"], ["progress", "My progress"]] },
   { group: "Reference", items: [["papers", "Full papers"], ["spec", "Specification"], ["strategy", "Exam strategy"], ["analysis", "Paper analysis"], ["textbook", "Textbook guide"]] },
 ];
+const DESC = { home: "What to do next, in order", concepts: "Understand each topic, with simulations", guide: "What to write for each type of question", techniques: "The moves behind every question", skills: "The 72 maths and practical skills, as lessons", definitions: "Learn them word for word, as index cards", knowledge: "Everything the exam assumes, to tick off", gaps: "Holes to check last", questions: "Every past question with its mark scheme", mock: "Sit a timed paper, then mark it", practice: "36 original exam-style questions", progress: "Your weak spots and what to fix next", papers: "Whole papers next to their mark schemes", spec: "Every learning outcome and where it's tested", strategy: "How to approach the papers", analysis: "Patterns across all 22 papers", textbook: "What the textbook covers and misses" };
+const HUBS = { learn: "Learn", practise: "Practise", library: "Reference" };
 const PAGE = Object.fromEntries(NAV.flatMap(g => g.items.map(([id, label]) => [id, { id, label, group: g.group }])));
+PAGE.hub = { id: "hub", label: "Sections", group: null };
 const LEGACY = { "#paper": "papers", "#playbook": "strategy", "#insights": "analysis", "#practise": "mock" };
 function parseHash(h) {
   if (LEGACY[h]) return { page: LEGACY[h], item: null };
@@ -3183,6 +3289,20 @@ function parseHash(h) {
   for (const id of Object.keys(PAGE)) { if (s === id) return { page: id, item: null }; if (s.startsWith(id + "-")) return { page: id, item: s.slice(id.length + 1) }; }
   return { page: "home", item: null };
 }
+function Hub({ which, nav, counts }) {
+  const g = NAV.find(x => x.group === HUBS[which]) || NAV[1];
+  return html`<div class="ins"><div class="ins-inner pg hub">
+    <header class="page-head"><h1>${which === "library" ? "Library" : g.group}</h1></header>
+    <ul class="hub-list">${g.items.map(([id, label]) => html`<li key=${id}><a href=${"#" + id} onClick=${e => { e.preventDefault(); nav(id); }}>
+      <span class="hub-ico"><${Icon} n=${id} size=${20} /></span>
+      <span class="hub-txt"><b>${label}</b><small>${DESC[id] || ""}</small></span>
+      ${counts[id] ? html`<span class="hub-n">${counts[id]}</span>` : null}
+      <svg class="chev" width="8" height="14" viewBox="0 0 8 14" aria-hidden="true"><path d="M1 1l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a></li>`)}</ul>
+  </div></div>`;
+}
+const TABS = [["home", "Plan", "home"], ["learn", "Learn", "concepts"], ["practise", "Practise", "practice"], ["library", "Library", "papers"]];
+const hubOf = page => { const g = PAGE[page]?.group; return g === "Learn" ? "learn" : g === "Practise" ? "practise" : g === "Reference" ? "library" : null; };
 function Page({ children, narrow }) {
   return html`<div class="ins"><div class=${"ins-inner pg" + (narrow ? " narrow" : "")}>${children}</div></div>`;
 }
@@ -3226,7 +3346,7 @@ function Palette({ open, onClose, index, run }) {
   let last = null;
   return html`<dialog ref=${dlg} class="palette" aria-label="Search" onClose=${onClose} onCancel=${onClose} onClick=${e => { if (e.target === dlg.current) onClose(); }}>
     <div class="pal-in">
-      <label class="pal-field"><${Icon} n="search" /><input ref=${inp} id="palette-q" type="search" autocomplete="off" spellcheck="false" placeholder="Search questions, concepts, definitions, spec codes…" value=${q} onInput=${e => setQ(e.target.value)} onKeyDown=${key} role="combobox" aria-expanded="true" aria-controls="pal-list" aria-activedescendant=${res[act] ? "pal-" + act : null} /><kbd>Esc</kbd></label>
+      <label class="pal-field"><${Icon} n="search" /><input ref=${inp} id="palette-q" type="search" autocomplete="off" spellcheck="false" placeholder="Search questions, concepts, definitions, spec codes…" value=${q} onInput=${e => setQ(e.target.value)} onKeyDown=${key} role="combobox" aria-expanded="true" aria-controls="pal-list" aria-activedescendant=${res[act] ? "pal-" + act : null} /><kbd>Esc</kbd><button type="button" class="pal-cancel" onClick=${onClose}>Cancel</button></label>
       <div class="pal-list" id="pal-list" role="listbox">
         ${res.length ? res.map((r, i) => { const head = r.kind !== last ? (last = r.kind, html`<div class="pal-head" key=${"h" + r.kind} role="presentation">${r.kind === "Page" ? "Pages" : r.kind === "Spec" ? "Specification" : r.kind + "s"}</div>`) : null;
           return html`<${React.Fragment} key=${i}>${head}<div id=${"pal-" + i} data-i=${i} role="option" aria-selected=${i === act} class=${"pal-row" + (i === act ? " on" : "")} onMouseMove=${() => act !== i && setAct(i)} onClick=${() => { run(r.act); onClose(); }}>
@@ -3401,7 +3521,12 @@ function App() {
         return html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label + (h != null ? ` · ${h} hard marks` : "")}><span class="y">${s.y}</span><span class="m">${s.m}</span>${lvl ? html`<span class="dif" aria-label=${`${h} hard marks`}>${[1, 2, 3].map(i => html`<i key=${i} class=${i <= lvl ? "on" : ""}></i>`)}</span>` : null}</button>`; })}
     </div>
   </div>`;
-  const body = !data.ready && v !== "papers" ? loading
+  const tabNow = v === "hub" ? route.item : v === "home" ? "home" : hubOf(v);
+  const goTab = t => { if (t === "home") nav("home"); else if (tabNow === t && v !== "hub") nav("hub", t); else if (tabNow === t) nav("hub", t); else { const last = store.get("tab-" + t, null); last && PAGE[last.page] && hubOf(last.page) === t ? nav(last.page, last.item) : nav("hub", t); } };
+  useEffect(() => { const h = hubOf(v); if (h) store.set("tab-" + h, { page: v, item: route.item }); }, [v, route.item]);
+  const back = v !== "home" && v !== "hub" ? (hubOf(v) || "learn") : null;
+  const body = v === "hub" ? html`<${Hub} which=${route.item || "learn"} nav=${nav} counts=${counts} />`
+    : !data.ready && v !== "papers" ? loading
     : v === "home" ? html`<${Home} data=${data} nav=${nav} openSpec=${openSpec} />`
     : v === "questions" ? html`<div class="with-rail">${rail}<${QBench} data=${data} sel=${sel} /></div>`
     : v === "papers" ? html`<div class="with-rail">${rail}<${Bench} data=${data} sel=${sel} setSel=${setSel} /></div>`
@@ -3420,7 +3545,7 @@ function App() {
     : v === "textbook" ? html`<${TextbookView} data=${data} open=${open} />`
     : html`<${Insights} data=${data} open=${open} />`;
   return html`
-    <div class=${"shell" + (drawer ? " drawer-open" : "")}>
+    <div class=${"shell" + (drawer ? " drawer-open" : "")} data-group=${v === "hub" ? (route.item === "library" ? "reference" : route.item) : (P.group || "home").toLowerCase()}>
       <a class="skip" href="#main" onClick=${e => { e.preventDefault(); document.querySelector("main.main")?.focus(); }}>Skip to content</a>
       <aside class="sidenav" aria-label="Sections">
         <a class="brand" href="#home" onClick=${e => { e.preventDefault(); nav("home"); }}><span class="code">H156</span><span class="name">Physics</span></a>
@@ -3437,12 +3562,16 @@ function App() {
       <div class="scrim" onClick=${() => setDrawer(false)} aria-hidden="true"></div>
       <div class="mainwrap" inert=${drawer ? "" : undefined}>
         <header class="topbar">
-          <button class="iconbtn menu-btn" aria-label="Open navigation" aria-expanded=${drawer} onClick=${() => setDrawer(true)}><${Icon} n="menu" size=${20} /></button>
-          <div class="crumb">${P.group ? html`<span>${P.group}</span><span aria-hidden="true">/</span>` : null}<b>${P.label}</b></div>
+          ${back ? html`<button class="backbtn" onClick=${() => nav("hub", back)} aria-label=${"Back to " + (back === "library" ? "Library" : HUBS[back])}><svg width="11" height="19" viewBox="0 0 11 19" aria-hidden="true"><path d="M9.5 1.5l-8 8 8 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>${back === "library" ? "Library" : HUBS[back]}</span></button>` : null}
+          <div class="crumb">${P.group ? html`<span>${P.group}</span><span aria-hidden="true">/</span>` : null}<b>${v === "hub" ? (route.item === "library" ? "Library" : HUBS[route.item] || "Sections") : P.label}</b></div>
           <button class="searchbtn" onClick=${() => setPal(true)} aria-label="Search"><${Icon} n="search" size=${16} /><span>Search questions, concepts, spec…</span><kbd>⌘K</kbd></button>
         </header>
         <main class="main" id="main" tabindex="-1">${body}</main>
       </div>
+      <nav class="tabbar" aria-label="Sections">
+        ${TABS.map(([t, label, ic]) => html`<button key=${t} class="tab" aria-current=${tabNow === t ? "page" : null} onClick=${() => goTab(t)}><${Icon} n=${ic} size=${24} /><span>${label}</span></button>`)}
+        <button class="tab" onClick=${() => setPal(true)}><${Icon} n="search" size=${24} /><span>Search</span></button>
+      </nav>
       <${Palette} open=${pal} onClose=${() => setPal(false)} index=${index} run=${run} />
     </div>`;
 }
