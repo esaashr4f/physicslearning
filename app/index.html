@@ -3,7 +3,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <style>
 /* Layout: an exam-room bench. Graph-paper ground, question paper on the left, examiner's red-pen mark scheme on the right,
    question index as a strip of tabs between them. Insights is a long-form report on the same paper. */
@@ -819,6 +819,113 @@ body { margin: 0; }
   .sidenav, .drawer-open .sidenav, .scrim { transition: none; }
   .palette[open] .pal-in { animation: none; }
   .btn:active, .chip:active, .qbtn:active, .tq-nav button:active { transform: none; }
+}
+
+/* ================= Materials =================
+   Every box takes a role from the exam room instead of one generic card:
+   sheet (reading) · exercise book (method, model answers) · red pen (where marks go) ·
+   tick (what earns them) · readout (numbers) · index card (definitions). */
+:root {
+  --f-written: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --line: rgba(15, 31, 45, .09);
+  --ruled: rgba(38, 104, 150, .16);
+  --margin-red: rgba(200, 50, 42, .55);
+  --pen-wash: #FBEDEA;
+  --ok-wash: #E9F4EC;
+  --sheet-shadow: 0 0 0 1px var(--line), 0 1px 2px rgba(15,31,45,.05), 0 6px 16px -10px rgba(15,31,45,.18);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #141415; --surface: #1C1C1E; --surface-2: #19191A; --side-bg: #111112;
+  --ink: #ECEAE6; --ink-2: #ABA8A2; --ink-3: #7A7772; --rule: #2E2D2C; --grid: rgba(255,255,255,.03);
+  --accent: #8EB1F5; --accent-soft: rgba(142,177,245,.12); --pen: #F08A7C; --pen-soft: rgba(240,138,124,.12);
+  --hover: rgba(236,234,230,.06); --sel: rgba(142,177,245,.28); --ok: #79C794;
+  --line: rgba(255,255,255,.07); --ruled: rgba(142,177,245,.10); --margin-red: rgba(240,138,124,.35);
+  --pen-wash: #2A1F1D; --ok-wash: #1C2620;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -12px rgba(0,0,0,.6);
+  --sheet-shadow: 0 0 0 1px var(--line), 0 1px 2px rgba(0,0,0,.35), 0 8px 20px -12px rgba(0,0,0,.6);
+} }
+:root[data-theme="dark"] {
+  --paper: #141415; --surface: #1C1C1E; --surface-2: #19191A; --side-bg: #111112;
+  --ink: #ECEAE6; --ink-2: #ABA8A2; --ink-3: #7A7772; --rule: #2E2D2C; --grid: rgba(255,255,255,.03);
+  --accent: #8EB1F5; --accent-soft: rgba(142,177,245,.12); --pen: #F08A7C; --pen-soft: rgba(240,138,124,.12);
+  --hover: rgba(236,234,230,.06); --sel: rgba(142,177,245,.28); --ok: #79C794;
+  --line: rgba(255,255,255,.07); --ruled: rgba(142,177,245,.10); --margin-red: rgba(240,138,124,.35);
+  --pen-wash: #2A1F1D; --ok-wash: #1C2620;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -12px rgba(0,0,0,.6);
+  --sheet-shadow: 0 0 0 1px var(--line), 0 1px 2px rgba(0,0,0,.35), 0 8px 20px -12px rgba(0,0,0,.6);
+}
+
+/* sheet: the default reading surface */
+.panel, .tcard, .nm, .side-card, .stage-body { border: 0; border-radius: 6px; box-shadow: var(--sheet-shadow); }
+.panel h4 { display: flex; align-items: center; gap: 8px; }
+
+/* red pen: where marks are lost */
+.panel.t-lose { background: var(--pen-wash); box-shadow: 0 0 0 1px color-mix(in srgb, var(--pen) 22%, transparent); }
+.panel.t-lose h4 { color: var(--pen) !important; }
+.panel.t-lose h4::before, .panel.t-score h4::before { content: ""; flex: none; width: 18px; height: 18px; background: currentColor;
+  -webkit-mask: var(--mk) center / contain no-repeat; mask: var(--mk) center / contain no-repeat; }
+.panel.t-lose h4::before { --mk: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M6.5 6.5c3.5 3.2 7 7.4 11 11.2M17.2 6.2c-3.8 3.6-7.3 7.6-10.6 11.4'/%3E%3C/svg%3E"); }
+.panel.t-lose li::marker { color: var(--pen); }
+
+/* tick: what earns marks */
+.panel.t-score { background: var(--ok-wash); box-shadow: 0 0 0 1px color-mix(in srgb, var(--ok) 25%, transparent); }
+.panel.t-score h4 { color: var(--ok); }
+.panel.t-score h4::before { --mk: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 12.8c1.8 1.6 3.3 3.3 4.6 5.2C11.6 12.6 15 8.4 19.8 5.5'/%3E%3C/svg%3E"); }
+.panel.t-score li::marker { color: var(--ok); }
+.panel.t-score .dtab, .panel.t-lose .dtab { background: transparent; }
+
+/* exercise book: methods, steps and model answers */
+.panel.t-work, .worked {
+  position: relative; border-radius: 3px; border: 0; box-shadow: var(--sheet-shadow);
+  background-color: var(--surface);
+  background-image: linear-gradient(90deg, transparent 43px, var(--margin-red) 43px, var(--margin-red) 44px, transparent 44px);
+  padding: 18px 20px 18px 60px;
+}
+.panel.t-work h4, .worked > .eyebrow { margin-left: 0; }
+.worked > .eyebrow { color: var(--ink-3); }
+.steps li::before { background: transparent; color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); border-radius: 50%; font-weight: 600; }
+.panel.t-work .steps li, .worked ol { font-family: var(--f-written); font-size: 15.5px; line-height: 1.55; }
+.worked .prob { font-family: var(--f-written); font-size: 15.5px; font-style: italic; }
+.worked .ans { font-family: var(--f-written); font-size: 15.5px; font-weight: 600; }
+pre.model {
+  margin: 0; white-space: pre-wrap; overflow-wrap: anywhere;
+  font: 400 16px/28px var(--f-written); color: var(--ink);
+  background-image: repeating-linear-gradient(to bottom, transparent 0 27px, var(--ruled) 27px 28px);
+  background-position: 0 1px; padding-bottom: 2px;
+}
+
+/* readouts: numbers stand on their own, no boxes */
+.ev { gap: 0; border-block: 1px solid var(--rule); }
+.ev div { background: none; border: 0; border-radius: 0; padding: 14px 16px 14px 0; }
+.ev div + div { border-left: 1px solid var(--rule); padding-left: 16px; }
+.ev b { font: 600 26px/1.05 var(--f-mono); letter-spacing: -.02em; margin-bottom: 4px; }
+.kv dd { font-weight: 600; }
+
+/* index card: definitions */
+.dd-card { border: 0; border-radius: 4px; box-shadow: var(--sheet-shadow), 4px 4px 0 -1px var(--surface-2), 4px 4px 0 0 var(--line);
+  background-color: var(--surface);
+}
+.dd-card h4 { font-family: var(--f-display); margin-inline: -22px; padding: 0 22px 14px; box-shadow: 0 1px 0 var(--margin-red); }
+.dd-card textarea { font: 16px/27px var(--f-written); padding: 6px 12px; background-color: var(--surface-2);
+  background-image: repeating-linear-gradient(to bottom, transparent 0 26px, var(--ruled) 26px 27px); background-position: 0 6px; background-attachment: local; }
+.dd-model { font-family: var(--f-written); font-size: 17px; background: transparent; padding: 4px 0;
+  background-image: repeating-linear-gradient(to bottom, transparent 0 26px, var(--ruled) 26px 27px); line-height: 27px; border-radius: 0; }
+
+/* study plan: only the current stage is a full sheet */
+.stage:not(.current) .stage-body { box-shadow: 0 0 0 1px var(--line); background: color-mix(in srgb, var(--surface) 70%, transparent); }
+.stage.done .stage-body { opacity: .75; }
+.stage.current .stage-body { box-shadow: 0 0 0 1.5px var(--accent), 0 10px 28px -16px color-mix(in srgb, var(--accent) 70%, transparent); }
+
+/* guide extras */
+.cols2 { align-items: start; }
+.gnext { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.gtab td, .gtab th { padding-block: 7px; }
+
+@media (max-width: 700px) {
+  .ev { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ev div:nth-child(3) { border-left: 0; padding-left: 0; }
+  .ev div:nth-child(n+3) { border-top: 1px solid var(--rule); }
+  .panel.t-work, .worked { padding-left: 44px; background-image: linear-gradient(90deg, transparent 29px, var(--margin-red) 29px, var(--margin-red) 30px, transparent 30px); }
 }
 </style>
 
@@ -1649,7 +1756,7 @@ function Playbook({ data, open, openSpec }) {
             <div style=${{ overflowX: "auto" }}><table class="dtab"><thead><tr><th style=${{ textAlign: "left" }}>Move</th>${S2.order.map(sl => { const se = SESSIONS.find(x => x.slug === sl); return html`<th key=${sl}>${se.y === "SAM" ? "SAM" : (se.m === "Nov" ? "N" : "J") + se.y.slice(2)}</th>`; })}</tr></thead>
             <tbody>${Object.entries(S2.moves).map(([m, v]) => html`<tr key=${m}><td style=${{ textAlign: "left" }}>${MOVE_LABEL[m]}</td>${v.map((x, i) => html`<td key=${i} style=${{ background: `color-mix(in srgb, var(--accent) ${Math.min(80, x * 4)}%, var(--surface))`, color: x >= 15 ? "var(--surface)" : "var(--ink)" }}>${Math.round(x)}</td>`)}</tr>`)}</tbody></table></div></div>
           <div class="cols2" style=${{ marginTop: "14px" }}>
-            <div class="panel"><h4>Effectively guaranteed every session</h4><ul>
+            <div class="panel t-score"><h4>Effectively guaranteed every session</h4><ul>
               <li>Paper 1: 20 multiple-choice marks; Paper 2: two six-mark questions (12 marks). Fixed every time.</li>
               <li>About half the marks from Module 4 and about 40% from Module 3, within ±6%.</li>
               <li>About a third of marks rest on equations, about 7% on memorised facts.</li>
@@ -1780,7 +1887,7 @@ function Playbook({ data, open, openSpec }) {
           </article>`)}</div>
           ${nmList.length > nmLimit && html`<button class="btn more" onClick=${() => setNmLimit(l => l + 40)}>Show ${Math.min(40, nmList.length - nmLimit)} more</button>`}
           <div class="cols2" style=${{ marginTop: "16px" }}>
-            ${(nm.general || []).length ? html`<div class="panel"><h4>Rules that catch people out</h4>${L(nm.general)}</div>` : null}
+            ${(nm.general || []).length ? html`<div class="panel t-lose"><h4>Rules that catch people out</h4>${L(nm.general)}</div>` : null}
             ${(nm.leniencies || []).length ? html`<div class="panel"><h4>What you don't need to worry about</h4><p class="sub" style=${{ margin: "0 0 8px" }}>Things the mark schemes explicitly ignore or allow.</p><ul>${nm.leniencies.slice(0, 30).map((l, i) => html`<li key=${i}><b>${l.topic}:</b> ${l.detail}</li>`)}</ul></div>` : null}
           </div>
         </section>`}
@@ -1819,7 +1926,7 @@ function Playbook({ data, open, openSpec }) {
           <h3>Six-mark questions</h3>
           <p class="sub">${pb.lor.summary}</p>
           <div class="cols2">
-            <div class="panel"><h4>Level 3 checklist for a practical plan</h4><ol class="check">${pb.lor.checklist.map((c, i) => html`<li key=${i}>${c}</li>`)}</ol>
+            <div class="panel t-score"><h4>Level 3 checklist for a practical plan</h4><ol class="check">${pb.lor.checklist.map((c, i) => html`<li key=${i}>${c}</li>`)}</ol>
               <p class="sub" style=${{ margin: "14px 0 0" }}>${pb.lor.note}</p></div>
             <div class="panel"><h4>All ${lor.length} six-mark questions</h4>
               <div class="lorq">${lor.map(q => html`<button class="oc-q" style=${{ gridTemplateColumns: "150px minmax(0,1fr)" }} key=${q.paper + q.slug + q.q} onClick=${() => open(q.paper, q.slug, q)}>
@@ -2248,14 +2355,14 @@ function ConceptsView({ data, open, goTech, item, setItem }) {
         <h3>${c.title}</h3>
         ${c.principle && html`<p class="lead"><b>Built on:</b> ${c.principle}</p>`}
         <div class="panel concept-idea">${(Array.isArray(c.idea) ? c.idea : String(c.idea || "").split(/\n\n+/)).map((p, i) => html`<p key=${i}>${p}</p>`)}</div>
-        ${c.buildup?.length ? html`<div class="panel"><h4>Building it up from the principle</h4><ol class="steps">${c.buildup.map((x, i) => html`<li key=${i}>${String(x).replace(/^\s*\d+[.)]\s*/, "")}</li>`)}</ol></div>` : null}
+        ${c.buildup?.length ? html`<div class="panel t-work"><h4>Building it up from the principle</h4><ol class="steps">${c.buildup.map((x, i) => html`<li key=${i}>${String(x).replace(/^\s*\d+[.)]\s*/, "")}</li>`)}</ol></div>` : null}
         ${c.sim && SIMS[c.sim] ? html`<div><${Sim} id=${c.sim} />${c.sim_guide ? html`<p class="sub" style=${{ margin: "8px 0 0" }}><b>Try:</b> ${c.sim_guide}</p>` : null}</div>` : null}
-        ${c.misconceptions?.length ? html`<div class="panel"><h4>Common wrong ideas</h4>${L(c.misconceptions)}</div>` : null}
-        ${c.translate?.length ? html`<div class="panel"><h4>From understanding to marks</h4><p class="sub" style=${{ margin: "0 0 10px" }}>What you understand on the left; what to write in the exam on the right.</p>
+        ${c.misconceptions?.length ? html`<div class="panel t-lose"><h4>Common wrong ideas</h4>${L(c.misconceptions)}</div>` : null}
+        ${c.translate?.length ? html`<div class="panel t-score"><h4>From understanding to marks</h4><p class="sub" style=${{ margin: "0 0 10px" }}>What you understand on the left; what to write in the exam on the right.</p>
           <div style=${{ overflowX: "auto" }}><table class="forms"><thead><tr><th>You understand</th><th>In the exam, write</th></tr></thead><tbody>${c.translate.map((t, i) => html`<tr key=${i}><td style=${{ fontFamily: "var(--f-body)", whiteSpace: "normal" }}>${t.understand}</td><td style=${{ color: "var(--accent)" }}>${t.write}</td></tr>`)}</tbody></table></div></div>` : null}
         ${c.exam_shapes?.length ? html`<div class="panel"><h4>How the exams test it</h4><div class="nms">${c.exam_shapes.map((s, i) => html`<div class="nm" key=${i} style=${{ gap: "6px" }}><header><b>${s.shape}</b>${s.marks_typical ? html`<span class="pill mk">${s.marks_typical} marks</span>` : null}${(s.moves || []).map(m => html`<span class="pill ty" key=${m}>${MOVE_LABEL[m] || m}</span>`)}</header>
           <div class="refs" style=${{ display: "flex", flexWrap: "wrap", gap: "4px 10px" }}>${(s.refs || []).map((r, j) => html`<button key=${j} class="link" style=${{ font: "500 12px/1.4 var(--f-mono)" }} onClick=${() => open(r.paper, r.slug, findQ(r))}>P${r.paper} ${SLABEL[r.slug]} Q${r.q}</button>`)}</div></div>`)}</div></div>` : null}
-        ${c.traps?.length ? html`<div class="panel"><h4 style=${{ color: "var(--pen)" }}>Where marks are lost</h4>${L(c.traps)}</div>` : null}
+        ${c.traps?.length ? html`<div class="panel t-lose"><h4 style=${{ color: "var(--pen)" }}>Where marks are lost</h4>${L(c.traps)}</div>` : null}
       </div>
     </div>
   </div></div>`;
@@ -2354,7 +2461,7 @@ function Progress({ data, goTech, open }) {
         <div class="panel"><h4>Weakest skills</h4><div class="rep">${weakest("skill").slice(0, 10).map(([k, o, p]) => html`<div class="row" key=${k} style=${{ gridTemplateColumns: "minmax(0,1fr) 110px 70px" }}><span><button class="link" onClick=${() => goTech("skills")}>${k} ${SSN[k] || ""}</button></span>${bar(p)}<span>${o.got}/${o.max}</span></div>`)}</div></div>
         <div class="panel"><h4>By question type</h4><div class="rep">${weakest("type", 1).map(([k, o, p]) => html`<div class="row" key=${k} style=${{ gridTemplateColumns: "minmax(0,1fr) 110px 70px" }}><span>${tl(k.replace("practice: ", "")) + (k.startsWith("practice") ? " (practice)" : "")}</span>${bar(p)}<span>${o.got}/${o.max}</span></div>`)}</div></div>
       </div>
-      <div class="panel"><h4>What to do next</h4><ol class="steps">
+      <div class="panel t-score"><h4>What to do next</h4><ol class="steps">
         ${weakest("move").slice(0, 2).map(([k]) => html`<li key=${"m" + k}>Work through the <b>${MOVE_LABEL[k] || k}</b> lesson in Techniques, then its practice list.</li>`)}
         ${weakest("sub").slice(0, 2).map(([k]) => html`<li key=${"s" + k}>Revisit <b>${k} ${data.spec?.sections?.[k] || ""}</b>: read its concept explainer and redo the past questions on it from the Spec tab.</li>`)}
         ${ticks.defs < (data.definitions?.items.length || 0) ? html`<li>Finish the Definitions drill: ${(data.definitions?.items.length || 0) - ticks.defs} still to learn.</li>` : null}
@@ -2435,7 +2542,7 @@ function TextbookView({ data, open }) {
     </section>
 
     <section class="cols2">
-      <div class="panel"><h4>Errors and scan problems in the book</h4><ul>${T.errors.map((e, i) => html`<li key=${i}><b>p.${e.page}:</b> ${e.issue} <span style=${{ color: "var(--accent)" }}>${e.fix}</span></li>`)}</ul></div>
+      <div class="panel t-lose"><h4>Errors and scan problems in the book</h4><ul>${T.errors.map((e, i) => html`<li key=${i}><b>p.${e.page}:</b> ${e.issue} <span style=${{ color: "var(--accent)" }}>${e.fix}</span></li>`)}</ul></div>
       <div class="panel"><h4>Pages beyond the AS spec (${T.beyond.length})</h4><ul>${T.beyond.map((b, i) => html`<li key=${i}><b>p.${b.page}</b> ${b.note}</li>`)}</ul></div>
     </section>
 
@@ -2670,10 +2777,10 @@ function Techniques({ data, open, item, setItem }) {
         <div><b>${s2.judged ? Math.round(s2.poor / s2.judged * 100) + "%" : "–"}</b><span>rated poorly answered by examiners${st.poorBase != null ? ` (all parts: ${st.poorBase}%)` : ""}</span></div>
       </div>
       <div class="cols2">
-        <div class="panel"><h4>How to spot it</h4><ul>${L.spot.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul></div>
-        <div class="panel"><h4>Traps</h4><ul>${L.traps.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul></div>
+        <div class="panel t-score"><h4>How to spot it</h4><ul>${L.spot.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul></div>
+        <div class="panel t-lose"><h4>Traps</h4><ul>${L.traps.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul></div>
       </div>
-      <div class="panel"><h4>Method</h4><ol class="steps">${L.steps.map((x, i) => html`<li key=${i}>${x}</li>`)}</ol></div>
+      <div class="panel t-work"><h4>Method</h4><ol class="steps">${L.steps.map((x, i) => html`<li key=${i}>${x}</li>`)}</ol></div>
       ${L.forms && html`<div class="panel"><h4>Which graph to plot: common forms</h4><div style=${{ overflowX: "auto" }}><table class="forms">
         <thead><tr><th>Equation form</th><th>Plot</th><th>Gradient</th><th>Intercept</th><th>Example</th></tr></thead>
         <tbody>${L.forms.map((f, i) => html`<tr key=${i}>${f.map((c, j) => html`<td key=${j}>${c}</td>`)}</tr>`)}</tbody></table></div></div>`}
@@ -2700,7 +2807,7 @@ function Techniques({ data, open, item, setItem }) {
       <div class="panel"><h4>What each mark code rewards</h4><dl class="codes">${A.codes.map(c => html`<${React.Fragment} key=${c[0]}><dt>${c[0]}</dt><dd>${c[1]} <span class="shared">· ${c[2]}</span></dd></${React.Fragment}>`)}</dl></div>
       <div class="panel"><h4>Typical mark pattern by question type</h4><div style=${{ overflowX: "auto" }}><table class="forms"><tbody>${A.type_patterns.map((r, i) => html`<tr key=${i}><td style=${{ fontFamily: "var(--f-body)", whiteSpace: "normal" }}>${r[0]}</td><td style=${{ fontFamily: "var(--f-mono)" }}>${r[1]}</td><td>${r[2]}</td></tr>`)}</tbody></table></div></div>
     </div>
-    <div class="panel"><h4>Decoding any question</h4><ol class="steps">${A.decode.map((x, i) => html`<li key=${i}>${x}</li>`)}</ol></div>
+    <div class="panel t-work"><h4>Decoding any question</h4><ol class="steps">${A.decode.map((x, i) => html`<li key=${i}>${x}</li>`)}</ol></div>
     <div class="worked"><span class="eyebrow">Dissection (original example)</span><div class="prob">${A.example.question}</div>
       <div style=${{ overflowX: "auto" }}><table class="forms"><tbody>${A.example.dissection.map((r, i) => html`<tr key=${i}><td style=${{ fontFamily: "var(--f-display)", fontWeight: 700 }}>${r[0]}</td><td>${r[1]}</td></tr>`)}</tbody></table></div></div>
     <div class="panel"><h4>What you need to know, in priority order</h4>
@@ -2912,6 +3019,128 @@ function Insights({ data, open }) {
   </div></div>`;
 }
 
+/* ---------- Question guide: how to answer each type ---------- */
+const GUIDE = {
+  "mcq": { cmd: ["Which", "What"], tech: "ratio",
+    tpl: ["Underline the word that decides it: constant, minimum, NOT, uniform, per unit.", "Write the equation that links the quantities in the margin.", "For a change, write new ÷ old for each factor and multiply them.", "Cross out any option that matches a classic slip (diameter used as radius, unsquared ratio, vectors added as numbers).", "Write one letter in the box. Never two, never blank."],
+    ex: "R = ρL/A, with A ∝ d². Length ×2 and diameter ×2 → R × 2 ÷ 4 = R/2 → B" },
+  "calculation-single-step": { cmd: ["Calculate"], tech: "chain",
+    tpl: ["Write the equation in symbols.", "Substitute every value in SI units (convert prefixes first).", "Give the answer with its unit, to the same s.f. as the data (2 or 3)."],
+    ex: "P = IV\nP = 0.25 × 12\nP = 3.0 W" },
+  "calculation-multi-step": { cmd: ["Calculate", "Determine"], tech: "chain",
+    tpl: ["Name what you are finding first: “Current in the circuit: I = V/R = …”.", "Do one step per line, each with its equation and substitution.", "Keep the full calculator value between steps; round only at the end.", "Final line: answer, unit, sensible s.f.", "If you get stuck, carry on with a made-up value for the missing step: later marks are still available."],
+    ex: "Total resistance: R = 4.0 + 2.0 = 6.0 Ω\nCurrent: I = V/R = 12/6.0 = 2.0 A\nPower in 2.0 Ω: P = I²R = 2.0² × 2.0 = 8.0 W" },
+  "explain": { cmd: ["Explain"], tech: "explain-chain",
+    tpl: ["Count the marks: write that many separate statements.", "Cause: what physically changes.", "Change: the named quantity that changes as a result (resistance, current, path difference, photon energy).", "Effect: what happens to the thing the question asks about.", "Use the key term and, where it helps, the equation with what is held constant."],
+    ex: "Temperature rises, so the number of free charge carriers in the thermistor increases.\nIts resistance decreases, so the current increases.\nThe p.d. across the fixed resistor (V = IR) increases, so the voltmeter reading increases." },
+  "define-state": { cmd: ["State", "Define"], tech: "definition",
+    tpl: ["Give the definition as the mark scheme words it (see the Definitions drill).", "Include the qualifier that carries the mark: minimum, per unit, constant, in phase, about any point.", "A word equation is accepted where a definition is ratio-based (e.g. “resistance = p.d. ÷ current”). Define every symbol if you write an equation.", "Don't add a second, contradictory statement: it can cancel the mark."],
+    ex: "Work function: the minimum energy needed to remove an electron from the surface of a metal." },
+  "show-that": { cmd: ["Show that"], tech: "show-that",
+    tpl: ["Write the equation in symbols.", "Substitute every value; the marks are for this working.", "Work out the value to at least one more s.f. than the printed answer.", "State that it rounds to the given value. Never start from the printed answer and work backwards."],
+    ex: "λ = h/mv\nλ = 6.63 × 10⁻³⁴ / (9.11 × 10⁻³¹ × 4.0 × 10⁶)\nλ = 1.82 × 10⁻¹⁰ m ≈ 1.8 × 10⁻¹⁰ m" },
+  "practical-method": { cmd: ["Describe how", "Suggest how"], tech: "plan",
+    tpl: ["Apparatus, with the named instrument for each measurement (micrometer, metre rule, data-logger).", "Independent variable: what you change and over what range (at least 5 or 6 values).", "Dependent variable: what you measure and how.", "Control variables: what you keep constant and how.", "Repeat and average; then the graph you plot and how it gives the answer."],
+    ex: "Measure the wire's diameter with a micrometer at several points and average.\nVary length L from 0.20 m to 1.00 m using crocodile clips on a metre rule.\nRecord V and I and calculate R = V/I; keep the current low so the wire's temperature stays constant.\nPlot R against L: gradient = ρ/A, so ρ = gradient × A." },
+  "sketch-draw": { cmd: ["Sketch", "Draw"], tech: "graph-draw",
+    tpl: ["Label both axes with quantity (and unit if drawing).", "Mark the key values: intercepts, maxima, where the curve meets the axis.", "Get the shape right: straight through the origin, curve, levels off, asymptote.", "If comparing two cases, draw both on the same axes and label each line."],
+    ex: "I–V for a filament lamp: through the origin, gradient decreasing as V increases, symmetric in the third quadrant." },
+  "level-of-response": { cmd: ["Describe and explain", "Plan"], tech: "plan",
+    tpl: ["Plan for 1 minute: list the strands the question names.", "Write in labelled blocks: Diagram · Method · Measurements · Analysis · Safety or accuracy.", "Method: vary, measure, control, with named instruments.", "Analysis: the straight-line graph you plot and how the gradient or intercept gives the answer.", "Level 3 needs every strand present and the analysis complete; a strong method with no analysis caps at Level 2."],
+    ex: "Diagram (labelled)\nMethod: vary …, measure … with …, keep … constant\nAnalysis: plot … against …; gradient = …, so … = …\nAccuracy: repeat and average; use a large range" },
+  "graph-read": { cmd: ["Use the graph", "Determine"], tech: "graph-read",
+    tpl: ["Read from the line, not from a plotted point.", "Draw construction lines on the graph so the examiner can see your reading.", "Apply the axis multiplier (×10⁻³ and so on) and the unit.", "Then use the value in the equation the question needs."],
+    ex: "At t = 4.0 s the line reads v = 12 m s⁻¹ (construction lines drawn)." },
+  "graph-gradient": { cmd: ["Determine", "Use the graph"], tech: "graph-read",
+    tpl: ["Draw a large triangle covering at least half the line.", "Mark the two corner points on the line (not data points) and write their coordinates.", "Gradient = Δy ÷ Δx, including axis multipliers.", "Say what the gradient represents and use it (e.g. gradient = 1/R, so R = 1/gradient)."],
+    ex: "Points (0.10, 0.4) and (0.90, 3.6): gradient = 3.2 / 0.80 = 4.0 V A⁻¹, so R = 4.0 Ω" },
+  "compare-suggest": { cmd: ["Suggest", "Compare"], tech: "evaluate",
+    tpl: ["One specific point per mark, tied to this context.", "“Suggest” accepts any sensible physics-based idea: commit to one and justify it in a few words.", "When comparing, say which is bigger and why, with the quantity named.", "Avoid “human error” or “more accurate” on their own: name the error and its effect."],
+    ex: "Use a longer drop height, so the time is larger and the percentage uncertainty from reaction time is smaller." },
+  "uncertainty-error": { cmd: ["Calculate", "Determine", "Estimate"], tech: "uncertainty",
+    tpl: ["Percentage uncertainty = absolute uncertainty ÷ value × 100.", "Multiplying or dividing: add the percentage uncertainties.", "Raised to a power n: multiply the percentage by n.", "Convert back if needed: absolute = percentage × value.", "From a graph: compare the gradients of the best-fit and worst acceptable lines."],
+    ex: "d = 0.50 ± 0.01 mm → 2%. A ∝ d² → 4%. R = ρL/A with L at 1% → ρ uncertainty = 4% + 1% + (R’s %)" },
+  "practical-evaluate": { cmd: ["Evaluate", "Suggest an improvement"], tech: "evaluate",
+    tpl: ["Name one specific problem in this experiment.", "Say its effect on the result: too high, too low, or more scatter.", "Give a specific improvement that fixes that problem (an instrument, a technique, a range)."],
+    ex: "Timing by hand adds reaction time, so t is too large and g too small. Use light gates connected to a data-logger." },
+  "graph-plot": { cmd: ["Plot"], tech: "graph-draw",
+    tpl: ["Axes labelled quantity / unit, the right way round (independent variable on x).", "A scale that uses more than half the grid, in steps of 1, 2 or 5.", "Points as small crosses, accurate to half a small square.", "One best-fit line with points balanced either side; never join the dots."],
+    ex: "x-axis: L / m (0 to 1.0); y-axis: R / Ω (0 to 12). Six crosses, one ruled best-fit line." },
+  "describe": { cmd: ["Describe"], tech: "explain-chain",
+    tpl: ["Say what happens, in order, using the correct terms.", "Include what you would observe or measure.", "No “why” needed unless the question also says explain."],
+    ex: "The ball accelerates, its acceleration decreases as drag increases, then it reaches a constant terminal velocity." },
+  "derivation": { cmd: ["Show that", "Derive"], tech: "chain",
+    tpl: ["Start from named principles or standard equations.", "One line per step, saying what you equate or substitute.", "Finish with the required result written exactly as given."],
+    ex: "Ep lost = Ek gained: mgh = ½mv² → v² = 2gh → v = √(2gh)" },
+  "graph-area": { cmd: ["Determine", "Use the graph"], tech: "graph-read",
+    tpl: ["Say what the area represents: displacement (v–t), work (F–x), impulse (F–t).", "Split into rectangles and triangles, or count squares.", "Area of one square in real units × number of squares.", "Give the answer with its unit."],
+    ex: "Work done = area under F–x = ½ × 0.040 m × 8.0 N = 0.16 J" },
+  "estimate": { cmd: ["Estimate"], tech: "estimate",
+    tpl: ["State each assumed value with its unit (an adult's mass is about 70 kg).", "Do one simple calculation.", "Answer to 1 or 2 s.f. with a unit; an order of magnitude is enough."],
+    ex: "Mass ≈ 70 kg, height of stairs ≈ 3 m: Ep = 70 × 9.81 × 3 ≈ 2000 J" },
+};
+function QuestionGuide({ data, open, item, setItem, goTech }) {
+  const ins = data.ins || {};
+  const all = useMemo(() => data.all.filter(q => !q.withdrawn), [data.all]);
+  const total = all.reduce((s, q) => s + (+q.marks || 0), 0) || 1;
+  const stats = useMemo(() => { const m = {}; for (const q of all) { const o = m[q.type] ||= { parts: [], marks: 0, p1: 0, p2: 0 }; o.parts.push(q); o.marks += +q.marks || 0; o[q.paper == 1 ? "p1" : "p2"]++; } return m; }, [all]);
+  const types = (ins.types || []).filter(t => GUIDE[t.type]).sort((a, b) => (stats[b.type]?.marks || 0) - (stats[a.type]?.marks || 0));
+  const cur = types.find(t => t.type === item) || null;
+  const pattern = Object.fromEntries((data.techniques?.anatomy?.type_patterns || []).map(r => [r[0], r]));
+  const cmds = Object.fromEntries((data.playbook?.commands || []).map(c => [c.word, c.need]));
+  const [limit, setLimit] = useState(20);
+  useEffect(() => { setLimit(20); }, [item]);
+  const tLesson = id => (data.techniques?.lessons || []).find(l => l.id === id);
+  const overview = html`<div class="lesson">
+    <h3>Question guide</h3>
+    <p class="lead">What to write for each type of question, line by line. Pick a type to see how to recognise it, the answer template, a model layout, what the mark scheme awards, the usual ways marks are lost, and every real question of that type.</p>
+    <div class="panel" style=${{ overflowX: "auto" }}><table class="dtab gtab"><thead><tr><th style=${{ textAlign: "left" }}>Type</th><th>Parts</th><th>Share of marks</th><th style=${{ textAlign: "left" }}>Usually marked</th></tr></thead>
+      <tbody>${types.map(t => { const s = stats[t.type] || { parts: [], marks: 0 }; return html`<tr key=${t.type}><td style=${{ textAlign: "left" }}><button class="link" onClick=${() => setItem(t.type)}>${tl(t.type)}</button></td><td>${s.parts.length}</td><td>${Math.round(s.marks / total * 100)}%</td><td style=${{ textAlign: "left", color: "var(--ink-2)" }}>${pattern[tl(t.type)]?.[1] || ""}</td></tr>`; })}</tbody></table></div>
+    ${data.playbook?.commands && html`<div class="panel"><h4>Command words</h4><dl class="codes">${data.playbook.commands.map(c => html`<${React.Fragment} key=${c.word}><dt style=${{ whiteSpace: "nowrap" }}>${c.word}</dt><dd>${c.need}</dd></${React.Fragment}>`)}</dl></div>`}
+  </div>`;
+  const view = cur && (() => {
+    const G = GUIDE[cur.type], s = stats[cur.type] || { parts: [], marks: 0, p1: 0, p2: 0 };
+    const list = s.parts.slice().sort((a, b) => (a.difficulty - b.difficulty) || (SESSIONS.findIndex(x => x.slug === b.slug) - SESSIONS.findIndex(x => x.slug === a.slug)));
+    const pat = pattern[tl(cur.type)]; const L = tLesson(G.tech);
+    return html`<div class="lesson">
+      <h3>${tl(cur.type)}</h3>
+      <span class="eyebrow">${s.parts.length} parts · ${Math.round(s.marks / total * 100)}% of all marks · Paper 1: ${s.p1}, Paper 2: ${s.p2}</span>
+      <p class="lead">${cur.summary}</p>
+      <div class="cols2">
+        <div class="panel"><h4>How to recognise it</h4><ul>
+          ${G.cmd.map(c => html`<li key=${c}><b>${c}</b>${cmds[c] ? html` · <span style=${{ color: "var(--ink-2)" }}>${cmds[c]}</span>` : null}</li>`)}
+          ${pat ? html`<li>Usually marked <b class="mono">${pat[1]}</b>. ${pat[2]}</li>` : null}
+        </ul></div>
+        <div class="panel"><h4>What the mark scheme awards</h4><ul>${cur.what_ms_wants.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul></div>
+      </div>
+      <div class="panel t-work"><h4>What to write</h4><ol class="steps">${G.tpl.map((x, i) => html`<li key=${i}>${x}</li>`)}</ol></div>
+      <div class="worked"><span class="eyebrow">Model layout (original example)</span><pre class="model">${G.ex}</pre></div>
+      <div class="cols2">
+        <div class="panel t-score"><h4>Habits that score</h4><ul>${cur.how_to_score.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul></div>
+        <div class="panel t-lose"><h4>Where marks are lost</h4><ul>${cur.pitfalls.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul></div>
+      </div>
+      ${L ? html`<div class="panel gnext"><div><h4 style=${{ margin: 0 }}>Go deeper: ${L.title.split(":")[0]}</h4><p class="sub" style=${{ margin: "4px 0 0" }}>The full technique lesson, with a worked example and a practice list.</p></div><button class="btn ghost" onClick=${() => goTech(L.id)}>Open lesson</button></div>` : null}
+      <div>
+        <h4 style=${{ margin: "0 0 8px", font: "700 18px/1.2 var(--f-display)" }}>Every ${tl(cur.type).toLowerCase()} question (${list.length})</h4>
+        <p class="sub" style=${{ margin: "0 0 10px" }}>Easiest first, newest first within each level.</p>
+        <div class="prac">${list.slice(0, limit).map(q => html`<button key=${q.paper + q.slug + q.q} onClick=${() => open(q.paper, q.slug, q)}>
+          <span class="dot3" title=${["", "Easy", "Standard", "Hard"][q.difficulty]}>${[1, 2, 3].map(i => html`<i key=${i} class=${i <= q.difficulty ? "on" : ""}></i>`)}</span>
+          <span class="ref">P${q.paper} ${SLABEL[q.slug]} Q${q.q}</span><span class="ctx">${q.context}</span><span class="mk">${q.marks} m</span></button>`)}</div>
+        ${list.length > limit && html`<button class="btn more" onClick=${() => setLimit(l => l + 40)}>Show ${Math.min(40, list.length - limit)} more</button>`}
+      </div>
+    </div>`;
+  })();
+  return html`<div class="ins"><div class="ins-inner" style=${{ paddingTop: "28px" }}>
+    <div class="tq-layout">
+      <nav class="tq-nav" aria-label="Question types">
+        <button class=${!cur ? "on" : ""} onClick=${() => setItem(null)}><span>All types</span></button>
+        ${types.map(t => html`<button key=${t.type} class=${cur?.type === t.type ? "on" : ""} onClick=${() => setItem(t.type)}><span>${tl(t.type)}</span><small>${stats[t.type]?.parts.length || 0}</small></button>`)}
+      </nav>
+      ${view || overview}
+    </div>
+  </div></div>`;
+}
+
 /* ---------- App shell: navigation, search, study plan ---------- */
 const ICONS = {
   home: "M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z",
@@ -2934,6 +3163,7 @@ const ICONS = {
   menu: "M4 7h16M4 12h16M4 17h16",
   close: "M6 6l12 12M18 6L6 18",
   arrow: "M5 12h14M13 6l6 6-6 6",
+  guide: "M4 5h16v11H9l-5 4zM9 9.5h6M9 12.5h4",
   check: "M5 12.5l4.5 4.5L19 7",
 };
 function Icon({ n, size = 18 }) {
@@ -2941,7 +3171,7 @@ function Icon({ n, size = 18 }) {
 }
 const NAV = [
   { group: null, items: [["home", "Study plan"]] },
-  { group: "Learn", items: [["concepts", "Concepts"], ["techniques", "Techniques"], ["skills", "Maths and practical skills"], ["definitions", "Definitions"], ["knowledge", "Knowledge checklist"], ["gaps", "Final gap check"]] },
+  { group: "Learn", items: [["concepts", "Concepts"], ["guide", "Question guide"], ["techniques", "Techniques"], ["skills", "Maths and practical skills"], ["definitions", "Definitions"], ["knowledge", "Knowledge checklist"], ["gaps", "Final gap check"]] },
   { group: "Practise", items: [["questions", "Past questions"], ["mock", "Mock exam"], ["practice", "Practice set"], ["progress", "My progress"]] },
   { group: "Reference", items: [["papers", "Full papers"], ["spec", "Specification"], ["strategy", "Exam strategy"], ["analysis", "Paper analysis"], ["textbook", "Textbook guide"]] },
 ];
@@ -2964,6 +3194,7 @@ function useSearchIndex(data) {
     const out = [];
     for (const g of NAV) for (const [id, label] of g.items) out.push({ kind: "Page", label, sub: g.group || "", act: { page: id }, hay: (label + " " + (g.group || "")).toLowerCase() });
     for (const c of data.concepts?.concepts || []) out.push({ kind: "Concept", label: c.title, sub: "Module " + c.module, act: { page: "concepts", item: c.id }, hay: (c.title + " concept " + (c.spec || []).join(" ")).toLowerCase() });
+    for (const t of data.ins?.types || []) if (GUIDE[t.type]) out.push({ kind: "Question type", label: tl(t.type), sub: "How to answer", act: { page: "guide", item: t.type }, hay: (tl(t.type) + " how to answer question type guide " + GUIDE[t.type].cmd.join(" ")).toLowerCase() });
     for (const l of data.techniques?.lessons || []) out.push({ kind: "Technique", label: l.title.split(":")[0], sub: MOVE_LABEL[l.id] || "", act: { page: "techniques", item: l.id }, hay: (l.title + " technique " + (MOVE_LABEL[l.id] || "")).toLowerCase() });
     for (const d of data.definitions?.items || []) out.push({ kind: "Definition", label: d.term, sub: d.topic || "", act: { page: "definitions" }, hay: (d.term + " definition define " + (d.topic || "")).toLowerCase() });
     for (const s of data.subskills?.items || []) out.push({ kind: "Skill", label: s.id + " " + s.name, sub: s.what || "", act: { page: "skills" }, hay: (s.id + " " + s.name + " skill").toLowerCase() });
@@ -2973,7 +3204,7 @@ function useSearchIndex(data) {
     return out;
   }, [data.ready]);
 }
-const KIND_ORDER = ["Page", "Concept", "Technique", "Definition", "Skill", "Spec", "Question"];
+const KIND_ORDER = ["Page", "Question type", "Concept", "Technique", "Definition", "Skill", "Spec", "Question"];
 function Palette({ open, onClose, index, run }) {
   const dlg = useRef(null), inp = useRef(null);
   const [q, setQ] = useState(""), [act, setAct] = useState(0);
@@ -3027,7 +3258,7 @@ const STAGES = [
   { id: "s7", title: "Photons and quantum", mod: ["4.5"], why: "A small, self-contained section that is asked every year: the best return on revision time in the course.",
     tasks: ["c-photons", "c-photoelectric", "c-duality"] },
   { id: "s8", title: "Exam technique", why: "Now turn understanding into marks. Learn definitions word for word as each topic comes up, then drill the answer styles examiners mark hardest.",
-    tasks: [["s8a", "Definitions, word for word", "definitions"], ["s8b", "Cause → effect explanations", "techniques", "explain-chain"], ["s8c", "Show-that questions", "techniques", "show-that"], ["s8d", "Judging and deciding", "techniques", "evaluate"], ["s8e", "Exam strategy and timing", "strategy"]] },
+    tasks: [["s8f", "Question guide: what to write for each type", "guide"], ["s8a", "Definitions, word for word", "definitions"], ["s8b", "Cause → effect explanations", "techniques", "explain-chain"], ["s8c", "Show-that questions", "techniques", "show-that"], ["s8d", "Judging and deciding", "techniques", "evaluate"], ["s8e", "Exam strategy and timing", "strategy"]] },
   { id: "s9", title: "Timed mocks", why: "Start with the gentler papers (one dot), mark strictly against the mark scheme, then let My progress pick what to fix.",
     tasks: [["s9a", "Sit a mock paper", "mock"], ["s9b", "Work through the practice set", "practice"], ["s9c", "Review My progress", "progress"]] },
   { id: "s10", title: "Final gap check", why: "Last of all: GCSE knowledge and spec details the papers assume but rarely state.",
@@ -3135,7 +3366,7 @@ function App() {
   };
   useEffect(() => {
     const p = PAGE[route.page]; document.title = (p && route.page !== "home" ? p.label + " · " : "") + "Physics";
-    if (route.page !== "home") store.set("last", { page: route.page, item: route.item, title: route.page === "concepts" ? data.concepts?.concepts?.find(c => c.id === route.item)?.title : route.page === "techniques" ? data.techniques?.lessons?.find(l => l.id === route.item)?.title.split(":")[0] : null });
+    if (route.page !== "home") store.set("last", { page: route.page, item: route.item, title: route.page === "concepts" ? data.concepts?.concepts?.find(c => c.id === route.item)?.title : route.page === "techniques" ? data.techniques?.lessons?.find(l => l.id === route.item)?.title.split(":")[0] : route.page === "guide" && route.item ? tl(route.item) : null });
     const m = document.querySelector("main.main"); if (m) m.focus({ preventScroll: true });
     setTimeout(() => { const on = document.querySelector(".tq-nav .on"), nv = on?.parentElement; if (on && nv && matchMedia("(max-width: 900px)").matches) nv.scrollLeft = on.offsetLeft - 16; }, 60);
   }, [route.page, route.item, data.ready]);
@@ -3158,7 +3389,7 @@ function App() {
   const open = (paper, slug, q) => { setSel(s => ({ paper: +paper, slug, q: q || null, nonce: s.nonce + 1 })); nav("questions"); };
   const index = useSearchIndex(data);
   const run = a => a.spec ? openSpec(a.spec) : a.q ? open(a.q.paper, a.q.slug, a.q) : nav(a.page, a.item);
-  const counts = { concepts: data.concepts?.concepts?.length, techniques: data.techniques?.lessons?.length, skills: data.subskills?.items?.length, definitions: data.definitions?.items?.length, knowledge: data.knowledge?.items?.length, gaps: data.gaps?.gaps?.length, practice: data.practice?.questions?.length, spec: data.spec?.outcomes?.length };
+  const counts = { guide: (data.ins?.types || []).filter(t => GUIDE[t.type]).length, concepts: data.concepts?.concepts?.length, techniques: data.techniques?.lessons?.length, skills: data.subskills?.items?.length, definitions: data.definitions?.items?.length, knowledge: data.knowledge?.items?.length, gaps: data.gaps?.gaps?.length, practice: data.practice?.questions?.length, spec: data.spec?.outcomes?.length };
   const P = PAGE[route.page] || PAGE.home, v = P.id;
   const loading = html`<div class="ins"><div class="ins-inner pg"><div class="skel" aria-busy="true" aria-label="Loading"><i></i><i></i><i></i></div></div></div>`;
   const rail = html`<div class="rail">
@@ -3175,6 +3406,7 @@ function App() {
     : v === "questions" ? html`<div class="with-rail">${rail}<${QBench} data=${data} sel=${sel} /></div>`
     : v === "papers" ? html`<div class="with-rail">${rail}<${Bench} data=${data} sel=${sel} setSel=${setSel} /></div>`
     : v === "concepts" ? html`<${ConceptsView} data=${data} open=${open} goTech=${goTech} item=${route.item} setItem=${id => nav("concepts", id)} />`
+    : v === "guide" ? html`<${QuestionGuide} data=${data} open=${open} goTech=${goTech} item=${route.item} setItem=${id => nav("guide", id)} />`
     : v === "techniques" ? html`<${Techniques} data=${data} open=${open} item=${route.item} setItem=${id => nav("techniques", id)} />`
     : v === "skills" ? html`<${Page}><${SkillsBreakdown} data=${data} open=${open} /></${Page}>`
     : v === "definitions" ? html`<${Page}><${DefDrill} data=${data} open=${open} /></${Page}>`
