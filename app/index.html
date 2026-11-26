@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>H156 Paper Bench</title>
+<title>Physics</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -627,6 +627,199 @@ dl.codes dd { margin: 0; color: var(--ink-2); }
 /* Lenis */
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-stopped { overflow: hidden; }
+
+/* ================= Shell v2 =================
+   Layout: an app with a fixed left index (grouped by what you are doing: learn, practise, look up),
+   a slim top bar holding where-you-are and search, and the working surface on graph paper. */
+:root {
+  --side-bg: #E6EDF2;
+  --hover: rgba(15, 31, 45, .05);
+  --sel: rgba(31, 86, 201, .18);
+  --ok: #2E7D4F;
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
+  --ease-drawer: cubic-bezier(.32, .72, 0, 1);
+  --shadow-pop: 0 1px 1px rgba(15,31,45,.06), 0 4px 10px -2px rgba(15,31,45,.10), 0 24px 60px -18px rgba(15,31,45,.35);
+  --side-w: 252px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --side-bg: #0C1621; --hover: rgba(228,236,243,.06); --sel: rgba(121,166,255,.28); --ok: #5FC48A; --shadow-pop: 0 1px 1px rgba(0,0,0,.4), 0 6px 14px -4px rgba(0,0,0,.5), 0 28px 70px -20px rgba(0,0,0,.8); } }
+:root[data-theme="dark"] { --side-bg: #0C1621; --hover: rgba(228,236,243,.06); --sel: rgba(121,166,255,.28); --ok: #5FC48A; --shadow-pop: 0 1px 1px rgba(0,0,0,.4), 0 6px 14px -4px rgba(0,0,0,.5), 0 28px 70px -20px rgba(0,0,0,.8); }
+
+::selection { background: var(--sel); }
+html { scrollbar-color: var(--rule) transparent; accent-color: var(--accent); -webkit-tap-highlight-color: transparent; }
+input, textarea { caret-color: var(--accent); }
+* { scrollbar-width: thin; scrollbar-color: var(--rule) transparent; }
+button, a, input, label, select { touch-action: manipulation; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+kbd { font: 500 11px/1 var(--f-mono); padding: 3px 5px; border-radius: 4px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink-3); }
+
+.shell { height: 100%; display: grid; grid-template-columns: var(--side-w) minmax(0, 1fr); min-height: 0; }
+.skip { position: absolute; left: 12px; top: 8px; z-index: 100; padding: 8px 12px; background: var(--ink); color: var(--surface); border-radius: 8px; transform: translateY(-160%); }
+.skip:focus { transform: none; }
+
+/* sidebar */
+.sidenav { background: var(--side-bg); border-right: 1px solid var(--rule); display: flex; flex-direction: column; gap: 14px; min-height: 0; overflow-y: auto; padding: 16px 12px 14px max(12px, env(safe-area-inset-left, 0px)); overscroll-behavior: contain; }
+.brand { display: flex; align-items: center; gap: 10px; padding: 4px 8px; text-decoration: none; color: var(--ink); white-space: nowrap; }
+.brand .code { font: 600 10.5px/1 var(--f-mono); letter-spacing: .06em; padding: 4px 5px; border: 1.5px solid currentColor; border-radius: 4px; }
+.brand .name { font: 800 17px/1 var(--f-display); letter-spacing: -.01em; }
+.side-search { display: flex; align-items: center; gap: 8px; border: 1px solid var(--rule); background: var(--surface); border-radius: 8px; padding: 7px 9px; color: var(--ink-3); cursor: pointer; text-align: left; transition: border-color .15s var(--ease-out); }
+.side-search span { flex: 1; }
+.side-search:hover { border-color: var(--ink-3); color: var(--ink-2); }
+.navlist { display: grid; gap: 14px; }
+.navgroup { display: grid; gap: 1px; }
+.navgroup h2 { margin: 0 0 4px; padding: 0 10px; font: 600 11px/1.2 var(--f-body); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+.navitem { display: flex; align-items: center; gap: 10px; min-height: 34px; padding: 6px 10px; border-radius: 7px; color: var(--ink-2); text-decoration: none; font-size: 13.5px; font-weight: 500; transition: background-color .12s var(--ease-out), color .12s var(--ease-out); }
+.navitem .ico { flex: none; color: var(--ink-3); transition: color .12s var(--ease-out); }
+.navitem span { flex: 1; min-width: 0; }
+.navitem small { font: 500 11px/1 var(--f-mono); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.navitem:hover { background: var(--hover); color: var(--ink); }
+.navitem:hover .ico { color: var(--ink-2); }
+.navitem[aria-current="page"] { background: var(--surface); color: var(--ink); font-weight: 600; box-shadow: 0 0 0 1px var(--rule), 0 1px 2px rgba(15,31,45,.06); }
+.navitem[aria-current="page"] .ico { color: var(--accent); }
+.side-foot { margin: auto 0 0; padding: 8px 10px 0; font-size: 11.5px; color: var(--ink-3); }
+
+/* main column */
+.mainwrap { display: grid; grid-template-rows: auto minmax(0, 1fr); min-height: 0; min-width: 0; }
+.topbar { display: flex; align-items: center; gap: 12px; min-height: 52px; padding-block: 8px; padding-left: 20px; padding-right: var(--gutter-r); background: var(--surface); border-bottom: 1px solid var(--rule); min-width: 0; }
+.crumb { display: flex; align-items: baseline; gap: 8px; min-width: 0; font-size: 14px; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.crumb b { color: var(--ink); font-weight: 600; overflow: hidden; text-overflow: ellipsis; }
+.searchbtn { margin-left: auto; display: flex; align-items: center; gap: 8px; min-width: 0; width: min(380px, 42%); border: 1px solid var(--rule); background: var(--surface-2); border-radius: 8px; padding: 7px 10px; color: var(--ink-3); cursor: pointer; text-align: left; transition: border-color .15s var(--ease-out); }
+.searchbtn span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.searchbtn:hover { border-color: var(--ink-3); color: var(--ink-2); }
+.iconbtn { display: none; place-items: center; width: 40px; height: 40px; border: 0; border-radius: 8px; background: transparent; color: var(--ink); cursor: pointer; }
+.iconbtn:hover { background: var(--hover); }
+.main { display: grid; min-height: 0; min-width: 0; outline: none; }
+.main > * { min-height: 0; min-width: 0; }
+.with-rail { display: grid; grid-template-rows: auto minmax(0, 1fr); grid-template-columns: minmax(0, 1fr); min-height: 0; }
+.rail { min-width: 0; }
+.with-rail > :last-child { min-height: 0; }
+.rail { padding-left: 20px; background: color-mix(in srgb, var(--surface) 82%, transparent); backdrop-filter: none; }
+.scrim { display: none; }
+
+/* page frame */
+.ins-inner.pg { padding-top: 32px; gap: 28px; max-width: 1120px; }
+.ins-inner.pg.narrow { max-width: 860px; }
+.page-head { display: grid; gap: 8px; }
+.page-head h1 { margin: 0; font: 800 clamp(26px, 2.6vw, 32px)/1.1 var(--f-display); letter-spacing: -.02em; text-wrap: balance; }
+.page-head p { margin: 0; max-width: 68ch; color: var(--ink-2); font-size: 15px; text-wrap: pretty; }
+
+/* quieter headings across older views */
+.hero { padding-block: 32px 0; gap: 12px; }
+.hero h2 { font-size: clamp(28px, 3.2vw, 40px); line-height: 1.05; max-width: 22ch; }
+.hero p { font-size: 15px; }
+.hero > * { order: 2; } .hero > h2 { order: 0; } .hero > .eyebrow { order: 1; }
+.lesson > * { order: 2; } .lesson > h3 { order: 0; } .lesson > .eyebrow { order: 1; }
+.hero > .eyebrow, .lesson > .eyebrow { font: 400 13px/1.4 var(--f-body); letter-spacing: 0; text-transform: none; color: var(--ink-3); margin-top: -6px; }
+.lesson h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.12; text-wrap: balance; }
+.qhead h2 { font-size: clamp(24px, 2.4vw, 30px); }
+.ins-inner { gap: 40px; }
+
+/* buttons feel pressed */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 36px; transition: transform .12s var(--ease-out), background-color .15s var(--ease-out), opacity .15s; }
+.btn:active { transform: scale(.97); }
+.btn.ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--rule); }
+.btn.ghost:hover { box-shadow: inset 0 0 0 1px var(--ink-3); }
+.chip, .seg button, .tq-nav button, .qbtn, .navitem, .secbar { -webkit-user-select: none; user-select: none; }
+.chip:hover { transform: none; }
+.chip:active, .qbtn:active, .tq-nav button:active { transform: scale(.97); }
+.chip, .qbtn, .tq-nav button { transition: transform .12s var(--ease-out), background-color .12s var(--ease-out), border-color .12s var(--ease-out); }
+.tq-nav { max-height: calc(100vh - 140px); overflow-y: auto; padding-right: 4px; }
+.tq-nav button.on { background: var(--surface); color: var(--ink); font-weight: 600; box-shadow: 0 0 0 1px var(--rule); }
+.tq-nav button.on small { color: var(--accent); }
+
+/* loading skeleton */
+.skel { display: grid; gap: 14px; }
+.skel i { display: block; height: 18px; border-radius: 6px; background: var(--rule); opacity: .6; }
+.skel i:first-child { height: 30px; width: 40%; }
+.skel i:nth-child(2) { width: 75%; } .skel i:nth-child(3) { width: 60%; }
+
+/* command palette */
+.palette { padding: 0; border: 0; background: transparent; width: min(640px, calc(100% - 32px)); max-width: none; margin: 12vh auto auto; overflow: visible; color: var(--ink); }
+.palette::backdrop { background: rgba(10, 19, 29, .38); }
+.pal-in { background: var(--surface); border-radius: 12px; box-shadow: var(--shadow-pop), 0 0 0 1px var(--rule); overflow: hidden; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; max-height: min(560px, 76vh); transform-origin: 50% 0; }
+.palette[open] .pal-in { animation: pal-in .16s var(--ease-out); }
+@keyframes pal-in { from { opacity: 0; transform: scale(.98) translateY(-4px); } }
+.pal-field { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--rule); color: var(--ink-3); }
+.pal-field input { flex: 1; min-width: 0; border: 0; outline: none; background: transparent; font: 16px/1.4 var(--f-body); color: var(--ink); }
+.pal-field input::-webkit-search-cancel-button { display: none; }
+.pal-list { overflow-y: auto; padding: 6px; overscroll-behavior: contain; }
+.pal-head { padding: 10px 10px 4px; font: 600 11px/1 var(--f-body); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+.pal-row { display: flex; align-items: baseline; gap: 10px; padding: 8px 10px; border-radius: 7px; cursor: pointer; min-width: 0; }
+.pal-row.on { background: var(--accent-soft); }
+.pal-label { flex: none; max-width: 60%; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pal-row.on .pal-label { color: var(--accent); }
+.pal-sub { min-width: 0; flex: 1; color: var(--ink-3); font-size: 12.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pal-empty { margin: 0; padding: 18px 12px; color: var(--ink-2); }
+.pal-foot { display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 9px 14px; border-top: 1px solid var(--rule); font-size: 12px; color: var(--ink-3); background: var(--surface-2); }
+.pal-foot kbd { margin-right: 3px; }
+
+/* study plan */
+.home-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 28px; align-items: start; }
+.stages { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; counter-reset: none; }
+.stage { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 14px; position: relative; padding-bottom: 22px; }
+.stage::before { content: ""; position: absolute; left: 15.5px; top: 34px; bottom: 4px; width: 1px; background: var(--rule); }
+.stage:last-child::before { display: none; }
+.stage-num { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font: 600 13px/1 var(--f-mono); background: var(--surface); color: var(--ink-2); box-shadow: inset 0 0 0 1px var(--rule); }
+.stage.current .stage-num { background: var(--accent); color: var(--surface); box-shadow: none; }
+.stage.done .stage-num { background: var(--ok); color: var(--surface); box-shadow: none; }
+.stage-body { min-width: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); padding: 14px 16px; display: grid; gap: 8px; }
+.stage.current .stage-body { border-color: color-mix(in srgb, var(--accent) 45%, var(--rule)); box-shadow: 0 1px 2px rgba(15,31,45,.05), 0 8px 24px -16px rgba(31,86,201,.45); }
+.stage-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.stage-top h2 { margin: 0; font: 700 17px/1.25 var(--f-display); flex: 1; min-width: 12ch; }
+.stage-meta { font: 500 12px/1 var(--f-mono); color: var(--ink-3); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.stage-body > p { margin: 0; color: var(--ink-2); font-size: 13.5px; max-width: 72ch; }
+.tasks { list-style: none; margin: 2px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 2px 14px; }
+.tasks li { display: flex; align-items: center; gap: 8px; min-height: 30px; min-width: 0; }
+.tasks input { flex: none; width: 16px; height: 16px; margin: 0; cursor: pointer; }
+.tasks a { color: var(--ink); text-decoration: none; font-size: 13.5px; min-width: 0; border-bottom: 1px solid transparent; transition: border-color .12s var(--ease-out), color .12s; }
+.tasks a:hover { color: var(--accent); border-bottom-color: currentColor; }
+.tasks a.done { color: var(--ink-3); text-decoration: line-through; text-decoration-color: var(--ink-3); }
+.home-side { display: grid; gap: 14px; position: sticky; top: 0; }
+.side-card { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); padding: 16px; display: grid; gap: 10px; }
+.side-card h2 { margin: 0; font: 600 12px/1.2 var(--f-body); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+.side-card .big { margin: 0; font: 700 19px/1.2 var(--f-display); }
+.side-card .muted, .muted { margin: 0; color: var(--ink-3); font-size: 12.5px; }
+.side-card .btn { justify-content: space-between; text-align: left; }
+.kv { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; margin: 0; font-size: 13px; }
+.kv dt { color: var(--ink-2); } .kv dd { margin: 0; font: 600 13px/1.4 var(--f-mono); font-variant-numeric: tabular-nums; text-align: right; }
+.secbars { display: grid; gap: 2px; }
+.secbar { display: grid; grid-template-columns: 30px minmax(0, 1fr) 38px; grid-template-rows: auto 4px; gap: 3px 8px; align-items: center; border: 0; background: none; padding: 5px 6px; border-radius: 6px; cursor: pointer; text-align: left; }
+.secbar:hover { background: var(--hover); }
+.sb-k { font-size: 11.5px; color: var(--accent); }
+.sb-n { font-size: 12px; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sb-v { font-size: 11.5px; text-align: right; }
+.sb-track { grid-column: 2 / 4; height: 4px; border-radius: 2px; background: var(--surface-2); overflow: hidden; }
+.sb-track i { display: block; height: 100%; background: var(--accent); opacity: .7; border-radius: 2px; }
+
+@media (max-width: 1100px) { .home-grid { grid-template-columns: minmax(0, 1fr); } .home-side { position: static; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); } }
+@media (max-width: 900px) {
+  .shell { grid-template-columns: minmax(0, 1fr); }
+  .sidenav { position: fixed; z-index: 50; inset: 0 auto 0 0; width: min(300px, 86vw); padding-top: max(16px, env(safe-area-inset-top, 0px)); padding-bottom: max(14px, env(safe-area-inset-bottom, 0px)); transform: translateX(-102%); visibility: hidden; transition: transform .26s var(--ease-drawer), visibility 0s linear .26s; box-shadow: var(--shadow-pop); }
+  .drawer-open .sidenav { transform: none; visibility: visible; transition: transform .3s var(--ease-drawer), visibility 0s; }
+  .scrim { display: block; position: fixed; inset: 0; z-index: 40; background: rgba(10, 19, 29, .4); opacity: 0; pointer-events: none; transition: opacity .2s var(--ease-out); }
+  .drawer-open .scrim { opacity: 1; pointer-events: auto; }
+  .navitem { min-height: 44px; font-size: 15px; }
+  .iconbtn { display: grid; margin-left: -8px; }
+  .topbar { padding-left: var(--gutter-l); }
+  .searchbtn { width: auto; flex: none; }
+  .searchbtn span, .searchbtn kbd { display: none; }
+  .rail { padding-left: var(--gutter-l); }
+  .pal-foot span:last-child { display: none; }
+}
+
+body { margin: 0; }
+@media (max-width: 900px) {
+  .tq-layout { grid-template-columns: minmax(0, 1fr) !important; gap: 18px !important; }
+  .tq-nav { position: sticky; top: 0; z-index: 3; display: flex !important; flex-wrap: nowrap !important; gap: 6px; overflow-x: auto; max-height: none; padding: 8px 0; margin: 0; background: var(--paper); scrollbar-width: none; overscroll-behavior-x: contain; }
+  .tq-nav::-webkit-scrollbar { display: none; }
+  .tq-nav > * { flex: none !important; white-space: nowrap; }
+  .tq-nav button { border: 1px solid var(--rule); background: var(--surface); min-height: 36px; align-items: center; }
+  .qn { min-width: 34px; min-height: 36px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sidenav, .drawer-open .sidenav, .scrim { transition: none; }
+  .palette[open] .pal-in { animation: none; }
+  .btn:active, .chip:active, .qbtn:active, .tq-nav button:active { transform: none; }
+}
 </style>
 
 <div id="root"></div>
@@ -634,8 +827,6 @@ dl.codes dd { margin: 0; color: var(--ink-2); }
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script>
 (() => {
@@ -643,7 +834,6 @@ const { useState, useEffect, useRef, useMemo, useCallback } = React;
 const html = htm.bind(React.createElement);
 pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
 const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
-gsap.ticker.lagSmoothing(0);
 
 const SESSIONS = [
   { slug: "specimen", y: "SAM", m: "Specimen", label: "Specimen" },
@@ -728,8 +918,8 @@ class PdfPane {
   constructor(scroller, content, onState) {
     this.scroller = scroller; this.content = content; this.onState = onState;
     this.zoom = 1; this.pages = []; this.token = 0; this.doc = null; this.visible = new Set();
-    this.lenis = REDUCED ? null : new Lenis({ wrapper: scroller, content, lerp: 0.14, smoothWheel: true, wheelMultiplier: 0.9 });
-    if (this.lenis) { this._tick = (t) => this.lenis.raf(t * 1000); gsap.ticker.add(this._tick); }
+    this.lenis = null;
+    
     this.io = new IntersectionObserver(es => {
       for (const e of es) { const p = e.target._p; if (e.isIntersecting) { this.visible.add(p); this.render(p); } else this.visible.delete(p); }
     }, { root: scroller, rootMargin: "900px 0px" });
@@ -761,7 +951,6 @@ class PdfPane {
       this.scroller.scrollTop = 0; this.lenis?.scrollTo(0, { immediate: true });
       for (const p of this.pages) this.io.observe(p.div);
       this.onState({ loading: false, page: 1, pages: n });
-      if (!REDUCED) gsap.from(this.pages.slice(0, 3).map(p => p.div), { y: 18, opacity: 0.2, duration: 0.6, stagger: 0.07, ease: "power3.out", clearProps: "opacity,transform" });
     } catch (e) {
       if (t !== this.token) return;
       this.onState({ loading: false, error: "Couldn't open this PDF. Reload the page to try again.", page: 0, pages: 0 });
@@ -807,12 +996,12 @@ class PdfPane {
   go(n, flash = true) {
     const p = this.pages[Math.max(1, Math.min(this.pages.length, n)) - 1]; if (!p) return;
     const y = p.div.offsetTop - 12;
-    if (this.lenis) this.lenis.scrollTo(y, { duration: 1.05, easing: t => 1 - Math.pow(1 - t, 4) }); else this.scroller.scrollTop = y;
+    this.scroller.scrollTo({ top: y, behavior: REDUCED ? "auto" : "smooth" });
     if (flash) { p.div.classList.remove("flash"); void p.div.offsetWidth; p.div.classList.add("flash"); }
   }
   destroy() {
     this.token++; this.io.disconnect(); this.ro.disconnect(); this.scroller.removeEventListener("scroll", this._onScroll);
-    if (this._tick) gsap.ticker.remove(this._tick); this.lenis?.destroy(); this.doc?.destroy();
+    this.lenis?.destroy(); this.doc?.destroy();
   }
 }
 
@@ -940,18 +1129,7 @@ function Bench({ data, sel, setSel }) {
 }
 
 /* ---------- Lenis for a scroll container ---------- */
-function useLenis(ref) {
-  const inst = useRef(null);
-  useEffect(() => {
-    if (REDUCED) return;
-    const l = new Lenis({ wrapper: ref.current, content: ref.current.firstElementChild, lerp: 0.12 });
-    inst.current = l;
-    const tick = t => l.raf(t * 1000); gsap.ticker.add(tick);
-    const ro = new ResizeObserver(() => l.resize()); ro.observe(ref.current.firstElementChild);
-    return () => { gsap.ticker.remove(tick); ro.disconnect(); l.destroy(); inst.current = null; };
-  }, []);
-  return inst;
-}
+function useLenis(ref) { return useRef(null); }
 
 /* ---------- PDF cache + cut-out regions ---------- */
 const docCache = new Map();
@@ -1113,10 +1291,6 @@ function QBench({ data, sel }) {
     setCur(i);
     if (lenis.current) lenis.current.scrollTo(0, { immediate: true }); else if (mainRef.current) mainRef.current.scrollTop = 0;
   }, [qs.length]);
-  useEffect(() => {
-    if (REDUCED || !mainRef.current) return;
-    gsap.fromTo(mainRef.current.querySelectorAll(".qhead, .qrowx"), { y: 14, opacity: 0.25 }, { y: 0, opacity: 1, duration: 0.5, stagger: 0.05, ease: "power3.out", clearProps: "opacity,transform" });
-  }, [cur, key]);
   useEffect(() => {
     const k = (e) => {
       if (e.target.closest("input, select, textarea")) return;
@@ -1424,7 +1598,7 @@ function Playbook({ data, open, openSpec }) {
   if (!pb.mechanics) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Playbook not loaded</h2></div></div></div>`;
   return html`<div class="ins" ref=${ref}><div class="ins-inner">
     <div class="hero">
-      <span class="eyebrow">OCR A · H156 · exam playbook</span>
+      
       <h2>How to <em>answer</em> these papers</h2>
       <p>${pb.intro}</p>
       <p style=${{ fontSize: "14px" }}>${pb.timing}</p>
@@ -2053,10 +2227,10 @@ const SIMS = {
 function Sim({ id }) { const S = SIMS[id]; return S ? html`<${S} />` : null; }
 
 /* ---------- Concepts ---------- */
-function ConceptsView({ data, open, goTech }) {
+function ConceptsView({ data, open, goTech, item, setItem }) {
   const ref = useRef(null); const lenis = useLenis(ref);
   const CS = data.concepts?.concepts || [];
-  const [cur, setCur] = useState(() => store.get("concept", CS[0]?.id || null));
+  const cur = (item && CS.some(x => x.id === item)) ? item : store.get("concept", CS[0]?.id || null); const setCur = id => setItem(id);
   useEffect(() => { store.set("concept", cur); if (lenis.current) lenis.current.scrollTo(0, { immediate: true }); else if (ref.current) ref.current.scrollTop = 0; }, [cur]);
   if (!CS.length) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Concept explainers are still being written</h2></div></div></div>`;
   const c = CS.find(x => x.id === cur) || CS[0];
@@ -2315,7 +2489,7 @@ function GapCheck({ data }) {
   const list = G.gaps.filter(g => (grp === "all" || g.group === grp) && (pr === "all" || g.priority === pr)).sort((a, b) => (rank[a.priority] - rank[b.priority]) || (b.seen - a.seen));
   const doneN = G.gaps.filter(g => done[g.id]).length;
   return html`<div class="lesson">
-    <span class="eyebrow">Last step · ${G.gaps.length} possible holes</span>
+    <span class="eyebrow">${G.gaps.length} possible holes · go through these last</span>
     <h3>Final gap check</h3>
     <p class="lead">Things the exam can assume that sit outside the main knowledge list: details in the spec's guidance column, its maths requirements, How Science Works, and GCSE knowledge that AS questions build on. Go through this once everything else is secure. Try each check question before revealing the answer; tick what you know.</p>
     <div class="dd-tools">
@@ -2473,11 +2647,11 @@ function useMoveStats(all, examiners) {
     return { tagged: tagged.length, by, share, scaf, steps, nmoves, lvlN: lvl.map(l => l.length), poorBase: judged.length ? Math.round(poorAll / judged.length * 100) : null, judged: judged.length, perf };
   }, [all, examiners]);
 }
-function Techniques({ data, open }) {
+function Techniques({ data, open, item, setItem }) {
   const ref = useRef(null); const lenis = useLenis(ref);
   const T = data.techniques; const all = useMemo(() => data.all.filter(q => !q.withdrawn), [data.all]);
   const st = useMoveStats(all, data.examiners);
-  const [cur, setCur] = useState(() => store.get("tech", "anatomy"));
+  const cur0 = item || store.get("tech", "anatomy"); const cur = ["know", "skills", "defs", "gaps"].includes(cur0) ? "anatomy" : cur0; const setCur = id => setItem(id);
   const [onlyUnscaf, setOnlyUnscaf] = useState(false), [limit, setLimit] = useState(25);
   useEffect(() => { store.set("tech", cur); setLimit(25); if (lenis.current) lenis.current.scrollTo(0, { immediate: true }); else if (ref.current) ref.current.scrollTop = 0; }, [cur]);
   if (!T) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Techniques not loaded</h2></div></div></div>`;
@@ -2487,8 +2661,7 @@ function Techniques({ data, open }) {
     const s2 = st.by[L.id] || { parts: [], marks: 0, unscaf: 0, poor: 0, judged: 0 };
     const list = s2.parts.filter(q => !onlyUnscaf || q.scaffolded === false).slice().sort((a, b) => (a.difficulty - b.difficulty) || (SESSIONS.findIndex(s => s.slug === b.slug) - SESSIONS.findIndex(s => s.slug === a.slug)));
     return html`<div class="lesson">
-      <span class="eyebrow">Technique</span>
-      <h3>${L.title}</h3>
+            <h3>${L.title}</h3>
       <p class="lead">${L.what}</p>
       <div class="ev">
         <div><b>${s2.parts.length}</b><span>question parts need it (${s2.marks} marks)</span></div>
@@ -2519,8 +2692,7 @@ function Techniques({ data, open }) {
   })();
   const A = T.anatomy;
   const anatomyView = A && html`<div class="lesson">
-    <span class="eyebrow">Start here</span>
-    <h3>How a question turns knowledge into marks</h3>
+        <h3>How a question turns knowledge into marks</h3>
     <p class="lead">Every question combines a setting, a piece of spec content, some data and conditions, and a structure (command word, marks, answer line). The mark scheme then awards marks for specific visible points. Knowing how these fit together tells you what to write.</p>
     <div class="panel"><h4>The five layers of a question</h4><div style=${{ overflowX: "auto" }}><table class="forms"><thead><tr><th>Layer</th><th>What it is</th><th>What you do with it</th></tr></thead>
       <tbody>${A.layers.map((r, i) => html`<tr key=${i}><td style=${{ fontFamily: "var(--f-display)", fontWeight: 700 }}>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`)}</tbody></table></div></div>
@@ -2563,12 +2735,8 @@ function Techniques({ data, open }) {
     <div class="tq-layout">
       <nav class="tq-nav" aria-label="Techniques">
         ${A && html`<button class=${cur === "anatomy" ? "on" : ""} onClick=${() => setCur("anatomy")}><span>How a question is built</span></button>`}
-        ${data.knowledge && html`<button class=${cur === "know" ? "on" : ""} onClick=${() => setCur("know")}><span>Knowledge map</span><small>${data.knowledge.items.length}</small></button>`}
-        ${data.subskills && html`<button class=${cur === "skills" ? "on" : ""} onClick=${() => setCur("skills")}><span>Skills breakdown</span><small>${data.subskills.items.length}</small></button>`}
-        ${data.definitions && html`<button class=${cur === "defs" ? "on" : ""} onClick=${() => setCur("defs")}><span>Definitions drill</span><small>${data.definitions.items.length}</small></button>`}
         <button class=${cur === "overview" ? "on" : ""} onClick=${() => setCur("overview")}><span>Overview</span></button>
         ${lessons.map(l => html`<button key=${l.id} class=${cur === l.id ? "on" : ""} onClick=${() => setCur(l.id)}><span>${l.title.split(":")[0]}</span><small>${st.by[l.id]?.parts.length || 0}</small></button>`)}
-        <button class=${cur === "gaps" ? "on" : ""} onClick=${() => setCur("gaps")} style=${{ marginTop: "10px", borderTop: "1px solid var(--rule)", borderRadius: 0, paddingTop: "12px" }}><span>Final gap check</span><small>${data.gaps?.gaps.length || ""}</small></button>
       </nav>
       ${cur === "gaps" ? html`<${GapCheck} data=${data} />` : cur === "skills" && data.subskills ? html`<${SkillsBreakdown} data=${data} open=${open} />` : cur === "know" && data.knowledge ? html`<${KnowledgeMap} data=${data} open=${open} />` : cur === "defs" && data.definitions ? html`<${DefDrill} data=${data} open=${open} />` : cur === "anatomy" && A ? anatomyView : cur === "overview" || !L ? overview : lessonView}
     </div>
@@ -2584,8 +2752,6 @@ function Insights({ data, open }) {
   const exRef = useRef(null);
   useEffect(() => {
     if (REDUCED) return;
-    gsap.from(ref.current.querySelectorAll(".hero > *"), { y: 22, opacity: 0.15, duration: 0.8, stagger: 0.08, ease: "power3.out", clearProps: "opacity,transform" });
-    gsap.from(ref.current.querySelectorAll(".tcard"), { y: 26, opacity: 0.2, duration: 0.7, stagger: 0.04, ease: "power2.out", delay: 0.2, clearProps: "opacity,transform" });
   }, []);
 
   const totalMarks = all.reduce((s, q) => s + (+q.marks || 0), 0);
@@ -2634,12 +2800,11 @@ function Insights({ data, open }) {
   const L = (arr) => arr && arr.length ? html`<ul>${arr.map((x, i) => html`<li key=${i}>${x}</li>`)}</ul>` : null;
   const refBtn = (r) => html`<button class="link" onClick=${() => open(r.paper, r.slug, all.find(q => q.paper == r.paper && q.slug === r.slug && q.q === r.q))}>P${r.paper} ${SLABEL[r.slug] || r.slug} · Q${r.q}</button>`;
 
-  if (!all.length) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><span class="eyebrow">Insights</span><h2>Analysis is still being compiled</h2><p>The question-by-question analysis hasn't been added to this page yet. The paper viewer works in the meantime.</p></div></div></div>`;
+  if (!all.length) return html`<div class="ins" ref=${ref}><div class="ins-inner"><div class="hero"><h2>Analysis is still being compiled</h2><p>The question-by-question analysis hasn't been added to this page yet. The paper viewer works in the meantime.</p></div></div></div>`;
 
   return html`
   <div class="ins" ref=${ref}><div class="ins-inner">
     <div class="hero">
-      <${Wave} k=${70} speed=${1.1} />
       <span class="eyebrow">OCR A · H156 · ${papersN} papers read line by line</span>
       <h2>What the mark scheme <em>actually</em> pays for</h2>
       <p>${ins.headline || "Every question part from both AS papers, tagged by type, topic and command word, with the creditworthy points, the allow/reject rules and the usual ways marks are lost."}</p>
@@ -2747,40 +2912,237 @@ function Insights({ data, open }) {
   </div></div>`;
 }
 
+/* ---------- App shell: navigation, search, study plan ---------- */
+const ICONS = {
+  home: "M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z",
+  concepts: "M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z",
+  techniques: "M3 19h18M4 15l5-5 4 4 7-7M15 7h5v5",
+  skills: "M3 17L17 3l4 4L7 21zM7 13l2 2M10 10l2 2M13 7l2 2",
+  definitions: "M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2zM5 18a2 2 0 0 1 2-2h12M9 8h6",
+  knowledge: "M10 6h10M10 12h10M10 18h10M4 6l1.2 1.2L7.5 5M4 12l1.2 1.2L7.5 11M4 18l1.2 1.2L7.5 17",
+  gaps: "M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4",
+  questions: "M6 3h9l4 4v14H6zM15 3v4h4M10 11.5a2 2 0 1 1 3 1.7c-.6.4-1 .8-1 1.3M12 17.5v.01",
+  mock: "M12 9v4l2.5 2M9 2h6M12 21a8 8 0 1 0 0-16 8 8 0 0 0 0 16z",
+  practice: "M4 20h4L19 9l-4-4L4 16zM13 7l4 4",
+  progress: "M5 20V11M11 20V5M17 20v-6M3 20h18",
+  papers: "M8 3h8l4 4v12H8zM16 3v4h4M4 7v14h11",
+  spec: "M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z",
+  strategy: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM12 12v.01",
+  analysis: "M12 3v9h9M20.4 15.5A9 9 0 1 1 8.5 3.7",
+  textbook: "M2 5h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2zM22 5h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z",
+  search: "M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-4-4",
+  menu: "M4 7h16M4 12h16M4 17h16",
+  close: "M6 6l12 12M18 6L6 18",
+  arrow: "M5 12h14M13 6l6 6-6 6",
+  check: "M5 12.5l4.5 4.5L19 7",
+};
+function Icon({ n, size = 18 }) {
+  return html`<svg class="ico" width=${size} height=${size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d=${ICONS[n]} /></svg>`;
+}
+const NAV = [
+  { group: null, items: [["home", "Study plan"]] },
+  { group: "Learn", items: [["concepts", "Concepts"], ["techniques", "Techniques"], ["skills", "Maths and practical skills"], ["definitions", "Definitions"], ["knowledge", "Knowledge checklist"], ["gaps", "Final gap check"]] },
+  { group: "Practise", items: [["questions", "Past questions"], ["mock", "Mock exam"], ["practice", "Practice set"], ["progress", "My progress"]] },
+  { group: "Reference", items: [["papers", "Full papers"], ["spec", "Specification"], ["strategy", "Exam strategy"], ["analysis", "Paper analysis"], ["textbook", "Textbook guide"]] },
+];
+const PAGE = Object.fromEntries(NAV.flatMap(g => g.items.map(([id, label]) => [id, { id, label, group: g.group }])));
+const LEGACY = { "#paper": "papers", "#playbook": "strategy", "#insights": "analysis", "#practise": "mock" };
+function parseHash(h) {
+  if (LEGACY[h]) return { page: LEGACY[h], item: null };
+  const s = (h || "").replace(/^#/, "");
+  for (const id of Object.keys(PAGE)) { if (s === id) return { page: id, item: null }; if (s.startsWith(id + "-")) return { page: id, item: s.slice(id.length + 1) }; }
+  return { page: "home", item: null };
+}
+function Page({ children, narrow }) {
+  return html`<div class="ins"><div class=${"ins-inner pg" + (narrow ? " narrow" : "")}>${children}</div></div>`;
+}
+
+/* ---------- Search (command palette) ---------- */
+function useSearchIndex(data) {
+  return useMemo(() => {
+    if (!data.ready) return [];
+    const out = [];
+    for (const g of NAV) for (const [id, label] of g.items) out.push({ kind: "Page", label, sub: g.group || "", act: { page: id }, hay: (label + " " + (g.group || "")).toLowerCase() });
+    for (const c of data.concepts?.concepts || []) out.push({ kind: "Concept", label: c.title, sub: "Module " + c.module, act: { page: "concepts", item: c.id }, hay: (c.title + " concept " + (c.spec || []).join(" ")).toLowerCase() });
+    for (const l of data.techniques?.lessons || []) out.push({ kind: "Technique", label: l.title.split(":")[0], sub: MOVE_LABEL[l.id] || "", act: { page: "techniques", item: l.id }, hay: (l.title + " technique " + (MOVE_LABEL[l.id] || "")).toLowerCase() });
+    for (const d of data.definitions?.items || []) out.push({ kind: "Definition", label: d.term, sub: d.topic || "", act: { page: "definitions" }, hay: (d.term + " definition define " + (d.topic || "")).toLowerCase() });
+    for (const s of data.subskills?.items || []) out.push({ kind: "Skill", label: s.id + " " + s.name, sub: s.what || "", act: { page: "skills" }, hay: (s.id + " " + s.name + " skill").toLowerCase() });
+    for (const o of data.spec?.outcomes || []) out.push({ kind: "Spec", label: o.code, sub: o.text || "", act: { spec: o.code }, hay: (o.code + " " + (o.text || "")).toLowerCase() });
+    for (const q of data.all) { if (q.withdrawn) continue; const s = SESSIONS.find(x => x.slug === q.slug);
+      out.push({ kind: "Question", label: `P${q.paper} ${SLABEL[q.slug]} Q${q.q}`, sub: q.context || "", act: { q }, hay: (`p${q.paper} paper ${q.paper} ${s?.y} ${s?.m} ${SLABEL[q.slug]} q${q.q} ${q.q} ` + (q.context || "")).toLowerCase() }); }
+    return out;
+  }, [data.ready]);
+}
+const KIND_ORDER = ["Page", "Concept", "Technique", "Definition", "Skill", "Spec", "Question"];
+function Palette({ open, onClose, index, run }) {
+  const dlg = useRef(null), inp = useRef(null);
+  const [q, setQ] = useState(""), [act, setAct] = useState(0);
+  useEffect(() => { const d = dlg.current; if (!d) return; if (open && !d.open) { setQ(""); setAct(0); d.showModal(); setTimeout(() => inp.current?.focus(), 0); } if (!open && d.open) d.close(); }, [open]);
+  const res = useMemo(() => {
+    const t = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    if (!t.length) return index.filter(r => r.kind === "Page");
+    const hits = []; for (const r of index) { if (t.every(w => r.hay.includes(w))) { const starts = r.label.toLowerCase().startsWith(t[0]) ? 0 : 1; hits.push([starts, KIND_ORDER.indexOf(r.kind), r]); if (hits.length > 400) break; } }
+    hits.sort((a, b) => a[1] - b[1] || a[0] - b[0]);
+    const per = {}; return hits.map(h => h[2]).filter(r => (per[r.kind] = (per[r.kind] || 0) + 1) <= (r.kind === "Question" ? 12 : 8));
+  }, [q, index]);
+  useEffect(() => { setAct(0); }, [q]);
+  useEffect(() => { dlg.current?.querySelector(`[data-i="${act}"]`)?.scrollIntoView({ block: "nearest" }); }, [act]);
+  const key = e => {
+    if (e.key === "ArrowDown") { e.preventDefault(); setAct(a => Math.min(res.length - 1, a + 1)); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); setAct(a => Math.max(0, a - 1)); }
+    else if (e.key === "Enter" && res[act]) { e.preventDefault(); run(res[act].act); onClose(); }
+  };
+  let last = null;
+  return html`<dialog ref=${dlg} class="palette" aria-label="Search" onClose=${onClose} onCancel=${onClose} onClick=${e => { if (e.target === dlg.current) onClose(); }}>
+    <div class="pal-in">
+      <label class="pal-field"><${Icon} n="search" /><input ref=${inp} id="palette-q" type="search" autocomplete="off" spellcheck="false" placeholder="Search questions, concepts, definitions, spec codes…" value=${q} onInput=${e => setQ(e.target.value)} onKeyDown=${key} role="combobox" aria-expanded="true" aria-controls="pal-list" aria-activedescendant=${res[act] ? "pal-" + act : null} /><kbd>Esc</kbd></label>
+      <div class="pal-list" id="pal-list" role="listbox">
+        ${res.length ? res.map((r, i) => { const head = r.kind !== last ? (last = r.kind, html`<div class="pal-head" key=${"h" + r.kind} role="presentation">${r.kind === "Page" ? "Pages" : r.kind === "Spec" ? "Specification" : r.kind + "s"}</div>`) : null;
+          return html`<${React.Fragment} key=${i}>${head}<div id=${"pal-" + i} data-i=${i} role="option" aria-selected=${i === act} class=${"pal-row" + (i === act ? " on" : "")} onMouseMove=${() => act !== i && setAct(i)} onClick=${() => { run(r.act); onClose(); }}>
+            <span class="pal-label">${r.label}</span>${r.sub ? html`<span class="pal-sub">${r.sub}</span>` : null}</div></${React.Fragment}>`; })
+          : html`<p class="pal-empty">Nothing matches “${q}”. Try a year and question (2023 p2 4), a spec code (4.4.3) or a topic word.</p>`}
+      </div>
+      <div class="pal-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>Enter</kbd> open</span><span>Try “2024 p1 21”, “4.5.2”, “terminal velocity”</span></div>
+    </div>
+  </dialog>`;
+}
+
+/* ---------- Study plan (home) ---------- */
+const STAGES = [
+  { id: "s1", title: "Units, prefixes and core maths", why: "Every calculation runs through these. Prefix and unit slips lose marks on questions you otherwise understand, and rearranging and ratio arguments come up in every paper.",
+    stat: d => `Units and prefixes are needed in ${d.need(n => n === "M-units")} of marks; any maths skill in ${d.need(n => n.startsWith("M-"))}.`,
+    tasks: [["s1a", "SI base units, prefixes and homogeneity", "techniques", "units"], ["s1b", "Rearranging and chaining equations", "techniques", "chain"], ["s1c", "Ratio and scaling arguments", "techniques", "ratio"], ["s1d", "Vectors and resolving", "concepts", "c-vectors"], ["s1e", "The maths skills M1–M26", "skills"]] },
+  { id: "s2", title: "The 14 principles", why: "Conservation of energy, momentum and charge, Newton's laws, moments, superposition and the photon model. Most of the course is these applied to a new setting, so they let you work answers out instead of memorising them.",
+    stat: d => `A named principle is needed in ${d.need(n => n.startsWith("P-"))} of marks.`,
+    tasks: [["s2a", "Read the principles in the knowledge checklist", "knowledge"], ["s2b", "How a question turns knowledge into marks", "techniques", "anatomy"]] },
+  { id: "s3", title: "Forces and motion", mod: ["3."], why: "Module 3, the second-largest block. Learn it in this order: each topic uses the one before it.",
+    tasks: ["c-kin-graphs", "c-suvat", "c-projectiles", "c-newton", "c-drag", "c-moments", "c-pressure", "c-momentum", "c-energy", "c-springs", "c-materials"] },
+  { id: "s4", title: "Practical skills and graphs", mod: ["1."], why: "Module 1. Practical questions now use the experiments from Module 3, so this is the right point to learn planning, uncertainty and linearising graphs.",
+    stat: d => `Practical know-how is needed in ${d.need(n => n.startsWith("K-"))} of marks across all topics.`,
+    tasks: [["s4a", "Measurement, uncertainty and graphs", "concepts", "c-measure"], ["s4b", "Planning an experiment", "techniques", "plan"], ["s4c", "Uncertainties", "techniques", "uncertainty"], ["s4d", "Linearising: choosing what to plot", "techniques", "linearise"], ["s4e", "Reading values, gradients and areas", "techniques", "graph-read"]] },
+  { id: "s5", title: "Electricity", mod: ["4.1", "4.2", "4.3"], why: "Charge and current first, then resistance and I–V curves, then whole circuits.",
+    tasks: ["c-current", "c-resistance", "c-resistivity", "c-kirchhoff", "c-internal", "c-divider"] },
+  { id: "s6", title: "Waves", mod: ["4.4"], why: "The largest single section of the specification by marks. Wave terms first, then light, superposition and stationary waves.",
+    tasks: ["c-waves", "c-em-light", "c-superposition", "c-stationary"] },
+  { id: "s7", title: "Photons and quantum", mod: ["4.5"], why: "A small, self-contained section that is asked every year: the best return on revision time in the course.",
+    tasks: ["c-photons", "c-photoelectric", "c-duality"] },
+  { id: "s8", title: "Exam technique", why: "Now turn understanding into marks. Learn definitions word for word as each topic comes up, then drill the answer styles examiners mark hardest.",
+    tasks: [["s8a", "Definitions, word for word", "definitions"], ["s8b", "Cause → effect explanations", "techniques", "explain-chain"], ["s8c", "Show-that questions", "techniques", "show-that"], ["s8d", "Judging and deciding", "techniques", "evaluate"], ["s8e", "Exam strategy and timing", "strategy"]] },
+  { id: "s9", title: "Timed mocks", why: "Start with the gentler papers (one dot), mark strictly against the mark scheme, then let My progress pick what to fix.",
+    tasks: [["s9a", "Sit a mock paper", "mock"], ["s9b", "Work through the practice set", "practice"], ["s9c", "Review My progress", "progress"]] },
+  { id: "s10", title: "Final gap check", why: "Last of all: GCSE knowledge and spec details the papers assume but rarely state.",
+    tasks: [["s10a", "Go through the gap check", "gaps"]] },
+];
+function Home({ data, nav, openSpec }) {
+  const [ticks, setTicks] = useState(() => store.get("plan", {}));
+  const toggle = id => setTicks(t => { const n = { ...t, [id]: !t[id] }; store.set("plan", n); return n; });
+  const all = useMemo(() => data.all.filter(q => !q.withdrawn), [data.all]);
+  const total = useMemo(() => all.reduce((s, q) => s + (+q.marks || 0), 0) || 1, [all]);
+  const pct = x => Math.round(x / total * 100) + "%";
+  const need = f => pct(all.reduce((s, q) => s + ((q.needs || []).some(f) ? (+q.marks || 0) : 0), 0));
+  const secs = useMemo(() => { const m = {}; for (const q of all) { const ss = [...new Set((q.spec_points || []).map(s => String(s).split(".").slice(0, 2).join(".")))]; for (const s of ss) m[s] = (m[s] || 0) + (+q.marks || 0) / ss.length; } return m; }, [all]);
+  const modShare = pre => pct(Object.entries(secs).filter(([k]) => pre.some(p => k.startsWith(p))).reduce((s, [, v]) => s + v, 0));
+  const CS = Object.fromEntries((data.concepts?.concepts || []).map(c => [c.id, c]));
+  const tasksOf = st => st.tasks.map(t => typeof t === "string" ? [st.id + ":" + t, CS[t]?.title || t, "concepts", t] : t);
+  const doneOf = st => tasksOf(st).filter(t => ticks[t[0]]).length;
+  const nextStage = STAGES.find(st => doneOf(st) < tasksOf(st).length) || STAGES[STAGES.length - 1];
+  const attempts = store.get("attempts", []), pq = store.get("pq", {});
+  const lastA = attempts[attempts.length - 1];
+  const lastScore = lastA ? Object.values(lastA.scores || {}).reduce((x, y) => x + y, 0) : 0;
+  const last = store.get("last", null);
+  const secRows = Object.entries(secs).sort((a, b) => b[1] - a[1]); const maxSec = secRows[0]?.[1] || 1;
+  const allTasks = STAGES.flatMap(tasksOf), doneAll = allTasks.filter(t => ticks[t[0]]).length;
+  return html`<div class="ins"><div class="ins-inner pg home">
+    <header class="page-head">
+      <h1>Study plan</h1>
+      <p>Ten stages, ordered so each one builds on the last and the biggest sources of marks come first. Tick tasks off as you finish them; this is saved in your browser.</p>
+    </header>
+    <div class="home-grid">
+      <ol class="stages">
+        ${STAGES.map((st, i) => { const T = tasksOf(st), d = doneOf(st), cur = st === nextStage;
+          return html`<li key=${st.id} class=${"stage" + (cur ? " current" : "") + (d === T.length ? " done" : "")}>
+            <div class="stage-num" aria-hidden="true">${d === T.length ? html`<${Icon} n="check" size=${14} />` : i + 1}</div>
+            <div class="stage-body">
+              <div class="stage-top"><h2>${st.title}</h2><span class="stage-meta">${st.mod ? modShare(st.mod) + " of marks · " : ""}${d}/${T.length} done</span></div>
+              <p>${st.why}${st.stat ? " " + st.stat({ need }) : ""}</p>
+              <ul class="tasks">${T.map(([id, label, page, item]) => html`<li key=${id}>
+                <input type="checkbox" id=${"plan-" + id} checked=${!!ticks[id]} onChange=${() => toggle(id)} />
+                <label for=${"plan-" + id} class="sr-only">Mark “${label}” as done</label>
+                <a href=${"#" + page + (item ? "-" + item : "")} class=${ticks[id] ? "done" : ""} onClick=${e => { e.preventDefault(); nav(page, item); }}>${label}</a>
+              </li>`)}</ul>
+            </div>
+          </li>`; })}
+      </ol>
+      <aside class="home-side">
+        <section class="side-card">
+          <h2>Up next</h2>
+          <p class="big">${nextStage.title}</p>
+          <p class="muted">${doneAll} of ${allTasks.length} tasks done across the plan.</p>
+          ${(() => { const t = tasksOf(nextStage).find(t => !ticks[t[0]]); return t ? html`<button class="btn" onClick=${() => nav(t[2], t[3])}>${t[1]} <${Icon} n="arrow" size=${16} /></button>` : null; })()}
+          ${last && last.page !== "home" && PAGE[last.page] ? html`<button class="btn ghost" onClick=${() => nav(last.page, last.item)}>Back to ${PAGE[last.page].label}${last.title ? ": " + last.title : ""}</button>` : null}
+        </section>
+        <section class="side-card">
+          <h2>Your numbers</h2>
+          <dl class="kv">
+            <dt>Mock papers marked</dt><dd>${attempts.length}</dd>
+            <dt>Last mock</dt><dd>${lastA ? `${lastScore}/${lastA.max}${gradeFor(data.playbook, lastA.slug, lastA.paper, lastScore) ? " · " + gradeFor(data.playbook, lastA.slug, lastA.paper, lastScore) : ""}` : "–"}</dd>
+            <dt>Practice questions marked</dt><dd>${Object.keys(pq).length}/${data.practice?.questions?.length || 0}</dd>
+            <dt>Definitions known</dt><dd>${Object.keys(store.get("defs", {})).length}/${data.definitions?.items?.length || 0}</dd>
+            <dt>Knowledge items secure</dt><dd>${Object.values(store.get("know", {})).filter(Boolean).length}/${data.knowledge?.items?.length || 0}</dd>
+          </dl>
+          <button class="btn ghost" onClick=${() => nav("progress")}>Open My progress</button>
+        </section>
+        <section class="side-card">
+          <h2>Where the marks are</h2>
+          <p class="muted">Share of all marks in the ${SESSIONS.length * 2} papers, by specification section.</p>
+          <div class="secbars">${secRows.map(([k, v]) => html`<button key=${k} class="secbar" onClick=${() => openSpec(k)} title=${"Open " + k + " in the specification"}>
+            <span class="sb-k mono">${k}</span><span class="sb-n">${data.spec?.sections?.[k] || ""}</span><span class="sb-v mono">${pct(v)}</span>
+            <span class="sb-track"><i style=${{ width: (v / maxSec * 100) + "%" }}></i></span></button>`)}</div>
+        </section>
+      </aside>
+    </div>
+  </div></div>`;
+}
+
 /* ---------- App ---------- */
 function App() {
   const [data, setData] = useState({ all: [], byPaper: {}, ins: {}, regions: {}, ready: false });
   const init = store.get("sel", { paper: 1, slug: "jun2024" });
   const [sel, setSel] = useState({ paper: init.paper || 1, slug: SLABEL[init.slug] ? init.slug : "jun2024", q: null, nonce: 0 });
-  const fromHash = () => ({ "#insights": "insights", "#paper": "paper", "#spec": "spec", "#playbook": "playbook", "#techniques": "techniques", "#textbook": "textbook", "#concepts": "concepts", "#practise": "practise" })[location.hash] || "questions";
+  const [route, setRoute] = useState(() => parseHash(location.hash));
   const [specQ, setSpecQ] = useState({ q: "", n: 0 });
-  const [view, setView] = useState(fromHash);
+  const [drawer, setDrawer] = useState(false), [pal, setPal] = useState(false);
   useEffect(() => { store.set("sel", { paper: sel.paper, slug: sel.slug }); }, [sel.paper, sel.slug]);
   useEffect(() => {
-    const h = () => setView(fromHash());
+    const h = () => setRoute(parseHash(location.hash));
     addEventListener("hashchange", h); return () => removeEventListener("hashchange", h);
   }, []);
-  const go = v => { setView(v); try { history.replaceState(null, "", "#" + v); } catch {} };
   useEffect(() => {
-    Promise.all([
-      fetch("data/questions.json").then(r => r.ok ? r.json() : []).catch(() => []),
-      fetch("data/insights.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
-      fetch("data/regions.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
-      fetch("data/spec.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/playbook.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/nearmiss.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/examiners.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/techniques.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/rootcause.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/definitions.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/knowledge.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/subskills.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/gaps.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/skill-lessons.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/textbook.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/concepts.json").then(r => r.ok ? r.json() : null).catch(() => null),
-      fetch("data/practice.json").then(r => r.ok ? r.json() : null).catch(() => null),
-    ]).then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge, subskills, gaps, skillLessons, textbook, concepts, practice]) => {
+    const k = e => { if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); setPal(p => !p); }
+      else if (e.key === "/" && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName) && !pal) { e.preventDefault(); setPal(true); } };
+    addEventListener("keydown", k); return () => removeEventListener("keydown", k);
+  }, [pal]);
+  useEffect(() => {
+    if (!drawer) return;
+    document.querySelector(".sidenav .navitem[aria-current]")?.focus() || document.querySelector(".sidenav .navitem")?.focus();
+    const k = e => { if (e.key === "Escape") { setDrawer(false); document.querySelector(".menu-btn")?.focus(); } };
+    addEventListener("keydown", k); return () => removeEventListener("keydown", k);
+  }, [drawer]);
+  const nav = (page, item) => {
+    const h = "#" + page + (item ? "-" + item : "");
+    if (location.hash !== h) { try { history.pushState(null, "", h); } catch {} }
+    setRoute({ page, item: item || null }); setDrawer(false);
+  };
+  useEffect(() => {
+    const p = PAGE[route.page]; document.title = (p && route.page !== "home" ? p.label + " · " : "") + "Physics";
+    if (route.page !== "home") store.set("last", { page: route.page, item: route.item, title: route.page === "concepts" ? data.concepts?.concepts?.find(c => c.id === route.item)?.title : route.page === "techniques" ? data.techniques?.lessons?.find(l => l.id === route.item)?.title.split(":")[0] : null });
+    const m = document.querySelector("main.main"); if (m) m.focus({ preventScroll: true });
+    setTimeout(() => { const on = document.querySelector(".tq-nav .on"), nv = on?.parentElement; if (on && nv && matchMedia("(max-width: 900px)").matches) nv.scrollLeft = on.offsetLeft - 16; }, 60);
+  }, [route.page, route.item, data.ready]);
+  useEffect(() => {
+    Promise.all(["questions", "insights", "regions", "spec", "playbook", "nearmiss", "examiners", "techniques", "rootcause", "definitions", "knowledge", "subskills", "gaps", "skill-lessons", "textbook", "concepts", "practice"]
+      .map((n, i) => fetch(`data/${n}.json`).then(r => r.ok ? r.json() : (i < 3 ? (i ? {} : []) : null)).catch(() => (i < 3 ? (i ? {} : []) : null))))
+    .then(([all, ins, regions, spec, playbook, nearmiss, examiners, techniques, rootcause, definitions, knowledge, subskills, gaps, skillLessons, textbook, concepts, practice]) => {
       KNOW = Object.fromEntries((knowledge?.items || []).map(i => [i.id, i]));
       const rcIndex = {}; for (const r of rootcause?.parts || []) rcIndex[`${r.paper}:${r.slug}:${r.q}`] = r;
       const nmIndex = {};
@@ -2790,40 +3152,69 @@ function App() {
     });
   }, []);
   const hardMarks = useMemo(() => { const m = {}; for (const q of data.all) if (!q.withdrawn && q.difficulty === 3) { const k = `${q.paper}:${q.slug}`; m[k] = (m[k] || 0) + (+q.marks || 0); } for (const q of data.all) { const k = `${q.paper}:${q.slug}`; if (!(k in m)) m[k] = 0; } return m; }, [data.all]);
-  const goTech = (id) => { store.set("tech", id); go("techniques"); };
-  const openSpec = (code) => { setSpecQ(o => ({ q: code, n: o.n + 1 })); go("spec"); };
-  const open = (paper, slug, q) => { setSel(s => ({ paper: +paper, slug, q: q || null, nonce: s.nonce + 1 })); go("questions"); };
-
+  const TECH_PAGES = { know: "knowledge", skills: "skills", defs: "definitions", gaps: "gaps" };
+  const goTech = (id) => TECH_PAGES[id] ? nav(TECH_PAGES[id]) : nav("techniques", id);
+  const openSpec = (code) => { setSpecQ(o => ({ q: code, n: o.n + 1 })); nav("spec"); };
+  const open = (paper, slug, q) => { setSel(s => ({ paper: +paper, slug, q: q || null, nonce: s.nonce + 1 })); nav("questions"); };
+  const index = useSearchIndex(data);
+  const run = a => a.spec ? openSpec(a.spec) : a.q ? open(a.q.paper, a.q.slug, a.q) : nav(a.page, a.item);
+  const counts = { concepts: data.concepts?.concepts?.length, techniques: data.techniques?.lessons?.length, skills: data.subskills?.items?.length, definitions: data.definitions?.items?.length, knowledge: data.knowledge?.items?.length, gaps: data.gaps?.gaps?.length, practice: data.practice?.questions?.length, spec: data.spec?.outcomes?.length };
+  const P = PAGE[route.page] || PAGE.home, v = P.id;
+  const loading = html`<div class="ins"><div class="ins-inner pg"><div class="skel" aria-busy="true" aria-label="Loading"><i></i><i></i><i></i></div></div></div>`;
+  const rail = html`<div class="rail">
+    <div class="seg" role="group" aria-label="Paper">
+      ${[1, 2].map(p => html`<button key=${p} aria-pressed=${sel.paper === p} onClick=${() => setSel(s => ({ ...s, paper: p, q: null }))}><b>${PAPERS[p].name}</b><small>${PAPERS[p].sub}</small></button>`)}
+    </div>
+    <div class="sessions" role="group" aria-label="Exam session">
+      ${SESSIONS.map(s => { const h = hardMarks[`${sel.paper}:${s.slug}`]; const lvl = h == null ? 0 : h >= 16 ? 3 : h >= 9 ? 2 : 1;
+        return html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label + (h != null ? ` · ${h} hard marks` : "")}><span class="y">${s.y}</span><span class="m">${s.m}</span>${lvl ? html`<span class="dif" aria-label=${`${h} hard marks`}>${[1, 2, 3].map(i => html`<i key=${i} class=${i <= lvl ? "on" : ""}></i>`)}</span>` : null}</button>`; })}
+    </div>
+  </div>`;
+  const body = !data.ready && v !== "papers" ? loading
+    : v === "home" ? html`<${Home} data=${data} nav=${nav} openSpec=${openSpec} />`
+    : v === "questions" ? html`<div class="with-rail">${rail}<${QBench} data=${data} sel=${sel} /></div>`
+    : v === "papers" ? html`<div class="with-rail">${rail}<${Bench} data=${data} sel=${sel} setSel=${setSel} /></div>`
+    : v === "concepts" ? html`<${ConceptsView} data=${data} open=${open} goTech=${goTech} item=${route.item} setItem=${id => nav("concepts", id)} />`
+    : v === "techniques" ? html`<${Techniques} data=${data} open=${open} item=${route.item} setItem=${id => nav("techniques", id)} />`
+    : v === "skills" ? html`<${Page}><${SkillsBreakdown} data=${data} open=${open} /></${Page}>`
+    : v === "definitions" ? html`<${Page}><${DefDrill} data=${data} open=${open} /></${Page}>`
+    : v === "knowledge" ? html`<${Page}><${KnowledgeMap} data=${data} open=${open} /></${Page}>`
+    : v === "gaps" ? html`<${Page}><${GapCheck} data=${data} /></${Page}>`
+    : v === "mock" ? html`<${Page}><${MockExam} data=${data} onSaved=${() => {}} /></${Page}>`
+    : v === "practice" ? html`<${Page}><${PracticeSet} data=${data} onSaved=${() => {}} /></${Page}>`
+    : v === "progress" ? html`<${Page}><${Progress} data=${data} goTech=${goTech} open=${open} /></${Page}>`
+    : v === "spec" ? html`<${SpecView} data=${data} open=${open} query=${specQ} />`
+    : v === "strategy" ? html`<${Playbook} data=${data} open=${open} openSpec=${openSpec} />`
+    : v === "textbook" ? html`<${TextbookView} data=${data} open=${open} />`
+    : html`<${Insights} data=${data} open=${open} />`;
   return html`
-    <div class="app">
-      <header class="top">
-        <${Wave} k=${46} speed=${1.6} />
-        <div class="brand"><span class="code">H156</span><h1>Paper Bench <span>OCR A · AS Physics</span></h1></div>
-        <nav class="tabs" aria-label="View">
-          <button aria-pressed=${view === "questions"} onClick=${() => go("questions")}>Questions</button>
-          <button aria-pressed=${view === "concepts"} onClick=${() => go("concepts")}>Concepts</button>
-          <button aria-pressed=${view === "practise"} onClick=${() => go("practise")}>Practise</button>
-          <button aria-pressed=${view === "paper"} onClick=${() => go("paper")}>Whole paper</button>
-          <button aria-pressed=${view === "spec"} onClick=${() => go("spec")}>Spec</button>
-          <button aria-pressed=${view === "playbook"} onClick=${() => go("playbook")}>Playbook</button>
-          <button aria-pressed=${view === "techniques"} onClick=${() => go("techniques")}>Techniques</button>
-          <button aria-pressed=${view === "textbook"} onClick=${() => go("textbook")}>Textbook</button>
-          <button aria-pressed=${view === "insights"} onClick=${() => go("insights")}>Insights</button>
+    <div class=${"shell" + (drawer ? " drawer-open" : "")}>
+      <a class="skip" href="#main" onClick=${e => { e.preventDefault(); document.querySelector("main.main")?.focus(); }}>Skip to content</a>
+      <aside class="sidenav" aria-label="Sections">
+        <a class="brand" href="#home" onClick=${e => { e.preventDefault(); nav("home"); }}><span class="code">H156</span><span class="name">Physics</span></a>
+        <button class="side-search" onClick=${() => setPal(true)}><${Icon} n="search" size=${16} /><span>Search</span><kbd>⌘K</kbd></button>
+        <nav class="navlist">
+          ${NAV.map(g => html`<div class="navgroup" key=${g.group || "top"}>
+            ${g.group ? html`<h2>${g.group}</h2>` : null}
+            ${g.items.map(([id, label]) => html`<a key=${id} href=${"#" + id} class="navitem" aria-current=${v === id ? "page" : null} onClick=${e => { if (e.metaKey || e.ctrlKey || e.button === 1) return; e.preventDefault(); nav(id); }}>
+              <${Icon} n=${id} /><span>${label}</span>${counts[id] ? html`<small>${counts[id]}</small>` : null}</a>`)}
+          </div>`)}
         </nav>
-      </header>
-      ${view === "questions" || view === "paper" ? html`
-        <div class="rail">
-          <div class="seg" role="group" aria-label="Paper">
-            ${[1, 2].map(p => html`<button key=${p} aria-pressed=${sel.paper === p} onClick=${() => setSel(s => ({ ...s, paper: p, q: null }))}><b>${PAPERS[p].name}</b><small>${PAPERS[p].sub}</small></button>`)}
-          </div>
-          <div class="sessions" role="group" aria-label="Exam session">
-            ${SESSIONS.map(s => { const h = hardMarks[`${sel.paper}:${s.slug}`]; const lvl = h == null ? 0 : h >= 16 ? 3 : h >= 9 ? 2 : 1;
-              return html`<button key=${s.slug} class="chip" aria-pressed=${sel.slug === s.slug} onClick=${() => setSel(o => ({ ...o, slug: s.slug, q: null }))} title=${s.label + (h != null ? ` · ${h} hard marks` : "")}><span class="y">${s.y}</span><span class="m">${s.m}</span>${lvl ? html`<span class="dif" aria-label=${`${h} hard marks`}>${[1, 2, 3].map(i => html`<i key=${i} class=${i <= lvl ? "on" : ""}></i>`)}</span>` : null}</button>`; })}
-          </div>
-        </div>
-        ${view === "paper" ? html`<${Bench} data=${data} sel=${sel} setSel=${setSel} />` : data.ready ? html`<${QBench} data=${data} sel=${sel} />` : html`<div class="loading" style=${{ position: "static", padding: "40px" }}>Loading questions…</div>`}` : html`<div style=${{ display: "contents" }}><div></div>${view === "spec" ? html`<${SpecView} data=${data} open=${open} query=${specQ} />` : view === "playbook" ? html`<${Playbook} data=${data} open=${open} openSpec=${openSpec} />` : view === "techniques" ? html`<${Techniques} data=${data} open=${open} />` : view === "textbook" ? html`<${TextbookView} data=${data} open=${open} />` : view === "concepts" ? html`<${ConceptsView} data=${data} open=${open} />` : view === "practise" ? html`<${PractiseView} data=${data} open=${open} goTech=${goTech} />` : html`<${Insights} data=${data} open=${open} />`}</div>`}
+        <p class="side-foot">OCR A · AS Physics (H156) · ${SESSIONS.length * 2} papers</p>
+      </aside>
+      <div class="scrim" onClick=${() => setDrawer(false)} aria-hidden="true"></div>
+      <div class="mainwrap" inert=${drawer ? "" : undefined}>
+        <header class="topbar">
+          <button class="iconbtn menu-btn" aria-label="Open navigation" aria-expanded=${drawer} onClick=${() => setDrawer(true)}><${Icon} n="menu" size=${20} /></button>
+          <div class="crumb">${P.group ? html`<span>${P.group}</span><span aria-hidden="true">/</span>` : null}<b>${P.label}</b></div>
+          <button class="searchbtn" onClick=${() => setPal(true)} aria-label="Search"><${Icon} n="search" size=${16} /><span>Search questions, concepts, spec…</span><kbd>⌘K</kbd></button>
+        </header>
+        <main class="main" id="main" tabindex="-1">${body}</main>
+      </div>
+      <${Palette} open=${pal} onClose=${() => setPal(false)} index=${index} run=${run} />
     </div>`;
 }
+
 ReactDOM.createRoot(document.getElementById("root")).render(html`<${App} />`);
 })();
 </script>
